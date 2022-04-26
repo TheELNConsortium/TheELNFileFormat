@@ -56,16 +56,16 @@ Example:
     "url": "https://eln.example.org"
   },
   "dateCreated": "2022-04-26T10:49:45+0000",
-  "dataset": {
+  "dataset": [
+    {
       "@type": "Dataset",
       "url": "./experimentA",
       "name": "Some microscopy data",
-      "about": "Survival of HeLa cells after ionizing radiations exposure",
+      "comment": "Survival of HeLa cells after ionizing radiations exposure",
       "author": {
         "@type": "Person",
         "name": "Nikola Tesla"
       },
-      "comment": "Experiment is successful.",
       "dateCreated": "2022-04-26T10:49:45+0000",
       "associatedMedia": [
         {
@@ -85,8 +85,51 @@ Example:
           "sha256": "75546313da12bbcbbf2079a70002d73cc1800e7ef86339f99a86705caaaa1c85"
         }
       ]
+    },
+    {
+      "@type": "Dataset",
+      "url": "./experimentB",
+      "name": "Some western blot data",
+      "comment": "Effect of siRNA anti Actin on HeLa cells",
+      "author": {
+        "@type": "Person",
+        "name": "Harry Towbin"
+      },
+      "dateCreated": "2022-07-14T13:37:00+0000",
+      "associatedMedia": [
+        {
+          "@type": "MediaObject",
+          "contentSize": "53492",
+          "contentUrl": "./blot.jpg",
+          "encodingFormat": "image/jpeg",
+          "dateCreated": "2022-07-01T15:15:07+0000",
+          "sha256": "47806097bc560c15588dc85ccaff6b48ad29b693c6b8610f6bfd62d230be103c"
+        }
+      ],
+      "about": [
+        {
+          "@type": "Protein",
+          "hasBioPolymerSequence": ">sp|P60709|ACTB_HUMAN Actin, cytoplasmic 1 OS=Homo sapiens OX=9606 GN=ACTB PE=1 SV=1
+            MDDDIAALVVDNGSGMCKAGFAGDDAPRAVFPSIVGRPRHQGVMVGMGQKDSYVGDEAQS
+            KRGILTLKYPIEHGIVTNWDDMEKIWHHTFYNELRVAPEEHPVLLTEAPLNPKANREKMT
+            QIMFETFNTPAMYVAIQAVLSLYASGRTTGIVMDSGDGVTHTVPIYEGYALPHAILRLDL
+            AGRDLTDYLMKILTERGYSFTTTAEREIVRDIKEKLCYVALDFEQEMATAASSSSLEKSY
+            ELPDGQVITIGNERFRCPEALFQPSFLGMESCGIHETTFNSIMKCDVDIRKDLYANTVLS
+            GGTTMYPGIADRMQKEITALAPSTMKIKIIAPPERKYSVWIGGSILASLSTFQQMWISKQ
+            EYDESGPSIVHRKCF",
+          "isEncodedByBioChemEntity": {
+            "@type": "Gene",
+            "url": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:132"
+          }
+        },
+        {
+          "@type": "BioChemEntity",
+          "name": "Actin siRNA",
+          "url": "https://www.ncbi.nlm.nih.gov/nuccore/NM_001100"
+        }
+      ]
     }
-  }
+  ]
 }
 
 ~~~
