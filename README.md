@@ -14,4 +14,6 @@ The file format is specified in the [SPECIFICATION.md](./SPECIFICATION.md) file.
 
 This file format was created for the needs of better interoperability between ELN software. So editors of these software decided it would be useful for users to have an archive format that can be easily understood by several ELNs.
 
+## Status
 
+Pre-alpha.

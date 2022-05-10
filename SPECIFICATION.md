@@ -41,4 +41,6 @@ some-data.eln:
 
 ## Examples
 
-See the [RO-Crate website](https://www.researchobject.org/ro-crate/1.1/data-entities.html#example-linking-to-a-file-and-folders) for examples.
+See the [examples folder](./examples).
+
+See also the [RO-Crate website](https://www.researchobject.org/ro-crate/1.1/data-entities.html#example-linking-to-a-file-and-folders).
