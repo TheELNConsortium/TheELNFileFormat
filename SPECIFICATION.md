@@ -23,20 +23,21 @@ The rest of the archive is composed of 0 or more folders that each describe one 
 Example for file: some-data.eln
 
 ~~~yaml
-some-data.eln:
-  - ro-crate-metadata.json
-  - experimentA/:
-    - index.json
-    - image.tif
-    - measurements.csv
-    - paper.pdf
-  - experimentB/:
-    - content.txt
-    - image-overexposed.tif
-    - results.xlsx
-    - subfolder-with-data/:
-      - some-data.bin
-      - some-data2.bin
+<root>
+  some-data.eln/
+    - ro-crate-metadata.json
+    - experimentA/:
+      - index.json
+      - image.tif
+      - measurements.csv
+      - paper.pdf
+    - experimentB/:
+      - content.txt
+      - image-overexposed.tif
+      - results.xlsx
+      - subfolder-with-data/:
+        - some-data.bin
+        - some-data2.bin
 ~~~
 
 ## Examples
