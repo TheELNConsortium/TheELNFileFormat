@@ -61,16 +61,16 @@ The first thing we do is describe the `ro-crate-metadata.json` object:
 
 ~~~json
 {
-      "@id": "ro-crate-metadata.json",
-      "@type": "CreativeWork",
-      "about": {
-        "@id": "./"
-      },
-      "conformsTo": {
-        "@id": "https://w3id.org/ro/crate/1.1"
-      },
-      "dateCreated": "2022-05-30T12:25:36+0200",
-    },
+  "@id": "ro-crate-metadata.json",
+  "@type": "CreativeWork",
+  "about": {
+    "@id": "./"
+  },
+  "conformsTo": {
+    "@id": "https://w3id.org/ro/crate/1.1"
+  },
+  "dateCreated": "2022-05-30T12:25:36+0200",
+}
 ~~~
 
 It is a `CreativeWork` about the current directory where it is, and conforms to the RO-Crate specification. Other fields like `dateCreated` (added here), `sdPublisher` or [any other property](https://schema.org/CreativeWork) of `CreativeWork` can be added.
