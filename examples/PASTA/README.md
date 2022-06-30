@@ -1,34 +1,31 @@
 ## PASTA ELN
+Its home is at: https://github.com/PASTA-ELN
 
 ### PASTA.eln
 ```
 ro-crate-metadata.json
+  publisher: PASTA ELN
+  version: 1.0
 ./
-|-> x-827b91ae4323467ca165ec603138ca06
-    |-> x-76344bb9dc741fe123689f6a82991127
-    |-> x-eda1b4ac5c96eddafa34c1c554fdbd68
-        |-> x-2495d0ec7e34532242e110eb4a7aaf17
-        |-> x-bd28a6784621e23cebcf4650fcd427e1
-    |-> x-0e5f8c281756d8ea47c016e30905d78d
-        |-> m-2e7e1df25949a2b428ec5b2d497e283c
-            |-> __thumbnails__/m-2e7e1df25949a2b428ec5b2d497e283c.png
-            |-> __thumbnails__/m-2e7e1df25949a2b428ec5b2d497e283c.png  File
-    |-> x-bbd1648e7ecf9134d77051c185b2b90a
-        |-> m-bb4c8d7a80845f407fafefd274139d0d
-            |-> __thumbnails__/m-bb4c8d7a80845f407fafefd274139d0d.svg
-            |-> __thumbnails__/m-bb4c8d7a80845f407fafefd274139d0d.svg  File
-        |-> m-c52a2913e22c737d7f6a671d2ba2a351
-            |-> __thumbnails__/m-c52a2913e22c737d7f6a671d2ba2a351.svg
-            |-> __thumbnails__/m-c52a2913e22c737d7f6a671d2ba2a351.svg  File
-    |-> p-64ed5008b3b7e86557e7fce9466836e3
-    |-> p-995a1afeba44ee6ed6d547e3f35a3c04
-    |-> s-2059520ee3b4157856d1153401ff782c
+|-> x-53aba5f722317fab45ac4d4d4c8ecff2
+    |-> x-d1066d9d228fda982f8fd1e874889d70
+    |-> x-5a0f90689061f785f28f951056f4a91d
+        |-> x-622866434a834f895e48e67d23f94212
+        |-> x-7d804bfea8b0fd462851b80aab8becb3
+    |-> x-2b5e854ba0299f62b03384f5deccd2bc
+        |-> m-ff875e8d881317bd2f46a1d2bd2cc418
+            |-> __thumbnails__/m-ff875e8d881317bd2f46a1d2bd2cc418.png
+    |-> x-6dab8b7a703058c9cecf15341c1fe591
+        |-> m-44311da3c65ebbf7ca9c9267d519d6d6
+            |-> __thumbnails__/m-44311da3c65ebbf7ca9c9267d519d6d6.svg
+        |-> m-9349ddcde47659037a018450a26d49c4
+            |-> __thumbnails__/m-9349ddcde47659037a018450a26d49c4.svg
+    |-> p-1f9ffffa6198d7e288932f410877b12e
+    |-> p-c8bf8e3f3d065bcbb8b9b38fab12a317
+    |-> s-383aa8593cc21b7c48bc21d0d3d49ce9
 |-> IntermetalsAtInterfaces/002_SEMImages/Zeiss.tif
-|-> IntermetalsAtInterfaces/002_SEMImages/Zeiss.tif  File
 |-> IntermetalsAtInterfaces/003_Nanoindentation/RobinSteel0000LC.txt
-|-> IntermetalsAtInterfaces/003_Nanoindentation/RobinSteel0000LC.txt  File
 |-> IntermetalsAtInterfaces/003_Nanoindentation/1500nmXX 5 7074 -4594.txt
-|-> IntermetalsAtInterfaces/003_Nanoindentation/1500nmXX 5 7074 -4594.txt  File
 
 ```
 

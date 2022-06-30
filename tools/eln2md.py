@@ -40,9 +40,9 @@ def tree(metadata):
   rocrateNode = [i for i in graph if i["@id"]=="ro-crate-metadata.json"][0]
   output = 'ro-crate-metadata.json\n'
   if 'sdPublisher' in rocrateNode:
-    output += rocrateNode['sdPublisher']['name']+'\n'
+    output += '  publisher: '+rocrateNode['sdPublisher']['name']+'\n'
   if 'version' in rocrateNode:
-    output += rocrateNode['version']+'\n'
+    output += '  version: '+rocrateNode['version']+'\n'
   mainNode    = [i for i in graph if i["@id"]=="./"][0]
   output += './\n'
   #iteratively go through list
