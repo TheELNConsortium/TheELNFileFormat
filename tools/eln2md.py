@@ -22,17 +22,17 @@ def tree(metadata):
     recursive function call to process this node
     """
     prefix = '    '*(level-1)+'|-> '
-    output = prefix+part['@id']+'\n'
+    output = prefix+part['@id']
     # find next node to process
     newNode = [i for i in metadata['@graph'] if '@id' in i and i['@id']==part['@id']]
     if len(newNode)==1:
+      output += ',  items: '+str(len(newNode[0])-1)+' \n'  #-1 because @id is not counted
       subparts = newNode[0].pop('hasPart') if 'hasPart' in newNode[0] else []
       if len(subparts)>0:  #don't do if no subparts: measurements, ...
         for subpart in subparts:
           output += processPart(subpart, level+1)
-    # # if final leaf node described in hasPart
-    # elif len(part)>1:
-    #   output += prefix+part['@id']+'  '+part['@type']+'\n'
+    else:
+      output += ',  items: '+str(len(part)-1)+'\n'  #-1 because @id is not counted
     return output
   #main tree-function
   graph = metadata["@graph"]
