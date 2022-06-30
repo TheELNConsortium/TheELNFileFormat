@@ -1,6 +1,15 @@
 #!/usr/bin/env python3
-import os, shutil, json, sys
-from zipfile import ZipFile, ZIP_DEFLATED
+import json
+import shutil
+import sys
+from pathlib import Path
+from zipfile import ZIP_DEFLATED
+from zipfile import Path as ZPath
+from zipfile import ZipFile
+
+README_FILE = 'README.md'
+TEMPLATE_FILE = 'README_template.md'
+METADATA_FILE = 'ro-crate-metadata.json'
 
 
 def simplify(metadata):
@@ -61,26 +70,32 @@ def tree(metadata):
 
 
 if __name__ == '__main__':
-    # prepare README.md file
-    if os.path.exists('README_template.md'):
-        shutil.copy('README_template.md', 'README.md')
-    outfile = open('README.md', 'a')
+    cwd = Path('.')
+    readme = cwd.joinpath(README_FILE)
+    # start by deleting the old one so we don't append to it
+    readme.unlink(missing_ok=True)
+    # copy the template (header) if it exists
+    if cwd.joinpath(TEMPLATE_FILE).is_file():
+        shutil.copy(TEMPLATE_FILE, README_FILE)
 
-    for fileName in os.listdir('.'):
-        if fileName.endswith('.eln'):
-            outfile.write('\n### ' + fileName + '\n')
-            with ZipFile(fileName, 'r', compression=ZIP_DEFLATED) as elnFile:
-                files = elnFile.namelist()
-                dirName = files[0].split(os.sep)[0]
-                if dirName + '/ro-crate-metadata.json' in files:
-                    metadata = json.loads(
-                        elnFile.read(dirName + '/ro-crate-metadata.json')
-                    )
-                    if len(sys.argv) > 1 and sys.argv[1] == 'simple':
-                        output = simplify(metadata)
-                    elif len(sys.argv) > 1 and sys.argv[1] == 'tree':
-                        output = tree(metadata)
-                    else:
-                        output = json.dumps(metadata, indent=2)
-                    outfile.write('```\n' + output + '\n```\n\n')
+    outfile = readme.open('a')
+
+    for fileName in cwd.glob('*.eln'):
+        outfile.write(f'\n### {fileName}\n')
+        with ZipFile(fileName, 'r', compression=ZIP_DEFLATED) as elnFile:
+            # use the exposed Path from ziplib
+            p = ZPath(elnFile)
+            # there should be only one folder so we just consider the first one
+            dirName = sorted(p.iterdir())[0]
+            metadataJsonFile = dirName.joinpath(METADATA_FILE)
+            if metadataJsonFile.is_file():
+                print(f'Found metadata file: {metadataJsonFile}')
+                metadata = json.loads(metadataJsonFile.read_bytes())
+                if len(sys.argv) > 1 and sys.argv[1] == 'simple':
+                    output = simplify(metadata)
+                elif len(sys.argv) > 1 and sys.argv[1] == 'tree':
+                    output = tree(metadata)
+                else:
+                    output = json.dumps(metadata, indent=2)
+                outfile.write(f'```\n {output}\n```\n')
     outfile.close()

@@ -3,7 +3,7 @@ Its home is at: https://github.com/PASTA-ELN
 
 ### PASTA.eln
 ```
-ro-crate-metadata.json
+ ro-crate-metadata.json
   publisher: PASTA ELN
   version: 1.0
 ./
