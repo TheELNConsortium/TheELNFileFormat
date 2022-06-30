@@ -2,6 +2,7 @@
 import os, shutil, json, sys
 from zipfile import ZipFile, ZIP_DEFLATED
 
+
 def simplify(metadata):
   """
   simplify metadata by removing everything except @id, @type, hasPart
@@ -25,14 +26,14 @@ def tree(metadata):
     # find next node to process
     newNode = [i for i in metadata['@graph'] if '@id' in i and i['@id']==part['@id']]
     if len(newNode)==1:
-      newNode = newNode[0]
-      subparts = newNode.pop('hasPart') if 'hasPart' in newNode else []
+      subparts = newNode[0].pop('hasPart') if 'hasPart' in newNode[0] else []
       if len(subparts)>0:  #don't do if no subparts: measurements, ...
         for subpart in subparts:
           output += processPart(subpart, level+1)
+    # # if final leaf node described in hasPart
+    # elif len(part)>1:
+    #   output += prefix+part['@id']+'  '+part['@type']+'\n'
     return output
-
-  ######################
   #main tree-function
   graph = metadata["@graph"]
   #find information from master node
@@ -66,10 +67,9 @@ if __name__ == '__main__':
           metadata = json.loads(elnFile.read(dirName+'/ro-crate-metadata.json'))
           if len(sys.argv)>1 and sys.argv[1]=='simple':
             output = simplify(metadata)
-          if len(sys.argv)>1 and sys.argv[1]=='tree':
+          elif len(sys.argv)>1 and sys.argv[1]=='tree':
             output = tree(metadata)
           else:
             output = json.dumps(metadata, indent=2)
           outfile.write('```\n'+output+'\n```\n\n')
   outfile.close()
-

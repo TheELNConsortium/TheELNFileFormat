@@ -12,17 +12,23 @@ ro-crate-metadata.json
     |-> x-0e5f8c281756d8ea47c016e30905d78d
         |-> m-2e7e1df25949a2b428ec5b2d497e283c
             |-> __thumbnails__/m-2e7e1df25949a2b428ec5b2d497e283c.png
+            |-> __thumbnails__/m-2e7e1df25949a2b428ec5b2d497e283c.png  File
     |-> x-bbd1648e7ecf9134d77051c185b2b90a
         |-> m-bb4c8d7a80845f407fafefd274139d0d
             |-> __thumbnails__/m-bb4c8d7a80845f407fafefd274139d0d.svg
+            |-> __thumbnails__/m-bb4c8d7a80845f407fafefd274139d0d.svg  File
         |-> m-c52a2913e22c737d7f6a671d2ba2a351
             |-> __thumbnails__/m-c52a2913e22c737d7f6a671d2ba2a351.svg
+            |-> __thumbnails__/m-c52a2913e22c737d7f6a671d2ba2a351.svg  File
     |-> p-64ed5008b3b7e86557e7fce9466836e3
     |-> p-995a1afeba44ee6ed6d547e3f35a3c04
     |-> s-2059520ee3b4157856d1153401ff782c
 |-> IntermetalsAtInterfaces/002_SEMImages/Zeiss.tif
+|-> IntermetalsAtInterfaces/002_SEMImages/Zeiss.tif  File
 |-> IntermetalsAtInterfaces/003_Nanoindentation/RobinSteel0000LC.txt
+|-> IntermetalsAtInterfaces/003_Nanoindentation/RobinSteel0000LC.txt  File
 |-> IntermetalsAtInterfaces/003_Nanoindentation/1500nmXX 5 7074 -4594.txt
+|-> IntermetalsAtInterfaces/003_Nanoindentation/1500nmXX 5 7074 -4594.txt  File
 
 ```
 
