@@ -74,18 +74,12 @@ def tree(metadata):
 
 
 if __name__ == '__main__':
-    argparser = argparse.ArgumentParser(usage='''
-eln2md.py [-d directory] [-f format]
-
-with:
-    -d --directory: directory path to use for parsing; defaults to '.'
-    -f --format   : output format, possible choices 'full', 'short', 'tree'; defaults to 'full'
-''')
+    argparser = argparse.ArgumentParser(usage="eln2md.py [-d directory] [-f format]")
     argparser.add_argument('-d','--directory',
-        help='directory path to use for parsing',
+        help='directory path to use for parsing; defaults to .',
         default='.')
     argparser.add_argument('-f','--format',
-        help='output format, possible choices "full", "short", "tree"',
+        help='output format: "full", "short", "tree"; defaults to full',
         default='full')
     args = argparser.parse_args()
 
