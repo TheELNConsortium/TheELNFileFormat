@@ -2,6 +2,7 @@
 import json
 import shutil
 import sys
+import argparse
 from pathlib import Path
 from zipfile import ZIP_DEFLATED
 from zipfile import Path as ZPath
@@ -17,7 +18,7 @@ def simplify(metadata):
     simplify metadata by removing everything except @id, @type, hasPart
     """
     for item in metadata['@graph']:
-        if item['@id'] in ['ro-crate-metadata.json', './']:
+        if item['@id'] in [METADATA_FILE, './']:
             continue
         for subitem in [i for i in item]:
             if subitem not in ['@id', '@type', 'hasPart']:
@@ -53,8 +54,8 @@ def tree(metadata):
     # main tree-function
     graph = metadata["@graph"]
     # find information from master node
-    rocrateNode = [i for i in graph if i["@id"] == "ro-crate-metadata.json"][0]
-    output = 'ro-crate-metadata.json\n'
+    rocrateNode = [i for i in graph if i["@id"] == METADATA_FILE][0]
+    output = METADATA_FILE+'\n'
     if 'sdPublisher' in rocrateNode:
         output += '  publisher: ' + rocrateNode['sdPublisher']['name'] + '\n'
     if 'version' in rocrateNode:
@@ -65,18 +66,29 @@ def tree(metadata):
     for part in mainNode['hasPart']:
         output += processPart(
             part, 1
-        )  # TODO_P2 first child should get elnName and version
+        )
     return output
 
 
 if __name__ == '__main__':
-    cwd = Path('.')
+    argparser = argparse.ArgumentParser(usage='''
+eln2md.py [-d directory] [-f format]
+
+with:
+    -d --directory: directory path to use for parsing; defaults to '.'
+    -f --format   : output format, possible choices 'full', 'short', 'tree'; defaults to 'full'
+''')
+    argparser.add_argument('-d','--directory', help='directory path to use for parsing', default='.')
+    argparser.add_argument('-f','--format',    help='output format, possible choices "full", "short", "tree"', default='full')
+    args = argparser.parse_args()
+
+    cwd = Path(args.directory)
     readme = cwd.joinpath(README_FILE)
     # start by deleting the old one so we don't append to it
     readme.unlink(missing_ok=True)
     # copy the template (header) if it exists
     if cwd.joinpath(TEMPLATE_FILE).is_file():
-        shutil.copy(TEMPLATE_FILE, README_FILE)
+        shutil.copy(cwd.joinpath(TEMPLATE_FILE), cwd.joinpath(README_FILE))
 
     outfile = readme.open('a')
 
@@ -91,11 +103,13 @@ if __name__ == '__main__':
             if metadataJsonFile.is_file():
                 print(f'Found metadata file: {metadataJsonFile}')
                 metadata = json.loads(metadataJsonFile.read_bytes())
-                if len(sys.argv) > 1 and sys.argv[1] == 'simple':
+                if args.format == 'full':
+                    output = json.dumps(metadata, indent=2)
+                elif args.format == 'short':
                     output = simplify(metadata)
-                elif len(sys.argv) > 1 and sys.argv[1] == 'tree':
+                elif args.format == 'tree':
                     output = tree(metadata)
                 else:
-                    output = json.dumps(metadata, indent=2)
+                    print("**ERROR: unknown format")
                 outfile.write(f'```\n {output}\n```\n')
     outfile.close()
