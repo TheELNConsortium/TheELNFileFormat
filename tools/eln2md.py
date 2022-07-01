@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
+""" Append ro-crate-metadata.json to end of README.md """
 import json
 import shutil
-import sys
 import argparse
 from pathlib import Path
 from zipfile import ZIP_DEFLATED
@@ -20,31 +20,34 @@ def simplify(metadata):
     for item in metadata['@graph']:
         if item['@id'] in [METADATA_FILE, './']:
             continue
-        for subitem in [i for i in item]:
+        for subitem in [i for i in item]: # pylint: disable=unnecessary-comprehension
             if subitem not in ['@id', '@type', 'hasPart']:
                 del item[subitem]
     return json.dumps(metadata, indent=2)
 
 
 def tree(metadata):
-    def processPart(part, level):
+    """
+    use metadata to create hierarchical tree struction in ascii
+    """
+    def process_part(part, level):
         """
         recursive function call to process this node
         """
         prefix = '    ' * (level - 1) + '|-> '
         output = prefix + part['@id']
         # find next node to process
-        newNode = [
+        new_node = [
             i for i in metadata['@graph'] if '@id' in i and i['@id'] == part['@id']
         ]
-        if len(newNode) == 1:
+        if len(new_node) == 1:
             output += (
-                ',  items: ' + str(len(newNode[0]) - 1) + ' \n'
+                ',  items: ' + str(len(new_node[0]) - 1) + ' \n'
             )  # -1 because @id is not counted
-            subparts = newNode[0].pop('hasPart') if 'hasPart' in newNode[0] else []
+            subparts = new_node[0].pop('hasPart') if 'hasPart' in new_node[0] else []
             if len(subparts) > 0:  # don't do if no subparts: measurements, ...
                 for subpart in subparts:
-                    output += processPart(subpart, level + 1)
+                    output += process_part(subpart, level + 1)
         else:
             output += (
                 ',  items: ' + str(len(part) - 1) + '\n'
@@ -54,17 +57,17 @@ def tree(metadata):
     # main tree-function
     graph = metadata["@graph"]
     # find information from master node
-    rocrateNode = [i for i in graph if i["@id"] == METADATA_FILE][0]
+    ro_crate_node = [i for i in graph if i["@id"] == METADATA_FILE][0]
     output = METADATA_FILE+'\n'
-    if 'sdPublisher' in rocrateNode:
-        output += '  publisher: ' + rocrateNode['sdPublisher']['name'] + '\n'
-    if 'version' in rocrateNode:
-        output += '  version: ' + rocrateNode['version'] + '\n'
-    mainNode = [i for i in graph if i["@id"] == "./"][0]
+    if 'sdPublisher' in ro_crate_node:
+        output += '  publisher: ' + ro_crate_node['sdPublisher']['name'] + '\n'
+    if 'version' in ro_crate_node:
+        output += '  version: ' + ro_crate_node['version'] + '\n'
+    main_node = [i for i in graph if i["@id"] == "./"][0]
     output += './\n'
     # iteratively go through list
-    for part in mainNode['hasPart']:
-        output += processPart(
+    for part in main_node['hasPart']:
+        output += process_part(
             part, 1
         )
     return output
@@ -78,8 +81,12 @@ with:
     -d --directory: directory path to use for parsing; defaults to '.'
     -f --format   : output format, possible choices 'full', 'short', 'tree'; defaults to 'full'
 ''')
-    argparser.add_argument('-d','--directory', help='directory path to use for parsing', default='.')
-    argparser.add_argument('-f','--format',    help='output format, possible choices "full", "short", "tree"', default='full')
+    argparser.add_argument('-d','--directory',
+        help='directory path to use for parsing',
+        default='.')
+    argparser.add_argument('-f','--format',
+        help='output format, possible choices "full", "short", "tree"',
+        default='full')
     args = argparser.parse_args()
 
     cwd = Path(args.directory)
@@ -102,14 +109,14 @@ with:
             metadataJsonFile = dirName.joinpath(METADATA_FILE)
             if metadataJsonFile.is_file():
                 print(f'Found metadata file: {metadataJsonFile}')
-                metadata = json.loads(metadataJsonFile.read_bytes())
+                metadataContent = json.loads(metadataJsonFile.read_bytes())
                 if args.format == 'full':
-                    output = json.dumps(metadata, indent=2)
+                    outputString = json.dumps(metadataContent, indent=2)
                 elif args.format == 'short':
-                    output = simplify(metadata)
+                    outputString = simplify(metadataContent)
                 elif args.format == 'tree':
-                    output = tree(metadata)
+                    outputString = tree(metadataContent)
                 else:
                     print("**ERROR: unknown format")
-                outfile.write(f'```\n {output}\n```\n')
+                outfile.write(f'```\n {outputString}\n```\n')
     outfile.close()
