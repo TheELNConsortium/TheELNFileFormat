@@ -112,5 +112,5 @@ if __name__ == '__main__':
                     outputString = tree(metadataContent)
                 else:
                     print("**ERROR: unknown format")
-                outfile.write(f'```\n {outputString}\n```\n')
+                outfile.write(f'```json\n {outputString}\n```\n')
     outfile.close()

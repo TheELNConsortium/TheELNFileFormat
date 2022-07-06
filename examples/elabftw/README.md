@@ -6,7 +6,7 @@
 * Chat: https://gitter.im/elabftw/elabftw
 
 ### multiple-database-items.eln
-```
+```json
  {
   "@context": "https://w3id.org/ro/crate/1.1/context",
   "@graph": [
@@ -118,7 +118,7 @@
 ```
 
 ### multiple-experiments.eln
-```
+```json
  {
   "@context": "https://w3id.org/ro/crate/1.1/context",
   "@graph": [
@@ -200,7 +200,7 @@
 ```
 
 ### single-database-item.eln
-```
+```json
  {
   "@context": "https://w3id.org/ro/crate/1.1/context",
   "@graph": [
@@ -273,7 +273,7 @@
 ```
 
 ### single-experiment.eln
-```
+```json
  {
   "@context": "https://w3id.org/ro/crate/1.1/context",
   "@graph": [
