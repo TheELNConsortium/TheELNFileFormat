@@ -34,7 +34,7 @@ def tree(metadata):
         """
         recursive function call to process this node
         """
-        prefix = '    ' * (level - 1) + '|-> '
+        prefix = '    '*level + '- '
         output = prefix + part['@id']
         # find next node to process
         new_node = [
@@ -58,13 +58,13 @@ def tree(metadata):
     graph = metadata["@graph"]
     # find information from master node
     ro_crate_node = [i for i in graph if i["@id"] == METADATA_FILE][0]
-    output = METADATA_FILE+'\n'
+    output = '- '+METADATA_FILE+'\n'
     if 'sdPublisher' in ro_crate_node:
-        output += '  publisher: ' + ro_crate_node['sdPublisher']['name'] + '\n'
+        output += '    - publisher: ' + ro_crate_node['sdPublisher']['name'] + '\n'
     if 'version' in ro_crate_node:
-        output += '  version: ' + ro_crate_node['version'] + '\n'
+        output += '    - version: ' + ro_crate_node['version'] + '\n'
     main_node = [i for i in graph if i["@id"] == "./"][0]
-    output += './\n'
+    output += '- ./\n'
     # iteratively go through list
     for part in main_node['hasPart']:
         output += process_part(
@@ -94,7 +94,7 @@ if __name__ == '__main__':
     outfile = readme.open('a')
 
     for fileName in cwd.glob('*.eln'):
-        outfile.write(f'\n### {fileName}\n')
+        outfile.write(f'\n### {fileName.name}\n')
         with ZipFile(fileName, 'r', compression=ZIP_DEFLATED) as elnFile:
             # use the exposed Path from ziplib
             p = ZPath(elnFile)
@@ -106,11 +106,13 @@ if __name__ == '__main__':
                 metadataContent = json.loads(metadataJsonFile.read_bytes())
                 if args.format == 'full':
                     outputString = json.dumps(metadataContent, indent=2)
+                    outfile.write(f'```json\n{outputString}\n```\n')
                 elif args.format == 'short':
                     outputString = simplify(metadataContent)
+                    outfile.write(f'```json\n{outputString}\n```\n')
                 elif args.format == 'tree':
                     outputString = tree(metadataContent)
+                    outfile.write(f'```yml\n{outputString}\n```\n')
                 else:
                     print("**ERROR: unknown format")
-                outfile.write(f'```json\n {outputString}\n```\n')
     outfile.close()
