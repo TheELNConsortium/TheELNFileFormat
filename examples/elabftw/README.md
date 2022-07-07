@@ -13,6 +13,88 @@ The comments are in the `comment` property.
 
 A file `elabftw-export.json` is created during export and added to the archive, it corresponds to the JSON export on the entry by eLabFTW and might contain fields that are not present in the metadata file because too specific to eLabFTW.
 
+### experiment-template.eln
+```json
+ {
+  "@context": "https://w3id.org/ro/crate/1.1/context",
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "about": {
+        "@id": "./"
+      },
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.1"
+      },
+      "dateCreated": "2022-07-07T03:44:57+0200",
+      "sdPublisher": {
+        "@type": "Organization",
+        "name": "eLabFTW",
+        "logo": "https://www.elabftw.net/img/elabftw-logo-only.svg",
+        "slogan": "A free and open source electronic lab notebook.",
+        "url": "https://www.elabftw.net",
+        "parentOrganization": {
+          "@type": "Organization",
+          "name": "Deltablot",
+          "logo": "https://www.deltablot.com/img/logos/deltablot.svg",
+          "slogan": "Open Source software for research labs.",
+          "url": "https://www.deltablot.com"
+        }
+      },
+      "version": "1.0"
+    },
+    {
+      "@id": "./Experiment template - Experiment-template-possibly-a-protocol - 09a86f57/export-elabftw.json",
+      "@type": "File",
+      "description": "JSON export",
+      "name": "export-elabftw.json",
+      "contentType": "application/json",
+      "contentSize": "2640",
+      "sha256": "be7abce0e9b47bd508310d819a0a6ced4f9f09904b60eb6a0cf296cb978e891f"
+    },
+    {
+      "@id": "./Experiment template - Experiment-template-possibly-a-protocol - 09a86f57",
+      "@type": "Dataset",
+      "author": {
+        "@type": "Person",
+        "familyName": "Le sysadmin",
+        "givenName": "Toto",
+        "identifier": "https://orcid.org/0000-0012-3456-7890"
+      },
+      "dateCreated": "2022-06-16T12:00:57+0200",
+      "dateModified": "2022-07-07T03:37:54+0200",
+      "identifier": "",
+      "comment": [],
+      "keywords": [
+        "a tag",
+        "another tag"
+      ],
+      "name": "Experiment template (possibly a protocol)",
+      "text": "<p>But do cats eat bats?' and sometimes, 'Do bats eat cats?' for, you see, as they all moved off, and found that it would be wasting our breath.\" \"I'll be judge, I'll be jury,\" Said cunning old Fury: \"I'll try the experiment?' 'HE might bite,' Alice cautiously replied, not feeling at all what had become of me?' Luckily for Alice, the little magic bottle had now had its full effect, and she hurried out of his teacup and bread-and-butter, and then said 'The fourth.' 'Two days wrong!' sighed the Lory, with a sudden leap out of their hearing her; and the little golden key, and unlocking the door as you are; secondly, because she was surprised to see the Queen. 'It proves nothing of the March Hare went 'Sh! sh!' and the poor child, 'for I can't tell you more than Alice could see, as she could do to hold it. As soon as look at the Queen, and Alice, were in custody and under sentence of execution. Then the Queen merely remarking that a red-hot poker will burn you if you cut your finger VERY.</p>\n<h1>Protocol</h1>\n<ol>\n<li>Yep</li>\n<li>Yop</li>\n<li>Yap</li>\n</ol>\n<h1>Results</h1>\n<table style=\"border-collapse:collapse;width:100%;\">\n\n<tr>\n<td style=\"width:33.133%;\">Sample ID</td>\n<td style=\"width:33.133%;\">Concentration (mM)</td>\n<td style=\"width:33.133%;\">Purity (%)</td>\n</tr>\n<tr>\n<td style=\"width:33.133%;\">\u00a0</td>\n<td style=\"width:33.133%;\">\u00a0</td>\n<td style=\"width:33.133%;\">\u00a0</td>\n</tr>\n<tr>\n<td style=\"width:33.133%;\">\u00a0</td>\n<td style=\"width:33.133%;\">\u00a0</td>\n<td style=\"width:33.133%;\">\u00a0</td>\n</tr>\n<tr>\n<td style=\"width:33.133%;\">\u00a0</td>\n<td style=\"width:33.133%;\">\u00a0</td>\n<td style=\"width:33.133%;\">\u00a0</td>\n</tr>\n\n</table>",
+      "url": "https://elab.local:3148/.php?mode=view&id=833",
+      "hasPart": [
+        {
+          "@id": "./Experiment template - Experiment-template-possibly-a-protocol - 09a86f57/export-elabftw.json"
+        }
+      ],
+      "mentions": []
+    },
+    {
+      "@id": "./",
+      "@type": [
+        "Dataset"
+      ],
+      "hasPart": [
+        {
+          "@id": "./Experiment template - Experiment-template-possibly-a-protocol - 09a86f57"
+        }
+      ]
+    }
+  ]
+}
+```
+
 ### multiple-database-items.eln
 ```json
  {
