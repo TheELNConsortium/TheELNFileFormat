@@ -13,6 +13,7 @@ import networkx as nx
 import matplotlib.pyplot as plt
 from rocrate.rocrate import ROCrate
 from rocrate.model.entity import Entity
+from rocrate.model.contextentity import ContextEntity
 
 METADATA_FILE = 'ro-crate-metadata.json'
 
@@ -73,11 +74,15 @@ if __name__ == '__main__':
                         continue
                     if not isinstance(parts, list):
                         parts = [parts]
+                    #https://github.com/ResearchObject/ro-crate-py/issues/131#issuecomment-1179064351
+                    local = isinstance(e, ContextEntity)
                     for p in parts:
                         if isinstance(p, Entity):
-                            g.add_edge(e.id[1:] if e.id.startswith('#') else e.id, p.id)
+                            g.add_edge(e.id[1:] if local else e.id, \
+                                p.id)
                         elif isinstance(p, str):
-                            g.add_edge(e.id[1:] if e.id.startswith('#') else e.id, p)
+                            g.add_edge(e.id[1:] if local else e.id,\
+                                 p)
                 if isinstance(args.layout, str):
                     if args.layout in ['circular', 'kamada_kawai', 'random', 'spectral', 'spring', 'shell']:
                         pos = getattr(nx, args.layout+'_layout')(g)
