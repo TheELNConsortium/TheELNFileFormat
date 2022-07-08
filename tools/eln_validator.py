@@ -9,7 +9,10 @@ from pathlib import Path
 from zipfile import ZIP_DEFLATED
 from zipfile import Path as ZPath
 from zipfile import ZipFile
+import networkx as nx
+import matplotlib.pyplot as plt
 from rocrate.rocrate import ROCrate
+from rocrate.model.entity import Entity
 
 METADATA_FILE = 'ro-crate-metadata.json'
 
@@ -42,6 +45,10 @@ if __name__ == '__main__':
         help='directory path to use for parsing; defaults to .',
         default='.')
     argparser.add_argument('-v', '--verbose', help='verbose output', action='store_true')
+    argparser.add_argument('-l','--layout',
+        help='create png-image with this layout. No output if None. Valid layouts: circular, '+\
+             'kamada_kawai, random, spectral, spring, shell',
+        default=None)
     args = argparser.parse_args()
     cwd = Path(args.directory)
     for fileName in cwd.glob('*.eln'):
@@ -55,10 +62,29 @@ if __name__ == '__main__':
                 elnFile.extractall(dirpath)
                 temppath= dirpath.joinpath(dirName.name)
                 crate = ROCrate(temppath)
+                g = nx.DiGraph()
                 if args.verbose:
                     print('\nList content according to https://pypi.org/project/rocrate/')
-                    for e in crate.get_entities():
+                for e in crate.get_entities():
+                    if args.verbose:
                         print(e.id, e.type)
+                    parts = e.get("hasPart")
+                    if not parts:
+                        continue
+                    if not isinstance(parts, list):
+                        parts = [parts]
+                    for p in parts:
+                        if isinstance(p, Entity):
+                            g.add_edge(e.id[1:] if e.id.startswith('#') else e.id, p.id)
+                        elif isinstance(p, str):
+                            g.add_edge(e.id[1:] if e.id.startswith('#') else e.id, p)
+                if isinstance(args.layout, str):
+                    if args.layout in ['circular', 'kamada_kawai', 'random', 'spectral', 'spring', 'shell']:
+                        pos = getattr(nx, args.layout+'_layout')(g)
+                        # pos = nx.circular_layout(g)
+                        nx.draw(g, pos=pos)
+                        nx.draw_networkx_labels(g, pos=pos, font_size=8)
+                        plt.savefig(fileName.parent.joinpath(fileName.stem+'.png'))
                 shutil.rmtree(dirpath)
             except:
                 print("**ERROR: Could not parse content\n"+traceback.format_exc()+'\n\n')

@@ -1,30 +1,33 @@
 ## PASTA ELN
 Its home is at: https://github.com/PASTA-ELN
 
+Here is a graph view of the example
+![](PASTA.png)
+
 ### PASTA.eln
 ```yml
 - ro-crate-metadata.json
     - publisher: PASTA ELN
     - version: 1.0
 - ./
-    - x-53aba5f722317fab45ac4d4d4c8ecff2,  items: 12 
-        - x-d1066d9d228fda982f8fd1e874889d70,  items: 9 
-        - x-5a0f90689061f785f28f951056f4a91d,  items: 10 
-            - x-622866434a834f895e48e67d23f94212,  items: 10 
-            - x-7d804bfea8b0fd462851b80aab8becb3,  items: 9 
-        - x-2b5e854ba0299f62b03384f5deccd2bc,  items: 10 
-            - m-ff875e8d881317bd2f46a1d2bd2cc418,  items: 13 
-                - __thumbnails__/m-ff875e8d881317bd2f46a1d2bd2cc418.png,  items: 1
-        - x-6dab8b7a703058c9cecf15341c1fe591,  items: 10 
-            - m-44311da3c65ebbf7ca9c9267d519d6d6,  items: 13 
-                - __thumbnails__/m-44311da3c65ebbf7ca9c9267d519d6d6.svg,  items: 1
-            - m-9349ddcde47659037a018450a26d49c4,  items: 13 
-                - __thumbnails__/m-9349ddcde47659037a018450a26d49c4.svg,  items: 1
-        - p-1f9ffffa6198d7e288932f410877b12e,  items: 13 
-        - p-c8bf8e3f3d065bcbb8b9b38fab12a317,  items: 13 
-        - s-383aa8593cc21b7c48bc21d0d3d49ce9,  items: 11 
-    - IntermetalsAtInterfaces/002_SEMImages/Zeiss.tif,  items: 1
-    - IntermetalsAtInterfaces/003_Nanoindentation/RobinSteel0000LC.txt,  items: 1
-    - IntermetalsAtInterfaces/003_Nanoindentation/1500nmXX 5 7074 -4594.txt,  items: 1
+    - x-3918f00813c500bf961f5d0c04e5aa1e,  items: 13 
+        - x-8a3b5f4cc098c25ec59b71c5858f6afb,  items: 10 
+        - x-243343e2687e6bc4ca5c379d3d646e28,  items: 11 
+            - x-59ce85c9e4b06ed170dab405edd76d43,  items: 11 
+            - x-a4bc8ea653137249d7a8229a06a07bd8,  items: 10 
+        - x-21214a87ec0abce35757199f1bec6eaa,  items: 11 
+            - m-39d41c830ecd76a213f41e8d65ec4cda,  items: 14 
+                - __thumbnails__/m-39d41c830ecd76a213f41e8d65ec4cda.png,  items: 1 
+        - x-c6ec66df3f26b4775f593d1897836ea5,  items: 11 
+            - m-29329dc83441632139e73b97a1b790d1,  items: 14 
+                - __thumbnails__/m-29329dc83441632139e73b97a1b790d1.svg,  items: 1 
+            - m-e180bacd2f886f5193d924c958e3d60c,  items: 14 
+                - __thumbnails__/m-e180bacd2f886f5193d924c958e3d60c.svg,  items: 1 
+        - p-23183348077d0ce95ddd9ef2dc234976,  items: 14 
+        - p-eabd1b99d6f69d15d2411a9bfa1ff8f2,  items: 14 
+        - s-118fb5b252c532e30a5a7f003c183e2f,  items: 12 
+    - IntermetalsAtInterfaces/002_SEMImages/Zeiss.tif,  items: 1 
+    - IntermetalsAtInterfaces/003_Nanoindentation/RobinSteel0000LC.txt,  items: 1 
+    - IntermetalsAtInterfaces/003_Nanoindentation/1500nmXX 5 7074 -4594.txt,  items: 1 
 
 ```
