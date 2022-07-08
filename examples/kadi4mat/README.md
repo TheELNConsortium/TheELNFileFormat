@@ -30,7 +30,7 @@ The following table is the mapping of Kadi4Mat concepts to the base metadata sta
 |  tags                 | keywords                 |
 |  Resource Title       | name                     |
 |  Resource Identifier  | identifier               |
-|  Resource Description | description              |
+|  Resource Description | text                     |
 
 ### collections-example.eln
 ```json
@@ -61,108 +61,165 @@ The following table is the mapping of Kadi4Mat concepts to the base metadata sta
             "@type": [
                 "Dataset"
             ],
-            "description": "Group of records(as folders) that are part of the collection in Kadi4Mat.",
             "hasPart":[
                 {
-                    "@id": "./Characterization-of-a-Sample/"
+                    "@id": "./characterization-of-a-sample/"
                 },
                 {
-                    "@id":"./Generated-files-during-experiment/"
+                    "@id":"./generated-files-during-experiment/"
                 },
                 {
-                    "@id" :"./Instrument-used-in-experiment/"
+                    "@id" :"./instrument-used-in-experiment/"
                 },
                 {
-                    "@id":"./Scripts-used-in-the-experiment/"
+                    "@id":"./scripts-used-in-the-experiment/"
                 }
             ]
         },
         {
-            "@id":"./Characterization-of-a-Sample/",
+            "@id":"./characterization-of-a-sample/",
             "@type": "Dataset",
-            "name": "A record with an example characterization experiment.",
+            "identifier": "characterization-of-a-sample",
+            "keywords":[
+                "characterization",
+                "mechanical properties"
+              ],
+            "name": "Characterization of a Sample",
+            "text": "Some information about the instrument used in a process and other metadata like owner of the instrument etc.",
             "hasPart":[
                 {
-                    "@id":"./Characterization-of-a-Sample/characterization-of-a-sample.json"
+                    "@id":"./characterization-of-a-sample/characterization-of-a-sample.json"
                 },
                 {
-                    "@id": "./Characterization-of-a-Sample/characterization-of-a-sample.pdf"
+                    "@id": "./characterization-of-a-sample/characterization-of-a-sample.pdf"
                 }
-                
+               
             ]
         },
         {
-            "@id":"./Characterization-of-a-Sample/characterization-of-a-sample.json",
+            "@id":"./characterization-of-a-sample/characterization-of-a-sample.json",
             "@type": "File",
             "description": "JSON export.",
-            "encodingFormat": "application/json"
+            "encodingFormat": "application/json",
+            "name": "characterization-of-a-sample.json"
         },
         {
-            "@id":"./Characterization-of-a-Sample/characterization-of-a-sample.pdf",
+            "@id":"./characterization-of-a-sample/characterization-of-a-sample.pdf",
             "@type": "File",
             "description": "PDF export.",
-            "encodingFormat": "application/pdf"
+            "encodingFormat": "application/pdf",
+            "name": "characterization-of-a-sample.pdf"
         },
         {
-            "@id":"./Generated-files-during-experiment/",
+            "@id":"./generated-files-during-experiment/",
             "@type": "Dataset",
-            "name": "Some example files generated during the experiment.",
+            "identifier": "generated-files-during-experiment",
+            "keywords": [
+                "measurements"
+            ],
+            "name": "Generated files during experiment",
+            "text": "Some example files generated during the experiment.",
             "hasPart": [
                 {
-                    "@id":"./Generated-files-during-experiment/Test_experiment.csv"
-                }
-            ]
-        },
-        {
-            "@id":"./Generated-files-during-experiment/Test_experiment.csv",
-            "@type": "File",
-            "encodingFormat": "text/csv",
-            "sha256": "0e2d934f40d7fdc2863c3434027d5ddf83225beac9af5b716a63420c7050d2c0"
-        },
-        {
-            "@id":"./Instrument-used-in-experiment/",
-            "@type": "Dataset",
-            "name": "Instrument related information.",
-            "description": "Related files attached in the current record.",
-            "hasPart":[
-                {
-                    "@id" : "./Instrument-used-in-experiment/zeiss_gemini_360_microscope.jpeg"
+                    "@id":"./generated-files-during-experiment/Test_experiment.csv"
                 },
                 {
-                    "@id": "./Instrument-used-in-experiment/Product-flyer_GeminiSEM_360.pdf"
+                    "@id":"./generated-files-during-experiment/generated-files-during-experiment.json"
                 }
             ]
         },
         {
-            "@id" : "./Instrument-used-in-experiment/zeiss_gemini_360_microscope.jpeg",
+            "@id":"./generated-files-during-experiment/Test_experiment.csv",
             "@type": "File",
-            "name": "Zeiss GeminiSEM 360",
-            "encodingFormat": "image/jpeg",
-            "sha256": "ba8b6d49daccf711dbf715df9f83fb311aaa1a319b5735ce2a0a5761f61a029d"
+            "encodingFormat": "text/csv",
+            "contentSize": "87",
+            "identifier": "688f6cf2-4a51-4fa1-8b07-db77ddcd9f74",
+            "name": "Test_experiment.csv"
         },
         {
-            "@id": "./Instrument-used-in-experiment/Product-flyer_GeminiSEM_360.pdf",
-            "@type":"File",
-            "name": "Product Flyer",
-            "description": "Detailed information about the technical specifications of Zeiss GeminiSEM 360.",
-            "encodingFormat": "application/pdf",
-            "sha256": "e073424647390ad772eb724112cdad8167961a98ae3a5e4c47c4f3a1cbc32c9d"
+            "@id":"../generated-files-during-experiment/generated-files-during-experiment.json",
+            "@type": "File",
+            "description": "JSON export.",
+            "encodingFormat": "application/json",
+            "name": "generated-files-during-experiment.json"
         },
         {
-            "@id":"./Scripts-used-in-the-experiment/",
+            "@id":"./instrument-used-in-experiment/",
             "@type": "Dataset",
-            "name": "Scripts used in the experiment.",
+            "identifier": "instrument-used-in-experiment",
+            "keywords":[
+                "high-resolution electron microscopy",
+                "instrument"
+              ],
+            "name": "Instrument used in experiment",
+            "text": "Information related to the instrument used in the experiment.",
             "hasPart":[
                 {
-                    "@id": "./Scripts-used-in-the-experiment/test_script.py"
+                    "@id" : "./instrument-used-in-experiment/zeiss_gemini_360_microscope.jpeg"
+                },
+                {
+                    "@id": "./instrument-used-in-experiment/Product-flyer_GeminiSEM_360.pdf"
+                },
+                {
+                    "@id": "./instrument-used-in-experiment/instrument-used-in-experiment.json"
                 }
             ]
         },
         {
-            "@id": "./Scripts-used-in-the-experiment/test_script.py",
+            "@id" : "./instrument-used-in-experiment/zeiss_gemini_360_microscope.jpeg",
             "@type": "File",
+            "contentSize": "37414",
+            "encodingFormat": "image/jpeg",
+            "identifier": "fa134da2-71d2-4ac5-ad8b-00f4c7e2cdad",
+            "name": "zeiss_gemini_360_microscope.jpeg"
+        },
+        {
+            "@id": "./instrument-used-in-experiment/Product-flyer_GeminiSEM_360.pdf",
+            "@type":"File",
+            "contentSize": "2415711",
+            "encodingFormat": "application/pdf",
+            "identifier": "68396f45-dd7e-464f-9ead-2135af92bee8",
+            "name": "Product-flyer_GeminiSEM_360.pdf"
+        },
+        {
+            "@id": "./instrument-used-in-experiment/instrument-used-in-experiment.json",
+            "@type": "File",
+            "description": "JSON export.",
+            "encodingFormat": "application/json",
+            "name": "instrument-used-in-experiment.json"
+        },
+        {
+            "@id":"./scripts-used-in-the-experiment/",
+            "@type": "Dataset",
+            "identifier": "scripts-used-in-the-experiment",
+            "keywords": [
+                "script",
+                "python"
+            ],
+            "name": "Scripts used in the experiment",
+            "hasPart":[
+                {
+                    "@id": "./scripts-used-in-the-experiment/test_script.py"
+                },
+                {
+                    "@id": "./scripts-used-in-the-experiment/scripts-used-in-the-experiment.json"
+                }
+            ]
+        },
+        {
+            "@id": "./scripts-used-in-the-experiment/test_script.py",
+            "@type": "File",
+            "contentSize": "55",
             "encodingFormat": "text/x-python",
-            "sha256": "d768da9010dc334c86d9a936a872dc5c5c2f496072e0d90d349540326799453b"
+            "identifier": "923d7189-81a5-4e31-9517-efb619226a11",
+            "name": "test_script.py"
+        },
+        {
+            "@id": "./scripts-used-in-the-experiment/scripts-used-in-the-experiment.json",
+            "@type": "File",
+            "description": "JSON export.",
+            "encodingFormat": "application/json",
+            "name": "scripts-used-in-the-experiment.json"
         }
     ]
 }
@@ -198,23 +255,27 @@ The following table is the mapping of Kadi4Mat concepts to the base metadata sta
             "@type": [
                 "Dataset"
             ],
-            "description": "A single record in Kadi4Mat.",
             "hasPart":[
                 {
                     "@id": "./sample-record/"
                 }
-                
             ]
         },
         {
             "@id": "./sample-record/",
             "@type": "Dataset",
-            "name": "sample-record",
             "author": {
                 "@type": "Person",
                 "familyName": "Mustermann",
                 "givenName": "Max"
             },
+            "identifier" :"sample-record",
+            "keywords": [
+                "characterization",
+                "experiment"
+              ],
+            "name": "Sample Record",
+            "text": "A single record in Kadi4Mat.",
             "hasPart":[
                 {
                     "@id": "./sample-record/example.csv"
@@ -236,43 +297,40 @@ The following table is the mapping of Kadi4Mat concepts to the base metadata sta
         {
             "@id": "./sample-record/example.csv",
             "@type": "File",
-            "name": "example.csv",
-            "description": "Some example CSV file saved in a record.",
-            "encodingFormat": "text/csv",
             "contentSize": "151",
-            "sha256": "96d583afd10a85fd1c1a8c5fab1af52a0bc515f769377b2253fc16883646dd70"
+            "encodingFormat": "text/csv",
+            "identifier": "1049f570-2525-4ee9-b502-0a678e555c88",
+            "name": "example.csv"
         },
         {
             "@id": "./sample-record/example.txt",
             "@type": "File",
-            "name": "example.txt",
-            "description": "Some example Text file saved in a record.",
-            "encodingFormat": "text/plain",
             "contentSize": "93",
-            "sha256": "6648775a9dbb1a493d67849c703b2f493bff94a6b4bab1348bd55d64e8894460"
+            "encodingFormat": "text/plain",
+            "identifier": "29ef5432-220c-4643-8e69-32bda6c4436f",
+            "name": "example.txt"
         },
         {
             "@id": "./sample-record/sample-record.json",
             "@type": "File",
-            "name": "sample-record.json",
             "description": "JSON Export",
-            "encodingFormat": "application/json"
+            "encodingFormat": "application/json",
+            "name": "sample-record.json"
         },
         {
             "@id": "./sample-record/sample-record.pdf",
             "@type": "File",
-            "name": "sample-record.pdf",
             "description": "PDF Export",
-            "encodingFormat": "application/pdf"
+            "encodingFormat": "application/pdf",
+            "name": "sample-record.pdf"
         },
         {
             "@id": "./sample-record/sample-record.png",
             "@type": "File",
-            "name": "sample-record.png",
             "description": "QR Export",
-            "encodingFormat": "image/png"
+            "encodingFormat": "image/png",
+            "name": "sample-record.png"
         }
-        
     ]
 }
 ```
