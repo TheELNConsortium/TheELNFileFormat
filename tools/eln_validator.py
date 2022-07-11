@@ -77,7 +77,7 @@ if __name__ == '__main__':
                         continue
                     if not isinstance(parts, list):
                         parts = [parts]
-                    #https://github.com/ResearchObject/ro-crate-py/issues/131#issuecomment-1179064351
+                    #hgithub.com/ResearchObject/ro-crate-py/issues/131#issuecomment-1179064351
                     local = isinstance(e, ContextEntity)
                     for p in parts:
                         if isinstance(p, Entity):
@@ -87,14 +87,15 @@ if __name__ == '__main__':
                             g.add_edge(e.id[1:] if local else e.id,\
                                  p)
                 if isinstance(args.layout, str):
-                    if args.layout in ['circular', 'kamada_kawai', 'random', 'spectral', 'spring', 'shell']:
+                    if args.layout in ['circular','kamada_kawai','random','spectral','spring',\
+                            'shell']:
                         pos = getattr(nx, args.layout+'_layout')(g)
                         # pos = nx.circular_layout(g)
                         nx.draw(g, pos=pos)
                         nx.draw_networkx_labels(g, pos=pos, font_size=8)
                         plt.savefig(fileName.parent.joinpath(fileName.stem+'.png'))
                 shutil.rmtree(dirpath)
-            except:
+            except ValueError:
                 print("**ERROR: Could not parse content\n"+traceback.format_exc()+'\n\n')
             ## Part 2: Custom .eln validation
             if args.verbose:
