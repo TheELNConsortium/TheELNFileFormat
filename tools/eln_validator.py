@@ -46,12 +46,15 @@ if __name__ == '__main__':
         help='directory path to use for parsing; defaults to .',
         default='.')
     argparser.add_argument('-v', '--verbose', help='verbose output', action='store_true')
+    argparser.add_argument('-c', '--count',   help='count of properties', action='store_true')
     argparser.add_argument('-l','--layout',
         help='create png-image with this layout. No output if None. Valid layouts: circular, '+\
              'kamada_kawai, random, spectral, spring, shell',
         default=None)
     args = argparser.parse_args()
     cwd = Path(args.directory)
+    if args.count:
+        counts = {}
     for fileName in cwd.glob('*.eln'):
         print(f'{fileName.name}')
         with ZipFile(fileName, 'r', compression=ZIP_DEFLATED) as elnFile:
@@ -109,3 +112,18 @@ if __name__ == '__main__':
             # iteratively go through list
             for partI in main_node['hasPart']:
                 process_part(partI)
+            if args.count:
+                for node in graph:
+                    if node['@id'] in ['./',METADATA_FILE]:
+                        continue
+                    for key in node.keys():
+                        if key in counts:
+                            counts[key] += 1
+                        else:
+                            counts[key] = 1
+    if args.count:
+        view = [ (v,k) for k,v in counts.items() ]
+        view.sort(reverse=True)
+        print('===== Counts ======')
+        for v,k in view:
+            print(f'  {k:15}: {v}')
