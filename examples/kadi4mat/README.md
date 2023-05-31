@@ -16,9 +16,7 @@
 
 ## Concepts used
 
-A file `{record_identifier}.json` is a JSON export of the record and is added to the archive during export. It contains the corresponding metadata specific to the record.
-
-Files `{record_identifier}.json`, `{record_identifier}.ttl` are JSON export and RDF (Turtle) exports of the record respectively. It contains the corresponding metadata specific to the record.
+Files `{record_identifier}.json`, and  `{record_identifier}.ttl` are JSON export and RDF (Turtle) export of the record respectively. It contains the corresponding metadata specific to the record.
 
 The actual content of the Record (i.e., Files) is stored in a separate folder `files` to prevent issues if a file with same name as JSON export file exists.
 
