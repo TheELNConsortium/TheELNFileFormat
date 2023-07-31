@@ -16,4 +16,4 @@ This file format was created for the needs of better interoperability between EL
 
 ## Status
 
-Pre-alpha.
+Generally working with some quirks here and there.
