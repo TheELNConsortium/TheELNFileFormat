@@ -107,6 +107,10 @@ Its type is an array of `Dataset` and `hasPart` which corresponds to the differe
 
 After that, all the other objects have an `@type` of either `Dataset` for directories or `File` for well..., files. And the `@id` corresponds to something in the `hasPart` of `./`.
 
+All objects (nodes) with an `@type` such as `Comment` or `Person` exist at the root node (once), and can be referenced via their `@id` in other parts.
+
+For instance, a "comment" on an experiment will exist as a `@type: Comment` node at the root node, and be referenced through its `@id` in the `comment` part of the experiment's node. See "Example Dataset with Comment" example below.
+
 #### Example Dataset
 
 ~~~json
@@ -114,10 +118,7 @@ After that, all the other objects have an `@type` of either `Dataset` for direct
     "@id": "./2022-05-29 - Some-experiment",
     "@type": "Dataset",
     "author": {
-      "@type": "Person",
-      "email": "bruce@wayne.com",
-      "familyName": "Wayne",
-      "givenName": "Bruce"
+      "@id": "./author/23"
     },
     "dateCreated": "2022-05-29 16:17:38",
     "dateModified": "2022-05-29 16:17:57",
@@ -141,6 +142,41 @@ After that, all the other objects have an `@type` of either `Dataset` for direct
 }
 ~~~
 
+#### Example Dataset with Comment
+
+Here we show three nodes, the Dataset (main experiment), a Comment and a Person. The Person leaving the Comment is the same as the author of the Dataset.
+
+~~~json
+{
+  "@id": "./some-unique-id/23",
+  "@type": "Dataset",
+  "author": {
+    "@id": "./some-author-id/44"
+  },
+  "dateCreated": "2023-09-23T01:02:26+02:00",
+  "dateModified": "2023-09-27T23:02:44+02:00",
+  "comment": [
+    {
+      "@id": "./some-comment-id/91"
+    }
+  ],
+ },
+{
+  "@id": "./some-comment-id/91",
+  "@type": "Comment",
+  "dateCreated": "2023-09-23T01:02:26+02:00",
+  "text": "This is the content of the comment.",
+  "author": {
+    "@id": "./some-author-id/44"
+  }
+},
+{
+   "@id": "./some-author-id/44"
+   "@type": "Person",
+   "familyName": "Tapie",
+   "givenName": "Bernard"
+}
+~~~
 
 ### Going further
 
