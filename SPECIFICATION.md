@@ -107,7 +107,7 @@ Its type is an array of `Dataset` and `hasPart` which corresponds to the differe
 
 After that, all the other objects have an `@type` of either `Dataset` for directories or `File` for well..., files. And the `@id` corresponds to something in the `hasPart` of `./`.
 
-All objects (nodes) with an `@type` such as `Comment` or `Person` exist at the root node (once), and can be referenced via their `@id` in other parts.
+All objects (nodes) with a `@type` such as `Comment` or `Person` exist at the root node (once), and can be referenced via their `@id` in other parts.
 
 For instance, a "comment" on an experiment will exist as a `@type: Comment` node at the root node, and be referenced through its `@id` in the `comment` part of the experiment's node. See "Example Dataset with Comment" example below.
 
