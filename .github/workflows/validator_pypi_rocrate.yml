@@ -20,6 +20,7 @@ jobs:
       - name: validate
         run: |
           import os
+          from pathlib import Path
           from zipfile import ZIP_DEFLATED
           from zipfile import Path as ZPath
           from zipfile import ZipFile
