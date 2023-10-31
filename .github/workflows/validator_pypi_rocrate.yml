@@ -29,6 +29,8 @@ jobs:
 
           for root, _, files in os.walk(".", topdown=False):
               for name in files:
+                  if not name.endswith('.eln'):
+                    continue
                   fileName = os.path.join(root, name)
                   print(f'Try to parse: {fileName}')
                   with ZipFile(fileName, 'r', compression=ZIP_DEFLATED) as elnFile:
