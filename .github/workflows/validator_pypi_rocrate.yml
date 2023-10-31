@@ -45,6 +45,6 @@ jobs:
                           crate = ROCrate(temppath)
                           for e in crate.get_entities():
                               print(f'  {e.id}: {e.type}')
-                      except ValueError:
-                          print("**ERROR: Could not parse content\n"+traceback.format_exc()+'\n\n')
+                      except Exception:
+                          print("  *****  ERROR: Could not parse content of this file!!  *****")
         shell: python
