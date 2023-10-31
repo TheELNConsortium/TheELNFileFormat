@@ -28,6 +28,7 @@ jobs:
           from rocrate.model.contextentity import ContextEntity
 
           cwd = Path('.')
+          print(cwd)
           for fileName in cwd.glob('*.eln'):
               print(f'Try to parse: {fileName.name}')
               with ZipFile(fileName, 'r', compression=ZIP_DEFLATED) as elnFile:
