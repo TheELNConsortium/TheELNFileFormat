@@ -19,6 +19,7 @@ jobs:
           pip install rocrate
       - name: Test with pytest
         run: |
+          from pathlib import Path
           from zipfile import ZIP_DEFLATED
           from zipfile import Path as ZPath
           from zipfile import ZipFile
@@ -26,6 +27,7 @@ jobs:
           from rocrate.model.entity import Entity
           from rocrate.model.contextentity import ContextEntity
 
+          cwd = Path('.')
           for fileName in cwd.glob('*.eln'):
               print(f'Try to parse: {fileName.name}')
               with ZipFile(fileName, 'r', compression=ZIP_DEFLATED) as elnFile:
