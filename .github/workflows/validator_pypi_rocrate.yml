@@ -20,6 +20,7 @@ jobs:
       - name: validate
         run: |
           import os
+          import sys
           import tempfile
           from pathlib import Path
           from zipfile import ZIP_DEFLATED
@@ -29,6 +30,7 @@ jobs:
           from rocrate.model.entity import Entity
           from rocrate.model.contextentity import ContextEntity
 
+          success = 0
           for root, _, files in os.walk(".", topdown=False):
               for name in files:
                   if not name.endswith('.eln'):
@@ -47,4 +49,6 @@ jobs:
                               print(f'  {e.id}: {e.type}')
                       except Exception:
                           print("  *****  ERROR: Could not parse content of this file!!  *****")
+                          success = 1
+          sys.exit(success)
         shell: python
