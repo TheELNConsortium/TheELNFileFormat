@@ -17,9 +17,9 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install rocrate
-      - name: Test with pytest
+      - name: validate
         run: |
-          from pathlib import Path
+          import os
           from zipfile import ZIP_DEFLATED
           from zipfile import Path as ZPath
           from zipfile import ZipFile
@@ -27,23 +27,23 @@ jobs:
           from rocrate.model.entity import Entity
           from rocrate.model.contextentity import ContextEntity
 
-          cwd = Path('.')
-          print(cwd)
-          for fileName in cwd.glob('*.eln'):
-              print(f'Try to parse: {fileName.name}')
-              with ZipFile(fileName, 'r', compression=ZIP_DEFLATED) as elnFile:
-                  p = ZPath(elnFile)
-                  dirName = sorted(p.iterdir())[0]
-                  try:
-                      dirpath = Path(tempfile.mkdtemp())
-                      elnFile.extractall(dirpath)
-                      temppath= dirpath.joinpath(dirName.name)
-                      crate = ROCrate(temppath)
-                      print('\nList content according to https://pypi.org/project/rocrate/')
-                      for e in crate.get_entities():
-                          print(e.id, e.type)
-                  except ValueError:
-                      print("**ERROR: Could not parse content\n"+traceback.format_exc()+'\n\n')
+          for root, _, files in os.walk(".", topdown=False):
+              for name in files:
+                  fileName = os.path.join(root, name)
+                  print(f'Try to parse: {fileName}')
+                  with ZipFile(fileName, 'r', compression=ZIP_DEFLATED) as elnFile:
+                      p = ZPath(elnFile)
+                      dirName = sorted(p.iterdir())[0]
+                      try:
+                          dirpath = Path(tempfile.mkdtemp())
+                          elnFile.extractall(dirpath)
+                          temppath= dirpath.joinpath(dirName.name)
+                          crate = ROCrate(temppath)
+                          print('\nList content')
+                          for e in crate.get_entities():
+                              print(e.id, e.type)
+                      except ValueError:
+                          print("**ERROR: Could not parse content\n"+traceback.format_exc()+'\n\n')
         shell: python
 
 
