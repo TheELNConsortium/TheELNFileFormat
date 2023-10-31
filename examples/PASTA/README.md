@@ -2,6 +2,7 @@
 Its home is at: https://github.com/PASTA-ELN
 
 
+
 ### PASTA.eln
 ```json
 {
@@ -17,17 +18,17 @@ Its home is at: https://github.com/PASTA-ELN
         "@id": "https://w3id.org/ro/crate/1.1"
       },
       "schemaVersion": "v1.0",
-      "dateCreated": "2023-10-03T19:08:43.699941",
+      "dateCreated": "2023-10-31T14:43:08.223310",
       "sdPublisher": {
         "@type": "Organization",
         "name": "PASTA ELN",
         "logo": "https://raw.githubusercontent.com/PASTA-ELN/desktop/main/pasta.png",
         "slogan": "The favorite ELN for experimental scientists",
         "url": "https://github.com/PASTA-ELN/",
-        "description": "Version 2.4.12"
+        "description": "Version 2.4.20"
       },
       "version": "1.0",
-      "datePublished": "2023-10-03T19:08:43.699978"
+      "datePublished": "2023-10-31T14:43:08.223328"
     },
     {
       "@id": "./",
@@ -55,7 +56,7 @@ Its home is at: https://github.com/PASTA-ELN
           ]
         }
       ],
-      "datePublished": "2023-10-03T19:08:43.699998"
+      "datePublished": "2023-10-31T14:43:08.223342"
     },
     {
       "@id": "./IntermetalsAtInterfaces/000_GetSteelAndAlPowder/metadata.json",
@@ -64,15 +65,15 @@ Its home is at: https://github.com/PASTA-ELN
       "description": "JSON export",
       "encodingFormat": "application/json",
       "contentSize": "320",
-      "sha256": "4eefc689d20891eb0222acf237b33931f76e4393ffa89791c8081d3f8f31b690",
-      "dateModified": "2023-10-03T19:08:26.248719"
+      "sha256": "69ef558c537b61b00f6ad8459e2bc01989351a34d33b34a9d85221e6dcbaee91",
+      "dateModified": "2023-10-31T14:42:39.241645"
     },
     {
       "@id": "./IntermetalsAtInterfaces/000_GetSteelAndAlPowder/",
-      "identifier": "x-f986615b1c48452c97674faf889d84cb",
+      "identifier": "x-decc8a0769cd41fd865ab8512e3b9f5c",
       "description": "This is hard!",
       "name": "Get steel and Al-powder",
-      "dateModified": "2023-10-03T19:08:26.248719",
+      "dateModified": "2023-10-31T14:42:39.241645",
       "keywords": [
         "TODO"
       ],
@@ -91,15 +92,15 @@ Its home is at: https://github.com/PASTA-ELN
       "description": "JSON export",
       "encodingFormat": "application/json",
       "contentSize": "416",
-      "sha256": "e68ce0547a13c33c49ab40a8dd0954719032fbe05c1b64c159e7ec32b7457f88",
-      "dateModified": "2023-10-03T19:08:26.388151"
+      "sha256": "4620b624f583b2487c1e90ef363ce828d83565f09063a96fffdffab42f9196fd",
+      "dateModified": "2023-10-31T14:42:39.330769"
     },
     {
       "@id": "./IntermetalsAtInterfaces/001_GetSprayMachine/000_GetQuotes/",
-      "identifier": "x-d5a1a1f6f349476f8b0fe2a53317721b",
+      "identifier": "x-f121f49d68314f1a902c002d3c68db29",
       "name": "Get quotes",
       "description": "Dont forget company-A",
-      "dateModified": "2023-10-03T19:08:26.388151",
+      "dateModified": "2023-10-31T14:42:39.330769",
       "keywords": [
         "_1"
       ],
@@ -118,15 +119,15 @@ Its home is at: https://github.com/PASTA-ELN
       "description": "JSON export",
       "encodingFormat": "application/json",
       "contentSize": "375",
-      "sha256": "10b4133a61c6a91bc51f452668d4483b03a8352ab94b8700a36322f61e844abe",
-      "dateModified": "2023-10-03T19:08:26.452581"
+      "sha256": "01dd08dc224e8a8f9689355405a88ca7fb75199fcb737355ce93d4d27e08ae1e",
+      "dateModified": "2023-10-31T14:42:39.375214"
     },
     {
       "@id": "./IntermetalsAtInterfaces/001_GetSprayMachine/001_BuyMachine/",
-      "identifier": "x-639e33a0f7db4ae090c051aa7c22dc42",
+      "identifier": "x-ce2a2a0a8ca944689f1164b880fd0f28",
       "name": "Buy machine",
       "description": "Delivery time will be 6month",
-      "dateModified": "2023-10-03T19:08:26.452581",
+      "dateModified": "2023-10-31T14:42:39.375214",
       "keywords": [
         "_3"
       ],
@@ -145,15 +146,15 @@ Its home is at: https://github.com/PASTA-ELN
       "description": "JSON export",
       "encodingFormat": "application/json",
       "contentSize": "316",
-      "sha256": "25f6997fac0cea6741f1a424d05aae59d7ef114b652875022b0d85d15d0f6043",
-      "dateModified": "2023-10-03T19:08:26.314775"
+      "sha256": "06a803991b76cd8af098566a524c77bd6e5153b75eff59cc922f30e20448d470",
+      "dateModified": "2023-10-31T14:42:39.284652"
     },
     {
       "@id": "./IntermetalsAtInterfaces/001_GetSprayMachine/",
-      "identifier": "x-cd5671deab5e4161976f1b0382c8a3e1",
+      "identifier": "x-c35914f076b442199abe779ffcf3998a",
       "description": "This will take a long time.",
       "name": "Get spray machine",
-      "dateModified": "2023-10-03T19:08:26.314775",
+      "dateModified": "2023-10-31T14:42:39.284652",
       "keywords": [
         "_curated",
         "WAIT"
@@ -174,9 +175,9 @@ Its home is at: https://github.com/PASTA-ELN
     },
     {
       "@id": "./IntermetalsAtInterfaces/002_SemImages/story.odt",
-      "identifier": "--57ef1b3b106b4325aabf1a00c770d34f",
+      "identifier": "--a2daa69fb6a14dca9715db883ef6d5d1",
       "name": "story.odt",
-      "dateModified": "2023-10-03T19:08:29.018965",
+      "dateModified": "2023-10-31T14:42:41.569813",
       "description": "",
       "keywords": [],
       "author": "_",
@@ -186,9 +187,9 @@ Its home is at: https://github.com/PASTA-ELN
     },
     {
       "@id": "./IntermetalsAtInterfaces/instrumentB1/",
-      "identifier": "i-1ba572fdc4b14f20a846a3b3fc925adc",
+      "identifier": "i-1a426333976246f3840bea9e257683a7",
       "name": "B1",
-      "dateModified": "2023-10-03T19:08:30.471603",
+      "dateModified": "2023-10-31T14:42:42.071422",
       "description": "",
       "keywords": [],
       "author": "_",
@@ -196,31 +197,19 @@ Its home is at: https://github.com/PASTA-ELN
     },
     {
       "@id": "./IntermetalsAtInterfaces/instrumentG200X/",
-      "identifier": "i-b9e96cd74e314d198159dac43262af51",
+      "identifier": "i-fe72a29b3a734bc4814362902ccce858",
       "name": "G200X",
-      "dateModified": "2023-10-03T19:08:30.448566",
+      "dateModified": "2023-10-31T14:42:42.063949",
       "description": "",
       "keywords": [],
       "author": "_",
       "@type": "Dataset"
     },
     {
-      "@id": "https:/upload.wikimedia.org/wikipedia/commons/a/a4/Misc_pollen.jpg",
-      "identifier": "m-6050b7cfb3954c388bd66aa521fdb078",
-      "name": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Misc_pollen.jpg",
-      "dateModified": "2023-10-03T19:08:30.277747",
-      "description": "",
-      "keywords": [],
-      "author": "_",
-      "contentSize": "220730",
-      "sha256": "aebe181073ca67d42ece34bc8f37a03bcc72add2b26c63190a865d8000dfc742",
-      "@type": "File"
-    },
-    {
       "@id": "./IntermetalsAtInterfaces/002_SemImages/simple.png",
-      "identifier": "m-626277b6111541f69d9fdaf21f81e52c",
+      "identifier": "m-0f9fc8d70ccb4975bf0d8402c262756d",
       "name": "simple.png",
-      "dateModified": "2023-10-03T19:08:28.928282",
+      "dateModified": "2023-10-31T14:42:41.531507",
       "description": "",
       "keywords": [],
       "author": "_",
@@ -229,10 +218,22 @@ Its home is at: https://github.com/PASTA-ELN
       "@type": "File"
     },
     {
+      "@id": "https:/upload.wikimedia.org/wikipedia/commons/a/a4/Misc_pollen.jpg",
+      "identifier": "m-8fef8b29a9424a849fd7a254ceb7734b",
+      "name": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Misc_pollen.jpg",
+      "dateModified": "2023-10-31T14:42:41.937196",
+      "description": "",
+      "keywords": [],
+      "author": "_",
+      "contentSize": "220730",
+      "sha256": "aebe181073ca67d42ece34bc8f37a03bcc72add2b26c63190a865d8000dfc742",
+      "@type": "File"
+    },
+    {
       "@id": "./IntermetalsAtInterfaces/002_SemImages/simple.csv",
-      "identifier": "m-8a9eaac8da7c45f3987b565e1a7fbaad",
+      "identifier": "m-a01dafa95d27428483de71a4eff481ef",
       "name": "simple.csv",
-      "dateModified": "2023-10-03T19:08:28.786901",
+      "dateModified": "2023-10-31T14:42:41.426870",
       "description": "",
       "keywords": [],
       "author": "_",
@@ -247,14 +248,14 @@ Its home is at: https://github.com/PASTA-ELN
       "description": "JSON export",
       "encodingFormat": "application/json",
       "contentSize": "3983",
-      "sha256": "76286db0ea6c34f9a902b69f7ec7c99951578fb4e326caa6aaa300021e15bf9f",
-      "dateModified": "2023-10-03T19:08:26.516979"
+      "sha256": "b138bfd61bcfce001aad2eea639e189b34a320439599e745f9872bdce65a894b",
+      "dateModified": "2023-10-31T14:42:39.420427"
     },
     {
       "@id": "./IntermetalsAtInterfaces/002_SemImages/",
-      "identifier": "x-4d2b620e3d874de591c52775de21ee64",
+      "identifier": "x-8945da3fc1a44b4286c356ac58d3251e",
       "name": "SEM images",
-      "dateModified": "2023-10-03T19:08:26.516979",
+      "dateModified": "2023-10-31T14:42:39.420427",
       "description": "",
       "keywords": [],
       "author": "_",
@@ -272,10 +273,10 @@ Its home is at: https://github.com/PASTA-ELN
           "@id": "./IntermetalsAtInterfaces/instrumentG200X/"
         },
         {
-          "@id": "https:/upload.wikimedia.org/wikipedia/commons/a/a4/Misc_pollen.jpg"
+          "@id": "./IntermetalsAtInterfaces/002_SemImages/simple.png"
         },
         {
-          "@id": "./IntermetalsAtInterfaces/002_SemImages/simple.png"
+          "@id": "https:/upload.wikimedia.org/wikipedia/commons/a/a4/Misc_pollen.jpg"
         },
         {
           "@id": "./IntermetalsAtInterfaces/002_SemImages/simple.csv"
@@ -290,14 +291,14 @@ Its home is at: https://github.com/PASTA-ELN
       "description": "JSON export",
       "encodingFormat": "application/json",
       "contentSize": "316",
-      "sha256": "eda3cf21a0347c74bd8b0af571dac0914668e430e4b3487251c82c4dff3ae3d2",
-      "dateModified": "2023-10-03T19:08:26.582465"
+      "sha256": "5648174602050f29798ad72d4dcab259a8f27ddc2f8a144dd49899ceb64a03cd",
+      "dateModified": "2023-10-31T14:42:39.465901"
     },
     {
       "@id": "./IntermetalsAtInterfaces/003_Nanoindentation/",
-      "identifier": "x-447dfb167fbf4d579d128d7825fff5fb",
+      "identifier": "x-fed14add99324144bac5711959c65350",
       "name": "Nanoindentation",
-      "dateModified": "2023-10-03T19:08:26.582465",
+      "dateModified": "2023-10-31T14:42:39.465901",
       "description": "",
       "keywords": [],
       "author": "_",
@@ -310,14 +311,13 @@ Its home is at: https://github.com/PASTA-ELN
     },
     {
       "@id": "./StandardOperatingProcedures/Nanoindentation.md",
-      "identifier": "p-28e6961ad3ec4f8dacbe80f45e3058aa",
+      "identifier": "p-142a357ecc8e46dcb7031d5887b13cac",
       "name": "Nanoindentation.md",
-      "description": "Test string 0",
+      "description": "",
       "text": "# Put sample in nanoindenter\n# Do indentation\nDo not forget to\n- calibrate tip\n- *calibrate stiffness*",
-      "dateModified": "2023-10-03T19:08:35.033640",
+      "dateModified": "2023-10-31T14:42:40.138220",
       "keywords": [
-        "v1",
-        "_curated"
+        "v1"
       ],
       "author": "_",
       "contentSize": "103",
@@ -326,14 +326,13 @@ Its home is at: https://github.com/PASTA-ELN
     },
     {
       "@id": "./StandardOperatingProcedures/SEM.md",
-      "identifier": "p-ea033b1665cf4d728d2262d4e7f7545f",
+      "identifier": "p-3d8b31be917d413c9a861e9a66c32e69",
       "name": "SEM.md",
-      "description": "Test string 1",
+      "description": "",
       "text": "# Put sample in SEM\n# Do scanning\nDo not forget to\n- contact the pole-piece\n- **USE GLOVES**",
-      "dateModified": "2023-10-03T19:08:35.145773",
+      "dateModified": "2023-10-31T14:42:40.083930",
       "keywords": [
-        "v1",
-        "_curated"
+        "v1"
       ],
       "author": "_",
       "contentSize": "93",
@@ -342,13 +341,11 @@ Its home is at: https://github.com/PASTA-ELN
     },
     {
       "@id": "./IntermetalsAtInterfaces/sampleAlfeCrossSection/",
-      "identifier": "s-0731d875fc5541b098b3909d246c49e5",
+      "identifier": "s-2cfa9a7363e24bf88585f3055caf941f",
       "name": "AlFe cross-section",
-      "description": "Test string 2",
-      "dateModified": "2023-10-03T19:08:35.197571",
-      "keywords": [
-        "_curated"
-      ],
+      "description": "after OPS polishing",
+      "dateModified": "2023-10-31T14:42:40.269404",
+      "keywords": [],
       "author": "_",
       "@type": "Dataset"
     },
@@ -358,20 +355,20 @@ Its home is at: https://github.com/PASTA-ELN
       "name": "export_metadata.json",
       "description": "JSON export",
       "encodingFormat": "application/json",
-      "contentSize": "1778",
-      "sha256": "e8b9fe9714ab3b11143d0f318686788ada513e81604ab6ec6feb614804566f16",
-      "dateModified": "2023-10-03T19:08:25.837483"
+      "contentSize": "1652",
+      "sha256": "9cbbf5b2b8396ecdcf4efccaeccaa8677338315743182c65082340d7de9284c9",
+      "dateModified": "2023-10-31T14:42:38.875429"
     },
     {
       "@id": "./IntermetalsAtInterfaces/",
-      "identifier": "x-d3bfbe2d13854b5a9794e49148044b12",
+      "identifier": "x-8282618da76247dfa68ff59b82a1231b",
       "name": "Intermetals at interfaces",
       "description": "This is a test project",
-      "dateModified": "2023-10-03T19:08:25.837483",
+      "dateModified": "2023-10-31T14:42:38.875429",
       "keywords": [
+        "Al",
         "intermetal",
-        "Fe",
-        "Al"
+        "Fe"
       ],
       "author": "_",
       "hasPart": [
@@ -410,9 +407,9 @@ Its home is at: https://github.com/PASTA-ELN
       "@type": "File",
       "name": "data structure",
       "description": "data structure / schema of the stored data",
-      "contentSize": "3080",
-      "sha256": "f848cb4c80ea0b6b1d0bc02893d2836f5b469a2f9035a959ee11f20d75261ebd",
-      "datePublished": "2023-10-03T19:08:43.700220"
+      "contentSize": "3081",
+      "sha256": "f94dae96d77cfaa46acfca853331184f260430a7a620c709bf2a764b9e7bc3f8",
+      "datePublished": "2023-10-31T14:43:08.223494"
     }
   ]
 }
