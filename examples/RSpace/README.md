@@ -17,18 +17,18 @@ This exported archive includes an RSpace document which has:
 {
   "@context" : "https://w3id.org/ro/crate/1.1/context",
   "@graph" : [ {
-    "name" : "user user_2023-12-05_14:17:05",
+    "name" : "user user_2023-12-07_12:40:13",
     "description" : "",
     "@id" : "./",
     "@type" : "Dataset",
     "identifier" : "http://localhost:8080",
-    "datePublished" : "2023-12-05",
+    "datePublished" : "2023-12-07",
     "hasPart" : [ {
-      "@id" : "./documentSchema.xsd"
-    }, {
       "@id" : "./resources"
     }, {
-      "@id" : "./formSchema.xsd"
+      "@id" : "./schemas/formSchema.xsd"
+    }, {
+      "@id" : "./schemas/documentSchema.xsd"
     }, {
       "@id" : "./doc_Editable2-32"
     }, {
@@ -57,12 +57,6 @@ This exported archive includes an RSpace document which has:
     "@type" : "File"
   }, {
     "encodingFormat" : "application/xml",
-    "description" : "schema for RSpace documents",
-    "sha256" : "429f05d9daf5d77ac8edac1aa0dd7b98e05e3103651463168ddc1ecd42a795f0",
-    "@id" : "./documentSchema.xsd",
-    "@type" : "File"
-  }, {
-    "encodingFormat" : "application/xml",
     "sha256" : "35a982994113f399af27d2678fe9a5c29522cae0fd73bbac9a6c0919e667e38d",
     "additionalType" : "Selenium",
     "description" : "A Form used to create an RSpace Structured Document",
@@ -74,6 +68,18 @@ This exported archive includes an RSpace document which has:
     "description" : "Common resources shared among exported data",
     "@id" : "./resources",
     "@type" : "Dataset"
+  }, {
+    "description" : "schema for RSpace forms",
+    "encodingFormat" : "application/xml",
+    "sha256" : "3381f83d983a75f49673659805599476f5cf507b36e402528fcf972848295a6c",
+    "@id" : "./schemas/formSchema.xsd",
+    "@type" : "File"
+  }, {
+    "encodingFormat" : "application/xml",
+    "description" : "schema for RSpace documents",
+    "sha256" : "429f05d9daf5d77ac8edac1aa0dd7b98e05e3103651463168ddc1ecd42a795f0",
+    "@id" : "./schemas/documentSchema.xsd",
+    "@type" : "File"
   }, {
     "sha256" : "200d2196966f89fc7f93a4a6aa1785c20c982b08fbdf828919881043504cfe7c",
     "encodingFormat" : "image/gif",
@@ -94,12 +100,6 @@ This exported archive includes an RSpace document which has:
     "dateCreated" : "05:12:23:11:26:12",
     "dateModified" : "05:12:23:11:26:12",
     "@id" : "./doc_Experiment-1-25/doc_Experiment-1-25.xml",
-    "@type" : "File"
-  }, {
-    "description" : "schema for RSpace forms",
-    "encodingFormat" : "application/xml",
-    "sha256" : "3381f83d983a75f49673659805599476f5cf507b36e402528fcf972848295a6c",
-    "@id" : "./formSchema.xsd",
     "@type" : "File"
   }, {
     "@id" : "./doc_Editable2-32",
