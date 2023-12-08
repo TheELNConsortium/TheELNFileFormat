@@ -17,7 +17,7 @@ This exported archive includes an RSpace document which has:
 {
   "@context" : "https://w3id.org/ro/crate/1.1/context",
   "@graph" : [ {
-    "name" : "user user_2023-12-08_12:35:09",
+    "name" : "user user_2023-12-08_14:44:20",
     "description" : "",
     "@id" : "./",
     "@type" : "Dataset",
@@ -50,7 +50,7 @@ This exported archive includes an RSpace document which has:
     "encodingFormat" : "application/xml",
     "sha256" : "8171e143737567e3fe352fedf774a348af0b5335e7b96bc92531441048270b9e",
     "additionalType" : "Experiment",
-    "description" : "A Form used to create an RSpace Structured Document",
+    "text" : "A Form used to create an RSpace Structured Document",
     "dateCreated" : "07:12:23:16:11:11",
     "dateModified" : "07:12:23:16:11:11",
     "@id" : "./doc_Experiment-1-25/doc_Experiment-1-25_form.xml",
@@ -59,17 +59,17 @@ This exported archive includes an RSpace document which has:
     "encodingFormat" : "application/xml",
     "sha256" : "99405c27462b93d17b77d7bae5be5065317df0fc0bad293072db5ab2288c378c",
     "additionalType" : "Selenium",
-    "description" : "A Form used to create an RSpace Structured Document",
+    "text" : "A Form used to create an RSpace Structured Document",
     "dateCreated" : "07:12:23:16:11:11",
     "dateModified" : "07:12:23:16:11:11",
     "@id" : "./doc_Editable2-32/doc_Editable2-32_form.xml",
     "@type" : "File"
   }, {
-    "description" : "Common resources shared among exported data",
+    "text" : "Common resources shared among exported data",
     "@id" : "./resources",
     "@type" : "Dataset"
   }, {
-    "description" : "schema for RSpace forms",
+    "text" : "schema for RSpace forms",
     "encodingFormat" : "application/xml",
     "sha256" : "3381f83d983a75f49673659805599476f5cf507b36e402528fcf972848295a6c",
     "@id" : "./schemas/formSchema.xsd",
@@ -77,34 +77,34 @@ This exported archive includes an RSpace document which has:
   }, {
     "sha256" : "cb51c02b436a3db4207193ca4d58dbb14143a376a16c61c44fcbd7c38ed196ee",
     "encodingFormat" : "image/x-png",
-    "description" : "A file linked by an exported document or in a user Gallery",
+    "text" : "A file linked by an exported document or in a user Gallery",
     "dateCreated" : "07:12:23:16:11:12",
     "dateModified" : "07:12:23:16:11:12",
     "@id" : "./doc_Experiment-1-25/Picture1_1701965472094.png",
     "@type" : "File"
   }, {
     "encodingFormat" : "application/xml",
-    "description" : "schema for RSpace documents",
+    "text" : "schema for RSpace documents",
     "sha256" : "429f05d9daf5d77ac8edac1aa0dd7b98e05e3103651463168ddc1ecd42a795f0",
     "@id" : "./schemas/documentSchema.xsd",
     "@type" : "File"
   }, {
     "sha256" : "200d2196966f89fc7f93a4a6aa1785c20c982b08fbdf828919881043504cfe7c",
     "encodingFormat" : "image/gif",
-    "description" : "A file linked by an exported document or in a user Gallery",
+    "text" : "A file linked by an exported document or in a user Gallery",
     "dateCreated" : "07:12:23:16:11:13",
     "dateModified" : "07:12:23:16:11:13",
     "@id" : "./doc_Editable2-32/lemmings_1701965473304.gif",
     "@type" : "File"
   }, {
     "identifier" : "./doc_Experiment-1-25",
-    "description" : "A file linked by an exported document or in a user Gallery",
+    "text" : "A file linked by an exported document or in a user Gallery",
     "@id" : "./doc_Editable2-32/doc_Experiment-1-25",
     "@type" : "Dataset"
   }, {
     "encodingFormat" : "application/xml",
     "sha256" : "0d81bf271c83852eaac7ab4462d8b00ccafed292b2862c00a453ccebffaf74ff",
-    "description" : "An RSpace Structured Document",
+    "text" : "An RSpace Structured Document",
     "dateCreated" : "07:12:23:16:11:12",
     "dateModified" : "07:12:23:16:11:12",
     "@id" : "./doc_Experiment-1-25/doc_Experiment-1-25.xml",
@@ -125,7 +125,7 @@ This exported archive includes an RSpace document which has:
   }, {
     "encodingFormat" : "application/xml",
     "sha256" : "17b29a699980d7c1d9f5a2018dcee7ac1798e70926d61572eff6bc6c099414c0",
-    "description" : "An RSpace Structured Document",
+    "text" : "An RSpace Structured Document",
     "dateCreated" : "07:12:23:16:11:13",
     "dateModified" : "08:12:23:12:34:51",
     "@id" : "./doc_Editable2-32/doc_Editable2-32.xml",
@@ -142,7 +142,7 @@ This exported archive includes an RSpace document which has:
       "@id" : "./doc_Experiment-1-25/doc_Experiment-1-25.xml"
     } ]
   }, {
-    "description" : "The RSpace user who exported this data",
+    "text" : "The RSpace user who exported this data",
     "@id" : "user user",
     "email" : "user@user.com",
     "givenName" : "user",
