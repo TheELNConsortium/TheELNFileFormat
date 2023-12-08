@@ -17,12 +17,12 @@ This exported archive includes an RSpace document which has:
 {
   "@context" : "https://w3id.org/ro/crate/1.1/context",
   "@graph" : [ {
-    "name" : "user user_2023-12-07_16:20:48",
+    "name" : "user user_2023-12-08_12:35:09",
     "description" : "",
     "@id" : "./",
     "@type" : "Dataset",
     "identifier" : "http://localhost:8080",
-    "datePublished" : "2023-12-07",
+    "datePublished" : "2023-12-08",
     "hasPart" : [ {
       "@id" : "./resources"
     }, {
@@ -112,7 +112,7 @@ This exported archive includes an RSpace document which has:
   }, {
     "@id" : "./doc_Editable2-32",
     "@type" : "Dataset",
-    "keywords" : [ "red", "green", "todolist" ],
+    "keywords" : [ "red", "mydocument", "category1" ],
     "hasPart" : [ {
       "@id" : "./doc_Editable2-32/doc_Editable2-32_form.xml"
     }, {
@@ -124,16 +124,16 @@ This exported archive includes an RSpace document which has:
     } ]
   }, {
     "encodingFormat" : "application/xml",
-    "sha256" : "040155faf2f02cba3a75f30e8f37740f6af0e64b2a45c5f48169d519b0e24997",
+    "sha256" : "17b29a699980d7c1d9f5a2018dcee7ac1798e70926d61572eff6bc6c099414c0",
     "description" : "An RSpace Structured Document",
     "dateCreated" : "07:12:23:16:11:13",
-    "dateModified" : "07:12:23:16:19:53",
+    "dateModified" : "08:12:23:12:34:51",
     "@id" : "./doc_Editable2-32/doc_Editable2-32.xml",
     "@type" : "File"
   }, {
     "@id" : "./doc_Experiment-1-25",
     "@type" : "Dataset",
-    "keywords" : "exampleExperimentTag",
+    "keywords" : [ "exampleExperimentTag" ],
     "hasPart" : [ {
       "@id" : "./doc_Experiment-1-25/doc_Experiment-1-25_form.xml"
     }, {
@@ -156,4 +156,5 @@ This exported archive includes an RSpace document which has:
     "@type" : "Organization"
   } ]
 }
+
 ```
