@@ -17,18 +17,18 @@ This exported archive includes an RSpace document which has:
 {
   "@context" : "https://w3id.org/ro/crate/1.1/context",
   "@graph" : [ {
-    "name" : "user user_2023-12-05_14:17:05",
+    "name" : "user user_2023-12-08_14:44:20",
     "description" : "",
     "@id" : "./",
     "@type" : "Dataset",
     "identifier" : "http://localhost:8080",
-    "datePublished" : "2023-12-05",
+    "datePublished" : "2023-12-08",
     "hasPart" : [ {
-      "@id" : "./documentSchema.xsd"
-    }, {
       "@id" : "./resources"
     }, {
-      "@id" : "./formSchema.xsd"
+      "@id" : "./schemas/formSchema.xsd"
+    }, {
+      "@id" : "./schemas/documentSchema.xsd"
     }, {
       "@id" : "./doc_Editable2-32"
     }, {
@@ -48,67 +48,75 @@ This exported archive includes an RSpace document which has:
     "@type" : "CreativeWork"
   }, {
     "encodingFormat" : "application/xml",
-    "sha256" : "762401a8e020f8ade08aa53a4026090ce1b4a6befe50d2becef9a6cc3713b399",
+    "sha256" : "8171e143737567e3fe352fedf774a348af0b5335e7b96bc92531441048270b9e",
     "additionalType" : "Experiment",
-    "description" : "A Form used to create an RSpace Structured Document",
-    "dateCreated" : "05:12:23:11:26:11",
-    "dateModified" : "05:12:23:11:26:11",
+    "text" : "A Form used to create an RSpace Structured Document",
+    "dateCreated" : "07:12:23:16:11:11",
+    "dateModified" : "07:12:23:16:11:11",
     "@id" : "./doc_Experiment-1-25/doc_Experiment-1-25_form.xml",
     "@type" : "File"
   }, {
     "encodingFormat" : "application/xml",
-    "description" : "schema for RSpace documents",
-    "sha256" : "429f05d9daf5d77ac8edac1aa0dd7b98e05e3103651463168ddc1ecd42a795f0",
-    "@id" : "./documentSchema.xsd",
-    "@type" : "File"
-  }, {
-    "encodingFormat" : "application/xml",
-    "sha256" : "35a982994113f399af27d2678fe9a5c29522cae0fd73bbac9a6c0919e667e38d",
+    "sha256" : "99405c27462b93d17b77d7bae5be5065317df0fc0bad293072db5ab2288c378c",
     "additionalType" : "Selenium",
-    "description" : "A Form used to create an RSpace Structured Document",
-    "dateCreated" : "05:12:23:11:26:12",
-    "dateModified" : "05:12:23:11:26:11",
+    "text" : "A Form used to create an RSpace Structured Document",
+    "dateCreated" : "07:12:23:16:11:11",
+    "dateModified" : "07:12:23:16:11:11",
     "@id" : "./doc_Editable2-32/doc_Editable2-32_form.xml",
     "@type" : "File"
   }, {
-    "description" : "Common resources shared among exported data",
+    "text" : "Common resources shared among exported data",
     "@id" : "./resources",
     "@type" : "Dataset"
   }, {
+    "text" : "schema for RSpace forms",
+    "encodingFormat" : "application/xml",
+    "sha256" : "3381f83d983a75f49673659805599476f5cf507b36e402528fcf972848295a6c",
+    "@id" : "./schemas/formSchema.xsd",
+    "@type" : "File"
+  }, {
+    "sha256" : "cb51c02b436a3db4207193ca4d58dbb14143a376a16c61c44fcbd7c38ed196ee",
+    "encodingFormat" : "image/x-png",
+    "text" : "A file linked by an exported document or in a user Gallery",
+    "dateCreated" : "07:12:23:16:11:12",
+    "dateModified" : "07:12:23:16:11:12",
+    "@id" : "./doc_Experiment-1-25/Picture1_1701965472094.png",
+    "@type" : "File"
+  }, {
+    "encodingFormat" : "application/xml",
+    "text" : "schema for RSpace documents",
+    "sha256" : "429f05d9daf5d77ac8edac1aa0dd7b98e05e3103651463168ddc1ecd42a795f0",
+    "@id" : "./schemas/documentSchema.xsd",
+    "@type" : "File"
+  }, {
     "sha256" : "200d2196966f89fc7f93a4a6aa1785c20c982b08fbdf828919881043504cfe7c",
     "encodingFormat" : "image/gif",
-    "description" : "A file linked by an exported document or in a user Gallery",
-    "dateCreated" : "05:12:23:11:26:13",
-    "dateModified" : "05:12:23:11:26:13",
-    "@id" : "./doc_Editable2-32/lemmings_1701775573172.gif",
+    "text" : "A file linked by an exported document or in a user Gallery",
+    "dateCreated" : "07:12:23:16:11:13",
+    "dateModified" : "07:12:23:16:11:13",
+    "@id" : "./doc_Editable2-32/lemmings_1701965473304.gif",
     "@type" : "File"
   }, {
     "identifier" : "./doc_Experiment-1-25",
-    "description" : "A file linked by an exported document or in a user Gallery",
+    "text" : "A file linked by an exported document or in a user Gallery",
     "@id" : "./doc_Editable2-32/doc_Experiment-1-25",
     "@type" : "Dataset"
   }, {
     "encodingFormat" : "application/xml",
-    "sha256" : "bd7688f5e3ec881a84eac713fe79f2ad9512c8f75c488d9ddb7a6f069668e8f2",
-    "description" : "An RSpace Structured Document",
-    "dateCreated" : "05:12:23:11:26:12",
-    "dateModified" : "05:12:23:11:26:12",
+    "sha256" : "0d81bf271c83852eaac7ab4462d8b00ccafed292b2862c00a453ccebffaf74ff",
+    "text" : "An RSpace Structured Document",
+    "dateCreated" : "07:12:23:16:11:12",
+    "dateModified" : "07:12:23:16:11:12",
     "@id" : "./doc_Experiment-1-25/doc_Experiment-1-25.xml",
-    "@type" : "File"
-  }, {
-    "description" : "schema for RSpace forms",
-    "encodingFormat" : "application/xml",
-    "sha256" : "3381f83d983a75f49673659805599476f5cf507b36e402528fcf972848295a6c",
-    "@id" : "./formSchema.xsd",
     "@type" : "File"
   }, {
     "@id" : "./doc_Editable2-32",
     "@type" : "Dataset",
-    "keywords" : "",
+    "keywords" : [ "red", "mydocument", "category1" ],
     "hasPart" : [ {
       "@id" : "./doc_Editable2-32/doc_Editable2-32_form.xml"
     }, {
-      "@id" : "./doc_Editable2-32/lemmings_1701775573172.gif"
+      "@id" : "./doc_Editable2-32/lemmings_1701965473304.gif"
     }, {
       "@id" : "./doc_Editable2-32/doc_Experiment-1-25"
     }, {
@@ -116,33 +124,25 @@ This exported archive includes an RSpace document which has:
     } ]
   }, {
     "encodingFormat" : "application/xml",
-    "sha256" : "6640cfa7e629c4fa8c4a9b7565094dbc4ab8849e38fd67591515da6d98c7e6e7",
-    "description" : "An RSpace Structured Document",
-    "dateCreated" : "05:12:23:11:26:13",
-    "dateModified" : "05:12:23:11:48:29",
+    "sha256" : "17b29a699980d7c1d9f5a2018dcee7ac1798e70926d61572eff6bc6c099414c0",
+    "text" : "An RSpace Structured Document",
+    "dateCreated" : "07:12:23:16:11:13",
+    "dateModified" : "08:12:23:12:34:51",
     "@id" : "./doc_Editable2-32/doc_Editable2-32.xml",
-    "@type" : "File"
-  }, {
-    "sha256" : "cb51c02b436a3db4207193ca4d58dbb14143a376a16c61c44fcbd7c38ed196ee",
-    "encodingFormat" : "image/x-png",
-    "description" : "A file linked by an exported document or in a user Gallery",
-    "dateCreated" : "05:12:23:11:26:12",
-    "dateModified" : "05:12:23:11:26:12",
-    "@id" : "./doc_Experiment-1-25/Picture1_1701775572474.png",
     "@type" : "File"
   }, {
     "@id" : "./doc_Experiment-1-25",
     "@type" : "Dataset",
-    "keywords" : "'exampleExperimentTag'",
+    "keywords" : [ "exampleExperimentTag" ],
     "hasPart" : [ {
       "@id" : "./doc_Experiment-1-25/doc_Experiment-1-25_form.xml"
     }, {
-      "@id" : "./doc_Experiment-1-25/doc_Experiment-1-25.xml"
+      "@id" : "./doc_Experiment-1-25/Picture1_1701965472094.png"
     }, {
-      "@id" : "./doc_Experiment-1-25/Picture1_1701775572474.png"
+      "@id" : "./doc_Experiment-1-25/doc_Experiment-1-25.xml"
     } ]
   }, {
-    "description" : "The RSpace user who exported this data",
+    "text" : "The RSpace user who exported this data",
     "@id" : "user user",
     "email" : "user@user.com",
     "givenName" : "user",
@@ -156,4 +156,5 @@ This exported archive includes an RSpace document which has:
     "@type" : "Organization"
   } ]
 }
+
 ```
