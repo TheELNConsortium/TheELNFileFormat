@@ -28,6 +28,7 @@ Create a .yml file in this folder
             run: |
    ```
 3. add python code: pay attention to indent = indent by 10 spaces
+   - be sure to end the python part with "sys.exit(globalSuccess)"
 4. end yml file, same indentation as "run: |"
     ``` yml
         shell: python

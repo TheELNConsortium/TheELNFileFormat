@@ -117,4 +117,5 @@ jobs:
                           for v,k in view:
                               print(f'  {k:15}: {v}')
           print('\n\nSuccess:', globalSuccess)
+          sys.exit(globalSuccess)
         shell: python
