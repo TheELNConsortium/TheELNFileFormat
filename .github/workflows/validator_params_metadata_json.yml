@@ -60,7 +60,7 @@ jobs:
                           globalSuccess = 1
                   for key in DATASET_INFO:
                       if not key in node and OUTPUT_INFO:
-                          print(f'**INFO in dataset: "{key}" not in @id={node["@id"]}')
+                          print(f'**INFO for dataset: "{key}" not in @id={node["@id"]}')
               elif node['@type'] == 'File':
                   for key in FILE_MANDATORY:
                       if not key in node:
@@ -68,7 +68,7 @@ jobs:
                           globalSuccess = 1
                   for key in FILE_INFO:
                       if not key in node and OUTPUT_INFO:
-                          print(f'**INFO in file: "{key}" not in @id={node["@id"]}')
+                          print(f'**INFO for file: "{key}" not in @id={node["@id"]}')
               children = node.pop('hasPart') if 'hasPart' in node else []
               for child in children:
                   processNode(graph, child['@id'])

@@ -29,6 +29,7 @@ Create a .yml file in this folder
    ```
 3. add python code: pay attention to indent = indent by 10 spaces
    - be sure to end the python part with "sys.exit(globalSuccess)"
+   - check github actions output
 4. end yml file, same indentation as "run: |"
     ``` yml
         shell: python
