@@ -32,8 +32,8 @@ jobs:
           FILE_INFO = ['sha256', 'encodingFormat', 'contentSize', 'description']
 
           METADATA_FILE = 'ro-crate-metadata.json'
-          OUTPUT_INFO = False
-          OUTPUT_COUNTS = False
+          OUTPUT_INFO = True
+          OUTPUT_COUNTS = True
 
           globalSuccess = 0
           def processNode(graph, nodeID):
