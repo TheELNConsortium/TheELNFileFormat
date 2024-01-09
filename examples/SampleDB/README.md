@@ -30,6 +30,9 @@ Each export contains one or more SampleDB objects, identified by their ID, with 
 | object modification time     | dateModified  | object         |
 | object url                   | url           | object         |
 | object creator               | author        | object         |
+| object tags                  | keywords      | object         |
+| object references            | mentions      | object         |
+| object ID                    | identifier    | object         |
 | action type                  | genre         | object         |
 | comments                     | comment       | object         |
 | files                        | hasPart       | object         |
@@ -66,15 +69,18 @@ Each export contains one or more SampleDB objects, identified by their ID, with 
       "sdPublisher": {
         "@id": "SampleDB"
       },
-      "dateCreated": "2023-09-27T06:58:00.292441"
+      "version": "1.0",
+      "dateCreated": "2024-01-09T09:01:17.885826"
     },
     {
       "@id": "./",
       "@type": [
         "Dataset"
       ],
-      "version": "1.0",
       "hasPart": [
+        {
+          "@id": "./objects/7"
+        },
         {
           "@id": "./objects/1"
         }
@@ -89,17 +95,93 @@ Each export contains one or more SampleDB objects, identified by their ID, with 
       "url": "https://scientific-it-systems.iffgit.fz-juelich.de/SampleDB/"
     },
     {
+      "@id": "./objects/7",
+      "@type": "Dataset",
+      "identifier": "7",
+      "name": "Measurement",
+      "description": "Object #7",
+      "dateCreated": "2024-01-09T08:48:46.627315",
+      "dateModified": "2024-01-09T08:48:46.627315",
+      "author": {
+        "@id": "./users/3"
+      },
+      "url": "http://localhost:5000/objects/7",
+      "genre": "measurement",
+      "keywords": "example_tag, other_tag, tag3",
+      "mentions": [
+        "./objects/1"
+      ],
+      "comment": [],
+      "hasPart": [
+        {
+          "@id": "./objects/7/version/0"
+        },
+        {
+          "@id": "./objects/7/files.json"
+        }
+      ]
+    },
+    {
+      "@id": "./objects/7/version/0",
+      "@type": "Dataset",
+      "name": "Measurement",
+      "description": "Object #7 version #0",
+      "dateCreated": "2024-01-09T08:48:46.627315",
+      "author": {
+        "@id": "./users/3"
+      },
+      "url": "http://localhost:5000/objects/7/versions/0",
+      "hasPart": [
+        {
+          "@id": "./objects/7/version/0/schema.json"
+        },
+        {
+          "@id": "./objects/7/version/0/data.json"
+        }
+      ]
+    },
+    {
+      "@id": "./objects/7/version/0/schema.json",
+      "@type": "File",
+      "description": "Schema for Object #7 version #0",
+      "name": "schema.json",
+      "encodingFormat": "application/json",
+      "contentSize": 659,
+      "sha256": "5021dfb058f6e922a98e46742d39134133f08bfd1020fcc3632a4ce96b53a25d"
+    },
+    {
+      "@id": "./objects/7/version/0/data.json",
+      "@type": "File",
+      "description": "Data for Object #7 version #0",
+      "name": "data.json",
+      "encodingFormat": "application/json",
+      "contentSize": 463,
+      "sha256": "d7dd3f955e4a4dd91d7ef78ccc684d4b7c2ce4ae32aa37f805aa6cc32502284b"
+    },
+    {
+      "@id": "./objects/7/files.json",
+      "@type": "File",
+      "description": "Data about files for Object #7",
+      "name": "files.json",
+      "encodingFormat": "application/json",
+      "contentSize": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
       "@id": "./objects/1",
       "@type": "Dataset",
+      "identifier": "1",
       "name": "OMBE-1",
       "description": "Object #1",
-      "dateCreated": "2023-09-27T06:57:10.128641",
-      "dateModified": "2023-09-27T06:57:10.128641",
+      "dateCreated": "2024-01-09T08:48:46.289892",
+      "dateModified": "2024-01-09T08:48:46.289892",
       "author": {
         "@id": "./users/2"
       },
       "url": "http://localhost:5000/objects/1",
       "genre": "sample",
+      "keywords": "",
+      "mentions": [],
       "comment": [
         {
           "@id": "./objects/1/comments/1"
@@ -128,7 +210,7 @@ Each export contains one or more SampleDB objects, identified by their ID, with 
       "@type": "Dataset",
       "name": "OMBE-1",
       "description": "Object #1 version #0",
-      "dateCreated": "2023-09-27T06:57:10.128641",
+      "dateCreated": "2024-01-09T08:48:46.289892",
       "author": {
         "@id": "./users/2"
       },
@@ -147,7 +229,7 @@ Each export contains one or more SampleDB objects, identified by their ID, with 
       "@type": "File",
       "description": "Schema for Object #1 version #0",
       "name": "schema.json",
-      "contentType": "application/json",
+      "encodingFormat": "application/json",
       "contentSize": 4073,
       "sha256": "d97ffc5d8d8a04059512b6559bb5f2199646642ef10436d9b910a3f47313015b"
     },
@@ -156,7 +238,7 @@ Each export contains one or more SampleDB objects, identified by their ID, with 
       "@type": "File",
       "description": "Data for Object #1 version #0",
       "name": "data.json",
-      "contentType": "application/json",
+      "encodingFormat": "application/json",
       "contentSize": 7695,
       "sha256": "79a4238305f0be9d92b059e7f6001b931f5c9eeda531dd39cf376ae501e7e171"
     },
@@ -169,7 +251,7 @@ Each export contains one or more SampleDB objects, identified by their ID, with 
       "author": {
         "@id": "./users/2"
       },
-      "dateCreated": "2023-09-27T06:57:10.175975",
+      "dateCreated": "2024-01-09T08:48:46.349801",
       "text": "This comment is very long. This comment is very long. This comment is very long. This comment is very long. This comment is very long. This comment is very long. This comment is very long. This comment is very long. This comment is very long. This comment is very long. This comment is very long. This comment is very long. This comment is very long. This comment is very long. This comment is very long. This comment is very long. This comment is very long. This comment is very long. This comment is very long. This comment is very long. \nThis comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. \n\nThis comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. "
     },
     {
@@ -181,7 +263,7 @@ Each export contains one or more SampleDB objects, identified by their ID, with 
       "author": {
         "@id": "./users/2"
       },
-      "dateCreated": "2023-09-27T06:57:10.179670",
+      "dateCreated": "2024-01-09T08:48:46.357825",
       "text": "This is another, shorter comment"
     },
     {
@@ -189,9 +271,9 @@ Each export contains one or more SampleDB objects, identified by their ID, with 
       "@type": "File",
       "description": "Data about files for Object #1",
       "name": "files.json",
-      "contentType": "application/json",
+      "encodingFormat": "application/json",
       "contentSize": 763,
-      "sha256": "21ac3b1609e0f0f99fded31e075050d9fbbad53ee4c22bcd3c7ee7940224f04a"
+      "sha256": "95429df8160b63d7efefbf7967679722f9966d5143e0593590b51dc46570605f"
     },
     {
       "@id": "./objects/1/files/0/example.txt",
@@ -201,9 +283,10 @@ Each export contains one or more SampleDB objects, identified by their ID, with 
       "author": {
         "@id": "./users/2"
       },
-      "dateCreated": "2023-09-27T06:57:10.183937",
-      "contentType": "text/plain",
+      "dateCreated": "2024-01-09T08:48:46.366697",
+      "encodingFormat": "text/plain",
       "contentSize": 17,
+      "contentUrl": "http://localhost:5000/objects/1/files/0",
       "sha256": "9f722959a023c02a3ba0fafdba81aded642d6610eff5dca32dce35132e16b6c5"
     },
     {
@@ -214,10 +297,17 @@ Each export contains one or more SampleDB objects, identified by their ID, with 
       "author": {
         "@id": "./users/2"
       },
-      "dateCreated": "2023-09-27T06:57:10.189271",
-      "contentType": "image/png",
+      "dateCreated": "2024-01-09T08:48:46.376399",
+      "encodingFormat": "image/png",
       "contentSize": 9952,
+      "contentUrl": "http://localhost:5000/objects/1/files/1",
       "sha256": "9cef78156ceee44ca84b813b79d7f26afba9307aaa00da40d28a6aa2e623496b"
+    },
+    {
+      "@id": "./users/3",
+      "@type": "Person",
+      "name": "Basic User",
+      "url": "http://localhost:5000/users/3"
     },
     {
       "@id": "./users/2",
