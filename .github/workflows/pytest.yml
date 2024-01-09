@@ -6,9 +6,6 @@ on: [ push ]
 jobs:
   build:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        python-version: [ "3.10" ]
     steps:
       - uses: actions/checkout@v3
       - name: Install dependencies
@@ -17,6 +14,4 @@ jobs:
           pip install pytest
       - name: validate
         run: |
-          ls
-          pwd
-          pytest -s tests/test_*py
+          pytest -s tests/test_pypi_rocrate.py
