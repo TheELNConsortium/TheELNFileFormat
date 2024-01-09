@@ -18,5 +18,5 @@ jobs:
           pip install pytest rocrate
       - name: Test with pytest
         run: |
-          pytest
+          pytest --tb=no -s
 
