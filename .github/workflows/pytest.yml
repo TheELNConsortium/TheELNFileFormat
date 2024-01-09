@@ -18,5 +18,8 @@ jobs:
           pip install pytest pytest-cov
       - name: Test with pytest
         run: |
+          ls
+          pwd
+          ls tests/
           pytest tests/test_pypi_rocrate.py
 
