@@ -17,10 +17,10 @@ class Test_2(unittest.TestCase):
         """
         # global variables worth discussion
         ROCRATE_NOTE_MANDATORY = ['version','sdPublisher']
-        DATASET_MANDATORY = ['name', 'dateCreated', 'dateModified', 'identifier', 'text', 'keywords']
-        DATASET_INFO = ['author','mentions']
+        DATASET_MANDATORY = ['name']
+        DATASET_SUGGESTED = ['author','mentions',  'dateCreated', 'dateModified', 'identifier', 'text', 'keywords']
         FILE_MANDATORY = ['name']
-        FILE_INFO = ['sha256', 'encodingFormat', 'contentSize', 'description']
+        FILE_SUGGESTED = ['sha256', 'encodingFormat', 'contentSize', 'description']
 
         # runtime global variables
         METADATA_FILE = 'ro-crate-metadata.json'
@@ -41,6 +41,7 @@ class Test_2(unittest.TestCase):
                 print('**ERROR: all entries must only occur once in crate. check:', nodeID)
                 return
             node = nodes[0]
+            # check if mandatory and suggested keywords are present
             if '@type' not in node:
                 print('**ERROR: all nodes must have @type. check:', nodeID)
             if node['@type'] == 'Dataset':
@@ -48,7 +49,7 @@ class Test_2(unittest.TestCase):
                     if not key in node:
                         print(f'**ERROR in dataset: "{key}" not in @id={node["@id"]}')
                         globalSuccess = False
-                for key in DATASET_INFO:
+                for key in DATASET_SUGGESTED:
                     if not key in node and OUTPUT_INFO:
                         print(f'**INFO for dataset: "{key}" not in @id={node["@id"]}')
             elif node['@type'] == 'File':
@@ -56,9 +57,13 @@ class Test_2(unittest.TestCase):
                     if not key in node:
                         print(f'**ERROR in file: "{key}" not in @id={node["@id"]}')
                         globalSuccess = False
-                for key in FILE_INFO:
+                for key in FILE_SUGGESTED:
                     if not key in node and OUTPUT_INFO:
                         print(f'**INFO for file: "{key}" not in @id={node["@id"]}')
+            # check properties of all keywords
+            if any([str(i).strip()=='' for i in node.values()]):
+                print(f'**WARNING: {nodeID} contains empty values in the key-value pairs')
+            # recurse to children
             children = node.pop('hasPart') if 'hasPart' in node else []
             for child in children:
                 globalSuccess = processNode(graph, child['@id']) and globalSuccess
