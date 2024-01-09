@@ -17,4 +17,6 @@ jobs:
           pip install pytest
       - name: validate
         run: |
+          ls
+          pwd
           pytest -s tests/test_*py
