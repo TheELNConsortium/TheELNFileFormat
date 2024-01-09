@@ -17,7 +17,7 @@ class Test_1(unittest.TestCase):
         """
         main function
         """
-        globalSuccess = 0
+        success = True
         for root, _, files in os.walk(".", topdown=False):
             for name in files:
                 if not name.endswith('.eln'):
@@ -36,5 +36,5 @@ class Test_1(unittest.TestCase):
                             print(f'  {e.id}: {e.type}')
                     except Exception:
                         print("  *****  ERROR: Could not parse content of this file!!  *****")
-                        globalSuccess = 1
-        return globalSuccess
+                        success = False
+        assert success

@@ -27,7 +27,6 @@ class Test_2(unittest.TestCase):
         OUTPUT_INFO = True
         OUTPUT_COUNTS = True
 
-        globalSuccess = 0
         def processNode(graph, nodeID):
             """
             recursive function call to process each node
@@ -36,19 +35,19 @@ class Test_2(unittest.TestCase):
               graph: full graph
               nodeID: id of node in graph
             """
+            globalSuccess = True
             nodes = [ i for i in graph if '@id' in i and i['@id'] == nodeID]
             if len(nodes)!=1:
                 print('**ERROR: all entries must only occur once in crate. check:', nodeID)
                 return
             node = nodes[0]
-            global globalSuccess
             if '@type' not in node:
                 print('**ERROR: all nodes must have @type. check:', nodeID)
             if node['@type'] == 'Dataset':
                 for key in DATASET_MANDATORY:
                     if not key in node:
                         print(f'**ERROR in dataset: "{key}" not in @id={node["@id"]}')
-                        globalSuccess = 1
+                        globalSuccess = False
                 for key in DATASET_INFO:
                     if not key in node and OUTPUT_INFO:
                         print(f'**INFO for dataset: "{key}" not in @id={node["@id"]}')
@@ -56,14 +55,14 @@ class Test_2(unittest.TestCase):
                 for key in FILE_MANDATORY:
                     if not key in node:
                         print(f'**ERROR in file: "{key}" not in @id={node["@id"]}')
-                        globalSuccess = 1
+                        globalSuccess = False
                 for key in FILE_INFO:
                     if not key in node and OUTPUT_INFO:
                         print(f'**INFO for file: "{key}" not in @id={node["@id"]}')
             children = node.pop('hasPart') if 'hasPart' in node else []
             for child in children:
-                processNode(graph, child['@id'])
-            return
+                globalSuccess = processNode(graph, child['@id']) and globalSuccess
+            return globalSuccess
 
         for root, _, files in os.walk(".", topdown=False):
             for name in files:
@@ -88,8 +87,9 @@ class Test_2(unittest.TestCase):
                     main_node = [i for i in graph if i["@id"] == "./"][0]
 
                     # iteratively go through graph
+                    success = True
                     for partI in main_node['hasPart']:
-                        processNode(graph, partI['@id'])
+                        success = processNode(graph, partI['@id']) and success
 
                     # count occurances of all keys
                     counts = {}
@@ -108,5 +108,5 @@ class Test_2(unittest.TestCase):
                         print('===== Counts ======')
                         for v,k in view:
                             print(f'  {k:15}: {v}')
-        print('\n\nSuccess:', globalSuccess)
-        return globalSuccess
+        print('\n\nSuccess:', success)
+        assert success
