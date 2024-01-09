@@ -17,4 +17,4 @@ jobs:
           pip install pytest
       - name: validate
         run: |
-          pytest -s
+          pytest -s tests
