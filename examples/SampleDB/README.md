@@ -70,7 +70,7 @@ Each export contains one or more SampleDB objects, identified by their ID, with 
         "@id": "SampleDB"
       },
       "version": "1.0",
-      "dateCreated": "2024-01-09T09:01:17.885826"
+      "dateCreated": "2024-01-09T11:51:15.502380"
     },
     {
       "@id": "./",
@@ -100,8 +100,8 @@ Each export contains one or more SampleDB objects, identified by their ID, with 
       "identifier": "7",
       "name": "Measurement",
       "description": "Object #7",
-      "dateCreated": "2024-01-09T08:48:46.627315",
-      "dateModified": "2024-01-09T08:48:46.627315",
+      "dateCreated": "2024-01-09T11:50:17.474030",
+      "dateModified": "2024-01-09T11:50:17.474030",
       "author": {
         "@id": "./users/3"
       },
@@ -109,7 +109,9 @@ Each export contains one or more SampleDB objects, identified by their ID, with 
       "genre": "measurement",
       "keywords": "example_tag, other_tag, tag3",
       "mentions": [
-        "./objects/1"
+        {
+          "@id": "./objects/1"
+        }
       ],
       "comment": [],
       "hasPart": [
@@ -126,7 +128,7 @@ Each export contains one or more SampleDB objects, identified by their ID, with 
       "@type": "Dataset",
       "name": "Measurement",
       "description": "Object #7 version #0",
-      "dateCreated": "2024-01-09T08:48:46.627315",
+      "dateCreated": "2024-01-09T11:50:17.474030",
       "author": {
         "@id": "./users/3"
       },
@@ -173,15 +175,13 @@ Each export contains one or more SampleDB objects, identified by their ID, with 
       "identifier": "1",
       "name": "OMBE-1",
       "description": "Object #1",
-      "dateCreated": "2024-01-09T08:48:46.289892",
-      "dateModified": "2024-01-09T08:48:46.289892",
+      "dateCreated": "2024-01-09T11:50:17.123065",
+      "dateModified": "2024-01-09T11:50:17.123065",
       "author": {
         "@id": "./users/2"
       },
       "url": "http://localhost:5000/objects/1",
       "genre": "sample",
-      "keywords": "",
-      "mentions": [],
       "comment": [
         {
           "@id": "./objects/1/comments/1"
@@ -210,7 +210,7 @@ Each export contains one or more SampleDB objects, identified by their ID, with 
       "@type": "Dataset",
       "name": "OMBE-1",
       "description": "Object #1 version #0",
-      "dateCreated": "2024-01-09T08:48:46.289892",
+      "dateCreated": "2024-01-09T11:50:17.123065",
       "author": {
         "@id": "./users/2"
       },
@@ -251,7 +251,7 @@ Each export contains one or more SampleDB objects, identified by their ID, with 
       "author": {
         "@id": "./users/2"
       },
-      "dateCreated": "2024-01-09T08:48:46.349801",
+      "dateCreated": "2024-01-09T11:50:17.186542",
       "text": "This comment is very long. This comment is very long. This comment is very long. This comment is very long. This comment is very long. This comment is very long. This comment is very long. This comment is very long. This comment is very long. This comment is very long. This comment is very long. This comment is very long. This comment is very long. This comment is very long. This comment is very long. This comment is very long. This comment is very long. This comment is very long. This comment is very long. This comment is very long. \nThis comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. \n\nThis comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. "
     },
     {
@@ -263,7 +263,7 @@ Each export contains one or more SampleDB objects, identified by their ID, with 
       "author": {
         "@id": "./users/2"
       },
-      "dateCreated": "2024-01-09T08:48:46.357825",
+      "dateCreated": "2024-01-09T11:50:17.195133",
       "text": "This is another, shorter comment"
     },
     {
@@ -273,7 +273,7 @@ Each export contains one or more SampleDB objects, identified by their ID, with 
       "name": "files.json",
       "encodingFormat": "application/json",
       "contentSize": 763,
-      "sha256": "95429df8160b63d7efefbf7967679722f9966d5143e0593590b51dc46570605f"
+      "sha256": "78f19d39db3d10611c8663391e33d7734cade730fb5e78c5d997c2fad60f39f9"
     },
     {
       "@id": "./objects/1/files/0/example.txt",
@@ -283,7 +283,7 @@ Each export contains one or more SampleDB objects, identified by their ID, with 
       "author": {
         "@id": "./users/2"
       },
-      "dateCreated": "2024-01-09T08:48:46.366697",
+      "dateCreated": "2024-01-09T11:50:17.204828",
       "encodingFormat": "text/plain",
       "contentSize": 17,
       "contentUrl": "http://localhost:5000/objects/1/files/0",
@@ -297,7 +297,7 @@ Each export contains one or more SampleDB objects, identified by their ID, with 
       "author": {
         "@id": "./users/2"
       },
-      "dateCreated": "2024-01-09T08:48:46.376399",
+      "dateCreated": "2024-01-09T11:50:17.214566",
       "encodingFormat": "image/png",
       "contentSize": 9952,
       "contentUrl": "http://localhost:5000/objects/1/files/1",
