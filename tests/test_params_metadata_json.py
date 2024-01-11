@@ -24,8 +24,9 @@ class Test_2(unittest.TestCase):
 
         # runtime global variables
         METADATA_FILE = 'ro-crate-metadata.json'
-        OUTPUT_INFO = True
+        OUTPUT_INFO = False
         OUTPUT_COUNTS = True
+        KNOWN_KEYS = DATASET_MANDATORY+DATASET_SUGGESTED+FILE_MANDATORY+FILE_SUGGESTED+['@id', '@type']
 
         def processNode(graph, nodeID):
             """
@@ -41,7 +42,7 @@ class Test_2(unittest.TestCase):
                 print('**ERROR: all entries must only occur once in crate. check:', nodeID)
                 return
             node = nodes[0]
-            # check if mandatory and suggested keywords are present
+            # CHECK IF MANDATORY AND SUGGESTED KEYWORDS ARE PRESENT
             if '@type' not in node:
                 print('**ERROR: all nodes must have @type. check:', nodeID)
             if node['@type'] == 'Dataset':
@@ -60,9 +61,12 @@ class Test_2(unittest.TestCase):
                 for key in FILE_SUGGESTED:
                     if not key in node and OUTPUT_INFO:
                         print(f'**INFO for file: "{key}" not in @id={node["@id"]}')
-            # check properties of all keywords
+            # CHECK PROPERTIES FOR ALL KEYS
             if any([str(i).strip()=='' for i in node.values()]):
                 print(f'**WARNING: {nodeID} contains empty values in the key-value pairs')
+            # SPECIFIC CHECKS ON CERTAIN KEYS
+            if isinstance(node.get('keywords', ''), list):
+                print(f'**ERROR: {nodeID} contains an array of keywords. Use comma or space separated string')
             # recurse to children
             children = node.pop('hasPart') if 'hasPart' in node else []
             for child in children:
@@ -110,8 +114,9 @@ class Test_2(unittest.TestCase):
                     view = [ (v,k) for k,v in counts.items() ]
                     view.sort(reverse=True)
                     if OUTPUT_COUNTS:
-                        print('===== Counts ======')
+                        print('===== Counts (* unspecified)')
                         for v,k in view:
-                            print(f'  {k:15}: {v}')
+                            prefix = '   ' if k in KNOWN_KEYS else ' * '
+                            print(f'{prefix}{k:15}: {v}')
         print('\n\nSuccess:', success)
         assert success
