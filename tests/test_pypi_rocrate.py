@@ -1,5 +1,8 @@
 #!/usr/bin/python3
-""" Validate if rocrate of pypi can open and parse it https://pypi.org/project/rocrate/ """
+"""
+Validate if rocrate of pypi can open and parse it. This is a test if we follow general ro-crate guidelines.
+https://pypi.org/project/rocrate/
+"""
 import os
 import unittest
 import tempfile

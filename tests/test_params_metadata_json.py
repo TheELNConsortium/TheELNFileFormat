@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" Validate if rocrate of pypi can open and parse it https://pypi.org/project/rocrate/ """
+"""  This tests against rules that we as the ELN consortium set for ourselves """
 import os
 import json
 import unittest
