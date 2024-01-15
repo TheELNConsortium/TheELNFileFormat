@@ -4,6 +4,7 @@ Validate if rocrate of pypi can open and parse it. This is a test if we follow g
 https://pypi.org/project/rocrate/
 """
 import os
+import json
 import unittest
 import tempfile
 from pathlib import Path
@@ -20,6 +21,12 @@ class Test_1(unittest.TestCase):
         """
         main function
         """
+        # log-file
+        if Path('tests/logging.json').exists():
+            logJson = json.load(open('tests/logging.json'))
+        else:
+            logJson = {}
+
         success = True
         for root, _, files in os.walk(".", topdown=False):
             for name in files:
@@ -37,7 +44,16 @@ class Test_1(unittest.TestCase):
                         crate = ROCrate(temppath)
                         for e in crate.get_entities():
                             print(f'  {e.id}: {e.type}')
+                        if fileName not in logJson:
+                            logJson[fileName] = {'pypi_rocrate':True}
+                        else:
+                            logJson[fileName] = logJson[fileName] | {'pypi_rocrate':True}
                     except Exception:
                         print("  *****  ERROR: Could not parse content of this file!!  *****")
+                        if fileName not in logJson:
+                            logJson[fileName] = {'pypi_rocrate':False}
+                        else:
+                            logJson[fileName] = logJson[fileName] | {'pypi_rocrate':False}
                         success = False
+        json.dump(logJson, open('tests/logging.json', 'w'))
         assert success

@@ -2,6 +2,7 @@
 """  This tests against rules that we as the ELN consortium set for ourselves """
 import os
 import json
+from pathlib import Path
 import unittest
 from zipfile import ZIP_DEFLATED
 from zipfile import Path as ZPath
@@ -27,6 +28,12 @@ class Test_2(unittest.TestCase):
         OUTPUT_INFO = False
         OUTPUT_COUNTS = True
         KNOWN_KEYS = DATASET_MANDATORY+DATASET_SUGGESTED+FILE_MANDATORY+FILE_SUGGESTED+['@id', '@type']
+
+        # log-file
+        if Path('tests/logging.json').exists():
+            logJson = json.load(open('tests/logging.json'))
+        else:
+            logJson = {}
 
         def processNode(graph, nodeID):
             """
@@ -67,6 +74,7 @@ class Test_2(unittest.TestCase):
             # SPECIFIC CHECKS ON CERTAIN KEYS
             if isinstance(node.get('keywords', ''), list):
                 print(f'**ERROR: {nodeID} contains an array of keywords. Use comma or space separated string')
+                globalSuccess = False
             # recurse to children
             children = node.pop('hasPart') if 'hasPart' in node else []
             for child in children:
@@ -80,6 +88,7 @@ class Test_2(unittest.TestCase):
                 fileName = os.path.join(root, name)
                 print(f'\n\nParse: {fileName}')
                 with ZipFile(fileName, 'r', compression=ZIP_DEFLATED) as elnFile:
+                    success = True
                     p = ZPath(elnFile)
                     dirName = sorted(p.iterdir())[0]
                     metadataJsonFile = dirName.joinpath(METADATA_FILE)
@@ -93,12 +102,16 @@ class Test_2(unittest.TestCase):
                                 print(f'**ERROR: "{key}" not in @id={METADATA_FILE}')
                     else:
                         print(f'**ERROR: @id={METADATA_FILE} does not uniquely exist ')
+                        success = False
                     main_node = [i for i in graph if i["@id"] == "./"][0]
 
                     # iteratively go through graph
-                    success = True
                     for partI in main_node['hasPart']:
                         success = processNode(graph, partI['@id']) and success
+                    if fileName not in logJson:
+                        logJson[fileName] = {'params_metadata_json':success}
+                    else:
+                        logJson[fileName] = logJson[fileName] | {'params_metadata_json':success}
 
                     # count occurances of all keys
                     counts = {}
@@ -119,4 +132,5 @@ class Test_2(unittest.TestCase):
                             prefix = '   ' if k in KNOWN_KEYS else ' * '
                             print(f'{prefix}{k:15}: {v}')
         print('\n\nSuccess:', success)
+        json.dump(logJson, open('tests/logging.json', 'w'))
         assert success
