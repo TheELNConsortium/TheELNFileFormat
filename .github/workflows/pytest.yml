@@ -3,11 +3,18 @@ name: pytest
 
 on: [ push ]
 
+permissions:
+  contents: write
+  pull-requests: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal access token.
+          fetch-depth: 0 # otherwise, there would be errors pushing refs to the destination repository.
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
@@ -20,13 +27,15 @@ jobs:
         run: |
           pytest --tb=no -s
         continue-on-error: true
-      - name: switching from HTTPS to SSH
-        run: git remote set-url origin ${{ secrets.ssh }}
-      - name: check for changes
-        run: git status
-      - name: stage changed files
-        run: git add .
-      - name: commit changed files
-        run: git commit -m "Auto updating logging files"
-      - name: push code to master
-        run: git push origin
+      - name: Git preparation
+        run: |
+          git config --local user.email "23465245234+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git status
+          git add .
+          git commit -m "Auto updating logging files"
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}
