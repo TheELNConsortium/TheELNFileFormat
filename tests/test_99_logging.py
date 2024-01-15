@@ -21,3 +21,6 @@ if Path('tests/logging.json').exists():
         resultStr   = ' | '.join([':white_check_mark:' if result[col] else ':x:' for col in columns])
         output.write(f'| {software} | {indFileName} | {resultStr} |\n')
     output.close()
+    print('Created logging markdown')
+else:
+    print('Did not create logging markdown')
