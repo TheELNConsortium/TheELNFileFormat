@@ -16,4 +16,5 @@ automatically created
 
 
 **pypi_rocrate**: tests if eln-file can be opened by pypi's rocrate; aka if eln file conforms to rocrate convention.
+
 **params_metadata_json**: tests if the conventions of the consortium are fulfilled, aka parameters exist and are consistent with convention.
