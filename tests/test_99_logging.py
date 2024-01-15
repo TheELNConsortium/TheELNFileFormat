@@ -27,8 +27,8 @@ class Test_2(unittest.TestCase):
                     individualFileName=individualFileName[:24]+'...eln'
                 resultStr   = ' | '.join([':white_check_mark:' if result[col] else ':x:' for col in columns])
                 output.write(f'| {software} | {individualFileName} | {resultStr} |\n')
-            output("\n\n**pypi_rocrate**: tests if eln-file can be opened by pypi's rocrate; aka if eln file conforms to rocrate convention.\n")
-            output("**params_metadata_json**: tests if the conventions of the consortium are fulfilled, aka parameters exist and are consistent with convention.\n")
+            output.write("\n\n**pypi_rocrate**: tests if eln-file can be opened by pypi's rocrate; aka if eln file conforms to rocrate convention.\n")
+            output.write("**params_metadata_json**: tests if the conventions of the consortium are fulfilled, aka parameters exist and are consistent with convention.\n")
             output.close()
             print('Created logging markdown')
         else:
