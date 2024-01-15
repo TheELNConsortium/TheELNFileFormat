@@ -13,12 +13,7 @@ class Test_2(unittest.TestCase):
         main function
         """
         columns = ['params_metadata_json', 'pypi_rocrate']
-        header  = """
-        ## Results of verification
-        automatically created
-
-        """
-
+        header  = "## Results of verification\nautomatically created\n\n"
         if Path('tests/logging.json').exists():
             logJson = json.load(open('tests/logging.json'))
             output = open('tests/logging.md', 'w')
