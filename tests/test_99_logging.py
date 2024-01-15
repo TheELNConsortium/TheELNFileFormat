@@ -22,9 +22,11 @@ class Test_2(unittest.TestCase):
             output.write(f'| -------- | --------- | {" | ".join(["-----------" for _ in columns])} |\n')
             for filename, result in logJson.items():
                 software = filename.split('/')[2]
-                indFileName = filename.split('/')[3]
+                individualFileName = filename.split('/')[3]
+                if len(individualFileName)>30:
+                    individualFileName=individualFileName[:24]+'...eln'
                 resultStr   = ' | '.join([':white_check_mark:' if result[col] else ':x:' for col in columns])
-                output.write(f'| {software} | {indFileName} | {resultStr} |\n')
+                output.write(f'| {software} | {individualFileName} | {resultStr} |\n')
             output.close()
             print('Created logging markdown')
         else:
