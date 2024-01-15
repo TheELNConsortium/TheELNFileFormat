@@ -1,8 +1,7 @@
+## Results of verification
+automatically created
 
-        ## Results of verification
-        automatically created
-
-        | software | file name | params_metadata_json | pypi_rocrate |
+| software | file name | params_metadata_json | pypi_rocrate |
 | -------- | --------- | ----------- | ----------- |
 | kadi4mat | records-example.eln | :white_check_mark: | :white_check_mark: |
 | kadi4mat | collections-example.eln | :white_check_mark: | :white_check_mark: |
