@@ -24,4 +24,5 @@ jobs:
           git add .
           git commit -m "Auto updating logging files"
           git push origin
+        continue-on-error: true
 
