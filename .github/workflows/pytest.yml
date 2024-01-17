@@ -27,15 +27,6 @@ jobs:
         run: |
           pytest --tb=no -s
         continue-on-error: true
-      - name: Git preparation
+      - name: Create action summary
         run: |
-          git config --local user.email "23465245234+github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
-          git status
-          git add .
-          git commit -m "Auto updating logging files"
-      - name: Push changes
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: ${{ github.ref }}
+          cat logging.md >> $GITHUB_STEP_SUMMARY
