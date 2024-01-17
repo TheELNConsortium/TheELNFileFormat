@@ -29,4 +29,4 @@ jobs:
         continue-on-error: true
       - name: Create action summary
         run: |
-          cat logging.md >> $GITHUB_STEP_SUMMARY
+          cat tests/logging.md >> $GITHUB_STEP_SUMMARY
