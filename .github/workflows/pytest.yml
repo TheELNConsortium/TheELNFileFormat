@@ -1,7 +1,7 @@
 name: pytest
 # Run all pytests in the test folder
 
-on: [ push ]
+on: [ push, pull_request ]
 
 permissions:
   contents: write
