@@ -1,8 +1,9 @@
-## Preface
+#Sensolytics example
+
+## Information
 Sensolytics GmbH is developing and producing instruments for electrochemical research, focused on localised electrochemistry. Our Scanning Droplet Cell Systems are used to run user-defined electroanalytical experiments at defined positions of a sample surface, and can produce large numbers of datafiles (binary, undisclosed format of a third-party), depending on the users experimental settings. To provide users an easy way of loading the measured data into their electronic labbook, we added an export function which is saving a .eln file including the raw data and the scan parameters (*i.e. the grid definition*).
 
-## Example file 23-09-20_113808 Experiment.eln
-This example is a very lightweighted one, containing the experimental parameters and five raw data files
+### SDC Experiment.eln
 ```json
 {
   "@context": "https://w3id.org/ro/crate/1.1/context",
@@ -16,7 +17,14 @@ This example is a very lightweighted one, containing the experimental parameters
       "conformsTo": {
         "@id": "https://w3id.org/ro/crate/1.1"
       },
-      "dateCreated": "2023-09-20T11:38:09+02:00"
+      "dateCreated": "2024-04-25T17:06:07+02:00",
+      "sdPublisher": {
+        "@type": "Organization",
+        "name": "Sensolytics GmbH",
+        "logo": "https://www.sensolytics.de/images/stories/sensolytics_cropped.png",
+        "slogan": "Electrochemistry at the tip.",
+        "url": "https://www.sensolytics.de"
+      }
     },
     {
       "@id": "./",
@@ -32,50 +40,58 @@ This example is a very lightweighted one, containing the experimental parameters
     {
       "@id": "./Data",
       "@type": "Dataset",
-      "name": "23-09-20_113808 Experiment",
-      "text": "<p>Sensolytics SDC Experiment</p><p>Experiment started: 20.09.2023 11:36:58</p><p></p><p>XLength [µm]: 200</p><p>XIncrement [µm]: 50</p><p>YLength [µm]: -200</p><p>YIncrement [µm]: 50</p><p>TravelSpeed [µm/s]: 5000</p><p>Scan Direction X lines: False</p><p></p><p>Dispensing Speed [µL/s]: 25</p><p>Dispensing Volume [µL]: 150</p><p>Aspiration Speed [µL/s]: 25</p><p>Aspiration Volume [µL]: 100</p><p></p><p>Force [mN]: 0</p><p>ControlLoopKp [µm/mN]: 0.05</p><p>ApproachSpeed [µm/s]: 1000</p><p></p><p>Waste position: 2000 µm, 25000 µm, 25000 µm</p><p>Dip position: 20419.2 µm, 22456 µm, 11545.5 µm</p><p>Start position: 0 µm, 0 µm</p><p>Travel height waste: 15000 µm</p><p>Travel height sample:  11000 µm</p><p></p><p>Procedure: NOVA-LSV.nox</p><p></p><p>Point coordinates relative to the start position in µm:</p><p>50, -100</p><p>50, -150</p><p>50, -200</p><p>100, -100</p><p>100, -150</p><p></p>",
+      "name": "MyExperiment",
+      "text": "<p>Description of the experiment!</p>",
       "hasPart": [
         {
-          "@id": "./Data/0001_50_-100_NOVA-LSV.nox"
+          "@id": "./Data/0001_16082,5_17494_CV.nox"
         },
         {
-          "@id": "./Data/0002_50_-150_NOVA-LSV.nox"
+          "@id": "./Data/0002_15582,5_17994_CV.nox"
         },
         {
-          "@id": "./Data/0003_50_-200_NOVA-LSV.nox"
+          "@id": "./Data/0003_16082,5_17994_CV.nox"
         },
         {
-          "@id": "./Data/0004_100_-100_NOVA-LSV.nox"
+          "@id": "./Data/0004_16582,5_17994_CV.nox"
         },
         {
-          "@id": "./Data/0005_100_-150_NOVA-LSV.nox"
+          "@id": "./Data/0005_16082,5_18494_CV.nox"
+        },
+        {
+          "@id": "./Data/24-04-25_045906 Experiment Info.txt"
         }
       ]
     },
     {
-      "@id": "./Data/0001_50_-100_NOVA-LSV.nox",
+      "@id": "./Data/0001_16082,5_17494_CV.nox",
       "@type": "File",
-      "sha256": "4c5712a6839be7d19534cc270ad84c97efdfb3361a0e3a5c79779a1e6ae8188d"
+      "sha256": "248c1631ff1ad27919cbed1c29baeb39822de2b91087582d7fc17a532cc91c76"
     },
     {
-      "@id": "./Data/0002_50_-150_NOVA-LSV.nox",
+      "@id": "./Data/0002_15582,5_17994_CV.nox",
       "@type": "File",
-      "sha256": "7c9d6390e4e14e102b59422b7648b560dc1edf06a1abe2bf987cbbb1ab78acde"
+      "sha256": "1ef5b91dd127dc7120262d5c0433bf7afc95e4f188d75aea1c019972f6e67a6b"
     },
     {
-      "@id": "./Data/0003_50_-200_NOVA-LSV.nox",
+      "@id": "./Data/0003_16082,5_17994_CV.nox",
       "@type": "File",
-      "sha256": "89371714289737dd008088f96c87a7963a180a0cf9169f4c4ab0d3d9f24de0b3"
+      "sha256": "e41409cdca9520410f8f47c4f215ffc02b03b55c60f902693e6618cc8f79dc2b"
     },
     {
-      "@id": "./Data/0004_100_-100_NOVA-LSV.nox",
+      "@id": "./Data/0004_16582,5_17994_CV.nox",
       "@type": "File",
-      "sha256": "c5d6c3fd6c5c565cfdcf74a890f818d8e4a28af52028e31ea5d6e3b5862b000b"
+      "sha256": "11adbbd769aecf7f78a9130c58607565f3c5fd4a557ba95a3efab3c0207a0eb1"
     },
     {
-      "@id": "./Data/0005_100_-150_NOVA-LSV.nox",
+      "@id": "./Data/0005_16082,5_18494_CV.nox",
       "@type": "File",
-      "sha256": "71f59cba60e6313bb093fee8427397c3636dd1f53ce692295ee5f19b38cbf82b"
+      "sha256": "cf028bc5a6f2760234bf60ab69df2d760c1aca963e4cf3e039f6834f07954deb"
+    },
+    {
+      "@id": "./Data/24-04-25_045906 Experiment Info.txt",
+      "@type": "File",
+      "sha256": "bd27a8bd0689a6ee8839d84beada231407103dfe96186662dbcbf8828b99f781"
     }
   ]
 }
