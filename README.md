@@ -17,3 +17,14 @@ This file format was created for the needs of better interoperability between EL
 ## Status
 
 Generally working with some quirks here and there.
+
+## Known implementations
+
+| Implementation                                    | .eln import | .eln export  | Example |
+| ------------------------------------------------- | ----------- | ------------ | ------------ |
+| [eLabFTW](https://www.elabftw.net)                | ✅ | ✅ | [elabftw](https://github.com/TheELNConsortium/TheELNFileFormat/tree/master/examples/elabftw)   |
+| [Kadi4Mat](https://kadi.iam.kit.edu/)             | ✅ | ✅ | [kadi4mat](https://github.com/TheELNConsortium/TheELNFileFormat/tree/master/examples/kadi4mat) |
+| [Pasta](https://github.com/PASTA-ELN/pasta-eln)   | ✅ | ✅ | [PASTA](https://github.com/TheELNConsortium/TheELNFileFormat/tree/master/examples/PASTA)       |
+| [SampleDB](https://github.com/sciapp/sampledb)    | ✅ | ✅ | [SampleDB](https://github.com/TheELNConsortium/TheELNFileFormat/tree/master/examples/SampleDB) |
+| [Rspace](https://www.researchspace.com/)          | ✅ | ✅ | [RSpace](https://github.com/TheELNConsortium/TheELNFileFormat/tree/master/examples/RSpace)     |
+
