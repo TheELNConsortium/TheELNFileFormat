@@ -46,7 +46,7 @@ This is of course described in the [RO-Crate Specification](https://w3id.org/ro/
 
 ### Root
 
-At the root of our json-ld object, we have a context and a graph. The graph will contain an array of everything we put in our crate.
+At the root of our json-ld object, we have a context and a graph. The graph will contain an array of everything we put in our crate. Each node object in the graph represents the properties of a node serialized by the JSON-LD.
 
 ```json
 {
@@ -55,9 +55,9 @@ At the root of our json-ld object, we have a context and a graph. The graph will
 }
 ```
 
-### First object: ro-crate-metadata.json
+### First node: ro-crate-metadata.json
 
-The first thing we do is describe the `ro-crate-metadata.json` object:
+The first node we describe here is the `ro-crate-metadata.json`:
 
 ```json
 {
@@ -80,13 +80,13 @@ The first thing we do is describe the `ro-crate-metadata.json` object:
 
 It is a `CreativeWork` about the current directory where it is, and conforms to the RO-Crate specification. Other fields like `dateCreated` (added here) or [any other property](https://schema.org/CreativeWork) of `CreativeWork` can be added.
 
-In addition to the properties outlined in the [RO-Crate Metadata File Descriptor](https://www.researchobject.org/ro-crate/specification/1.1/root-data-entity.html#ro-crate-metadata-file-descriptor), this object SHOULD include `sdPublisher` property, which references the Organization entity containing additional metadata.
+In addition to the properties outlined in the [RO-Crate Metadata File Descriptor](https://www.researchobject.org/ro-crate/specification/1.1/root-data-entity.html#ro-crate-metadata-file-descriptor), this node SHOULD include `sdPublisher` property, which references the Organization entity containing additional metadata.
 
 The Organization entity SHOULD contain an `@id`, `@type: Organization`, `name` and `url` properties. Any other properties of `Organization` MAY also be added.
 
-### Second object: current directory
+### Second node: current directory
 
-The second object is basically describing the current directory (`./`).
+The second node is basically describing the current directory (`./`).
 
 ```json
 {
@@ -103,19 +103,19 @@ The second object is basically describing the current directory (`./`).
 }
 ```
 
-Its type is an array of `Dataset` and `hasPart` which corresponds to the different `@id`s of the other objects. Think of it like a Table of Contents.
+Its type is an array of `Dataset` and `hasPart` which corresponds to the different `@id`s of the other nodes. Think of it like a Table of Contents.
 
 ### The rest
 
-After that, all the other objects have an `@type` of either `Dataset` for directories or `File` for well..., files. And the `@id` corresponds to something in the `hasPart` of `./`.
+After that, all the other nodes have an `@type` of either `Dataset` for directories or `File` for well..., files. And the `@id` corresponds to something in the `hasPart` of `./`.
 
-If a Dataset object (node) has additional files, they should be listed in its `hasPart` property and can be referenced through their `@id`.
+If a Dataset node has additional files, they should be listed in its `hasPart` property and can be referenced through their `@id`.
 
-All objects (nodes) with `@type: Dataset` SHOULD include `name`, `author` properties. Furthermore, other properties of `Dataset`, such as `identifier`, `dateCreated`, `dateModified`, `text`, `keywords`, `comment` MAY also be added.
+All nodes with `@type: Dataset` SHOULD include `name`, `author` properties. Furthermore, other properties of `Dataset`, such as `identifier`, `dateCreated`, `dateModified`, `text`, `keywords`, `comment` MAY also be added.
 
-All objects (nodes) with `@type: File` SHOULD include `name`, `encodingFormat`, `contentSize` properties. Furthermore, other properties of `File`, such as `description`, `sha256`, `author`, `identifier`, `dateCreated`, `dateModified`, `text` MAY also be added.
+All nodes with `@type: File` SHOULD include `name`, `encodingFormat`, `contentSize` properties. Furthermore, other properties of `File`, such as `description`, `sha256`, `author`, `identifier`, `dateCreated`, `dateModified`, `text` MAY also be added.
 
-All objects (nodes) with a `@type` such as `Comment` or `Person` exist at the root node (once), and can be referenced via their `@id` in other parts.
+All nodes with a `@type` such as `Comment` or `Person` exist at the root node (once), and can be referenced via their `@id` in other parts.
 
 For instance, a "comment" on an experiment will exist as a `@type: Comment` node at the root node, and be referenced through its `@id` in the `comment` part of the experiment's node. See "Example Dataset with Comment" example below.
 
