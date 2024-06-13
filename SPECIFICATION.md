@@ -46,7 +46,7 @@ This is of course described in the [RO-Crate Specification](https://w3id.org/ro/
 
 ### Root
 
-At the root of our json-ld object, we have a context and a graph. The graph will contain an array of everything we put in our crate. Each node object in the graph represents the properties of a node serialized by the JSON-LD.
+At the root of our JSON-LD object, we have a context and a graph. The graph will contain an array of everything we put in our crate. Each node object in the graph represents the properties of a node serialized by the JSON-LD.
 
 ```json
 {
@@ -105,7 +105,7 @@ Its type is an array of `Dataset` and `hasPart` which corresponds to the differe
 
 ### The rest
 
-After that, all the other nodes have an `@type` of either `Dataset` for directories or `File` for well..., files. And the `@id` corresponds to something in the `hasPart` of `./`.
+Subsequently, all the remaining nodes are assigned a `@type` of either `Dataset` for directories or `File` for individual files. And the `@id` corresponds to something in the `hasPart` of `./`.
 
 If a Dataset node has additional files, they should be listed in its `hasPart` property and can be referenced through their `@id`.
 
