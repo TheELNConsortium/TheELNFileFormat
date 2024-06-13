@@ -70,11 +70,9 @@ The first node we describe here is the `ro-crate-metadata.json`:
     "@id": "https://w3id.org/ro/crate/1.1"
   },
   "dateCreated": "2022-05-30T12:25:36+0200",
-  "sdPublisher": [
-    {
-      "@id": "https://some-eln.com"
-    }
-  ]
+  "sdPublisher": {
+    "@id": "https://eln-example.com"
+  }
 }
 ```
 
