@@ -8,7 +8,10 @@ This file format can be created and read by software such as Electronic Laborato
 
 ## Specification
 
-The file format is specified in the [SPECIFICATION.md](./SPECIFICATION.md) file.
+The file format is specified in the [SPECIFICATION.md](./SPECIFICATION.md) file. It follows the [RO-Crate](https://www.researchobject.org/ro-crate/) specification and bundles the files into a ZIP archive.
+
+The `.eln` file/extension is an accepted and recognized media type (previously known as MIME type), see IANA assignment:
+https://www.iana.org/assignments/media-types/application/vnd.eln+zip
 
 ## Origin
 
