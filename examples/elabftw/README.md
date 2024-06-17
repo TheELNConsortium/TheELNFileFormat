@@ -44,7 +44,7 @@ Here is a correspondance between concepts in eLabFTW and how they are translated
       "conformsTo": {
         "@id": "https://w3id.org/ro/crate/1.1"
       },
-      "dateCreated": "2024-06-15T17:42:17+02:00",
+      "dateCreated": "2024-06-17T20:57:19+02:00",
       "sdPublisher": {
         "@id": "#publisher"
       },
@@ -73,7 +73,7 @@ Here is a correspondance between concepts in eLabFTW and how they are translated
         "@id": "./"
       },
       "name": "RO-Crate created",
-      "endTime": "2024-06-15T17:42:17+02:00",
+      "endTime": "2024-06-17T20:57:19+02:00",
       "instrument": {
         "@id": "https://www.elabftw.net"
       },
@@ -89,127 +89,79 @@ Here is a correspondance between concepts in eLabFTW and how they are translated
       "identifier": "https://www.elabftw.net"
     },
     {
-      "@id": "./Project-CRYPTO-COOL - Gold-master-experiment - 734dad66/example.mp4",
-      "@type": "File",
-      "name": "example.mp4",
-      "alternateName": "3f/3f078a64c078b3fadcbc6e44fd838912a0da08c732f51d2159de6e76aa86fb30c900a7907d6b728f39436b9dd53316c69f3c81ff70a5e0faea3d77dfc0252eb0.mp4",
-      "contentSize": 184144,
-      "sha256": "2a729ba8ddca2e2270effed052ceed5a1167a8d1c4ee856ace3d55635fca243d",
-      "description": "comment for the file"
-    },
-    {
-      "@id": "./Project-CASIMIR - Markdown-experiment - ce78d5e4/example.pdf",
-      "@type": "File",
-      "name": "example.pdf",
-      "alternateName": "eb/ebbd7f68548d2e52bc7ae937f43f2f87706c11cbe69d96365a303f1b0d607e8a7da613d4c4962202e8e117dca4a51d86a4b47e6b83976c07fe2d4911ad045e6e.pdf",
-      "contentSize": 116369,
-      "sha256": "39c64aa99f64fbd83b4594f7b1553709a232689bb6cc86067ac79d90019dabb1"
-    },
-    {
-      "@id": "./Project-CASIMIR - Markdown-experiment - ce78d5e4/example.png",
-      "@type": "File",
-      "name": "example.png",
-      "alternateName": "e0/e021d9f1278e5e289e6c75a70e78dd717b5ae58b17282c65b89daa2c173298d195a8ff86a9f0f3eb36198b3f2712d315f595de49d3d4cda43cf0c8ff3f44356e.png",
-      "contentSize": 40959,
-      "sha256": "f2780bb5a8883f8c89a6da1c5bf4604f7cb44bdcb093e16484eb81c1bcb1f580"
-    },
-    {
-      "@id": "#category-Project CASIMIR",
-      "@type": "Thing",
-      "name": "Project CASIMIR"
-    },
-    {
-      "@id": "./Project-CASIMIR - Markdown-experiment - ce78d5e4/",
-      "@type": "Dataset",
+      "@id": "comment://2024-06-17T20%3A05%3A49%2B02%3A00",
+      "@type": "Comment",
+      "dateCreated": "2024-06-17T20:05:49+02:00",
+      "text": "Well, it's always reassuring to know that scientists are spending their time and our tax dollars discovering what the rest of us already learned in third-grade science class.",
       "author": {
-        "@id": "person://797dd58d4ee3e5e9c6cc81c28ee2cd60d408a48bded24131581f98fa7de0b141?hash_algo=sha256"
-      },
-      "dateCreated": "2024-06-10T23:24:55+02:00",
-      "dateModified": "2024-06-15T15:56:36+02:00",
-      "name": "Markdown experiment",
-      "encodingFormat": "text/markdown",
-      "url": "https://elab.local:3148/experiments.php?mode=view&id=298",
-      "genre": "experiment",
-      "creativeWorkStatus": "Running",
-      "hasPart": [
-        {
-          "@id": "./Project-CASIMIR - Markdown-experiment - ce78d5e4/example.pdf"
-        },
-        {
-          "@id": "./Project-CASIMIR - Markdown-experiment - ce78d5e4/example.png"
-        }
-      ],
-      "identifier": "20240610-ce78d5e48ba7620f0e13fa2a6d4fa9bff6700557",
-      "keywords": "molecular cloning,scientific literature,COVID-24,cell culture,markdown,eln-export",
-      "text": "# This content is in markdown\n\n[a link](https://www.elabftw.net)\n\nAnd an embedded image:\n\n![image](app/download.php?name=example.png&amp;f=e0/e021d9f1278e5e289e6c75a70e78dd717b5ae58b17282c65b89daa2c173298d195a8ff86a9f0f3eb36198b3f2712d315f595de49d3d4cda43cf0c8ff3f44356e.png&amp;storage=1)\n",
-      "about": {
-        "@id": "#category-Project CASIMIR"
-      },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": 5,
-        "reviewCount": 1
+        "@id": "person://42c713981f75caa8c9d8e3a60c883dc4788c0563de13ba5607a12f385fe534fe?hash_algo=sha256"
       }
     },
     {
-      "@id": "#category-Antibody",
-      "@type": "Thing",
-      "name": "Antibody"
+      "@id": "./Project-CRYPTO-COOL - Testing-the-eLabFTW-lab-notebook - 8ebcfca1/example.docx",
+      "@type": "File",
+      "name": "example.docx",
+      "alternateName": "fa/fac02d995b0e107f31fc718b0b1b5bf305485ad87d913863cbd859c38da6e7e26da9e04cc074bca216b5e7f0151587ff98f32d9045b32ad7963e4a0d798dff6f.docx",
+      "contentSize": 4147,
+      "sha256": "f1bc2027abdc4df60fbb1b0123fa73f768fe85f4e7cd277ad6a338b2cae089c0"
     },
     {
-      "@id": "./Antibody - Anti-CD45 - 1cde8d97/",
+      "@id": "./Project-CRYPTO-COOL - Testing-the-eLabFTW-lab-notebook - 8ebcfca1/example.dna",
+      "@type": "File",
+      "name": "example.dna",
+      "alternateName": "cd/cd7ab0ee4a20fb265407f6a2be2bf4c324102836e05b21d946fdb410f8a6572e810c3c7ca873651f8504411aeacdce1bc542ea98e4d6cef677b46211e0493f23.dna",
+      "contentSize": 27050,
+      "sha256": "96639ecb57ddec5116d3cb3a9d4a3d5b37e89bbd9a7a3df782fe3e827f3fd787"
+    },
+    {
+      "@id": "./Project-CRYPTO-COOL - Testing-the-eLabFTW-lab-notebook - 8ebcfca1/example.cif",
+      "@type": "File",
+      "name": "example.cif",
+      "alternateName": "bc/bc955ad376445ad4ead83b3d4a0f7cbfcaf771bf5047daa0f0313b6224838e616f0c3a5e3ef5653892cd90b7f73178c6c332a0b2d6a32ccb2a9b936108f57fff.cif",
+      "contentSize": 178876,
+      "sha256": "84a65798c5a227119ad96b921e6f3e19ed34b23cfcee350be8d74c63e0e95d40"
+    },
+    {
+      "@id": "comment://2024-06-17T20%3A05%3A47%2B02%3A00",
+      "@type": "Comment",
+      "dateCreated": "2024-06-17T20:05:47+02:00",
+      "text": "Great results on the DNA extraction. The yield and purity look good. For the wash steps, consider extending the final centrifugation to 3 minutes to ensure no residual buffer. Nice work!",
+      "author": {
+        "@id": "person://42c713981f75caa8c9d8e3a60c883dc4788c0563de13ba5607a12f385fe534fe?hash_algo=sha256"
+      }
+    },
+    {
+      "@id": "./Project-CRYPTO-COOL - Gold-master-experiment - df81f900/example.jpg",
+      "@type": "File",
+      "name": "example.jpg",
+      "alternateName": "c0/c03da8102ecfb2922b844da8cbf762dd13ccafaa6089ad38223e10edeaf1b64b2b5d22be4232056a2cbf983d9c4de14dc9df859c750089568253094f8bfde798.jpg",
+      "contentSize": 85530,
+      "sha256": "b73626c9a9ed8561ed6126df2493bc0d84fb8feedc9fe34aed94f7d2d5f4f60f"
+    },
+    {
+      "@id": "#category-Tests",
+      "@type": "Thing",
+      "name": "Tests"
+    },
+    {
+      "@id": "./Tests - Numquam-delectus-sint-quis-sint-cupiditate-non-voluptatem - 10df895d/",
       "@type": "Dataset",
       "author": {
         "@id": "person://42c713981f75caa8c9d8e3a60c883dc4788c0563de13ba5607a12f385fe534fe?hash_algo=sha256"
       },
-      "dateCreated": "2024-06-10T13:31:56+02:00",
-      "dateModified": "2024-06-10T13:31:56+02:00",
-      "name": "Anti-CD45",
+      "dateCreated": "2024-06-17T20:03:46+02:00",
+      "dateModified": "2024-06-17T20:03:46+02:00",
+      "name": "Numquam delectus sint quis sint cupiditate non voluptatem.",
       "encodingFormat": "text/html",
-      "url": "https://elab.local:3148/database.php?mode=view&id=173",
-      "genre": "resource",
-      "identifier": "20240610-1cde8d97fe7b9c8b2e7aa4d3391f57e24e44ba4c",
+      "url": "https://elab.local:3148/experiments.php?mode=view&id=32",
+      "genre": "experiment",
+      "creativeWorkStatus": "Success",
+      "identifier": "20240617-10df895d5f87320d8ee573007feab824683092c0",
+      "keywords": "biological samples",
+      "text": "Go on!' 'I'm a poor man, your Majesty,' said Alice in a low, weak voice. 'Now, I give you fair warning,' shouted the Queen. 'You make me larger, it must be on the whole pack rose up into the sea, though you mayn't believe it--' 'I never thought about it,' said Alice, (she had grown up,' she said to herself, and nibbled a little bit, and said to the waving of the sort. Next came the royal children, and everybody else. 'Leave off that!' screamed the Pigeon. 'I can see you're trying to invent something!' 'I--I'm a little while, however, she waited patiently. 'Once,' said the Dodo solemnly presented the thimble, saying 'We beg your pardon,' said Alice aloud, addressing nobody in particular. 'She'd soon fetch it back!' 'And who is Dinah, if I know all the jurors had a large dish of tarts upon it: they looked so good, that it signifies much,' she said this she looked back once or twice she had hurt the poor child, 'for I never was so large a house, that she began shrinking directly. As.",
       "about": {
-        "@id": "#category-Antibody"
-      },
-      "variableMeasured": [
-        {
-          "propertyID": "elabftw_metadata",
-          "description": "eLabFTW metadata JSON as string",
-          "value": "{\"extra_fields\": {\"Host\": {\"type\": \"select\", \"value\": \"Rabbit\", \"options\": [\"Rabbit\", \"Mouse\", \"Goat\", \"Chicken\"]}, \"Storage temperature\": {\"type\": \"select\", \"value\": \"+4 \u00b0C\", \"options\": [\"+4 \u00b0C\", \"-20 \u00b0C\", \"-80 \u00b0C\"]}, \"Dilution to use for IF\": {\"type\": \"text\", \"value\": \"\"}, \"Dilution to use for WB\": {\"type\": \"text\", \"value\": \"\"}, \"Number of aliquots left\": {\"type\": \"number\", \"value\": \"\", \"description\": \"Make sure to decrement this when using one!\"}}}"
-        },
-        {
-          "@type": "PropertyValue",
-          "propertyID": "Host",
-          "valueReference": "select",
-          "value": "Rabbit"
-        },
-        {
-          "@type": "PropertyValue",
-          "propertyID": "Storage temperature",
-          "valueReference": "select",
-          "value": "+4 \u00b0C"
-        },
-        {
-          "@type": "PropertyValue",
-          "propertyID": "Dilution to use for IF",
-          "valueReference": "text",
-          "value": ""
-        },
-        {
-          "@type": "PropertyValue",
-          "propertyID": "Dilution to use for WB",
-          "valueReference": "text",
-          "value": ""
-        },
-        {
-          "@type": "PropertyValue",
-          "propertyID": "Number of aliquots left",
-          "valueReference": "number",
-          "value": "",
-          "description": "Make sure to decrement this when using one!"
-        }
-      ]
+        "@id": "#category-Tests"
+      }
     },
     {
       "@id": "#category-Project CRYPTO-COOL",
@@ -217,35 +169,36 @@ Here is a correspondance between concepts in eLabFTW and how they are translated
       "name": "Project CRYPTO-COOL"
     },
     {
-      "@id": "./Project-CRYPTO-COOL - Gold-master-experiment - 734dad66/",
+      "@id": "./Project-CRYPTO-COOL - Gold-master-experiment - df81f900/",
       "@type": "Dataset",
       "author": {
         "@id": "person://42c713981f75caa8c9d8e3a60c883dc4788c0563de13ba5607a12f385fe534fe?hash_algo=sha256"
       },
-      "dateCreated": "2024-06-10T22:48:24+02:00",
-      "dateModified": "2024-06-15T17:41:55+02:00",
+      "dateCreated": "2024-06-17T20:05:47+02:00",
+      "dateModified": "2024-06-17T20:31:53+02:00",
       "name": "Gold master experiment",
       "encodingFormat": "text/html",
-      "url": "https://elab.local:3148/experiments.php?mode=view&id=289",
+      "url": "https://elab.local:3148/experiments.php?mode=view&id=310",
       "genre": "experiment",
-      "alternateName": 3912,
+      "comment": [
+        {
+          "@id": "comment://2024-06-17T20%3A05%3A47%2B02%3A00"
+        }
+      ],
       "creativeWorkStatus": "Success",
       "hasPart": [
         {
-          "@id": "./Project-CRYPTO-COOL - Gold-master-experiment - 734dad66/example.mp4"
+          "@id": "./Project-CRYPTO-COOL - Gold-master-experiment - df81f900/example.jpg"
         }
       ],
-      "identifier": "20240610-734dad661f567f56d0c672fea0e047728f292f65",
-      "keywords": "test-data,eln,tag with space,special chars {[\u00e9\u00e8\u00c0\u00ae]}:*<>\u00d7\u00f7\u00b1,eln-export",
+      "identifier": "20240617-df81f90072b7768da5c80baa3bc962bbc7b3604a",
+      "keywords": "generated from yml,test-data,eln,tag with space,special chars {[\u00e9\u00e8\u00c0\u00ae]}:*<>\u00d7\u00f7\u00b1",
       "mentions": [
         {
-          "@id": "./Project-CASIMIR - Markdown-experiment - ce78d5e4/"
-        },
-        {
-          "@id": "./Antibody - Anti-CD45 - 1cde8d97/"
+          "@id": "./Tests - Numquam-delectus-sint-quis-sint-cupiditate-non-voluptatem - 10df895d/"
         }
       ],
-      "text": "<p>This experiment has many extra fields, grouped.</p>",
+      "text": "<h1>Level 1 title</h1>\n<h2>Level 2 title</h2>\n<p>The <strong>goal</strong> of this <em>experiment</em> is to have <span style=\"text-decoration:underline;\">all</span> <span style=\"background-color:rgb(241,196,15);color:rgb(224,62,45);\">attributes</span>:</p>\n<ul>\n<li>all extra fields types</li>\n<li>links to experiments and items</li>\n<li>links from experiments and items</li>\n<li>status, category, tags and uploaded files</li>\n</ul>\n<h3>Here is a table</h3>\n<table style=\"border-collapse:collapse;width:100%;\" border=\"1\">\n\n<tr>\n<td>Something</td>\n<td>in H<sub>2</sub></td>\n<td>the</td>\n</tr>\n<tr>\n<td>table</td>\n<td style=\"background-color:rgb(185,106,217);border:2px dashed rgb(224,62,45);\">31<sup>321</sup></td>\n<td>there</td>\n</tr>\n\n</table>\n<p>an emoji: \ud83e\udd2a</p>\n<p>\u221e \u2211</p>\n<h4>An image</h4>\n<p><img src=\"app/download.php?name=example.jpg&amp;f=c0/c03da8102ecfb2922b844da8cbf762dd13ccafaa6089ad38223e10edeaf1b64b2b5d22be4232056a2cbf983d9c4de14dc9df859c750089568253094f8bfde798.jpg&amp;storage=1\" width=\"200\" height=\"300\" alt=\"c03da8102ecfb2922b844da8cbf762dd13ccafaa6089ad38223e10edeaf1b64b2b5d22be4232056a2cbf983d9c4de14dc9df859c750089568253094f8bfde798.jpg&amp;storage=1\"></p>\n<p><a href=\"https://www.elabftw.net/\" target=\"_blank\" rel=\"noreferrer noopener\">A link to elabftw.net</a>.</p>\n<p>\u00a0</p>",
       "about": {
         "@id": "#category-Project CRYPTO-COOL"
       },
@@ -253,13 +206,13 @@ Here is a correspondance between concepts in eLabFTW and how they are translated
         {
           "propertyID": "elabftw_metadata",
           "description": "eLabFTW metadata JSON as string",
-          "value": "{\"elabftw\": {\"display_main_text\": true, \"extra_fields_groups\": [{\"id\": 1, \"name\": \"Group 1\"}, {\"id\": 2, \"name\": \"Group 2\"}, {\"id\": 3, \"name\": \"Last group\"}]}, \"extra_fields\": {\"Number\": {\"type\": \"number\", \"unit\": \"\", \"units\": [], \"value\": \"19\", \"group_id\": 2, \"description\": \"no units\"}, \"Type URL\": {\"type\": \"url\", \"value\": \"https://www.elabftw.net\", \"group_id\": 2, \"readonly\": true, \"description\": \"a link (readonly)\"}, \"Just time\": {\"type\": \"time\", \"value\": \"17:00\", \"group_id\": 2, \"description\": \"tea time\"}, \"Some date\": {\"type\": \"date\", \"value\": \"2024-07-14\", \"group_id\": 2, \"description\": \"is a date\"}, \"Type user\": {\"type\": \"users\", \"value\": 1, \"group_id\": 3, \"description\": \"this is a link to a user\"}, \"A checkbox\": {\"type\": \"checkbox\", \"value\": \"on\", \"group_id\": 2, \"description\": \"is checked\"}, \"Email input\": {\"type\": \"email\", \"value\": \"louis@example.com\", \"group_id\": 2, \"description\": \"type email\"}, \"Date and time\": {\"type\": \"datetime-local\", \"value\": \"2024-07-14T13:37\", \"group_id\": 2, \"description\": \"datetime description\"}, \"Radio buttons\": {\"type\": \"radio\", \"value\": \"Oui\", \"options\": [\"Oui\", \"Non\", \"Peut-\u00eatre\"], \"group_id\": 1, \"description\": \"radio description\"}, \"Type resource\": {\"type\": \"items\", \"value\": 173, \"group_id\": 3, \"description\": \"This is a link to a resource\"}, \"A dropdown menu\": {\"type\": \"select\", \"value\": \"Choice 2\", \"options\": [\"Choice 1\", \"Choice 2\", \"Choice 3\"], \"group_id\": 1, \"description\": \"Single select\"}, \"Text input name\": {\"type\": \"text\", \"value\": \"some text\", \"group_id\": 1, \"readonly\": true, \"required\": true, \"description\": \"type text + all attributes\", \"blank_value_on_duplicate\": true}, \"Type experiment\": {\"type\": \"experiments\", \"value\": 298, \"group_id\": 3, \"description\": \"This is a link to an experiment\"}, \"Number with units\": {\"type\": \"number\", \"unit\": \"mM\", \"units\": [\"mM\", \"\u03bcM\", \"nM\"], \"value\": \"321\", \"group_id\": 2, \"description\": \"this one has units\"}, \"Unchecked checkbox\": {\"type\": \"checkbox\", \"value\": \"\", \"group_id\": 2, \"description\": \"this one is not checked\"}, \"Multi dropdown menu\": {\"type\": \"select\", \"value\": [\"Option 1\", \"Option 2\"], \"options\": [\"Option 1\", \"Option 2\", \"Option 3\"], \"group_id\": 1, \"description\": \"Allows multiple selection\", \"allow_multi_values\": true}}}"
+          "value": "{\"elabftw\": {\"display_main_text\": true, \"extra_fields_groups\": [{\"id\": 1, \"name\": \"Group 1\"}, {\"id\": 2, \"name\": \"Group 2\"}, {\"id\": 3, \"name\": \"Last group\"}]}, \"extra_fields\": {\"Number\": {\"type\": \"number\", \"unit\": \"\", \"units\": [], \"value\": \"\", \"group_id\": 2, \"description\": \"no units\"}, \"Type URL\": {\"type\": \"url\", \"value\": \"https://www.elabftw.net\", \"group_id\": 2, \"readonly\": true, \"description\": \"a link (readonly)\"}, \"Just time\": {\"type\": \"time\", \"value\": \"17:00\", \"group_id\": 2, \"description\": \"tea time\"}, \"Some date\": {\"type\": \"date\", \"value\": \"2024-07-14\", \"group_id\": 2, \"description\": \"is a date\"}, \"Type user\": {\"type\": \"users\", \"value\": 1, \"group_id\": 3, \"description\": \"this is a link to a user\"}, \"A checkbox\": {\"type\": \"checkbox\", \"value\": \"on\", \"group_id\": 2, \"description\": \"is checked\"}, \"Email input\": {\"type\": \"email\", \"value\": \"louis@example.com\", \"group_id\": 2, \"description\": \"type email\"}, \"Date and time\": {\"type\": \"datetime-local\", \"value\": \"2024-07-14T13:37\", \"group_id\": 2, \"description\": \"datetime description\"}, \"Radio buttons\": {\"type\": \"radio\", \"value\": \"Oui\", \"options\": [\"Oui\", \"Non\", \"Peut-\u00eatre\"], \"group_id\": 1, \"description\": \"radio description\"}, \"Type resource\": {\"type\": \"items\", \"value\": 208, \"group_id\": 3, \"description\": \"This is a link to a resource\"}, \"A dropdown menu\": {\"type\": \"select\", \"value\": \"Choice 1\", \"options\": [\"Choice 1\", \"Choice 2\", \"Choice 3\"], \"group_id\": 1, \"description\": \"Single select\"}, \"Text input name\": {\"type\": \"text\", \"value\": \"some text\", \"group_id\": 1, \"readonly\": true, \"required\": true, \"description\": \"type text + all attributes\", \"blank_value_on_duplicate\": true}, \"Type experiment\": {\"type\": \"experiments\", \"value\": 373, \"group_id\": 3, \"description\": \"This is a link to an experiment\"}, \"Number with units\": {\"type\": \"number\", \"unit\": \"mM\", \"units\": [\"mM\", \"\u03bcM\", \"nM\"], \"value\": \"\", \"group_id\": 2, \"description\": \"this one has units\"}, \"Unchecked checkbox\": {\"type\": \"checkbox\", \"value\": \"\", \"group_id\": 2, \"description\": \"this one is not checked\"}, \"Multi dropdown menu\": {\"type\": \"select\", \"value\": \"Option 1\", \"options\": [\"Option 1\", \"Option 2\", \"Option 3\"], \"group_id\": 1, \"description\": \"Allows multiple selection\", \"allow_multi_values\": true}}}"
         },
         {
           "@type": "PropertyValue",
           "propertyID": "Number",
           "valueReference": "number",
-          "value": "19",
+          "value": "",
           "description": "no units"
         },
         {
@@ -322,14 +275,14 @@ Here is a correspondance between concepts in eLabFTW and how they are translated
           "@type": "PropertyValue",
           "propertyID": "Type resource",
           "valueReference": "items",
-          "value": 173,
+          "value": 208,
           "description": "This is a link to a resource"
         },
         {
           "@type": "PropertyValue",
           "propertyID": "A dropdown menu",
           "valueReference": "select",
-          "value": "Choice 2",
+          "value": "Choice 1",
           "description": "Single select"
         },
         {
@@ -343,14 +296,14 @@ Here is a correspondance between concepts in eLabFTW and how they are translated
           "@type": "PropertyValue",
           "propertyID": "Type experiment",
           "valueReference": "experiments",
-          "value": 298,
+          "value": 373,
           "description": "This is a link to an experiment"
         },
         {
           "@type": "PropertyValue",
           "propertyID": "Number with units",
           "valueReference": "number",
-          "value": "321",
+          "value": "",
           "description": "this one has units",
           "unitText": "mM"
         },
@@ -365,320 +318,199 @@ Here is a correspondance between concepts in eLabFTW and how they are translated
           "@type": "PropertyValue",
           "propertyID": "Multi dropdown menu",
           "valueReference": "select",
-          "value": [
-            "Option 1",
-            "Option 2"
-          ],
+          "value": "Option 1",
           "description": "Allows multiple selection"
+        }
+      ]
+    },
+    {
+      "@id": "#category-Generated",
+      "@type": "Thing",
+      "name": "Generated"
+    },
+    {
+      "@id": "./Generated - Architecto-est-recusandae-tempora-facilis-nemo - 67d460ac/",
+      "@type": "Dataset",
+      "author": {
+        "@id": "person://42c713981f75caa8c9d8e3a60c883dc4788c0563de13ba5607a12f385fe534fe?hash_algo=sha256"
+      },
+      "dateCreated": "2024-06-17T20:04:04+02:00",
+      "dateModified": "2024-06-17T20:04:05+02:00",
+      "name": "Architecto est recusandae tempora facilis nemo.",
+      "encodingFormat": "text/html",
+      "url": "https://elab.local:3148/database.php?mode=view&id=50",
+      "genre": "resource",
+      "creativeWorkStatus": "Destroyed",
+      "identifier": "20240617-67d460ac1b3d558fe0c8019e934d3d2a17c62501",
+      "keywords": "ecology",
+      "text": "I eat\" is the driest thing I ask! It's always six o'clock now.' A bright idea came into Alice's head. 'Is that the poor little thing howled so, that Alice said; 'there's a large cat which was sitting between them, fast asleep, and the moment how large she had somehow fallen into the garden. Then she went on, without attending to her; 'but those serpents! There's no pleasing them!' Alice was not a moment to be executed for having missed their turns, and she put one arm out of that is--\"Birds of a muchness\"--did you ever eat a little way out of the hall: in fact she was coming to, but it makes rather a hard word, I will prosecute YOU.--Come, I'll take no denial; We must have been a RED rose-tree, and we put a stop to this,' she said this, she came rather late, and the baby violently up and rubbed its eyes: then it chuckled. 'What fun!' said the Mouse. 'Of course,' the Gryphon replied rather crossly: 'of course you know that Cheshire cats always grinned; in fact, I didn't know that.",
+      "about": {
+        "@id": "#category-Generated"
+      },
+      "step": [
+        {
+          "@type": "HowToStep",
+          "position": 1,
+          "creativeWorkStatus": "unfinished",
+          "itemListElement": [
+            {
+              "@type": "HowToDirection",
+              "text": "voluptatemaperiam"
+            }
+          ]
+        },
+        {
+          "@type": "HowToStep",
+          "position": 2,
+          "creativeWorkStatus": "unfinished",
+          "itemListElement": [
+            {
+              "@type": "HowToDirection",
+              "text": "laborumsoluta"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "@id": "./Generated - Minus-qui-dolorem-praesentium-quos-aliquam-quia-ea - 18fd5717/quout.json",
+      "@type": "File",
+      "name": "quout.json",
+      "alternateName": "9c/9c1e8941b5f8c8c426d14d2aee478e5ae4e77cf75ae9944fa5b2d8f8938e47ec01b980ffa44330224c19775e9e7be50fd9128829052734ee72f90b907c2f7c71.json",
+      "contentSize": 21,
+      "sha256": "66bd0965616378a8b4698bf8b01784e7d29f15c7bde4fe86fb4f5dc959cf189c"
+    },
+    {
+      "@id": "./Generated - Minus-qui-dolorem-praesentium-quos-aliquam-quia-ea - 18fd5717/",
+      "@type": "Dataset",
+      "author": {
+        "@id": "person://42c713981f75caa8c9d8e3a60c883dc4788c0563de13ba5607a12f385fe534fe?hash_algo=sha256"
+      },
+      "dateCreated": "2024-06-17T20:04:05+02:00",
+      "dateModified": "2024-06-17T20:04:05+02:00",
+      "name": "Minus qui dolorem praesentium quos aliquam quia ea.",
+      "encodingFormat": "text/html",
+      "url": "https://elab.local:3148/database.php?mode=view&id=51",
+      "genre": "resource",
+      "creativeWorkStatus": "Waiting",
+      "hasPart": [
+        {
+          "@id": "./Generated - Minus-qui-dolorem-praesentium-quos-aliquam-quia-ea - 18fd5717/quout.json"
+        }
+      ],
+      "identifier": "20240617-18fd5717439c845d64c430b390521236efa0ed3d",
+      "keywords": "microbiology,HeLa,cell culture techniques,lab supplies,research methodology,scientific discovery",
+      "text": "Alice considered a little girl,' said Alice, always ready to make out exactly what they WILL do next! As for pulling me out of a good deal: this fireplace is narrow, to be patted on the Duchess's cook. She carried the pepper-box in her lessons in here? Why, there's hardly room for YOU, and no one could possibly hear you.' And certainly there was a table, with a cart-horse, and expecting every moment to think about it, you know--' 'But, it goes on \"THEY ALL RETURNED FROM HIM TO YOU,\"' said Alice. 'I don't see how he can EVEN finish, if he thought it would be only rustling in the last words out loud, and the Queen till she shook the house, and have next to no toys to play croquet.' The Frog-Footman repeated, in the window, and one foot to the company generally, 'You are not attending!' said the Cat. 'I said pig,' replied Alice; 'and I wish I had to leave the court; but on the floor, as it didn't sound at all for any lesson-books!' And so she sat on, with closed eyes, and half believed."
+    },
+    {
+      "@id": "./Project-CRYPTO-COOL - Testing-the-eLabFTW-lab-notebook - 8ebcfca1/",
+      "@type": "Dataset",
+      "author": {
+        "@id": "person://42c713981f75caa8c9d8e3a60c883dc4788c0563de13ba5607a12f385fe534fe?hash_algo=sha256"
+      },
+      "dateCreated": "2024-06-17T20:05:49+02:00",
+      "dateModified": "2024-06-17T20:54:35+02:00",
+      "name": "Testing the eLabFTW lab notebook",
+      "encodingFormat": "text/html",
+      "url": "https://elab.local:3148/experiments.php?mode=view&id=316",
+      "genre": "experiment",
+      "comment": [
+        {
+          "@id": "comment://2024-06-17T20%3A05%3A49%2B02%3A00"
+        }
+      ],
+      "creativeWorkStatus": "Running",
+      "hasPart": [
+        {
+          "@id": "./Project-CRYPTO-COOL - Testing-the-eLabFTW-lab-notebook - 8ebcfca1/example.docx"
+        },
+        {
+          "@id": "./Project-CRYPTO-COOL - Testing-the-eLabFTW-lab-notebook - 8ebcfca1/example.dna"
+        },
+        {
+          "@id": "./Project-CRYPTO-COOL - Testing-the-eLabFTW-lab-notebook - 8ebcfca1/example.cif"
+        }
+      ],
+      "identifier": "20240617-8ebcfca10c816e3ff3a9d0fe00e367b9b8ab1811",
+      "keywords": "generated from yml,demo,test",
+      "mentions": [
+        {
+          "@id": "./Project-CRYPTO-COOL - Gold-master-experiment - df81f900/"
+        },
+        {
+          "@id": "./Generated - Architecto-est-recusandae-tempora-facilis-nemo - 67d460ac/"
+        },
+        {
+          "@id": "./Generated - Minus-qui-dolorem-praesentium-quos-aliquam-quia-ea - 18fd5717/"
+        }
+      ],
+      "text": "<h1>Goal</h1>\n<p>Test the software.</p>\n<h1>Procedure</h1>\n<p>Click everywhere and explore everything.</p>\n<h1>Results</h1>\n<p>It's really nice, I think I'll adopt it for our lab.</p>",
+      "variableMeasured": [
+        {
+          "propertyID": "elabftw_metadata",
+          "description": "eLabFTW metadata JSON as string",
+          "value": "{\"extra_fields\": {\"OMERO dataset url\": {\"type\": \"url\", \"value\": \"https://omero.uni.example.edu/viewer?team=39&project=194\", \"description\": \"Link to the OMERO server\"}, \"Annie, are you okay\": {\"type\": \"checkbox\", \"value\": \"\", \"description\": \"This is a checkbox custom input\"}, \"This is a custom list input\": {\"type\": \"select\", \"value\": \"Some choice\", \"options\": [\"Some choice\", \"Another choice\", \"A third choice\"], \"description\": \"The value is selected from a pre-defined list\"}}}"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "OMERO dataset url",
+          "valueReference": "url",
+          "value": "https://omero.uni.example.edu/viewer?team=39&project=194",
+          "description": "Link to the OMERO server"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "Annie, are you okay",
+          "valueReference": "checkbox",
+          "value": "",
+          "description": "This is a checkbox custom input"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "This is a custom list input",
+          "valueReference": "select",
+          "value": "Some choice",
+          "description": "The value is selected from a pre-defined list"
         }
       ],
       "aggregateRating": {
         "@type": "AggregateRating",
-        "ratingValue": 3,
+        "ratingValue": 5,
         "reviewCount": 1
-      },
-      "step": [
-        {
-          "@type": "HowToStep",
-          "position": 1,
-          "creativeWorkStatus": "unfinished",
-          "itemListElement": [
-            {
-              "@type": "HowToDirection",
-              "text": "a step"
-            }
-          ]
-        },
-        {
-          "@type": "HowToStep",
-          "position": 2,
-          "creativeWorkStatus": "unfinished",
-          "itemListElement": [
-            {
-              "@type": "HowToDirection",
-              "text": "another step"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "@id": "comment://2024-06-15T15%3A49%3A49%2B02%3A00",
-      "@type": "Comment",
-      "dateCreated": "2024-06-15T15:49:49+02:00",
-      "text": "this is a comment",
-      "author": {
-        "@id": "person://42c713981f75caa8c9d8e3a60c883dc4788c0563de13ba5607a12f385fe534fe?hash_algo=sha256"
       }
     },
     {
-      "@id": "./Project-CASIMIR - Experiment-with-an-image-in-the-text - 2c00e9a2/haproxy3-stats-reload.png",
+      "@id": "./RD - Testing-relationship-between-acceleration-and-gravity - 5adb0eb3/example.pptx",
       "@type": "File",
-      "name": "haproxy3-stats-reload.png",
-      "alternateName": "cf/cfc36b71003a82ccb366a7a3694dba3972eab46002f61384f3c5437885f6944ec15189f8a5596b1cffd07c2a565c7beb9094cd1b8e0ac371b937777defd87f6b.png",
-      "contentSize": 30301,
-      "sha256": "2f7944084e994fff29c372ca2111796f3603463636aba8e2f656cb69f071f523"
+      "name": "example.pptx",
+      "alternateName": "67/6702398d3c3af6755a9bdd3c0f97a10d0e17691302528b81b9ec212e4078b3a39976b46feaab2f8bc525ba0c17610ad11d88b136a7ef32f94888e0e6f38e6d68.pptx",
+      "contentSize": 57375,
+      "sha256": "4fc01c51e094f4410a56f05f513be829425f12e7b33b5296115126a84aba74e7",
+      "description": "a file comment"
     },
     {
-      "@id": "#category-Project CASIMIR",
-      "@type": "Thing",
-      "name": "Project CASIMIR"
+      "@id": "./RD - Testing-relationship-between-acceleration-and-gravity - 5adb0eb3/example.ppt",
+      "@type": "File",
+      "name": "example.ppt",
+      "alternateName": "ef/ef5175e9c8520ca1d44fafb54822df5b0fd5a9a2a18adaade24261f1012b58ff887ef379d4dc06b2954178ae8bb535dc3246f05237d98b55ff121e8a15d5d4dc.ppt",
+      "contentSize": 162304,
+      "sha256": "a3201e2d74f5cf61863555641642dc189770902e7dcab9e28a0c0777bfad98f9"
     },
     {
-      "@id": "./Project-CASIMIR - Experiment-with-an-image-in-the-text - 2c00e9a2/",
-      "@type": "Dataset",
-      "author": {
-        "@id": "person://42c713981f75caa8c9d8e3a60c883dc4788c0563de13ba5607a12f385fe534fe?hash_algo=sha256"
-      },
-      "dateCreated": "2024-06-14T18:13:33+02:00",
-      "dateModified": "2024-06-15T15:51:40+02:00",
-      "name": "Experiment with an image in the text",
-      "encodingFormat": "text/html",
-      "url": "https://elab.local:3148/experiments.php?mode=view&id=301",
-      "genre": "experiment",
-      "alternateName": 312,
-      "comment": [
-        {
-          "@id": "comment://2024-06-15T15%3A49%3A49%2B02%3A00"
-        }
-      ],
-      "creativeWorkStatus": "Success",
-      "hasPart": [
-        {
-          "@id": "./Project-CASIMIR - Experiment-with-an-image-in-the-text - 2c00e9a2/haproxy3-stats-reload.png"
-        }
-      ],
-      "identifier": "20240614-2c00e9a21156c8b50b5dc251e2eca7509b0ff78a",
-      "keywords": "with-image,with-customid,eln-export",
-      "text": "<p>main <span style=\"text-decoration:underline;\">experiment</span> <strong>text</strong></p>\n<h1><span style=\"background-color:rgb(241,196,15);color:rgb(224,62,45);\"><strong>which also contains an image!</strong></span></h1>\n<p><span style=\"background-color:rgb(241,196,15);color:rgb(224,62,45);\"><strong><img src=\"app/download.php?name=haproxy3-stats-reload.png&amp;f=cf/cfc36b71003a82ccb366a7a3694dba3972eab46002f61384f3c5437885f6944ec15189f8a5596b1cffd07c2a565c7beb9094cd1b8e0ac371b937777defd87f6b.png&amp;storage=1\" alt=\"cfc36b71003a82ccb366a7a3694dba3972eab46002f61384f3c5437885f6944ec15189f8a5596b1cffd07c2a565c7beb9094cd1b8e0ac371b937777defd87f6b.png&amp;storage=1\"></strong></span></p>\n<p><span style=\"background-color:rgb(241,196,15);color:rgb(224,62,45);\"><strong>After import, make sure the image appears above!</strong></span></p>",
-      "about": {
-        "@id": "#category-Project CASIMIR"
-      },
-      "variableMeasured": null,
-      "step": [
-        {
-          "@type": "HowToStep",
-          "position": 1,
-          "creativeWorkStatus": "finished",
-          "temporal": "2024-06-15T15:51:40+02:00",
-          "itemListElement": [
-            {
-              "@type": "HowToDirection",
-              "text": "step 1"
-            }
-          ]
-        },
-        {
-          "@type": "HowToStep",
-          "position": 2,
-          "creativeWorkStatus": "finished",
-          "temporal": "2024-06-15T15:51:40+02:00",
-          "itemListElement": [
-            {
-              "@type": "HowToDirection",
-              "text": "step 2"
-            }
-          ]
-        },
-        {
-          "@type": "HowToStep",
-          "position": 3,
-          "creativeWorkStatus": "unfinished",
-          "itemListElement": [
-            {
-              "@type": "HowToDirection",
-              "text": "step 3"
-            }
-          ]
-        }
-      ]
+      "@id": "./RD - Testing-relationship-between-acceleration-and-gravity - 5adb0eb3/example.ppsx",
+      "@type": "File",
+      "name": "example.ppsx",
+      "alternateName": "77/77d83264f74db6c0ac4a903e05cc269abd20a81f7d3f55da57bd9feefe948ead2de4b29e89321a5579eedfb33cd2304d4c4034160fb5e2d267285da384c789f9.ppsx",
+      "contentSize": 57375,
+      "sha256": "7af9d974a47b6d081f1ce7ad0e3d5af21be6aeb664938cef6cfd8bdf1937cb2a"
     },
     {
-      "@id": "#category-Antibody",
-      "@type": "Thing",
-      "name": "Antibody"
-    },
-    {
-      "@id": "./Antibody - Anti-GAPDH - 49d9d070/",
-      "@type": "Dataset",
-      "author": {
-        "@id": "person://42c713981f75caa8c9d8e3a60c883dc4788c0563de13ba5607a12f385fe534fe?hash_algo=sha256"
-      },
-      "dateCreated": "2024-06-10T13:31:56+02:00",
-      "dateModified": "2024-06-10T13:31:56+02:00",
-      "name": "Anti-GAPDH",
-      "encodingFormat": "text/html",
-      "url": "https://elab.local:3148/database.php?mode=view&id=174",
-      "genre": "resource",
-      "identifier": "20240610-49d9d070a04a2afb390dfc57d25b98668d6082bb",
-      "text": "<p>Anti-GAPDH is a polyclonal rabbit antibody used to detect the glyceraldehyde-3-phosphate dehydrogenase protein, a well-known housekeeping gene that is ubiquitously expressed in cells. This antibody is commonly used as a loading control in Western blotting and has been shown to work in a wide range of species including human, mouse, rat, and others. The antibody was generated by immunizing rabbits with purified GAPDH protein.</p>",
-      "about": {
-        "@id": "#category-Antibody"
-      },
-      "variableMeasured": [
-        {
-          "propertyID": "elabftw_metadata",
-          "description": "eLabFTW metadata JSON as string",
-          "value": "{\"extra_fields\": {\"Host\": {\"type\": \"text\", \"value\": \"Rabbit\"}, \"Isotype\": {\"type\": \"text\", \"value\": \"IgG\"}, \"Dilution for IF\": {\"type\": \"text\", \"value\": \"1:1000\"}, \"Dilution for WB\": {\"type\": \"text\", \"value\": \"1:5000\"}, \"Storage temperature\": {\"type\": \"select\", \"value\": \"-20\u00b0C\", \"options\": [\"+4\u00b0C\", \"-20\u00b0C\", \"-80\u00b0C\"]}}}"
-        },
-        {
-          "@type": "PropertyValue",
-          "propertyID": "Host",
-          "valueReference": "text",
-          "value": "Rabbit"
-        },
-        {
-          "@type": "PropertyValue",
-          "propertyID": "Isotype",
-          "valueReference": "text",
-          "value": "IgG"
-        },
-        {
-          "@type": "PropertyValue",
-          "propertyID": "Dilution for IF",
-          "valueReference": "text",
-          "value": "1:1000"
-        },
-        {
-          "@type": "PropertyValue",
-          "propertyID": "Dilution for WB",
-          "valueReference": "text",
-          "value": "1:5000"
-        },
-        {
-          "@type": "PropertyValue",
-          "propertyID": "Storage temperature",
-          "valueReference": "select",
-          "value": "-20\u00b0C"
-        }
-      ]
-    },
-    {
-      "@id": "#category-Chemical compound",
-      "@type": "Thing",
-      "name": "Chemical compound"
-    },
-    {
-      "@id": "./Chemical-compound - Potassium-chloride-KCl - 9ca2ca08/",
-      "@type": "Dataset",
-      "author": {
-        "@id": "person://42c713981f75caa8c9d8e3a60c883dc4788c0563de13ba5607a12f385fe534fe?hash_algo=sha256"
-      },
-      "dateCreated": "2024-06-10T13:31:55+02:00",
-      "dateModified": "2024-06-10T13:31:55+02:00",
-      "name": "Potassium chloride - KCl",
-      "encodingFormat": "text/html",
-      "url": "https://elab.local:3148/database.php?mode=view&id=164",
-      "genre": "resource",
-      "identifier": "20240610-9ca2ca089b4854074337d85e30f3799b55a03395",
-      "about": {
-        "@id": "#category-Chemical compound"
-      },
-      "variableMeasured": null
-    },
-    {
-      "@id": "#category-Yeast",
-      "@type": "Thing",
-      "name": "Yeast"
-    },
-    {
-      "@id": "./Yeast - JK9-3d - 42b153ea/",
-      "@type": "Dataset",
-      "author": {
-        "@id": "person://42c713981f75caa8c9d8e3a60c883dc4788c0563de13ba5607a12f385fe534fe?hash_algo=sha256"
-      },
-      "dateCreated": "2024-06-10T13:31:56+02:00",
-      "dateModified": "2024-06-10T13:31:56+02:00",
-      "name": "JK9-3d",
-      "encodingFormat": "text/html",
-      "url": "https://elab.local:3148/database.php?mode=view&id=171",
-      "genre": "resource",
-      "identifier": "20240610-42b153ea593f10709b9677378b4d4b83fad88703",
-      "about": {
-        "@id": "#category-Yeast"
-      },
-      "variableMeasured": [
-        {
-          "propertyID": "elabftw_metadata",
-          "description": "eLabFTW metadata JSON as string",
-          "value": "{\"extra_fields\": {\"Genotype\": {\"type\": \"text\", \"value\": \"MATa his3\u0394200 leu2\u03941 trp1\u039463 ura3\u039452\"}, \"Plasmids\": {\"type\": \"text\", \"value\": \"pRS416\"}, \"Temperature\": {\"type\": \"text\", \"value\": \"30\u00b0C\"}}}"
-        },
-        {
-          "@type": "PropertyValue",
-          "propertyID": "Genotype",
-          "valueReference": "text",
-          "value": "MATa his3\u0394200 leu2\u03941 trp1\u039463 ura3\u039452"
-        },
-        {
-          "@type": "PropertyValue",
-          "propertyID": "Plasmids",
-          "valueReference": "text",
-          "value": "pRS416"
-        },
-        {
-          "@type": "PropertyValue",
-          "propertyID": "Temperature",
-          "valueReference": "text",
-          "value": "30\u00b0C"
-        }
-      ]
-    },
-    {
-      "@id": "#category-Production",
-      "@type": "Thing",
-      "name": "Production"
-    },
-    {
-      "@id": "./Production - With-links-to-resources-and-experiments - c1fefd66/",
-      "@type": "Dataset",
-      "author": {
-        "@id": "person://42c713981f75caa8c9d8e3a60c883dc4788c0563de13ba5607a12f385fe534fe?hash_algo=sha256"
-      },
-      "dateCreated": "2024-06-10T22:48:25+02:00",
-      "dateModified": "2024-06-15T15:53:24+02:00",
-      "name": "With links to resources and experiments",
-      "encodingFormat": "text/html",
-      "url": "https://elab.local:3148/experiments.php?mode=view&id=297",
-      "genre": "experiment",
-      "creativeWorkStatus": "Need to be redone",
-      "identifier": "20240610-c1fefd66d32720d791238034a679c531112738f5",
-      "keywords": "hardness testing,molecular biology,cell culture,cell culture techniques,eln-export",
-      "mentions": [
-        {
-          "@id": "./Project-CASIMIR - Experiment-with-an-image-in-the-text - 2c00e9a2/"
-        },
-        {
-          "@id": "./Project-CRYPTO-COOL - Gold-master-experiment - 734dad66/"
-        },
-        {
-          "@id": "./Antibody - Anti-GAPDH - 49d9d070/"
-        },
-        {
-          "@id": "./Chemical-compound - Potassium-chloride-KCl - 9ca2ca08/"
-        },
-        {
-          "@id": "./Yeast - JK9-3d - 42b153ea/"
-        }
-      ],
-      "text": "<p>main content</p>\n<p>\u00a0</p>",
-      "about": {
-        "@id": "#category-Production"
-      }
-    },
-    {
-      "@id": "./simple-experiment-nothing-extra - af674ffe/",
-      "@type": "Dataset",
-      "author": {
-        "@id": "person://42c713981f75caa8c9d8e3a60c883dc4788c0563de13ba5607a12f385fe534fe?hash_algo=sha256"
-      },
-      "dateCreated": "2024-06-15T15:11:18+02:00",
-      "dateModified": "2024-06-15T15:48:53+02:00",
-      "name": "simple experiment : nothing extra",
-      "encodingFormat": "text/html",
-      "url": "https://elab.local:3148/experiments.php?mode=view&id=302",
-      "genre": "experiment",
-      "identifier": "20240615-af674ffe54cc9b513fdc0a7de7b4aff21cf91f8e",
-      "keywords": "eln-export"
+      "@id": "./RD - Testing-relationship-between-acceleration-and-gravity - 5adb0eb3/example.pps",
+      "@type": "File",
+      "name": "example.pps",
+      "alternateName": "65/65f5f5f3b3e8f4001257efa7c40b6f14453d2bd7fef8234b183f25c6d037eb9c52559b12c19e6a2236b9393a213ad026abb164dcec6daeb3fd001e1831022da1.pps",
+      "contentSize": 162304,
+      "sha256": "a3201e2d74f5cf61863555641642dc189770902e7dcab9e28a0c0777bfad98f9"
     },
     {
       "@id": "#category-R&D",
@@ -686,49 +518,212 @@ Here is a correspondance between concepts in eLabFTW and how they are translated
       "name": "R&D"
     },
     {
-      "@id": "./RD - Rerum-nisi-eligendi-libero - 2402131b/",
+      "@id": "./RD - Testing-relationship-between-acceleration-and-gravity - 5adb0eb3/",
       "@type": "Dataset",
       "author": {
         "@id": "person://42c713981f75caa8c9d8e3a60c883dc4788c0563de13ba5607a12f385fe534fe?hash_algo=sha256"
       },
-      "dateCreated": "2024-06-10T22:48:25+02:00",
-      "dateModified": "2024-06-10T22:48:25+02:00",
-      "name": "Rerum nisi eligendi libero.",
+      "dateCreated": "2024-06-17T20:05:48+02:00",
+      "dateModified": "2024-06-17T20:56:58+02:00",
+      "name": "Testing relationship between acceleration and gravity",
       "encodingFormat": "text/html",
-      "url": "https://elab.local:3148/experiments.php?mode=view&id=296",
+      "url": "https://elab.local:3148/experiments.php?mode=view&id=314",
       "genre": "experiment",
-      "creativeWorkStatus": "Need to be redone",
-      "identifier": "20240610-2402131ba809c5cd2c23955eab6ff021246a32c9",
-      "keywords": "molecular cloning,lab techniques,spectroscopy,experimental design,eln-export",
-      "text": "<p>id:200</p><p>date:2021-12-04</p><p>body:She felt that this could not be denied, so she went on, looking anxiously about her. &#039;Oh, do let me help to undo it!&#039; &#039;I shall sit here,&#039; he said, turning to Alice, and she tried hard to whistle to it; but she could not remember ever having heard of uglifying!&#039; it exclaimed. &#039;You know what they&#039;re about!&#039; &#039;Read them,&#039; said the March Hare moved into the garden, called out &#039;The race is over!&#039; and they can&#039;t prove I did: there&#039;s no use in waiting by the time at the Footman&#039;s head: it just missed her. Alice caught the flamingo and brought it back, the fight was over, and both creatures hid their faces in their mouths. So they got settled down in an angry voice--the Rabbit&#039;s--&#039;Pat! Pat! Where are you?&#039; And then a great thistle, to keep herself from being broken. She hastily put down her flamingo, and began to repeat it, when a sharp hiss made her draw back in their mouths--and they&#039;re all over crumbs.&#039; &#039;You&#039;re wrong about the temper of your nose-- What made you so awfully clever?&#039; &#039;I have.</p><p>category:8</p><p>category_title:R&amp;D</p><p>category_color:c2136e</p><p>status:3</p><p>status_title:Need to be redone</p><p>status_color:C0C0C0</p><p>custom_id:</p><p>elabid:20240610-8709ac7daee351631ba3b1f01750352b4d2a6858</p><p>rating:0</p><p>url:<a href=\"https://elab.local:3148/experiments.php?mode=view&amp;id=200\">https://elab.local:3148/experiments.php?mode=view&amp;id=200</a></p>",
+      "creativeWorkStatus": "Success",
+      "hasPart": [
+        {
+          "@id": "./RD - Testing-relationship-between-acceleration-and-gravity - 5adb0eb3/example.pptx"
+        },
+        {
+          "@id": "./RD - Testing-relationship-between-acceleration-and-gravity - 5adb0eb3/example.ppt"
+        },
+        {
+          "@id": "./RD - Testing-relationship-between-acceleration-and-gravity - 5adb0eb3/example.ppsx"
+        },
+        {
+          "@id": "./RD - Testing-relationship-between-acceleration-and-gravity - 5adb0eb3/example.pps"
+        }
+      ],
+      "identifier": "20240617-5adb0eb3ced9e2fb514ddbdf8b102869355b72fc",
+      "keywords": "generated from yml,has-mathjax,physics",
+      "text": "<h1>Determination of Acceleration Due to Gravity</h1>\n<p>\nThe acceleration due to gravity is a fundamental constant that determines the gravitational force between two objects. In this experiment, we aimed to determine the value of acceleration due to gravity using a simple pendulum.\n</p>\n<h2>Experimental Design</h2>\n<p>\nWe suspended a metal ball from a string and measured the time taken for one complete oscillation of the pendulum. We repeated this measurement for different lengths of the pendulum and recorded the corresponding times. Using the formula $T=2\\pi\\sqrt{\\frac{L}{g}}$, where $T$ is the period of the pendulum, $L$ is the length of the pendulum, and $g$ is the acceleration due to gravity, we calculated the value of $g$. The period $T$ can also be expressed in terms of the frequency $f$ using the equation $T=\\frac{1}{f}$.\n</p>\n<h2>Results</h2>\n<p>\nThe results showed that the value of acceleration due to gravity was $9.81 \\text{ m/s}^2$, which is consistent with the accepted value. We also found that the period of the pendulum increased with increasing length, as predicted by the formula $T=2\\pi\\sqrt{\\frac{L}{g}}$. The relationship between the length and period of the pendulum can be expressed as $T^2=\\frac{4\\pi^2}{g}L$, which is a linear relationship with a slope of $\\frac{4\\pi^2}{g}$.\n</p>\n",
       "about": {
         "@id": "#category-R&D"
+      },
+      "variableMeasured": null,
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": 4,
+        "reviewCount": 1
       }
     },
     {
-      "@id": "#category-Project CRYPTO-COOL",
+      "@id": "#category-Demo",
       "@type": "Thing",
-      "name": "Project CRYPTO-COOL"
+      "name": "Demo"
     },
     {
-      "@id": "./Project-CRYPTO-COOL - Test-the-grouped-extra-fields - 046cb409/",
+      "@id": "./Demo - Synthesis-of-Aspirin - 6bc46aec/",
+      "@type": "Dataset",
+      "author": {
+        "@id": "person://ec7c1f6cde2fe4f2edab2ef88546f997f5f9c2328c4bbd4de99309f49b0161f7?hash_algo=sha256"
+      },
+      "dateCreated": "2024-06-17T20:05:49+02:00",
+      "dateModified": "2024-06-17T20:56:43+02:00",
+      "name": "Synthesis of Aspirin",
+      "encodingFormat": "text/html",
+      "url": "https://elab.local:3148/experiments.php?mode=view&id=315",
+      "genre": "experiment",
+      "creativeWorkStatus": "Success",
+      "identifier": "20240617-6bc46aec1f90e105d3c91b641accfe804a843b51",
+      "keywords": "generated from yml,chemistry,has-mathjax",
+      "text": "<h1>Introduction</h1>\n<p>\nAspirin is a widely used pain-relieving and anti-inflammatory drug. In this experiment, we aimed to synthesize aspirin from salicylic acid and acetic anhydride.\n</p>\n<h2>Experimental Design</h2>\n<p>\nWe mixed salicylic acid and acetic anhydride in the presence of a catalyst, sulfuric acid. The reaction produced aspirin and acetic acid, as shown in the following chemical equation:\n</p>\n<p>\n$$\\ce{C7H6O3 + (CH3CO)2O -&gt;[\\text{H2SO4}] C9H8O4 + CH3COOH}$$\n</p>\n<p>\nAfter the reaction, we purified the aspirin by recrystallization from hot water. The purity of the aspirin was confirmed using thin-layer chromatography (TLC) and melting point analysis.\n</p>\n<h2>Results</h2>\n<p>\nThe yield of aspirin was 80% based on the amount of salicylic acid used. The purity of the aspirin was confirmed using TLC, which showed a single spot corresponding to aspirin. The melting point of the aspirin was 135-136\u00b0C, which is consistent with the literature value of 135-136.5\u00b0C.\n</p>\n<p>\nThe chemical reaction involved in the synthesis of aspirin can be written as:\n</p>\n<p>\n$$\\ce{C7H6O3 + (CH3CO)2O -&gt;[\\text{H2SO4}] C9H8O4 + CH3COOH}$$\n</p>\n<p>\nThe theoretical yield of aspirin can be calculated using the stoichiometry of the reaction. Assuming that all the salicylic acid reacts and no aspirin is lost during the purification process, the theoretical yield is calculated as follows:\n</p>\n<p>\n$$\\text{Theoretical yield} = \\frac{\\text{moles of salicylic acid used}}{\\text{molar ratio of salicylic acid to aspirin}} \\times \\text{molar mass of aspirin}$$\n</p>\n<p>\nThe actual yield of aspirin can be calculated by dividing the mass of the purified aspirin by the mass of salicylic acid used and multiplying by 100%. The percent yield can be calculated by dividing the actual yield by the theoretical yield and multiplying by 100%.\n</p>\n",
+      "about": {
+        "@id": "#category-Demo"
+      },
+      "variableMeasured": null
+    },
+    {
+      "@id": "./Project-CRYPTO-COOL - Effect-of-temperature-on-enzyme-activity - d938ab84/",
+      "@type": "Dataset",
+      "author": {
+        "@id": "person://b344adffee437ab4a11d1c722fd096492f586b0d47854a3761efb68647b7b84c?hash_algo=sha256"
+      },
+      "dateCreated": "2024-06-17T20:05:48+02:00",
+      "dateModified": "2024-06-17T20:05:48+02:00",
+      "name": "Effect of temperature on enzyme activity",
+      "encodingFormat": "text/html",
+      "url": "https://elab.local:3148/experiments.php?mode=view&id=313",
+      "genre": "experiment",
+      "creativeWorkStatus": "Need to be redone",
+      "identifier": "20240617-d938ab84ea960b6c6ec3f9c717ba7c3cd29d7506",
+      "keywords": "generated from yml,enzymology,test,Project ENZYTEMP",
+      "text": "<h1>Effect of Temperature on Enzyme Activity</h1>\n<p>\nEnzymes are biological molecules that catalyze chemical reactions in living organisms. In this experiment, we investigated the effect of temperature on the activity of the enzyme amylase, which catalyzes the hydrolysis of starch into glucose.\n</p>\n<h2>Experimental Design</h2>\n<p>\nWe prepared a solution of starch and added a small amount of amylase to the solution. We then incubated the solution at different temperatures, ranging from 4\u00b0C to 70\u00b0C, for 5 minutes. After the incubation period, we added iodine to the solution to detect the presence of starch. The disappearance of the blue-black color of the iodine indicated the breakdown of starch into glucose.\n</p>\n<h2>Results</h2>\n<p>\nThe results showed that the activity of amylase increased with increasing temperature up to 37\u00b0C, which is the optimum temperature for amylase activity. At temperatures above 37\u00b0C, the activity of amylase decreased rapidly, and at 70\u00b0C, the enzyme was completely denatured and lost its catalytic activity.\n</p>\n<p>\nThe relationship between temperature and enzyme activity can be described by the Arrhenius equation, which relates the rate constant of a reaction to the activation energy and temperature. The equation can be written as:\n</p>\n<p>\n$$k = Ae^{-E_a/RT}$$\n</p>\n<p>\nwhere k is the rate constant, A is the pre-exponential factor, E_a is the activation energy, R is the gas constant, and T is the absolute temperature. The activation energy is the energy required to break the bonds in the reactants and form the products. The rate constant increases with increasing temperature due to the increase in the number of reactant molecules with sufficient kinetic energy to overcome the activation energy barrier.\n</p>\n<p>\nThe effect of temperature on enzyme activity can also be described by the Q10 value, which is the ratio of the reaction rate at a given temperature to the reaction rate at a temperature 10\u00b0C lower. The Q10 value for most enzyme-catalyzed reactions is around 2-3, indicating that the reaction rate doubles or triples with each 10\u00b0C increase in temperature.\n</p>\n",
+      "variableMeasured": null
+    },
+    {
+      "@id": "./Project-CRYPTO-COOL - \u30d5\u30eb\u30fc\u30c4\u30d5\u30e9\u30a4\u306e\u98df\u6027\u306b\u95a2\u3059\u308b\u7814\u7a76 - f44d2c0b/",
       "@type": "Dataset",
       "author": {
         "@id": "person://42c713981f75caa8c9d8e3a60c883dc4788c0563de13ba5607a12f385fe534fe?hash_algo=sha256"
       },
-      "dateCreated": "2024-06-10T22:48:24+02:00",
-      "dateModified": "2024-06-10T22:48:24+02:00",
-      "name": "Test the grouped extra fields",
+      "dateCreated": "2024-06-17T20:05:48+02:00",
+      "dateModified": "2024-06-17T20:05:48+02:00",
+      "name": "\u30d5\u30eb\u30fc\u30c4\u30d5\u30e9\u30a4\u306e\u98df\u6027\u306b\u95a2\u3059\u308b\u7814\u7a76",
       "encodingFormat": "text/html",
-      "url": "https://elab.local:3148/experiments.php?mode=view&id=292",
+      "url": "https://elab.local:3148/experiments.php?mode=view&id=312",
       "genre": "experiment",
       "creativeWorkStatus": "Success",
-      "identifier": "20240610-046cb40969bac1d6132107148d0e44762b4b18e3",
-      "keywords": "dev,extra fields,eln-export",
-      "text": "<p>id:256</p><p>date:2024-12-31</p><p>body:</p><p>category:2</p><p>category_title:Project CRYPTO-COOL</p><p>category_color:08b329</p><p>status:2</p><p>status_title:Success</p><p>status_color:54AA08</p><p>custom_id:</p><p>elabid:20240610-854e72d32638e17a9258c70a58b1902262baa47c</p><p>rating:0</p><p>url:<a href=\"https://elab.local:3148/experiments.php?mode=view&amp;id=256\">https://elab.local:3148/experiments.php?mode=view&amp;id=256</a></p>",
-      "about": {
-        "@id": "#category-Project CRYPTO-COOL"
+      "identifier": "20240617-f44d2c0ba07593d783c6ddc35c3d10bc29f12aa5",
+      "keywords": "generated from yml,CJK,\u30b7\u30e7\u30a6\u30b8\u30e7\u30a6\u30d0\u30a8",
+      "text": "<p>\u80cc\u666f\uff1a \u30d5\u30eb\u30fc\u30c4\u30d5\u30e9\u30a4\u306f\u3001\u679c\u7269\u306e\u6210\u719f\u904e\u7a0b\u306b\u5927\u304d\u306a\u5f71\u97ff\u3092\u4e0e\u3048\u307e\u3059\u3002\u305d\u306e\u305f\u3081\u3001\u30d5\u30eb\u30fc\u30c4\u30d5\u30e9\u30a4\u306e\u98df\u6027\u306b\u3064\u3044\u3066\u7814\u7a76\u3059\u308b\u3053\u3068\u306f\u3001\u679c\u7269\u7523\u696d\u306b\u3068\u3063\u3066\u91cd\u8981\u306a\u610f\u7fa9\u3092\u6301\u3061\u307e\u3059\u3002</p>\n\n<p>\u76ee\u7684\uff1a \u3053\u306e\u7814\u7a76\u306e\u76ee\u7684\u306f\u3001\u30d5\u30eb\u30fc\u30c4\u30d5\u30e9\u30a4\u306e\u597d\u3093\u3067\u98df\u3079\u308b\u679c\u7269\u306e\u7a2e\u985e\u3092\u8abf\u3079\u308b\u3053\u3068\u3067\u3059\u3002</p>\n\n<p>\u65b9\u6cd5\uff1a \u307e\u305a\u3001\u30d5\u30eb\u30fc\u30c4\u30d5\u30e9\u30a4\u3092\u6355\u7372\u3057\u3001\u5b9f\u9a13\u5ba4\u3067\u98fc\u80b2\u3057\u307e\u3059\u3002\u6b21\u306b\u3001\u679c\u7269\u3092\u8907\u6570\u7528\u610f\u3057\u3001\u30d5\u30eb\u30fc\u30c4\u30d5\u30e9\u30a4\u304c\u597d\u3093\u3067\u98df\u3079\u308b\u679c\u7269\u3092\u8abf\u3079\u307e\u3059\u3002\u679c\u7269\u306f\u3001\u30ea\u30f3\u30b4\u3001\u30d0\u30ca\u30ca\u3001\u30aa\u30ec\u30f3\u30b8\u3001\u30ad\u30a6\u30a4\u30d5\u30eb\u30fc\u30c4\u3001\u30b0\u30ec\u30fc\u30d7\u30d5\u30eb\u30fc\u30c4\u3001\u30d1\u30a4\u30ca\u30c3\u30d7\u30eb\u3001\u30de\u30f3\u30b4\u30fc\u306e7\u7a2e\u985e\u3092\u7528\u610f\u3057\u307e\u3059\u3002\u5404\u679c\u7269\u30921\u3064\u305a\u3064\u30b1\u30fc\u30b8\u306e\u4e2d\u306b\u5165\u308c\u3001\u30d5\u30eb\u30fc\u30c4\u30d5\u30e9\u30a4\u304c\u679c\u7269\u3092\u98df\u3079\u305f\u304b\u3069\u3046\u304b\u3092\u78ba\u8a8d\u3057\u307e\u3059\u3002\u679c\u7269\u306f\u6bce\u65e5\u4ea4\u63db\u3057\u3001\u540c\u3058\u679c\u7269\u304c\u9023\u7d9a\u3057\u3066\u5165\u308c\u3089\u308c\u306a\u3044\u3088\u3046\u306b\u3057\u307e\u3059\u3002\u307e\u305f\u3001\u30d5\u30eb\u30fc\u30c4\u30d5\u30e9\u30a4\u304c\u679c\u7269\u3092\u98df\u3079\u308b\u6642\u9593\u5e2f\u3082\u8abf\u3079\u307e\u3059\u3002</p>\n\n<p>\u7d50\u679c\uff1a \u5b9f\u9a13\u306e\u7d50\u679c\u3001\u30d5\u30eb\u30fc\u30c4\u30d5\u30e9\u30a4\u304c\u597d\u3093\u3067\u98df\u3079\u308b\u679c\u7269\u306f\u3001\u30d0\u30ca\u30ca\u3001\u30de\u30f3\u30b4\u30fc\u3001\u30d1\u30a4\u30ca\u30c3\u30d7\u30eb\u3067\u3042\u308b\u3053\u3068\u304c\u308f\u304b\u308a\u307e\u3057\u305f\u3002\u307e\u305f\u3001\u30d5\u30eb\u30fc\u30c4\u30d5\u30e9\u30a4\u304c\u679c\u7269\u3092\u98df\u3079\u308b\u6642\u9593\u5e2f\u306f\u3001\u5348\u524d\u4e2d\u304c\u591a\u3044\u3053\u3068\u304c\u308f\u304b\u308a\u307e\u3057\u305f\u3002</p>\n\n<p>\u7d50\u8ad6\uff1a \u30d5\u30eb\u30fc\u30c4\u30d5\u30e9\u30a4\u306f\u3001\u30d0\u30ca\u30ca\u3001\u30de\u30f3\u30b4\u30fc\u3001\u30d1\u30a4\u30ca\u30c3\u30d7\u30eb\u3092\u597d\u3093\u3067\u98df\u3079\u308b\u3053\u3068\u304c\u660e\u3089\u304b\u306b\u306a\u308a\u307e\u3057\u305f\u3002\u3053\u306e\u7d50\u679c\u306f\u3001\u679c\u7269\u751f\u7523\u696d\u306b\u3068\u3063\u3066\u91cd\u8981\u306a\u60c5\u5831\u3068\u306a\u308a\u307e\u3059\u3002</p>\n",
+      "variableMeasured": null
+    },
+    {
+      "@id": "./Project-CRYPTO-COOL - Synthesis-and-Characterization-of-a-Novel-Organic-Compound-with-Antimicrobial- - 412e346f/",
+      "@type": "Dataset",
+      "author": {
+        "@id": "person://42c713981f75caa8c9d8e3a60c883dc4788c0563de13ba5607a12f385fe534fe?hash_algo=sha256"
       },
+      "dateCreated": "2024-06-17T20:05:47+02:00",
+      "dateModified": "2024-06-17T20:05:48+02:00",
+      "name": "Synthesis and Characterization of a Novel Organic Compound with Antimicrobial Properties",
+      "encodingFormat": "text/html",
+      "url": "https://elab.local:3148/experiments.php?mode=view&id=311",
+      "genre": "experiment",
+      "creativeWorkStatus": "Fail",
+      "identifier": "20240617-412e346fec91249c16c95a24d8a3253cd6a5f277",
+      "keywords": "generated from yml,synthesis,antimicrobial,chemistry",
+      "mentions": [
+        {
+          "@id": "./Generated - Architecto-est-recusandae-tempora-facilis-nemo - 67d460ac/"
+        }
+      ],
+      "text": "<h1>Synthesis and Characterization of a Novel Organic Compound with Antimicrobial Properties</h1>\n<p>\nThe emergence of drug-resistant bacterial strains has become a major public health concern, highlighting the need for the development of new antimicrobial agents. In this study, we aimed to synthesize a novel organic compound with potential antimicrobial activity.\n</p>\n<h2>Experimental Design</h2>\n<p>\nThe compound was synthesized via a multi-step reaction scheme. The starting material, benzaldehyde, was reacted with aniline in the presence of an acid catalyst to form the intermediate product, N-phenylbenzamide. The intermediate product was then reacted with thionyl chloride to form the corresponding acid chloride. The acid chloride was then reacted with aminoguanidine in the presence of a base catalyst to form the final product, which was purified by recrystallization.\n</p>\n<h2>Characterization</h2>\n<p>\nThe synthesized compound was characterized using various spectroscopic techniques. The melting point of the compound was determined using a melting point apparatus and compared to the literature value. The IR spectrum of the compound was obtained using a Fourier transform infrared spectrometer and compared to the expected spectrum. The NMR spectrum of the compound was obtained using a nuclear magnetic resonance spectrometer and analyzed to confirm the structure of the compound.\n</p>\n<h2>Antimicrobial Activity</h2>\n<p>\nThe antimicrobial activity of the synthesized compound was evaluated against several bacterial strains using the disk diffusion method. The results showed that the compound exhibited significant antimicrobial activity against both Gram-positive and Gram-negative bacteria, suggesting its potential as a new antimicrobial agent.\n</p>\n",
+      "variableMeasured": null,
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": 1,
+        "reviewCount": 1
+      }
+    },
+    {
+      "@id": "./Project-CRYPTO-COOL - Transfection-of-p103\u039412-22-into-RPE-1-Actin-RFP - 4b08c8b1/",
+      "@type": "Dataset",
+      "author": {
+        "@id": "person://42c713981f75caa8c9d8e3a60c883dc4788c0563de13ba5607a12f385fe534fe?hash_algo=sha256"
+      },
+      "dateCreated": "2024-06-17T20:05:47+02:00",
+      "dateModified": "2024-06-17T20:05:47+02:00",
+      "name": "Transfection of p103\u039412-22 into RPE-1 Actin-RFP",
+      "encodingFormat": "text/html",
+      "url": "https://elab.local:3148/experiments.php?mode=view&id=309",
+      "genre": "experiment",
+      "creativeWorkStatus": "Success",
+      "identifier": "20240617-4b08c8b1865d717c0e054062b7676da37f1a0d7a",
+      "keywords": "generated from yml,transfection,biocell,RPE-1",
+      "text": "<h1>Goal</h1><p>Transfecting the plasmid p103\u039412-22 into the RPE-1 Actin-RFP cells and look at the death rate.</p>",
+      "variableMeasured": null
+    },
+    {
+      "@id": "comment://2024-06-17T20%3A05%3A46%2B02%3A00",
+      "@type": "Comment",
+      "dateCreated": "2024-06-17T20:05:46+02:00",
+      "text": "Oh, how fascinating. I'm sure the groundbreaking discovery that water is wet will change the course of human history forever.",
+      "author": {
+        "@id": "person://42c713981f75caa8c9d8e3a60c883dc4788c0563de13ba5607a12f385fe534fe?hash_algo=sha256"
+      }
+    },
+    {
+      "@id": "comment://2024-06-17T20%3A05%3A46%2B02%3A00",
+      "@type": "Comment",
+      "dateCreated": "2024-06-17T20:05:46+02:00",
+      "text": "Well, it's a relief to see that the scientific community is hard at work discovering what we already suspected: that the sky is indeed blue. I can't wait for their next groundbreaking revelation that grass is green.",
+      "author": {
+        "@id": "person://42c713981f75caa8c9d8e3a60c883dc4788c0563de13ba5607a12f385fe534fe?hash_algo=sha256"
+      }
+    },
+    {
+      "@id": "./Project-CRYPTO-COOL - An-example-experiment - 4ae900b8/",
+      "@type": "Dataset",
+      "author": {
+        "@id": "person://42c713981f75caa8c9d8e3a60c883dc4788c0563de13ba5607a12f385fe534fe?hash_algo=sha256"
+      },
+      "dateCreated": "2024-06-17T20:05:46+02:00",
+      "dateModified": "2024-06-17T20:05:46+02:00",
+      "name": "An example experiment",
+      "encodingFormat": "text/html",
+      "url": "https://elab.local:3148/experiments.php?mode=view&id=308",
+      "genre": "experiment",
+      "comment": [
+        {
+          "@id": "comment://2024-06-17T20%3A05%3A46%2B02%3A00"
+        },
+        {
+          "@id": "comment://2024-06-17T20%3A05%3A46%2B02%3A00"
+        }
+      ],
+      "creativeWorkStatus": "Success",
+      "identifier": "20240617-4ae900b8e1a93afb825975f2a6ffe993007c6441",
+      "keywords": "generated from yml,example,demo",
+      "text": "This is the content of the experiment",
+      "variableMeasured": null
+    },
+    {
+      "@id": "./Project-CRYPTO-COOL - Test-the-grouped-extra-fields - 4220974c/",
+      "@type": "Dataset",
+      "author": {
+        "@id": "person://42c713981f75caa8c9d8e3a60c883dc4788c0563de13ba5607a12f385fe534fe?hash_algo=sha256"
+      },
+      "dateCreated": "2024-06-17T20:05:46+02:00",
+      "dateModified": "2024-06-17T20:05:46+02:00",
+      "name": "Test the grouped extra fields",
+      "encodingFormat": "text/html",
+      "url": "https://elab.local:3148/experiments.php?mode=view&id=307",
+      "genre": "experiment",
+      "creativeWorkStatus": "Success",
+      "identifier": "20240617-4220974cfb1e4b36b215384b5c4f1f2cc472c833",
+      "keywords": "generated from yml,dev,extra fields",
       "variableMeasured": [
         {
           "propertyID": "elabftw_metadata",
@@ -794,168 +789,51 @@ Here is a correspondance between concepts in eLabFTW and how they are translated
       ]
     },
     {
-      "@id": "#category-Project CRYPTO-COOL",
-      "@type": "Thing",
-      "name": "Project CRYPTO-COOL"
-    },
-    {
-      "@id": "./Project-CRYPTO-COOL - An-example-experiment - 19797cbf/",
-      "@type": "Dataset",
-      "author": {
-        "@id": "person://42c713981f75caa8c9d8e3a60c883dc4788c0563de13ba5607a12f385fe534fe?hash_algo=sha256"
-      },
-      "dateCreated": "2024-06-10T22:48:24+02:00",
-      "dateModified": "2024-06-10T22:48:24+02:00",
-      "name": "An example experiment",
-      "encodingFormat": "text/html",
-      "url": "https://elab.local:3148/experiments.php?mode=view&id=291",
-      "genre": "experiment",
-      "creativeWorkStatus": "Success",
-      "identifier": "20240610-19797cbfb645d02602df2ade859314d73de615bf",
-      "keywords": "example,demo,eln-export",
-      "text": "<p>id:257</p><p>date:2025-01-01</p><p>body:This is the content of the experiment</p><p>category:2</p><p>category_title:Project CRYPTO-COOL</p><p>category_color:08b329</p><p>status:2</p><p>status_title:Success</p><p>status_color:54AA08</p><p>custom_id:</p><p>elabid:20240610-fc07130d293361d384b2425c5ec8512e454238ee</p><p>rating:0</p><p>url:<a href=\"https://elab.local:3148/experiments.php?mode=view&amp;id=257\">https://elab.local:3148/experiments.php?mode=view&amp;id=257</a></p>",
-      "about": {
-        "@id": "#category-Project CRYPTO-COOL"
-      },
-      "variableMeasured": null
-    },
-    {
-      "@id": "#category-Project CRYPTO-COOL",
-      "@type": "Thing",
-      "name": "Project CRYPTO-COOL"
-    },
-    {
-      "@id": "./Project-CRYPTO-COOL - Transfection-of-p103\u039412-22-into-RPE-1-Actin-RFP - eafcde50/",
-      "@type": "Dataset",
-      "author": {
-        "@id": "person://42c713981f75caa8c9d8e3a60c883dc4788c0563de13ba5607a12f385fe534fe?hash_algo=sha256"
-      },
-      "dateCreated": "2024-06-10T22:48:24+02:00",
-      "dateModified": "2024-06-10T22:48:24+02:00",
-      "name": "Transfection of p103\u039412-22 into RPE-1 Actin-RFP",
-      "encodingFormat": "text/html",
-      "url": "https://elab.local:3148/experiments.php?mode=view&id=290",
-      "genre": "experiment",
-      "creativeWorkStatus": "Success",
-      "identifier": "20240610-eafcde5026fcef10aba8fbfd7ff992a974b34071",
-      "keywords": "transfection,biocell,RPE-1,eln-export",
-      "text": "<p>id:258</p><p>date:2025-01-02</p><p>body:GoalTransfecting the plasmid p103\u039412-22 into the RPE-1 Actin-RFP cells and look at the death rate.</p><p>category:2</p><p>category_title:Project CRYPTO-COOL</p><p>category_color:08b329</p><p>status:2</p><p>status_title:Success</p><p>status_color:54AA08</p><p>custom_id:</p><p>elabid:20240610-c6bff418669b56a40f914c36e4bc871be7a210da</p><p>rating:0</p><p>url:<a href=\"https://elab.local:3148/experiments.php?mode=view&amp;id=258\">https://elab.local:3148/experiments.php?mode=view&amp;id=258</a></p>",
-      "about": {
-        "@id": "#category-Project CRYPTO-COOL"
-      },
-      "variableMeasured": null
-    },
-    {
-      "@id": "#category-Project CRYPTO-COOL",
-      "@type": "Thing",
-      "name": "Project CRYPTO-COOL"
-    },
-    {
-      "@id": "./Project-CRYPTO-COOL - Synthesis-and-Characterization-of-a-Novel-Organic-Compound-with-Antimicrobial- - f15f3515/",
-      "@type": "Dataset",
-      "author": {
-        "@id": "person://42c713981f75caa8c9d8e3a60c883dc4788c0563de13ba5607a12f385fe534fe?hash_algo=sha256"
-      },
-      "dateCreated": "2024-06-10T22:48:24+02:00",
-      "dateModified": "2024-06-10T22:48:24+02:00",
-      "name": "Synthesis and Characterization of a Novel Organic Compound with Antimicrobial Properties",
-      "encodingFormat": "text/html",
-      "url": "https://elab.local:3148/experiments.php?mode=view&id=288",
-      "genre": "experiment",
-      "creativeWorkStatus": "Fail",
-      "identifier": "20240610-f15f3515fc6265e2d0152d1716d2b26f46802900",
-      "keywords": "synthesis,antimicrobial,chemistry,eln-export",
-      "text": "<p>id:260</p><p>date:2025-01-02</p><p>body:Synthesis and Characterization of a Novel Organic Compound with Antimicrobial Properties\n\nThe emergence of drug-resistant bacterial strains has become a major public health concern, highlighting the need for the development of new antimicrobial agents. In this study, we aimed to synthesize a novel organic compound with potential antimicrobial activity.\n\nExperimental Design\n\nThe compound was synthesized via a multi-step reaction scheme. The starting material, benzaldehyde, was reacted with aniline in the presence of an acid catalyst to form the intermediate product, N-phenylbenzamide. The intermediate product was then reacted with thionyl chloride to form the corresponding acid chloride. The acid chloride was then reacted with aminoguanidine in the presence of a base catalyst to form the final product, which was purified by recrystallization.\n\nCharacterization\n\nThe synthesized compound was characterized using various spectroscopic techniques. The melting point of the compound was determined using a melting point apparatus and compared to the literature value. The IR spectrum of the compound was obtained using a Fourier transform infrared spectrometer and compared to the expected spectrum. The NMR spectrum of the compound was obtained using a nuclear magnetic resonance spectrometer and analyzed to confirm the structure of the compound.\n\nAntimicrobial Activity\n\nThe antimicrobial activity of the synthesized compound was evaluated against several bacterial strains using the disk diffusion method. The results showed that the compound exhibited significant antimicrobial activity against both Gram-positive and Gram-negative bacteria, suggesting its potential as a new antimicrobial agent.\n\n</p><p>category:2</p><p>category_title:Project CRYPTO-COOL</p><p>category_color:08b329</p><p>status:4</p><p>status_title:Fail</p><p>status_color:C24F3D</p><p>custom_id:</p><p>elabid:20240610-e58fcae31c0ac38f1c797a9f711e337cc24bc23d</p><p>rating:1</p><p>url:<a href=\"https://elab.local:3148/experiments.php?mode=view&amp;id=260\">https://elab.local:3148/experiments.php?mode=view&amp;id=260</a></p>",
-      "about": {
-        "@id": "#category-Project CRYPTO-COOL"
-      },
-      "variableMeasured": null
-    },
-    {
-      "@id": "#category-Project CRYPTO-COOL",
-      "@type": "Thing",
-      "name": "Project CRYPTO-COOL"
-    },
-    {
-      "@id": "./Project-CRYPTO-COOL - \u30d5\u30eb\u30fc\u30c4\u30d5\u30e9\u30a4\u306e\u98df\u6027\u306b\u95a2\u3059\u308b\u7814\u7a76 - 79dc39c5/",
-      "@type": "Dataset",
-      "author": {
-        "@id": "person://42c713981f75caa8c9d8e3a60c883dc4788c0563de13ba5607a12f385fe534fe?hash_algo=sha256"
-      },
-      "dateCreated": "2024-06-10T22:48:24+02:00",
-      "dateModified": "2024-06-10T22:48:24+02:00",
-      "name": "\u30d5\u30eb\u30fc\u30c4\u30d5\u30e9\u30a4\u306e\u98df\u6027\u306b\u95a2\u3059\u308b\u7814\u7a76",
-      "encodingFormat": "text/html",
-      "url": "https://elab.local:3148/experiments.php?mode=view&id=287",
-      "genre": "experiment",
-      "creativeWorkStatus": "Success",
-      "identifier": "20240610-79dc39c59179729f8908339948bd40ebca649548",
-      "keywords": "CJK,\u30b7\u30e7\u30a6\u30b8\u30e7\u30a6\u30d0\u30a8,eln-export",
-      "text": "<p>id:261</p><p>date:2025-01-02</p><p>body:\u80cc\u666f\uff1a \u30d5\u30eb\u30fc\u30c4\u30d5\u30e9\u30a4\u306f\u3001\u679c\u7269\u306e\u6210\u719f\u904e\u7a0b\u306b\u5927\u304d\u306a\u5f71\u97ff\u3092\u4e0e\u3048\u307e\u3059\u3002\u305d\u306e\u305f\u3081\u3001\u30d5\u30eb\u30fc\u30c4\u30d5\u30e9\u30a4\u306e\u98df\u6027\u306b\u3064\u3044\u3066\u7814\u7a76\u3059\u308b\u3053\u3068\u306f\u3001\u679c\u7269\u7523\u696d\u306b\u3068\u3063\u3066\u91cd\u8981\u306a\u610f\u7fa9\u3092\u6301\u3061\u307e\u3059\u3002\n\n\u76ee\u7684\uff1a \u3053\u306e\u7814\u7a76\u306e\u76ee\u7684\u306f\u3001\u30d5\u30eb\u30fc\u30c4\u30d5\u30e9\u30a4\u306e\u597d\u3093\u3067\u98df\u3079\u308b\u679c\u7269\u306e\u7a2e\u985e\u3092\u8abf\u3079\u308b\u3053\u3068\u3067\u3059\u3002\n\n\u65b9\u6cd5\uff1a \u307e\u305a\u3001\u30d5\u30eb\u30fc\u30c4\u30d5\u30e9\u30a4\u3092\u6355\u7372\u3057\u3001\u5b9f\u9a13\u5ba4\u3067\u98fc\u80b2\u3057\u307e\u3059\u3002\u6b21\u306b\u3001\u679c\u7269\u3092\u8907\u6570\u7528\u610f\u3057\u3001\u30d5\u30eb\u30fc\u30c4\u30d5\u30e9\u30a4\u304c\u597d\u3093\u3067\u98df\u3079\u308b\u679c\u7269\u3092\u8abf\u3079\u307e\u3059\u3002\u679c\u7269\u306f\u3001\u30ea\u30f3\u30b4\u3001\u30d0\u30ca\u30ca\u3001\u30aa\u30ec\u30f3\u30b8\u3001\u30ad\u30a6\u30a4\u30d5\u30eb\u30fc\u30c4\u3001\u30b0\u30ec\u30fc\u30d7\u30d5\u30eb\u30fc\u30c4\u3001\u30d1\u30a4\u30ca\u30c3\u30d7\u30eb\u3001\u30de\u30f3\u30b4\u30fc\u306e7\u7a2e\u985e\u3092\u7528\u610f\u3057\u307e\u3059\u3002\u5404\u679c\u7269\u30921\u3064\u305a\u3064\u30b1\u30fc\u30b8\u306e\u4e2d\u306b\u5165\u308c\u3001\u30d5\u30eb\u30fc\u30c4\u30d5\u30e9\u30a4\u304c\u679c\u7269\u3092\u98df\u3079\u305f\u304b\u3069\u3046\u304b\u3092\u78ba\u8a8d\u3057\u307e\u3059\u3002\u679c\u7269\u306f\u6bce\u65e5\u4ea4\u63db\u3057\u3001\u540c\u3058\u679c\u7269\u304c\u9023\u7d9a\u3057\u3066\u5165\u308c\u3089\u308c\u306a\u3044\u3088\u3046\u306b\u3057\u307e\u3059\u3002\u307e\u305f\u3001\u30d5\u30eb\u30fc\u30c4\u30d5\u30e9\u30a4\u304c\u679c\u7269\u3092\u98df\u3079\u308b\u6642\u9593\u5e2f\u3082\u8abf\u3079\u307e\u3059\u3002\n\n\u7d50\u679c\uff1a \u5b9f\u9a13\u306e\u7d50\u679c\u3001\u30d5\u30eb\u30fc\u30c4\u30d5\u30e9\u30a4\u304c\u597d\u3093\u3067\u98df\u3079\u308b\u679c\u7269\u306f\u3001\u30d0\u30ca\u30ca\u3001\u30de\u30f3\u30b4\u30fc\u3001\u30d1\u30a4\u30ca\u30c3\u30d7\u30eb\u3067\u3042\u308b\u3053\u3068\u304c\u308f\u304b\u308a\u307e\u3057\u305f\u3002\u307e\u305f\u3001\u30d5\u30eb\u30fc\u30c4\u30d5\u30e9\u30a4\u304c\u679c\u7269\u3092\u98df\u3079\u308b\u6642\u9593\u5e2f\u306f\u3001\u5348\u524d\u4e2d\u304c\u591a\u3044\u3053\u3068\u304c\u308f\u304b\u308a\u307e\u3057\u305f\u3002\n\n\u7d50\u8ad6\uff1a \u30d5\u30eb\u30fc\u30c4\u30d5\u30e9\u30a4\u306f\u3001\u30d0\u30ca\u30ca\u3001\u30de\u30f3\u30b4\u30fc\u3001\u30d1\u30a4\u30ca\u30c3\u30d7\u30eb\u3092\u597d\u3093\u3067\u98df\u3079\u308b\u3053\u3068\u304c\u660e\u3089\u304b\u306b\u306a\u308a\u307e\u3057\u305f\u3002\u3053\u306e\u7d50\u679c\u306f\u3001\u679c\u7269\u751f\u7523\u696d\u306b\u3068\u3063\u3066\u91cd\u8981\u306a\u60c5\u5831\u3068\u306a\u308a\u307e\u3059\u3002\n</p><p>category:2</p><p>category_title:Project CRYPTO-COOL</p><p>category_color:08b329</p><p>status:2</p><p>status_title:Success</p><p>status_color:54AA08</p><p>custom_id:</p><p>elabid:20240610-2937c25256dcd67f55f4ea2c654e10ef02ac8f9e</p><p>rating:0</p><p>url:<a href=\"https://elab.local:3148/experiments.php?mode=view&amp;id=261\">https://elab.local:3148/experiments.php?mode=view&amp;id=261</a></p>",
-      "about": {
-        "@id": "#category-Project CRYPTO-COOL"
-      },
-      "variableMeasured": null
-    },
-    {
       "@id": "./",
       "@type": [
         "Dataset"
       ],
       "hasPart": [
         {
-          "@id": "./Project-CRYPTO-COOL - Gold-master-experiment - 734dad66/"
+          "@id": "./Project-CRYPTO-COOL - Testing-the-eLabFTW-lab-notebook - 8ebcfca1/"
         },
         {
-          "@id": "./Project-CASIMIR - Markdown-experiment - ce78d5e4/"
+          "@id": "./Project-CRYPTO-COOL - Gold-master-experiment - df81f900/"
         },
         {
-          "@id": "./Antibody - Anti-CD45 - 1cde8d97/"
+          "@id": "./Tests - Numquam-delectus-sint-quis-sint-cupiditate-non-voluptatem - 10df895d/"
         },
         {
-          "@id": "./Production - With-links-to-resources-and-experiments - c1fefd66/"
+          "@id": "./Generated - Architecto-est-recusandae-tempora-facilis-nemo - 67d460ac/"
         },
         {
-          "@id": "./Project-CASIMIR - Experiment-with-an-image-in-the-text - 2c00e9a2/"
+          "@id": "./Generated - Minus-qui-dolorem-praesentium-quos-aliquam-quia-ea - 18fd5717/"
         },
         {
-          "@id": "./Antibody - Anti-GAPDH - 49d9d070/"
+          "@id": "./RD - Testing-relationship-between-acceleration-and-gravity - 5adb0eb3/"
         },
         {
-          "@id": "./Chemical-compound - Potassium-chloride-KCl - 9ca2ca08/"
+          "@id": "./Demo - Synthesis-of-Aspirin - 6bc46aec/"
         },
         {
-          "@id": "./Yeast - JK9-3d - 42b153ea/"
+          "@id": "./Project-CRYPTO-COOL - Effect-of-temperature-on-enzyme-activity - d938ab84/"
         },
         {
-          "@id": "./simple-experiment-nothing-extra - af674ffe/"
+          "@id": "./Project-CRYPTO-COOL - \u30d5\u30eb\u30fc\u30c4\u30d5\u30e9\u30a4\u306e\u98df\u6027\u306b\u95a2\u3059\u308b\u7814\u7a76 - f44d2c0b/"
         },
         {
-          "@id": "./RD - Rerum-nisi-eligendi-libero - 2402131b/"
+          "@id": "./Project-CRYPTO-COOL - Synthesis-and-Characterization-of-a-Novel-Organic-Compound-with-Antimicrobial- - 412e346f/"
         },
         {
-          "@id": "./Project-CRYPTO-COOL - Test-the-grouped-extra-fields - 046cb409/"
+          "@id": "./Project-CRYPTO-COOL - Transfection-of-p103\u039412-22-into-RPE-1-Actin-RFP - 4b08c8b1/"
         },
         {
-          "@id": "./Project-CRYPTO-COOL - An-example-experiment - 19797cbf/"
+          "@id": "./Project-CRYPTO-COOL - An-example-experiment - 4ae900b8/"
         },
         {
-          "@id": "./Project-CRYPTO-COOL - Transfection-of-p103\u039412-22-into-RPE-1-Actin-RFP - eafcde50/"
-        },
-        {
-          "@id": "./Project-CRYPTO-COOL - Synthesis-and-Characterization-of-a-Novel-Organic-Compound-with-Antimicrobial- - f15f3515/"
-        },
-        {
-          "@id": "./Project-CRYPTO-COOL - \u30d5\u30eb\u30fc\u30c4\u30d5\u30e9\u30a4\u306e\u98df\u6027\u306b\u95a2\u3059\u308b\u7814\u7a76 - 79dc39c5/"
+          "@id": "./Project-CRYPTO-COOL - Test-the-grouped-extra-fields - 4220974c/"
         }
       ]
-    },
-    {
-      "@id": "person://797dd58d4ee3e5e9c6cc81c28ee2cd60d408a48bded24131581f98fa7de0b141?hash_algo=sha256",
-      "@type": "Person",
-      "givenName": "Kian",
-      "familyName": "Daugherty",
-      "email": "titi@yopmail.com"
     },
     {
       "@id": "person://42c713981f75caa8c9d8e3a60c883dc4788c0563de13ba5607a12f385fe534fe?hash_algo=sha256",
@@ -963,6 +841,20 @@ Here is a correspondance between concepts in eLabFTW and how they are translated
       "givenName": "Toto",
       "familyName": "Le sysadmin",
       "email": "toto@yopmail.com"
+    },
+    {
+      "@id": "person://ec7c1f6cde2fe4f2edab2ef88546f997f5f9c2328c4bbd4de99309f49b0161f7?hash_algo=sha256",
+      "@type": "Person",
+      "givenName": "Viola",
+      "familyName": "Gleichner",
+      "email": "tutu@yopmail.com"
+    },
+    {
+      "@id": "person://b344adffee437ab4a11d1c722fd096492f586b0d47854a3761efb68647b7b84c?hash_algo=sha256",
+      "@type": "Person",
+      "givenName": "Presley",
+      "familyName": "Little",
+      "email": "titi@yopmail.com"
     }
   ]
 }
