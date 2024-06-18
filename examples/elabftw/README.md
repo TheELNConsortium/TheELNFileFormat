@@ -44,7 +44,7 @@ Here is a correspondance between concepts in eLabFTW and how they are translated
       "conformsTo": {
         "@id": "https://w3id.org/ro/crate/1.1"
       },
-      "dateCreated": "2024-06-17T20:57:19+02:00",
+      "dateCreated": "2024-06-18T23:49:12+02:00",
       "sdPublisher": {
         "@id": "#publisher"
       },
@@ -73,7 +73,7 @@ Here is a correspondance between concepts in eLabFTW and how they are translated
         "@id": "./"
       },
       "name": "RO-Crate created",
-      "endTime": "2024-06-17T20:57:19+02:00",
+      "endTime": "2024-06-18T23:49:12+02:00",
       "instrument": {
         "@id": "https://www.elabftw.net"
       },
@@ -89,7 +89,111 @@ Here is a correspondance between concepts in eLabFTW and how they are translated
       "identifier": "https://www.elabftw.net"
     },
     {
-      "@id": "comment://2024-06-17T20%3A05%3A49%2B02%3A00",
+      "@id": "./RD - Testing-relationship-between-acceleration-and-gravity - 5adb0eb3/example.pptx",
+      "@type": "File",
+      "name": "example.pptx",
+      "alternateName": "67/6702398d3c3af6755a9bdd3c0f97a10d0e17691302528b81b9ec212e4078b3a39976b46feaab2f8bc525ba0c17610ad11d88b136a7ef32f94888e0e6f38e6d68.pptx",
+      "contentSize": 57375,
+      "sha256": "4fc01c51e094f4410a56f05f513be829425f12e7b33b5296115126a84aba74e7",
+      "description": "a file comment"
+    },
+    {
+      "@id": "./RD - Testing-relationship-between-acceleration-and-gravity - 5adb0eb3/example.ppt",
+      "@type": "File",
+      "name": "example.ppt",
+      "alternateName": "ef/ef5175e9c8520ca1d44fafb54822df5b0fd5a9a2a18adaade24261f1012b58ff887ef379d4dc06b2954178ae8bb535dc3246f05237d98b55ff121e8a15d5d4dc.ppt",
+      "contentSize": 162304,
+      "sha256": "a3201e2d74f5cf61863555641642dc189770902e7dcab9e28a0c0777bfad98f9"
+    },
+    {
+      "@id": "./RD - Testing-relationship-between-acceleration-and-gravity - 5adb0eb3/example.ppsx",
+      "@type": "File",
+      "name": "example.ppsx",
+      "alternateName": "77/77d83264f74db6c0ac4a903e05cc269abd20a81f7d3f55da57bd9feefe948ead2de4b29e89321a5579eedfb33cd2304d4c4034160fb5e2d267285da384c789f9.ppsx",
+      "contentSize": 57375,
+      "sha256": "7af9d974a47b6d081f1ce7ad0e3d5af21be6aeb664938cef6cfd8bdf1937cb2a"
+    },
+    {
+      "@id": "./RD - Testing-relationship-between-acceleration-and-gravity - 5adb0eb3/example.pps",
+      "@type": "File",
+      "name": "example.pps",
+      "alternateName": "65/65f5f5f3b3e8f4001257efa7c40b6f14453d2bd7fef8234b183f25c6d037eb9c52559b12c19e6a2236b9393a213ad026abb164dcec6daeb3fd001e1831022da1.pps",
+      "contentSize": 162304,
+      "sha256": "a3201e2d74f5cf61863555641642dc189770902e7dcab9e28a0c0777bfad98f9"
+    },
+    {
+      "@id": "#category-R&D",
+      "@type": "Thing",
+      "name": "R&D"
+    },
+    {
+      "@id": "./RD - Testing-relationship-between-acceleration-and-gravity - 5adb0eb3/",
+      "@type": "Dataset",
+      "author": {
+        "@id": "person://42c713981f75caa8c9d8e3a60c883dc4788c0563de13ba5607a12f385fe534fe?hash_algo=sha256"
+      },
+      "dateCreated": "2024-06-17T20:05:48+02:00",
+      "dateModified": "2024-06-17T20:56:58+02:00",
+      "name": "Testing relationship between acceleration and gravity",
+      "encodingFormat": "text/html",
+      "url": "https://elab.local:3148/experiments.php?mode=view&id=314",
+      "genre": "experiment",
+      "creativeWorkStatus": "Success",
+      "hasPart": [
+        {
+          "@id": "./RD - Testing-relationship-between-acceleration-and-gravity - 5adb0eb3/example.pptx"
+        },
+        {
+          "@id": "./RD - Testing-relationship-between-acceleration-and-gravity - 5adb0eb3/example.ppt"
+        },
+        {
+          "@id": "./RD - Testing-relationship-between-acceleration-and-gravity - 5adb0eb3/example.ppsx"
+        },
+        {
+          "@id": "./RD - Testing-relationship-between-acceleration-and-gravity - 5adb0eb3/example.pps"
+        }
+      ],
+      "identifier": "20240617-5adb0eb3ced9e2fb514ddbdf8b102869355b72fc",
+      "keywords": "generated from yml,has-mathjax,physics",
+      "text": "<h1>Determination of Acceleration Due to Gravity</h1>\n<p>\nThe acceleration due to gravity is a fundamental constant that determines the gravitational force between two objects. In this experiment, we aimed to determine the value of acceleration due to gravity using a simple pendulum.\n</p>\n<h2>Experimental Design</h2>\n<p>\nWe suspended a metal ball from a string and measured the time taken for one complete oscillation of the pendulum. We repeated this measurement for different lengths of the pendulum and recorded the corresponding times. Using the formula $T=2\\pi\\sqrt{\\frac{L}{g}}$, where $T$ is the period of the pendulum, $L$ is the length of the pendulum, and $g$ is the acceleration due to gravity, we calculated the value of $g$. The period $T$ can also be expressed in terms of the frequency $f$ using the equation $T=\\frac{1}{f}$.\n</p>\n<h2>Results</h2>\n<p>\nThe results showed that the value of acceleration due to gravity was $9.81 \\text{ m/s}^2$, which is consistent with the accepted value. We also found that the period of the pendulum increased with increasing length, as predicted by the formula $T=2\\pi\\sqrt{\\frac{L}{g}}$. The relationship between the length and period of the pendulum can be expressed as $T^2=\\frac{4\\pi^2}{g}L$, which is a linear relationship with a slope of $\\frac{4\\pi^2}{g}$.\n</p>\n",
+      "about": {
+        "@id": "#category-R&D"
+      },
+      "variableMeasured": null,
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": 4,
+        "reviewCount": 1
+      }
+    },
+    {
+      "@id": "#category-Demo",
+      "@type": "Thing",
+      "name": "Demo"
+    },
+    {
+      "@id": "./Demo - Synthesis-of-Aspirin - 6bc46aec/",
+      "@type": "Dataset",
+      "author": {
+        "@id": "person://ec7c1f6cde2fe4f2edab2ef88546f997f5f9c2328c4bbd4de99309f49b0161f7?hash_algo=sha256"
+      },
+      "dateCreated": "2024-06-17T20:05:49+02:00",
+      "dateModified": "2024-06-17T20:56:43+02:00",
+      "name": "Synthesis of Aspirin",
+      "encodingFormat": "text/html",
+      "url": "https://elab.local:3148/experiments.php?mode=view&id=315",
+      "genre": "experiment",
+      "creativeWorkStatus": "Success",
+      "identifier": "20240617-6bc46aec1f90e105d3c91b641accfe804a843b51",
+      "keywords": "generated from yml,chemistry,has-mathjax",
+      "text": "<h1>Introduction</h1>\n<p>\nAspirin is a widely used pain-relieving and anti-inflammatory drug. In this experiment, we aimed to synthesize aspirin from salicylic acid and acetic anhydride.\n</p>\n<h2>Experimental Design</h2>\n<p>\nWe mixed salicylic acid and acetic anhydride in the presence of a catalyst, sulfuric acid. The reaction produced aspirin and acetic acid, as shown in the following chemical equation:\n</p>\n<p>\n$$\\ce{C7H6O3 + (CH3CO)2O -&gt;[\\text{H2SO4}] C9H8O4 + CH3COOH}$$\n</p>\n<p>\nAfter the reaction, we purified the aspirin by recrystallization from hot water. The purity of the aspirin was confirmed using thin-layer chromatography (TLC) and melting point analysis.\n</p>\n<h2>Results</h2>\n<p>\nThe yield of aspirin was 80% based on the amount of salicylic acid used. The purity of the aspirin was confirmed using TLC, which showed a single spot corresponding to aspirin. The melting point of the aspirin was 135-136\u00b0C, which is consistent with the literature value of 135-136.5\u00b0C.\n</p>\n<p>\nThe chemical reaction involved in the synthesis of aspirin can be written as:\n</p>\n<p>\n$$\\ce{C7H6O3 + (CH3CO)2O -&gt;[\\text{H2SO4}] C9H8O4 + CH3COOH}$$\n</p>\n<p>\nThe theoretical yield of aspirin can be calculated using the stoichiometry of the reaction. Assuming that all the salicylic acid reacts and no aspirin is lost during the purification process, the theoretical yield is calculated as follows:\n</p>\n<p>\n$$\\text{Theoretical yield} = \\frac{\\text{moles of salicylic acid used}}{\\text{molar ratio of salicylic acid to aspirin}} \\times \\text{molar mass of aspirin}$$\n</p>\n<p>\nThe actual yield of aspirin can be calculated by dividing the mass of the purified aspirin by the mass of salicylic acid used and multiplying by 100%. The percent yield can be calculated by dividing the actual yield by the theoretical yield and multiplying by 100%.\n</p>\n",
+      "about": {
+        "@id": "#category-Demo"
+      },
+      "variableMeasured": null
+    },
+    {
+      "@id": "comment://ae83188ed6c0efa5f37c81956547f5769eeb0724215d6a456f1a59d3bbaa33aa?hash_algo=sha256",
       "@type": "Comment",
       "dateCreated": "2024-06-17T20:05:49+02:00",
       "text": "Well, it's always reassuring to know that scientists are spending their time and our tax dollars discovering what the rest of us already learned in third-grade science class.",
@@ -122,7 +226,7 @@ Here is a correspondance between concepts in eLabFTW and how they are translated
       "sha256": "84a65798c5a227119ad96b921e6f3e19ed34b23cfcee350be8d74c63e0e95d40"
     },
     {
-      "@id": "comment://2024-06-17T20%3A05%3A47%2B02%3A00",
+      "@id": "comment://eb912fa48283cfc716e5ac8bf0fa1288f05d910945224f520bab1f50d9af353d?hash_algo=sha256",
       "@type": "Comment",
       "dateCreated": "2024-06-17T20:05:47+02:00",
       "text": "Great results on the DNA extraction. The yield and purity look good. For the wash steps, consider extending the final centrifugation to 3 minutes to ensure no residual buffer. Nice work!",
@@ -182,7 +286,7 @@ Here is a correspondance between concepts in eLabFTW and how they are translated
       "genre": "experiment",
       "comment": [
         {
-          "@id": "comment://2024-06-17T20%3A05%3A47%2B02%3A00"
+          "@id": "comment://eb912fa48283cfc716e5ac8bf0fa1288f05d910945224f520bab1f50d9af353d?hash_algo=sha256"
         }
       ],
       "creativeWorkStatus": "Success",
@@ -416,7 +520,7 @@ Here is a correspondance between concepts in eLabFTW and how they are translated
       "genre": "experiment",
       "comment": [
         {
-          "@id": "comment://2024-06-17T20%3A05%3A49%2B02%3A00"
+          "@id": "comment://ae83188ed6c0efa5f37c81956547f5769eeb0724215d6a456f1a59d3bbaa33aa?hash_algo=sha256"
         }
       ],
       "creativeWorkStatus": "Running",
@@ -478,110 +582,6 @@ Here is a correspondance between concepts in eLabFTW and how they are translated
         "ratingValue": 5,
         "reviewCount": 1
       }
-    },
-    {
-      "@id": "./RD - Testing-relationship-between-acceleration-and-gravity - 5adb0eb3/example.pptx",
-      "@type": "File",
-      "name": "example.pptx",
-      "alternateName": "67/6702398d3c3af6755a9bdd3c0f97a10d0e17691302528b81b9ec212e4078b3a39976b46feaab2f8bc525ba0c17610ad11d88b136a7ef32f94888e0e6f38e6d68.pptx",
-      "contentSize": 57375,
-      "sha256": "4fc01c51e094f4410a56f05f513be829425f12e7b33b5296115126a84aba74e7",
-      "description": "a file comment"
-    },
-    {
-      "@id": "./RD - Testing-relationship-between-acceleration-and-gravity - 5adb0eb3/example.ppt",
-      "@type": "File",
-      "name": "example.ppt",
-      "alternateName": "ef/ef5175e9c8520ca1d44fafb54822df5b0fd5a9a2a18adaade24261f1012b58ff887ef379d4dc06b2954178ae8bb535dc3246f05237d98b55ff121e8a15d5d4dc.ppt",
-      "contentSize": 162304,
-      "sha256": "a3201e2d74f5cf61863555641642dc189770902e7dcab9e28a0c0777bfad98f9"
-    },
-    {
-      "@id": "./RD - Testing-relationship-between-acceleration-and-gravity - 5adb0eb3/example.ppsx",
-      "@type": "File",
-      "name": "example.ppsx",
-      "alternateName": "77/77d83264f74db6c0ac4a903e05cc269abd20a81f7d3f55da57bd9feefe948ead2de4b29e89321a5579eedfb33cd2304d4c4034160fb5e2d267285da384c789f9.ppsx",
-      "contentSize": 57375,
-      "sha256": "7af9d974a47b6d081f1ce7ad0e3d5af21be6aeb664938cef6cfd8bdf1937cb2a"
-    },
-    {
-      "@id": "./RD - Testing-relationship-between-acceleration-and-gravity - 5adb0eb3/example.pps",
-      "@type": "File",
-      "name": "example.pps",
-      "alternateName": "65/65f5f5f3b3e8f4001257efa7c40b6f14453d2bd7fef8234b183f25c6d037eb9c52559b12c19e6a2236b9393a213ad026abb164dcec6daeb3fd001e1831022da1.pps",
-      "contentSize": 162304,
-      "sha256": "a3201e2d74f5cf61863555641642dc189770902e7dcab9e28a0c0777bfad98f9"
-    },
-    {
-      "@id": "#category-R&D",
-      "@type": "Thing",
-      "name": "R&D"
-    },
-    {
-      "@id": "./RD - Testing-relationship-between-acceleration-and-gravity - 5adb0eb3/",
-      "@type": "Dataset",
-      "author": {
-        "@id": "person://42c713981f75caa8c9d8e3a60c883dc4788c0563de13ba5607a12f385fe534fe?hash_algo=sha256"
-      },
-      "dateCreated": "2024-06-17T20:05:48+02:00",
-      "dateModified": "2024-06-17T20:56:58+02:00",
-      "name": "Testing relationship between acceleration and gravity",
-      "encodingFormat": "text/html",
-      "url": "https://elab.local:3148/experiments.php?mode=view&id=314",
-      "genre": "experiment",
-      "creativeWorkStatus": "Success",
-      "hasPart": [
-        {
-          "@id": "./RD - Testing-relationship-between-acceleration-and-gravity - 5adb0eb3/example.pptx"
-        },
-        {
-          "@id": "./RD - Testing-relationship-between-acceleration-and-gravity - 5adb0eb3/example.ppt"
-        },
-        {
-          "@id": "./RD - Testing-relationship-between-acceleration-and-gravity - 5adb0eb3/example.ppsx"
-        },
-        {
-          "@id": "./RD - Testing-relationship-between-acceleration-and-gravity - 5adb0eb3/example.pps"
-        }
-      ],
-      "identifier": "20240617-5adb0eb3ced9e2fb514ddbdf8b102869355b72fc",
-      "keywords": "generated from yml,has-mathjax,physics",
-      "text": "<h1>Determination of Acceleration Due to Gravity</h1>\n<p>\nThe acceleration due to gravity is a fundamental constant that determines the gravitational force between two objects. In this experiment, we aimed to determine the value of acceleration due to gravity using a simple pendulum.\n</p>\n<h2>Experimental Design</h2>\n<p>\nWe suspended a metal ball from a string and measured the time taken for one complete oscillation of the pendulum. We repeated this measurement for different lengths of the pendulum and recorded the corresponding times. Using the formula $T=2\\pi\\sqrt{\\frac{L}{g}}$, where $T$ is the period of the pendulum, $L$ is the length of the pendulum, and $g$ is the acceleration due to gravity, we calculated the value of $g$. The period $T$ can also be expressed in terms of the frequency $f$ using the equation $T=\\frac{1}{f}$.\n</p>\n<h2>Results</h2>\n<p>\nThe results showed that the value of acceleration due to gravity was $9.81 \\text{ m/s}^2$, which is consistent with the accepted value. We also found that the period of the pendulum increased with increasing length, as predicted by the formula $T=2\\pi\\sqrt{\\frac{L}{g}}$. The relationship between the length and period of the pendulum can be expressed as $T^2=\\frac{4\\pi^2}{g}L$, which is a linear relationship with a slope of $\\frac{4\\pi^2}{g}$.\n</p>\n",
-      "about": {
-        "@id": "#category-R&D"
-      },
-      "variableMeasured": null,
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": 4,
-        "reviewCount": 1
-      }
-    },
-    {
-      "@id": "#category-Demo",
-      "@type": "Thing",
-      "name": "Demo"
-    },
-    {
-      "@id": "./Demo - Synthesis-of-Aspirin - 6bc46aec/",
-      "@type": "Dataset",
-      "author": {
-        "@id": "person://ec7c1f6cde2fe4f2edab2ef88546f997f5f9c2328c4bbd4de99309f49b0161f7?hash_algo=sha256"
-      },
-      "dateCreated": "2024-06-17T20:05:49+02:00",
-      "dateModified": "2024-06-17T20:56:43+02:00",
-      "name": "Synthesis of Aspirin",
-      "encodingFormat": "text/html",
-      "url": "https://elab.local:3148/experiments.php?mode=view&id=315",
-      "genre": "experiment",
-      "creativeWorkStatus": "Success",
-      "identifier": "20240617-6bc46aec1f90e105d3c91b641accfe804a843b51",
-      "keywords": "generated from yml,chemistry,has-mathjax",
-      "text": "<h1>Introduction</h1>\n<p>\nAspirin is a widely used pain-relieving and anti-inflammatory drug. In this experiment, we aimed to synthesize aspirin from salicylic acid and acetic anhydride.\n</p>\n<h2>Experimental Design</h2>\n<p>\nWe mixed salicylic acid and acetic anhydride in the presence of a catalyst, sulfuric acid. The reaction produced aspirin and acetic acid, as shown in the following chemical equation:\n</p>\n<p>\n$$\\ce{C7H6O3 + (CH3CO)2O -&gt;[\\text{H2SO4}] C9H8O4 + CH3COOH}$$\n</p>\n<p>\nAfter the reaction, we purified the aspirin by recrystallization from hot water. The purity of the aspirin was confirmed using thin-layer chromatography (TLC) and melting point analysis.\n</p>\n<h2>Results</h2>\n<p>\nThe yield of aspirin was 80% based on the amount of salicylic acid used. The purity of the aspirin was confirmed using TLC, which showed a single spot corresponding to aspirin. The melting point of the aspirin was 135-136\u00b0C, which is consistent with the literature value of 135-136.5\u00b0C.\n</p>\n<p>\nThe chemical reaction involved in the synthesis of aspirin can be written as:\n</p>\n<p>\n$$\\ce{C7H6O3 + (CH3CO)2O -&gt;[\\text{H2SO4}] C9H8O4 + CH3COOH}$$\n</p>\n<p>\nThe theoretical yield of aspirin can be calculated using the stoichiometry of the reaction. Assuming that all the salicylic acid reacts and no aspirin is lost during the purification process, the theoretical yield is calculated as follows:\n</p>\n<p>\n$$\\text{Theoretical yield} = \\frac{\\text{moles of salicylic acid used}}{\\text{molar ratio of salicylic acid to aspirin}} \\times \\text{molar mass of aspirin}$$\n</p>\n<p>\nThe actual yield of aspirin can be calculated by dividing the mass of the purified aspirin by the mass of salicylic acid used and multiplying by 100%. The percent yield can be calculated by dividing the actual yield by the theoretical yield and multiplying by 100%.\n</p>\n",
-      "about": {
-        "@id": "#category-Demo"
-      },
-      "variableMeasured": null
     },
     {
       "@id": "./Project-CRYPTO-COOL - Effect-of-temperature-on-enzyme-activity - d938ab84/",
@@ -666,7 +666,7 @@ Here is a correspondance between concepts in eLabFTW and how they are translated
       "variableMeasured": null
     },
     {
-      "@id": "comment://2024-06-17T20%3A05%3A46%2B02%3A00",
+      "@id": "comment://bd4be523f6baba4df3d7482cd2df4b03481d54ad63444f720c99f476c49c8431?hash_algo=sha256",
       "@type": "Comment",
       "dateCreated": "2024-06-17T20:05:46+02:00",
       "text": "Oh, how fascinating. I'm sure the groundbreaking discovery that water is wet will change the course of human history forever.",
@@ -675,7 +675,7 @@ Here is a correspondance between concepts in eLabFTW and how they are translated
       }
     },
     {
-      "@id": "comment://2024-06-17T20%3A05%3A46%2B02%3A00",
+      "@id": "comment://94292c4f5603efe95bfd6cbd29b36bcd5976c5f365ed19f2cfd69dc01f9bf1fa?hash_algo=sha256",
       "@type": "Comment",
       "dateCreated": "2024-06-17T20:05:46+02:00",
       "text": "Well, it's a relief to see that the scientific community is hard at work discovering what we already suspected: that the sky is indeed blue. I can't wait for their next groundbreaking revelation that grass is green.",
@@ -697,10 +697,10 @@ Here is a correspondance between concepts in eLabFTW and how they are translated
       "genre": "experiment",
       "comment": [
         {
-          "@id": "comment://2024-06-17T20%3A05%3A46%2B02%3A00"
+          "@id": "comment://bd4be523f6baba4df3d7482cd2df4b03481d54ad63444f720c99f476c49c8431?hash_algo=sha256"
         },
         {
-          "@id": "comment://2024-06-17T20%3A05%3A46%2B02%3A00"
+          "@id": "comment://94292c4f5603efe95bfd6cbd29b36bcd5976c5f365ed19f2cfd69dc01f9bf1fa?hash_algo=sha256"
         }
       ],
       "creativeWorkStatus": "Success",
@@ -795,6 +795,12 @@ Here is a correspondance between concepts in eLabFTW and how they are translated
       ],
       "hasPart": [
         {
+          "@id": "./RD - Testing-relationship-between-acceleration-and-gravity - 5adb0eb3/"
+        },
+        {
+          "@id": "./Demo - Synthesis-of-Aspirin - 6bc46aec/"
+        },
+        {
           "@id": "./Project-CRYPTO-COOL - Testing-the-eLabFTW-lab-notebook - 8ebcfca1/"
         },
         {
@@ -808,12 +814,6 @@ Here is a correspondance between concepts in eLabFTW and how they are translated
         },
         {
           "@id": "./Generated - Minus-qui-dolorem-praesentium-quos-aliquam-quia-ea - 18fd5717/"
-        },
-        {
-          "@id": "./RD - Testing-relationship-between-acceleration-and-gravity - 5adb0eb3/"
-        },
-        {
-          "@id": "./Demo - Synthesis-of-Aspirin - 6bc46aec/"
         },
         {
           "@id": "./Project-CRYPTO-COOL - Effect-of-temperature-on-enzyme-activity - d938ab84/"
