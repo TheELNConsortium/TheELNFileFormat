@@ -6,12 +6,41 @@ https://pypi.org/project/rocrate/
 import os
 import json
 import unittest
+import sys
 import tempfile
 from pathlib import Path
 from zipfile import ZIP_DEFLATED
 from zipfile import Path as ZPath
 from zipfile import ZipFile
 from rocrate.rocrate import ROCrate
+
+def testFile(fileName):
+    logJson = {}
+    print(f'\n\nTry to parse: {fileName}')
+    with ZipFile(fileName, 'r', compression=ZIP_DEFLATED) as elnFile:
+        p = ZPath(elnFile)
+        dirName = sorted(p.iterdir())[0]
+        try:
+            dirpath = Path(tempfile.mkdtemp())
+            elnFile.extractall(dirpath)
+            tempPath= dirpath.joinpath(dirName.name)
+            crate = ROCrate(tempPath)
+            for e in crate.get_entities():
+                print(f'  {e.id}: {e.type}')
+            if fileName not in logJson:
+                logJson[fileName] = {'pypi_rocrate':True}
+            else:
+                logJson[fileName] = logJson[fileName] | {'pypi_rocrate':True}
+        except Exception:
+            print("  *****  ERROR: Could not parse content of this file!!  *****")
+            if fileName not in logJson:
+                logJson[fileName] = {'pypi_rocrate':False}
+            else:
+                logJson[fileName] = logJson[fileName] | {'pypi_rocrate':False}
+            success = False
+            raise
+    return logJson
+
 
 class Test_1(unittest.TestCase):
     """
@@ -33,27 +62,7 @@ class Test_1(unittest.TestCase):
                 if not name.endswith('.eln'):
                   continue
                 fileName = os.path.join(root, name)
-                print(f'\n\nTry to parse: {fileName}')
-                with ZipFile(fileName, 'r', compression=ZIP_DEFLATED) as elnFile:
-                    p = ZPath(elnFile)
-                    dirName = sorted(p.iterdir())[0]
-                    try:
-                        dirpath = Path(tempfile.mkdtemp())
-                        elnFile.extractall(dirpath)
-                        temppath= dirpath.joinpath(dirName.name)
-                        crate = ROCrate(temppath)
-                        for e in crate.get_entities():
-                            print(f'  {e.id}: {e.type}')
-                        if fileName not in logJson:
-                            logJson[fileName] = {'pypi_rocrate':True}
-                        else:
-                            logJson[fileName] = logJson[fileName] | {'pypi_rocrate':True}
-                    except Exception:
-                        print("  *****  ERROR: Could not parse content of this file!!  *****")
-                        if fileName not in logJson:
-                            logJson[fileName] = {'pypi_rocrate':False}
-                        else:
-                            logJson[fileName] = logJson[fileName] | {'pypi_rocrate':False}
-                        success = False
+                jsonUpdate = testFile(fileName)
+                logJson.update(jsonUpdate)
         json.dump(logJson, open('tests/logging.json', 'w'))
         assert success
