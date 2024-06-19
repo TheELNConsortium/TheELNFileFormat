@@ -44,7 +44,7 @@ Here is a correspondance between concepts in eLabFTW and how they are translated
       "conformsTo": {
         "@id": "https://w3id.org/ro/crate/1.1"
       },
-      "dateCreated": "2024-06-18T23:49:12+02:00",
+      "dateCreated": "2024-06-19T12:04:50+02:00",
       "sdPublisher": {
         "@id": "#publisher"
       },
@@ -73,7 +73,7 @@ Here is a correspondance between concepts in eLabFTW and how they are translated
         "@id": "./"
       },
       "name": "RO-Crate created",
-      "endTime": "2024-06-18T23:49:12+02:00",
+      "endTime": "2024-06-19T12:04:50+02:00",
       "instrument": {
         "@id": "https://www.elabftw.net"
       },
@@ -193,7 +193,7 @@ Here is a correspondance between concepts in eLabFTW and how they are translated
       "variableMeasured": null
     },
     {
-      "@id": "comment://ae83188ed6c0efa5f37c81956547f5769eeb0724215d6a456f1a59d3bbaa33aa?hash_algo=sha256",
+      "@id": "comment://872b3203f9aecfd279e25bde60cdb7fbf4f7ddc16bf52028aeee9b7a4b3dcdde?hash_algo=sha256",
       "@type": "Comment",
       "dateCreated": "2024-06-17T20:05:49+02:00",
       "text": "Well, it's always reassuring to know that scientists are spending their time and our tax dollars discovering what the rest of us already learned in third-grade science class.",
@@ -226,7 +226,7 @@ Here is a correspondance between concepts in eLabFTW and how they are translated
       "sha256": "84a65798c5a227119ad96b921e6f3e19ed34b23cfcee350be8d74c63e0e95d40"
     },
     {
-      "@id": "comment://eb912fa48283cfc716e5ac8bf0fa1288f05d910945224f520bab1f50d9af353d?hash_algo=sha256",
+      "@id": "comment://35ad6df21b3c5c44e7373908133057fa6ac95983878df8e017d934c2ae42f760?hash_algo=sha256",
       "@type": "Comment",
       "dateCreated": "2024-06-17T20:05:47+02:00",
       "text": "Great results on the DNA extraction. The yield and purity look good. For the wash steps, consider extending the final centrifugation to 3 minutes to ensure no residual buffer. Nice work!",
@@ -286,7 +286,7 @@ Here is a correspondance between concepts in eLabFTW and how they are translated
       "genre": "experiment",
       "comment": [
         {
-          "@id": "comment://eb912fa48283cfc716e5ac8bf0fa1288f05d910945224f520bab1f50d9af353d?hash_algo=sha256"
+          "@id": "comment://35ad6df21b3c5c44e7373908133057fa6ac95983878df8e017d934c2ae42f760?hash_algo=sha256"
         }
       ],
       "creativeWorkStatus": "Success",
@@ -520,7 +520,7 @@ Here is a correspondance between concepts in eLabFTW and how they are translated
       "genre": "experiment",
       "comment": [
         {
-          "@id": "comment://ae83188ed6c0efa5f37c81956547f5769eeb0724215d6a456f1a59d3bbaa33aa?hash_algo=sha256"
+          "@id": "comment://872b3203f9aecfd279e25bde60cdb7fbf4f7ddc16bf52028aeee9b7a4b3dcdde?hash_algo=sha256"
         }
       ],
       "creativeWorkStatus": "Running",
@@ -666,7 +666,7 @@ Here is a correspondance between concepts in eLabFTW and how they are translated
       "variableMeasured": null
     },
     {
-      "@id": "comment://bd4be523f6baba4df3d7482cd2df4b03481d54ad63444f720c99f476c49c8431?hash_algo=sha256",
+      "@id": "comment://0cd83513cb9f9fe47b791d23761fa5931621e7093c633c02da38630a91b5cbb2?hash_algo=sha256",
       "@type": "Comment",
       "dateCreated": "2024-06-17T20:05:46+02:00",
       "text": "Oh, how fascinating. I'm sure the groundbreaking discovery that water is wet will change the course of human history forever.",
@@ -675,7 +675,7 @@ Here is a correspondance between concepts in eLabFTW and how they are translated
       }
     },
     {
-      "@id": "comment://94292c4f5603efe95bfd6cbd29b36bcd5976c5f365ed19f2cfd69dc01f9bf1fa?hash_algo=sha256",
+      "@id": "comment://19b7fc4438ceccecb21e613a001c35a49a793a8126c6b7b257f5cd4bae874a61?hash_algo=sha256",
       "@type": "Comment",
       "dateCreated": "2024-06-17T20:05:46+02:00",
       "text": "Well, it's a relief to see that the scientific community is hard at work discovering what we already suspected: that the sky is indeed blue. I can't wait for their next groundbreaking revelation that grass is green.",
@@ -697,10 +697,10 @@ Here is a correspondance between concepts in eLabFTW and how they are translated
       "genre": "experiment",
       "comment": [
         {
-          "@id": "comment://bd4be523f6baba4df3d7482cd2df4b03481d54ad63444f720c99f476c49c8431?hash_algo=sha256"
+          "@id": "comment://0cd83513cb9f9fe47b791d23761fa5931621e7093c633c02da38630a91b5cbb2?hash_algo=sha256"
         },
         {
-          "@id": "comment://94292c4f5603efe95bfd6cbd29b36bcd5976c5f365ed19f2cfd69dc01f9bf1fa?hash_algo=sha256"
+          "@id": "comment://19b7fc4438ceccecb21e613a001c35a49a793a8126c6b7b257f5cd4bae874a61?hash_algo=sha256"
         }
       ],
       "creativeWorkStatus": "Success",
@@ -789,6 +789,152 @@ Here is a correspondance between concepts in eLabFTW and how they are translated
       ]
     },
     {
+      "@id": "./Production - Omnis-non-est-unde-excepturi-maxime - f04d5cb3/perferendisdolores.json",
+      "@type": "File",
+      "name": "perferendisdolores.json",
+      "alternateName": "7b/7b3f5b11df2c91f52d58699afa3f5de45e93dbd270fbddd961cd07d809dc84b721cb50f994f075dbdf3c4b6309967c36c6af7083d1be11bc54b239c8d92e2260.json",
+      "contentSize": 21,
+      "sha256": "66bd0965616378a8b4698bf8b01784e7d29f15c7bde4fe86fb4f5dc959cf189c"
+    },
+    {
+      "@id": "#category-Production",
+      "@type": "Thing",
+      "name": "Production"
+    },
+    {
+      "@id": "./Production - Omnis-non-est-unde-excepturi-maxime - f04d5cb3/",
+      "@type": "Dataset",
+      "author": {
+        "@id": "person://2b546e5b308a748ee7ef1758bb44edfd4054b73f4a0f0189ef90604c13f7230e?hash_algo=sha256"
+      },
+      "dateCreated": "2024-06-17T20:04:47+02:00",
+      "dateModified": "2024-06-17T20:04:47+02:00",
+      "name": "Omnis non est unde excepturi maxime.",
+      "encodingFormat": "text/html",
+      "url": "https://elab.local:3148/experiments.php?mode=view&id=204",
+      "genre": "experiment",
+      "creativeWorkStatus": "Running",
+      "hasPart": [
+        {
+          "@id": "./Production - Omnis-non-est-unde-excepturi-maxime - f04d5cb3/perferendisdolores.json"
+        }
+      ],
+      "identifier": "20240617-f04d5cb3c49de50dba654e3627a6bf2b9e3b35a1",
+      "keywords": "protein purification,FLIM,nanotechnology,research methodology,Open Source,molecular cloning",
+      "text": "Alice, that she wanted much to know, but the three gardeners, oblong and flat, with their hands and feet at the sides of it, and found that, as nearly as large as himself, and this Alice would not give all else for two reasons. First, because I'm on the bank, with her head!' about once in the world! Oh, my dear Dinah! I wonder if I know is, it would be offended again. 'Mine is a raven like a stalk out of this remark, and thought to herself. At this the whole place around her became alive with the Duchess, the Duchess! Oh! won't she be savage if I've been changed for any lesson-books!' And so it was YOUR table,' said Alice; 'it's laid for a minute, trying to explain the mistake it had grown so large in the world you fly, Like a tea-tray in the air: it puzzled her too much, so she set to work very carefully, remarking, 'I really must be getting home; the night-air doesn't suit my throat!' and a Dodo, a Lory and an Eaglet, and several other curious creatures. Alice led the way, and the.",
+      "about": {
+        "@id": "#category-Production"
+      }
+    },
+    {
+      "@id": "#category-Support ticket",
+      "@type": "Thing",
+      "name": "Support ticket"
+    },
+    {
+      "@id": "./Support-ticket - Nisi-voluptatem-placeat-repudiandae-et-provident - a58088c7/",
+      "@type": "Dataset",
+      "author": {
+        "@id": "person://2b546e5b308a748ee7ef1758bb44edfd4054b73f4a0f0189ef90604c13f7230e?hash_algo=sha256"
+      },
+      "dateCreated": "2024-06-17T20:04:46+02:00",
+      "dateModified": "2024-06-17T20:04:47+02:00",
+      "name": "Nisi voluptatem placeat repudiandae et provident.",
+      "encodingFormat": "text/html",
+      "url": "https://elab.local:3148/experiments.php?mode=view&id=203",
+      "genre": "experiment",
+      "creativeWorkStatus": "Success",
+      "identifier": "20240617-a58088c77e6a1490e844f081da399877e1cc99e9",
+      "keywords": "protein purification,SCP-2702,scientific discovery",
+      "text": "Gryphon answered, very nearly in the middle. Alice kept her eyes filled with cupboards and book-shelves; here and there she saw in my size; and as he could think of nothing else to say but 'It belongs to a shriek, 'and just as she couldn't answer either question, it didn't much matter which way she put her hand again, and put it more clearly,' Alice replied eagerly, for she felt that she still held the pieces of mushroom in her own children. 'How should I know?' said Alice, who was passing at the Duchess sang the second verse of the singers in the distance, screaming with passion. She had not the smallest notice of them even when they arrived, with a little of her own courage. 'It's no business of MINE.' The Queen had ordered. They very soon finished off the fire, stirring a large crowd collected round it: there was a child,' said the Dormouse, who seemed ready to talk to.' 'How are you getting on?' said Alice, rather doubtfully, as she spoke. 'I must go by the carrier,' she thought.",
+      "about": {
+        "@id": "#category-Support ticket"
+      }
+    },
+    {
+      "@id": "./Tests - Et-ea-sapiente-officiis-hic-libero - a6c65a6d/",
+      "@type": "Dataset",
+      "author": {
+        "@id": "person://2b546e5b308a748ee7ef1758bb44edfd4054b73f4a0f0189ef90604c13f7230e?hash_algo=sha256"
+      },
+      "dateCreated": "2024-06-17T20:04:46+02:00",
+      "dateModified": "2024-06-17T20:04:46+02:00",
+      "name": "Et ea sapiente officiis hic libero.",
+      "encodingFormat": "text/html",
+      "url": "https://elab.local:3148/experiments.php?mode=view&id=202",
+      "genre": "experiment",
+      "creativeWorkStatus": "Running",
+      "identifier": "20240617-a6c65a6dd1f4afd22dabe3e79b382fe0246b2e30",
+      "keywords": "ethics in research,scientific literature,FRET,lab techniques,gene expression",
+      "text": "White Rabbit with pink eyes ran close by it, and they sat down, and the pool of tears which she had hoped) a fan and gloves. 'How queer it seems,' Alice said to herself, for she thought, 'till its ears have come, or at least one of the evening, beautiful Soup! Soup of the way--' 'THAT generally takes some time,' interrupted the Hatter: 'it's very easy to know what \"it\" means well enough, when I get it home?' when it had fallen into the air, I'm afraid, sir' said Alice, timidly; 'some of the month is it?' Alice panted as she could. 'The game's going on between the executioner, the King, rubbing his hands; 'so now let the Dormouse began in a louder tone. 'ARE you to death.\"' 'You are old,' said the Cat, as soon as she listened, or seemed to listen, the whole cause, and condemn you to death.\"' 'You are old,' said the Queen. 'Their heads are gone, if it had some kind of authority among them, called out, 'Sit down, all of you, and listen to her, though, as they all crowded together at one."
+    },
+    {
+      "@id": "#category-Discussions",
+      "@type": "Thing",
+      "name": "Discussions"
+    },
+    {
+      "@id": "./Discussions - Numquam-alias-repellendus-corporis - 2c266830/",
+      "@type": "Dataset",
+      "author": {
+        "@id": "person://2b546e5b308a748ee7ef1758bb44edfd4054b73f4a0f0189ef90604c13f7230e?hash_algo=sha256"
+      },
+      "dateCreated": "2024-06-17T20:04:46+02:00",
+      "dateModified": "2024-06-17T20:04:46+02:00",
+      "name": "Numquam alias repellendus corporis.",
+      "encodingFormat": "text/html",
+      "url": "https://elab.local:3148/experiments.php?mode=view&id=201",
+      "genre": "experiment",
+      "creativeWorkStatus": "Need to be redone",
+      "identifier": "20240617-2c266830fb2cc554ccad45820e13e9adc3b447fe",
+      "keywords": "PCR",
+      "text": "King had said that day. 'A likely story indeed!' said the Mouse, in a tone of delight, which changed into alarm in another moment that it is!' As she said to herself, and shouted out, 'You'd better not do that again!' which produced another dead silence. 'It's a mineral, I THINK,' said Alice. The King looked anxiously at the window.' 'THAT you won't' thought Alice, 'as all the party sat silent for a long breath, and said nothing. 'This here young lady,' said the Hatter, with an M--' 'Why with an M, such as mouse-traps, and the game began. Alice thought to herself, as she stood still where she was, and waited. When the sands are all pardoned.' 'Come, THAT'S a good many little girls of her head impatiently; and, turning to the Knave. The Knave did so, and giving it something out of its mouth and began picking them up again with a trumpet in one hand and a fan! Quick, now!' And Alice was only a child!' The Queen turned crimson with fury, and, after waiting till she heard a voice of the.",
+      "about": {
+        "@id": "#category-Discussions"
+      }
+    },
+    {
+      "@id": "./Demo - Officiis-consequatur-vel-ut-nihil-sit-ut - 350a45f5/",
+      "@type": "Dataset",
+      "author": {
+        "@id": "person://2b546e5b308a748ee7ef1758bb44edfd4054b73f4a0f0189ef90604c13f7230e?hash_algo=sha256"
+      },
+      "dateCreated": "2024-06-17T20:04:45+02:00",
+      "dateModified": "2024-06-17T20:04:46+02:00",
+      "name": "Officiis consequatur vel ut nihil sit ut.",
+      "encodingFormat": "text/html",
+      "url": "https://elab.local:3148/experiments.php?mode=view&id=200",
+      "genre": "experiment",
+      "creativeWorkStatus": "Need to be redone",
+      "identifier": "20240617-350a45f500942a89fd4a969595be43b185074f2e",
+      "keywords": "DNA sequencing,Secret,ecology,Copper",
+      "text": "Alice, swallowing down her flamingo, and began talking to herself, 'Which way? Which way?', holding her hand in hand, in couples: they were playing the Queen jumped up on tiptoe, and peeped over the verses the White Rabbit, jumping up in such a pleasant temper, and thought it would,' said the White Rabbit blew three blasts on the stairs. Alice knew it was sneezing on the OUTSIDE.' He unfolded the paper as he shook both his shoes off. 'Give your evidence,' said the Queen, but she thought it would,' said the Cat, 'if you don't even know what it was: at first she thought it would like the look of things at all, as the Lory positively refused to tell them something more. 'You promised to tell him. 'A nice muddle their slates'll be in Bill's place for a minute or two, they began moving about again, and Alice called out 'The race is over!' and they sat down and cried. 'Come, there's half my plan done now! How puzzling all these changes are! I'm never sure what I'm going to do with you.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "position": 1,
+          "creativeWorkStatus": "unfinished",
+          "itemListElement": [
+            {
+              "@type": "HowToDirection",
+              "text": "evenietlabore"
+            }
+          ]
+        },
+        {
+          "@type": "HowToStep",
+          "position": 2,
+          "creativeWorkStatus": "unfinished",
+          "itemListElement": [
+            {
+              "@type": "HowToDirection",
+              "text": "etet"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "@id": "./",
       "@type": [
         "Dataset"
@@ -832,6 +978,21 @@ Here is a correspondance between concepts in eLabFTW and how they are translated
         },
         {
           "@id": "./Project-CRYPTO-COOL - Test-the-grouped-extra-fields - 4220974c/"
+        },
+        {
+          "@id": "./Production - Omnis-non-est-unde-excepturi-maxime - f04d5cb3/"
+        },
+        {
+          "@id": "./Support-ticket - Nisi-voluptatem-placeat-repudiandae-et-provident - a58088c7/"
+        },
+        {
+          "@id": "./Tests - Et-ea-sapiente-officiis-hic-libero - a6c65a6d/"
+        },
+        {
+          "@id": "./Discussions - Numquam-alias-repellendus-corporis - 2c266830/"
+        },
+        {
+          "@id": "./Demo - Officiis-consequatur-vel-ut-nihil-sit-ut - 350a45f5/"
         }
       ]
     },
@@ -855,6 +1016,13 @@ Here is a correspondance between concepts in eLabFTW and how they are translated
       "givenName": "Presley",
       "familyName": "Little",
       "email": "titi@yopmail.com"
+    },
+    {
+      "@id": "person://2b546e5b308a748ee7ef1758bb44edfd4054b73f4a0f0189ef90604c13f7230e?hash_algo=sha256",
+      "@type": "Person",
+      "givenName": "Josephine",
+      "familyName": "Reichert",
+      "email": "demo@elabftw.net"
     }
   ]
 }
