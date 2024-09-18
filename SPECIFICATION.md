@@ -117,6 +117,10 @@ All nodes with a `@type` such as `Comment` or `Person` exist at the root node (o
 
 For instance, a "comment" on an experiment will exist as a `@type: Comment` node at the root node, and be referenced through its `@id` in the `comment` part of the experiment's node. See "Example Dataset with Comment" example below.
 
+### Specific fields
+
+* `contentSize`: this term is loosely defined by Schema.org. In a .eln it is a string with the number of bytes. See "Example File" section below. It contains no units.
+
 #### Example Dataset
 
 ```json
