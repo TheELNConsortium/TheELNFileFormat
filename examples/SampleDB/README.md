@@ -71,7 +71,7 @@ Each export contains one or more SampleDB objects, identified by their ID, with 
         "@id": "SampleDB"
       },
       "version": "1.0",
-      "dateCreated": "2024-08-22T13:13:14.588759"
+      "dateCreated": "2024-09-18T11:27:41.616994"
     },
     {
       "@id": "./",
@@ -99,8 +99,8 @@ Each export contains one or more SampleDB objects, identified by their ID, with 
       "identifier": "7",
       "name": "Measurement",
       "description": "Object #7",
-      "dateCreated": "2024-08-22T13:12:15.196040",
-      "dateModified": "2024-08-22T13:12:15.196040",
+      "dateCreated": "2024-09-18T11:27:09.234847",
+      "dateModified": "2024-09-18T11:27:09.234847",
       "author": {
         "@id": "./users/3"
       },
@@ -128,7 +128,7 @@ Each export contains one or more SampleDB objects, identified by their ID, with 
           "name": "Comment"
         },
         {
-          "value": "2024-08-22T13:12:15.000000",
+          "value": "2024-09-18T11:27:09.000000",
           "@type": "PropertyValue",
           "propertyID": "datetime",
           "name": "Measurement Date/Time"
@@ -154,7 +154,7 @@ Each export contains one or more SampleDB objects, identified by their ID, with 
       "@type": "Dataset",
       "name": "Measurement",
       "description": "Object #7 version #0",
-      "dateCreated": "2024-08-22T13:12:15.196040",
+      "dateCreated": "2024-09-18T11:27:09.234847",
       "creator": {
         "@id": "./users/3"
       },
@@ -182,7 +182,7 @@ Each export contains one or more SampleDB objects, identified by their ID, with 
           "name": "Comment"
         },
         {
-          "value": "2024-08-22T13:12:15.000000",
+          "value": "2024-09-18T11:27:09.000000",
           "@type": "PropertyValue",
           "propertyID": "datetime",
           "name": "Measurement Date/Time"
@@ -203,7 +203,7 @@ Each export contains one or more SampleDB objects, identified by their ID, with 
       "description": "Schema for Object #7 version #0",
       "name": "schema.json",
       "encodingFormat": "application/json",
-      "contentSize": 784,
+      "contentSize": "784",
       "sha256": "17dbb2aba3461cba3031823aaf3a8def73405a0606bb19b8d690cd0870b80ac7"
     },
     {
@@ -212,8 +212,8 @@ Each export contains one or more SampleDB objects, identified by their ID, with 
       "description": "Data for Object #7 version #0",
       "name": "data.json",
       "encodingFormat": "application/json",
-      "contentSize": 551,
-      "sha256": "bae26cd574671803b79a0d6c44182dfe733d6dd864bc92df576c35a9b529a977"
+      "contentSize": "551",
+      "sha256": "df6910655319cca8cefb73cec702637d4ecb8289a3e5526c374e6219a686c2e4"
     },
     {
       "@id": "./objects/7/files.json",
@@ -221,7 +221,7 @@ Each export contains one or more SampleDB objects, identified by their ID, with 
       "description": "Data about files for Object #7",
       "name": "files.json",
       "encodingFormat": "application/json",
-      "contentSize": 2,
+      "contentSize": "2",
       "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
     },
     {
@@ -230,8 +230,8 @@ Each export contains one or more SampleDB objects, identified by their ID, with 
       "identifier": "1",
       "name": "OMBE-1",
       "description": "Object #1",
-      "dateCreated": "2024-08-22T13:12:14.823844",
-      "dateModified": "2024-08-22T13:12:14.823844",
+      "dateCreated": "2024-09-18T11:27:08.623860",
+      "dateModified": "2024-09-18T11:27:08.623860",
       "author": {
         "@id": "./users/2"
       },
@@ -273,27 +273,27 @@ Each export contains one or more SampleDB objects, identified by their ID, with 
         {
           "value": "Seed Layer",
           "@type": "PropertyValue",
-          "propertyID": "multilayer/0/films/0/name",
+          "propertyID": "multilayer.0.films.0.name",
           "name": "Multilayers \u2192 0 \u2192 Films \u2192 0 \u2192 Film Name"
         },
         {
           "value": "Fe",
           "@type": "PropertyValue",
-          "propertyID": "multilayer/0/films/0/elements/0/name",
+          "propertyID": "multilayer.0.films.0.elements.0.name",
           "name": "Multilayers \u2192 0 \u2192 Films \u2192 0 \u2192 Elements \u2192 0 \u2192 Element Name"
         },
         {
           "value": 0.09999999999999999,
           "unitText": "\u00c5/s",
           "@type": "PropertyValue",
-          "propertyID": "multilayer/0/films/0/elements/0/rate",
+          "propertyID": "multilayer.0.films.0.elements.0.rate",
           "name": "Multilayers \u2192 0 \u2192 Films \u2192 0 \u2192 Elements \u2192 0 \u2192 Rate"
         },
         {
           "value": 5.0,
           "unitText": "\u00c5",
           "@type": "PropertyValue",
-          "propertyID": "multilayer/0/films/0/thickness",
+          "propertyID": "multilayer.0.films.0.thickness",
           "name": "Multilayers \u2192 0 \u2192 Films \u2192 0 \u2192 Film Thickness",
           "unitCode": "A11"
         },
@@ -301,14 +301,14 @@ Each export contains one or more SampleDB objects, identified by their ID, with 
           "value": 0.0,
           "unitText": "sccm",
           "@type": "PropertyValue",
-          "propertyID": "multilayer/0/films/0/oxygen_flow",
+          "propertyID": "multilayer.0.films.0.oxygen_flow",
           "name": "Multilayers \u2192 0 \u2192 Films \u2192 0 \u2192 Oxygen Flow"
         },
         {
           "value": 129.99999999999997,
           "unitText": "degC",
           "@type": "PropertyValue",
-          "propertyID": "multilayer/0/films/0/substrate_temperature",
+          "propertyID": "multilayer.0.films.0.substrate_temperature",
           "name": "Multilayers \u2192 0 \u2192 Films \u2192 0 \u2192 Substrate Temperature",
           "unitCode": "CEL"
         },
@@ -316,34 +316,34 @@ Each export contains one or more SampleDB objects, identified by their ID, with 
           "value": 1.0,
           "unitText": "1",
           "@type": "PropertyValue",
-          "propertyID": "multilayer/0/repetitions",
+          "propertyID": "multilayer.0.repetitions",
           "name": "Multilayers \u2192 0 \u2192 Film Layer Repetitions",
           "unitCode": "C62"
         },
         {
           "value": "Buffer Layer",
           "@type": "PropertyValue",
-          "propertyID": "multilayer/1/films/0/name",
+          "propertyID": "multilayer.1.films.0.name",
           "name": "Multilayers \u2192 1 \u2192 Films \u2192 0 \u2192 Film Name"
         },
         {
           "value": "Ag",
           "@type": "PropertyValue",
-          "propertyID": "multilayer/1/films/0/elements/0/name",
+          "propertyID": "multilayer.1.films.0.elements.0.name",
           "name": "Multilayers \u2192 1 \u2192 Films \u2192 0 \u2192 Elements \u2192 0 \u2192 Element Name"
         },
         {
           "value": 1.0,
           "unitText": "\u00c5/s",
           "@type": "PropertyValue",
-          "propertyID": "multilayer/1/films/0/elements/0/rate",
+          "propertyID": "multilayer.1.films.0.elements.0.rate",
           "name": "Multilayers \u2192 1 \u2192 Films \u2192 0 \u2192 Elements \u2192 0 \u2192 Rate"
         },
         {
           "value": 1500.0,
           "unitText": "\u00c5",
           "@type": "PropertyValue",
-          "propertyID": "multilayer/1/films/0/thickness",
+          "propertyID": "multilayer.1.films.0.thickness",
           "name": "Multilayers \u2192 1 \u2192 Films \u2192 0 \u2192 Film Thickness",
           "unitCode": "A11"
         },
@@ -351,14 +351,14 @@ Each export contains one or more SampleDB objects, identified by their ID, with 
           "value": 0.0,
           "unitText": "sccm",
           "@type": "PropertyValue",
-          "propertyID": "multilayer/1/films/0/oxygen_flow",
+          "propertyID": "multilayer.1.films.0.oxygen_flow",
           "name": "Multilayers \u2192 1 \u2192 Films \u2192 0 \u2192 Oxygen Flow"
         },
         {
           "value": 129.99999999999997,
           "unitText": "degC",
           "@type": "PropertyValue",
-          "propertyID": "multilayer/1/films/0/substrate_temperature",
+          "propertyID": "multilayer.1.films.0.substrate_temperature",
           "name": "Multilayers \u2192 1 \u2192 Films \u2192 0 \u2192 Substrate Temperature",
           "unitCode": "CEL"
         },
@@ -366,34 +366,34 @@ Each export contains one or more SampleDB objects, identified by their ID, with 
           "value": 1.0,
           "unitText": "1",
           "@type": "PropertyValue",
-          "propertyID": "multilayer/1/repetitions",
+          "propertyID": "multilayer.1.repetitions",
           "name": "Multilayers \u2192 1 \u2192 Film Layer Repetitions",
           "unitCode": "C62"
         },
         {
           "value": "Pd",
           "@type": "PropertyValue",
-          "propertyID": "multilayer/2/films/0/name",
+          "propertyID": "multilayer.2.films.0.name",
           "name": "Multilayers \u2192 2 \u2192 Films \u2192 0 \u2192 Film Name"
         },
         {
           "value": "Pd",
           "@type": "PropertyValue",
-          "propertyID": "multilayer/2/films/0/elements/0/name",
+          "propertyID": "multilayer.2.films.0.elements.0.name",
           "name": "Multilayers \u2192 2 \u2192 Films \u2192 0 \u2192 Elements \u2192 0 \u2192 Element Name"
         },
         {
           "value": 0.01,
           "unitText": "\u00c5/s",
           "@type": "PropertyValue",
-          "propertyID": "multilayer/2/films/0/elements/0/rate",
+          "propertyID": "multilayer.2.films.0.elements.0.rate",
           "name": "Multilayers \u2192 2 \u2192 Films \u2192 0 \u2192 Elements \u2192 0 \u2192 Rate"
         },
         {
           "value": 150.0,
           "unitText": "\u00c5",
           "@type": "PropertyValue",
-          "propertyID": "multilayer/2/films/0/thickness",
+          "propertyID": "multilayer.2.films.0.thickness",
           "name": "Multilayers \u2192 2 \u2192 Films \u2192 0 \u2192 Film Thickness",
           "unitCode": "A11"
         },
@@ -401,41 +401,41 @@ Each export contains one or more SampleDB objects, identified by their ID, with 
           "value": 0.0,
           "unitText": "sccm",
           "@type": "PropertyValue",
-          "propertyID": "multilayer/2/films/0/oxygen_flow",
+          "propertyID": "multilayer.2.films.0.oxygen_flow",
           "name": "Multilayers \u2192 2 \u2192 Films \u2192 0 \u2192 Oxygen Flow"
         },
         {
           "value": 99.99999999999997,
           "unitText": "degC",
           "@type": "PropertyValue",
-          "propertyID": "multilayer/2/films/0/substrate_temperature",
+          "propertyID": "multilayer.2.films.0.substrate_temperature",
           "name": "Multilayers \u2192 2 \u2192 Films \u2192 0 \u2192 Substrate Temperature",
           "unitCode": "CEL"
         },
         {
           "value": "Fe",
           "@type": "PropertyValue",
-          "propertyID": "multilayer/2/films/1/name",
+          "propertyID": "multilayer.2.films.1.name",
           "name": "Multilayers \u2192 2 \u2192 Films \u2192 1 \u2192 Film Name"
         },
         {
           "value": "Fe",
           "@type": "PropertyValue",
-          "propertyID": "multilayer/2/films/1/elements/0/name",
+          "propertyID": "multilayer.2.films.1.elements.0.name",
           "name": "Multilayers \u2192 2 \u2192 Films \u2192 1 \u2192 Elements \u2192 0 \u2192 Element Name"
         },
         {
           "value": 0.049999999999999996,
           "unitText": "\u00c5/s",
           "@type": "PropertyValue",
-          "propertyID": "multilayer/2/films/1/elements/0/rate",
+          "propertyID": "multilayer.2.films.1.elements.0.rate",
           "name": "Multilayers \u2192 2 \u2192 Films \u2192 1 \u2192 Elements \u2192 0 \u2192 Rate"
         },
         {
           "value": 10.0,
           "unitText": "\u00c5",
           "@type": "PropertyValue",
-          "propertyID": "multilayer/2/films/1/thickness",
+          "propertyID": "multilayer.2.films.1.thickness",
           "name": "Multilayers \u2192 2 \u2192 Films \u2192 1 \u2192 Film Thickness",
           "unitCode": "A11"
         },
@@ -443,14 +443,14 @@ Each export contains one or more SampleDB objects, identified by their ID, with 
           "value": 0.0,
           "unitText": "sccm",
           "@type": "PropertyValue",
-          "propertyID": "multilayer/2/films/1/oxygen_flow",
+          "propertyID": "multilayer.2.films.1.oxygen_flow",
           "name": "Multilayers \u2192 2 \u2192 Films \u2192 1 \u2192 Oxygen Flow"
         },
         {
           "value": 129.99999999999997,
           "unitText": "degC",
           "@type": "PropertyValue",
-          "propertyID": "multilayer/2/films/1/substrate_temperature",
+          "propertyID": "multilayer.2.films.1.substrate_temperature",
           "name": "Multilayers \u2192 2 \u2192 Films \u2192 1 \u2192 Substrate Temperature",
           "unitCode": "CEL"
         },
@@ -458,34 +458,34 @@ Each export contains one or more SampleDB objects, identified by their ID, with 
           "value": 10.0,
           "unitText": "1",
           "@type": "PropertyValue",
-          "propertyID": "multilayer/2/repetitions",
+          "propertyID": "multilayer.2.repetitions",
           "name": "Multilayers \u2192 2 \u2192 Film Layer Repetitions",
           "unitCode": "C62"
         },
         {
           "value": "Pd Layer",
           "@type": "PropertyValue",
-          "propertyID": "multilayer/3/films/0/name",
+          "propertyID": "multilayer.3.films.0.name",
           "name": "Multilayers \u2192 3 \u2192 Films \u2192 0 \u2192 Film Name"
         },
         {
           "value": "Pd",
           "@type": "PropertyValue",
-          "propertyID": "multilayer/3/films/0/elements/0/name",
+          "propertyID": "multilayer.3.films.0.elements.0.name",
           "name": "Multilayers \u2192 3 \u2192 Films \u2192 0 \u2192 Elements \u2192 0 \u2192 Element Name"
         },
         {
           "value": 0.09999999999999999,
           "unitText": "\u00c5/s",
           "@type": "PropertyValue",
-          "propertyID": "multilayer/3/films/0/elements/0/rate",
+          "propertyID": "multilayer.3.films.0.elements.0.rate",
           "name": "Multilayers \u2192 3 \u2192 Films \u2192 0 \u2192 Elements \u2192 0 \u2192 Rate"
         },
         {
           "value": 150.0,
           "unitText": "\u00c5",
           "@type": "PropertyValue",
-          "propertyID": "multilayer/3/films/0/thickness",
+          "propertyID": "multilayer.3.films.0.thickness",
           "name": "Multilayers \u2192 3 \u2192 Films \u2192 0 \u2192 Film Thickness",
           "unitCode": "A11"
         },
@@ -493,14 +493,14 @@ Each export contains one or more SampleDB objects, identified by their ID, with 
           "value": 0.0,
           "unitText": "sccm",
           "@type": "PropertyValue",
-          "propertyID": "multilayer/3/films/0/oxygen_flow",
+          "propertyID": "multilayer.3.films.0.oxygen_flow",
           "name": "Multilayers \u2192 3 \u2192 Films \u2192 0 \u2192 Oxygen Flow"
         },
         {
           "value": 99.99999999999997,
           "unitText": "degC",
           "@type": "PropertyValue",
-          "propertyID": "multilayer/3/films/0/substrate_temperature",
+          "propertyID": "multilayer.3.films.0.substrate_temperature",
           "name": "Multilayers \u2192 3 \u2192 Films \u2192 0 \u2192 Substrate Temperature",
           "unitCode": "CEL"
         },
@@ -508,7 +508,7 @@ Each export contains one or more SampleDB objects, identified by their ID, with 
           "value": 1.0,
           "unitText": "1",
           "@type": "PropertyValue",
-          "propertyID": "multilayer/3/repetitions",
+          "propertyID": "multilayer.3.repetitions",
           "name": "Multilayers \u2192 3 \u2192 Film Layer Repetitions",
           "unitCode": "C62"
         }
@@ -542,7 +542,7 @@ Each export contains one or more SampleDB objects, identified by their ID, with 
       "@type": "Dataset",
       "name": "OMBE-1",
       "description": "Object #1 version #0",
-      "dateCreated": "2024-08-22T13:12:14.823844",
+      "dateCreated": "2024-09-18T11:27:08.623860",
       "creator": {
         "@id": "./users/2"
       },
@@ -584,27 +584,27 @@ Each export contains one or more SampleDB objects, identified by their ID, with 
         {
           "value": "Seed Layer",
           "@type": "PropertyValue",
-          "propertyID": "multilayer/0/films/0/name",
+          "propertyID": "multilayer.0.films.0.name",
           "name": "Multilayers \u2192 0 \u2192 Films \u2192 0 \u2192 Film Name"
         },
         {
           "value": "Fe",
           "@type": "PropertyValue",
-          "propertyID": "multilayer/0/films/0/elements/0/name",
+          "propertyID": "multilayer.0.films.0.elements.0.name",
           "name": "Multilayers \u2192 0 \u2192 Films \u2192 0 \u2192 Elements \u2192 0 \u2192 Element Name"
         },
         {
           "value": 0.09999999999999999,
           "unitText": "\u00c5/s",
           "@type": "PropertyValue",
-          "propertyID": "multilayer/0/films/0/elements/0/rate",
+          "propertyID": "multilayer.0.films.0.elements.0.rate",
           "name": "Multilayers \u2192 0 \u2192 Films \u2192 0 \u2192 Elements \u2192 0 \u2192 Rate"
         },
         {
           "value": 5.0,
           "unitText": "\u00c5",
           "@type": "PropertyValue",
-          "propertyID": "multilayer/0/films/0/thickness",
+          "propertyID": "multilayer.0.films.0.thickness",
           "name": "Multilayers \u2192 0 \u2192 Films \u2192 0 \u2192 Film Thickness",
           "unitCode": "A11"
         },
@@ -612,14 +612,14 @@ Each export contains one or more SampleDB objects, identified by their ID, with 
           "value": 0.0,
           "unitText": "sccm",
           "@type": "PropertyValue",
-          "propertyID": "multilayer/0/films/0/oxygen_flow",
+          "propertyID": "multilayer.0.films.0.oxygen_flow",
           "name": "Multilayers \u2192 0 \u2192 Films \u2192 0 \u2192 Oxygen Flow"
         },
         {
           "value": 129.99999999999997,
           "unitText": "degC",
           "@type": "PropertyValue",
-          "propertyID": "multilayer/0/films/0/substrate_temperature",
+          "propertyID": "multilayer.0.films.0.substrate_temperature",
           "name": "Multilayers \u2192 0 \u2192 Films \u2192 0 \u2192 Substrate Temperature",
           "unitCode": "CEL"
         },
@@ -627,34 +627,34 @@ Each export contains one or more SampleDB objects, identified by their ID, with 
           "value": 1.0,
           "unitText": "1",
           "@type": "PropertyValue",
-          "propertyID": "multilayer/0/repetitions",
+          "propertyID": "multilayer.0.repetitions",
           "name": "Multilayers \u2192 0 \u2192 Film Layer Repetitions",
           "unitCode": "C62"
         },
         {
           "value": "Buffer Layer",
           "@type": "PropertyValue",
-          "propertyID": "multilayer/1/films/0/name",
+          "propertyID": "multilayer.1.films.0.name",
           "name": "Multilayers \u2192 1 \u2192 Films \u2192 0 \u2192 Film Name"
         },
         {
           "value": "Ag",
           "@type": "PropertyValue",
-          "propertyID": "multilayer/1/films/0/elements/0/name",
+          "propertyID": "multilayer.1.films.0.elements.0.name",
           "name": "Multilayers \u2192 1 \u2192 Films \u2192 0 \u2192 Elements \u2192 0 \u2192 Element Name"
         },
         {
           "value": 1.0,
           "unitText": "\u00c5/s",
           "@type": "PropertyValue",
-          "propertyID": "multilayer/1/films/0/elements/0/rate",
+          "propertyID": "multilayer.1.films.0.elements.0.rate",
           "name": "Multilayers \u2192 1 \u2192 Films \u2192 0 \u2192 Elements \u2192 0 \u2192 Rate"
         },
         {
           "value": 1500.0,
           "unitText": "\u00c5",
           "@type": "PropertyValue",
-          "propertyID": "multilayer/1/films/0/thickness",
+          "propertyID": "multilayer.1.films.0.thickness",
           "name": "Multilayers \u2192 1 \u2192 Films \u2192 0 \u2192 Film Thickness",
           "unitCode": "A11"
         },
@@ -662,14 +662,14 @@ Each export contains one or more SampleDB objects, identified by their ID, with 
           "value": 0.0,
           "unitText": "sccm",
           "@type": "PropertyValue",
-          "propertyID": "multilayer/1/films/0/oxygen_flow",
+          "propertyID": "multilayer.1.films.0.oxygen_flow",
           "name": "Multilayers \u2192 1 \u2192 Films \u2192 0 \u2192 Oxygen Flow"
         },
         {
           "value": 129.99999999999997,
           "unitText": "degC",
           "@type": "PropertyValue",
-          "propertyID": "multilayer/1/films/0/substrate_temperature",
+          "propertyID": "multilayer.1.films.0.substrate_temperature",
           "name": "Multilayers \u2192 1 \u2192 Films \u2192 0 \u2192 Substrate Temperature",
           "unitCode": "CEL"
         },
@@ -677,34 +677,34 @@ Each export contains one or more SampleDB objects, identified by their ID, with 
           "value": 1.0,
           "unitText": "1",
           "@type": "PropertyValue",
-          "propertyID": "multilayer/1/repetitions",
+          "propertyID": "multilayer.1.repetitions",
           "name": "Multilayers \u2192 1 \u2192 Film Layer Repetitions",
           "unitCode": "C62"
         },
         {
           "value": "Pd",
           "@type": "PropertyValue",
-          "propertyID": "multilayer/2/films/0/name",
+          "propertyID": "multilayer.2.films.0.name",
           "name": "Multilayers \u2192 2 \u2192 Films \u2192 0 \u2192 Film Name"
         },
         {
           "value": "Pd",
           "@type": "PropertyValue",
-          "propertyID": "multilayer/2/films/0/elements/0/name",
+          "propertyID": "multilayer.2.films.0.elements.0.name",
           "name": "Multilayers \u2192 2 \u2192 Films \u2192 0 \u2192 Elements \u2192 0 \u2192 Element Name"
         },
         {
           "value": 0.01,
           "unitText": "\u00c5/s",
           "@type": "PropertyValue",
-          "propertyID": "multilayer/2/films/0/elements/0/rate",
+          "propertyID": "multilayer.2.films.0.elements.0.rate",
           "name": "Multilayers \u2192 2 \u2192 Films \u2192 0 \u2192 Elements \u2192 0 \u2192 Rate"
         },
         {
           "value": 150.0,
           "unitText": "\u00c5",
           "@type": "PropertyValue",
-          "propertyID": "multilayer/2/films/0/thickness",
+          "propertyID": "multilayer.2.films.0.thickness",
           "name": "Multilayers \u2192 2 \u2192 Films \u2192 0 \u2192 Film Thickness",
           "unitCode": "A11"
         },
@@ -712,41 +712,41 @@ Each export contains one or more SampleDB objects, identified by their ID, with 
           "value": 0.0,
           "unitText": "sccm",
           "@type": "PropertyValue",
-          "propertyID": "multilayer/2/films/0/oxygen_flow",
+          "propertyID": "multilayer.2.films.0.oxygen_flow",
           "name": "Multilayers \u2192 2 \u2192 Films \u2192 0 \u2192 Oxygen Flow"
         },
         {
           "value": 99.99999999999997,
           "unitText": "degC",
           "@type": "PropertyValue",
-          "propertyID": "multilayer/2/films/0/substrate_temperature",
+          "propertyID": "multilayer.2.films.0.substrate_temperature",
           "name": "Multilayers \u2192 2 \u2192 Films \u2192 0 \u2192 Substrate Temperature",
           "unitCode": "CEL"
         },
         {
           "value": "Fe",
           "@type": "PropertyValue",
-          "propertyID": "multilayer/2/films/1/name",
+          "propertyID": "multilayer.2.films.1.name",
           "name": "Multilayers \u2192 2 \u2192 Films \u2192 1 \u2192 Film Name"
         },
         {
           "value": "Fe",
           "@type": "PropertyValue",
-          "propertyID": "multilayer/2/films/1/elements/0/name",
+          "propertyID": "multilayer.2.films.1.elements.0.name",
           "name": "Multilayers \u2192 2 \u2192 Films \u2192 1 \u2192 Elements \u2192 0 \u2192 Element Name"
         },
         {
           "value": 0.049999999999999996,
           "unitText": "\u00c5/s",
           "@type": "PropertyValue",
-          "propertyID": "multilayer/2/films/1/elements/0/rate",
+          "propertyID": "multilayer.2.films.1.elements.0.rate",
           "name": "Multilayers \u2192 2 \u2192 Films \u2192 1 \u2192 Elements \u2192 0 \u2192 Rate"
         },
         {
           "value": 10.0,
           "unitText": "\u00c5",
           "@type": "PropertyValue",
-          "propertyID": "multilayer/2/films/1/thickness",
+          "propertyID": "multilayer.2.films.1.thickness",
           "name": "Multilayers \u2192 2 \u2192 Films \u2192 1 \u2192 Film Thickness",
           "unitCode": "A11"
         },
@@ -754,14 +754,14 @@ Each export contains one or more SampleDB objects, identified by their ID, with 
           "value": 0.0,
           "unitText": "sccm",
           "@type": "PropertyValue",
-          "propertyID": "multilayer/2/films/1/oxygen_flow",
+          "propertyID": "multilayer.2.films.1.oxygen_flow",
           "name": "Multilayers \u2192 2 \u2192 Films \u2192 1 \u2192 Oxygen Flow"
         },
         {
           "value": 129.99999999999997,
           "unitText": "degC",
           "@type": "PropertyValue",
-          "propertyID": "multilayer/2/films/1/substrate_temperature",
+          "propertyID": "multilayer.2.films.1.substrate_temperature",
           "name": "Multilayers \u2192 2 \u2192 Films \u2192 1 \u2192 Substrate Temperature",
           "unitCode": "CEL"
         },
@@ -769,34 +769,34 @@ Each export contains one or more SampleDB objects, identified by their ID, with 
           "value": 10.0,
           "unitText": "1",
           "@type": "PropertyValue",
-          "propertyID": "multilayer/2/repetitions",
+          "propertyID": "multilayer.2.repetitions",
           "name": "Multilayers \u2192 2 \u2192 Film Layer Repetitions",
           "unitCode": "C62"
         },
         {
           "value": "Pd Layer",
           "@type": "PropertyValue",
-          "propertyID": "multilayer/3/films/0/name",
+          "propertyID": "multilayer.3.films.0.name",
           "name": "Multilayers \u2192 3 \u2192 Films \u2192 0 \u2192 Film Name"
         },
         {
           "value": "Pd",
           "@type": "PropertyValue",
-          "propertyID": "multilayer/3/films/0/elements/0/name",
+          "propertyID": "multilayer.3.films.0.elements.0.name",
           "name": "Multilayers \u2192 3 \u2192 Films \u2192 0 \u2192 Elements \u2192 0 \u2192 Element Name"
         },
         {
           "value": 0.09999999999999999,
           "unitText": "\u00c5/s",
           "@type": "PropertyValue",
-          "propertyID": "multilayer/3/films/0/elements/0/rate",
+          "propertyID": "multilayer.3.films.0.elements.0.rate",
           "name": "Multilayers \u2192 3 \u2192 Films \u2192 0 \u2192 Elements \u2192 0 \u2192 Rate"
         },
         {
           "value": 150.0,
           "unitText": "\u00c5",
           "@type": "PropertyValue",
-          "propertyID": "multilayer/3/films/0/thickness",
+          "propertyID": "multilayer.3.films.0.thickness",
           "name": "Multilayers \u2192 3 \u2192 Films \u2192 0 \u2192 Film Thickness",
           "unitCode": "A11"
         },
@@ -804,14 +804,14 @@ Each export contains one or more SampleDB objects, identified by their ID, with 
           "value": 0.0,
           "unitText": "sccm",
           "@type": "PropertyValue",
-          "propertyID": "multilayer/3/films/0/oxygen_flow",
+          "propertyID": "multilayer.3.films.0.oxygen_flow",
           "name": "Multilayers \u2192 3 \u2192 Films \u2192 0 \u2192 Oxygen Flow"
         },
         {
           "value": 99.99999999999997,
           "unitText": "degC",
           "@type": "PropertyValue",
-          "propertyID": "multilayer/3/films/0/substrate_temperature",
+          "propertyID": "multilayer.3.films.0.substrate_temperature",
           "name": "Multilayers \u2192 3 \u2192 Films \u2192 0 \u2192 Substrate Temperature",
           "unitCode": "CEL"
         },
@@ -819,7 +819,7 @@ Each export contains one or more SampleDB objects, identified by their ID, with 
           "value": 1.0,
           "unitText": "1",
           "@type": "PropertyValue",
-          "propertyID": "multilayer/3/repetitions",
+          "propertyID": "multilayer.3.repetitions",
           "name": "Multilayers \u2192 3 \u2192 Film Layer Repetitions",
           "unitCode": "C62"
         }
@@ -839,7 +839,7 @@ Each export contains one or more SampleDB objects, identified by their ID, with 
       "description": "Schema for Object #1 version #0",
       "name": "schema.json",
       "encodingFormat": "application/json",
-      "contentSize": 4073,
+      "contentSize": "4073",
       "sha256": "d97ffc5d8d8a04059512b6559bb5f2199646642ef10436d9b910a3f47313015b"
     },
     {
@@ -848,7 +848,7 @@ Each export contains one or more SampleDB objects, identified by their ID, with 
       "description": "Data for Object #1 version #0",
       "name": "data.json",
       "encodingFormat": "application/json",
-      "contentSize": 7695,
+      "contentSize": "7695",
       "sha256": "79a4238305f0be9d92b059e7f6001b931f5c9eeda531dd39cf376ae501e7e171"
     },
     {
@@ -860,7 +860,7 @@ Each export contains one or more SampleDB objects, identified by their ID, with 
       "author": {
         "@id": "./users/2"
       },
-      "dateCreated": "2024-08-22T13:12:14.931692",
+      "dateCreated": "2024-09-18T11:27:08.800818",
       "text": "This comment is very long. This comment is very long. This comment is very long. This comment is very long. This comment is very long. This comment is very long. This comment is very long. This comment is very long. This comment is very long. This comment is very long. This comment is very long. This comment is very long. This comment is very long. This comment is very long. This comment is very long. This comment is very long. This comment is very long. This comment is very long. This comment is very long. This comment is very long. \nThis comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. \n\nThis comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. "
     },
     {
@@ -872,7 +872,7 @@ Each export contains one or more SampleDB objects, identified by their ID, with 
       "author": {
         "@id": "./users/2"
       },
-      "dateCreated": "2024-08-22T13:12:14.938640",
+      "dateCreated": "2024-09-18T11:27:08.812193",
       "text": "This is another, shorter comment"
     },
     {
@@ -881,8 +881,8 @@ Each export contains one or more SampleDB objects, identified by their ID, with 
       "description": "Data about files for Object #1",
       "name": "files.json",
       "encodingFormat": "application/json",
-      "contentSize": 763,
-      "sha256": "f5ce84286724361b27832afda621e7c4f287cfdfd75b1034586f9c69648e6b4f"
+      "contentSize": "763",
+      "sha256": "72da4a97dfb8d9182e3495e68928f1b94cb265a1bd7103ffdd9a0187f730e959"
     },
     {
       "@id": "./objects/1/files/0/example.txt",
@@ -892,9 +892,9 @@ Each export contains one or more SampleDB objects, identified by their ID, with 
       "author": {
         "@id": "./users/2"
       },
-      "dateCreated": "2024-08-22T13:12:14.948203",
+      "dateCreated": "2024-09-18T11:27:08.828277",
       "encodingFormat": "text/plain",
-      "contentSize": 17,
+      "contentSize": "17",
       "contentUrl": "http://localhost:5000/objects/1/files/0",
       "sha256": "9f722959a023c02a3ba0fafdba81aded642d6610eff5dca32dce35132e16b6c5"
     },
@@ -906,9 +906,9 @@ Each export contains one or more SampleDB objects, identified by their ID, with 
       "author": {
         "@id": "./users/2"
       },
-      "dateCreated": "2024-08-22T13:12:14.958039",
+      "dateCreated": "2024-09-18T11:27:08.845355",
       "encodingFormat": "image/png",
-      "contentSize": 9952,
+      "contentSize": "9952",
       "contentUrl": "http://localhost:5000/objects/1/files/1",
       "sha256": "9cef78156ceee44ca84b813b79d7f26afba9307aaa00da40d28a6aa2e623496b"
     },
