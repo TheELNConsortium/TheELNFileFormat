@@ -60,8 +60,7 @@ def tree(metadata):
     ro_crate_node = [i for i in graph if i["@id"] == METADATA_FILE][0]
     output = '- '+METADATA_FILE+'\n'
     if 'sdPublisher' in ro_crate_node:
-        name = ro_crate_node['sdPublisher'].get('name','---')
-        output += '    - publisher: ' + name  + '\n'
+        output += '    - publisher: ' + ro_crate_node['sdPublisher']['name'] + '\n'
     if 'version' in ro_crate_node:
         output += '    - version: ' + ro_crate_node['version'] + '\n'
     main_node = [i for i in graph if i["@id"] == "./"][0]
@@ -113,7 +112,6 @@ if __name__ == '__main__':
                     outfile.write(f'```json\n{outputString}\n```\n')
                 elif args.format == 'tree':
                     outputString = tree(metadataContent)
-                    print(outputString)
                     outfile.write(f'```yml\n{outputString}\n```\n')
                 else:
                     print("**ERROR: unknown format")
