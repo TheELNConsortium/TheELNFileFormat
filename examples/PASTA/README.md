@@ -19,8 +19,8 @@ Its home is at: https://github.com/PASTA-ELN
       },
       "schemaVersion": "v1.0",
       "version": "1.0",
-      "datePublished": "2024-10-05T16:23:55.551542",
-      "dateCreated": "2024-10-05T16:23:55.551564",
+      "datePublished": "2024-10-06T10:29:10.866306",
+      "dateCreated": "2024-10-06T10:29:10.866327",
       "sdPublisher": {
         "@id": "PASTA-ELN"
       }
@@ -65,7 +65,7 @@ Its home is at: https://github.com/PASTA-ELN
       "name": "Exported from PASTA ELN",
       "description": "Exported content from PASTA ELN",
       "license": "CC BY 4.0",
-      "datePublished": "2024-10-05T16:23:55.551600",
+      "datePublished": "2024-10-06T10:29:10.866351",
       "author": [
         {
           "@id": "author_Steffen_Brinckmann"
@@ -82,7 +82,8 @@ Its home is at: https://github.com/PASTA-ELN
       "description": "This is hard!",
       "keywords": "TODO",
       "variableMeasured": [],
-      "@id": "./PASTA/PastasExampleProject/000_ThisIsAnExampleTask/"
+      "@id": "./PASTA/PastasExampleProject/000_ThisIsAnExampleTask/",
+      "@type": "Dataset"
     },
     {
       "encodingFormat": "text/markdown",
@@ -93,7 +94,8 @@ Its home is at: https://github.com/PASTA-ELN
       "dateModified": "2024-10-04T22:28:25.196986",
       "description": "Random comment 1",
       "variableMeasured": [],
-      "@id": "./PASTA/PastasExampleProject/001_ThisIsAnotherExampleTask/000_ThisIsAnExampleSubtask/"
+      "@id": "./PASTA/PastasExampleProject/001_ThisIsAnotherExampleTask/000_ThisIsAnExampleSubtask/",
+      "@type": "Dataset"
     },
     {
       "encodingFormat": "text/markdown",
@@ -104,7 +106,8 @@ Its home is at: https://github.com/PASTA-ELN
       "dateModified": "2024-10-04T22:28:25.199521",
       "description": "Random comment 2",
       "variableMeasured": [],
-      "@id": "./PASTA/PastasExampleProject/001_ThisIsAnotherExampleTask/001_ThisIsAnotherExampleSubtask/"
+      "@id": "./PASTA/PastasExampleProject/001_ThisIsAnotherExampleTask/001_ThisIsAnotherExampleSubtask/",
+      "@type": "Dataset"
     },
     {
       "encodingFormat": "text/markdown",
@@ -172,7 +175,8 @@ Its home is at: https://github.com/PASTA-ELN
           "@id": "./PASTA/PastasExampleProject/001_ThisIsAnotherExampleTask/simple.png"
         }
       ],
-      "@id": "./PASTA/PastasExampleProject/001_ThisIsAnotherExampleTask/"
+      "@id": "./PASTA/PastasExampleProject/001_ThisIsAnotherExampleTask/",
+      "@type": "Dataset"
     },
     {
       "encodingFormat": "text/markdown",
@@ -223,6 +227,8 @@ Its home is at: https://github.com/PASTA-ELN
         }
       ],
       "@id": "https:/upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Misc_pollen.jpg/315px-Misc_pollen.jpg",
+      "contentSize": "33597",
+      "sha256": "4a1a85bf3fed48c6355eb4ec4c8e3e1d48bc23cb6f8e3e78bdbdd28539d2280b",
       "@type": "File"
     },
     {
@@ -329,7 +335,8 @@ Its home is at: https://github.com/PASTA-ELN
           "@id": "./PASTA/PastasExampleProject/002_DataFiles/simple.csv"
         }
       ],
-      "@id": "./PASTA/PastasExampleProject/002_DataFiles/"
+      "@id": "./PASTA/PastasExampleProject/002_DataFiles/",
+      "@type": "Dataset"
     },
     {
       "encodingFormat": "text/markdown",
@@ -508,7 +515,8 @@ Its home is at: https://github.com/PASTA-ELN
           "@id": "./PASTA/PastasExampleProject/s-f48b8f49f1f246a39dda615015b0439b/"
         }
       ],
-      "@id": "./PASTA/PastasExampleProject/"
+      "@id": "./PASTA/PastasExampleProject/",
+      "@type": "Dataset"
     }
   ]
 }
