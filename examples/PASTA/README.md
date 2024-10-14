@@ -19,8 +19,8 @@ Its home is at: https://github.com/PASTA-ELN
       },
       "schemaVersion": "v1.0",
       "version": "1.0",
-      "datePublished": "2024-10-08T14:30:20.775111",
-      "dateCreated": "2024-10-08T14:30:20.775134",
+      "datePublished": "2024-10-14T11:58:03.852761",
+      "dateCreated": "2024-10-14T11:58:03.852782",
       "sdPublisher": {
         "@id": "PASTA-ELN"
       }
@@ -42,13 +42,13 @@ Its home is at: https://github.com/PASTA-ELN
     },
     {
       "@id": "author_Steffen_Brinckmann",
-      "@type": "author",
-      "firstName": "Steffen",
-      "surname": "Brinckmann",
-      "title": "Dr.",
-      "emailAddress": "s.brinckmann@fz-juelich.de",
+      "@type": "Person",
+      "givenName": "Steffen",
+      "familyName": "Brinckmann",
+      "honorificPrefix": "Dr.",
+      "email": "s.brinckmann@fz-juelich.de",
       "identifier": "https://orcid.org/0000-0003-0930-082X",
-      "affiliation": [
+      "worksFor": [
         {
           "@id": "affiliation_Forschungszentrum Juelich"
         }
@@ -65,7 +65,7 @@ Its home is at: https://github.com/PASTA-ELN
       "name": "Exported from PASTA ELN",
       "description": "Exported content from PASTA ELN",
       "license": "CC BY 4.0",
-      "datePublished": "2024-10-08T14:30:20.775160",
+      "datePublished": "2024-10-14T11:58:03.852830",
       "author": [
         {
           "@id": "author_Steffen_Brinckmann"
