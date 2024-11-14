@@ -89,7 +89,7 @@ The second node is basically describing the current directory (`./`).
 ```json
 {
   "@id": "./",
-  "@type": ["Dataset"],
+  "@type": "Dataset",
   "hasPart": [
     {
       "@id": "./2022-05-29 - Some-experiment/"
