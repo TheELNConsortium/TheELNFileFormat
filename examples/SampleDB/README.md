@@ -71,17 +71,23 @@ Each export contains one or more SampleDB objects, identified by their ID, with 
         "@id": "SampleDB"
       },
       "version": "1.0",
-      "dateCreated": "2024-09-18T11:27:41.616994"
+      "dateCreated": "2024-11-18T12:57:46.182631"
     },
     {
       "@id": "./",
       "@type": "Dataset",
+      "name": "SampleDB .eln export",
+      "description": "SampleDB .eln export generated for user #2 for objects #1, #7",
+      "license": {
+        "@id": "./license"
+      },
+      "datePublished": "2024-11-18T12:57:46.182631",
       "hasPart": [
         {
-          "@id": "./objects/7"
+          "@id": "./objects/7/"
         },
         {
-          "@id": "./objects/1"
+          "@id": "./objects/1/"
         }
       ]
     },
@@ -94,13 +100,47 @@ Each export contains one or more SampleDB objects, identified by their ID, with 
       "url": "https://scientific-it-systems.iffgit.fz-juelich.de/SampleDB/"
     },
     {
-      "@id": "./objects/7",
+      "@id": "./license",
+      "@type": "CreativeWork",
+      "name": "No License",
+      "description": "This .eln file does not include a license."
+    },
+    {
+      "value": "Measurement",
+      "@type": "PropertyValue",
+      "@id": "./objects/7/properties/name",
+      "propertyID": "name",
+      "name": "Object Name"
+    },
+    {
+      "value": "./objects/1",
+      "@type": "PropertyValue",
+      "@id": "./objects/7/properties/sample",
+      "propertyID": "sample",
+      "name": "Sample"
+    },
+    {
+      "value": "This is a test.\nThis **is** a *second* line.\n\nThis line follows an empty line.",
+      "@type": "PropertyValue",
+      "@id": "./objects/7/properties/comment",
+      "propertyID": "comment",
+      "name": "Comment"
+    },
+    {
+      "value": "2024-11-18T12:57:26.000000",
+      "@type": "PropertyValue",
+      "@id": "./objects/7/properties/datetime",
+      "propertyID": "datetime",
+      "name": "Measurement Date/Time"
+    },
+    {
+      "@id": "./objects/7/",
       "@type": "Dataset",
       "identifier": "7",
       "name": "Measurement",
       "description": "Object #7",
-      "dateCreated": "2024-09-18T11:27:09.234847",
-      "dateModified": "2024-09-18T11:27:09.234847",
+      "dateCreated": "2024-11-18T12:57:26.792521",
+      "dateModified": "2024-11-18T12:57:26.792521",
       "author": {
         "@id": "./users/3"
       },
@@ -110,28 +150,16 @@ Each export contains one or more SampleDB objects, identified by their ID, with 
       "url": "http://localhost:5000/objects/7",
       "variableMeasured": [
         {
-          "value": "Measurement",
-          "@type": "PropertyValue",
-          "propertyID": "name",
-          "name": "Object Name"
+          "@id": "./objects/7/properties/name"
         },
         {
-          "value": "./objects/1",
-          "@type": "PropertyValue",
-          "propertyID": "sample",
-          "name": "Sample"
+          "@id": "./objects/7/properties/sample"
         },
         {
-          "value": "This is a test.\nThis **is** a *second* line.\n\nThis line follows an empty line.",
-          "@type": "PropertyValue",
-          "propertyID": "comment",
-          "name": "Comment"
+          "@id": "./objects/7/properties/comment"
         },
         {
-          "value": "2024-09-18T11:27:09.000000",
-          "@type": "PropertyValue",
-          "propertyID": "datetime",
-          "name": "Measurement Date/Time"
+          "@id": "./objects/7/properties/datetime"
         }
       ],
       "mentions": {
@@ -140,7 +168,7 @@ Each export contains one or more SampleDB objects, identified by their ID, with 
       "comment": [],
       "hasPart": [
         {
-          "@id": "./objects/7/version/0"
+          "@id": "./objects/7/versions/0/"
         },
         {
           "@id": "./objects/7/files.json"
@@ -150,11 +178,39 @@ Each export contains one or more SampleDB objects, identified by their ID, with 
       "keywords": "example_tag, other_tag, tag3"
     },
     {
-      "@id": "./objects/7/version/0",
+      "value": "Measurement",
+      "@type": "PropertyValue",
+      "@id": "./objects/7/versions/0/properties/name",
+      "propertyID": "name",
+      "name": "Object Name"
+    },
+    {
+      "value": "./objects/1",
+      "@type": "PropertyValue",
+      "@id": "./objects/7/versions/0/properties/sample",
+      "propertyID": "sample",
+      "name": "Sample"
+    },
+    {
+      "value": "This is a test.\nThis **is** a *second* line.\n\nThis line follows an empty line.",
+      "@type": "PropertyValue",
+      "@id": "./objects/7/versions/0/properties/comment",
+      "propertyID": "comment",
+      "name": "Comment"
+    },
+    {
+      "value": "2024-11-18T12:57:26.000000",
+      "@type": "PropertyValue",
+      "@id": "./objects/7/versions/0/properties/datetime",
+      "propertyID": "datetime",
+      "name": "Measurement Date/Time"
+    },
+    {
+      "@id": "./objects/7/versions/0/",
       "@type": "Dataset",
       "name": "Measurement",
       "description": "Object #7 version #0",
-      "dateCreated": "2024-09-18T11:27:09.234847",
+      "dateCreated": "2024-11-18T12:57:26.792521",
       "creator": {
         "@id": "./users/3"
       },
@@ -164,41 +220,29 @@ Each export contains one or more SampleDB objects, identified by their ID, with 
       "url": "http://localhost:5000/objects/7/versions/0",
       "variableMeasured": [
         {
-          "value": "Measurement",
-          "@type": "PropertyValue",
-          "propertyID": "name",
-          "name": "Object Name"
+          "@id": "./objects/7/versions/0/properties/name"
         },
         {
-          "value": "./objects/1",
-          "@type": "PropertyValue",
-          "propertyID": "sample",
-          "name": "Sample"
+          "@id": "./objects/7/versions/0/properties/sample"
         },
         {
-          "value": "This is a test.\nThis **is** a *second* line.\n\nThis line follows an empty line.",
-          "@type": "PropertyValue",
-          "propertyID": "comment",
-          "name": "Comment"
+          "@id": "./objects/7/versions/0/properties/comment"
         },
         {
-          "value": "2024-09-18T11:27:09.000000",
-          "@type": "PropertyValue",
-          "propertyID": "datetime",
-          "name": "Measurement Date/Time"
+          "@id": "./objects/7/versions/0/properties/datetime"
         }
       ],
       "hasPart": [
         {
-          "@id": "./objects/7/version/0/schema.json"
+          "@id": "./objects/7/versions/0/schema.json"
         },
         {
-          "@id": "./objects/7/version/0/data.json"
+          "@id": "./objects/7/versions/0/data.json"
         }
       ]
     },
     {
-      "@id": "./objects/7/version/0/schema.json",
+      "@id": "./objects/7/versions/0/schema.json",
       "@type": "File",
       "description": "Schema for Object #7 version #0",
       "name": "schema.json",
@@ -207,13 +251,13 @@ Each export contains one or more SampleDB objects, identified by their ID, with 
       "sha256": "17dbb2aba3461cba3031823aaf3a8def73405a0606bb19b8d690cd0870b80ac7"
     },
     {
-      "@id": "./objects/7/version/0/data.json",
+      "@id": "./objects/7/versions/0/data.json",
       "@type": "File",
       "description": "Data for Object #7 version #0",
       "name": "data.json",
       "encodingFormat": "application/json",
       "contentSize": "551",
-      "sha256": "df6910655319cca8cefb73cec702637d4ecb8289a3e5526c374e6219a686c2e4"
+      "sha256": "a3b5b697f7e846878f5a89c5cd672f2d42b3e667a6e9169ee0b95a4c2e3e67f0"
     },
     {
       "@id": "./objects/7/files.json",
@@ -225,13 +269,324 @@ Each export contains one or more SampleDB objects, identified by their ID, with 
       "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
     },
     {
-      "@id": "./objects/1",
+      "value": "OMBE-1",
+      "@type": "PropertyValue",
+      "@id": "./objects/1/properties/name",
+      "propertyID": "name",
+      "name": "Sample Name"
+    },
+    {
+      "value": "2017-02-24T11:56:00.000000",
+      "@type": "PropertyValue",
+      "@id": "./objects/1/properties/created",
+      "propertyID": "created",
+      "name": "Creation Datetime"
+    },
+    {
+      "value": false,
+      "@type": "PropertyValue",
+      "@id": "./objects/1/properties/checkbox",
+      "propertyID": "checkbox",
+      "name": "Checkbox"
+    },
+    {
+      "value": "Option B",
+      "@type": "PropertyValue",
+      "@id": "./objects/1/properties/dropdown",
+      "propertyID": "dropdown",
+      "name": "Dropdown"
+    },
+    {
+      "value": "GaAs",
+      "@type": "PropertyValue",
+      "@id": "./objects/1/properties/substrate",
+      "propertyID": "substrate",
+      "name": "Substrate"
+    },
+    {
+      "value": "Seed Layer",
+      "@type": "PropertyValue",
+      "@id": "./objects/1/properties/multilayer.0.films.0.name",
+      "propertyID": "multilayer.0.films.0.name",
+      "name": "Multilayers \u2192 0 \u2192 Films \u2192 0 \u2192 Film Name"
+    },
+    {
+      "value": "Fe",
+      "@type": "PropertyValue",
+      "@id": "./objects/1/properties/multilayer.0.films.0.elements.0.name",
+      "propertyID": "multilayer.0.films.0.elements.0.name",
+      "name": "Multilayers \u2192 0 \u2192 Films \u2192 0 \u2192 Elements \u2192 0 \u2192 Element Name"
+    },
+    {
+      "value": 0.09999999999999999,
+      "unitText": "\u00c5/s",
+      "@type": "PropertyValue",
+      "@id": "./objects/1/properties/multilayer.0.films.0.elements.0.rate",
+      "propertyID": "multilayer.0.films.0.elements.0.rate",
+      "name": "Multilayers \u2192 0 \u2192 Films \u2192 0 \u2192 Elements \u2192 0 \u2192 Rate"
+    },
+    {
+      "value": 5.0,
+      "unitText": "\u00c5",
+      "@type": "PropertyValue",
+      "@id": "./objects/1/properties/multilayer.0.films.0.thickness",
+      "propertyID": "multilayer.0.films.0.thickness",
+      "name": "Multilayers \u2192 0 \u2192 Films \u2192 0 \u2192 Film Thickness",
+      "unitCode": "A11"
+    },
+    {
+      "value": 0.0,
+      "unitText": "sccm",
+      "@type": "PropertyValue",
+      "@id": "./objects/1/properties/multilayer.0.films.0.oxygen_flow",
+      "propertyID": "multilayer.0.films.0.oxygen_flow",
+      "name": "Multilayers \u2192 0 \u2192 Films \u2192 0 \u2192 Oxygen Flow"
+    },
+    {
+      "value": 129.99999999999997,
+      "unitText": "degC",
+      "@type": "PropertyValue",
+      "@id": "./objects/1/properties/multilayer.0.films.0.substrate_temperature",
+      "propertyID": "multilayer.0.films.0.substrate_temperature",
+      "name": "Multilayers \u2192 0 \u2192 Films \u2192 0 \u2192 Substrate Temperature",
+      "unitCode": "CEL"
+    },
+    {
+      "value": 1.0,
+      "unitText": "1",
+      "@type": "PropertyValue",
+      "@id": "./objects/1/properties/multilayer.0.repetitions",
+      "propertyID": "multilayer.0.repetitions",
+      "name": "Multilayers \u2192 0 \u2192 Film Layer Repetitions",
+      "unitCode": "C62"
+    },
+    {
+      "value": "Buffer Layer",
+      "@type": "PropertyValue",
+      "@id": "./objects/1/properties/multilayer.1.films.0.name",
+      "propertyID": "multilayer.1.films.0.name",
+      "name": "Multilayers \u2192 1 \u2192 Films \u2192 0 \u2192 Film Name"
+    },
+    {
+      "value": "Ag",
+      "@type": "PropertyValue",
+      "@id": "./objects/1/properties/multilayer.1.films.0.elements.0.name",
+      "propertyID": "multilayer.1.films.0.elements.0.name",
+      "name": "Multilayers \u2192 1 \u2192 Films \u2192 0 \u2192 Elements \u2192 0 \u2192 Element Name"
+    },
+    {
+      "value": 1.0,
+      "unitText": "\u00c5/s",
+      "@type": "PropertyValue",
+      "@id": "./objects/1/properties/multilayer.1.films.0.elements.0.rate",
+      "propertyID": "multilayer.1.films.0.elements.0.rate",
+      "name": "Multilayers \u2192 1 \u2192 Films \u2192 0 \u2192 Elements \u2192 0 \u2192 Rate"
+    },
+    {
+      "value": 1500.0,
+      "unitText": "\u00c5",
+      "@type": "PropertyValue",
+      "@id": "./objects/1/properties/multilayer.1.films.0.thickness",
+      "propertyID": "multilayer.1.films.0.thickness",
+      "name": "Multilayers \u2192 1 \u2192 Films \u2192 0 \u2192 Film Thickness",
+      "unitCode": "A11"
+    },
+    {
+      "value": 0.0,
+      "unitText": "sccm",
+      "@type": "PropertyValue",
+      "@id": "./objects/1/properties/multilayer.1.films.0.oxygen_flow",
+      "propertyID": "multilayer.1.films.0.oxygen_flow",
+      "name": "Multilayers \u2192 1 \u2192 Films \u2192 0 \u2192 Oxygen Flow"
+    },
+    {
+      "value": 129.99999999999997,
+      "unitText": "degC",
+      "@type": "PropertyValue",
+      "@id": "./objects/1/properties/multilayer.1.films.0.substrate_temperature",
+      "propertyID": "multilayer.1.films.0.substrate_temperature",
+      "name": "Multilayers \u2192 1 \u2192 Films \u2192 0 \u2192 Substrate Temperature",
+      "unitCode": "CEL"
+    },
+    {
+      "value": 1.0,
+      "unitText": "1",
+      "@type": "PropertyValue",
+      "@id": "./objects/1/properties/multilayer.1.repetitions",
+      "propertyID": "multilayer.1.repetitions",
+      "name": "Multilayers \u2192 1 \u2192 Film Layer Repetitions",
+      "unitCode": "C62"
+    },
+    {
+      "value": "Pd",
+      "@type": "PropertyValue",
+      "@id": "./objects/1/properties/multilayer.2.films.0.name",
+      "propertyID": "multilayer.2.films.0.name",
+      "name": "Multilayers \u2192 2 \u2192 Films \u2192 0 \u2192 Film Name"
+    },
+    {
+      "value": "Pd",
+      "@type": "PropertyValue",
+      "@id": "./objects/1/properties/multilayer.2.films.0.elements.0.name",
+      "propertyID": "multilayer.2.films.0.elements.0.name",
+      "name": "Multilayers \u2192 2 \u2192 Films \u2192 0 \u2192 Elements \u2192 0 \u2192 Element Name"
+    },
+    {
+      "value": 0.01,
+      "unitText": "\u00c5/s",
+      "@type": "PropertyValue",
+      "@id": "./objects/1/properties/multilayer.2.films.0.elements.0.rate",
+      "propertyID": "multilayer.2.films.0.elements.0.rate",
+      "name": "Multilayers \u2192 2 \u2192 Films \u2192 0 \u2192 Elements \u2192 0 \u2192 Rate"
+    },
+    {
+      "value": 150.0,
+      "unitText": "\u00c5",
+      "@type": "PropertyValue",
+      "@id": "./objects/1/properties/multilayer.2.films.0.thickness",
+      "propertyID": "multilayer.2.films.0.thickness",
+      "name": "Multilayers \u2192 2 \u2192 Films \u2192 0 \u2192 Film Thickness",
+      "unitCode": "A11"
+    },
+    {
+      "value": 0.0,
+      "unitText": "sccm",
+      "@type": "PropertyValue",
+      "@id": "./objects/1/properties/multilayer.2.films.0.oxygen_flow",
+      "propertyID": "multilayer.2.films.0.oxygen_flow",
+      "name": "Multilayers \u2192 2 \u2192 Films \u2192 0 \u2192 Oxygen Flow"
+    },
+    {
+      "value": 99.99999999999997,
+      "unitText": "degC",
+      "@type": "PropertyValue",
+      "@id": "./objects/1/properties/multilayer.2.films.0.substrate_temperature",
+      "propertyID": "multilayer.2.films.0.substrate_temperature",
+      "name": "Multilayers \u2192 2 \u2192 Films \u2192 0 \u2192 Substrate Temperature",
+      "unitCode": "CEL"
+    },
+    {
+      "value": "Fe",
+      "@type": "PropertyValue",
+      "@id": "./objects/1/properties/multilayer.2.films.1.name",
+      "propertyID": "multilayer.2.films.1.name",
+      "name": "Multilayers \u2192 2 \u2192 Films \u2192 1 \u2192 Film Name"
+    },
+    {
+      "value": "Fe",
+      "@type": "PropertyValue",
+      "@id": "./objects/1/properties/multilayer.2.films.1.elements.0.name",
+      "propertyID": "multilayer.2.films.1.elements.0.name",
+      "name": "Multilayers \u2192 2 \u2192 Films \u2192 1 \u2192 Elements \u2192 0 \u2192 Element Name"
+    },
+    {
+      "value": 0.049999999999999996,
+      "unitText": "\u00c5/s",
+      "@type": "PropertyValue",
+      "@id": "./objects/1/properties/multilayer.2.films.1.elements.0.rate",
+      "propertyID": "multilayer.2.films.1.elements.0.rate",
+      "name": "Multilayers \u2192 2 \u2192 Films \u2192 1 \u2192 Elements \u2192 0 \u2192 Rate"
+    },
+    {
+      "value": 10.0,
+      "unitText": "\u00c5",
+      "@type": "PropertyValue",
+      "@id": "./objects/1/properties/multilayer.2.films.1.thickness",
+      "propertyID": "multilayer.2.films.1.thickness",
+      "name": "Multilayers \u2192 2 \u2192 Films \u2192 1 \u2192 Film Thickness",
+      "unitCode": "A11"
+    },
+    {
+      "value": 0.0,
+      "unitText": "sccm",
+      "@type": "PropertyValue",
+      "@id": "./objects/1/properties/multilayer.2.films.1.oxygen_flow",
+      "propertyID": "multilayer.2.films.1.oxygen_flow",
+      "name": "Multilayers \u2192 2 \u2192 Films \u2192 1 \u2192 Oxygen Flow"
+    },
+    {
+      "value": 129.99999999999997,
+      "unitText": "degC",
+      "@type": "PropertyValue",
+      "@id": "./objects/1/properties/multilayer.2.films.1.substrate_temperature",
+      "propertyID": "multilayer.2.films.1.substrate_temperature",
+      "name": "Multilayers \u2192 2 \u2192 Films \u2192 1 \u2192 Substrate Temperature",
+      "unitCode": "CEL"
+    },
+    {
+      "value": 10.0,
+      "unitText": "1",
+      "@type": "PropertyValue",
+      "@id": "./objects/1/properties/multilayer.2.repetitions",
+      "propertyID": "multilayer.2.repetitions",
+      "name": "Multilayers \u2192 2 \u2192 Film Layer Repetitions",
+      "unitCode": "C62"
+    },
+    {
+      "value": "Pd Layer",
+      "@type": "PropertyValue",
+      "@id": "./objects/1/properties/multilayer.3.films.0.name",
+      "propertyID": "multilayer.3.films.0.name",
+      "name": "Multilayers \u2192 3 \u2192 Films \u2192 0 \u2192 Film Name"
+    },
+    {
+      "value": "Pd",
+      "@type": "PropertyValue",
+      "@id": "./objects/1/properties/multilayer.3.films.0.elements.0.name",
+      "propertyID": "multilayer.3.films.0.elements.0.name",
+      "name": "Multilayers \u2192 3 \u2192 Films \u2192 0 \u2192 Elements \u2192 0 \u2192 Element Name"
+    },
+    {
+      "value": 0.09999999999999999,
+      "unitText": "\u00c5/s",
+      "@type": "PropertyValue",
+      "@id": "./objects/1/properties/multilayer.3.films.0.elements.0.rate",
+      "propertyID": "multilayer.3.films.0.elements.0.rate",
+      "name": "Multilayers \u2192 3 \u2192 Films \u2192 0 \u2192 Elements \u2192 0 \u2192 Rate"
+    },
+    {
+      "value": 150.0,
+      "unitText": "\u00c5",
+      "@type": "PropertyValue",
+      "@id": "./objects/1/properties/multilayer.3.films.0.thickness",
+      "propertyID": "multilayer.3.films.0.thickness",
+      "name": "Multilayers \u2192 3 \u2192 Films \u2192 0 \u2192 Film Thickness",
+      "unitCode": "A11"
+    },
+    {
+      "value": 0.0,
+      "unitText": "sccm",
+      "@type": "PropertyValue",
+      "@id": "./objects/1/properties/multilayer.3.films.0.oxygen_flow",
+      "propertyID": "multilayer.3.films.0.oxygen_flow",
+      "name": "Multilayers \u2192 3 \u2192 Films \u2192 0 \u2192 Oxygen Flow"
+    },
+    {
+      "value": 99.99999999999997,
+      "unitText": "degC",
+      "@type": "PropertyValue",
+      "@id": "./objects/1/properties/multilayer.3.films.0.substrate_temperature",
+      "propertyID": "multilayer.3.films.0.substrate_temperature",
+      "name": "Multilayers \u2192 3 \u2192 Films \u2192 0 \u2192 Substrate Temperature",
+      "unitCode": "CEL"
+    },
+    {
+      "value": 1.0,
+      "unitText": "1",
+      "@type": "PropertyValue",
+      "@id": "./objects/1/properties/multilayer.3.repetitions",
+      "propertyID": "multilayer.3.repetitions",
+      "name": "Multilayers \u2192 3 \u2192 Film Layer Repetitions",
+      "unitCode": "C62"
+    },
+    {
+      "@id": "./objects/1/",
       "@type": "Dataset",
       "identifier": "1",
       "name": "OMBE-1",
       "description": "Object #1",
-      "dateCreated": "2024-09-18T11:27:08.623860",
-      "dateModified": "2024-09-18T11:27:08.623860",
+      "dateCreated": "2024-11-18T12:57:26.169899",
+      "dateModified": "2024-11-18T12:57:26.169899",
       "author": {
         "@id": "./users/2"
       },
@@ -241,276 +596,121 @@ Each export contains one or more SampleDB objects, identified by their ID, with 
       "url": "http://localhost:5000/objects/1",
       "variableMeasured": [
         {
-          "value": "OMBE-1",
-          "@type": "PropertyValue",
-          "propertyID": "name",
-          "name": "Sample Name"
+          "@id": "./objects/1/properties/name"
         },
         {
-          "value": "2017-02-24T11:56:00.000000",
-          "@type": "PropertyValue",
-          "propertyID": "created",
-          "name": "Creation Datetime"
+          "@id": "./objects/1/properties/created"
         },
         {
-          "value": false,
-          "@type": "PropertyValue",
-          "propertyID": "checkbox",
-          "name": "Checkbox"
+          "@id": "./objects/1/properties/checkbox"
         },
         {
-          "value": "Option B",
-          "@type": "PropertyValue",
-          "propertyID": "dropdown",
-          "name": "Dropdown"
+          "@id": "./objects/1/properties/dropdown"
         },
         {
-          "value": "GaAs",
-          "@type": "PropertyValue",
-          "propertyID": "substrate",
-          "name": "Substrate"
+          "@id": "./objects/1/properties/substrate"
         },
         {
-          "value": "Seed Layer",
-          "@type": "PropertyValue",
-          "propertyID": "multilayer.0.films.0.name",
-          "name": "Multilayers \u2192 0 \u2192 Films \u2192 0 \u2192 Film Name"
+          "@id": "./objects/1/properties/multilayer.0.films.0.name"
         },
         {
-          "value": "Fe",
-          "@type": "PropertyValue",
-          "propertyID": "multilayer.0.films.0.elements.0.name",
-          "name": "Multilayers \u2192 0 \u2192 Films \u2192 0 \u2192 Elements \u2192 0 \u2192 Element Name"
+          "@id": "./objects/1/properties/multilayer.0.films.0.elements.0.name"
         },
         {
-          "value": 0.09999999999999999,
-          "unitText": "\u00c5/s",
-          "@type": "PropertyValue",
-          "propertyID": "multilayer.0.films.0.elements.0.rate",
-          "name": "Multilayers \u2192 0 \u2192 Films \u2192 0 \u2192 Elements \u2192 0 \u2192 Rate"
+          "@id": "./objects/1/properties/multilayer.0.films.0.elements.0.rate"
         },
         {
-          "value": 5.0,
-          "unitText": "\u00c5",
-          "@type": "PropertyValue",
-          "propertyID": "multilayer.0.films.0.thickness",
-          "name": "Multilayers \u2192 0 \u2192 Films \u2192 0 \u2192 Film Thickness",
-          "unitCode": "A11"
+          "@id": "./objects/1/properties/multilayer.0.films.0.thickness"
         },
         {
-          "value": 0.0,
-          "unitText": "sccm",
-          "@type": "PropertyValue",
-          "propertyID": "multilayer.0.films.0.oxygen_flow",
-          "name": "Multilayers \u2192 0 \u2192 Films \u2192 0 \u2192 Oxygen Flow"
+          "@id": "./objects/1/properties/multilayer.0.films.0.oxygen_flow"
         },
         {
-          "value": 129.99999999999997,
-          "unitText": "degC",
-          "@type": "PropertyValue",
-          "propertyID": "multilayer.0.films.0.substrate_temperature",
-          "name": "Multilayers \u2192 0 \u2192 Films \u2192 0 \u2192 Substrate Temperature",
-          "unitCode": "CEL"
+          "@id": "./objects/1/properties/multilayer.0.films.0.substrate_temperature"
         },
         {
-          "value": 1.0,
-          "unitText": "1",
-          "@type": "PropertyValue",
-          "propertyID": "multilayer.0.repetitions",
-          "name": "Multilayers \u2192 0 \u2192 Film Layer Repetitions",
-          "unitCode": "C62"
+          "@id": "./objects/1/properties/multilayer.0.repetitions"
         },
         {
-          "value": "Buffer Layer",
-          "@type": "PropertyValue",
-          "propertyID": "multilayer.1.films.0.name",
-          "name": "Multilayers \u2192 1 \u2192 Films \u2192 0 \u2192 Film Name"
+          "@id": "./objects/1/properties/multilayer.1.films.0.name"
         },
         {
-          "value": "Ag",
-          "@type": "PropertyValue",
-          "propertyID": "multilayer.1.films.0.elements.0.name",
-          "name": "Multilayers \u2192 1 \u2192 Films \u2192 0 \u2192 Elements \u2192 0 \u2192 Element Name"
+          "@id": "./objects/1/properties/multilayer.1.films.0.elements.0.name"
         },
         {
-          "value": 1.0,
-          "unitText": "\u00c5/s",
-          "@type": "PropertyValue",
-          "propertyID": "multilayer.1.films.0.elements.0.rate",
-          "name": "Multilayers \u2192 1 \u2192 Films \u2192 0 \u2192 Elements \u2192 0 \u2192 Rate"
+          "@id": "./objects/1/properties/multilayer.1.films.0.elements.0.rate"
         },
         {
-          "value": 1500.0,
-          "unitText": "\u00c5",
-          "@type": "PropertyValue",
-          "propertyID": "multilayer.1.films.0.thickness",
-          "name": "Multilayers \u2192 1 \u2192 Films \u2192 0 \u2192 Film Thickness",
-          "unitCode": "A11"
+          "@id": "./objects/1/properties/multilayer.1.films.0.thickness"
         },
         {
-          "value": 0.0,
-          "unitText": "sccm",
-          "@type": "PropertyValue",
-          "propertyID": "multilayer.1.films.0.oxygen_flow",
-          "name": "Multilayers \u2192 1 \u2192 Films \u2192 0 \u2192 Oxygen Flow"
+          "@id": "./objects/1/properties/multilayer.1.films.0.oxygen_flow"
         },
         {
-          "value": 129.99999999999997,
-          "unitText": "degC",
-          "@type": "PropertyValue",
-          "propertyID": "multilayer.1.films.0.substrate_temperature",
-          "name": "Multilayers \u2192 1 \u2192 Films \u2192 0 \u2192 Substrate Temperature",
-          "unitCode": "CEL"
+          "@id": "./objects/1/properties/multilayer.1.films.0.substrate_temperature"
         },
         {
-          "value": 1.0,
-          "unitText": "1",
-          "@type": "PropertyValue",
-          "propertyID": "multilayer.1.repetitions",
-          "name": "Multilayers \u2192 1 \u2192 Film Layer Repetitions",
-          "unitCode": "C62"
+          "@id": "./objects/1/properties/multilayer.1.repetitions"
         },
         {
-          "value": "Pd",
-          "@type": "PropertyValue",
-          "propertyID": "multilayer.2.films.0.name",
-          "name": "Multilayers \u2192 2 \u2192 Films \u2192 0 \u2192 Film Name"
+          "@id": "./objects/1/properties/multilayer.2.films.0.name"
         },
         {
-          "value": "Pd",
-          "@type": "PropertyValue",
-          "propertyID": "multilayer.2.films.0.elements.0.name",
-          "name": "Multilayers \u2192 2 \u2192 Films \u2192 0 \u2192 Elements \u2192 0 \u2192 Element Name"
+          "@id": "./objects/1/properties/multilayer.2.films.0.elements.0.name"
         },
         {
-          "value": 0.01,
-          "unitText": "\u00c5/s",
-          "@type": "PropertyValue",
-          "propertyID": "multilayer.2.films.0.elements.0.rate",
-          "name": "Multilayers \u2192 2 \u2192 Films \u2192 0 \u2192 Elements \u2192 0 \u2192 Rate"
+          "@id": "./objects/1/properties/multilayer.2.films.0.elements.0.rate"
         },
         {
-          "value": 150.0,
-          "unitText": "\u00c5",
-          "@type": "PropertyValue",
-          "propertyID": "multilayer.2.films.0.thickness",
-          "name": "Multilayers \u2192 2 \u2192 Films \u2192 0 \u2192 Film Thickness",
-          "unitCode": "A11"
+          "@id": "./objects/1/properties/multilayer.2.films.0.thickness"
         },
         {
-          "value": 0.0,
-          "unitText": "sccm",
-          "@type": "PropertyValue",
-          "propertyID": "multilayer.2.films.0.oxygen_flow",
-          "name": "Multilayers \u2192 2 \u2192 Films \u2192 0 \u2192 Oxygen Flow"
+          "@id": "./objects/1/properties/multilayer.2.films.0.oxygen_flow"
         },
         {
-          "value": 99.99999999999997,
-          "unitText": "degC",
-          "@type": "PropertyValue",
-          "propertyID": "multilayer.2.films.0.substrate_temperature",
-          "name": "Multilayers \u2192 2 \u2192 Films \u2192 0 \u2192 Substrate Temperature",
-          "unitCode": "CEL"
+          "@id": "./objects/1/properties/multilayer.2.films.0.substrate_temperature"
         },
         {
-          "value": "Fe",
-          "@type": "PropertyValue",
-          "propertyID": "multilayer.2.films.1.name",
-          "name": "Multilayers \u2192 2 \u2192 Films \u2192 1 \u2192 Film Name"
+          "@id": "./objects/1/properties/multilayer.2.films.1.name"
         },
         {
-          "value": "Fe",
-          "@type": "PropertyValue",
-          "propertyID": "multilayer.2.films.1.elements.0.name",
-          "name": "Multilayers \u2192 2 \u2192 Films \u2192 1 \u2192 Elements \u2192 0 \u2192 Element Name"
+          "@id": "./objects/1/properties/multilayer.2.films.1.elements.0.name"
         },
         {
-          "value": 0.049999999999999996,
-          "unitText": "\u00c5/s",
-          "@type": "PropertyValue",
-          "propertyID": "multilayer.2.films.1.elements.0.rate",
-          "name": "Multilayers \u2192 2 \u2192 Films \u2192 1 \u2192 Elements \u2192 0 \u2192 Rate"
+          "@id": "./objects/1/properties/multilayer.2.films.1.elements.0.rate"
         },
         {
-          "value": 10.0,
-          "unitText": "\u00c5",
-          "@type": "PropertyValue",
-          "propertyID": "multilayer.2.films.1.thickness",
-          "name": "Multilayers \u2192 2 \u2192 Films \u2192 1 \u2192 Film Thickness",
-          "unitCode": "A11"
+          "@id": "./objects/1/properties/multilayer.2.films.1.thickness"
         },
         {
-          "value": 0.0,
-          "unitText": "sccm",
-          "@type": "PropertyValue",
-          "propertyID": "multilayer.2.films.1.oxygen_flow",
-          "name": "Multilayers \u2192 2 \u2192 Films \u2192 1 \u2192 Oxygen Flow"
+          "@id": "./objects/1/properties/multilayer.2.films.1.oxygen_flow"
         },
         {
-          "value": 129.99999999999997,
-          "unitText": "degC",
-          "@type": "PropertyValue",
-          "propertyID": "multilayer.2.films.1.substrate_temperature",
-          "name": "Multilayers \u2192 2 \u2192 Films \u2192 1 \u2192 Substrate Temperature",
-          "unitCode": "CEL"
+          "@id": "./objects/1/properties/multilayer.2.films.1.substrate_temperature"
         },
         {
-          "value": 10.0,
-          "unitText": "1",
-          "@type": "PropertyValue",
-          "propertyID": "multilayer.2.repetitions",
-          "name": "Multilayers \u2192 2 \u2192 Film Layer Repetitions",
-          "unitCode": "C62"
+          "@id": "./objects/1/properties/multilayer.2.repetitions"
         },
         {
-          "value": "Pd Layer",
-          "@type": "PropertyValue",
-          "propertyID": "multilayer.3.films.0.name",
-          "name": "Multilayers \u2192 3 \u2192 Films \u2192 0 \u2192 Film Name"
+          "@id": "./objects/1/properties/multilayer.3.films.0.name"
         },
         {
-          "value": "Pd",
-          "@type": "PropertyValue",
-          "propertyID": "multilayer.3.films.0.elements.0.name",
-          "name": "Multilayers \u2192 3 \u2192 Films \u2192 0 \u2192 Elements \u2192 0 \u2192 Element Name"
+          "@id": "./objects/1/properties/multilayer.3.films.0.elements.0.name"
         },
         {
-          "value": 0.09999999999999999,
-          "unitText": "\u00c5/s",
-          "@type": "PropertyValue",
-          "propertyID": "multilayer.3.films.0.elements.0.rate",
-          "name": "Multilayers \u2192 3 \u2192 Films \u2192 0 \u2192 Elements \u2192 0 \u2192 Rate"
+          "@id": "./objects/1/properties/multilayer.3.films.0.elements.0.rate"
         },
         {
-          "value": 150.0,
-          "unitText": "\u00c5",
-          "@type": "PropertyValue",
-          "propertyID": "multilayer.3.films.0.thickness",
-          "name": "Multilayers \u2192 3 \u2192 Films \u2192 0 \u2192 Film Thickness",
-          "unitCode": "A11"
+          "@id": "./objects/1/properties/multilayer.3.films.0.thickness"
         },
         {
-          "value": 0.0,
-          "unitText": "sccm",
-          "@type": "PropertyValue",
-          "propertyID": "multilayer.3.films.0.oxygen_flow",
-          "name": "Multilayers \u2192 3 \u2192 Films \u2192 0 \u2192 Oxygen Flow"
+          "@id": "./objects/1/properties/multilayer.3.films.0.oxygen_flow"
         },
         {
-          "value": 99.99999999999997,
-          "unitText": "degC",
-          "@type": "PropertyValue",
-          "propertyID": "multilayer.3.films.0.substrate_temperature",
-          "name": "Multilayers \u2192 3 \u2192 Films \u2192 0 \u2192 Substrate Temperature",
-          "unitCode": "CEL"
+          "@id": "./objects/1/properties/multilayer.3.films.0.substrate_temperature"
         },
         {
-          "value": 1.0,
-          "unitText": "1",
-          "@type": "PropertyValue",
-          "propertyID": "multilayer.3.repetitions",
-          "name": "Multilayers \u2192 3 \u2192 Film Layer Repetitions",
-          "unitCode": "C62"
+          "@id": "./objects/1/properties/multilayer.3.repetitions"
         }
       ],
       "comment": [
@@ -523,7 +723,7 @@ Each export contains one or more SampleDB objects, identified by their ID, with 
       ],
       "hasPart": [
         {
-          "@id": "./objects/1/version/0"
+          "@id": "./objects/1/versions/0/"
         },
         {
           "@id": "./objects/1/files.json"
@@ -538,11 +738,322 @@ Each export contains one or more SampleDB objects, identified by their ID, with 
       "genre": "sample"
     },
     {
-      "@id": "./objects/1/version/0",
+      "value": "OMBE-1",
+      "@type": "PropertyValue",
+      "@id": "./objects/1/versions/0/properties/name",
+      "propertyID": "name",
+      "name": "Sample Name"
+    },
+    {
+      "value": "2017-02-24T11:56:00.000000",
+      "@type": "PropertyValue",
+      "@id": "./objects/1/versions/0/properties/created",
+      "propertyID": "created",
+      "name": "Creation Datetime"
+    },
+    {
+      "value": false,
+      "@type": "PropertyValue",
+      "@id": "./objects/1/versions/0/properties/checkbox",
+      "propertyID": "checkbox",
+      "name": "Checkbox"
+    },
+    {
+      "value": "Option B",
+      "@type": "PropertyValue",
+      "@id": "./objects/1/versions/0/properties/dropdown",
+      "propertyID": "dropdown",
+      "name": "Dropdown"
+    },
+    {
+      "value": "GaAs",
+      "@type": "PropertyValue",
+      "@id": "./objects/1/versions/0/properties/substrate",
+      "propertyID": "substrate",
+      "name": "Substrate"
+    },
+    {
+      "value": "Seed Layer",
+      "@type": "PropertyValue",
+      "@id": "./objects/1/versions/0/properties/multilayer.0.films.0.name",
+      "propertyID": "multilayer.0.films.0.name",
+      "name": "Multilayers \u2192 0 \u2192 Films \u2192 0 \u2192 Film Name"
+    },
+    {
+      "value": "Fe",
+      "@type": "PropertyValue",
+      "@id": "./objects/1/versions/0/properties/multilayer.0.films.0.elements.0.name",
+      "propertyID": "multilayer.0.films.0.elements.0.name",
+      "name": "Multilayers \u2192 0 \u2192 Films \u2192 0 \u2192 Elements \u2192 0 \u2192 Element Name"
+    },
+    {
+      "value": 0.09999999999999999,
+      "unitText": "\u00c5/s",
+      "@type": "PropertyValue",
+      "@id": "./objects/1/versions/0/properties/multilayer.0.films.0.elements.0.rate",
+      "propertyID": "multilayer.0.films.0.elements.0.rate",
+      "name": "Multilayers \u2192 0 \u2192 Films \u2192 0 \u2192 Elements \u2192 0 \u2192 Rate"
+    },
+    {
+      "value": 5.0,
+      "unitText": "\u00c5",
+      "@type": "PropertyValue",
+      "@id": "./objects/1/versions/0/properties/multilayer.0.films.0.thickness",
+      "propertyID": "multilayer.0.films.0.thickness",
+      "name": "Multilayers \u2192 0 \u2192 Films \u2192 0 \u2192 Film Thickness",
+      "unitCode": "A11"
+    },
+    {
+      "value": 0.0,
+      "unitText": "sccm",
+      "@type": "PropertyValue",
+      "@id": "./objects/1/versions/0/properties/multilayer.0.films.0.oxygen_flow",
+      "propertyID": "multilayer.0.films.0.oxygen_flow",
+      "name": "Multilayers \u2192 0 \u2192 Films \u2192 0 \u2192 Oxygen Flow"
+    },
+    {
+      "value": 129.99999999999997,
+      "unitText": "degC",
+      "@type": "PropertyValue",
+      "@id": "./objects/1/versions/0/properties/multilayer.0.films.0.substrate_temperature",
+      "propertyID": "multilayer.0.films.0.substrate_temperature",
+      "name": "Multilayers \u2192 0 \u2192 Films \u2192 0 \u2192 Substrate Temperature",
+      "unitCode": "CEL"
+    },
+    {
+      "value": 1.0,
+      "unitText": "1",
+      "@type": "PropertyValue",
+      "@id": "./objects/1/versions/0/properties/multilayer.0.repetitions",
+      "propertyID": "multilayer.0.repetitions",
+      "name": "Multilayers \u2192 0 \u2192 Film Layer Repetitions",
+      "unitCode": "C62"
+    },
+    {
+      "value": "Buffer Layer",
+      "@type": "PropertyValue",
+      "@id": "./objects/1/versions/0/properties/multilayer.1.films.0.name",
+      "propertyID": "multilayer.1.films.0.name",
+      "name": "Multilayers \u2192 1 \u2192 Films \u2192 0 \u2192 Film Name"
+    },
+    {
+      "value": "Ag",
+      "@type": "PropertyValue",
+      "@id": "./objects/1/versions/0/properties/multilayer.1.films.0.elements.0.name",
+      "propertyID": "multilayer.1.films.0.elements.0.name",
+      "name": "Multilayers \u2192 1 \u2192 Films \u2192 0 \u2192 Elements \u2192 0 \u2192 Element Name"
+    },
+    {
+      "value": 1.0,
+      "unitText": "\u00c5/s",
+      "@type": "PropertyValue",
+      "@id": "./objects/1/versions/0/properties/multilayer.1.films.0.elements.0.rate",
+      "propertyID": "multilayer.1.films.0.elements.0.rate",
+      "name": "Multilayers \u2192 1 \u2192 Films \u2192 0 \u2192 Elements \u2192 0 \u2192 Rate"
+    },
+    {
+      "value": 1500.0,
+      "unitText": "\u00c5",
+      "@type": "PropertyValue",
+      "@id": "./objects/1/versions/0/properties/multilayer.1.films.0.thickness",
+      "propertyID": "multilayer.1.films.0.thickness",
+      "name": "Multilayers \u2192 1 \u2192 Films \u2192 0 \u2192 Film Thickness",
+      "unitCode": "A11"
+    },
+    {
+      "value": 0.0,
+      "unitText": "sccm",
+      "@type": "PropertyValue",
+      "@id": "./objects/1/versions/0/properties/multilayer.1.films.0.oxygen_flow",
+      "propertyID": "multilayer.1.films.0.oxygen_flow",
+      "name": "Multilayers \u2192 1 \u2192 Films \u2192 0 \u2192 Oxygen Flow"
+    },
+    {
+      "value": 129.99999999999997,
+      "unitText": "degC",
+      "@type": "PropertyValue",
+      "@id": "./objects/1/versions/0/properties/multilayer.1.films.0.substrate_temperature",
+      "propertyID": "multilayer.1.films.0.substrate_temperature",
+      "name": "Multilayers \u2192 1 \u2192 Films \u2192 0 \u2192 Substrate Temperature",
+      "unitCode": "CEL"
+    },
+    {
+      "value": 1.0,
+      "unitText": "1",
+      "@type": "PropertyValue",
+      "@id": "./objects/1/versions/0/properties/multilayer.1.repetitions",
+      "propertyID": "multilayer.1.repetitions",
+      "name": "Multilayers \u2192 1 \u2192 Film Layer Repetitions",
+      "unitCode": "C62"
+    },
+    {
+      "value": "Pd",
+      "@type": "PropertyValue",
+      "@id": "./objects/1/versions/0/properties/multilayer.2.films.0.name",
+      "propertyID": "multilayer.2.films.0.name",
+      "name": "Multilayers \u2192 2 \u2192 Films \u2192 0 \u2192 Film Name"
+    },
+    {
+      "value": "Pd",
+      "@type": "PropertyValue",
+      "@id": "./objects/1/versions/0/properties/multilayer.2.films.0.elements.0.name",
+      "propertyID": "multilayer.2.films.0.elements.0.name",
+      "name": "Multilayers \u2192 2 \u2192 Films \u2192 0 \u2192 Elements \u2192 0 \u2192 Element Name"
+    },
+    {
+      "value": 0.01,
+      "unitText": "\u00c5/s",
+      "@type": "PropertyValue",
+      "@id": "./objects/1/versions/0/properties/multilayer.2.films.0.elements.0.rate",
+      "propertyID": "multilayer.2.films.0.elements.0.rate",
+      "name": "Multilayers \u2192 2 \u2192 Films \u2192 0 \u2192 Elements \u2192 0 \u2192 Rate"
+    },
+    {
+      "value": 150.0,
+      "unitText": "\u00c5",
+      "@type": "PropertyValue",
+      "@id": "./objects/1/versions/0/properties/multilayer.2.films.0.thickness",
+      "propertyID": "multilayer.2.films.0.thickness",
+      "name": "Multilayers \u2192 2 \u2192 Films \u2192 0 \u2192 Film Thickness",
+      "unitCode": "A11"
+    },
+    {
+      "value": 0.0,
+      "unitText": "sccm",
+      "@type": "PropertyValue",
+      "@id": "./objects/1/versions/0/properties/multilayer.2.films.0.oxygen_flow",
+      "propertyID": "multilayer.2.films.0.oxygen_flow",
+      "name": "Multilayers \u2192 2 \u2192 Films \u2192 0 \u2192 Oxygen Flow"
+    },
+    {
+      "value": 99.99999999999997,
+      "unitText": "degC",
+      "@type": "PropertyValue",
+      "@id": "./objects/1/versions/0/properties/multilayer.2.films.0.substrate_temperature",
+      "propertyID": "multilayer.2.films.0.substrate_temperature",
+      "name": "Multilayers \u2192 2 \u2192 Films \u2192 0 \u2192 Substrate Temperature",
+      "unitCode": "CEL"
+    },
+    {
+      "value": "Fe",
+      "@type": "PropertyValue",
+      "@id": "./objects/1/versions/0/properties/multilayer.2.films.1.name",
+      "propertyID": "multilayer.2.films.1.name",
+      "name": "Multilayers \u2192 2 \u2192 Films \u2192 1 \u2192 Film Name"
+    },
+    {
+      "value": "Fe",
+      "@type": "PropertyValue",
+      "@id": "./objects/1/versions/0/properties/multilayer.2.films.1.elements.0.name",
+      "propertyID": "multilayer.2.films.1.elements.0.name",
+      "name": "Multilayers \u2192 2 \u2192 Films \u2192 1 \u2192 Elements \u2192 0 \u2192 Element Name"
+    },
+    {
+      "value": 0.049999999999999996,
+      "unitText": "\u00c5/s",
+      "@type": "PropertyValue",
+      "@id": "./objects/1/versions/0/properties/multilayer.2.films.1.elements.0.rate",
+      "propertyID": "multilayer.2.films.1.elements.0.rate",
+      "name": "Multilayers \u2192 2 \u2192 Films \u2192 1 \u2192 Elements \u2192 0 \u2192 Rate"
+    },
+    {
+      "value": 10.0,
+      "unitText": "\u00c5",
+      "@type": "PropertyValue",
+      "@id": "./objects/1/versions/0/properties/multilayer.2.films.1.thickness",
+      "propertyID": "multilayer.2.films.1.thickness",
+      "name": "Multilayers \u2192 2 \u2192 Films \u2192 1 \u2192 Film Thickness",
+      "unitCode": "A11"
+    },
+    {
+      "value": 0.0,
+      "unitText": "sccm",
+      "@type": "PropertyValue",
+      "@id": "./objects/1/versions/0/properties/multilayer.2.films.1.oxygen_flow",
+      "propertyID": "multilayer.2.films.1.oxygen_flow",
+      "name": "Multilayers \u2192 2 \u2192 Films \u2192 1 \u2192 Oxygen Flow"
+    },
+    {
+      "value": 129.99999999999997,
+      "unitText": "degC",
+      "@type": "PropertyValue",
+      "@id": "./objects/1/versions/0/properties/multilayer.2.films.1.substrate_temperature",
+      "propertyID": "multilayer.2.films.1.substrate_temperature",
+      "name": "Multilayers \u2192 2 \u2192 Films \u2192 1 \u2192 Substrate Temperature",
+      "unitCode": "CEL"
+    },
+    {
+      "value": 10.0,
+      "unitText": "1",
+      "@type": "PropertyValue",
+      "@id": "./objects/1/versions/0/properties/multilayer.2.repetitions",
+      "propertyID": "multilayer.2.repetitions",
+      "name": "Multilayers \u2192 2 \u2192 Film Layer Repetitions",
+      "unitCode": "C62"
+    },
+    {
+      "value": "Pd Layer",
+      "@type": "PropertyValue",
+      "@id": "./objects/1/versions/0/properties/multilayer.3.films.0.name",
+      "propertyID": "multilayer.3.films.0.name",
+      "name": "Multilayers \u2192 3 \u2192 Films \u2192 0 \u2192 Film Name"
+    },
+    {
+      "value": "Pd",
+      "@type": "PropertyValue",
+      "@id": "./objects/1/versions/0/properties/multilayer.3.films.0.elements.0.name",
+      "propertyID": "multilayer.3.films.0.elements.0.name",
+      "name": "Multilayers \u2192 3 \u2192 Films \u2192 0 \u2192 Elements \u2192 0 \u2192 Element Name"
+    },
+    {
+      "value": 0.09999999999999999,
+      "unitText": "\u00c5/s",
+      "@type": "PropertyValue",
+      "@id": "./objects/1/versions/0/properties/multilayer.3.films.0.elements.0.rate",
+      "propertyID": "multilayer.3.films.0.elements.0.rate",
+      "name": "Multilayers \u2192 3 \u2192 Films \u2192 0 \u2192 Elements \u2192 0 \u2192 Rate"
+    },
+    {
+      "value": 150.0,
+      "unitText": "\u00c5",
+      "@type": "PropertyValue",
+      "@id": "./objects/1/versions/0/properties/multilayer.3.films.0.thickness",
+      "propertyID": "multilayer.3.films.0.thickness",
+      "name": "Multilayers \u2192 3 \u2192 Films \u2192 0 \u2192 Film Thickness",
+      "unitCode": "A11"
+    },
+    {
+      "value": 0.0,
+      "unitText": "sccm",
+      "@type": "PropertyValue",
+      "@id": "./objects/1/versions/0/properties/multilayer.3.films.0.oxygen_flow",
+      "propertyID": "multilayer.3.films.0.oxygen_flow",
+      "name": "Multilayers \u2192 3 \u2192 Films \u2192 0 \u2192 Oxygen Flow"
+    },
+    {
+      "value": 99.99999999999997,
+      "unitText": "degC",
+      "@type": "PropertyValue",
+      "@id": "./objects/1/versions/0/properties/multilayer.3.films.0.substrate_temperature",
+      "propertyID": "multilayer.3.films.0.substrate_temperature",
+      "name": "Multilayers \u2192 3 \u2192 Films \u2192 0 \u2192 Substrate Temperature",
+      "unitCode": "CEL"
+    },
+    {
+      "value": 1.0,
+      "unitText": "1",
+      "@type": "PropertyValue",
+      "@id": "./objects/1/versions/0/properties/multilayer.3.repetitions",
+      "propertyID": "multilayer.3.repetitions",
+      "name": "Multilayers \u2192 3 \u2192 Film Layer Repetitions",
+      "unitCode": "C62"
+    },
+    {
+      "@id": "./objects/1/versions/0/",
       "@type": "Dataset",
       "name": "OMBE-1",
       "description": "Object #1 version #0",
-      "dateCreated": "2024-09-18T11:27:08.623860",
+      "dateCreated": "2024-11-18T12:57:26.169899",
       "creator": {
         "@id": "./users/2"
       },
@@ -552,289 +1063,134 @@ Each export contains one or more SampleDB objects, identified by their ID, with 
       "url": "http://localhost:5000/objects/1/versions/0",
       "variableMeasured": [
         {
-          "value": "OMBE-1",
-          "@type": "PropertyValue",
-          "propertyID": "name",
-          "name": "Sample Name"
+          "@id": "./objects/1/versions/0/properties/name"
         },
         {
-          "value": "2017-02-24T11:56:00.000000",
-          "@type": "PropertyValue",
-          "propertyID": "created",
-          "name": "Creation Datetime"
+          "@id": "./objects/1/versions/0/properties/created"
         },
         {
-          "value": false,
-          "@type": "PropertyValue",
-          "propertyID": "checkbox",
-          "name": "Checkbox"
+          "@id": "./objects/1/versions/0/properties/checkbox"
         },
         {
-          "value": "Option B",
-          "@type": "PropertyValue",
-          "propertyID": "dropdown",
-          "name": "Dropdown"
+          "@id": "./objects/1/versions/0/properties/dropdown"
         },
         {
-          "value": "GaAs",
-          "@type": "PropertyValue",
-          "propertyID": "substrate",
-          "name": "Substrate"
+          "@id": "./objects/1/versions/0/properties/substrate"
         },
         {
-          "value": "Seed Layer",
-          "@type": "PropertyValue",
-          "propertyID": "multilayer.0.films.0.name",
-          "name": "Multilayers \u2192 0 \u2192 Films \u2192 0 \u2192 Film Name"
+          "@id": "./objects/1/versions/0/properties/multilayer.0.films.0.name"
         },
         {
-          "value": "Fe",
-          "@type": "PropertyValue",
-          "propertyID": "multilayer.0.films.0.elements.0.name",
-          "name": "Multilayers \u2192 0 \u2192 Films \u2192 0 \u2192 Elements \u2192 0 \u2192 Element Name"
+          "@id": "./objects/1/versions/0/properties/multilayer.0.films.0.elements.0.name"
         },
         {
-          "value": 0.09999999999999999,
-          "unitText": "\u00c5/s",
-          "@type": "PropertyValue",
-          "propertyID": "multilayer.0.films.0.elements.0.rate",
-          "name": "Multilayers \u2192 0 \u2192 Films \u2192 0 \u2192 Elements \u2192 0 \u2192 Rate"
+          "@id": "./objects/1/versions/0/properties/multilayer.0.films.0.elements.0.rate"
         },
         {
-          "value": 5.0,
-          "unitText": "\u00c5",
-          "@type": "PropertyValue",
-          "propertyID": "multilayer.0.films.0.thickness",
-          "name": "Multilayers \u2192 0 \u2192 Films \u2192 0 \u2192 Film Thickness",
-          "unitCode": "A11"
+          "@id": "./objects/1/versions/0/properties/multilayer.0.films.0.thickness"
         },
         {
-          "value": 0.0,
-          "unitText": "sccm",
-          "@type": "PropertyValue",
-          "propertyID": "multilayer.0.films.0.oxygen_flow",
-          "name": "Multilayers \u2192 0 \u2192 Films \u2192 0 \u2192 Oxygen Flow"
+          "@id": "./objects/1/versions/0/properties/multilayer.0.films.0.oxygen_flow"
         },
         {
-          "value": 129.99999999999997,
-          "unitText": "degC",
-          "@type": "PropertyValue",
-          "propertyID": "multilayer.0.films.0.substrate_temperature",
-          "name": "Multilayers \u2192 0 \u2192 Films \u2192 0 \u2192 Substrate Temperature",
-          "unitCode": "CEL"
+          "@id": "./objects/1/versions/0/properties/multilayer.0.films.0.substrate_temperature"
         },
         {
-          "value": 1.0,
-          "unitText": "1",
-          "@type": "PropertyValue",
-          "propertyID": "multilayer.0.repetitions",
-          "name": "Multilayers \u2192 0 \u2192 Film Layer Repetitions",
-          "unitCode": "C62"
+          "@id": "./objects/1/versions/0/properties/multilayer.0.repetitions"
         },
         {
-          "value": "Buffer Layer",
-          "@type": "PropertyValue",
-          "propertyID": "multilayer.1.films.0.name",
-          "name": "Multilayers \u2192 1 \u2192 Films \u2192 0 \u2192 Film Name"
+          "@id": "./objects/1/versions/0/properties/multilayer.1.films.0.name"
         },
         {
-          "value": "Ag",
-          "@type": "PropertyValue",
-          "propertyID": "multilayer.1.films.0.elements.0.name",
-          "name": "Multilayers \u2192 1 \u2192 Films \u2192 0 \u2192 Elements \u2192 0 \u2192 Element Name"
+          "@id": "./objects/1/versions/0/properties/multilayer.1.films.0.elements.0.name"
         },
         {
-          "value": 1.0,
-          "unitText": "\u00c5/s",
-          "@type": "PropertyValue",
-          "propertyID": "multilayer.1.films.0.elements.0.rate",
-          "name": "Multilayers \u2192 1 \u2192 Films \u2192 0 \u2192 Elements \u2192 0 \u2192 Rate"
+          "@id": "./objects/1/versions/0/properties/multilayer.1.films.0.elements.0.rate"
         },
         {
-          "value": 1500.0,
-          "unitText": "\u00c5",
-          "@type": "PropertyValue",
-          "propertyID": "multilayer.1.films.0.thickness",
-          "name": "Multilayers \u2192 1 \u2192 Films \u2192 0 \u2192 Film Thickness",
-          "unitCode": "A11"
+          "@id": "./objects/1/versions/0/properties/multilayer.1.films.0.thickness"
         },
         {
-          "value": 0.0,
-          "unitText": "sccm",
-          "@type": "PropertyValue",
-          "propertyID": "multilayer.1.films.0.oxygen_flow",
-          "name": "Multilayers \u2192 1 \u2192 Films \u2192 0 \u2192 Oxygen Flow"
+          "@id": "./objects/1/versions/0/properties/multilayer.1.films.0.oxygen_flow"
         },
         {
-          "value": 129.99999999999997,
-          "unitText": "degC",
-          "@type": "PropertyValue",
-          "propertyID": "multilayer.1.films.0.substrate_temperature",
-          "name": "Multilayers \u2192 1 \u2192 Films \u2192 0 \u2192 Substrate Temperature",
-          "unitCode": "CEL"
+          "@id": "./objects/1/versions/0/properties/multilayer.1.films.0.substrate_temperature"
         },
         {
-          "value": 1.0,
-          "unitText": "1",
-          "@type": "PropertyValue",
-          "propertyID": "multilayer.1.repetitions",
-          "name": "Multilayers \u2192 1 \u2192 Film Layer Repetitions",
-          "unitCode": "C62"
+          "@id": "./objects/1/versions/0/properties/multilayer.1.repetitions"
         },
         {
-          "value": "Pd",
-          "@type": "PropertyValue",
-          "propertyID": "multilayer.2.films.0.name",
-          "name": "Multilayers \u2192 2 \u2192 Films \u2192 0 \u2192 Film Name"
+          "@id": "./objects/1/versions/0/properties/multilayer.2.films.0.name"
         },
         {
-          "value": "Pd",
-          "@type": "PropertyValue",
-          "propertyID": "multilayer.2.films.0.elements.0.name",
-          "name": "Multilayers \u2192 2 \u2192 Films \u2192 0 \u2192 Elements \u2192 0 \u2192 Element Name"
+          "@id": "./objects/1/versions/0/properties/multilayer.2.films.0.elements.0.name"
         },
         {
-          "value": 0.01,
-          "unitText": "\u00c5/s",
-          "@type": "PropertyValue",
-          "propertyID": "multilayer.2.films.0.elements.0.rate",
-          "name": "Multilayers \u2192 2 \u2192 Films \u2192 0 \u2192 Elements \u2192 0 \u2192 Rate"
+          "@id": "./objects/1/versions/0/properties/multilayer.2.films.0.elements.0.rate"
         },
         {
-          "value": 150.0,
-          "unitText": "\u00c5",
-          "@type": "PropertyValue",
-          "propertyID": "multilayer.2.films.0.thickness",
-          "name": "Multilayers \u2192 2 \u2192 Films \u2192 0 \u2192 Film Thickness",
-          "unitCode": "A11"
+          "@id": "./objects/1/versions/0/properties/multilayer.2.films.0.thickness"
         },
         {
-          "value": 0.0,
-          "unitText": "sccm",
-          "@type": "PropertyValue",
-          "propertyID": "multilayer.2.films.0.oxygen_flow",
-          "name": "Multilayers \u2192 2 \u2192 Films \u2192 0 \u2192 Oxygen Flow"
+          "@id": "./objects/1/versions/0/properties/multilayer.2.films.0.oxygen_flow"
         },
         {
-          "value": 99.99999999999997,
-          "unitText": "degC",
-          "@type": "PropertyValue",
-          "propertyID": "multilayer.2.films.0.substrate_temperature",
-          "name": "Multilayers \u2192 2 \u2192 Films \u2192 0 \u2192 Substrate Temperature",
-          "unitCode": "CEL"
+          "@id": "./objects/1/versions/0/properties/multilayer.2.films.0.substrate_temperature"
         },
         {
-          "value": "Fe",
-          "@type": "PropertyValue",
-          "propertyID": "multilayer.2.films.1.name",
-          "name": "Multilayers \u2192 2 \u2192 Films \u2192 1 \u2192 Film Name"
+          "@id": "./objects/1/versions/0/properties/multilayer.2.films.1.name"
         },
         {
-          "value": "Fe",
-          "@type": "PropertyValue",
-          "propertyID": "multilayer.2.films.1.elements.0.name",
-          "name": "Multilayers \u2192 2 \u2192 Films \u2192 1 \u2192 Elements \u2192 0 \u2192 Element Name"
+          "@id": "./objects/1/versions/0/properties/multilayer.2.films.1.elements.0.name"
         },
         {
-          "value": 0.049999999999999996,
-          "unitText": "\u00c5/s",
-          "@type": "PropertyValue",
-          "propertyID": "multilayer.2.films.1.elements.0.rate",
-          "name": "Multilayers \u2192 2 \u2192 Films \u2192 1 \u2192 Elements \u2192 0 \u2192 Rate"
+          "@id": "./objects/1/versions/0/properties/multilayer.2.films.1.elements.0.rate"
         },
         {
-          "value": 10.0,
-          "unitText": "\u00c5",
-          "@type": "PropertyValue",
-          "propertyID": "multilayer.2.films.1.thickness",
-          "name": "Multilayers \u2192 2 \u2192 Films \u2192 1 \u2192 Film Thickness",
-          "unitCode": "A11"
+          "@id": "./objects/1/versions/0/properties/multilayer.2.films.1.thickness"
         },
         {
-          "value": 0.0,
-          "unitText": "sccm",
-          "@type": "PropertyValue",
-          "propertyID": "multilayer.2.films.1.oxygen_flow",
-          "name": "Multilayers \u2192 2 \u2192 Films \u2192 1 \u2192 Oxygen Flow"
+          "@id": "./objects/1/versions/0/properties/multilayer.2.films.1.oxygen_flow"
         },
         {
-          "value": 129.99999999999997,
-          "unitText": "degC",
-          "@type": "PropertyValue",
-          "propertyID": "multilayer.2.films.1.substrate_temperature",
-          "name": "Multilayers \u2192 2 \u2192 Films \u2192 1 \u2192 Substrate Temperature",
-          "unitCode": "CEL"
+          "@id": "./objects/1/versions/0/properties/multilayer.2.films.1.substrate_temperature"
         },
         {
-          "value": 10.0,
-          "unitText": "1",
-          "@type": "PropertyValue",
-          "propertyID": "multilayer.2.repetitions",
-          "name": "Multilayers \u2192 2 \u2192 Film Layer Repetitions",
-          "unitCode": "C62"
+          "@id": "./objects/1/versions/0/properties/multilayer.2.repetitions"
         },
         {
-          "value": "Pd Layer",
-          "@type": "PropertyValue",
-          "propertyID": "multilayer.3.films.0.name",
-          "name": "Multilayers \u2192 3 \u2192 Films \u2192 0 \u2192 Film Name"
+          "@id": "./objects/1/versions/0/properties/multilayer.3.films.0.name"
         },
         {
-          "value": "Pd",
-          "@type": "PropertyValue",
-          "propertyID": "multilayer.3.films.0.elements.0.name",
-          "name": "Multilayers \u2192 3 \u2192 Films \u2192 0 \u2192 Elements \u2192 0 \u2192 Element Name"
+          "@id": "./objects/1/versions/0/properties/multilayer.3.films.0.elements.0.name"
         },
         {
-          "value": 0.09999999999999999,
-          "unitText": "\u00c5/s",
-          "@type": "PropertyValue",
-          "propertyID": "multilayer.3.films.0.elements.0.rate",
-          "name": "Multilayers \u2192 3 \u2192 Films \u2192 0 \u2192 Elements \u2192 0 \u2192 Rate"
+          "@id": "./objects/1/versions/0/properties/multilayer.3.films.0.elements.0.rate"
         },
         {
-          "value": 150.0,
-          "unitText": "\u00c5",
-          "@type": "PropertyValue",
-          "propertyID": "multilayer.3.films.0.thickness",
-          "name": "Multilayers \u2192 3 \u2192 Films \u2192 0 \u2192 Film Thickness",
-          "unitCode": "A11"
+          "@id": "./objects/1/versions/0/properties/multilayer.3.films.0.thickness"
         },
         {
-          "value": 0.0,
-          "unitText": "sccm",
-          "@type": "PropertyValue",
-          "propertyID": "multilayer.3.films.0.oxygen_flow",
-          "name": "Multilayers \u2192 3 \u2192 Films \u2192 0 \u2192 Oxygen Flow"
+          "@id": "./objects/1/versions/0/properties/multilayer.3.films.0.oxygen_flow"
         },
         {
-          "value": 99.99999999999997,
-          "unitText": "degC",
-          "@type": "PropertyValue",
-          "propertyID": "multilayer.3.films.0.substrate_temperature",
-          "name": "Multilayers \u2192 3 \u2192 Films \u2192 0 \u2192 Substrate Temperature",
-          "unitCode": "CEL"
+          "@id": "./objects/1/versions/0/properties/multilayer.3.films.0.substrate_temperature"
         },
         {
-          "value": 1.0,
-          "unitText": "1",
-          "@type": "PropertyValue",
-          "propertyID": "multilayer.3.repetitions",
-          "name": "Multilayers \u2192 3 \u2192 Film Layer Repetitions",
-          "unitCode": "C62"
+          "@id": "./objects/1/versions/0/properties/multilayer.3.repetitions"
         }
       ],
       "hasPart": [
         {
-          "@id": "./objects/1/version/0/schema.json"
+          "@id": "./objects/1/versions/0/schema.json"
         },
         {
-          "@id": "./objects/1/version/0/data.json"
+          "@id": "./objects/1/versions/0/data.json"
         }
       ]
     },
     {
-      "@id": "./objects/1/version/0/schema.json",
+      "@id": "./objects/1/versions/0/schema.json",
       "@type": "File",
       "description": "Schema for Object #1 version #0",
       "name": "schema.json",
@@ -843,7 +1199,7 @@ Each export contains one or more SampleDB objects, identified by their ID, with 
       "sha256": "d97ffc5d8d8a04059512b6559bb5f2199646642ef10436d9b910a3f47313015b"
     },
     {
-      "@id": "./objects/1/version/0/data.json",
+      "@id": "./objects/1/versions/0/data.json",
       "@type": "File",
       "description": "Data for Object #1 version #0",
       "name": "data.json",
@@ -855,24 +1211,24 @@ Each export contains one or more SampleDB objects, identified by their ID, with 
       "@id": "./objects/1/comments/1",
       "@type": "Comment",
       "parentItem": {
-        "@id": "./objects/1"
+        "@id": "./objects/1/"
       },
       "author": {
         "@id": "./users/2"
       },
-      "dateCreated": "2024-09-18T11:27:08.800818",
+      "dateCreated": "2024-11-18T12:57:26.306985",
       "text": "This comment is very long. This comment is very long. This comment is very long. This comment is very long. This comment is very long. This comment is very long. This comment is very long. This comment is very long. This comment is very long. This comment is very long. This comment is very long. This comment is very long. This comment is very long. This comment is very long. This comment is very long. This comment is very long. This comment is very long. This comment is very long. This comment is very long. This comment is very long. \nThis comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. \n\nThis comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. "
     },
     {
       "@id": "./objects/1/comments/2",
       "@type": "Comment",
       "parentItem": {
-        "@id": "./objects/1"
+        "@id": "./objects/1/"
       },
       "author": {
         "@id": "./users/2"
       },
-      "dateCreated": "2024-09-18T11:27:08.812193",
+      "dateCreated": "2024-11-18T12:57:26.318842",
       "text": "This is another, shorter comment"
     },
     {
@@ -882,7 +1238,7 @@ Each export contains one or more SampleDB objects, identified by their ID, with 
       "name": "files.json",
       "encodingFormat": "application/json",
       "contentSize": "763",
-      "sha256": "72da4a97dfb8d9182e3495e68928f1b94cb265a1bd7103ffdd9a0187f730e959"
+      "sha256": "a476f2c5ddc28763012ee5410f0c4fab8f4d7f757ffaa69548dfd1d76e24f396"
     },
     {
       "@id": "./objects/1/files/0/example.txt",
@@ -892,7 +1248,7 @@ Each export contains one or more SampleDB objects, identified by their ID, with 
       "author": {
         "@id": "./users/2"
       },
-      "dateCreated": "2024-09-18T11:27:08.828277",
+      "dateCreated": "2024-11-18T12:57:26.333855",
       "encodingFormat": "text/plain",
       "contentSize": "17",
       "contentUrl": "http://localhost:5000/objects/1/files/0",
@@ -906,7 +1262,7 @@ Each export contains one or more SampleDB objects, identified by their ID, with 
       "author": {
         "@id": "./users/2"
       },
-      "dateCreated": "2024-09-18T11:27:08.845355",
+      "dateCreated": "2024-11-18T12:57:26.348949",
       "encodingFormat": "image/png",
       "contentSize": "9952",
       "contentUrl": "http://localhost:5000/objects/1/files/1",
