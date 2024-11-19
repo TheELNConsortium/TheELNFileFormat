@@ -32,7 +32,7 @@ class Test_2(unittest.TestCase):
                     output.write(f'| {software} | {individualFileName} | {resultStr} |\n')
                 output.write("\n\nDefinition of tests\n")
                 output.write("- **pypi_rocrate**: tests if eln-file can be opened by pypi's rocrate; if eln file can be easily opened by that library.\n")
-                output.write("- **validator**: tests if the ro-crate conventions fulfilled using pypi's rocrateValidator.\n")
+                output.write("- **validator**: tests if the ro-crate conventions fulfilled using pypi's roc-validator.\n")
                 output.write("- **schema**: tests if the conventions of the ELN-consortium are fulfilled using a schema description.\n")
                 output.write("- **params_metadata_json**: tests if the conventions of the ELN-consortium are fulfilled, aka parameters exist and are consistent with convention.\n")
                 output.close()
