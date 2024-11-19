@@ -18,317 +18,501 @@ Its home is at: https://github.com/PASTA-ELN
         "@id": "https://w3id.org/ro/crate/1.1"
       },
       "schemaVersion": "v1.0",
-      "dateCreated": "2024-02-18T15:49:15.815905",
-      "sdPublisher": {
-        "@type": "Organization",
-        "name": "PASTA ELN",
-        "logo": "https://raw.githubusercontent.com/PASTA-ELN/desktop/main/pasta.png",
-        "slogan": "The favorite ELN for experimental scientists",
-        "url": "https://github.com/PASTA-ELN/",
-        "description": "Version 2.4.27"
-      },
       "version": "1.0",
-      "datePublished": "2024-02-18T15:49:15.815929"
+      "datePublished": "2024-10-14T14:10:19.875806",
+      "dateCreated": "2024-10-14T14:10:19.875848",
+      "sdPublisher": {
+        "@id": "PASTA-ELN"
+      }
+    },
+    {
+      "@id": "PASTA-ELN",
+      "@type": "Organization",
+      "name": "PASTA ELN",
+      "logo": "https://raw.githubusercontent.com/PASTA-ELN/desktop/main/pasta.png",
+      "slogan": "The favorite ELN for experimental scientists",
+      "url": "https://github.com/PASTA-ELN/",
+      "description": "Version 2.6.0"
+    },
+    {
+      "@id": "affiliation_Forschungszentrum Juelich",
+      "@type": "organization",
+      "name": "Forschungszentrum Juelich",
+      "RODID": ""
+    },
+    {
+      "@id": "author_Steffen_Brinckmann",
+      "@type": "Person",
+      "givenName": "Steffen",
+      "familyName": "Brinckmann",
+      "honorificPrefix": "Dr.",
+      "email": "s.brinckmann@fz-juelich.de",
+      "identifier": "https://orcid.org/0000-0003-0930-082X",
+      "worksFor": [
+        {
+          "@id": "affiliation_Forschungszentrum Juelich"
+        }
+      ]
     },
     {
       "@id": "./",
       "@type": "Dataset",
       "hasPart": [
         {
-          "@id": "./IntermetalsAtInterfaces/"
+          "@id": "./PastasExampleProject/"
         }
       ],
       "name": "Exported from PASTA ELN",
       "description": "Exported content from PASTA ELN",
       "license": "CC BY 4.0",
-      "author": [
-        {
-          "firstName": "Steffen",
-          "surname": "Brinckmann",
-          "title": "Dr.",
-          "emailAddress": "s.brinckmann@fz-juelich.de",
-          "ORCID": "0000-0003-0930-082X",
-          "affiliation": [
-            {
-              "organization": "Forschungszentrum J\u00fclich",
-              "RORID": "02nv7yv05"
-            }
-          ]
-        }
-      ],
-      "datePublished": "2024-02-18T15:49:15.815946"
+      "datePublished": "2024-10-14T14:10:19.875905",
+      "author": {
+        "@id": "author_Steffen_Brinckmann"
+      }
     },
     {
-      "@id": "./IntermetalsAtInterfaces/000_GetSteelAndAlPowder/metadata.json",
-      "@type": "File",
-      "name": "export_metadata.json",
-      "description": "JSON export",
-      "encodingFormat": "application/json",
-      "contentSize": "342",
-      "sha256": "1b99750be181e063b4ed5527f04b697a3bd415fff9151d314085003532f5d549",
-      "dateModified": "2024-02-18T15:49:00.266425"
-    },
-    {
-      "@id": "./IntermetalsAtInterfaces/000_GetSteelAndAlPowder/",
-      "identifier": "x-e5cd34a14a8e4395981f5ac9dc90d606",
+      "encodingFormat": "text/markdown",
+      "identifier": "x-f89b1738d4d54b41ba817d32e878ff7d",
+      "name": "This is an example task",
+      "genre": "folder",
+      "dateCreated": "2024-10-04T22:28:25.191400",
+      "dateModified": "2024-10-04T22:28:25.191412",
       "description": "This is hard!",
-      "name": "Get steel and Al-powder",
-      "dateModified": "2024-02-18T15:49:00.266425",
       "keywords": "TODO",
-      "hasPart": [
-        {
-          "@id": "./IntermetalsAtInterfaces/000_GetSteelAndAlPowder/metadata.json"
-        }
-      ],
+      "variableMeasured": [],
+      "@id": "./PastasExampleProject/000_ThisIsAnExampleTask/",
       "@type": "Dataset"
     },
     {
-      "@id": "./IntermetalsAtInterfaces/001_GetSprayMachine/000_GetQuotes/metadata.json",
-      "@type": "File",
-      "name": "export_metadata.json",
-      "description": "JSON export",
-      "encodingFormat": "application/json",
-      "contentSize": "438",
-      "sha256": "84c99510497f212f32b74dd08e36b78e1475df73b5bb4eae9c462c20e1486c9f",
-      "dateModified": "2024-02-18T15:49:00.379854"
-    },
-    {
-      "@id": "./IntermetalsAtInterfaces/001_GetSprayMachine/000_GetQuotes/",
-      "identifier": "x-e47c5bd7ee044720b476454cf813cf22",
-      "name": "Get quotes",
-      "description": "Dont forget company-A",
-      "dateModified": "2024-02-18T15:49:00.379854",
-      "keywords": "_1",
-      "hasPart": [
-        {
-          "@id": "./IntermetalsAtInterfaces/001_GetSprayMachine/000_GetQuotes/metadata.json"
-        }
-      ],
+      "encodingFormat": "text/markdown",
+      "identifier": "x-8c6826d779e742b08e13c59dba5d8398",
+      "name": "This is an example subtask",
+      "genre": "folder",
+      "dateCreated": "2024-10-04T22:28:25.196977",
+      "dateModified": "2024-10-04T22:28:25.196986",
+      "description": "Random comment 1",
+      "variableMeasured": [],
+      "@id": "./PastasExampleProject/001_ThisIsAnotherExampleTask/000_ThisIsAnExampleSubtask/",
       "@type": "Dataset"
     },
     {
-      "@id": "./IntermetalsAtInterfaces/001_GetSprayMachine/001_BuyMachine/metadata.json",
-      "@type": "File",
-      "name": "export_metadata.json",
-      "description": "JSON export",
-      "encodingFormat": "application/json",
-      "contentSize": "397",
-      "sha256": "13a40a28d5249b1819a49b806e6371caa668f32ac0e6cc2f7f7001c0ae8dc20f",
-      "dateModified": "2024-02-18T15:49:00.429946"
-    },
-    {
-      "@id": "./IntermetalsAtInterfaces/001_GetSprayMachine/001_BuyMachine/",
-      "identifier": "x-3b51203ad9844dcaa6ea650c633228e1",
-      "name": "Buy machine",
-      "description": "Delivery time will be 6month",
-      "dateModified": "2024-02-18T15:49:00.429946",
-      "keywords": "_3",
-      "hasPart": [
-        {
-          "@id": "./IntermetalsAtInterfaces/001_GetSprayMachine/001_BuyMachine/metadata.json"
-        }
-      ],
+      "encodingFormat": "text/markdown",
+      "identifier": "x-2e928cfdb49847b7835bd78959990820",
+      "name": "This is another example subtask",
+      "genre": "folder",
+      "dateCreated": "2024-10-04T22:28:25.199512",
+      "dateModified": "2024-10-04T22:28:25.199521",
+      "description": "Random comment 2",
+      "variableMeasured": [],
+      "@id": "./PastasExampleProject/001_ThisIsAnotherExampleTask/001_ThisIsAnotherExampleSubtask/",
       "@type": "Dataset"
     },
     {
-      "@id": "./IntermetalsAtInterfaces/001_GetSprayMachine/metadata.json",
-      "@type": "File",
-      "name": "export_metadata.json",
-      "description": "JSON export",
-      "encodingFormat": "application/json",
-      "contentSize": "338",
-      "sha256": "0aa2d3acd0d6bfab8d05e33fc45824d05e02eb1863f94d1cb8cd8471180e7947",
-      "dateModified": "2024-02-18T15:49:00.325602"
-    },
-    {
-      "@id": "./IntermetalsAtInterfaces/001_GetSprayMachine/",
-      "identifier": "x-dd99d8fc7f604d618deeeebfd2a05745",
-      "description": "This will take a long time.",
-      "name": "Get spray machine",
-      "dateModified": "2024-02-18T15:49:00.325602",
-      "keywords": "WAIT,_curated",
-      "hasPart": [
-        {
-          "@id": "./IntermetalsAtInterfaces/001_GetSprayMachine/metadata.json"
-        },
-        {
-          "@id": "./IntermetalsAtInterfaces/001_GetSprayMachine/000_GetQuotes/"
-        },
-        {
-          "@id": "./IntermetalsAtInterfaces/001_GetSprayMachine/001_BuyMachine/"
-        }
-      ],
-      "@type": "Dataset"
-    },
-    {
-      "@id": "https:/upload.wikimedia.org/wikipedia/commons/a/a4/Misc_pollen.jpg",
-      "identifier": "m-1d293f8d63b049b2bc9f65d19117849a",
-      "name": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Misc_pollen.jpg",
-      "dateModified": "2024-02-18T15:49:03.471187",
-      "contentSize": "220730",
-      "sha256": "aebe181073ca67d42ece34bc8f37a03bcc72add2b26c63190a865d8000dfc742",
-      "@type": "File"
-    },
-    {
-      "@id": "./IntermetalsAtInterfaces/002_SemImages/simple.png",
-      "identifier": "m-7b84d2261df0435d85fd94fd4e401769",
+      "encodingFormat": "text/markdown",
+      "identifier": "m-a6ca5dc9077a4bab903bd5b245f14abb",
       "name": "simple.png",
-      "dateModified": "2024-02-18T15:49:02.436479",
+      "genre": "measurement/image",
+      "dateCreated": "2024-10-04T22:28:26.105581",
+      "dateModified": "2024-10-04T22:28:26.456138",
+      "description": "# File with two locations\n - The same file can be located in different locations across different projects within one project group.\n - Since it is the same file, they share the same metadata: same comment, same tags, ...\n# These .png files use the data-science concept of schemata and ontology\n - The files have a agreed upon name and a custom convenience name (i.e. in german or french)\n - The also have a PID / IRI to an ontology node.\n - Units are also supported, obviously.",
+      "variableMeasured": [
+        {
+          "value": "600+/- 3",
+          "propertyID": "metaUser.imageHeight",
+          "name": "Metauser \u2192 Imageheight",
+          "@type": "PropertyValue",
+          "unitText": "mm",
+          "description": "H\u00f6he des Bildes",
+          "mentions": "http://purl.allotrope.org/ontologies/result#AFR_0002467"
+        },
+        {
+          "value": "800",
+          "propertyID": "metaUser.imageWidth",
+          "name": "Metauser \u2192 Imagewidth",
+          "@type": "PropertyValue",
+          "unitText": "mm",
+          "description": "Largeur de l`image",
+          "mentions": "http://purl.allotrope.org/ontologies/result#AFR_0002468"
+        },
+        {
+          "value": "Created with GIMP",
+          "propertyID": "metaVendor.Comment",
+          "name": "Metavendor \u2192 Comment",
+          "@type": "PropertyValue"
+        },
+        {
+          "value": "png",
+          "propertyID": "metaVendor.fileExtension",
+          "name": "Metavendor \u2192 Fileextension",
+          "@type": "PropertyValue"
+        }
+      ],
+      "@id": "./PastasExampleProject/001_ThisIsAnotherExampleTask/simple.png",
       "contentSize": "9450",
       "sha256": "e8b9e203eff32379a69bb3785e51a5edce8aa7fc4809c696eae8ddee7bab8210",
       "@type": "File"
     },
     {
-      "@id": "./IntermetalsAtInterfaces/002_SemImages/simple.csv",
-      "identifier": "m-838ce415737c449c83963bfa82057491",
+      "encodingFormat": "text/markdown",
+      "identifier": "x-f20c37c6dcfd48de8d0c9ddd4728990a",
+      "name": "This is another example task",
+      "genre": "folder",
+      "dateCreated": "2024-10-04T22:28:25.194161",
+      "dateModified": "2024-10-04T22:28:25.194170",
+      "description": "This will take a long time.",
+      "keywords": "WAIT",
+      "variableMeasured": [],
+      "hasPart": [
+        {
+          "@id": "./PastasExampleProject/001_ThisIsAnotherExampleTask/000_ThisIsAnExampleSubtask/"
+        },
+        {
+          "@id": "./PastasExampleProject/001_ThisIsAnotherExampleTask/001_ThisIsAnotherExampleSubtask/"
+        },
+        {
+          "@id": "./PastasExampleProject/001_ThisIsAnotherExampleTask/simple.png"
+        }
+      ],
+      "@id": "./PastasExampleProject/001_ThisIsAnotherExampleTask/",
+      "@type": "Dataset"
+    },
+    {
+      "encodingFormat": "text/markdown",
+      "identifier": "--e7c1326b90be46c090f2c84b7d99dd20",
+      "name": "story.odt",
+      "dateCreated": "2024-10-04T22:28:26.110297",
+      "dateModified": "2024-10-04T22:28:26.110310",
+      "variableMeasured": [],
+      "@id": "./PastasExampleProject/002_DataFiles/story.odt",
+      "contentSize": "8417",
+      "sha256": "c0aeebc4bdb1f4ce13cb881e70d26738bc354da855067e2bfb2dcbfd6140a730",
+      "@type": "File"
+    },
+    {
+      "encodingFormat": "text/markdown",
+      "identifier": "m-95d4ec8bd9b34d5a8385f0b389294574",
+      "name": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Misc_pollen.jpg/315px-Misc_pollen.jpg",
+      "genre": "measurement/image",
+      "dateCreated": "2024-10-04T22:28:26.404401",
+      "dateModified": "2024-10-04T22:28:26.404414",
+      "description": "- Remote image from wikipedia. Used for testing and reference\n- This item links to a procedure that was used for its creation.\n- One can link to samples, etc. to create complex metadata\n- This item also has a rating",
+      "keywords": "_3",
+      "variableMeasured": [
+        {
+          "value": "p-736c0b6b15a84313b4b0b52259f0db4f",
+          "propertyID": ".procedure",
+          "name": " \u2192 Procedure",
+          "@type": "PropertyValue",
+          "description": "Which procedure was used?"
+        },
+        {
+          "value": "[240, 315]",
+          "propertyID": "metaUser.dimension",
+          "name": "Metauser \u2192 Dimension",
+          "@type": "PropertyValue"
+        },
+        {
+          "value": "75600",
+          "propertyID": "metaUser.number pixel",
+          "name": "Metauser \u2192 Number pixel",
+          "@type": "PropertyValue"
+        },
+        {
+          "value": "jpg",
+          "propertyID": "metaVendor.fileExtension",
+          "name": "Metavendor \u2192 Fileextension",
+          "@type": "PropertyValue"
+        }
+      ],
+      "@id": "https:/upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Misc_pollen.jpg/315px-Misc_pollen.jpg",
+      "@type": "File"
+    },
+    {
+      "encodingFormat": "text/markdown",
+      "identifier": "m-a6ca5dc9077a4bab903bd5b245f14abb",
+      "name": "simple.png",
+      "genre": "measurement/image",
+      "dateCreated": "2024-10-04T22:28:26.105581",
+      "dateModified": "2024-10-04T22:28:26.456138",
+      "description": "# File with two locations\n - The same file can be located in different locations across different projects within one project group.\n - Since it is the same file, they share the same metadata: same comment, same tags, ...\n# These .png files use the data-science concept of schemata and ontology\n - The files have a agreed upon name and a custom convenience name (i.e. in german or french)\n - The also have a PID / IRI to an ontology node.\n - Units are also supported, obviously.",
+      "variableMeasured": [
+        {
+          "value": "600+/- 3",
+          "propertyID": "metaUser.imageHeight",
+          "name": "Metauser \u2192 Imageheight",
+          "@type": "PropertyValue",
+          "unitText": "mm",
+          "description": "H\u00f6he des Bildes",
+          "mentions": "http://purl.allotrope.org/ontologies/result#AFR_0002467"
+        },
+        {
+          "value": "800",
+          "propertyID": "metaUser.imageWidth",
+          "name": "Metauser \u2192 Imagewidth",
+          "@type": "PropertyValue",
+          "unitText": "mm",
+          "description": "Largeur de l`image",
+          "mentions": "http://purl.allotrope.org/ontologies/result#AFR_0002468"
+        },
+        {
+          "value": "Created with GIMP",
+          "propertyID": "metaVendor.Comment",
+          "name": "Metavendor \u2192 Comment",
+          "@type": "PropertyValue"
+        },
+        {
+          "value": "png",
+          "propertyID": "metaVendor.fileExtension",
+          "name": "Metavendor \u2192 Fileextension",
+          "@type": "PropertyValue"
+        }
+      ],
+      "@id": "./PastasExampleProject/002_DataFiles/simple.png",
+      "contentSize": "9450",
+      "sha256": "e8b9e203eff32379a69bb3785e51a5edce8aa7fc4809c696eae8ddee7bab8210",
+      "@type": "File"
+    },
+    {
+      "encodingFormat": "text/markdown",
+      "identifier": "m-aa748a24078d4ba28d6f9f8176a1ad55",
       "name": "simple.csv",
-      "dateModified": "2024-02-18T15:49:02.298401",
+      "genre": "measurement/csv/linesAndDots",
+      "dateCreated": "2024-10-04T22:28:26.071345",
+      "dateModified": "2024-10-04T22:28:26.460348",
+      "description": "# These .csv files use the simple concept of units for metadata entries",
+      "variableMeasured": [
+        {
+          "value": "0.9996",
+          "propertyID": "metaUser.maximumYData",
+          "name": "Metauser \u2192 Maximumydata",
+          "@type": "PropertyValue",
+          "unitText": "m",
+          "description": "Maximum y-data"
+        },
+        {
+          "value": "2.5",
+          "propertyID": "metaUser.sampleFrequency",
+          "name": "Metauser \u2192 Samplefrequency",
+          "@type": "PropertyValue",
+          "unitText": "Hz",
+          "description": "Sample frequency"
+        },
+        {
+          "value": "csv",
+          "propertyID": "metaVendor.fileExtension",
+          "name": "Metavendor \u2192 Fileextension",
+          "@type": "PropertyValue"
+        }
+      ],
+      "@id": "./PastasExampleProject/002_DataFiles/simple.csv",
       "contentSize": "187",
       "sha256": "8e31450cd99a013801de9f84e2d3648ec8d70dd0b6d5be23c7cc82782a90ba73",
       "@type": "File"
     },
     {
-      "@id": "./IntermetalsAtInterfaces/002_SemImages/metadata.json",
-      "@type": "File",
-      "name": "export_metadata.json",
-      "description": "JSON export",
-      "encodingFormat": "application/json",
-      "contentSize": "4098",
-      "sha256": "6cf51815aa7ae55750e3a50e8dff723166505ddc8419c6d13678a4e9d990eb93",
-      "dateModified": "2024-02-18T15:49:00.484880"
-    },
-    {
-      "@id": "./IntermetalsAtInterfaces/002_SemImages/",
-      "identifier": "x-55294d6d0c1e434994376ac2be708b2f",
-      "name": "SEM images",
-      "dateModified": "2024-02-18T15:49:00.484880",
+      "encodingFormat": "text/markdown",
+      "identifier": "x-f362262170b5456793596fe1b1eb02e9",
+      "name": "Data files",
+      "genre": "folder",
+      "dateCreated": "2024-10-04T22:28:25.201968",
+      "dateModified": "2024-10-04T22:28:25.201976",
+      "variableMeasured": [],
       "hasPart": [
         {
-          "@id": "./IntermetalsAtInterfaces/002_SemImages/metadata.json"
+          "@id": "./PastasExampleProject/002_DataFiles/story.odt"
         },
         {
-          "@id": "https:/upload.wikimedia.org/wikipedia/commons/a/a4/Misc_pollen.jpg"
+          "@id": "https:/upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Misc_pollen.jpg/315px-Misc_pollen.jpg"
         },
         {
-          "@id": "./IntermetalsAtInterfaces/002_SemImages/simple.png"
+          "@id": "./PastasExampleProject/002_DataFiles/simple.png"
         },
         {
-          "@id": "./IntermetalsAtInterfaces/002_SemImages/simple.csv"
+          "@id": "./PastasExampleProject/002_DataFiles/simple.csv"
         }
       ],
+      "@id": "./PastasExampleProject/002_DataFiles/",
       "@type": "Dataset"
     },
     {
-      "@id": "./IntermetalsAtInterfaces/003_Nanoindentation/metadata.json",
-      "@type": "File",
-      "name": "export_metadata.json",
-      "description": "JSON export",
-      "encodingFormat": "application/json",
-      "contentSize": "338",
-      "sha256": "c8c6dc5966533ba5c1dde45baeff7b103659923a1766e3cd1173b79273218599",
-      "dateModified": "2024-02-18T15:49:00.540971"
-    },
-    {
-      "@id": "./IntermetalsAtInterfaces/003_Nanoindentation/",
-      "identifier": "x-57a92363ca4d40ce9e6845aed8e4b320",
-      "name": "Nanoindentation",
-      "dateModified": "2024-02-18T15:49:00.540971",
-      "hasPart": [
+      "encodingFormat": "text/markdown",
+      "identifier": "i-78121f69d3d84a25836b4d406e41826d",
+      "name": "Sensor",
+      "genre": "instrument/extension",
+      "dateCreated": "2024-10-04T22:28:25.972990",
+      "dateModified": "2024-10-04T22:28:25.972997",
+      "description": "Attachment that increases functionality of big instrument",
+      "variableMeasured": [
         {
-          "@id": "./IntermetalsAtInterfaces/003_Nanoindentation/metadata.json"
+          "value": "org.comp.98765",
+          "propertyID": ".model",
+          "name": " \u2192 Model",
+          "@type": "PropertyValue"
+        },
+        {
+          "value": "Company B",
+          "propertyID": ".vendor",
+          "name": " \u2192 Vendor",
+          "@type": "PropertyValue",
+          "description": "Who is the vendor?"
         }
       ],
+      "@id": "./PastasExampleProject/i-78121f69d3d84a25836b4d406e41826d/",
       "@type": "Dataset"
     },
     {
-      "@id": "./StandardOperatingProcedures/Nanoindentation.md",
-      "identifier": "p-20761d7927ed4c55b5c88be1cd8268f1",
-      "name": "Nanoindentation.md",
-      "description": "Test string 0",
-      "text": "# Put sample in nanoindenter\n# Do indentation\nDo not forget to\n- calibrate tip\n- *calibrate stiffness*",
-      "dateModified": "2024-02-18T15:49:14.122261",
-      "keywords": "v1,_curated",
-      "contentSize": "103",
-      "sha256": "654fde2e9a32f887a8a332a27e0d5418aeaf6c76429506374ce332b649c4b146",
+      "encodingFormat": "text/markdown",
+      "identifier": "i-e04561a6d27b44bebe51d1d56f341fc6",
+      "name": "Big instrument",
+      "genre": "instrument",
+      "dateCreated": "2024-10-04T22:28:25.970513",
+      "dateModified": "2024-10-04T22:28:25.970522",
+      "description": "Instrument onto which attachments can be added",
+      "variableMeasured": [
+        {
+          "value": "ABC-123",
+          "propertyID": ".model",
+          "name": " \u2192 Model",
+          "@type": "PropertyValue"
+        },
+        {
+          "value": "Company A",
+          "propertyID": ".vendor",
+          "name": " \u2192 Vendor",
+          "@type": "PropertyValue",
+          "description": "Who is the vendor?"
+        }
+      ],
+      "@id": "./PastasExampleProject/i-e04561a6d27b44bebe51d1d56f341fc6/",
+      "@type": "Dataset"
+    },
+    {
+      "encodingFormat": "text/markdown",
+      "identifier": "p-736c0b6b15a84313b4b0b52259f0db4f",
+      "name": "Example_SOP.md",
+      "genre": "procedure/markdown",
+      "dateCreated": "2024-10-04T22:28:25.936614",
+      "dateModified": "2024-10-04T22:28:25.936625",
+      "text": "# Put sample in instrument\n# Do something\nDo not forget to\n- not do anything wrong\n- **USE BOLD LETTERS**",
+      "keywords": "v1",
+      "variableMeasured": [
+        {
+          "value": "md",
+          "propertyID": "metaVendor.fileExtension",
+          "name": "Metavendor \u2192 Fileextension",
+          "@type": "PropertyValue"
+        }
+      ],
+      "@id": "./StandardOperatingProcedures/Example_SOP.md",
+      "contentSize": "106",
+      "sha256": "8b2965159885bc2ac7cb3b0be098a140d8c38e86feee425351735ac26b09a941",
       "@type": "File"
     },
     {
-      "@id": "./StandardOperatingProcedures/SEM.md",
-      "identifier": "p-3f52094d3e4a4881b8afce30cf587abe",
-      "name": "SEM.md",
-      "description": "Test string 1",
-      "text": "# Put sample in SEM\n# Do scanning\nDo not forget to\n- contact the pole-piece\n- **USE GLOVES**",
-      "dateModified": "2024-02-18T15:49:14.206703",
-      "keywords": "v1,_curated",
-      "contentSize": "93",
-      "sha256": "bef7825e6e37d7b2d8f2126c5d1146973854c9eec9fc80da39ee472156572304",
-      "@type": "File"
-    },
-    {
-      "@id": "./IntermetalsAtInterfaces/s-491b15273b6c4861a292de645847df21/",
-      "identifier": "s-491b15273b6c4861a292de645847df21",
-      "name": "AlFe cross-section",
-      "description": "Test string 2",
-      "dateModified": "2024-02-18T15:49:14.241187",
-      "keywords": "_curated",
-      "@type": "Dataset"
-    },
-    {
-      "@id": "./IntermetalsAtInterfaces/metadata.json",
-      "@type": "File",
-      "name": "export_metadata.json",
-      "description": "JSON export",
-      "encodingFormat": "application/json",
-      "contentSize": "1866",
-      "sha256": "f523cf92fc61cef8697c611c8f612f6094dfd085b92b8b8e191d6f87a3d2a96f",
-      "dateModified": "2024-02-18T15:48:59.947920"
-    },
-    {
-      "@id": "./IntermetalsAtInterfaces/",
-      "identifier": "x-24be26849b1a4aa2b90e62b4de45cbf1",
-      "name": "Intermetals at interfaces",
-      "description": "This is a test project",
-      "dateModified": "2024-02-18T15:48:59.947920",
-      "keywords": "Al,Fe,intermetal",
-      "hasPart": [
+      "encodingFormat": "text/markdown",
+      "identifier": "s-f48b8f49f1f246a39dda615015b0439b",
+      "name": "Example sample",
+      "genre": "sample",
+      "dateCreated": "2024-10-04T22:28:25.952491",
+      "dateModified": "2024-10-04T22:28:25.952503",
+      "description": "this sample has multiple groups of metadata",
+      "variableMeasured": [
         {
-          "@id": "./IntermetalsAtInterfaces/metadata.json"
+          "value": "13214124",
+          "propertyID": "qrCodes.0",
+          "name": "Qrcodes \u2192 0",
+          "@type": "PropertyValue"
         },
         {
-          "@id": "./IntermetalsAtInterfaces/000_GetSteelAndAlPowder/"
+          "value": "99698708",
+          "propertyID": "qrCodes.1",
+          "name": "Qrcodes \u2192 1",
+          "@type": "PropertyValue"
         },
         {
-          "@id": "./IntermetalsAtInterfaces/001_GetSprayMachine/"
+          "value": "A2B2C3",
+          "propertyID": ".chemistry",
+          "name": " \u2192 Chemistry",
+          "@type": "PropertyValue",
+          "description": "What is its chemical composition?"
         },
         {
-          "@id": "./IntermetalsAtInterfaces/002_SemImages/"
+          "value": "4",
+          "propertyID": "geometry.height",
+          "name": "Geometry \u2192 Height",
+          "@type": "PropertyValue",
+          "unitText": "mm",
+          "description": "Sample height",
+          "mentions": "https://schema.org/height"
         },
         {
-          "@id": "./IntermetalsAtInterfaces/003_Nanoindentation/"
+          "value": "2",
+          "propertyID": "geometry.width",
+          "name": "Geometry \u2192 Width",
+          "@type": "PropertyValue",
+          "unitText": "mm",
+          "description": "Sample width"
         },
         {
-          "@id": "./StandardOperatingProcedures/Nanoindentation.md"
-        },
-        {
-          "@id": "./StandardOperatingProcedures/SEM.md"
-        },
-        {
-          "@id": "./IntermetalsAtInterfaces/s-491b15273b6c4861a292de645847df21/"
-        },
-        {
-          "@id": "./IntermetalsAtInterfaces/data_hierarchy.json"
+          "value": "6",
+          "propertyID": "weight.initial",
+          "name": "Weight \u2192 Initial",
+          "@type": "PropertyValue"
         }
       ],
+      "@id": "./PastasExampleProject/s-f48b8f49f1f246a39dda615015b0439b/",
       "@type": "Dataset"
     },
     {
-      "@id": "./IntermetalsAtInterfaces/data_hierarchy.json",
-      "@type": "File",
-      "name": "data structure",
-      "description": "data structure / schema of the stored data",
-      "contentSize": "3361",
-      "sha256": "f36aaf79e2d2e1ea211933f50ac50175f5537b56fcf2dd4b1a48291bb13dd007",
-      "datePublished": "2024-02-18T15:49:15.816099"
+      "encodingFormat": "text/markdown",
+      "identifier": "x-ca321d38a9e04a12ba3cafae028318ae",
+      "name": "PASTAs Example Project",
+      "genre": "folder",
+      "dateCreated": "2024-10-04T22:28:25.164323",
+      "dateModified": "2024-10-04T22:28:25.164337",
+      "description": "Can be used as reference or deleted",
+      "keywords": "Important",
+      "variableMeasured": [
+        {
+          "value": "Test if everything is working as intended.",
+          "propertyID": ".objective",
+          "name": " \u2192 Objective",
+          "@type": "PropertyValue",
+          "description": "What is the objective?"
+        },
+        {
+          "value": "active",
+          "propertyID": ".status",
+          "name": " \u2192 Status",
+          "@type": "PropertyValue",
+          "description": "What is the project status"
+        }
+      ],
+      "hasPart": [
+        {
+          "@id": "./PastasExampleProject/000_ThisIsAnExampleTask/"
+        },
+        {
+          "@id": "./PastasExampleProject/001_ThisIsAnotherExampleTask/"
+        },
+        {
+          "@id": "./PastasExampleProject/002_DataFiles/"
+        },
+        {
+          "@id": "./PastasExampleProject/i-78121f69d3d84a25836b4d406e41826d/"
+        },
+        {
+          "@id": "./PastasExampleProject/i-e04561a6d27b44bebe51d1d56f341fc6/"
+        },
+        {
+          "@id": "./StandardOperatingProcedures/Example_SOP.md"
+        },
+        {
+          "@id": "./PastasExampleProject/s-f48b8f49f1f246a39dda615015b0439b/"
+        }
+      ],
+      "@id": "./PastasExampleProject/",
+      "@type": "Dataset"
     }
   ]
 }

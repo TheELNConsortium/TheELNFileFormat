@@ -89,7 +89,7 @@ The second node is basically describing the current directory (`./`).
 ```json
 {
   "@id": "./",
-  "@type": ["Dataset"],
+  "@type": "Dataset",
   "hasPart": [
     {
       "@id": "./2022-05-29 - Some-experiment/"
@@ -116,6 +116,13 @@ All nodes with `@type: File` SHOULD include `name`, `encodingFormat`, `contentSi
 All nodes with a `@type` such as `Comment` or `Person` exist at the root node (once), and can be referenced via their `@id` in other parts.
 
 For instance, a "comment" on an experiment will exist as a `@type: Comment` node at the root node, and be referenced through its `@id` in the `comment` part of the experiment's node. See "Example Dataset with Comment" example below.
+
+### Specific fields
+
+* `contentSize`: this term is loosely defined by Schema.org. In a .eln it is a string with the number of bytes. See "Example File" section below. It contains no units.
+* `variableMeasured`: this term is interpreted more loosely for .eln files than by Schema.org, as consisting of `@type: PropertyValue` nodes that represent not just variables measured, but also variables specified for a `@type: Dataset` node (e.g. flexible metadata).
+  * The `identifier` for a `@type: PropertyValue` node can be set to an IRI (e.g. the URL for an ontology entry, such as http://purl.org/dc/terms/instructionalMethod) for specifying the meaning of this node.
+  * Nested metadata (e.g. arrays or key-value pairs) can be represented by using `.` as a separator in their `propertyID`, e.g. `temperatures.0` or `configuration.pressure.set_value`.
 
 #### Example Dataset
 
