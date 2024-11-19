@@ -25,7 +25,7 @@ jobs:
           pip install pytest rocrate jsonschema rocrateValidator
       - name: Test with pytest
         run: |
-          pytest --tb=no -s
+          pytest --tb=short -s
         continue-on-error: true
       - name: Create action summary
         run: |
