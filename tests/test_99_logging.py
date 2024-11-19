@@ -4,7 +4,7 @@ from pathlib import Path
 import json
 import unittest
 
-COLUMNS = ['params_metadata_json', 'pypi_rocrate','schema']
+COLUMNS = ['pypi_rocrate','validator','schema','params_metadata_json']
 HEADER  = "## Results of verification\nautomatically created\n\n"
 
 
@@ -31,9 +31,10 @@ class Test_2(unittest.TestCase):
                     resultStr   = ' | '.join([':white_check_mark:' if result[col] else ':x:' for col in COLUMNS])
                     output.write(f'| {software} | {individualFileName} | {resultStr} |\n')
                 output.write("\n\nDefinition of tests\n")
-                output.write("- **pypi_rocrate**: tests if eln-file can be opened by pypi's rocrate; aka if eln file conforms to rocrate convention.\n")
-                output.write("- **params_metadata_json**: tests if the conventions of the consortium are fulfilled, aka parameters exist and are consistent with convention.\n")
-                output.write("- **schema**: tests if the conventions of the consortium are fulfilled using a schema description.\n")
+                output.write("- **pypi_rocrate**: tests if eln-file can be opened by pypi's rocrate; if eln file can be easily opened by that library.\n")
+                output.write("- **validator**: tests if the ro-crate conventions fulfilled using pypi's rocrateValidator.\n")
+                output.write("- **schema**: tests if the conventions of the ELN-consortium are fulfilled using a schema description.\n")
+                output.write("- **params_metadata_json**: tests if the conventions of the ELN-consortium are fulfilled, aka parameters exist and are consistent with convention.\n")
                 output.close()
             print('Created logging markdown')
         else:

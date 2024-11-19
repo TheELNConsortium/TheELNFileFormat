@@ -13,6 +13,7 @@ from zipfile import ZipFile
 from rocrate.rocrate import ROCrate
 
 LABEL = 'pypi_rocrate'
+verbose = False
 
 class Test_1(unittest.TestCase):
     """
@@ -43,7 +44,8 @@ class Test_1(unittest.TestCase):
                         tempPath= [i for i in dirpath.iterdir() if i.is_dir()][0]
                         crate = ROCrate(tempPath)
                         for e in crate.get_entities():
-                            print(f'  {e.id}: {e.type}')
+                            if verbose:
+                                print(f'  {e.id}: {e.type}')
                         if fileName not in logJson:
                             logJson[fileName] = {LABEL:True}
                         else:

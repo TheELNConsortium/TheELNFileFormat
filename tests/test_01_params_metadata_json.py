@@ -27,7 +27,7 @@ class Test_2(unittest.TestCase):
         # runtime global variables
         METADATA_FILE = 'ro-crate-metadata.json'
         OUTPUT_INFO = False
-        OUTPUT_COUNTS = True
+        OUTPUT_COUNTS = False
         KNOWN_KEYS = DATASET_MANDATORY+DATASET_SUGGESTED+FILE_MANDATORY+FILE_SUGGESTED+['@id', '@type']
         LABEL = 'params_metadata_json'
 
