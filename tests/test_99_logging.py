@@ -24,8 +24,8 @@ class Test_2(unittest.TestCase):
                 output.write(f'| software | file name | {" | ".join(COLUMNS)} |\n')
                 output.write(f'| -------- | --------- | {" | ".join(["-----------" for _ in COLUMNS])} |\n')
                 for filename, result in logJson.items():
-                    software = filename.split('/')[2]
-                    individualFileName = filename.split('/')[3]
+                    software = Path(filename).parts[1]
+                    individualFileName = Path(filename).parts[2]
                     if len(individualFileName)>30:
                         individualFileName=individualFileName[:24]+'...eln'
                     resultStr   = ' | '.join([':white_check_mark:' if result[col] else ':x:' for col in COLUMNS])
