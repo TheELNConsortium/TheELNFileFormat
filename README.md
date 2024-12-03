@@ -30,6 +30,7 @@ Generally working with some quirks here and there.
 | [Pasta](https://github.com/PASTA-ELN/pasta-eln)   | ✅ | ✅ | [PASTA](https://github.com/TheELNConsortium/TheELNFileFormat/tree/master/examples/PASTA)       |
 | [SampleDB](https://github.com/sciapp/sampledb)    | ✅ | ✅ | [SampleDB](https://github.com/TheELNConsortium/TheELNFileFormat/tree/master/examples/SampleDB) |
 | [Rspace](https://www.researchspace.com/)          | ✅ | ✅ | [RSpace](https://github.com/TheELNConsortium/TheELNFileFormat/tree/master/examples/RSpace)     |
-| [NOMAD](https://nomad-lab.eu)                     | ✅ |    | |
-
+| [NOMAD](https://nomad-lab.eu)                     | ✅ |   |     |
+| [LinkAhead](https://getlinkahead.com/)            | ✅ |   |     |
+| [OpenSemanticLab](https://github.com/OpenSemanticLab) | ✅ | ✅ | [OpenSemanticLab](https://github.com/TheELNConsortium/TheELNFileFormat/tree/master/examples/OpenSemanticLab)    |
  

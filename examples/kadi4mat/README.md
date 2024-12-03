@@ -69,15 +69,17 @@ The following table is the mapping of Kadi4Mat concepts to the base metadata sta
       "conformsTo": {
         "@id": "https://w3id.org/ro/crate/1.1"
       },
-      "dateCreated": "2024-08-21T12:08:12.194343+00:00",
+      "dateCreated": "2024-11-19T13:44:29.875084+00:00",
       "sdPublisher": {
         "@id": "https://kadi.iam.kit.edu"
       },
-      "version": "1.0"
+      "version": "1.1.2"
     },
     {
       "@id": "./",
-      "@type": ["Dataset"],
+      "@type": "Dataset",
+      "datePublished": "2024-11-19",
+      "description": "An RO-Crate exported from Kadi4Mat following the ELN file format specification.",
       "hasPart": [
         {
           "@id": "./characterization-of-a-sample/"
@@ -91,19 +93,45 @@ The following table is the mapping of Kadi4Mat concepts to the base metadata sta
         {
           "@id": "./generated-files-during-experiment/"
         }
-      ]
+      ],
+      "license": "For license information, please refer to the individual dataset nodes, if applicable.",
+      "name": "collections-example"
     },
     {
       "@id": "https://kadi.iam.kit.edu",
       "@type": "Organization",
-      "description": "An open source software for managing research data.",
+      "description": "A generic and open source virtual research environment.",
       "name": "Kadi4Mat",
       "url": "https://kadi.iam.kit.edu"
+    },
+    {
+      "@id": "http://localhost:5000/records/49#description",
+      "@type": "TextObject",
+      "encodingFormat": "text/markdown",
+      "text": "Some information about the instrument used in a process and other metadata like owner of the instrument etc."
     },
     {
       "@id": "http://localhost:5000/users/34",
       "@type": "Person",
       "name": "Manideep"
+    },
+    {
+      "@id": "http://localhost:5000/records/49#extras-Characterization%20type",
+      "@type": "PropertyValue",
+      "propertyID": "Characterization type",
+      "value": "SEM"
+    },
+    {
+      "@id": "http://localhost:5000/records/49#extras-Characterization%20result%20file(s)",
+      "@type": "PropertyValue",
+      "propertyID": "Characterization result file(s)",
+      "value": false
+    },
+    {
+      "@id": "http://localhost:5000/records/49#extras-Measurement.Device",
+      "@type": "PropertyValue",
+      "propertyID": "Measurement.Device",
+      "value": "PPMS-14"
     },
     {
       "@id": "./characterization-of-a-sample/",
@@ -112,14 +140,19 @@ The following table is the mapping of Kadi4Mat concepts to the base metadata sta
         "@id": "http://localhost:5000/users/34"
       },
       "dateCreated": "2022-10-10T10:46:38.317387+00:00",
-      "dateModified": "2024-08-21T11:48:51.980696+00:00",
-      "description": "Some information about the instrument used in a process and other metadata like owner of the instrument etc.",
+      "dateModified": "2024-09-23T10:28:10.526780+00:00",
+      "description": {
+        "@id": "http://localhost:5000/records/49#description"
+      },
       "hasPart": [
         {
           "@id": "./characterization-of-a-sample/characterization-of-a-sample.json"
         },
         {
           "@id": "./characterization-of-a-sample/characterization-of-a-sample.ttl"
+        },
+        {
+          "@id": "./characterization-of-a-sample/files/asa.txt"
         }
       ],
       "identifier": "characterization-of-a-sample",
@@ -127,60 +160,108 @@ The following table is the mapping of Kadi4Mat concepts to the base metadata sta
       "name": "Characterization of a Sample",
       "variableMeasured": [
         {
-          "@type": "PropertyValue",
-          "additionalType": "str",
-          "propertyID": "Characterization type",
-          "value": "SEM"
+          "@id": "http://localhost:5000/records/49#extras-Characterization%20type"
         },
         {
-          "@type": "PropertyValue",
-          "additionalType": "bool",
-          "propertyID": "Characterization result file(s)",
-          "value": false
+          "@id": "http://localhost:5000/records/49#extras-Characterization%20result%20file(s)"
         },
         {
-          "@type": "PropertyValue",
-          "additionalType": "str",
-          "propertyID": "Measurement.Device",
-          "value": "PPMS-14"
-        },
-        {
-          "@type": "PropertyValue",
-          "additionalType": "str",
-          "propertyID": "Measurement.Measurement Parameters.Starting temperature",
-          "value": null
-        },
-        {
-          "@type": "PropertyValue",
-          "additionalType": "str",
-          "propertyID": "Measurement.Measurement Parameters.End temperature",
-          "value": null
-        },
-        {
-          "@type": "PropertyValue",
-          "additionalType": "str",
-          "propertyID": "Measurement.Measurement Parameters.Voltage",
-          "value": null
+          "@id": "http://localhost:5000/records/49#extras-Measurement.Device"
         }
       ]
     },
     {
       "@id": "./characterization-of-a-sample/characterization-of-a-sample.json",
       "@type": "File",
-      "contentSize": "6187",
-      "dateCreated": "2024-08-21T12:08:12.309295+00:00",
-      "description": "JSON export of characterization-of-a-sample.",
+      "contentSize": "6685",
+      "dateCreated": "2024-11-19T13:44:30.006566+00:00",
       "encodingFormat": "application/json",
       "name": "characterization-of-a-sample.json"
     },
     {
       "@id": "./characterization-of-a-sample/characterization-of-a-sample.ttl",
       "@type": "File",
-      "contentSize": "1921",
-      "dateCreated": "2024-08-21T12:08:12.309345+00:00",
-      "description": "RDF (Turtle) export of characterization-of-a-sample.",
+      "contentSize": "2494",
+      "dateCreated": "2024-11-19T13:44:30.006632+00:00",
       "encodingFormat": "text/turtle",
       "name": "characterization-of-a-sample.ttl"
+    },
+    {
+      "@id": "http://localhost:5000/records/49/files/7d15b95c-6fd8-4556-8beb-6225f0bfff83#description",
+      "@type": "TextObject",
+      "encodingFormat": "text/markdown",
+      "text": "sample file description"
+    },
+    {
+      "@id": "./characterization-of-a-sample/files/asa.txt",
+      "@type": "File",
+      "author": {
+        "@id": "http://localhost:5000/users/34"
+      },
+      "contentSize": "3",
+      "dateCreated": "2024-09-23T10:27:34.267189+00:00",
+      "dateModified": "2024-09-23T10:28:10.532544+00:00",
+      "description": {
+        "@id": "http://localhost:5000/records/49/files/7d15b95c-6fd8-4556-8beb-6225f0bfff83#description"
+      },
+      "encodingFormat": "text/plain",
+      "identifier": "7d15b95c-6fd8-4556-8beb-6225f0bfff83",
+      "name": "asa.txt"
+    },
+    {
+      "@id": "http://localhost:5000/records/51#description",
+      "@type": "TextObject",
+      "encodingFormat": "text/markdown",
+      "text": "Instrument used in the experiment."
+    },
+    {
+      "@id": "http://localhost:5000/records/51#extras-Instrument.Settings.beam%20spot%20size",
+      "@type": "PropertyValue",
+      "propertyID": "Instrument.Settings.beam spot size",
+      "unitText": "mm",
+      "value": 1.2
+    },
+    {
+      "@id": "http://localhost:5000/records/51#extras-Instrument.Detector.0",
+      "@type": "PropertyValue",
+      "propertyID": "Instrument.Detector.0",
+      "value": "EDT"
+    },
+    {
+      "@id": "http://localhost:5000/records/51#extras-Instrument.Detector.1",
+      "@type": "PropertyValue",
+      "propertyID": "Instrument.Detector.1",
+      "value": "CDEM"
+    },
+    {
+      "@id": "http://localhost:5000/records/51#extras-Technical%20Data.Emitter",
+      "@type": "PropertyValue",
+      "propertyID": "Technical Data.Emitter",
+      "value": "X-FEG"
+    },
+    {
+      "@id": "http://localhost:5000/records/51#extras-Technical%20Data.Vacuum%20system",
+      "@type": "PropertyValue",
+      "propertyID": "Technical Data.Vacuum system",
+      "value": "oil-free"
+    },
+    {
+      "@id": "http://localhost:5000/records/51#extras-Software.PC%20Operating%20system",
+      "@type": "PropertyValue",
+      "propertyID": "Software.PC Operating system",
+      "value": "Windows 7"
+    },
+    {
+      "@id": "http://localhost:5000/records/51#extras-Software.Analysis%20software.0",
+      "@type": "PropertyValue",
+      "propertyID": "Software.Analysis software.0",
+      "value": "Velox"
+    },
+    {
+      "@id": "http://localhost:5000/records/51#extras-Software.Analysis%20software.1",
+      "@type": "PropertyValue",
+      "propertyID": "Software.Analysis software.1",
+      "value": "Velox EELS and EDS"
     },
     {
       "@id": "./instrument-used-in-experiment/",
@@ -190,7 +271,9 @@ The following table is the mapping of Kadi4Mat concepts to the base metadata sta
       },
       "dateCreated": "2022-10-10T10:50:07.621285+00:00",
       "dateModified": "2024-07-10T10:16:03.718253+00:00",
-      "description": "Instrument used in the experiment.",
+      "description": {
+        "@id": "http://localhost:5000/records/51#description"
+      },
       "hasPart": [
         {
           "@id": "./instrument-used-in-experiment/instrument-used-in-experiment.json"
@@ -210,87 +293,28 @@ The following table is the mapping of Kadi4Mat concepts to the base metadata sta
       "name": "Instrument used in experiment",
       "variableMeasured": [
         {
-          "@type": "PropertyValue",
-          "additionalType": "str",
-          "description": "Name of the instrument",
-          "identifier": "https://schema.org/name",
-          "propertyID": "Instrument.name",
-          "value": null
+          "@id": "http://localhost:5000/records/51#extras-Instrument.Settings.beam%20spot%20size"
         },
         {
-          "@type": "PropertyValue",
-          "additionalType": "str",
-          "propertyID": "Instrument.manufacturer.manufacturerName",
-          "value": null
+          "@id": "http://localhost:5000/records/51#extras-Instrument.Detector.0"
         },
         {
-          "@type": "PropertyValue",
-          "additionalType": "str",
-          "propertyID": "Instrument.manufacturer.manufacturerURL",
-          "value": null
+          "@id": "http://localhost:5000/records/51#extras-Instrument.Detector.1"
         },
         {
-          "@type": "PropertyValue",
-          "additionalType": "float",
-          "propertyID": "Instrument.Settings.beam spot size",
-          "unitText": "mm",
-          "value": 1.2
+          "@id": "http://localhost:5000/records/51#extras-Technical%20Data.Emitter"
         },
         {
-          "@type": "PropertyValue",
-          "additionalType": "str",
-          "description": "Serial Number of the instrument",
-          "identifier": "https://schema.org/serialNumber",
-          "propertyID": "Instrument.serialNumber",
-          "value": null
+          "@id": "http://localhost:5000/records/51#extras-Technical%20Data.Vacuum%20system"
         },
         {
-          "@type": "PropertyValue",
-          "additionalType": "str",
-          "propertyID": "Instrument.Detector.0",
-          "value": "EDT"
+          "@id": "http://localhost:5000/records/51#extras-Software.PC%20Operating%20system"
         },
         {
-          "@type": "PropertyValue",
-          "additionalType": "str",
-          "propertyID": "Instrument.Detector.1",
-          "value": "CDEM"
+          "@id": "http://localhost:5000/records/51#extras-Software.Analysis%20software.0"
         },
         {
-          "@type": "PropertyValue",
-          "additionalType": "str",
-          "propertyID": "Technical Data.Emitter",
-          "value": "X-FEG"
-        },
-        {
-          "@type": "PropertyValue",
-          "additionalType": "str",
-          "propertyID": "Technical Data.Vacuum system",
-          "value": "oil-free"
-        },
-        {
-          "@type": "PropertyValue",
-          "additionalType": "str",
-          "propertyID": "Software.PC Operating system",
-          "value": "Windows 7"
-        },
-        {
-          "@type": "PropertyValue",
-          "additionalType": "str",
-          "propertyID": "Software.Version",
-          "value": null
-        },
-        {
-          "@type": "PropertyValue",
-          "additionalType": "str",
-          "propertyID": "Software.Analysis software.0",
-          "value": "Velox"
-        },
-        {
-          "@type": "PropertyValue",
-          "additionalType": "str",
-          "propertyID": "Software.Analysis software.1",
-          "value": "Velox EELS and EDS"
+          "@id": "http://localhost:5000/records/51#extras-Software.Analysis%20software.1"
         }
       ]
     },
@@ -298,17 +322,15 @@ The following table is the mapping of Kadi4Mat concepts to the base metadata sta
       "@id": "./instrument-used-in-experiment/instrument-used-in-experiment.json",
       "@type": "File",
       "contentSize": "5963",
-      "dateCreated": "2024-08-21T12:08:12.394967+00:00",
-      "description": "JSON export of instrument-used-in-experiment.",
+      "dateCreated": "2024-11-19T13:44:30.114434+00:00",
       "encodingFormat": "application/json",
       "name": "instrument-used-in-experiment.json"
     },
     {
       "@id": "./instrument-used-in-experiment/instrument-used-in-experiment.ttl",
       "@type": "File",
-      "contentSize": "3072",
-      "dateCreated": "2024-08-21T12:08:12.395010+00:00",
-      "description": "RDF (Turtle) export of instrument-used-in-experiment.",
+      "contentSize": "3016",
+      "dateCreated": "2024-11-19T13:44:30.114477+00:00",
       "encodingFormat": "text/turtle",
       "name": "instrument-used-in-experiment.ttl"
     },
@@ -365,17 +387,15 @@ The following table is the mapping of Kadi4Mat concepts to the base metadata sta
       "@id": "./scripts-used-in-the-experiment/scripts-used-in-the-experiment.json",
       "@type": "File",
       "contentSize": "3896",
-      "dateCreated": "2024-08-21T12:08:12.494948+00:00",
-      "description": "JSON export of scripts-used-in-the-experiment.",
+      "dateCreated": "2024-11-19T13:44:30.243866+00:00",
       "encodingFormat": "application/json",
       "name": "scripts-used-in-the-experiment.json"
     },
     {
       "@id": "./scripts-used-in-the-experiment/scripts-used-in-the-experiment.ttl",
       "@type": "File",
-      "contentSize": "2086",
-      "dateCreated": "2024-08-21T12:08:12.494993+00:00",
-      "description": "RDF (Turtle) export of scripts-used-in-the-experiment.",
+      "contentSize": "2030",
+      "dateCreated": "2024-11-19T13:44:30.243927+00:00",
       "encodingFormat": "text/turtle",
       "name": "scripts-used-in-the-experiment.ttl"
     },
@@ -419,17 +439,15 @@ The following table is the mapping of Kadi4Mat concepts to the base metadata sta
       "@id": "./generated-files-during-experiment/generated-files-during-experiment.json",
       "@type": "File",
       "contentSize": "929",
-      "dateCreated": "2024-08-21T12:08:12.567778+00:00",
-      "description": "JSON export of generated-files-during-experiment.",
+      "dateCreated": "2024-11-19T13:44:30.315045+00:00",
       "encodingFormat": "application/json",
       "name": "generated-files-during-experiment.json"
     },
     {
       "@id": "./generated-files-during-experiment/generated-files-during-experiment.ttl",
       "@type": "File",
-      "contentSize": "1253",
-      "dateCreated": "2024-08-21T12:08:12.568002+00:00",
-      "description": "RDF (Turtle) export of generated-files-during-experiment.",
+      "contentSize": "1197",
+      "dateCreated": "2024-11-19T13:44:30.315108+00:00",
       "encodingFormat": "text/turtle",
       "name": "generated-files-during-experiment.ttl"
     },
@@ -465,27 +483,37 @@ The following table is the mapping of Kadi4Mat concepts to the base metadata sta
       "conformsTo": {
         "@id": "https://w3id.org/ro/crate/1.1"
       },
-      "dateCreated": "2024-08-21T12:07:45.115990+00:00",
+      "dateCreated": "2024-11-19T13:44:35.476888+00:00",
       "sdPublisher": {
         "@id": "https://kadi.iam.kit.edu"
       },
-      "version": "1.0"
+      "version": "1.1.2"
     },
     {
       "@id": "./",
-      "@type": ["Dataset"],
+      "@type": "Dataset",
+      "datePublished": "2024-11-19",
+      "description": "An RO-Crate exported from Kadi4Mat following the ELN file format specification.",
       "hasPart": [
         {
           "@id": "./records-example/"
         }
-      ]
+      ],
+      "license": "For license information, please refer to the individual dataset nodes, if applicable.",
+      "name": "records-example"
     },
     {
       "@id": "https://kadi.iam.kit.edu",
       "@type": "Organization",
-      "description": "An open source software for managing research data.",
+      "description": "A generic and open source virtual research environment.",
       "name": "Kadi4Mat",
       "url": "https://kadi.iam.kit.edu"
+    },
+    {
+      "@id": "http://localhost:5000/records/47#description",
+      "@type": "TextObject",
+      "encodingFormat": "text/markdown",
+      "text": "This is a sample record."
     },
     {
       "@id": "http://localhost:5000/users/34",
@@ -500,6 +528,42 @@ The following table is the mapping of Kadi4Mat concepts to the base metadata sta
       "url": "https://creativecommons.org/licenses/by/4.0/"
     },
     {
+      "@id": "http://localhost:5000/records/47#extras-type",
+      "@type": "PropertyValue",
+      "propertyID": "type",
+      "value": "Measurement"
+    },
+    {
+      "@id": "http://localhost:5000/records/47#extras-actor.givenName",
+      "@type": "PropertyValue",
+      "propertyID": "actor.givenName",
+      "value": "Max"
+    },
+    {
+      "@id": "http://localhost:5000/records/47#extras-actor.familyName",
+      "@type": "PropertyValue",
+      "propertyID": "actor.familyName",
+      "value": "Mustermann"
+    },
+    {
+      "@id": "http://localhost:5000/records/47#extras-Tools%20Used.0",
+      "@type": "PropertyValue",
+      "propertyID": "Tools Used.0",
+      "value": "Universal Specimen holder"
+    },
+    {
+      "@id": "http://localhost:5000/records/47#extras-Tools%20Used.1",
+      "@type": "PropertyValue",
+      "propertyID": "Tools Used.1",
+      "value": "Flat specimen holder"
+    },
+    {
+      "@id": "http://localhost:5000/records/47#extras-start%20date%20of%20experiment",
+      "@type": "PropertyValue",
+      "propertyID": "start date of experiment",
+      "value": "2024-08-05T22:00:00+00:00"
+    },
+    {
       "@id": "./records-example/",
       "@type": "Dataset",
       "author": {
@@ -507,7 +571,9 @@ The following table is the mapping of Kadi4Mat concepts to the base metadata sta
       },
       "dateCreated": "2022-10-10T10:06:11.191752+00:00",
       "dateModified": "2024-08-21T11:43:17.626965+00:00",
-      "description": "This is a sample record.",
+      "description": {
+        "@id": "http://localhost:5000/records/47#description"
+      },
       "hasPart": [
         {
           "@id": "./records-example/records-example.json"
@@ -530,46 +596,22 @@ The following table is the mapping of Kadi4Mat concepts to the base metadata sta
       "name": "records-example",
       "variableMeasured": [
         {
-          "@type": "PropertyValue",
-          "additionalType": "str",
-          "propertyID": "type",
-          "value": "Measurement"
+          "@id": "http://localhost:5000/records/47#extras-type"
         },
         {
-          "@type": "PropertyValue",
-          "additionalType": "str",
-          "propertyID": "actor.givenName",
-          "value": "Max"
+          "@id": "http://localhost:5000/records/47#extras-actor.givenName"
         },
         {
-          "@type": "PropertyValue",
-          "additionalType": "str",
-          "propertyID": "actor.familyName",
-          "value": "Mustermann"
+          "@id": "http://localhost:5000/records/47#extras-actor.familyName"
         },
         {
-          "@type": "PropertyValue",
-          "additionalType": "str",
-          "propertyID": "actor.affiliation.name",
-          "value": null
+          "@id": "http://localhost:5000/records/47#extras-Tools%20Used.0"
         },
         {
-          "@type": "PropertyValue",
-          "additionalType": "str",
-          "propertyID": "Tools Used.0",
-          "value": "Universal Specimen holder"
+          "@id": "http://localhost:5000/records/47#extras-Tools%20Used.1"
         },
         {
-          "@type": "PropertyValue",
-          "additionalType": "str",
-          "propertyID": "Tools Used.1",
-          "value": "Flat specimen holder"
-        },
-        {
-          "@type": "PropertyValue",
-          "additionalType": "date",
-          "propertyID": "start date of experiment",
-          "value": "2024-08-05T22:00:00+00:00"
+          "@id": "http://localhost:5000/records/47#extras-start%20date%20of%20experiment"
         }
       ]
     },
@@ -577,17 +619,15 @@ The following table is the mapping of Kadi4Mat concepts to the base metadata sta
       "@id": "./records-example/records-example.json",
       "@type": "File",
       "contentSize": "3216",
-      "dateCreated": "2024-08-21T12:07:45.208973+00:00",
-      "description": "JSON export of records-example.",
+      "dateCreated": "2024-11-19T13:44:35.590159+00:00",
       "encodingFormat": "application/json",
       "name": "records-example.json"
     },
     {
       "@id": "./records-example/records-example.ttl",
       "@type": "File",
-      "contentSize": "2760",
-      "dateCreated": "2024-08-21T12:07:45.209020+00:00",
-      "description": "RDF (Turtle) export of records-example.",
+      "contentSize": "2704",
+      "dateCreated": "2024-11-19T13:44:35.590233+00:00",
       "encodingFormat": "text/turtle",
       "name": "records-example.ttl"
     },

@@ -5,13 +5,15 @@ https://pypi.org/project/rocrate/
 """
 import os
 import json
-import unittest
+import unittest, traceback
 import tempfile
 from pathlib import Path
 from zipfile import ZIP_DEFLATED
-from zipfile import Path as ZPath
 from zipfile import ZipFile
 from rocrate.rocrate import ROCrate
+
+LABEL = 'pypi_rocrate'
+verbose = False
 
 class Test_1(unittest.TestCase):
     """
@@ -35,25 +37,27 @@ class Test_1(unittest.TestCase):
                 fileName = os.path.join(root, name)
                 print(f'\n\nTry to parse: {fileName}')
                 with ZipFile(fileName, 'r', compression=ZIP_DEFLATED) as elnFile:
-                    p = ZPath(elnFile)
-                    dirName = sorted(p.iterdir())[0]
+                    dirName = os.path.splitext(os.path.basename(fileName))[0]
                     try:
                         dirpath = Path(tempfile.mkdtemp())
                         elnFile.extractall(dirpath)
-                        temppath= dirpath.joinpath(dirName.name)
-                        crate = ROCrate(temppath)
+                        tempPath= [i for i in dirpath.iterdir() if i.is_dir()][0]
+                        crate = ROCrate(tempPath)
                         for e in crate.get_entities():
-                            print(f'  {e.id}: {e.type}')
+                            if verbose:
+                                print(f'  {e.id}: {e.type}')
                         if fileName not in logJson:
-                            logJson[fileName] = {'pypi_rocrate':True}
+                            logJson[fileName] = {LABEL:True}
                         else:
-                            logJson[fileName] = logJson[fileName] | {'pypi_rocrate':True}
+                            logJson[fileName] = logJson[fileName] | {LABEL:True}
                     except Exception:
                         print("  *****  ERROR: Could not parse content of this file!!  *****")
+                        print(f"  Temporary folder: ",tempPath)
+                        print(traceback.format_exc())
                         if fileName not in logJson:
-                            logJson[fileName] = {'pypi_rocrate':False}
+                            logJson[fileName] = {LABEL:False}
                         else:
-                            logJson[fileName] = logJson[fileName] | {'pypi_rocrate':False}
+                            logJson[fileName] = logJson[fileName] | {LABEL:False}
                         success = False
         json.dump(logJson, open('tests/logging.json', 'w'))
         assert success

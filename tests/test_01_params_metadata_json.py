@@ -8,6 +8,7 @@ from zipfile import ZIP_DEFLATED
 from zipfile import Path as ZPath
 from zipfile import ZipFile
 
+
 class Test_2(unittest.TestCase):
     """
     derived class for this test
@@ -26,8 +27,9 @@ class Test_2(unittest.TestCase):
         # runtime global variables
         METADATA_FILE = 'ro-crate-metadata.json'
         OUTPUT_INFO = False
-        OUTPUT_COUNTS = True
+        OUTPUT_COUNTS = False
         KNOWN_KEYS = DATASET_MANDATORY+DATASET_SUGGESTED+FILE_MANDATORY+FILE_SUGGESTED+['@id', '@type']
+        LABEL = 'params_metadata_json'
 
         # log-file
         if Path('tests/logging.json').exists():
@@ -52,24 +54,25 @@ class Test_2(unittest.TestCase):
             # CHECK IF MANDATORY AND SUGGESTED KEYWORDS ARE PRESENT
             if '@type' not in node:
                 print('**ERROR: all nodes must have @type. check:', nodeID)
+                return False
             if node['@type'] == 'Dataset':
                 for key in DATASET_MANDATORY:
-                    if not key in node:
+                    if key not in node:
                         print(f'**ERROR in dataset: "{key}" not in @id={node["@id"]}')
                         globalSuccess = False
                 for key in DATASET_SUGGESTED:
-                    if not key in node and OUTPUT_INFO:
+                    if key not in node and OUTPUT_INFO:
                         print(f'**INFO for dataset: "{key}" not in @id={node["@id"]}')
             elif node['@type'] == 'File':
                 for key in FILE_MANDATORY:
-                    if not key in node:
+                    if key not in node:
                         print(f'**ERROR in file: "{key}" not in @id={node["@id"]}')
                         globalSuccess = False
                 for key in FILE_SUGGESTED:
-                    if not key in node and OUTPUT_INFO:
+                    if key not in node and OUTPUT_INFO:
                         print(f'**INFO for file: "{key}" not in @id={node["@id"]}')
             # CHECK PROPERTIES FOR ALL KEYS
-            if any([str(i).strip()=='' for i in node.values()]):
+            if any(not str(i).strip() for i in node.values()):
                 print(f'**WARNING: {nodeID} contains empty values in the key-value pairs')
             # SPECIFIC CHECKS ON CERTAIN KEYS
             if isinstance(node.get('keywords', ''), list):
@@ -89,16 +92,14 @@ class Test_2(unittest.TestCase):
                 print(f'\n\nParse: {fileName}')
                 with ZipFile(fileName, 'r', compression=ZIP_DEFLATED) as elnFile:
                     success = True
-                    p = ZPath(elnFile)
-                    dirName = sorted(p.iterdir())[0]
-                    metadataJsonFile = dirName.joinpath(METADATA_FILE)
-                    metadataContent = json.loads(metadataJsonFile.read_bytes())
+                    metadataJsonFile = [i for i in elnFile.namelist() if i.endswith(METADATA_FILE)][0]
+                    metadataContent = json.loads(elnFile.read(metadataJsonFile))
                     graph = metadataContent["@graph"]
                     # find information from master node
                     ro_crate_nodes = [i for i in graph if i["@id"] == METADATA_FILE]
                     if len(ro_crate_nodes) == 1:
                         for key in ROCRATE_NOTE_MANDATORY:
-                            if not key in ro_crate_nodes[0]:
+                            if key not in ro_crate_nodes[0]:
                                 print(f'**ERROR: "{key}" not in @id={METADATA_FILE}')
                     else:
                         print(f'**ERROR: @id={METADATA_FILE} does not uniquely exist ')
@@ -109,9 +110,9 @@ class Test_2(unittest.TestCase):
                     for partI in main_node['hasPart']:
                         success = processNode(graph, partI['@id']) and success
                     if fileName not in logJson:
-                        logJson[fileName] = {'params_metadata_json':success}
+                        logJson[fileName] = {LABEL:success}
                     else:
-                        logJson[fileName] = logJson[fileName] | {'params_metadata_json':success}
+                        logJson[fileName] = logJson[fileName] | {LABEL:success}
 
                     # count occurances of all keys
                     counts = {}
@@ -133,4 +134,4 @@ class Test_2(unittest.TestCase):
                             print(f'{prefix}{k:15}: {v}')
         print('\n\nSuccess:', success)
         json.dump(logJson, open('tests/logging.json', 'w'))
-        assert success
+        assert success  #if this fails on your local test, great. It is a summary such that github actions report correctly
