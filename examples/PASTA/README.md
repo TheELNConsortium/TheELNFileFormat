@@ -19,8 +19,8 @@ Its home is at: https://github.com/PASTA-ELN
       },
       "version": "1.0",
       "additionalType": "https://purl.archive.org/purl/elnconsortium/eln-spec/1.1",
-      "datePublished": "2024-12-03T22:23:31.141317",
-      "dateCreated": "2024-12-03T22:23:31.141338",
+      "datePublished": "2024-12-03T22:42:08.072903",
+      "dateCreated": "2024-12-03T22:42:08.072925",
       "sdPublisher": {
         "@id": "PASTA-ELN"
       }
@@ -58,26 +58,56 @@ Its home is at: https://github.com/PASTA-ELN
       "@id": "./",
       "@type": "Dataset",
       "hasPart": [
-        "./PastasExampleProject/",
-        "./PastasExampleProject/000_ThisIsAnExampleTask/",
-        "./PastasExampleProject/001_ThisIsAnotherExampleTask/",
-        "./PastasExampleProject/001_ThisIsAnotherExampleTask/000_ThisIsAnExampleSubtask/",
-        "./PastasExampleProject/001_ThisIsAnotherExampleTask/001_ThisIsAnotherExampleSubtask/",
-        "./PastasExampleProject/001_ThisIsAnotherExampleTask/simple.png",
-        "./PastasExampleProject/002_DataFiles/",
-        "./PastasExampleProject/002_DataFiles/story.odt",
-        "./PastasExampleProject/002_DataFiles/simple.csv",
-        "https:/upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Misc_pollen.jpg/315px-Misc_pollen.jpg",
-        "./PastasExampleProject/002_DataFiles/simple.png",
-        "./PastasExampleProject/i-53814655ee2f4d2a8a25374162d9e35f/",
-        "./PastasExampleProject/i-a8c8d498d3014371911793c1c2150a36/",
-        "./StandardOperatingProcedures/Example_SOP.md",
-        "./PastasExampleProject/s-aac7139ff1ce42beb1f9f178b386f825/"
+        {
+          "@id": "./PastasExampleProject/"
+        },
+        {
+          "@id": "./PastasExampleProject/000_ThisIsAnExampleTask/"
+        },
+        {
+          "@id": "./PastasExampleProject/001_ThisIsAnotherExampleTask/"
+        },
+        {
+          "@id": "./PastasExampleProject/001_ThisIsAnotherExampleTask/000_ThisIsAnExampleSubtask/"
+        },
+        {
+          "@id": "./PastasExampleProject/001_ThisIsAnotherExampleTask/001_ThisIsAnotherExampleSubtask/"
+        },
+        {
+          "@id": "./PastasExampleProject/001_ThisIsAnotherExampleTask/simple.png"
+        },
+        {
+          "@id": "./PastasExampleProject/002_DataFiles/"
+        },
+        {
+          "@id": "./PastasExampleProject/002_DataFiles/story.odt"
+        },
+        {
+          "@id": "./PastasExampleProject/002_DataFiles/simple.csv"
+        },
+        {
+          "@id": "https:/upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Misc_pollen.jpg/315px-Misc_pollen.jpg"
+        },
+        {
+          "@id": "./PastasExampleProject/002_DataFiles/simple.png"
+        },
+        {
+          "@id": "./PastasExampleProject/i-53814655ee2f4d2a8a25374162d9e35f/"
+        },
+        {
+          "@id": "./PastasExampleProject/i-a8c8d498d3014371911793c1c2150a36/"
+        },
+        {
+          "@id": "./StandardOperatingProcedures/Example_SOP.md"
+        },
+        {
+          "@id": "./PastasExampleProject/s-aac7139ff1ce42beb1f9f178b386f825/"
+        }
       ],
       "name": "Exported from PASTA ELN",
       "description": "Exported content from PASTA ELN",
       "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-      "datePublished": "2024-12-03T22:23:31.141360",
+      "datePublished": "2024-12-03T22:42:08.072948",
       "creator": [
         {
           "@id": "author_Steffen_Brinckmann"
