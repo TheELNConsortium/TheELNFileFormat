@@ -34,6 +34,7 @@ class Test_1(unittest.TestCase):
         success = True
         for root, _, files in os.walk(".", topdown=False):
             for name in files:
+                successFile = True
                 if not name.endswith('.eln'):
                   continue
                 fileName = os.path.join(root, name)
@@ -44,6 +45,7 @@ class Test_1(unittest.TestCase):
                     for error in sorted(validator.iter_errors(metadataContent), key=str):
                         print(f'- {error.message}')
                         success = False
-                logJson[fileName] = logJson.get(fileName,{}) | {LABEL: success}
-            json.dump(logJson, open('tests/logging.json', 'w'))
+                        successFile = False
+                logJson[fileName] = logJson.get(fileName,{}) | {LABEL: successFile}
+        json.dump(logJson, open('tests/logging.json', 'w'))
         assert success
