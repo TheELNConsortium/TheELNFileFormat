@@ -19,8 +19,8 @@ Its home is at: https://github.com/PASTA-ELN
       },
       "version": "1.0",
       "additionalType": "https://purl.archive.org/purl/elnconsortium/eln-spec/1.1",
-      "datePublished": "2024-12-04T12:10:48.700605",
-      "dateCreated": "2024-12-04T12:10:48.700628",
+      "datePublished": "2024-12-04T12:17:43.310832",
+      "dateCreated": "2024-12-04T12:17:43.310852",
       "sdPublisher": {
         "@id": "PASTA-ELN"
       }
@@ -110,7 +110,7 @@ Its home is at: https://github.com/PASTA-ELN
       "name": "Exported from PASTA ELN",
       "description": "Exported content from PASTA ELN",
       "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-      "datePublished": "2024-12-04T12:10:48.700656",
+      "datePublished": "2024-12-04T12:17:43.310891",
       "creator": [
         {
           "@id": "author_Steffen_Brinckmann"
@@ -345,6 +345,7 @@ Its home is at: https://github.com/PASTA-ELN
       "description": "- Remote image from wikipedia. Used for testing and reference\n- This item links to a procedure that was used for its creation.\n- One can link to samples, etc. to create complex metadata\n- This item also has a rating",
       "keywords": "_3",
       "@id": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Misc_pollen.jpg/315px-Misc_pollen.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Misc_pollen.jpg/315px-Misc_pollen.jpg",
       "contentSize": "33597",
       "sha256": "4a1a85bf3fed48c6355eb4ec4c8e3e1d48bc23cb6f8e3e78bdbdd28539d2280b",
       "@type": "File",
