@@ -5,20 +5,17 @@
 This format is an open format, licensed under the [MIT](./LICENSE) license and specified by the present document.
 
 The file is a ZIP archive, so it MUST follow the standard ZIP specifications and be readable by all zip utilities.
-
-The contents of the archive MAY be encrypted, as with any ZIP archive.
+The contents of the archive MAY be encrypted, as with any ZIP archive. This archive format is basically a zipped RO-Crate, with a `.eln` file extension.
 
 An up to date version of this document can be accessed at: https://github.com/TheELNConsortium/eln-file-format
 
-This archive format is basically a zipped RO-Crate, with a `.eln` file extension.
-
 ## Structure of the archive
 
-Inside a .eln file, there MUST be a folder that will contain the rest of the data. The name of the folder SHOULD be the same as the archive name. This folder at root prevents issues when opening the file as a zip file and getting archived files extracted in the current directory, possibly overwriting other files, and probably polluting the current directory. There MUST be only one folder at the root of the archive.
+Inside a .eln file, there MUST be a folder that will contain the rest of the data. The name of the folder SHOULD be the same as the archive name. (This folder at root prevents issues when opening the file as a zip file and getting archived files extracted in the current directory, possibly overwriting other files, and probably polluting the current directory.) There MUST be only one folder at the root of the archive.
 
 Inside that root folder, there MUST be a file named `ro-crate-metadata.json`. This file follows the [RO-Crate 1.1+ Specification](https://w3id.org/ro/crate/1.1).
 
-The rest of the archive is composed of 0 or more folders that each describe one experiment or coherent set of data. Thus, the ELN archive can accomodate one or several experimental set of data.
+The rest of the archive is composed of 0 or more folders that each describe one experiment or coherent set of data. Thus, the ELN archive can accommodate one or several experimental set of data.
 
 Example for file: some-data.eln
 
@@ -42,11 +39,11 @@ Example for file: some-data.eln
 
 ## Structure of ro-crate-metadata.json
 
-This is of course described in the [RO-Crate Specification](https://w3id.org/ro/crate/1.1) but let's go over an example to understand how it works.
+This is described in the [RO-Crate Specification](https://w3id.org/ro/crate/1.1) but let's go over an example to understand how it works.
 
 ### Root
 
-At the root of our JSON-LD object, we have a context and a graph. The graph will contain an array of everything we put in our crate. Each node object in the graph represents the properties of a node serialized by the JSON-LD.
+At the root of our JSON-LD object, we have a context and a graph. The graph will contain an array of everything we put in our crate. Each node object in the graph represents the properties of a node serialized by JSON-LD.
 
 ```json
 {
@@ -76,11 +73,10 @@ The first node we describe here is the `ro-crate-metadata.json`:
 }
 ```
 
-It is a `CreativeWork` about the current directory where it is, and conforms to the RO-Crate specification. Other fields like `dateCreated` (added here) or [any other property](https://schema.org/CreativeWork) of `CreativeWork` can be added.
+It is a `CreativeWork` about the current directory, and conforms to the RO-Crate specification. Other fields like `dateCreated` (added here) or [any other property](https://schema.org/CreativeWork) of `CreativeWork` can be added.
 
 In addition to the properties outlined in the [RO-Crate Metadata File Descriptor](https://www.researchobject.org/ro-crate/specification/1.1/root-data-entity.html#ro-crate-metadata-file-descriptor), this node SHOULD include `sdPublisher` property, which references the Organization entity containing additional metadata.
 
-The Organization entity SHOULD contain an `@id`, `@type: Organization`, `name` and `url` properties. Any other properties of `Organization` MAY also be added.
 
 ### Second node: current directory
 
@@ -101,23 +97,26 @@ The second node is basically describing the current directory (`./`).
 }
 ```
 
-Its type is an array of `Dataset` and `hasPart` which corresponds to the different `@id`s of the other nodes. Think of it like a Table of Contents.
+Its type is a `Dataset` and its `hasPart` correspond to the `@id`s of the other nodes. Think of it like a Table of Contents.
+
+### Organization node
+
+The Organization node SHOULD contain an `@id`, `@type: Organization`, `name` and `url` properties. Any other properties of `Organization` MAY also be added.
+
 
 ### The rest
 
 Subsequently, all the remaining nodes are assigned a `@type` of either `Dataset` for directories or `File` for individual files. And the `@id` corresponds to something in the `hasPart` of `./`.
 
 If a Dataset node has additional files, they should be listed in its `hasPart` property and can be referenced through their `@id`.
-
 All nodes with `@type: Dataset` SHOULD include `name`, `author` properties. Furthermore, other properties of `Dataset`, such as `identifier`, `dateCreated`, `dateModified`, `text`, `keywords`, `comment` MAY also be added.
 
 All nodes with `@type: File` SHOULD include `name`, `encodingFormat`, `contentSize` properties. Furthermore, other properties of `File`, such as `description`, `sha256`, `author`, `identifier`, `dateCreated`, `dateModified`, `text` MAY also be added.
 
 All nodes with a `@type` such as `Comment` or `Person` exist at the root node (once), and can be referenced via their `@id` in other parts.
-
 For instance, a "comment" on an experiment will exist as a `@type: Comment` node at the root node, and be referenced through its `@id` in the `comment` part of the experiment's node. See "Example Dataset with Comment" example below.
 
-### Specific fields
+#### Specific fields
 
 * `contentSize`: this term is loosely defined by Schema.org. In a .eln it is a string with the number of bytes. See "Example File" section below. It contains no units.
 * `variableMeasured`: this term is interpreted more loosely for .eln files than by Schema.org, as consisting of `@type: PropertyValue` nodes that represent not just variables measured, but also variables specified for a `@type: Dataset` node (e.g. flexible metadata).
