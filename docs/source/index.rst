@@ -1,15 +1,9 @@
-The ELN File Format .eln
-************************
+The ELN file format
+===================
 
-
-Overview
-========
 
 .. toctree::
    :maxdepth: 1
+   :caption: Contents:
 
    PASTA/PASTA
-
-
-.. |---| unicode:: U+02014 .. em dash
-
