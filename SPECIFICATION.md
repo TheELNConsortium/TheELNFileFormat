@@ -11,7 +11,7 @@ An up to date version of this document can be accessed at: https://github.com/Th
 
 ## Structure of the archive
 
-Inside a .eln file, there MUST be a single folder that will contain the rest of the data. The name of the folder SHOULD be the same as the archive name. This folder at root prevents issues when opening the file as a zip file and getting archived files extracted in the current directory, possibly overwriting other files, and probably polluting the current directory. Note that as a result, only the root folder can be considered a valid RO-Crate, not the zip file as a whole.
+Inside a .eln file, there MUST be a single folder that will contain the rest of the data. The name of the folder SHOULD be the same as the archive name. This folder at root prevents issues when opening the file as a zip file and getting archived files extracted in the current directory, possibly overwriting other files, and probably polluting the current directory. Note that as a result, only this single folder present in the zip file can be considered a valid RO-Crate, not the zip file as a whole.
 
 Inside that root folder, there MUST be a file named `ro-crate-metadata.json`. This file follows the [RO-Crate 1.1+ Specification](https://w3id.org/ro/crate/1.1).
 
