@@ -111,6 +111,8 @@ Subsequently, all the remaining nodes are assigned a `@type` of either `Dataset`
 If a Dataset node has additional files, they should be listed in its `hasPart` property and can be referenced through their `@id`.
 All nodes with `@type: Dataset` SHOULD include `name`, `author` properties. Furthermore, other properties of `Dataset`, such as `identifier`, `dateCreated`, `dateModified`, `text`, `keywords`, `comment` MAY also be added.
 
+If a Dataset references other Datasets (_e.g._ a parent experiment with child experiments), they must also be present in the `hasPart` of `./` if they are meant to be imported. A Dataset MUST not contain other Datasets in its `hasPart` section.
+
 All nodes with `@type: File` SHOULD include `name`, `encodingFormat`, `contentSize` properties. Furthermore, other properties of `File`, such as `description`, `sha256`, `author`, `identifier`, `dateCreated`, `dateModified`, `text` MAY also be added.
 
 All nodes with a `@type` such as `Comment` or `Person` exist at the root node (once), and can be referenced via their `@id` in other parts.
