@@ -16,7 +16,3 @@ make -C docs html
 ```
 
 Navigate to `docs/build/` and open `index.html`.
-
-### Remote building and testing
-
-The documentation can be automatically build by the GitHub Action can be published within that action.
