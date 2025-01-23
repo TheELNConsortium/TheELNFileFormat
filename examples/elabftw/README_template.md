@@ -5,6 +5,8 @@
 * Repo: https://github.com/elabftw/elabftw
 * Chat: https://gitter.im/elabftw/elabftw
 
+You can generate .eln files from the demo: https://demo.elabftw.net. Select a few entries and export as .eln from the top menu. Or go to the Import section and do a full export.
+
 ## Concepts used
 
 Here is a correspondance between concepts in eLabFTW and how they are translated in the metadata json file in the archive:
