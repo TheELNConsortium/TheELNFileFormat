@@ -44,7 +44,7 @@ Here is a correspondance between concepts in eLabFTW and how they are translated
       "conformsTo": {
         "@id": "https://w3id.org/ro/crate/1.1"
       },
-      "dateCreated": "2025-01-23T11:35:52+01:00",
+      "dateCreated": "2025-01-25T20:59:40+01:00",
       "sdPublisher": {
         "@id": "#publisher"
       },
@@ -78,7 +78,7 @@ Here is a correspondance between concepts in eLabFTW and how they are translated
         "@id": "./"
       },
       "name": "RO-Crate created",
-      "endTime": "2025-01-23T11:35:52+01:00",
+      "endTime": "2025-01-25T20:59:40+01:00",
       "instrument": {
         "@id": "https://www.elabftw.net"
       },
@@ -94,151 +94,74 @@ Here is a correspondance between concepts in eLabFTW and how they are translated
       "identifier": "https://www.elabftw.net"
     },
     {
-      "@id": "comment://e4d175c5775273ca8d27ec582e6dbb703574ea49b67a91e7ee7ff0e3106078ee?hash_algo=sha256",
+      "@id": "comment://f89d589a1b9c51738c7ec76635b18c2505751d6102aa2ac49f9c847263bf0f57?hash_algo=sha256",
       "@type": "Comment",
-      "dateCreated": "2025-01-08T11:02:22+01:00",
+      "dateCreated": "2025-01-11T16:00:09+01:00",
       "text": "Great results on the DNA extraction. The yield and purity look good. For the wash steps, consider extending the final centrifugation to 3 minutes to ensure no residual buffer. Nice work!",
       "author": {
         "@id": "person://42c713981f75caa8c9d8e3a60c883dc4788c0563de13ba5607a12f385fe534fe?hash_algo=sha256"
       }
     },
     {
-      "@id": "./Project-CRYPTO-COOL - Gold-master-experiment - 2cb6677a/example.mp4",
-      "@type": "File",
-      "name": "example.mp4",
-      "alternateName": "f0/f0420ee2ce026ff2462882e242f953d9fc4a97c0ab3d27f1e9fbbda75d14fafffb95620e3a7f22be93e386077841f9f66e5edc008da793db04c968b979644962.mp4",
-      "contentSize": 184144,
-      "sha256": "2a729ba8ddca2e2270effed052ceed5a1167a8d1c4ee856ace3d55635fca243d"
-    },
-    {
-      "@id": "./Project-CRYPTO-COOL - Gold-master-experiment - 2cb6677a/example.cdx",
-      "@type": "File",
-      "name": "example.cdx",
-      "alternateName": "2b/2b8ac9970db9b548f05da4c527366a97210e44874f1b718fd1e0e1dde4c90d829a2fe0fc7cf056b62177afd5d1b7e6bdb0e2eedaf64ab96647ca692e9c12c0f9.cdx",
-      "contentSize": 1514,
-      "sha256": "5efbea7d56c052e2e1fc418ff24ef8b445cd543d07a4c892994647e90d5258dc"
-    },
-    {
-      "@id": "./Project-CRYPTO-COOL - Gold-master-experiment - 2cb6677a/example.gbk",
-      "@type": "File",
-      "name": "example.gbk",
-      "alternateName": "6d/6dee66215ddb246e92c8db8d05fbc032b371da0b8d8ee349404e5585abb1af25c75ef9a0e85f8cd237cb490b943b1a46f61d190eddd68ecd876358ce5249abe5.gbk",
-      "contentSize": 7472,
-      "sha256": "a092b86343c74697ac70542d5a75843230b69555e01e5460bac8cddab1dbecea"
-    },
-    {
-      "@id": "./Project-CRYPTO-COOL - Gold-master-experiment - 2cb6677a/example.jpg",
-      "@type": "File",
-      "name": "example.jpg",
-      "alternateName": "92/92fa4ee261d1e8ac9d3675f35bde0f05370151bc8dbedb1d6d26eda8f3fa4710327c700d433660ce2bf0bea1a06885ec3b8ed6c963e09f0ba87b7cfe972de4da.jpg",
-      "contentSize": 85530,
-      "sha256": "b73626c9a9ed8561ed6126df2493bc0d84fb8feedc9fe34aed94f7d2d5f4f60f"
-    },
-    {
-      "@id": "#category-Cell biology",
+      "@id": "#category-Demo",
       "@type": "Thing",
-      "name": "Cell biology",
-      "color": "610511"
+      "name": "Demo",
+      "color": "eab414"
     },
     {
-      "@id": "./Cell-biology - Laborum-est-accusantium-ullam-quis-et-sed - 7b6f582f/",
-      "@type": "Dataset",
-      "author": {
-        "@id": "person://16fe8e900225c4a6e17c165b3de0f032c8d55d87ec81e2d36aed201794650e76?hash_algo=sha256"
-      },
-      "dateCreated": "2025-01-08T11:01:28+01:00",
-      "dateModified": "2025-01-08T11:01:28+01:00",
-      "temporal": "2023-02-19T00:00:00+01:00",
-      "name": "Laborum est accusantium ullam quis et sed.",
-      "encodingFormat": "text/html",
-      "url": "https://elab.local:3148/experiments.php.php?mode=view&id=202",
-      "genre": "experiment",
-      "creativeWorkStatus": "Running",
-      "identifier": "20250108-7b6f582fda9dd9ed0e5d993eae795ea1398bf0c3",
-      "keywords": "gene expression",
-      "text": "Alice to herself. 'Shy, they seem to encourage the witness at all: he kept shifting from one end of the Lobster Quadrille, that she looked up, but it was not going to shrink any further: she felt unhappy. 'It was a long hookah, and taking not the right words,' said poor Alice, who was sitting between them, fast asleep, and the Panther were sharing a pie--' [later editions continued as follows The Panther took pie-crust, and gravy, and meat, While the Panther received knife and fork with a table in the sea, though you mayn't believe it--' 'I never heard before, 'Sure then I'm here! Digging for apples, indeed!' said the Mock Turtle, capering wildly about. 'Change lobsters again!' yelled the Gryphon added 'Come, let's hear some of them hit her in a shrill, passionate voice. 'Would YOU like cats if you please! \"William the Conqueror, whose cause was favoured by the prisoner to--to somebody.' 'It must have imitated somebody else's hand,' said the March Hare. 'He denies it,' said Alice.",
-      "about": {
-        "@id": "#category-Cell biology"
-      }
-    },
-    {
-      "@id": "#category-R&D",
-      "@type": "Thing",
-      "name": "R&D",
-      "color": "1d11c0"
-    },
-    {
-      "@id": "./RD - Ut-aut-sint-aliquam-nobis-ipsa-adipisci - c6a5262b/",
+      "@id": "./Demo - Quidem-laboriosam-deserunt-voluptatum-molestiae-qui - 9ec59773/",
       "@type": "Dataset",
       "author": {
         "@id": "person://42c713981f75caa8c9d8e3a60c883dc4788c0563de13ba5607a12f385fe534fe?hash_algo=sha256"
       },
-      "dateCreated": "2025-01-08T11:00:35+01:00",
-      "dateModified": "2025-01-08T11:00:36+01:00",
-      "temporal": "2024-11-08T00:00:00+01:00",
-      "name": "Ut aut sint aliquam nobis ipsa adipisci.",
+      "dateCreated": "2025-01-11T15:57:59+01:00",
+      "dateModified": "2025-01-11T15:57:59+01:00",
+      "temporal": "2022-07-05T00:00:00+02:00",
+      "name": "Quidem laboriosam deserunt voluptatum molestiae qui.",
       "encodingFormat": "text/html",
       "url": "https://elab.local:3148/experiments.php.php?mode=view&id=32",
       "genre": "experiment",
-      "creativeWorkStatus": "Success",
-      "identifier": "20250108-c6a5262b41773b2f0eea10ca2bad971f6cd500d9",
-      "keywords": "protein analysis,Dark Arts,biochemistry,cell culture techniques,Western Blot",
-      "text": "I do hope it'll make me smaller, I can guess that,' she added in a moment: she looked up and ran the faster, while more and more faintly came, carried on the shingle--will you come to the baby, it was very deep, or she fell past it. 'Well!' thought Alice 'without pictures or conversations?' So she was dozing off, and had come back in their mouths--and they're all over with William the Conqueror.' (For, with all their simple sorrows, and find a number of changes she had sat down a large plate came skimming out, straight at the Cat's head with great curiosity, and this was of very little way forwards each time and a long argument with the end of the shepherd boy--and the sneeze of the house, and wondering whether she could not possibly reach it: she could do to come yet, please your Majesty?' he asked. 'Begin at the jury-box, and saw that, in her lessons in here? Why, there's hardly room to open it; but, as the whole party at once took up the little thing was to twist it up into a.",
+      "creativeWorkStatus": "Running",
+      "identifier": "20250111-9ec597733e27dfc74e27004a563522c9b2c75016",
+      "keywords": "statistical analysis,lab supplies,gene expression,COVID-24,lab safety",
+      "text": "And she's such a subject! Our family always HATED cats: nasty, low, vulgar things! Don't let me help to undo it!' 'I shall do nothing of the court, she said these words her foot as far down the little crocodile Improve his shining tail, And pour the waters of the moment he was speaking, and this he handed over to the Classics master, though. He was looking down with one elbow against the roof off.' After a time she had put on his knee, and looking anxiously about as much as she went on talking: 'Dear, dear! How queer everything is queer to-day.' Just then her head made her next remark. 'Then the eleventh day must have been changed in the distance, and she looked down into a pig, my dear,' said Alice, in a very truthful child; 'but little girls in my time, but never ONE with such a wretched height to rest herself, and shouted out, 'You'd better not talk!' said Five. 'I heard every word you fellows were saying.' 'Tell us a story!' said the sage, as he came, 'Oh! the Duchess, 'chop off.",
       "about": {
-        "@id": "#category-R&D"
+        "@id": "#category-Demo"
       }
     },
     {
       "@id": "#category-Project CRYPTO-COOL",
       "@type": "Thing",
       "name": "Project CRYPTO-COOL",
-      "color": "cc006a"
+      "color": "54a4c5"
     },
     {
-      "@id": "./Project-CRYPTO-COOL - Gold-master-experiment - 2cb6677a/",
+      "@id": "./Project-CRYPTO-COOL - Gold-master-experiment - 739ba7c9/",
       "@type": "Dataset",
       "author": {
         "@id": "person://42c713981f75caa8c9d8e3a60c883dc4788c0563de13ba5607a12f385fe534fe?hash_algo=sha256"
       },
-      "dateCreated": "2025-01-08T11:02:22+01:00",
-      "dateModified": "2025-01-23T11:06:39+01:00",
+      "dateCreated": "2025-01-11T16:00:09+01:00",
+      "dateModified": "2025-01-11T16:00:09+01:00",
       "temporal": "2025-01-03T00:00:00+01:00",
       "name": "Gold master experiment",
       "encodingFormat": "text/html",
       "url": "https://elab.local:3148/experiments.php.php?mode=view&id=310",
       "genre": "experiment",
-      "alternateName": 4,
       "comment": [
         {
-          "@id": "comment://e4d175c5775273ca8d27ec582e6dbb703574ea49b67a91e7ee7ff0e3106078ee?hash_algo=sha256"
+          "@id": "comment://f89d589a1b9c51738c7ec76635b18c2505751d6102aa2ac49f9c847263bf0f57?hash_algo=sha256"
         }
       ],
       "creativeWorkStatus": "Success",
-      "hasPart": [
-        {
-          "@id": "./Project-CRYPTO-COOL - Gold-master-experiment - 2cb6677a/example.mp4"
-        },
-        {
-          "@id": "./Project-CRYPTO-COOL - Gold-master-experiment - 2cb6677a/example.cdx"
-        },
-        {
-          "@id": "./Project-CRYPTO-COOL - Gold-master-experiment - 2cb6677a/example.gbk"
-        },
-        {
-          "@id": "./Project-CRYPTO-COOL - Gold-master-experiment - 2cb6677a/example.jpg"
-        }
-      ],
-      "identifier": "20250108-2cb6677ab9007b39c4b8c16b0ff337750d2c8ec2",
+      "identifier": "20250111-739ba7c99c77e76b6b8d48b86c60e4eaffda4bb6",
       "keywords": "generated from yml,test-data,eln,tag with space,special chars {[\u00e9\u00e8\u00c0\u00ae]}:*<>\u00d7\u00f7\u00b1",
       "mentions": [
         {
-          "@id": "./Cell-biology - Laborum-est-accusantium-ullam-quis-et-sed - 7b6f582f/"
-        },
-        {
-          "@id": "./RD - Ut-aut-sint-aliquam-nobis-ipsa-adipisci - c6a5262b/"
+          "@id": "./Demo - Quidem-laboriosam-deserunt-voluptatum-molestiae-qui - 9ec59773/"
         }
       ],
-      "text": "<h1>Level 1 title</h1>\n<h2>Level 2 title</h2>\n<p>The <strong>goal</strong> of this <em>experiment</em> is to have <span style=\"text-decoration:underline;\">all</span> <span style=\"background-color:rgb(241,196,15);color:rgb(224,62,45);\">attributes</span>:</p>\n<ul>\n<li>all extra fields types</li>\n<li>links to experiments and items</li>\n<li>links from experiments and items</li>\n<li>status, category, tags and uploaded files</li>\n</ul>\n<h3>Here is a table</h3>\n<table style=\"border-collapse:collapse;width:100%;\" border=\"1\">\n\n<tr>\n<td>Something</td>\n<td>in H<sub>2</sub></td>\n<td>the</td>\n</tr>\n<tr>\n<td>table</td>\n<td style=\"background-color:rgb(185,106,217);border:2px dashed rgb(224,62,45);\">31<sup>321</sup></td>\n<td>there</td>\n</tr>\n\n</table>\n<p>an emoji: \ud83e\udd2a</p>\n<p>\u221e \u2211</p>\n<h4>An image</h4>\n<p>\u00a0</p>\n<p><a href=\"https://www.elabftw.net/\" target=\"_blank\" rel=\"noreferrer noopener\">A link to elabftw.net</a>.</p>\n<p>\u00a0</p>",
+      "text": "<h1>Level 1 title</h1>\n<h2>Level 2 title</h2>\n<p>The <strong>goal</strong> of this <em>experiment</em> is to have <span style=\"text-decoration:underline;\">all</span> <span style=\"background-color:rgb(241,196,15);color:rgb(224,62,45);\">attributes</span>:</p>\n<ul>\n<li>all extra fields types</li>\n<li>links to experiments and items</li>\n<li>links from experiments and items</li>\n<li>status, category, tags and uploaded files</li>\n</ul>\n<h3>Here is a table</h3>\n<table style=\"border-collapse:collapse;width:100%;\" border=\"1\">\n\n<tr>\n<td>Something</td>\n<td>in H<sub>2</sub></td>\n<td>the</td>\n</tr>\n<tr>\n<td>table</td>\n<td style=\"background-color:rgb(185,106,217);border:2px dashed rgb(224,62,45);\">31<sup>321</sup></td>\n<td>there</td>\n</tr>\n\n</table>\n<p>an emoji: \ud83e\udd2a</p>\n<p>\u221e \u2211</p>\n<h4>An image</h4>\n<p><img src=\"app/download.php?name=example.jpg&amp;f=78/7834c99a3af687a043d7e9c5bec5e4877469748dca1e898892962ab769be562e069204c19f3bf4663dd2f036cd2a9673b8db53702405ad5298a6e1fd78d6d7da.jpg&amp;storage=1\" width=\"173\" height=\"260\" alt=\"7834c99a3af687a043d7e9c5bec5e4877469748dca1e898892962ab769be562e069204c19f3bf4663dd2f036cd2a9673b8db53702405ad5298a6e1fd78d6d7da.jpg&amp;storage=1\"></p>\n<p><a href=\"https://www.elabftw.net/\" target=\"_blank\" rel=\"noreferrer noopener\">A link to elabftw.net</a>.</p>\n<p>\u00a0</p>\n",
       "about": {
         "@id": "#category-Project CRYPTO-COOL"
       },
@@ -246,10 +169,19 @@ Here is a correspondance between concepts in eLabFTW and how they are translated
         {
           "propertyID": "elabftw_metadata",
           "description": "eLabFTW metadata JSON as string",
-          "value": "{\"elabftw\": {\"display_main_text\": true, \"extra_fields_groups\": [{\"id\": 1, \"name\": \"Group 1\"}, {\"id\": 2, \"name\": \"Group 2\"}, {\"id\": 3, \"name\": \"Last group\"}]}, \"extra_fields\": {\"Number\": {\"type\": \"number\", \"unit\": \"\", \"units\": [], \"value\": \"\", \"group_id\": 2, \"description\": \"no units\"}, \"Type URL\": {\"type\": \"url\", \"value\": \"https://www.elabftw.net\", \"group_id\": 2, \"readonly\": true, \"description\": \"a link (readonly)\"}, \"Just time\": {\"type\": \"time\", \"value\": \"17:00\", \"group_id\": 2, \"description\": \"tea time\"}, \"Some date\": {\"type\": \"date\", \"value\": \"2024-07-14\", \"group_id\": 2, \"description\": \"is a date\"}, \"Type user\": {\"type\": \"users\", \"value\": 1, \"group_id\": 3, \"description\": \"this is a link to a user\"}, \"A checkbox\": {\"type\": \"checkbox\", \"value\": \"on\", \"group_id\": 2, \"description\": \"is checked\"}, \"Email input\": {\"type\": \"email\", \"value\": \"louis@example.com\", \"group_id\": 2, \"description\": \"type email\"}, \"Date and time\": {\"type\": \"datetime-local\", \"value\": \"2024-07-14T13:37\", \"group_id\": 2, \"description\": \"datetime description\"}, \"Radio buttons\": {\"type\": \"radio\", \"value\": \"Oui\", \"options\": [\"Oui\", \"Non\", \"Peut-\u00eatre\"], \"group_id\": 1, \"description\": \"radio description\"}, \"Type resource\": {\"type\": \"items\", \"value\": 208, \"group_id\": 3, \"description\": \"This is a link to a resource\"}, \"A dropdown menu\": {\"type\": \"select\", \"value\": \"Choice 1\", \"options\": [\"Choice 1\", \"Choice 2\", \"Choice 3\"], \"group_id\": 1, \"description\": \"Single select\"}, \"Text input name\": {\"type\": \"text\", \"value\": \"some text\", \"group_id\": 1, \"readonly\": true, \"required\": true, \"description\": \"type text + all attributes\", \"blank_value_on_duplicate\": true}, \"Type experiment\": {\"type\": \"experiments\", \"value\": 202, \"group_id\": 3, \"description\": \"This is a link to an experiment\"}, \"Number with units\": {\"type\": \"number\", \"unit\": \"mM\", \"units\": [\"mM\", \"\u03bcM\", \"nM\"], \"value\": \"\", \"group_id\": 2, \"description\": \"this one has units\"}, \"Unchecked checkbox\": {\"type\": \"checkbox\", \"value\": \"\", \"group_id\": 2, \"description\": \"this one is not checked\"}, \"Multi dropdown menu\": {\"type\": \"select\", \"value\": \"Option 1\", \"options\": [\"Option 1\", \"Option 2\", \"Option 3\"], \"group_id\": 1, \"description\": \"Allows multiple selection\", \"allow_multi_values\": true}}}"
+          "value": "{\"elabftw\": {\"display_main_text\": true, \"extra_fields_groups\": [{\"id\": 1, \"name\": \"Group 1\"}, {\"id\": 2, \"name\": \"Group 2\"}, {\"id\": 3, \"name\": \"Last group\"}]}, \"extra_fields\": {\"Number\": {\"type\": \"number\", \"unit\": \"\", \"units\": [], \"value\": \"\", \"group_id\": 2, \"description\": \"no units\"}, \"Type URL\": {\"type\": \"url\", \"value\": \"https://www.elabftw.net\", \"group_id\": 2, \"readonly\": true, \"description\": \"a link (readonly)\"}, \"Just time\": {\"type\": \"time\", \"value\": \"17:00\", \"group_id\": 2, \"description\": \"tea time\"}, \"Some date\": {\"type\": \"date\", \"value\": \"2024-07-14\", \"group_id\": 2, \"description\": \"is a date\"}, \"Type user\": {\"type\": \"users\", \"value\": 1, \"group_id\": 3, \"description\": \"this is a link to a user\"}, \"A checkbox\": {\"type\": \"checkbox\", \"value\": \"on\", \"group_id\": 2, \"description\": \"is checked\"}, \"Email input\": {\"type\": \"email\", \"value\": \"louis@example.com\", \"group_id\": 2, \"description\": \"type email\"}, \"Date and time\": {\"type\": \"datetime-local\", \"value\": \"2024-07-14T13:37\", \"group_id\": 2, \"description\": \"datetime description\"}, \"Radio buttons\": {\"type\": \"radio\", \"value\": \"Oui\", \"options\": [\"Oui\", \"Non\", \"Peut-\u00eatre\"], \"group_id\": 1, \"description\": \"radio description\"}, \"Type resource\": {\"type\": \"items\", \"value\": 208, \"group_id\": 3, \"description\": \"This is a link to a resource\"}, \"A dropdown menu\": {\"type\": \"select\", \"value\": \"Choice 1\", \"options\": [\"Choice 1\", \"Choice 2\", \"Choice 3\"], \"group_id\": 1, \"description\": \"Single select\"}, \"Text input name\": {\"type\": \"text\", \"value\": \"some text\", \"group_id\": 1, \"readonly\": true, \"required\": true, \"description\": \"type text + all attributes\", \"blank_value_on_duplicate\": true}, \"Type experiment\": {\"type\": \"experiments\", \"value\": 373, \"group_id\": 3, \"description\": \"This is a link to an experiment\"}, \"Number with units\": {\"type\": \"number\", \"unit\": \"mM\", \"units\": [\"mM\", \"\u03bcM\", \"nM\"], \"value\": \"\", \"group_id\": 2, \"description\": \"this one has units\"}, \"Unchecked checkbox\": {\"type\": \"checkbox\", \"value\": \"\", \"group_id\": 2, \"description\": \"this one is not checked\"}, \"Multi dropdown menu\": {\"type\": \"select\", \"value\": \"Option 1\", \"options\": [\"Option 1\", \"Option 2\", \"Option 3\"], \"group_id\": 1, \"description\": \"Allows multiple selection\", \"allow_multi_values\": true}}}"
         },
         {
           "@type": "PropertyValue",
+          "@id": "pv://1d050336-5f3e-4a6d-9d2e-93f438b174b0",
+          "propertyID": "Number",
+          "valueReference": "number",
+          "value": "",
+          "description": "no units"
+        },
+        {
+          "@type": "PropertyValue",
+          "@id": "pv://3caa995f-86c3-4a0a-ac00-8d76fb1aef63",
           "propertyID": "Type URL",
           "valueReference": "url",
           "value": "https://www.elabftw.net",
@@ -257,6 +189,7 @@ Here is a correspondance between concepts in eLabFTW and how they are translated
         },
         {
           "@type": "PropertyValue",
+          "@id": "pv://837914e5-9053-4c7d-b964-94e4fe7e39a9",
           "propertyID": "Just time",
           "valueReference": "time",
           "value": "17:00",
@@ -264,6 +197,7 @@ Here is a correspondance between concepts in eLabFTW and how they are translated
         },
         {
           "@type": "PropertyValue",
+          "@id": "pv://9db67b42-7a10-42e8-abac-276f0f06a49e",
           "propertyID": "Some date",
           "valueReference": "date",
           "value": "2024-07-14",
@@ -271,6 +205,7 @@ Here is a correspondance between concepts in eLabFTW and how they are translated
         },
         {
           "@type": "PropertyValue",
+          "@id": "pv://4cd8f56b-dce8-4a9c-b08f-f10574d65966",
           "propertyID": "Type user",
           "valueReference": "users",
           "value": 1,
@@ -278,6 +213,7 @@ Here is a correspondance between concepts in eLabFTW and how they are translated
         },
         {
           "@type": "PropertyValue",
+          "@id": "pv://0ec8ad17-3ea7-4315-9609-2d6f4f34c234",
           "propertyID": "A checkbox",
           "valueReference": "checkbox",
           "value": "on",
@@ -285,6 +221,7 @@ Here is a correspondance between concepts in eLabFTW and how they are translated
         },
         {
           "@type": "PropertyValue",
+          "@id": "pv://1000a24f-5e1a-4417-a80d-006aefdb184b",
           "propertyID": "Email input",
           "valueReference": "email",
           "value": "louis@example.com",
@@ -292,6 +229,7 @@ Here is a correspondance between concepts in eLabFTW and how they are translated
         },
         {
           "@type": "PropertyValue",
+          "@id": "pv://6122898f-f361-48e5-9ec1-9a160c60237d",
           "propertyID": "Date and time",
           "valueReference": "datetime-local",
           "value": "2024-07-14T13:37",
@@ -299,6 +237,7 @@ Here is a correspondance between concepts in eLabFTW and how they are translated
         },
         {
           "@type": "PropertyValue",
+          "@id": "pv://a34a086f-1b4e-4d40-9f98-550b18eb82e4",
           "propertyID": "Radio buttons",
           "valueReference": "radio",
           "value": "Oui",
@@ -306,6 +245,7 @@ Here is a correspondance between concepts in eLabFTW and how they are translated
         },
         {
           "@type": "PropertyValue",
+          "@id": "pv://1c245f73-7e95-4ee9-bc4c-799548eb3f64",
           "propertyID": "Type resource",
           "valueReference": "items",
           "value": 208,
@@ -313,6 +253,7 @@ Here is a correspondance between concepts in eLabFTW and how they are translated
         },
         {
           "@type": "PropertyValue",
+          "@id": "pv://dcda3edb-8ad1-4004-9df9-e918f5621463",
           "propertyID": "A dropdown menu",
           "valueReference": "select",
           "value": "Choice 1",
@@ -320,6 +261,7 @@ Here is a correspondance between concepts in eLabFTW and how they are translated
         },
         {
           "@type": "PropertyValue",
+          "@id": "pv://44f7d8c3-0ea9-4821-8c4f-4599b9871845",
           "propertyID": "Text input name",
           "valueReference": "text",
           "value": "some text",
@@ -327,39 +269,50 @@ Here is a correspondance between concepts in eLabFTW and how they are translated
         },
         {
           "@type": "PropertyValue",
+          "@id": "pv://cb66bd05-cf5f-4275-b51c-cb521e15f787",
           "propertyID": "Type experiment",
           "valueReference": "experiments",
-          "value": 202,
+          "value": 373,
           "description": "This is a link to an experiment"
         },
         {
           "@type": "PropertyValue",
+          "@id": "pv://bf6b3312-2fb1-4586-b3c6-3cc63c7cf4ee",
+          "propertyID": "Number with units",
+          "valueReference": "number",
+          "value": "",
+          "description": "this one has units",
+          "unitText": "mM"
+        },
+        {
+          "@type": "PropertyValue",
+          "@id": "pv://13d55443-70d1-4e64-8f3c-947c81234827",
+          "propertyID": "Unchecked checkbox",
+          "valueReference": "checkbox",
+          "value": "",
+          "description": "this one is not checked"
+        },
+        {
+          "@type": "PropertyValue",
+          "@id": "pv://24a46ae0-6d03-44d2-a1c4-cf49f0ff152a",
           "propertyID": "Multi dropdown menu",
           "valueReference": "select",
           "value": "Option 1",
           "description": "Allows multiple selection"
         }
-      ],
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": 4,
-        "reviewCount": 1
-      }
+      ]
     },
     {
       "@id": "./",
-      "identifier": "89b86e75-93d6-4a9e-9466-d3d04facf7c1",
+      "identifier": "afae56c6-71dd-4b1a-9853-dd705ec4b262",
       "@type": "Dataset",
-      "datePublished": "2025-01-23T11:35:52+01:00",
+      "datePublished": "2025-01-25T20:59:40+01:00",
       "hasPart": [
         {
-          "@id": "./Project-CRYPTO-COOL - Gold-master-experiment - 2cb6677a/"
+          "@id": "./Project-CRYPTO-COOL - Gold-master-experiment - 739ba7c9/"
         },
         {
-          "@id": "./Cell-biology - Laborum-est-accusantium-ullam-quis-et-sed - 7b6f582f/"
-        },
-        {
-          "@id": "./RD - Ut-aut-sint-aliquam-nobis-ipsa-adipisci - c6a5262b/"
+          "@id": "./Demo - Quidem-laboriosam-deserunt-voluptatum-molestiae-qui - 9ec59773/"
         }
       ],
       "name": "eLabFTW export",
@@ -374,13 +327,6 @@ Here is a correspondance between concepts in eLabFTW and how they are translated
       "givenName": "Toto",
       "familyName": "Le sysadmin",
       "email": "toto@yopmail.com"
-    },
-    {
-      "@id": "person://16fe8e900225c4a6e17c165b3de0f032c8d55d87ec81e2d36aed201794650e76?hash_algo=sha256",
-      "@type": "Person",
-      "givenName": "Wayne",
-      "familyName": "Padberg",
-      "email": "demo@elabftw.net"
     }
   ]
 }
