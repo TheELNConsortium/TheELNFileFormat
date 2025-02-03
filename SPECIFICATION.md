@@ -15,6 +15,8 @@ Inside a .eln file, there MUST be a single folder that will contain the rest of 
 
 Inside that root folder, there MUST be a file named `ro-crate-metadata.json`. This file follows the [RO-Crate 1.1+ Specification](https://w3id.org/ro/crate/1.1).
 
+The root folder MAY also contain a `ro-crate-metadata.json.minisig` signature file as described below.
+
 The rest of the archive is composed of 0 or more folders that each describe one experiment or coherent set of data. Thus, the ELN archive can accommodate one or several experimental set of data.
 
 Example for file: some-data.eln
@@ -23,6 +25,7 @@ Example for file: some-data.eln
 <root>
   some-data.eln/
     - ro-crate-metadata.json
+    - ro-crate-metadata.json.minisig
     - experimentA/:
       - index.json
       - image.tif
@@ -203,6 +206,12 @@ Here we show three nodes, the Dataset (main experiment), a Comment and a Person.
 ### Going further
 
 See the [RO-Crate website](https://www.researchobject.org/ro-crate/1.1/data-entities.html#example-linking-to-a-file-and-folders).
+
+## Signed .eln files
+
+If the root folder contains a  `ro-crate-metadata.json.minisig` file, it must be a valid [minisign](https://jedisct1.github.io/minisign/) signature file for `ro-crate-metadata.json`. The trusted comment of the signature file SHOULD be set to a URL in the format of `https://<domain_of_the_exporting_eln>/.well-known/keys.json`.
+
+The exporting ELN SHOULD serve a file at that URL, which contains a JSON array containing one or multiple schema.org `MediaObject` objects with the `encodingFormat` set to `"application/x-minisign-key"` and a `contentUrl` containing the URL of a public key used by that ELN for signing its .eln files. An importing ELN can use these public keys to try to verify the signature file.
 
 ## Concrete examples files
 
