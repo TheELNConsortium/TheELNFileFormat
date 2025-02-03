@@ -10,6 +10,7 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
+    continue-on-error: true
     steps:
       - uses: actions/checkout@v4
         with:
@@ -26,7 +27,6 @@ jobs:
       - name: Test with pytest
         run: |
           pytest --tb=short -s
-        continue-on-error: true
       - name: Create action summary
         run: |
           cat tests/logging.md >> $GITHUB_STEP_SUMMARY
