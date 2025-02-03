@@ -38,7 +38,7 @@ class Test_1(unittest.TestCase):
                 if not name.endswith('.eln'):
                   continue
                 fileName = os.path.join(root, name)
-                print(f'\nInspect: {name}')
+                print(f'\nTest 02: {name}')
                 with ZipFile(fileName, 'r', compression=ZIP_DEFLATED) as elnFile:
                     metadataJsonFile = [i for i in elnFile.namelist() if i.endswith(METADATA_FILE)][0]
                     metadataContent = json.loads(elnFile.read(metadataJsonFile))

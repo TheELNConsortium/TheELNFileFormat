@@ -28,7 +28,7 @@ class Test_2(unittest.TestCase):
                     individualFileName = Path(filename).parts[2]
                     if len(individualFileName)>30:
                         individualFileName=individualFileName[:24]+'...eln'
-                    resultStr   = ' | '.join([':white_check_mark:' if result[col] else ':x:' for col in COLUMNS])
+                    resultStr   = ' | '.join([':white_check_mark:' if col in result and result[col] else ':x:' for col in COLUMNS])
                     output.write(f'| {software} | {individualFileName} | {resultStr} |\n')
                 output.write("\n\nDefinition of tests\n")
                 output.write("- **pypi_rocrate**: tests if eln-file can be opened by pypi's rocrate; if eln file can be easily opened by that library.\n")
