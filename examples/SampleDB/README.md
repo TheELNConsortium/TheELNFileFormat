@@ -70,8 +70,8 @@ Each export contains one or more SampleDB objects, identified by their ID, with 
       "sdPublisher": {
         "@id": "SampleDB"
       },
-      "version": "1.0",
-      "dateCreated": "2024-12-05T13:55:04.691824"
+      "version": "1.1",
+      "dateCreated": "2025-02-04T08:08:05.270274"
     },
     {
       "@id": "./",
@@ -81,7 +81,7 @@ Each export contains one or more SampleDB objects, identified by their ID, with 
       "license": {
         "@id": "./license"
       },
-      "datePublished": "2024-12-05T13:55:04.691824",
+      "datePublished": "2025-02-04T08:08:05.270274",
       "hasPart": [
         {
           "@id": "./objects/7/"
@@ -127,7 +127,7 @@ Each export contains one or more SampleDB objects, identified by their ID, with 
       "name": "Comment"
     },
     {
-      "value": "2024-12-05T13:53:37.000000",
+      "value": "2025-02-04T08:01:07.000000",
       "@type": "PropertyValue",
       "@id": "./objects/7/properties/datetime",
       "propertyID": "datetime",
@@ -139,8 +139,8 @@ Each export contains one or more SampleDB objects, identified by their ID, with 
       "identifier": "7",
       "name": "Measurement",
       "description": "Object #7",
-      "dateCreated": "2024-12-05T13:53:37.804136",
-      "dateModified": "2024-12-05T13:53:37.804136",
+      "dateCreated": "2025-02-04T08:01:07.545532",
+      "dateModified": "2025-02-04T08:01:07.545532",
       "author": {
         "@id": "./users/3"
       },
@@ -166,6 +166,9 @@ Each export contains one or more SampleDB objects, identified by their ID, with 
         "@id": "./objects/1/"
       },
       "comment": [],
+      "isBasedOn": {
+        "@id": "./objects/7/versions/0/"
+      },
       "hasPart": [
         {
           "@id": "./objects/7/versions/0/"
@@ -199,7 +202,7 @@ Each export contains one or more SampleDB objects, identified by their ID, with 
       "name": "Comment"
     },
     {
-      "value": "2024-12-05T13:53:37.000000",
+      "value": "2025-02-04T08:01:07.000000",
       "@type": "PropertyValue",
       "@id": "./objects/7/versions/0/properties/datetime",
       "propertyID": "datetime",
@@ -210,7 +213,7 @@ Each export contains one or more SampleDB objects, identified by their ID, with 
       "@type": "Dataset",
       "name": "Measurement",
       "description": "Object #7 version #0",
-      "dateCreated": "2024-12-05T13:53:37.804136",
+      "dateCreated": "2025-02-04T08:01:07.545532",
       "creator": {
         "@id": "./users/3"
       },
@@ -257,7 +260,7 @@ Each export contains one or more SampleDB objects, identified by their ID, with 
       "name": "data.json",
       "encodingFormat": "application/json",
       "contentSize": "551",
-      "sha256": "dd65aacc6f37b32a7593719d79a7e40ce5dc9af25d9447368fd0dc0876e5d6e3"
+      "sha256": "0c9c90898b2b97ca8deabf889fac32a34d7336e66484037075ba77b82b2cd320"
     },
     {
       "@id": "./objects/7/files.json",
@@ -585,8 +588,8 @@ Each export contains one or more SampleDB objects, identified by their ID, with 
       "identifier": "1",
       "name": "OMBE-1",
       "description": "Object #1",
-      "dateCreated": "2024-12-05T13:53:37.200969",
-      "dateModified": "2024-12-05T13:53:37.200969",
+      "dateCreated": "2025-02-04T08:01:06.965224",
+      "dateModified": "2025-02-04T08:01:06.965224",
       "author": {
         "@id": "./users/2"
       },
@@ -721,6 +724,9 @@ Each export contains one or more SampleDB objects, identified by their ID, with 
           "@id": "./objects/1/comments/2"
         }
       ],
+      "isBasedOn": {
+        "@id": "./objects/1/versions/0/"
+      },
       "hasPart": [
         {
           "@id": "./objects/1/versions/0/"
@@ -1053,7 +1059,7 @@ Each export contains one or more SampleDB objects, identified by their ID, with 
       "@type": "Dataset",
       "name": "OMBE-1",
       "description": "Object #1 version #0",
-      "dateCreated": "2024-12-05T13:53:37.200969",
+      "dateCreated": "2025-02-04T08:01:06.965224",
       "creator": {
         "@id": "./users/2"
       },
@@ -1216,7 +1222,7 @@ Each export contains one or more SampleDB objects, identified by their ID, with 
       "author": {
         "@id": "./users/2"
       },
-      "dateCreated": "2024-12-05T13:53:37.387382",
+      "dateCreated": "2025-02-04T08:01:07.075820",
       "text": "This comment is very long. This comment is very long. This comment is very long. This comment is very long. This comment is very long. This comment is very long. This comment is very long. This comment is very long. This comment is very long. This comment is very long. This comment is very long. This comment is very long. This comment is very long. This comment is very long. This comment is very long. This comment is very long. This comment is very long. This comment is very long. This comment is very long. This comment is very long. \nThis comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. \n\nThis comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. "
     },
     {
@@ -1228,7 +1234,7 @@ Each export contains one or more SampleDB objects, identified by their ID, with 
       "author": {
         "@id": "./users/2"
       },
-      "dateCreated": "2024-12-05T13:53:37.398094",
+      "dateCreated": "2025-02-04T08:01:07.087748",
       "text": "This is another, shorter comment"
     },
     {
@@ -1238,7 +1244,7 @@ Each export contains one or more SampleDB objects, identified by their ID, with 
       "name": "files.json",
       "encodingFormat": "application/json",
       "contentSize": "763",
-      "sha256": "03ea47ba3194e8c08f256619090f543a356bcd06474e78c84e4ea5362251ae07"
+      "sha256": "f370ef736f0ce114d4b0fdd762c6edd96ba107de7baef795b74df60cf5ba5cdd"
     },
     {
       "@id": "./objects/1/files/0/example.txt",
@@ -1248,7 +1254,7 @@ Each export contains one or more SampleDB objects, identified by their ID, with 
       "author": {
         "@id": "./users/2"
       },
-      "dateCreated": "2024-12-05T13:53:37.411735",
+      "dateCreated": "2025-02-04T08:01:07.102037",
       "encodingFormat": "text/plain",
       "contentSize": "17",
       "contentUrl": "http://localhost:5000/objects/1/files/0",
@@ -1262,7 +1268,7 @@ Each export contains one or more SampleDB objects, identified by their ID, with 
       "author": {
         "@id": "./users/2"
       },
-      "dateCreated": "2024-12-05T13:53:37.426271",
+      "dateCreated": "2025-02-04T08:01:07.117063",
       "encodingFormat": "image/png",
       "contentSize": "9952",
       "contentUrl": "http://localhost:5000/objects/1/files/1",
