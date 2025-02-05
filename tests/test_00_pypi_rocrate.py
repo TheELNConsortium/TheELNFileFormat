@@ -35,7 +35,7 @@ class Test_1(unittest.TestCase):
                 if not name.endswith('.eln'):
                   continue
                 fileName = os.path.join(root, name)
-                print(f'\n\nTry to parse: {fileName}')
+                print(f'\n\nTest 00: {fileName}')
                 with ZipFile(fileName, 'r', compression=ZIP_DEFLATED) as elnFile:
                     dirName = os.path.splitext(os.path.basename(fileName))[0]
                     try:

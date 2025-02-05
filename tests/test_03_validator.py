@@ -5,14 +5,13 @@ https://pypi.org/project/rocrate/
 """
 import os
 import json
+import logging
 import tempfile
 import unittest
 from pathlib import Path
 from zipfile import ZIP_DEFLATED
 from zipfile import ZipFile
-import rocrate_validator
-from rocrate_validator.errors import ValidationError
-import rocrate_validator.services as rvs
+from rocrate_validator import services, models
 
 LABEL = 'validator'
 METADATA_FILE = 'ro-crate-metadata.json'
@@ -26,6 +25,7 @@ class Test_1(unittest.TestCase):
         main function
         """
         # log-file
+        logging.getLogger('rdflib').setLevel(logging.ERROR) # get rid of verbose rdflib warnings, we concentrate on validator directly
         if Path('tests/logging.json').exists():
             logJson = json.load(open('tests/logging.json'))
         else:
@@ -36,30 +36,28 @@ class Test_1(unittest.TestCase):
                 if not name.endswith('.eln'):
                   continue
                 fileName = os.path.join(root, name)
-                print(f'\n\nTry to parse: {fileName}')
+                print(f'\n\nTest 03: {fileName}')
                 with ZipFile(fileName, 'r', compression=ZIP_DEFLATED) as elnFile:
                     dirpath = Path(tempfile.mkdtemp())/Path(fileName).parent.name
                     dirpath.mkdir(parents=True, exist_ok=True)
                     elnFile.extractall(dirpath)
                     rocrate_dir= [i for i in dirpath.iterdir() if i.is_dir()][0]
-                    result = rvs.validate({
-                        "profiles_path": rocrate_validator.utils.get_profiles_path(),
-                        "profile_identifier": "ro-crate",
-                        "requirement_severity": rocrate_validator.models.Severity.REQUIRED.name,
-                        "requirement_severity_only": False,
-                        "inherit_profiles": True,
-                        "verbose": True,
-                        "data_path": rocrate_dir,
-                        "ontology_path": None,
-                        "abort_on_first": False
-                        })
-                    result_dict = result.to_dict()
-                    if result_dict['issues'] == [] and result_dict['passed']:
+
+                    # start validation
+                    settings = services.ValidationSettings(
+                        rocrate_uri=rocrate_dir,
+                        profile_identifier='ro-crate-1.1',
+                        requirement_severity=models.Severity.REQUIRED,
+                    )
+                    result = services.validate(settings)
+                    if not result.has_issues():
                         success = True
                     else:
                         print(f'{fileName} is not valid')
-                        print(result_dict)
+                        for issue in result.get_issues():
+                            print(f"Detected issue of severity {issue.severity.name} with check \"{issue.check.identifier}\": {issue.message}")
                         success = False
+
                 logJson[fileName] = logJson.get(fileName,{}) | {LABEL: success}
             json.dump(logJson, open('tests/logging.json', 'w'))
         assert success
