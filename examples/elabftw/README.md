@@ -44,7 +44,7 @@ Here is a correspondance between concepts in eLabFTW and how they are translated
       "conformsTo": {
         "@id": "https://w3id.org/ro/crate/1.2"
       },
-      "dateCreated": "2025-08-05T10:03:49+02:00",
+      "dateCreated": "2025-08-05T10:12:28+02:00",
       "sdPublisher": {
         "@id": "#publisher"
       },
@@ -78,7 +78,7 @@ Here is a correspondance between concepts in eLabFTW and how they are translated
         "@id": "./"
       },
       "name": "RO-Crate created",
-      "endTime": "2025-08-05T10:03:49+02:00",
+      "endTime": "2025-08-05T10:12:28+02:00",
       "instrument": {
         "@id": "https://www.elabftw.net"
       },
@@ -94,7 +94,7 @@ Here is a correspondance between concepts in eLabFTW and how they are translated
       "identifier": "https://www.elabftw.net"
     },
     {
-      "@id": "comment://f23db3f9ec63b68a75e4a654b2b8d6a17101c2471376db454bc15b45d336f39f?hash_algo=sha256",
+      "@id": "comment://45ba73668ad9839f855dcc1e8124ae8c4d75b132abeb1aef2b06c4e848cbdad7?hash_algo=sha256",
       "@type": "Comment",
       "dateCreated": "2025-08-05T09:56:17+02:00",
       "text": "Well, it's always reassuring to know that scientists are spending their time and our tax dollars discovering what the rest of us already learned in third-grade science class.",
@@ -103,7 +103,7 @@ Here is a correspondance between concepts in eLabFTW and how they are translated
       }
     },
     {
-      "@id": "comment://72b5ffaae7d3bb9f27467b6332337e2368fb20efa9ab1b44f9474c18b5d3d128?hash_algo=sha256",
+      "@id": "comment://c5eff5450d390eede1b690d1e1a5b446abf6cd9c6602d6438d715132be759497?hash_algo=sha256",
       "@type": "Comment",
       "dateCreated": "2025-08-05T10:03:44+02:00",
       "text": "Signed by Edgardo Murphy (Approval)",
@@ -188,10 +188,10 @@ Here is a correspondance between concepts in eLabFTW and how they are translated
       "alternateName": 1,
       "comment": [
         {
-          "@id": "comment://f23db3f9ec63b68a75e4a654b2b8d6a17101c2471376db454bc15b45d336f39f?hash_algo=sha256"
+          "@id": "comment://45ba73668ad9839f855dcc1e8124ae8c4d75b132abeb1aef2b06c4e848cbdad7?hash_algo=sha256"
         },
         {
-          "@id": "comment://72b5ffaae7d3bb9f27467b6332337e2368fb20efa9ab1b44f9474c18b5d3d128?hash_algo=sha256"
+          "@id": "comment://c5eff5450d390eede1b690d1e1a5b446abf6cd9c6602d6438d715132be759497?hash_algo=sha256"
         }
       ],
       "creativeWorkStatus": "Success",
@@ -216,20 +216,21 @@ Here is a correspondance between concepts in eLabFTW and how they are translated
       },
       "variableMeasured": [
         {
+          "@id": "pv://a7a9218f-6212-4008-a93c-6f28e86b1956",
           "propertyID": "elabftw_metadata",
           "description": "eLabFTW metadata JSON as string",
           "value": "{\"extra_fields\": {\"Raw data URL\": {\"type\": \"url\", \"value\": \"https://datalake.example.com/experiments/3921\"}, \"Annie, are you okay\": {\"type\": \"checkbox\", \"value\": \"\", \"description\": \"This is a checkbox custom input\"}, \"This is a custom list input\": {\"type\": \"select\", \"value\": \"Some choice\", \"options\": [\"Some choice\", \"Another choice\", \"A third choice\"], \"description\": \"The value is selected from a pre-defined list\"}}}"
         },
         {
           "@type": "PropertyValue",
-          "@id": "pv://e348670f-139c-4ce7-a0e7-acfe381a5084",
+          "@id": "pv://5b4f703b-c282-4426-b824-33f2cb0dcd1f",
           "propertyID": "Raw data URL",
           "valueReference": "url",
           "value": "https://datalake.example.com/experiments/3921"
         },
         {
           "@type": "PropertyValue",
-          "@id": "pv://345af48e-d792-45f0-b50f-cebe8b3e242b",
+          "@id": "pv://8e9432fb-0a62-4a93-8ca0-2f82aceb7d50",
           "propertyID": "This is a custom list input",
           "valueReference": "select",
           "value": "Some choice",
@@ -269,9 +270,9 @@ Here is a correspondance between concepts in eLabFTW and how they are translated
     },
     {
       "@id": "./",
-      "identifier": "a46b3b20-d300-40c6-aef0-25b38c079088",
+      "identifier": "57a7873e-9e40-4d46-aae6-5a5aabed1752",
       "@type": "Dataset",
-      "datePublished": "2025-08-05T10:03:49+02:00",
+      "datePublished": "2025-08-05T10:12:28+02:00",
       "hasPart": [
         {
           "@id": "./Demo - Testing-the-eLabFTW-lab-notebook - b16abd04/"
