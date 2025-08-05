@@ -44,7 +44,7 @@ Here is a correspondance between concepts in eLabFTW and how they are translated
       "conformsTo": {
         "@id": "https://w3id.org/ro/crate/1.2"
       },
-      "dateCreated": "2025-08-05T10:12:28+02:00",
+      "dateCreated": "2025-08-05T10:28:44+02:00",
       "sdPublisher": {
         "@id": "#publisher"
       },
@@ -78,7 +78,7 @@ Here is a correspondance between concepts in eLabFTW and how they are translated
         "@id": "./"
       },
       "name": "RO-Crate created",
-      "endTime": "2025-08-05T10:12:28+02:00",
+      "endTime": "2025-08-05T10:28:44+02:00",
       "instrument": {
         "@id": "https://www.elabftw.net"
       },
@@ -94,7 +94,7 @@ Here is a correspondance between concepts in eLabFTW and how they are translated
       "identifier": "https://www.elabftw.net"
     },
     {
-      "@id": "comment://45ba73668ad9839f855dcc1e8124ae8c4d75b132abeb1aef2b06c4e848cbdad7?hash_algo=sha256",
+      "@id": "comment://cc3b5e6d6b3af9964d63209707143264291fc54d816485f4d3801b4bf85ab2f0?hash_algo=sha256",
       "@type": "Comment",
       "dateCreated": "2025-08-05T09:56:17+02:00",
       "text": "Well, it's always reassuring to know that scientists are spending their time and our tax dollars discovering what the rest of us already learned in third-grade science class.",
@@ -103,7 +103,7 @@ Here is a correspondance between concepts in eLabFTW and how they are translated
       }
     },
     {
-      "@id": "comment://c5eff5450d390eede1b690d1e1a5b446abf6cd9c6602d6438d715132be759497?hash_algo=sha256",
+      "@id": "comment://e65b273bb1eee7508acdd3f324f90867b64cb882a8c53120d6dd1cbd9622b117?hash_algo=sha256",
       "@type": "Comment",
       "dateCreated": "2025-08-05T10:03:44+02:00",
       "text": "Signed by Edgardo Murphy (Approval)",
@@ -188,10 +188,10 @@ Here is a correspondance between concepts in eLabFTW and how they are translated
       "alternateName": 1,
       "comment": [
         {
-          "@id": "comment://45ba73668ad9839f855dcc1e8124ae8c4d75b132abeb1aef2b06c4e848cbdad7?hash_algo=sha256"
+          "@id": "comment://cc3b5e6d6b3af9964d63209707143264291fc54d816485f4d3801b4bf85ab2f0?hash_algo=sha256"
         },
         {
-          "@id": "comment://c5eff5450d390eede1b690d1e1a5b446abf6cd9c6602d6438d715132be759497?hash_algo=sha256"
+          "@id": "comment://e65b273bb1eee7508acdd3f324f90867b64cb882a8c53120d6dd1cbd9622b117?hash_algo=sha256"
         }
       ],
       "creativeWorkStatus": "Success",
@@ -216,21 +216,21 @@ Here is a correspondance between concepts in eLabFTW and how they are translated
       },
       "variableMeasured": [
         {
-          "@id": "pv://a7a9218f-6212-4008-a93c-6f28e86b1956",
+          "@id": "pv://342aa653-fa55-4098-95f2-e023ddc110ef",
           "propertyID": "elabftw_metadata",
           "description": "eLabFTW metadata JSON as string",
           "value": "{\"extra_fields\": {\"Raw data URL\": {\"type\": \"url\", \"value\": \"https://datalake.example.com/experiments/3921\"}, \"Annie, are you okay\": {\"type\": \"checkbox\", \"value\": \"\", \"description\": \"This is a checkbox custom input\"}, \"This is a custom list input\": {\"type\": \"select\", \"value\": \"Some choice\", \"options\": [\"Some choice\", \"Another choice\", \"A third choice\"], \"description\": \"The value is selected from a pre-defined list\"}}}"
         },
         {
           "@type": "PropertyValue",
-          "@id": "pv://5b4f703b-c282-4426-b824-33f2cb0dcd1f",
+          "@id": "pv://f34bc443-0987-4bd6-bff8-d9f4e12912d8",
           "propertyID": "Raw data URL",
           "valueReference": "url",
           "value": "https://datalake.example.com/experiments/3921"
         },
         {
           "@type": "PropertyValue",
-          "@id": "pv://8e9432fb-0a62-4a93-8ca0-2f82aceb7d50",
+          "@id": "pv://8a7ddce1-7aaa-4689-a385-becf18c5a736",
           "propertyID": "This is a custom list input",
           "valueReference": "select",
           "value": "Some choice",
@@ -238,12 +238,14 @@ Here is a correspondance between concepts in eLabFTW and how they are translated
         }
       ],
       "aggregateRating": {
+        "@id": "rating://a54933be-5f3d-4352-829b-ddac01d6a609",
         "@type": "AggregateRating",
         "ratingValue": 5,
         "reviewCount": 1
       },
       "step": [
         {
+          "@id": "howtostep://cb4d35c0-eb1a-440f-9d20-046c63fdd57b",
           "@type": "HowToStep",
           "position": 1,
           "creativeWorkStatus": "finished",
@@ -256,6 +258,7 @@ Here is a correspondance between concepts in eLabFTW and how they are translated
           ]
         },
         {
+          "@id": "howtostep://f3070529-b304-42b1-84d1-88d657857713",
           "@type": "HowToStep",
           "position": 2,
           "creativeWorkStatus": "unfinished",
@@ -270,9 +273,9 @@ Here is a correspondance between concepts in eLabFTW and how they are translated
     },
     {
       "@id": "./",
-      "identifier": "57a7873e-9e40-4d46-aae6-5a5aabed1752",
+      "identifier": "29c50644-09f7-45d9-8451-ec2a3a9c91dc",
       "@type": "Dataset",
-      "datePublished": "2025-08-05T10:12:28+02:00",
+      "datePublished": "2025-08-05T10:28:44+02:00",
       "hasPart": [
         {
           "@id": "./Demo - Testing-the-eLabFTW-lab-notebook - b16abd04/"
@@ -286,7 +289,7 @@ Here is a correspondance between concepts in eLabFTW and how they are translated
       ],
       "name": "eLabFTW export",
       "description": "This is a .eln export from eLabFTW",
-      "version": 102,
+      "version": "102",
       "license": {
         "@id": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
       }
