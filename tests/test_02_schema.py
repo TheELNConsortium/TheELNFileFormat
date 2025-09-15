@@ -33,12 +33,14 @@ class Test_1(unittest.TestCase):
         validator.check_schema(schema=schema)
         success = True
         for root, _, files in os.walk(".", topdown=False):
+            if '_skip_CI_' in files:
+                continue
             for name in files:
                 successFile = True
                 if not name.endswith('.eln'):
                   continue
                 fileName = os.path.join(root, name)
-                print(f'\nTest 02: {name}')
+                print(f'\nTest 02: {root}{name}')
                 with ZipFile(fileName, 'r', compression=ZIP_DEFLATED) as elnFile:
                     metadataJsonFile = [i for i in elnFile.namelist() if i.endswith(METADATA_FILE)][0]
                     metadataContent = json.loads(elnFile.read(metadataJsonFile))

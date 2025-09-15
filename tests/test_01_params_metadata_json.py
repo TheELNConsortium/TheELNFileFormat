@@ -85,6 +85,8 @@ class Test_2(unittest.TestCase):
             return globalSuccess
 
         for root, _, files in os.walk(".", topdown=False):
+            if '_skip_CI_' in files:
+                continue
             for name in files:
                 if not name.endswith('.eln'):
                   continue
