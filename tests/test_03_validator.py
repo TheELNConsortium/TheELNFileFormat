@@ -33,7 +33,7 @@ class Test_1(unittest.TestCase):
 
         for root, _, files in os.walk(".", topdown=False):
             for name in files:
-                if '_skip_CI_' in files:
+                if 'SKIP_CI' in files:
                     continue
                 if not name.endswith('.eln'):
                   continue

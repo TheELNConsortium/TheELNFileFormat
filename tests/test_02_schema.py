@@ -33,7 +33,7 @@ class Test_1(unittest.TestCase):
         validator.check_schema(schema=schema)
         success = True
         for root, _, files in os.walk(".", topdown=False):
-            if '_skip_CI_' in files:
+            if 'SKIP_CI' in files:
                 continue
             for name in files:
                 successFile = True
