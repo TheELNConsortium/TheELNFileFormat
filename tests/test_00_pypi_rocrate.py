@@ -9,8 +9,37 @@ import unittest
 from pathlib import Path
 from checks import checkPypiRocrate
 
-LABEL = 'pypi_rocrate'
-verbose = False
+def generalizedTest(checkFunction, label):
+    """
+    generalized test function to reduce code duplication
+
+    Args:
+        checkFunction: function to be tested
+        label: label to be used in logging.json
+    """
+    if Path('tests/logging.json').exists():
+        logJson = json.load(open('tests/logging.json'))
+    else:
+        logJson = {}
+    success = True
+    for root, _, files in os.walk(".", topdown=False):
+        if '_skip_CI_' in files:
+            continue
+        for name in files:
+            if not name.endswith('.eln'):
+                continue
+            fileName = os.path.join(root, name)
+            print(f'\n\nTest 00: {fileName}')
+            successI, log = checkFunction(fileName)
+            print(log)
+            if fileName not in logJson:
+                logJson[fileName] = {label:successI}
+            else:
+                logJson[fileName] = logJson[fileName] | {label:successI}
+            success = success and successI
+    json.dump(logJson, open('tests/logging.json', 'w'))
+    assert success
+
 
 class Test_1(unittest.TestCase):
     """
@@ -20,26 +49,4 @@ class Test_1(unittest.TestCase):
         """
         main function
         """
-        # log-file
-        if Path('tests/logging.json').exists():
-            logJson = json.load(open('tests/logging.json'))
-        else:
-            logJson = {}
-        success = True
-        for root, _, files in os.walk(".", topdown=False):
-            if '_skip_CI_' in files:
-                continue
-            for name in files:
-                if not name.endswith('.eln'):
-                  continue
-                fileName = os.path.join(root, name)
-                print(f'\n\nTest 00: {fileName}')
-                successI, log = checkPypiRocrate(fileName, verbose=verbose)
-                print(log)
-                if fileName not in logJson:
-                    logJson[fileName] = {LABEL:successI}
-                else:
-                    logJson[fileName] = logJson[fileName] | {LABEL:successI}
-                success = success and successI
-        json.dump(logJson, open('tests/logging.json', 'w'))
-        assert success
+        generalizedTest(checkPypiRocrate, 'pypi_rocrate')
