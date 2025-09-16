@@ -6,15 +6,11 @@ https://pypi.org/project/rocrate/
 import os
 import json
 import logging
-import tempfile
 import unittest
 from pathlib import Path
-from zipfile import ZIP_DEFLATED
-from zipfile import ZipFile
-from rocrate_validator import services, models
+from checks import checkValidator
 
 LABEL = 'validator'
-METADATA_FILE = 'ro-crate-metadata.json'
 
 class Test_1(unittest.TestCase):
     """
@@ -30,44 +26,21 @@ class Test_1(unittest.TestCase):
             logJson = json.load(open('tests/logging.json'))
         else:
             logJson = {}
-
+        success = True
         for root, _, files in os.walk(".", topdown=False):
+            if '_skip_CI_' in files:
+                continue
             for name in files:
-                if '_skip_CI_' in files:
-                    continue
                 if not name.endswith('.eln'):
                   continue
                 fileName = os.path.join(root, name)
                 print(f'\n\nTest 03: {fileName}')
-                with ZipFile(fileName, 'r', compression=ZIP_DEFLATED) as elnFile:
-                    dirpath = Path(tempfile.mkdtemp())/Path(fileName).parent.name
-                    dirpath.mkdir(parents=True, exist_ok=True)
-                    elnFile.extractall(dirpath)
-                    rocrate_dir= [i for i in dirpath.iterdir() if i.is_dir()][0]
-
-                    # short stop-gap measure because the validator currently does not support the latest ro-crate version
-                    with open(rocrate_dir/METADATA_FILE, 'r', encoding='utf-8') as f:
-                        metadata = f.read()
-                    metadata = metadata.replace('conformsTo":{"@id":"https:\/\/w3id.org\/ro\/crate\/1.2"}',
-                                                'conformsTo":{"@id":"https:\/\/w3id.org\/ro\/crate\/1.1"}')
-                    with open(rocrate_dir/METADATA_FILE, 'w', encoding='utf-8') as f:
-                        f.write(metadata)
-
-                    # start validation
-                    settings = services.ValidationSettings(
-                        rocrate_uri=rocrate_dir,
-                        profile_identifier='ro-crate-1.1',
-                        requirement_severity=models.Severity.REQUIRED,
-                    )
-                    result = services.validate(settings)
-                    if not result.has_issues():
-                        success = True
-                    else:
-                        print(f'{fileName} is not valid')
-                        for issue in result.get_issues():
-                            print(f"Detected issue of severity {issue.severity.name} with check \"{issue.check.identifier}\": {issue.message}")
-                        success = False
-
-                logJson[fileName] = logJson.get(fileName,{}) | {LABEL: success}
+                successI, log = checkValidator(fileName)
+                print(log)
+                if fileName not in logJson:
+                    logJson[fileName] = {LABEL:successI}
+                else:
+                    logJson[fileName] = logJson[fileName] | {LABEL:successI}
+                success = success and successI
             json.dump(logJson, open('tests/logging.json', 'w'))
         assert success

@@ -7,12 +7,9 @@ import os
 import json
 import unittest
 from pathlib import Path
-from zipfile import ZIP_DEFLATED
-from zipfile import ZipFile
-from jsonschema import Draft202012Validator
+from checks import checkSchema
 
 LABEL = 'schema'
-METADATA_FILE = 'ro-crate-metadata.json'
 
 class Test_1(unittest.TestCase):
     """
@@ -27,27 +24,21 @@ class Test_1(unittest.TestCase):
             logJson = json.load(open('tests/logging.json'))
         else:
             logJson = {}
-
-        schema = json.load(open('tests/schema.json', 'r', encoding='utf-8'))
-        validator = Draft202012Validator(schema=schema)
-        validator.check_schema(schema=schema)
         success = True
         for root, _, files in os.walk(".", topdown=False):
             if '_skip_CI_' in files:
                 continue
             for name in files:
-                successFile = True
                 if not name.endswith('.eln'):
                   continue
                 fileName = os.path.join(root, name)
                 print(f'\nTest 02: {root}{name}')
-                with ZipFile(fileName, 'r', compression=ZIP_DEFLATED) as elnFile:
-                    metadataJsonFile = [i for i in elnFile.namelist() if i.endswith(METADATA_FILE)][0]
-                    metadataContent = json.loads(elnFile.read(metadataJsonFile))
-                    for error in sorted(validator.iter_errors(metadataContent), key=str):
-                        print(f'- {error.message}')
-                        success = False
-                        successFile = False
-                logJson[fileName] = logJson.get(fileName,{}) | {LABEL: successFile}
+                successI, log = checkSchema(fileName)
+                print(log)
+                if fileName not in logJson:
+                    logJson[fileName] = {LABEL:successI}
+                else:
+                    logJson[fileName] = logJson[fileName] | {LABEL:successI}
+                success = success and successI
         json.dump(logJson, open('tests/logging.json', 'w'))
         assert success

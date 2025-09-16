@@ -5,12 +5,9 @@ https://pypi.org/project/rocrate/
 """
 import os
 import json
-import unittest, traceback
-import tempfile
+import unittest
 from pathlib import Path
-from zipfile import ZIP_DEFLATED
-from zipfile import ZipFile
-from rocrate.rocrate import ROCrate
+from checks import checkPypiRocrate
 
 LABEL = 'pypi_rocrate'
 verbose = False
@@ -28,7 +25,6 @@ class Test_1(unittest.TestCase):
             logJson = json.load(open('tests/logging.json'))
         else:
             logJson = {}
-
         success = True
         for root, _, files in os.walk(".", topdown=False):
             if '_skip_CI_' in files:
@@ -38,28 +34,12 @@ class Test_1(unittest.TestCase):
                   continue
                 fileName = os.path.join(root, name)
                 print(f'\n\nTest 00: {fileName}')
-                with ZipFile(fileName, 'r', compression=ZIP_DEFLATED) as elnFile:
-                    dirName = os.path.splitext(os.path.basename(fileName))[0]
-                    try:
-                        dirpath = Path(tempfile.mkdtemp())
-                        elnFile.extractall(dirpath)
-                        tempPath= [i for i in dirpath.iterdir() if i.is_dir()][0]
-                        crate = ROCrate(tempPath)
-                        for e in crate.get_entities():
-                            if verbose:
-                                print(f'  {e.id}: {e.type}')
-                        if fileName not in logJson:
-                            logJson[fileName] = {LABEL:True}
-                        else:
-                            logJson[fileName] = logJson[fileName] | {LABEL:True}
-                    except Exception:
-                        print("  *****  ERROR: Could not parse content of this file!!  *****")
-                        print(f"  Temporary folder: ",tempPath)
-                        print(traceback.format_exc())
-                        if fileName not in logJson:
-                            logJson[fileName] = {LABEL:False}
-                        else:
-                            logJson[fileName] = logJson[fileName] | {LABEL:False}
-                        success = False
+                successI, log = checkPypiRocrate(fileName, verbose=verbose)
+                print(log)
+                if fileName not in logJson:
+                    logJson[fileName] = {LABEL:successI}
+                else:
+                    logJson[fileName] = logJson[fileName] | {LABEL:successI}
+                success = success and successI
         json.dump(logJson, open('tests/logging.json', 'w'))
         assert success
