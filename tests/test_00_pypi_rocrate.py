@@ -5,15 +5,41 @@ https://pypi.org/project/rocrate/
 """
 import os
 import json
-import unittest, traceback
-import tempfile
+import unittest
 from pathlib import Path
-from zipfile import ZIP_DEFLATED
-from zipfile import ZipFile
-from rocrate.rocrate import ROCrate
+from checks import checkPypiRocrate
 
-LABEL = 'pypi_rocrate'
-verbose = False
+def generalizedTest(checkFunction, label):
+    """
+    generalized test function to reduce code duplication
+
+    Args:
+        checkFunction: function to be tested
+        label: label to be used in logging.json
+    """
+    if Path('tests/logging.json').exists():
+        logJson = json.load(open('tests/logging.json'))
+    else:
+        logJson = {}
+    success = True
+    for root, _, files in os.walk(".", topdown=False):
+        if 'SKIP_CI' in files:
+            continue
+        for name in files:
+            if not name.endswith('.eln'):
+                continue
+            fileName = os.path.join(root, name)
+            print(f'\n\nTest 00: {fileName}')
+            successI, log = checkFunction(fileName)
+            print(log)
+            if fileName not in logJson:
+                logJson[fileName] = {label:successI}
+            else:
+                logJson[fileName] = logJson[fileName] | {label:successI}
+            success = success and successI
+    json.dump(logJson, open('tests/logging.json', 'w'))
+    assert success
+
 
 class Test_1(unittest.TestCase):
     """
@@ -23,43 +49,4 @@ class Test_1(unittest.TestCase):
         """
         main function
         """
-        # log-file
-        if Path('tests/logging.json').exists():
-            logJson = json.load(open('tests/logging.json'))
-        else:
-            logJson = {}
-
-        success = True
-        for root, _, files in os.walk(".", topdown=False):
-            if 'SKIP_CI' in files:
-                continue
-            for name in files:
-                if not name.endswith('.eln'):
-                  continue
-                fileName = os.path.join(root, name)
-                print(f'\n\nTest 00: {fileName}')
-                with ZipFile(fileName, 'r', compression=ZIP_DEFLATED) as elnFile:
-                    dirName = os.path.splitext(os.path.basename(fileName))[0]
-                    try:
-                        dirpath = Path(tempfile.mkdtemp())
-                        elnFile.extractall(dirpath)
-                        tempPath= [i for i in dirpath.iterdir() if i.is_dir()][0]
-                        crate = ROCrate(tempPath)
-                        for e in crate.get_entities():
-                            if verbose:
-                                print(f'  {e.id}: {e.type}')
-                        if fileName not in logJson:
-                            logJson[fileName] = {LABEL:True}
-                        else:
-                            logJson[fileName] = logJson[fileName] | {LABEL:True}
-                    except Exception:
-                        print("  *****  ERROR: Could not parse content of this file!!  *****")
-                        print(f"  Temporary folder: ",tempPath)
-                        print(traceback.format_exc())
-                        if fileName not in logJson:
-                            logJson[fileName] = {LABEL:False}
-                        else:
-                            logJson[fileName] = logJson[fileName] | {LABEL:False}
-                        success = False
-        json.dump(logJson, open('tests/logging.json', 'w'))
-        assert success
+        generalizedTest(checkPypiRocrate, 'pypi_rocrate')
