@@ -19,8 +19,8 @@ Its home is at: https://github.com/PASTA-ELN
       },
       "version": "1.0",
       "additionalType": "https://purl.archive.org/purl/elnconsortium/eln-spec/1.1",
-      "datePublished": "2025-09-30T13:59:39.786696",
-      "dateCreated": "2025-09-30T13:59:39.786711",
+      "datePublished": "2025-10-05T13:46:45.795150",
+      "dateCreated": "2025-10-05T13:46:45.795214",
       "sdPublisher": {
         "@id": "PASTA-ELN"
       }
@@ -35,10 +35,9 @@ Its home is at: https://github.com/PASTA-ELN
       "version": "3.2.1b1"
     },
     {
-      "@id": "affiliation_Forschungszentrum Juelich",
+      "@id": "affiliation_Forschungszentrum J\u00fclich",
       "@type": "Organization",
-      "name": "Forschungszentrum Juelich",
-      "identifier": ""
+      "name": "Forschungszentrum J\u00fclich"
     },
     {
       "@id": "author_Steffen_Brinckmann",
@@ -50,7 +49,7 @@ Its home is at: https://github.com/PASTA-ELN
       "identifier": "https://orcid.org/0000-0003-0930-082X",
       "worksFor": [
         {
-          "@id": "affiliation_Forschungszentrum Juelich"
+          "@id": "affiliation_Forschungszentrum J\u00fclich"
         }
       ]
     },
@@ -78,9 +77,6 @@ Its home is at: https://github.com/PASTA-ELN
         },
         {
           "@id": "./PastasExampleProject/002_DataFiles/"
-        },
-        {
-          "@id": "./PastasExampleProject/002_DataFiles/story.odt"
         },
         {
           "@id": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Misc_pollen.jpg/315px-Misc_pollen.jpg"
@@ -119,7 +115,7 @@ Its home is at: https://github.com/PASTA-ELN
       "name": "Exported from PASTA ELN",
       "description": "Exported content from PASTA ELN",
       "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-      "datePublished": "2025-09-30T13:59:39.786737",
+      "datePublished": "2025-10-05T13:46:45.795277",
       "creator": [
         {
           "@id": "author_Steffen_Brinckmann"
@@ -243,17 +239,6 @@ Its home is at: https://github.com/PASTA-ELN
       ],
       "@id": "./PastasExampleProject/001_ThisIsAnotherExampleTask/",
       "@type": "Dataset"
-    },
-    {
-      "encodingFormat": "text/markdown",
-      "identifier": "--7d2cf55eb1424c77be0da98bc378453c",
-      "name": "story.odt",
-      "dateCreated": "2025-09-30T13:59:35.910692",
-      "dateModified": "2025-09-30T13:59:35.910703",
-      "@id": "./PastasExampleProject/002_DataFiles/story.odt",
-      "contentSize": "8417",
-      "sha256": "c0aeebc4bdb1f4ce13cb881e70d26738bc354da855067e2bfb2dcbfd6140a730",
-      "@type": "File"
     },
     {
       "value": "w-8c030d6d07864ce58ab63efc8969234b",
@@ -462,9 +447,6 @@ Its home is at: https://github.com/PASTA-ELN
       "dateCreated": "2025-09-30T13:59:35.542559",
       "dateModified": "2025-09-30T13:59:35.542571",
       "hasPart": [
-        {
-          "@id": "./PastasExampleProject/002_DataFiles/story.odt"
-        },
         {
           "@id": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Misc_pollen.jpg/315px-Misc_pollen.jpg"
         },
