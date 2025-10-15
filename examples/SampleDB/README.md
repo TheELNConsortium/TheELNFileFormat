@@ -58,7 +58,7 @@ Each export contains one or more SampleDB objects, identified by their ID, with 
 
 ```json
 {
-  "@context": "https://w3id.org/ro/crate/1.1/context",
+  "@context": "https://w3id.org/ro/crate/1.2/context",
   "@graph": [
     {
       "@type": "CreativeWork",
@@ -68,13 +68,13 @@ Each export contains one or more SampleDB objects, identified by their ID, with 
         "@id": "./"
       },
       "conformsTo": {
-        "@id": "https://w3id.org/ro/crate/1.1"
+        "@id": "https://w3id.org/ro/crate/1.2"
       },
       "sdPublisher": {
         "@id": "SampleDB"
       },
-      "version": "1.1",
-      "dateCreated": "2025-03-24T10:45:47.651468"
+      "version": "1.2",
+      "dateCreated": "2025-10-15T14:24:28.301176"
     },
     {
       "@id": "./",
@@ -84,7 +84,7 @@ Each export contains one or more SampleDB objects, identified by their ID, with 
       "license": {
         "@id": "./license"
       },
-      "datePublished": "2025-03-24T10:45:47.651468",
+      "datePublished": "2025-10-15T14:24:28.301176",
       "hasPart": [
         {
           "@id": "./objects/7/"
@@ -130,7 +130,7 @@ Each export contains one or more SampleDB objects, identified by their ID, with 
       "name": "Comment"
     },
     {
-      "value": "2025-03-24T10:45:06.000000",
+      "value": "2025-10-15T14:24:08.000000",
       "@type": "PropertyValue",
       "@id": "./objects/7/properties/datetime",
       "propertyID": "datetime",
@@ -142,8 +142,8 @@ Each export contains one or more SampleDB objects, identified by their ID, with 
       "identifier": "7",
       "name": "Measurement",
       "description": "Object #7",
-      "dateCreated": "2025-03-24T10:45:06.073605",
-      "dateModified": "2025-03-24T10:45:06.073605",
+      "dateCreated": "2025-10-15T14:24:08.015349",
+      "dateModified": "2025-10-15T14:24:08.015349",
       "author": {
         "@id": "./users/3"
       },
@@ -205,7 +205,7 @@ Each export contains one or more SampleDB objects, identified by their ID, with 
       "name": "Comment"
     },
     {
-      "value": "2025-03-24T10:45:06.000000",
+      "value": "2025-10-15T14:24:08.000000",
       "@type": "PropertyValue",
       "@id": "./objects/7/versions/0/properties/datetime",
       "propertyID": "datetime",
@@ -216,7 +216,7 @@ Each export contains one or more SampleDB objects, identified by their ID, with 
       "@type": "Dataset",
       "name": "Measurement",
       "description": "Object #7 version #0",
-      "dateCreated": "2025-03-24T10:45:06.073605",
+      "dateCreated": "2025-10-15T14:24:08.015349",
       "creator": {
         "@id": "./users/3"
       },
@@ -263,7 +263,7 @@ Each export contains one or more SampleDB objects, identified by their ID, with 
       "name": "data.json",
       "encodingFormat": "application/json",
       "contentSize": "551",
-      "sha256": "5929c21cf240a59159d758b2fe1dec81044bee9ebed7cfd01567841eba81cbc6"
+      "sha256": "583b532a15d5ec074c60f34a7139fd74853afd6bcba7fdfe008fc74039ab8b69"
     },
     {
       "@id": "./objects/7/files.json",
@@ -591,8 +591,8 @@ Each export contains one or more SampleDB objects, identified by their ID, with 
       "identifier": "1",
       "name": "OMBE-1",
       "description": "Object #1",
-      "dateCreated": "2025-03-24T10:45:05.326280",
-      "dateModified": "2025-03-24T10:45:05.326280",
+      "dateCreated": "2025-10-15T14:24:07.502648",
+      "dateModified": "2025-10-15T14:24:07.502648",
       "author": {
         "@id": "./users/2"
       },
@@ -1062,7 +1062,7 @@ Each export contains one or more SampleDB objects, identified by their ID, with 
       "@type": "Dataset",
       "name": "OMBE-1",
       "description": "Object #1 version #0",
-      "dateCreated": "2025-03-24T10:45:05.326280",
+      "dateCreated": "2025-10-15T14:24:07.502648",
       "creator": {
         "@id": "./users/2"
       },
@@ -1225,7 +1225,7 @@ Each export contains one or more SampleDB objects, identified by their ID, with 
       "author": {
         "@id": "./users/2"
       },
-      "dateCreated": "2025-03-24T10:45:05.448202",
+      "dateCreated": "2025-10-15T14:24:07.586006",
       "text": "This comment is very long. This comment is very long. This comment is very long. This comment is very long. This comment is very long. This comment is very long. This comment is very long. This comment is very long. This comment is very long. This comment is very long. This comment is very long. This comment is very long. This comment is very long. This comment is very long. This comment is very long. This comment is very long. This comment is very long. This comment is very long. This comment is very long. This comment is very long. \nThis comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. \n\nThis comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. This comment has three paragraphs. "
     },
     {
@@ -1237,7 +1237,7 @@ Each export contains one or more SampleDB objects, identified by their ID, with 
       "author": {
         "@id": "./users/2"
       },
-      "dateCreated": "2025-03-24T10:45:05.462683",
+      "dateCreated": "2025-10-15T14:24:07.596630",
       "text": "This is another, shorter comment"
     },
     {
@@ -1247,7 +1247,7 @@ Each export contains one or more SampleDB objects, identified by their ID, with 
       "name": "files.json",
       "encodingFormat": "application/json",
       "contentSize": "763",
-      "sha256": "9986fae3ea49b08780061583d32b27f3102e2a4cbe178d03713708c6bd29a2bd"
+      "sha256": "038b920a3291f74a637a613c8adad1bab5b3489ef090059afb21bb1073db38d6"
     },
     {
       "@id": "./objects/1/files/0/example.txt",
@@ -1257,7 +1257,7 @@ Each export contains one or more SampleDB objects, identified by their ID, with 
       "author": {
         "@id": "./users/2"
       },
-      "dateCreated": "2025-03-24T10:45:05.481058",
+      "dateCreated": "2025-10-15T14:24:07.610481",
       "encodingFormat": "text/plain",
       "contentSize": "17",
       "contentUrl": "http://localhost:5000/objects/1/files/0",
@@ -1271,7 +1271,7 @@ Each export contains one or more SampleDB objects, identified by their ID, with 
       "author": {
         "@id": "./users/2"
       },
-      "dateCreated": "2025-03-24T10:45:05.507640",
+      "dateCreated": "2025-10-15T14:24:07.625764",
       "encodingFormat": "image/png",
       "contentSize": "9952",
       "contentUrl": "http://localhost:5000/objects/1/files/1",
@@ -1288,6 +1288,31 @@ Each export contains one or more SampleDB objects, identified by their ID, with 
       "@type": "Person",
       "name": "Instrument Scientist",
       "url": "http://localhost:5000/users/2"
+    },
+    {
+      "@id": "https://scientific-it-systems.iffgit.fz-juelich.de/SampleDB/",
+      "@type": "SoftwareApplication",
+      "url": "https://scientific-it-systems.iffgit.fz-juelich.de/SampleDB/",
+      "name": "SampleDB",
+      "version": "v0.32.0-4-gebff0633"
+    },
+    {
+      "@id": "#ro-crate-created",
+      "@type": "CreateAction",
+      "object": {
+        "@id": "./"
+      },
+      "name": "RO-Crate created",
+      "endTime": "2025-10-15",
+      "agent": {
+        "@id": "./users/2"
+      },
+      "instrument": {
+        "@id": "https://scientific-it-systems.iffgit.fz-juelich.de/SampleDB/"
+      },
+      "actionStatus": {
+        "@id": "http://schema.org/CompletedActionStatus"
+      }
     }
   ]
 }
@@ -1296,10 +1321,10 @@ Each export contains one or more SampleDB objects, identified by their ID, with 
 #### ro-crate-metadata.json.minisig
 
 ```
-untrusted comment: minisign signature A847AD3BB83DDFDE
-RUSoR607uD3f3riXScg7fuTX412nuMhEm9bTv4MWviOng2eq0mOetePRNNDJInDUCIdnlffsTB8W/W27PeDwqS276ZLaFtABwwo=
+untrusted comment: minisign signature 8F96805E370F6A03
+RUSPloBeNw9qA/X95JqN0gR/uEEQt5agoAppK7HD24xmognNfnf2g0/ouwRfg+eyFckdqyDkLpO3cl2a2hEfghWmSl75wgcObwI=
 trusted comment: http://localhost:5000/.well-known/keys.json
-ZV69/a4BFLNIvxaKX4LLAFL+n6+czQSnXvLNLE8rlDctxHqvb6UtbOQyJQ+AukAhXkLhoqZibVf9pga2XDd8Bw==
+p0VuIcKK7cgO+4kRO3CwYUYggdQjxDtn/ZWlautpySE9gogvzj/jC20OexvNvkJqZB7wKoP6RVnuutIrA7iKDA==
 ```
 
 #### http://localhost:5000/.well-known/keys.json
@@ -1313,7 +1338,7 @@ ZV69/a4BFLNIvxaKX4LLAFL+n6+czQSnXvLNLE8rlDctxHqvb6UtbOQyJQ+AukAhXkLhoqZibVf9pga2
     "name": "ed25519_pub_1",
     "encodingFormat": "application/x-minisign-key",
     "description": "Signing key for exported archives",
-    "dateCreated": "2025-03-24T10:45:07+00:00"
+    "dateCreated": "2025-10-15T14:24:09+00:00"
   }
 ]
 ```
@@ -1321,5 +1346,5 @@ ZV69/a4BFLNIvxaKX4LLAFL+n6+czQSnXvLNLE8rlDctxHqvb6UtbOQyJQ+AukAhXkLhoqZibVf9pga2
 #### http://localhost:5000/.well-known/keys/1
 
 ```
-RWSoR607uD3f3sMmFyX28mT+Ktb0YX5MyNaGEP8zRbEO3NDabZx8KhSr
+RWSPloBeNw9qAzY8bJ/NqB2HYgyHtTVEW5pdblTSnvvX7o4g3YVuZPxf
 ```
