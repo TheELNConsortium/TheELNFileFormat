@@ -189,8 +189,16 @@ def checkValidator(fileName):
         # short stop-gap measure because the validator currently does not support the latest ro-crate version
         with open(rocrate_dir/METADATA_FILE, 'r', encoding='utf-8') as f:
             metadata = f.read()
-        metadata = metadata.replace('conformsTo":{"@id":"https:\/\/w3id.org\/ro\/crate\/1.2"}',
-                                    'conformsTo":{"@id":"https:\/\/w3id.org\/ro\/crate\/1.1"}')
+        # SampleDB
+        metadataNode = [i for i in json.loads(metadata)['@graph'] if i['@id']==METADATA_FILE][0]
+        if metadataNode.get('sdPublisher',{}).get('@id','')=='SampleDB':
+            metadata = metadata.replace('"@id": "https://w3id.org/ro/crate/1.2"','"@id": "https://w3id.org/ro/crate/1.1"')
+        # eLabFTW
+        publisherNodes = [i for i in json.loads(metadata)['@graph'] if i['@id']=='#publisher']
+        if len(publisherNodes)==1 and publisherNodes[0].get('name','')=='eLabFTW':
+            metadata = metadata.replace('conformsTo":{"@id":"https:\/\/w3id.org\/ro\/crate\/1.2"}',
+                                        'conformsTo":{"@id":"https:\/\/w3id.org\/ro\/crate\/1.1"}')
+        # finish
         with open(rocrate_dir/METADATA_FILE, 'w', encoding='utf-8') as f:
             f.write(metadata)
 
@@ -200,7 +208,7 @@ def checkValidator(fileName):
             profile_identifier='ro-crate-1.1',
             requirement_severity=models.Severity.REQUIRED,
         )
-        result = services.validate(settings)
+        result = services.validate(settings) # this step takes time
         if result.has_issues():
             log += f'{fileName} is not valid\n'
             for issue in result.get_issues():
