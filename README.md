@@ -17,6 +17,8 @@ https://www.iana.org/assignments/media-types/application/vnd.eln+zip
 
 This file format was created for the needs of better interoperability between ELN software. So editors of these software decided it would be useful for users to have an archive format that can be easily understood by several ELNs.
 
+We have created a [myth buster FAQ](./MYTH_BUSTER_FAQ.md) that addresses recurring, incorrect criticisms of .eln.
+
 ## Status
 
 Generally working with some quirks here and there.
@@ -33,4 +35,4 @@ Generally working with some quirks here and there.
 | [NOMAD](https://nomad-lab.eu)                     | ✅ |   |     |
 | [LinkAhead](https://getlinkahead.com/)            | ✅ |   |     |
 | [OpenSemanticLab](https://github.com/OpenSemanticLab) | ✅ | ✅ | [OpenSemanticLab](https://github.com/TheELNConsortium/TheELNFileFormat/tree/master/examples/OpenSemanticLab)    |
- 
+
