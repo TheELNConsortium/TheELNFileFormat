@@ -15,9 +15,9 @@ https://www.iana.org/assignments/media-types/application/vnd.eln+zip
 
 ## Origin
 
-This file format was created for the needs of better interoperability between ELN software. So editors of these software decided it would be useful for users to have an archive format that can be easily understood by several ELNs.
+This file format was created to enable better interoperability between different ELNs. The editors of the ELN software who are members of the .eln consortium felt that it would be useful for users to have an archive format that can be easily understood by several ELNs.
 
-We have created a [myth buster FAQ](./MYTH_BUSTER_FAQ.md) that addresses recurring, incorrect criticisms of .eln.
+We have created a [FAQ](./FAQ.md) that addresses recurring, incorrect criticisms of the .eln file format.
 
 ## Status
 
