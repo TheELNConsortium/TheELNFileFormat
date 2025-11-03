@@ -1,0 +1,232 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ex: <http://example.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://schema.org/ChemicalSubstanceShape> a sh:NodeShape ;
+    sh:property ex:alternateNamePropShape,
+        ex:descriptionPropShape,
+        ex:hasBioChemEntityPartPropShape,
+        ex:identifierPropShape,
+        ex:imagePropShape,
+        ex:namePropShape,
+        ex:subjectOfPropShape,
+        ex:urlPropShape ;
+    sh:targetClass <http://schema.org/ChemicalSubstance> .
+
+<http://schema.org/CreativeWorkShape> a sh:NodeShape ;
+    sh:property ex:authorPropShape,
+        ex:namePropShape,
+        ex:urlPropShape ;
+    sh:targetClass <http://schema.org/CreativeWork> .
+
+<http://schema.org/DataCatalogShape> a sh:NodeShape ;
+    sh:property ex:contributorPropShape,
+        ex:descriptionPropShape,
+        ex:isAccessibleForFreePropShape,
+        ex:keywordsPropShape,
+        ex:licensePropShape,
+        ex:namePropShape,
+        ex:providerPropShape,
+        ex:urlPropShape ;
+    sh:targetClass <http://schema.org/DataCatalog> .
+
+<http://schema.org/DatasetShape> a sh:NodeShape ;
+    sh:property ex:authorPropShape,
+        ex:conformsToPropShape,
+        ex:creatorPropShape,
+        ex:descriptionPropShape,
+        ex:identifierPropShape,
+        ex:includedInDataCatalogPropShape,
+        ex:isPartOfPropShape,
+        ex:licensePropShape,
+        ex:measurementTechniquePropShape,
+        ex:namePropShape,
+        ex:publisherPropShape,
+        ex:urlPropShape ;
+    sh:targetClass <http://schema.org/Dataset> .
+
+<http://schema.org/DefinedTermSetShape> a sh:NodeShape ;
+    sh:property ex:namePropShape ;
+    sh:targetClass <http://schema.org/DefinedTermSet> .
+
+<http://schema.org/DefinedTermShape> a sh:NodeShape ;
+    sh:property ex:alternateNamePropShape,
+        ex:inDefinedTermSetPropShape,
+        ex:namePropShape,
+        ex:termCodePropShape,
+        ex:urlPropShape ;
+    sh:targetClass <http://schema.org/DefinedTerm> .
+
+<http://schema.org/MolecularEntityShape> a sh:NodeShape ;
+    sh:property ex:conformsToPropShape,
+        ex:inChIKeyPropShape,
+        ex:inChIPropShape,
+        ex:iupacNamePropShape,
+        ex:molecularFormulaPropShape,
+        ex:molecularWeightPropShape,
+        ex:namePropShape,
+        ex:smilesPropShape ;
+    sh:targetClass <http://schema.org/MolecularEntity> .
+
+<http://schema.org/OrganizationShape> a sh:NodeShape ;
+    sh:property ex:logoPropShape,
+        ex:namePropShape,
+        ex:urlPropShape ;
+    sh:targetClass <http://schema.org/Organization> .
+
+<http://schema.org/PersonShape> a sh:NodeShape ;
+    sh:property ex:affiliationPropShape,
+        ex:familyNamePropShape,
+        ex:givenNamePropShape,
+        ex:identifierPropShape,
+        ex:namePropShape ;
+    sh:targetClass <http://schema.org/Person> .
+
+<http://schema.org/QuantitativeValueShape> a sh:NodeShape ;
+    sh:property ex:unitCodePropShape,
+        ex:valuePropShape ;
+    sh:targetClass <http://schema.org/QuantitativeValue> .
+
+<http://schema.org/StudyShape> a sh:NodeShape ;
+    sh:property ex:aboutPropShape,
+        ex:additionalTypePropShape,
+        ex:authorPropShape,
+        ex:citationPropShape,
+        ex:conformsToPropShape,
+        ex:contributorPropShape,
+        ex:creatorPropShape,
+        ex:dateCreatedPropShape,
+        ex:datePublishedPropShape,
+        ex:descriptionPropShape,
+        ex:identifierPropShape,
+        ex:keywordsPropShape,
+        ex:licensePropShape,
+        ex:namePropShape,
+        ex:providerPropShape,
+        ex:publisherPropShape,
+        ex:subjectOfPropShape,
+        ex:urlPropShape ;
+    sh:targetClass <http://schema.org/Study> .
+
+ex:aboutPropShape sh:nodeKind sh:IRI ;
+    sh:path <http://schema.org/about> .
+
+ex:additionalTypePropShape sh:datatype xsd:string ;
+    sh:path <http://schema.org/additionalType> .
+
+ex:affiliationPropShape sh:nodeKind sh:BlankNode ;
+    sh:path <http://schema.org/affiliation> .
+
+ex:citationPropShape sh:nodeKind sh:BlankNode ;
+    sh:path <http://schema.org/citation> .
+
+ex:dateCreatedPropShape sh:datatype <http://schema.org/Date> ;
+    sh:path <http://schema.org/dateCreated> .
+
+ex:datePublishedPropShape sh:datatype <http://schema.org/Date> ;
+    sh:path <http://schema.org/datePublished> .
+
+ex:familyNamePropShape sh:datatype xsd:string ;
+    sh:path <http://schema.org/familyName> .
+
+ex:givenNamePropShape sh:datatype xsd:string ;
+    sh:path <http://schema.org/givenName> .
+
+ex:hasBioChemEntityPartPropShape sh:nodeKind sh:IRI ;
+    sh:path <http://schema.org/hasBioChemEntityPart> .
+
+ex:imagePropShape sh:nodeKind sh:IRI ;
+    sh:path <http://schema.org/image> .
+
+ex:inChIKeyPropShape sh:datatype xsd:string ;
+    sh:path <http://schema.org/inChIKey> .
+
+ex:inChIPropShape sh:datatype xsd:string ;
+    sh:path <http://schema.org/inChI> .
+
+ex:inDefinedTermSetPropShape sh:nodeKind sh:IRI ;
+    sh:path <http://schema.org/inDefinedTermSet> .
+
+ex:includedInDataCatalogPropShape sh:nodeKind sh:IRI ;
+    sh:path <http://schema.org/includedInDataCatalog> .
+
+ex:isAccessibleForFreePropShape sh:datatype xsd:boolean ;
+    sh:path <http://schema.org/isAccessibleForFree> .
+
+ex:isPartOfPropShape sh:nodeKind sh:IRI ;
+    sh:path <http://schema.org/isPartOf> .
+
+ex:iupacNamePropShape sh:datatype xsd:string ;
+    sh:path <http://schema.org/iupacName> .
+
+ex:logoPropShape sh:nodeKind sh:IRI ;
+    sh:path <http://schema.org/logo> .
+
+ex:measurementTechniquePropShape sh:nodeKind sh:IRI ;
+    sh:path <http://schema.org/measurementTechnique> .
+
+ex:molecularFormulaPropShape sh:datatype xsd:string ;
+    sh:path <http://schema.org/molecularFormula> .
+
+ex:molecularWeightPropShape sh:nodeKind sh:BlankNode ;
+    sh:path <http://schema.org/molecularWeight> .
+
+ex:smilesPropShape sh:datatype xsd:string ;
+    sh:path <http://schema.org/smiles> .
+
+ex:termCodePropShape sh:datatype xsd:string ;
+    sh:path <http://schema.org/termCode> .
+
+ex:unitCodePropShape sh:datatype xsd:string ;
+    sh:path <http://schema.org/unitCode> .
+
+ex:valuePropShape sh:datatype xsd:double ;
+    sh:path <http://schema.org/value> .
+
+ex:alternateNamePropShape sh:datatype xsd:string ;
+    sh:path <http://schema.org/alternateName> .
+
+ex:contributorPropShape sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://schema.org/contributor> .
+
+ex:creatorPropShape sh:nodeKind sh:BlankNode ;
+    sh:path <http://schema.org/creator> .
+
+ex:keywordsPropShape
+    sh:or ( [ sh:datatype xsd:string ]
+            [ sh:nodeKind sh:IRI ] ) ;
+    sh:path <http://schema.org/keywords> .
+
+ex:providerPropShape sh:nodeKind sh:BlankNode ;
+    sh:path <http://schema.org/provider> .
+
+ex:publisherPropShape sh:nodeKind sh:BlankNode ;
+    sh:path <http://schema.org/publisher> .
+
+ex:subjectOfPropShape sh:nodeKind sh:IRI ;
+    sh:path <http://schema.org/subjectOf> .
+
+ex:authorPropShape
+    sh:or ( [ sh:datatype xsd:string ]
+            [ sh:nodeKind sh:BlankNodeOrIRI ; sh:class <http://schema.org/Person> ] ) ;
+    sh:path <http://schema.org/author> .
+
+ex:conformsToPropShape sh:nodeKind sh:IRI ;
+    sh:path dcterms:conformsTo .
+
+ex:licensePropShape sh:nodeKind sh:IRI ;
+    sh:path <http://schema.org/license> .
+
+ex:descriptionPropShape sh:datatype xsd:string ;
+    sh:path <http://schema.org/description> .
+
+ex:identifierPropShape sh:datatype xsd:string ;
+    sh:path <http://schema.org/identifier> .
+
+ex:urlPropShape sh:nodeKind sh:IRI ;
+    sh:path <http://schema.org/url> .
+
+ex:namePropShape sh:datatype xsd:string ;
+    sh:path <http://schema.org/name> .
+

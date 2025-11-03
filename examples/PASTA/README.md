@@ -1,6 +1,11 @@
 ## PASTA ELN
 Its home is at: https://github.com/PASTA-ELN
 
+This folder contains two files:
+- PASTA.eln an export of the standard example of an installation with samples, measurements, devices, ...
+- A gold‑standard sibling triplet consists of an ELN file, a JSON‑LD file, and a Turtle file. The example shows
+  that the ELN file fully supersedes the JSON‑LD/Turtle files in terms of content. [more](goldStandard.md)
+
 
 
 ### PASTA.eln
@@ -773,6 +778,1030 @@ Its home is at: https://github.com/PASTA-ELN
           "@id": "./PastasExampleProject/_.status"
         }
       ]
+    }
+  ]
+}
+```
+
+### goldStandard.eln
+```json
+{
+  "@context": "https://w3id.org/ro/crate/1.1/context",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "name": "Chemie, Ludwig-Maximilians-Universit\u00e4t M\u00fcnchen, Deutschland",
+      "@id": "Organization_Chemie_LudwigMaximiliansUniversitt_Mnchen_Deutschland"
+    },
+    {
+      "@type": "Person",
+      "name": "Rachel Jan\u00dfen",
+      "familyName": "Jan\u00dfen",
+      "givenName": "Rachel",
+      "affiliation": {
+        "@id": "Organization_Chemie_LudwigMaximiliansUniversitt_Mnchen_Deutschland"
+      },
+      "@id": "Person_Rachel_Janen"
+    },
+    {
+      "@type": "Person",
+      "name": "Violeta Aleksandrova Vetsova",
+      "familyName": "Vetsova",
+      "givenName": "Violeta Aleksandrova",
+      "identifier": "0000-0002-4631-377X",
+      "affiliation": {
+        "@id": "Organization_Chemie_LudwigMaximiliansUniversitt_Mnchen_Deutschland"
+      },
+      "@id": "Person_Violeta_Aleksandrova_Vetsova"
+    },
+    {
+      "@type": "Organization",
+      "name": "Chemie, Ludwig-Maximilians-Universit\u00e4t M\u00fcnchen, Germany",
+      "@id": "Organization_Chemie_LudwigMaximiliansUniversitt_Mnchen_Germany"
+    },
+    {
+      "@type": "Person",
+      "name": "Dominik Gerold Putz",
+      "familyName": "Putz",
+      "givenName": "Dominik Gerold",
+      "affiliation": {
+        "@id": "Organization_Chemie_LudwigMaximiliansUniversitt_Mnchen_Germany"
+      },
+      "@id": "Person_Dominik_Gerold_Putz"
+    },
+    {
+      "@type": "Person",
+      "name": "Peter  Mayer",
+      "familyName": "Mayer",
+      "givenName": "Peter ",
+      "affiliation": {
+        "@id": "Organization_Chemie_LudwigMaximiliansUniversitt_Mnchen_Germany"
+      },
+      "@id": "Person_Peter__Mayer"
+    },
+    {
+      "@type": "Person",
+      "name": "Lena J. Daumann",
+      "familyName": "Daumann",
+      "givenName": "Lena J.",
+      "affiliation": {
+        "@id": "Organization_Chemie_LudwigMaximiliansUniversitt_Mnchen_Germany"
+      },
+      "@id": "Person_Lena_J_Daumann"
+    },
+    {
+      "@type": "Organization",
+      "name": "chemotion-repository",
+      "logo": "https://www.chemotion-repository.net/images/repo/Chemotion-V1.png",
+      "url": "https://www.chemotion-repository.net",
+      "@id": "Organization_chemotionrepository"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Total synthesis of the quinonoid alcohol dehydrogenase coenzyme (1) of methylotrophic bacteria",
+      "url": "https://doi.org/10.1021/ja00408a067",
+      "@id": "CreativeWork_Total_synthesis_of_the_quinonoid_alcohol_dehydrogenase_coenzyme_1_of_methylotrophic_bacteria",
+      "authors": "Corey, E. J. and Tramontano, Alfonso"
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://bioschemas.org/types/MolecularEntity/0.3-RELEASE-2019_09_02"
+    },
+    {
+      "@id": "QuantitativeValue_1",
+      "@type": "QuantitativeValue",
+      "value": 128.12592,
+      "unitCode": "g/mol"
+    },
+    {
+      "@type": "MolecularEntity",
+      "dct:conformsTo": [
+        {
+          "@id": "https://bioschemas.org/types/MolecularEntity/0.3-RELEASE-2019_09_02"
+        }
+      ],
+      "smiles": "COC(=O)/C=C/C(=O)C",
+      "inChIKey": "GLVNZYODMKSEPS-ONEGZZNKSA-N",
+      "inChI": "InChI=1S/C6H8O3/c1-5(7)3-4-6(8)9-2/h3-4H,1-2H3/b4-3+",
+      "molecularFormula": "C6H8O3",
+      "name": "methyl (E)-4-oxopent-2-enoate",
+      "molecularWeight": {
+        "@id": "QuantitativeValue_1"
+      },
+      "iupacName": "methyl (E)-4-oxopent-2-enoate",
+      "@id": "GLVNZYODMKSEPS-ONEGZZNKSA-N"
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://schema.org/Dataset"
+    },
+    {
+      "@type": "DefinedTermSet",
+      "name": "chmo",
+      "@id": "http://purl.obolibrary.org/obo/chmo.owl"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "1H nuclear magnetic resonance spectroscopy",
+      "termCode": "CHMO:0000593",
+      "@id": "http://purl.obolibrary.org/obo/CHMO_0000593",
+      "alternateName": [
+        "1H-NMR spectrometry",
+        "proton nuclear magnetic resonance spectroscopy",
+        "1H-NMR spectroscopy",
+        "1H-NMR",
+        "1H NMR",
+        "1H NMR spectroscopy",
+        "1H nuclear magnetic resonance spectrometry",
+        "proton NMR"
+      ],
+      "url": "https://terminology.nfdi4chem.de/ts/ontologies/chmo/terms?iri=http://purl.obolibrary.org/obo/CHMO_0000593",
+      "inDefinedTermSet": {
+        "@id": "http://purl.obolibrary.org/obo/chmo.owl"
+      }
+    },
+    {
+      "@type": "DefinedTermSet",
+      "name": "Semanticscience Integrated Ontology",
+      "@id": "http://semanticscience.org/ontology/sio.owl"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "sample",
+      "inDefinedTermSet": {
+        "@id": "http://semanticscience.org/ontology/sio.owl"
+      },
+      "@id": "http://semanticscience.org/resource/SIO_001050"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "chemical reaction",
+      "inDefinedTermSet": {
+        "@id": "http://semanticscience.org/ontology/sio.owl"
+      },
+      "@id": "http://semanticscience.org/resource/SIO_010345"
+    },
+    {
+      "@type": "DefinedTermSet",
+      "name": "NCI Thesaurus OBO Edition",
+      "@id": "http://purl.obolibrary.org/obo/ncit.owl"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Analytical Chemistry",
+      "alternateName": [
+        "Chemistry, Analytical"
+      ],
+      "inDefinedTermSet": {
+        "@id": "http://purl.obolibrary.org/obo/ncit.owl"
+      },
+      "@id": "http://purl.obolibrary.org/obo/NCIT_C16415"
+    },
+    {
+      "@type": "Organization",
+      "name": "Karlsruhe Institute of Technology (KIT)",
+      "url": "https://www.kit.edu/",
+      "@id": "Organization_Karlsruhe_Institute_of_Technology_KIT"
+    },
+    {
+      "@type": "Person",
+      "givenName": "An",
+      "familyName": "Nguyen",
+      "@id": "0000-0002-1692-6778"
+    },
+    {
+      "@type": "Person",
+      "givenName": "Chia-Lin",
+      "familyName": "Lin",
+      "@id": "0000-0002-9772-0455"
+    },
+    {
+      "@type": "Person",
+      "givenName": "Felix",
+      "familyName": "Bach",
+      "@id": "0000-0002-5035-7978"
+    },
+    {
+      "@type": "Person",
+      "givenName": "Nicole",
+      "familyName": "Jung",
+      "@id": "0000-0001-9513-2468"
+    },
+    {
+      "@type": "Person",
+      "givenName": "Pei-Chi",
+      "familyName": "Huang",
+      "@id": "0000-0002-9976-4507"
+    },
+    {
+      "@type": "Person",
+      "givenName": "Pierre",
+      "familyName": "Tremouilhac",
+      "@id": "0000-0002-0487-3947"
+    },
+    {
+      "@type": "Person",
+      "givenName": "Stefan",
+      "familyName": "Braese",
+      "@id": "0000-0003-4845-3191"
+    },
+    {
+      "@type": "Person",
+      "givenName": "Yu-Chieh",
+      "familyName": "Huang",
+      "@id": "0000-0002-4261-9886"
+    },
+    {
+      "@type": "DataCatalog",
+      "@id": "https://www.chemotion-repository.net",
+      "description": "Repository for samples, reactions and related research data.",
+      "name": "Chemotion Repository",
+      "provider": {
+        "@id": "Organization_Karlsruhe_Institute_of_Technology_KIT"
+      },
+      "url": "https://www.chemotion-repository.net",
+      "license": "https://www.gnu.org/licenses/agpl-3.0.en.html",
+      "contributor": [
+        {
+          "@id": "0000-0002-1692-6778"
+        },
+        {
+          "@id": "0000-0002-9772-0455"
+        },
+        {
+          "@id": "0000-0002-5035-7978"
+        },
+        {
+          "@id": "0000-0001-9513-2468"
+        },
+        {
+          "@id": "0000-0002-9976-4507"
+        },
+        {
+          "@id": "0000-0002-0487-3947"
+        },
+        {
+          "@id": "0000-0003-4845-3191"
+        },
+        {
+          "@id": "0000-0002-4261-9886"
+        }
+      ],
+      "isAccessibleForFree": true,
+      "keywordsList": [
+        {
+          "@id": "http://semanticscience.org/resource/SIO_001050"
+        },
+        {
+          "@id": "http://semanticscience.org/resource/SIO_010345"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCIT_C16415"
+        }
+      ]
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://bioschemas.org/types/Study/0.3-DRAFT"
+    },
+    {
+      "@type": "ChemicalSubstance",
+      "@id": "10.14272/GLVNZYODMKSEPS-ONEGZZNKSA-N.1",
+      "identifier": "CRS-25899",
+      "url": "https://www.chemotion-repository.net/inchikey/GLVNZYODMKSEPS-ONEGZZNKSA-N.1",
+      "name": "methyl (E)-4-oxopent-2-enoate",
+      "alternateName": "InChI=1S/C6H8O3/c1-5(7)3-4-6(8)9-2/h3-4H,1-2H3/b4-3+",
+      "image": "https://www.chemotion-repository.net/images/samples/49c85c066fb3825bc3c07f4205214fe6e099afb0bf615e4238bd53e9d3f000a603ed4d9b87ade4df7be2cf437b9bd3927f144738a4ccf603b5aa3ff4df9e98db.svg",
+      "description": "",
+      "hasBioChemEntityPart": {
+        "@id": "GLVNZYODMKSEPS-ONEGZZNKSA-N"
+      }
+    },
+    {
+      "@type": "Study",
+      "@id": "https://doi.org/10.14272/GLVNZYODMKSEPS-ONEGZZNKSA-N/CHMO0000593",
+      "dct:conformsTo": {
+        "@id": "https://bioschemas.org/types/Study/0.3-DRAFT"
+      },
+      "publisher": {
+        "@id": "Organization_chemotionrepository"
+      },
+      "dateCreated": "2022-11-02",
+      "datePublished": "2022-11-02",
+      "contributor": {
+        "@id": "Person_Rachel_Janen"
+      },
+      "citation": [],
+      "authors": [
+        {
+          "@id": "Person_Rachel_Janen"
+        },
+        {
+          "@id": "Person_Violeta_Aleksandrova_Vetsova"
+        },
+        {
+          "@id": "Person_Dominik_Gerold_Putz"
+        },
+        {
+          "@id": "Person_Peter__Mayer"
+        },
+        {
+          "@id": "Person_Lena_J_Daumann"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Dataset",
+      "@id": "1H_NMR-1H/",
+      "identifier": "CRD-25895",
+      "url": "https://www.chemotion-repository.net/inchikey/GLVNZYODMKSEPS-ONEGZZNKSA-N/CHMO0000593",
+      "dct:conformsTo": {
+        "@id": "https://schema.org/Dataset"
+      },
+      "publisher": {
+        "@id": "Organization_chemotionrepository"
+      },
+      "license": "http://creativecommons.org/licenses/by-sa/4.0/",
+      "name": "1H nuclear magnetic resonance spectroscopy (1H NMR)",
+      "measurementTechnique": {
+        "@id": "http://purl.obolibrary.org/obo/CHMO_0000593"
+      },
+      "creator": [
+        {
+          "@id": "Person_Rachel_Janen"
+        },
+        {
+          "@id": "Person_Violeta_Aleksandrova_Vetsova"
+        },
+        {
+          "@id": "Person_Dominik_Gerold_Putz"
+        },
+        {
+          "@id": "Person_Peter__Mayer"
+        },
+        {
+          "@id": "Person_Lena_J_Daumann"
+        }
+      ],
+      "description": "dataset for 1H nuclear magnetic resonance spectroscopy (1H NMR)\n\n",
+      "includedInDataCatalog": {
+        "@id": "https://www.chemotion-repository.net"
+      },
+      "isPartOf": {
+        "@id": "https://doi.org/10.14272/GLVNZYODMKSEPS-ONEGZZNKSA-N/CHMO0000593"
+      },
+      "instrument": "Bruker Avance III (400 MHz)",
+      "hasPart": [
+        {
+          "@id": "1H_NMR-1H/1H.peak.png"
+        },
+        {
+          "@id": "1H_NMR-1H/1H.jcamp"
+        },
+        {
+          "@id": "1H_NMR-1H/1H.peak.jdx"
+        },
+        {
+          "@id": "1H_NMR-1H/1H.jpeg"
+        }
+      ],
+      "authors": [
+        {
+          "@id": "Person_Rachel_Janen"
+        },
+        {
+          "@id": "Person_Violeta_Aleksandrova_Vetsova"
+        },
+        {
+          "@id": "Person_Dominik_Gerold_Putz"
+        },
+        {
+          "@id": "Person_Peter__Mayer"
+        },
+        {
+          "@id": "Person_Lena_J_Daumann"
+        }
+      ]
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "infrared absorption spectroscopy",
+      "termCode": "CHMO:0000630",
+      "@id": "http://purl.obolibrary.org/obo/CHMO_0000630",
+      "alternateName": [
+        "IR absorption spectrometry",
+        "infrared (IR) spectroscopy",
+        "IR",
+        "infra-red absorption spectroscopy",
+        "infra-red spectrophotometry",
+        "IR spectroscopy",
+        "infrared absorption spectrometry",
+        "infrared spectrophotometry",
+        "IR spectrometry",
+        "IR absorption spectroscopy",
+        "infra-red spectrometry",
+        "infrared spectrometry",
+        "infra-red absorption spectrometry",
+        "IR spectrophotometry",
+        "infrared spectroscopy"
+      ],
+      "url": "https://terminology.nfdi4chem.de/ts/ontologies/chmo/terms?iri=http://purl.obolibrary.org/obo/CHMO_0000630",
+      "inDefinedTermSet": {
+        "@id": "http://purl.obolibrary.org/obo/chmo.owl"
+      }
+    },
+    {
+      "@type": "Study",
+      "@id": "https://doi.org/10.14272/GLVNZYODMKSEPS-ONEGZZNKSA-N/CHMO0000630",
+      "dct:conformsTo": {
+        "@id": "https://bioschemas.org/types/Study/0.3-DRAFT"
+      },
+      "publisher": {
+        "@id": "Organization_chemotionrepository"
+      },
+      "dateCreated": "2022-11-02",
+      "datePublished": "2022-11-02",
+      "contributor": {
+        "@id": "Person_Rachel_Janen"
+      },
+      "citation": [],
+      "authors": [
+        {
+          "@id": "Person_Rachel_Janen"
+        },
+        {
+          "@id": "Person_Violeta_Aleksandrova_Vetsova"
+        },
+        {
+          "@id": "Person_Dominik_Gerold_Putz"
+        },
+        {
+          "@id": "Person_Peter__Mayer"
+        },
+        {
+          "@id": "Person_Lena_J_Daumann"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Dataset",
+      "@id": "IR-RQQIV-V/",
+      "identifier": "CRD-25897",
+      "url": "https://www.chemotion-repository.net/inchikey/GLVNZYODMKSEPS-ONEGZZNKSA-N/CHMO0000630",
+      "dct:conformsTo": {
+        "@id": "https://schema.org/Dataset"
+      },
+      "publisher": {
+        "@id": "Organization_chemotionrepository"
+      },
+      "license": "http://creativecommons.org/licenses/by-sa/4.0/",
+      "name": "infrared absorption spectroscopy (IR)",
+      "measurementTechnique": {
+        "@id": "http://purl.obolibrary.org/obo/CHMO_0000630"
+      },
+      "creator": [
+        {
+          "@id": "Person_Rachel_Janen"
+        },
+        {
+          "@id": "Person_Violeta_Aleksandrova_Vetsova"
+        },
+        {
+          "@id": "Person_Dominik_Gerold_Putz"
+        },
+        {
+          "@id": "Person_Peter__Mayer"
+        },
+        {
+          "@id": "Person_Lena_J_Daumann"
+        }
+      ],
+      "description": "dataset for infrared absorption spectroscopy (IR)\n\n",
+      "includedInDataCatalog": {
+        "@id": "https://www.chemotion-repository.net"
+      },
+      "isPartOf": {
+        "@id": "https://doi.org/10.14272/GLVNZYODMKSEPS-ONEGZZNKSA-N/CHMO0000630"
+      },
+      "instrument": "Jasco FT/IR-460Plus with ATR Diamond Plate",
+      "hasPart": [
+        {
+          "@id": "IR-RQQIV-V/IR RAJ15.peak.jdx"
+        },
+        {
+          "@id": "IR-RQQIV-V/IR RAJ15.infer.json"
+        },
+        {
+          "@id": "IR-RQQIV-V/IRRQQIV-V.png"
+        },
+        {
+          "@id": "IR-RQQIV-V/IR RAJ15.dx"
+        },
+        {
+          "@id": "IR-RQQIV-V/IR RAJ15.peak.png"
+        }
+      ],
+      "authors": [
+        {
+          "@id": "Person_Rachel_Janen"
+        },
+        {
+          "@id": "Person_Violeta_Aleksandrova_Vetsova"
+        },
+        {
+          "@id": "Person_Dominik_Gerold_Putz"
+        },
+        {
+          "@id": "Person_Peter__Mayer"
+        },
+        {
+          "@id": "Person_Lena_J_Daumann"
+        }
+      ]
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "high-resolution mass spectrometry",
+      "termCode": "CHMO:0000498",
+      "@id": "http://purl.obolibrary.org/obo/CHMO_0000498",
+      "alternateName": [
+        "high-resolution mass spectrometry",
+        "HRMS",
+        "HR-MS",
+        "high resolution mass spectroscopy"
+      ],
+      "url": "https://terminology.nfdi4chem.de/ts/ontologies/chmo/terms?iri=http://purl.obolibrary.org/obo/CHMO_0000498",
+      "inDefinedTermSet": {
+        "@id": "http://purl.obolibrary.org/obo/chmo.owl"
+      }
+    },
+    {
+      "@type": "Study",
+      "@id": "https://doi.org/10.14272/GLVNZYODMKSEPS-ONEGZZNKSA-N/CHMO0000498",
+      "dct:conformsTo": {
+        "@id": "https://bioschemas.org/types/Study/0.3-DRAFT"
+      },
+      "publisher": {
+        "@id": "Organization_chemotionrepository"
+      },
+      "dateCreated": "2022-11-02",
+      "datePublished": "2022-11-02",
+      "contributor": {
+        "@id": "Person_Rachel_Janen"
+      },
+      "citation": [],
+      "authors": [
+        {
+          "@id": "Person_Rachel_Janen"
+        },
+        {
+          "@id": "Person_Violeta_Aleksandrova_Vetsova"
+        },
+        {
+          "@id": "Person_Dominik_Gerold_Putz"
+        },
+        {
+          "@id": "Person_Peter__Mayer"
+        },
+        {
+          "@id": "Person_Lena_J_Daumann"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Dataset",
+      "@id": "HRMS__28EI_29-202206031449161000/",
+      "identifier": "CRD-25898",
+      "url": "https://www.chemotion-repository.net/inchikey/GLVNZYODMKSEPS-ONEGZZNKSA-N/CHMO0000498",
+      "dct:conformsTo": {
+        "@id": "https://schema.org/Dataset"
+      },
+      "publisher": {
+        "@id": "Organization_chemotionrepository"
+      },
+      "license": "http://creativecommons.org/licenses/by-sa/4.0/",
+      "name": "high-resolution mass spectrometry (HRMS)",
+      "measurementTechnique": {
+        "@id": "http://purl.obolibrary.org/obo/CHMO_0000498"
+      },
+      "creator": [
+        {
+          "@id": "Person_Rachel_Janen"
+        },
+        {
+          "@id": "Person_Violeta_Aleksandrova_Vetsova"
+        },
+        {
+          "@id": "Person_Dominik_Gerold_Putz"
+        },
+        {
+          "@id": "Person_Peter__Mayer"
+        },
+        {
+          "@id": "Person_Lena_J_Daumann"
+        }
+      ],
+      "description": "dataset for high-resolution mass spectrometry (HRMS)\n\n",
+      "includedInDataCatalog": {
+        "@id": "https://www.chemotion-repository.net"
+      },
+      "isPartOf": {
+        "@id": "https://doi.org/10.14272/GLVNZYODMKSEPS-ONEGZZNKSA-N/CHMO0000498"
+      },
+      "instrument": "Thermo Q Exactive GC, a Thermo Finnigan MAT 95 or a Jeol MStation",
+      "hasPart": [
+        {
+          "@id": "HRMS__28EI_29-202206031449161000/202206031449161000.jpg"
+        }
+      ],
+      "authors": [
+        {
+          "@id": "Person_Rachel_Janen"
+        },
+        {
+          "@id": "Person_Violeta_Aleksandrova_Vetsova"
+        },
+        {
+          "@id": "Person_Dominik_Gerold_Putz"
+        },
+        {
+          "@id": "Person_Peter__Mayer"
+        },
+        {
+          "@id": "Person_Lena_J_Daumann"
+        }
+      ]
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "13C nuclear magnetic resonance spectroscopy",
+      "termCode": "CHMO:0000595",
+      "@id": "http://purl.obolibrary.org/obo/CHMO_0000595",
+      "alternateName": [
+        "13C-NMR spectrometry",
+        "13C nuclear magnetic resonance spectrometry",
+        "13C-NMR spectroscopy",
+        "carbon NMR",
+        "13C NMR spectroscopy",
+        "C-NMR",
+        "13C NMR"
+      ],
+      "url": "https://terminology.nfdi4chem.de/ts/ontologies/chmo/terms?iri=http://purl.obolibrary.org/obo/CHMO_0000595",
+      "inDefinedTermSet": {
+        "@id": "http://purl.obolibrary.org/obo/chmo.owl"
+      }
+    },
+    {
+      "@type": "Study",
+      "@id": "https://doi.org/10.14272/GLVNZYODMKSEPS-ONEGZZNKSA-N/CHMO0000595",
+      "dct:conformsTo": {
+        "@id": "https://bioschemas.org/types/Study/0.3-DRAFT"
+      },
+      "publisher": {
+        "@id": "Organization_chemotionrepository"
+      },
+      "dateCreated": "2022-11-02",
+      "datePublished": "2022-11-02",
+      "contributor": {
+        "@id": "Person_Rachel_Janen"
+      },
+      "citation": [],
+      "authors": [
+        {
+          "@id": "Person_Rachel_Janen"
+        },
+        {
+          "@id": "Person_Violeta_Aleksandrova_Vetsova"
+        },
+        {
+          "@id": "Person_Dominik_Gerold_Putz"
+        },
+        {
+          "@id": "Person_Peter__Mayer"
+        },
+        {
+          "@id": "Person_Lena_J_Daumann"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Dataset",
+      "@id": "13C_NMR-13C/",
+      "identifier": "CRD-25896",
+      "url": "https://www.chemotion-repository.net/inchikey/GLVNZYODMKSEPS-ONEGZZNKSA-N/CHMO0000595",
+      "dct:conformsTo": {
+        "@id": "https://schema.org/Dataset"
+      },
+      "publisher": {
+        "@id": "Organization_chemotionrepository"
+      },
+      "license": "http://creativecommons.org/licenses/by-sa/4.0/",
+      "name": "13C nuclear magnetic resonance spectroscopy (13C NMR)",
+      "measurementTechnique": {
+        "@id": "http://purl.obolibrary.org/obo/CHMO_0000595"
+      },
+      "creator": [
+        {
+          "@id": "Person_Rachel_Janen"
+        },
+        {
+          "@id": "Person_Violeta_Aleksandrova_Vetsova"
+        },
+        {
+          "@id": "Person_Dominik_Gerold_Putz"
+        },
+        {
+          "@id": "Person_Peter__Mayer"
+        },
+        {
+          "@id": "Person_Lena_J_Daumann"
+        }
+      ],
+      "description": "dataset for 13C nuclear magnetic resonance spectroscopy (13C NMR)\n\n",
+      "includedInDataCatalog": {
+        "@id": "https://www.chemotion-repository.net"
+      },
+      "isPartOf": {
+        "@id": "https://doi.org/10.14272/GLVNZYODMKSEPS-ONEGZZNKSA-N/CHMO0000595"
+      },
+      "instrument": "Bruker Avance III (400 MHz)",
+      "hasPart": [
+        {
+          "@id": "13C_NMR-13C/13C.jpeg"
+        },
+        {
+          "@id": "13C_NMR-13C/13C.infer.json"
+        },
+        {
+          "@id": "13C_NMR-13C/13C.jcamp"
+        },
+        {
+          "@id": "13C_NMR-13C/13C.edit.png"
+        },
+        {
+          "@id": "13C_NMR-13C/13C.edit.jdx"
+        }
+      ],
+      "authors": [
+        {
+          "@id": "Person_Rachel_Janen"
+        },
+        {
+          "@id": "Person_Violeta_Aleksandrova_Vetsova"
+        },
+        {
+          "@id": "Person_Dominik_Gerold_Putz"
+        },
+        {
+          "@id": "Person_Peter__Mayer"
+        },
+        {
+          "@id": "Person_Lena_J_Daumann"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Dataset",
+      "@id": "./",
+      "identifier": "CRR-25894",
+      "url": "https://www.chemotion-repository.net/inchikey/reaction/SA-FUHFF-UHFFFADPSC-GLVNZYODMK-UHFFFADPSC-NUHFF-NSOPS-NUHFF-ZZZ",
+      "additionalType": "Reaction",
+      "name": "Short-RInChIKey=SA-FUHFF-UAGJVSRUFN-GLVNZYODMK-VCORZAIRCD-NUHFF-NSOPS-NUHFF-ZZZ",
+      "creator": [
+        {
+          "@id": "Person_Rachel_Janen"
+        },
+        {
+          "@id": "Person_Violeta_Aleksandrova_Vetsova"
+        },
+        {
+          "@id": "Person_Dominik_Gerold_Putz"
+        },
+        {
+          "@id": "Person_Peter__Mayer"
+        },
+        {
+          "@id": "Person_Lena_J_Daumann"
+        }
+      ],
+      "description": "",
+      "license": "http://creativecommons.org/licenses/by-sa/4.0/",
+      "datePublished": "2022-11-02",
+      "dateCreated": "2022-08-25",
+      "publisher": {
+        "@id": "Organization_chemotionrepository"
+      },
+      "provider": {
+        "@id": "Organization_chemotionrepository"
+      },
+      "keywords": "chemical reaction: structures conditions",
+      "citation": [
+        {
+          "@id": "CreativeWork_Total_synthesis_of_the_quinonoid_alcohol_dehydrogenase_coenzyme_1_of_methylotrophic_bacteria"
+        }
+      ],
+      "subjectOf": [
+        {
+          "@id": "10.14272/GLVNZYODMKSEPS-ONEGZZNKSA-N.1"
+        }
+      ],
+      "hasPart": [
+        {
+          "@id": "1H_NMR-1H/"
+        },
+        {
+          "@id": "IR-RQQIV-V/"
+        },
+        {
+          "@id": "HRMS__28EI_29-202206031449161000/"
+        },
+        {
+          "@id": "13C_NMR-13C/"
+        },
+        {
+          "@id": "1H_NMR-1H/1H.peak.png"
+        },
+        {
+          "@id": "1H_NMR-1H/1H.jcamp"
+        },
+        {
+          "@id": "1H_NMR-1H/1H.peak.jdx"
+        },
+        {
+          "@id": "1H_NMR-1H/1H.jpeg"
+        },
+        {
+          "@id": "IR-RQQIV-V/IR RAJ15.peak.jdx"
+        },
+        {
+          "@id": "IR-RQQIV-V/IR RAJ15.infer.json"
+        },
+        {
+          "@id": "IR-RQQIV-V/IRRQQIV-V.png"
+        },
+        {
+          "@id": "IR-RQQIV-V/IR RAJ15.dx"
+        },
+        {
+          "@id": "IR-RQQIV-V/IR RAJ15.peak.png"
+        },
+        {
+          "@id": "HRMS__28EI_29-202206031449161000/202206031449161000.jpg"
+        },
+        {
+          "@id": "13C_NMR-13C/13C.jpeg"
+        },
+        {
+          "@id": "13C_NMR-13C/13C.infer.json"
+        },
+        {
+          "@id": "13C_NMR-13C/13C.jcamp"
+        },
+        {
+          "@id": "13C_NMR-13C/13C.edit.png"
+        },
+        {
+          "@id": "13C_NMR-13C/13C.edit.jdx"
+        }
+      ],
+      "authors": [
+        {
+          "@id": "Person_Rachel_Janen"
+        },
+        {
+          "@id": "Person_Violeta_Aleksandrova_Vetsova"
+        },
+        {
+          "@id": "Person_Dominik_Gerold_Putz"
+        },
+        {
+          "@id": "Person_Peter__Mayer"
+        },
+        {
+          "@id": "Person_Lena_J_Daumann"
+        }
+      ]
+    },
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "about": {
+        "@id": "./"
+      },
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.1"
+      },
+      "version": "1.0",
+      "additionalType": "https://purl.archive.org/purl/elnconsortium/eln-spec/1.1",
+      "datePublished": "2025-11-03T11:13:05.824706",
+      "dateCreated": "2025-11-03T11:13:05.824718",
+      "sdPublisher": {
+        "@id": "GOLD_STANDARD_PUBLISHER"
+      }
+    },
+    {
+      "@id": "GOLD_STANDARD_PUBLISHER",
+      "@type": "Person",
+      "givenName": "Steffen",
+      "familyName": "Brinckmann",
+      "honorificPrefix": "Dr.",
+      "email": "s.brinckmann@fz-juelich.de",
+      "identifier": "https://orcid.org/0000-0003-0930-082X"
+    },
+    {
+      "@id": "1H_NMR-1H/1H.peak.png",
+      "@type": "File",
+      "sha256": "3f716f9ace0138393528585f4be10a15",
+      "name": "1H.peak.png"
+    },
+    {
+      "@id": "1H_NMR-1H/1H.jcamp",
+      "@type": "File",
+      "sha256": "2dfb64df27339cfe53a981b51a661122",
+      "name": "1H.jcamp"
+    },
+    {
+      "@id": "1H_NMR-1H/1H.peak.jdx",
+      "@type": "File",
+      "sha256": "eeed3522816561f91392547509d05b93",
+      "name": "1H.peak.jdx"
+    },
+    {
+      "@id": "1H_NMR-1H/1H.jpeg",
+      "@type": "File",
+      "sha256": "fe6477d2f26890e50ac129f238f93c79",
+      "name": "1H.jpeg"
+    },
+    {
+      "@id": "IR-RQQIV-V/IR RAJ15.peak.jdx",
+      "@type": "File",
+      "sha256": "RAJ15.peak.jdx",
+      "name": "IR RAJ15.peak.jdx"
+    },
+    {
+      "@id": "IR-RQQIV-V/IR RAJ15.infer.json",
+      "@type": "File",
+      "sha256": "RAJ15.infer.json",
+      "name": "IR RAJ15.infer.json"
+    },
+    {
+      "@id": "IR-RQQIV-V/IRRQQIV-V.png",
+      "@type": "File",
+      "sha256": "dadfa0ae152d4b4f24e52a93edd898b8",
+      "name": "IRRQQIV-V.png"
+    },
+    {
+      "@id": "IR-RQQIV-V/IR RAJ15.dx",
+      "@type": "File",
+      "sha256": "RAJ15.dx",
+      "name": "IR RAJ15.dx"
+    },
+    {
+      "@id": "IR-RQQIV-V/IR RAJ15.peak.png",
+      "@type": "File",
+      "sha256": "RAJ15.peak.png",
+      "name": "IR RAJ15.peak.png"
+    },
+    {
+      "@id": "HRMS__28EI_29-202206031449161000/202206031449161000.jpg",
+      "@type": "File",
+      "sha256": "2fbe8838353c27851c6bb82ac97faee8",
+      "name": "202206031449161000.jpg"
+    },
+    {
+      "@id": "13C_NMR-13C/13C.jpeg",
+      "@type": "File",
+      "sha256": "2551a4d100498f068723201da7b1d5e9",
+      "name": "13C.jpeg"
+    },
+    {
+      "@id": "13C_NMR-13C/13C.infer.json",
+      "@type": "File",
+      "sha256": "42d64939ddc5990a59bb0f23b78be98f",
+      "name": "13C.infer.json"
+    },
+    {
+      "@id": "13C_NMR-13C/13C.jcamp",
+      "@type": "File",
+      "sha256": "2a4bc1adcf8492d4f4eb94130ab05056",
+      "name": "13C.jcamp"
+    },
+    {
+      "@id": "13C_NMR-13C/13C.edit.png",
+      "@type": "File",
+      "sha256": "05d6294393ad34b27fe0b7d646e67ba7",
+      "name": "13C.edit.png"
+    },
+    {
+      "@id": "13C_NMR-13C/13C.edit.jdx",
+      "@type": "File",
+      "sha256": "a52b09233f2818f096c11b03021ed3f7",
+      "name": "13C.edit.jdx"
     }
   ]
 }
