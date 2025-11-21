@@ -165,7 +165,7 @@ def checkSchema(fileName):
         metadataJsonFile = [i for i in elnFile.namelist() if i.endswith(METADATA_FILE)][0]
         metadataContent = json.loads(elnFile.read(metadataJsonFile))
         for error in sorted(validator.iter_errors(metadataContent), key=str):
-            log += f'- {error.message}'
+            log += f'- {error.message}\n'
             success = False
     return success, log
 

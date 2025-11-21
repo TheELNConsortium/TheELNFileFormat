@@ -790,64 +790,60 @@ This folder contains two files:
   "@graph": [
     {
       "@type": "Organization",
-      "name": "Chemie, Ludwig-Maximilians-Universit\u00e4t M\u00fcnchen, Deutschland",
-      "@id": "Organization_Chemie_LudwigMaximiliansUniversitt_Mnchen_Deutschland"
+      "name": "Chemie, Ludwig-Maximilians-Universit\u00e4t M\u00fcnchen, Germany",
+      "identifier": "https://ror.org/05591te55",
+      "@id": "Organization_Chemie_LudwigMaximiliansUniversitt_Mnchen_Germany"
     },
     {
       "@type": "Person",
       "name": "Rachel Jan\u00dfen",
       "familyName": "Jan\u00dfen",
       "givenName": "Rachel",
-      "affiliation": {
-        "@id": "Organization_Chemie_LudwigMaximiliansUniversitt_Mnchen_Deutschland"
-      },
-      "@id": "Person_Rachel_Janen"
+      "@id": "Person_Rachel_Janen",
+      "worksFor": {
+        "@id": "Organization_Chemie_LudwigMaximiliansUniversitt_Mnchen_Germany"
+      }
     },
     {
       "@type": "Person",
       "name": "Violeta Aleksandrova Vetsova",
       "familyName": "Vetsova",
       "givenName": "Violeta Aleksandrova",
-      "identifier": "0000-0002-4631-377X",
-      "affiliation": {
-        "@id": "Organization_Chemie_LudwigMaximiliansUniversitt_Mnchen_Deutschland"
-      },
-      "@id": "Person_Violeta_Aleksandrova_Vetsova"
-    },
-    {
-      "@type": "Organization",
-      "name": "Chemie, Ludwig-Maximilians-Universit\u00e4t M\u00fcnchen, Germany",
-      "@id": "Organization_Chemie_LudwigMaximiliansUniversitt_Mnchen_Germany"
+      "identifier": "https://orcid.org/0000-0002-4631-377X",
+      "@id": "Person_Violeta_Aleksandrova_Vetsova",
+      "worksFor": {
+        "@id": "Organization_Chemie_LudwigMaximiliansUniversitt_Mnchen_Germany"
+      }
     },
     {
       "@type": "Person",
       "name": "Dominik Gerold Putz",
       "familyName": "Putz",
       "givenName": "Dominik Gerold",
-      "affiliation": {
+      "@id": "Person_Dominik_Gerold_Putz",
+      "worksFor": {
         "@id": "Organization_Chemie_LudwigMaximiliansUniversitt_Mnchen_Germany"
-      },
-      "@id": "Person_Dominik_Gerold_Putz"
+      }
     },
     {
       "@type": "Person",
       "name": "Peter  Mayer",
       "familyName": "Mayer",
       "givenName": "Peter ",
-      "affiliation": {
+      "@id": "Person_Peter__Mayer",
+      "worksFor": {
         "@id": "Organization_Chemie_LudwigMaximiliansUniversitt_Mnchen_Germany"
-      },
-      "@id": "Person_Peter__Mayer"
+      }
     },
     {
       "@type": "Person",
       "name": "Lena J. Daumann",
       "familyName": "Daumann",
       "givenName": "Lena J.",
-      "affiliation": {
+      "@id": "Person_Lena_J_Daumann",
+      "worksFor": {
         "@id": "Organization_Chemie_LudwigMaximiliansUniversitt_Mnchen_Germany"
-      },
-      "@id": "Person_Lena_J_Daumann"
+      }
     },
     {
       "@type": "Organization",
@@ -869,9 +865,10 @@ This folder contains two files:
     },
     {
       "@id": "QuantitativeValue_1",
-      "@type": "QuantitativeValue",
+      "@type": "PropertyValue",
       "value": 128.12592,
-      "unitCode": "g/mol"
+      "unitCode": "g/mol",
+      "propertyID": "molecularWeight"
     },
     {
       "@type": "MolecularEntity",
@@ -961,55 +958,64 @@ This folder contains two files:
       "@type": "Organization",
       "name": "Karlsruhe Institute of Technology (KIT)",
       "url": "https://www.kit.edu/",
+      "identifier": "https://ror.org/04t3en479",
       "@id": "Organization_Karlsruhe_Institute_of_Technology_KIT"
     },
     {
       "@type": "Person",
       "givenName": "An",
       "familyName": "Nguyen",
-      "@id": "0000-0002-1692-6778"
+      "@id": "https://orcid.org/0000-0002-1692-6778",
+      "name": "An Nguyen"
     },
     {
       "@type": "Person",
       "givenName": "Chia-Lin",
       "familyName": "Lin",
-      "@id": "0000-0002-9772-0455"
+      "@id": "https://orcid.org/0000-0002-9772-0455",
+      "name": "Chia-Lin Lin"
     },
     {
       "@type": "Person",
       "givenName": "Felix",
       "familyName": "Bach",
-      "@id": "0000-0002-5035-7978"
+      "@id": "https://orcid.org/0000-0002-5035-7978",
+      "name": "Felix Bach"
     },
     {
       "@type": "Person",
       "givenName": "Nicole",
       "familyName": "Jung",
-      "@id": "0000-0001-9513-2468"
+      "@id": "https://orcid.org/0000-0001-9513-2468",
+      "name": "Nicole Jung"
     },
     {
       "@type": "Person",
       "givenName": "Pei-Chi",
       "familyName": "Huang",
-      "@id": "0000-0002-9976-4507"
+      "@id": "https://orcid.org/0000-0002-9976-4507",
+      "name": "Pei-Chi Huang"
     },
     {
       "@type": "Person",
       "givenName": "Pierre",
       "familyName": "Tremouilhac",
-      "@id": "0000-0002-0487-3947"
+      "@id": "https://orcid.org/0000-0002-0487-3947",
+      "name": "Pierre Tremouilhac"
     },
     {
       "@type": "Person",
       "givenName": "Stefan",
       "familyName": "Braese",
-      "@id": "0000-0003-4845-3191"
+      "@id": "https://orcid.org/0000-0003-4845-3191",
+      "name": "Stefan Braese"
     },
     {
       "@type": "Person",
       "givenName": "Yu-Chieh",
       "familyName": "Huang",
-      "@id": "0000-0002-4261-9886"
+      "@id": "https://orcid.org/0000-0002-4261-9886",
+      "name": "Yu-Chieh Huang"
     },
     {
       "@type": "DataCatalog",
@@ -1023,28 +1029,28 @@ This folder contains two files:
       "license": "https://www.gnu.org/licenses/agpl-3.0.en.html",
       "contributor": [
         {
-          "@id": "0000-0002-1692-6778"
+          "@id": "https://orcid.org/0000-0002-1692-6778"
         },
         {
-          "@id": "0000-0002-9772-0455"
+          "@id": "https://orcid.org/0000-0002-9772-0455"
         },
         {
-          "@id": "0000-0002-5035-7978"
+          "@id": "https://orcid.org/0000-0002-5035-7978"
         },
         {
-          "@id": "0000-0001-9513-2468"
+          "@id": "https://orcid.org/0000-0001-9513-2468"
         },
         {
-          "@id": "0000-0002-9976-4507"
+          "@id": "https://orcid.org/0000-0002-9976-4507"
         },
         {
-          "@id": "0000-0002-0487-3947"
+          "@id": "https://orcid.org/0000-0002-0487-3947"
         },
         {
-          "@id": "0000-0003-4845-3191"
+          "@id": "https://orcid.org/0000-0003-4845-3191"
         },
         {
-          "@id": "0000-0002-4261-9886"
+          "@id": "https://orcid.org/0000-0002-4261-9886"
         }
       ],
       "isAccessibleForFree": true,
@@ -1078,7 +1084,7 @@ This folder contains two files:
       }
     },
     {
-      "@type": "Study",
+      "@type": "CreativeWork",
       "@id": "https://doi.org/10.14272/GLVNZYODMKSEPS-ONEGZZNKSA-N/CHMO0000593",
       "dct:conformsTo": {
         "@id": "https://bioschemas.org/types/Study/0.3-DRAFT"
@@ -1157,13 +1163,13 @@ This folder contains two files:
           "@id": "1H_NMR-1H/1H.peak.png"
         },
         {
+          "@id": "1H_NMR-1H/1H.jpeg"
+        },
+        {
           "@id": "1H_NMR-1H/1H.jcamp"
         },
         {
           "@id": "1H_NMR-1H/1H.peak.jdx"
-        },
-        {
-          "@id": "1H_NMR-1H/1H.jpeg"
         }
       ],
       "authors": [
@@ -1212,7 +1218,7 @@ This folder contains two files:
       }
     },
     {
-      "@type": "Study",
+      "@type": "CreativeWork",
       "@id": "https://doi.org/10.14272/GLVNZYODMKSEPS-ONEGZZNKSA-N/CHMO0000630",
       "dct:conformsTo": {
         "@id": "https://bioschemas.org/types/Study/0.3-DRAFT"
@@ -1288,13 +1294,13 @@ This folder contains two files:
       "instrument": "Jasco FT/IR-460Plus with ATR Diamond Plate",
       "hasPart": [
         {
-          "@id": "IR-RQQIV-V/IR RAJ15.peak.jdx"
+          "@id": "IR-RQQIV-V/IRRQQIV-V.png"
         },
         {
           "@id": "IR-RQQIV-V/IR RAJ15.infer.json"
         },
         {
-          "@id": "IR-RQQIV-V/IRRQQIV-V.png"
+          "@id": "IR-RQQIV-V/IR RAJ15.peak.jdx"
         },
         {
           "@id": "IR-RQQIV-V/IR RAJ15.dx"
@@ -1338,7 +1344,7 @@ This folder contains two files:
       }
     },
     {
-      "@type": "Study",
+      "@type": "CreativeWork",
       "@id": "https://doi.org/10.14272/GLVNZYODMKSEPS-ONEGZZNKSA-N/CHMO0000498",
       "dct:conformsTo": {
         "@id": "https://bioschemas.org/types/Study/0.3-DRAFT"
@@ -1455,7 +1461,7 @@ This folder contains two files:
       }
     },
     {
-      "@type": "Study",
+      "@type": "CreativeWork",
       "@id": "https://doi.org/10.14272/GLVNZYODMKSEPS-ONEGZZNKSA-N/CHMO0000595",
       "dct:conformsTo": {
         "@id": "https://bioschemas.org/types/Study/0.3-DRAFT"
@@ -1531,19 +1537,19 @@ This folder contains two files:
       "instrument": "Bruker Avance III (400 MHz)",
       "hasPart": [
         {
+          "@id": "13C_NMR-13C/13C.edit.png"
+        },
+        {
           "@id": "13C_NMR-13C/13C.jpeg"
         },
         {
           "@id": "13C_NMR-13C/13C.infer.json"
         },
         {
-          "@id": "13C_NMR-13C/13C.jcamp"
-        },
-        {
-          "@id": "13C_NMR-13C/13C.edit.png"
-        },
-        {
           "@id": "13C_NMR-13C/13C.edit.jdx"
+        },
+        {
+          "@id": "13C_NMR-13C/13C.jcamp"
         }
       ],
       "authors": [
@@ -1627,22 +1633,22 @@ This folder contains two files:
           "@id": "1H_NMR-1H/1H.peak.png"
         },
         {
+          "@id": "1H_NMR-1H/1H.jpeg"
+        },
+        {
           "@id": "1H_NMR-1H/1H.jcamp"
         },
         {
           "@id": "1H_NMR-1H/1H.peak.jdx"
         },
         {
-          "@id": "1H_NMR-1H/1H.jpeg"
-        },
-        {
-          "@id": "IR-RQQIV-V/IR RAJ15.peak.jdx"
+          "@id": "IR-RQQIV-V/IRRQQIV-V.png"
         },
         {
           "@id": "IR-RQQIV-V/IR RAJ15.infer.json"
         },
         {
-          "@id": "IR-RQQIV-V/IRRQQIV-V.png"
+          "@id": "IR-RQQIV-V/IR RAJ15.peak.jdx"
         },
         {
           "@id": "IR-RQQIV-V/IR RAJ15.dx"
@@ -1654,19 +1660,19 @@ This folder contains two files:
           "@id": "HRMS__28EI_29-202206031449161000/202206031449161000.jpg"
         },
         {
+          "@id": "13C_NMR-13C/13C.edit.png"
+        },
+        {
           "@id": "13C_NMR-13C/13C.jpeg"
         },
         {
           "@id": "13C_NMR-13C/13C.infer.json"
         },
         {
-          "@id": "13C_NMR-13C/13C.jcamp"
-        },
-        {
-          "@id": "13C_NMR-13C/13C.edit.png"
-        },
-        {
           "@id": "13C_NMR-13C/13C.edit.jdx"
+        },
+        {
+          "@id": "13C_NMR-13C/13C.jcamp"
         }
       ],
       "authors": [
@@ -1698,8 +1704,8 @@ This folder contains two files:
       },
       "version": "1.0",
       "additionalType": "https://purl.archive.org/purl/elnconsortium/eln-spec/1.1",
-      "datePublished": "2025-11-03T11:13:05.824706",
-      "dateCreated": "2025-11-03T11:13:05.824718",
+      "datePublished": "2025-11-21T13:19:43.554504",
+      "dateCreated": "2025-11-21T13:19:43.554516",
       "sdPublisher": {
         "@id": "GOLD_STANDARD_PUBLISHER"
       }
@@ -1711,97 +1717,128 @@ This folder contains two files:
       "familyName": "Brinckmann",
       "honorificPrefix": "Dr.",
       "email": "s.brinckmann@fz-juelich.de",
-      "identifier": "https://orcid.org/0000-0003-0930-082X"
+      "identifier": "https://orcid.org/0000-0003-0930-082X",
+      "name": "Steffen Brinckmann"
     },
     {
       "@id": "1H_NMR-1H/1H.peak.png",
       "@type": "File",
+      "name": "1H.peak.png",
       "sha256": "3f716f9ace0138393528585f4be10a15",
-      "name": "1H.peak.png"
-    },
-    {
-      "@id": "1H_NMR-1H/1H.jcamp",
-      "@type": "File",
-      "sha256": "2dfb64df27339cfe53a981b51a661122",
-      "name": "1H.jcamp"
-    },
-    {
-      "@id": "1H_NMR-1H/1H.peak.jdx",
-      "@type": "File",
-      "sha256": "eeed3522816561f91392547509d05b93",
-      "name": "1H.peak.jdx"
+      "encodingFormat": "image/png",
+      "contentSize": "54255"
     },
     {
       "@id": "1H_NMR-1H/1H.jpeg",
       "@type": "File",
+      "name": "1H.jpeg",
       "sha256": "fe6477d2f26890e50ac129f238f93c79",
-      "name": "1H.jpeg"
+      "encodingFormat": "image/jpeg",
+      "contentSize": "638717"
     },
     {
-      "@id": "IR-RQQIV-V/IR RAJ15.peak.jdx",
+      "@id": "1H_NMR-1H/1H.jcamp",
       "@type": "File",
-      "sha256": "RAJ15.peak.jdx",
-      "name": "IR RAJ15.peak.jdx"
+      "name": "1H.jcamp",
+      "sha256": "2dfb64df27339cfe53a981b51a661122",
+      "encodingFormat": "text/plain",
+      "contentSize": "619889"
     },
     {
-      "@id": "IR-RQQIV-V/IR RAJ15.infer.json",
+      "@id": "1H_NMR-1H/1H.peak.jdx",
       "@type": "File",
-      "sha256": "RAJ15.infer.json",
-      "name": "IR RAJ15.infer.json"
+      "name": "1H.peak.jdx",
+      "sha256": "eeed3522816561f91392547509d05b93",
+      "encodingFormat": "text/plain",
+      "contentSize": "662028"
     },
     {
       "@id": "IR-RQQIV-V/IRRQQIV-V.png",
       "@type": "File",
+      "name": "IRRQQIV-V.png",
       "sha256": "dadfa0ae152d4b4f24e52a93edd898b8",
-      "name": "IRRQQIV-V.png"
+      "encodingFormat": "image/png",
+      "contentSize": "24907"
+    },
+    {
+      "@id": "IR-RQQIV-V/IR RAJ15.infer.json",
+      "@type": "File",
+      "name": "IR RAJ15.infer.json",
+      "sha256": "RAJ15.infer.json",
+      "encodingFormat": "application/json",
+      "contentSize": "8712"
+    },
+    {
+      "@id": "IR-RQQIV-V/IR RAJ15.peak.jdx",
+      "@type": "File",
+      "name": "IR RAJ15.peak.jdx",
+      "sha256": "RAJ15.peak.jdx",
+      "encodingFormat": "text/plain",
+      "contentSize": "34894"
     },
     {
       "@id": "IR-RQQIV-V/IR RAJ15.dx",
       "@type": "File",
+      "name": "IR RAJ15.dx",
       "sha256": "RAJ15.dx",
-      "name": "IR RAJ15.dx"
+      "encodingFormat": "text/plain",
+      "contentSize": "43237"
     },
     {
       "@id": "IR-RQQIV-V/IR RAJ15.peak.png",
       "@type": "File",
+      "name": "IR RAJ15.peak.png",
       "sha256": "RAJ15.peak.png",
-      "name": "IR RAJ15.peak.png"
+      "encodingFormat": "image/png",
+      "contentSize": "103380"
     },
     {
       "@id": "HRMS__28EI_29-202206031449161000/202206031449161000.jpg",
       "@type": "File",
+      "name": "202206031449161000.jpg",
       "sha256": "2fbe8838353c27851c6bb82ac97faee8",
-      "name": "202206031449161000.jpg"
-    },
-    {
-      "@id": "13C_NMR-13C/13C.jpeg",
-      "@type": "File",
-      "sha256": "2551a4d100498f068723201da7b1d5e9",
-      "name": "13C.jpeg"
-    },
-    {
-      "@id": "13C_NMR-13C/13C.infer.json",
-      "@type": "File",
-      "sha256": "42d64939ddc5990a59bb0f23b78be98f",
-      "name": "13C.infer.json"
-    },
-    {
-      "@id": "13C_NMR-13C/13C.jcamp",
-      "@type": "File",
-      "sha256": "2a4bc1adcf8492d4f4eb94130ab05056",
-      "name": "13C.jcamp"
+      "encodingFormat": "image/jpeg",
+      "contentSize": "606186"
     },
     {
       "@id": "13C_NMR-13C/13C.edit.png",
       "@type": "File",
+      "name": "13C.edit.png",
       "sha256": "05d6294393ad34b27fe0b7d646e67ba7",
-      "name": "13C.edit.png"
+      "encodingFormat": "image/png",
+      "contentSize": "51616"
+    },
+    {
+      "@id": "13C_NMR-13C/13C.jpeg",
+      "@type": "File",
+      "name": "13C.jpeg",
+      "sha256": "2551a4d100498f068723201da7b1d5e9",
+      "encodingFormat": "image/jpeg",
+      "contentSize": "685470"
+    },
+    {
+      "@id": "13C_NMR-13C/13C.infer.json",
+      "@type": "File",
+      "name": "13C.infer.json",
+      "sha256": "42d64939ddc5990a59bb0f23b78be98f",
+      "encodingFormat": "application/json",
+      "contentSize": "13074"
     },
     {
       "@id": "13C_NMR-13C/13C.edit.jdx",
       "@type": "File",
+      "name": "13C.edit.jdx",
       "sha256": "a52b09233f2818f096c11b03021ed3f7",
-      "name": "13C.edit.jdx"
+      "encodingFormat": "text/plain",
+      "contentSize": "471185"
+    },
+    {
+      "@id": "13C_NMR-13C/13C.jcamp",
+      "@type": "File",
+      "name": "13C.jcamp",
+      "sha256": "2a4bc1adcf8492d4f4eb94130ab05056",
+      "encodingFormat": "text/plain",
+      "contentSize": "567966"
     }
   ]
 }

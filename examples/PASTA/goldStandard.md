@@ -1,8 +1,8 @@
-**Gold‑standard example**
+# Gold‑standard example
 
 This gold‑standard sibling triplet consists of an ELN
 file, a JSON‑LD file, and a Turtle file. The example was created from the data
-for CRR‑25894 on chemotion‑repository.org.
+for CRR‑25894 on chemotion‑repository.org. The triplet shows that FULL semantic information can be included into the ELN file.
 
 - **The JSON‑LD and Turtle files are equivalent:** the Turtle file was generated
   from the JSON‑LD representation using rdflib.
@@ -35,6 +35,11 @@ for CRR‑25894 on chemotion‑repository.org.
   - `author` → `authors`
   - `keywords` → `keywordLists`
   - Remove the protected `about` key if it only links back to the root node.
+  - rename @type: 'Study' -> 'CreativeWork'
+  - rename @type: 'QuantitativeValue' -> 'PropertyValue'
+  - for @type: Person, create name using givenName and familyName
+  - `affiliation` -> `worksFor`
+  - for @type: PropertyValue: add propertyID
 
 ## Original data
 

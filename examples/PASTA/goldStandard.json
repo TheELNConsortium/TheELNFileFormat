@@ -14,7 +14,8 @@
             "givenName": "Rachel",
             "affiliation": {
                 "@type": "Organization",
-                "name": "Chemie, Ludwig-Maximilians-Universität München, Deutschland"
+                "name": "Chemie, Ludwig-Maximilians-Universität München, Germany",
+                "identifier": "https://ror.org/05591te55"
             }
         },
         {
@@ -22,10 +23,11 @@
             "name": "Violeta Aleksandrova Vetsova",
             "familyName": "Vetsova",
             "givenName": "Violeta Aleksandrova",
-            "identifier": "0000-0002-4631-377X",
+            "identifier": "https://orcid.org/0000-0002-4631-377X",
             "affiliation": {
                 "@type": "Organization",
-                "name": "Chemie, Ludwig-Maximilians-Universität München, Deutschland"
+                "name": "Chemie, Ludwig-Maximilians-Universität München, Germany",
+                "identifier": "https://ror.org/05591te55"
             }
         },
         {
@@ -35,7 +37,8 @@
             "givenName": "Dominik Gerold",
             "affiliation": {
                 "@type": "Organization",
-                "name": "Chemie, Ludwig-Maximilians-Universität München, Germany"
+                "name": "Chemie, Ludwig-Maximilians-Universität München, Germany",
+                "identifier": "https://ror.org/05591te55"
             }
         },
         {
@@ -45,7 +48,8 @@
             "givenName": "Peter ",
             "affiliation": {
                 "@type": "Organization",
-                "name": "Chemie, Ludwig-Maximilians-Universität München, Germany"
+                "name": "Chemie, Ludwig-Maximilians-Universität München, Germany",
+                "identifier": "https://ror.org/05591te55"
             }
         },
         {
@@ -55,7 +59,8 @@
             "givenName": "Lena J.",
             "affiliation": {
                 "@type": "Organization",
-                "name": "Chemie, Ludwig-Maximilians-Universität München, Germany"
+                "name": "Chemie, Ludwig-Maximilians-Universität München, Germany",
+                "identifier": "https://ror.org/05591te55"
             }
         }
     ],
@@ -67,7 +72,8 @@
             "givenName": "Rachel",
             "affiliation": {
                 "@type": "Organization",
-                "name": "Chemie, Ludwig-Maximilians-Universität München, Deutschland"
+                "name": "Chemie, Ludwig-Maximilians-Universität München, Germany",
+                "identifier": "https://ror.org/05591te55"
             }
         },
         {
@@ -75,10 +81,11 @@
             "name": "Violeta Aleksandrova Vetsova",
             "familyName": "Vetsova",
             "givenName": "Violeta Aleksandrova",
-            "identifier": "0000-0002-4631-377X",
+            "identifier": "https://orcid.org/0000-0002-4631-377X",
             "affiliation": {
                 "@type": "Organization",
-                "name": "Chemie, Ludwig-Maximilians-Universität München, Deutschland"
+                "name": "Chemie, Ludwig-Maximilians-Universität München, Germany",
+                "identifier": "https://ror.org/05591te55"
             }
         },
         {
@@ -88,7 +95,8 @@
             "givenName": "Dominik Gerold",
             "affiliation": {
                 "@type": "Organization",
-                "name": "Chemie, Ludwig-Maximilians-Universität München, Germany"
+                "name": "Chemie, Ludwig-Maximilians-Universität München, Germany",
+                "identifier": "https://ror.org/05591te55"
             }
         },
         {
@@ -98,7 +106,8 @@
             "givenName": "Peter ",
             "affiliation": {
                 "@type": "Organization",
-                "name": "Chemie, Ludwig-Maximilians-Universität München, Germany"
+                "name": "Chemie, Ludwig-Maximilians-Universität München, Germany",
+                "identifier": "https://ror.org/05591te55"
             }
         },
         {
@@ -108,7 +117,8 @@
             "givenName": "Lena J.",
             "affiliation": {
                 "@type": "Organization",
-                "name": "Chemie, Ludwig-Maximilians-Universität München, Germany"
+                "name": "Chemie, Ludwig-Maximilians-Universität München, Germany",
+                "identifier": "https://ror.org/05591te55"
             }
         }
     ],
@@ -219,7 +229,8 @@
                             "givenName": "Rachel",
                             "affiliation": {
                                 "@type": "Organization",
-                                "name": "Chemie, Ludwig-Maximilians-Universität München, Deutschland"
+                                "name": "Chemie, Ludwig-Maximilians-Universität München, Germany",
+                                "identifier": "https://ror.org/05591te55"
                             }
                         },
                         {
@@ -227,10 +238,11 @@
                             "name": "Violeta Aleksandrova Vetsova",
                             "familyName": "Vetsova",
                             "givenName": "Violeta Aleksandrova",
-                            "identifier": "0000-0002-4631-377X",
+                            "identifier": "https://orcid.org/0000-0002-4631-377X",
                             "affiliation": {
                                 "@type": "Organization",
-                                "name": "Chemie, Ludwig-Maximilians-Universität München, Deutschland"
+                                "name": "Chemie, Ludwig-Maximilians-Universität München, Germany",
+                                "identifier": "https://ror.org/05591te55"
                             }
                         },
                         {
@@ -240,7 +252,8 @@
                             "givenName": "Dominik Gerold",
                             "affiliation": {
                                 "@type": "Organization",
-                                "name": "Chemie, Ludwig-Maximilians-Universität München, Germany"
+                                "name": "Chemie, Ludwig-Maximilians-Universität München, Germany",
+                                "identifier": "https://ror.org/05591te55"
                             }
                         },
                         {
@@ -250,7 +263,8 @@
                             "givenName": "Peter ",
                             "affiliation": {
                                 "@type": "Organization",
-                                "name": "Chemie, Ludwig-Maximilians-Universität München, Germany"
+                                "name": "Chemie, Ludwig-Maximilians-Universität München, Germany",
+                                "identifier": "https://ror.org/05591te55"
                             }
                         },
                         {
@@ -260,7 +274,8 @@
                             "givenName": "Lena J.",
                             "affiliation": {
                                 "@type": "Organization",
-                                "name": "Chemie, Ludwig-Maximilians-Universität München, Germany"
+                                "name": "Chemie, Ludwig-Maximilians-Universität München, Germany",
+                                "identifier": "https://ror.org/05591te55"
                             }
                         }
                     ],
@@ -272,7 +287,8 @@
                             "givenName": "Rachel",
                             "affiliation": {
                                 "@type": "Organization",
-                                "name": "Chemie, Ludwig-Maximilians-Universität München, Deutschland"
+                                "name": "Chemie, Ludwig-Maximilians-Universität München, Germany",
+                                "identifier": "https://ror.org/05591te55"
                             }
                         },
                         {
@@ -280,10 +296,11 @@
                             "name": "Violeta Aleksandrova Vetsova",
                             "familyName": "Vetsova",
                             "givenName": "Violeta Aleksandrova",
-                            "identifier": "0000-0002-4631-377X",
+                            "identifier": "https://orcid.org/0000-0002-4631-377X",
                             "affiliation": {
                                 "@type": "Organization",
-                                "name": "Chemie, Ludwig-Maximilians-Universität München, Deutschland"
+                                "name": "Chemie, Ludwig-Maximilians-Universität München, Germany",
+                                "identifier": "https://ror.org/05591te55"
                             }
                         },
                         {
@@ -293,7 +310,8 @@
                             "givenName": "Dominik Gerold",
                             "affiliation": {
                                 "@type": "Organization",
-                                "name": "Chemie, Ludwig-Maximilians-Universität München, Germany"
+                                "name": "Chemie, Ludwig-Maximilians-Universität München, Germany",
+                                "identifier": "https://ror.org/05591te55"
                             }
                         },
                         {
@@ -303,7 +321,8 @@
                             "givenName": "Peter ",
                             "affiliation": {
                                 "@type": "Organization",
-                                "name": "Chemie, Ludwig-Maximilians-Universität München, Germany"
+                                "name": "Chemie, Ludwig-Maximilians-Universität München, Germany",
+                                "identifier": "https://ror.org/05591te55"
                             }
                         },
                         {
@@ -313,7 +332,8 @@
                             "givenName": "Lena J.",
                             "affiliation": {
                                 "@type": "Organization",
-                                "name": "Chemie, Ludwig-Maximilians-Universität München, Germany"
+                                "name": "Chemie, Ludwig-Maximilians-Universität München, Germany",
+                                "identifier": "https://ror.org/05591te55"
                             }
                         }
                     ],
@@ -361,7 +381,8 @@
                         "provider": {
                             "@type": "Organization",
                             "name": "Karlsruhe Institute of Technology (KIT)",
-                            "url": "https://www.kit.edu/"
+                            "url": "https://www.kit.edu/",
+                            "identifier": "https://ror.org/04t3en479"
                         },
                         "url": "https://www.chemotion-repository.net",
                         "license": "https://www.gnu.org/licenses/agpl-3.0.en.html",
@@ -370,49 +391,49 @@
                                 "@type": "Person",
                                 "givenName": "An",
                                 "familyName": "Nguyen",
-                                "@id": "0000-0002-1692-6778"
+                                "@id": "https://orcid.org/0000-0002-1692-6778"
                             },
                             {
                                 "@type": "Person",
                                 "givenName": "Chia-Lin",
                                 "familyName": "Lin",
-                                "@id": "0000-0002-9772-0455"
+                                "@id": "https://orcid.org/0000-0002-9772-0455"
                             },
                             {
                                 "@type": "Person",
                                 "givenName": "Felix",
                                 "familyName": "Bach",
-                                "@id": "0000-0002-5035-7978"
+                                "@id": "https://orcid.org/0000-0002-5035-7978"
                             },
                             {
                                 "@type": "Person",
                                 "givenName": "Nicole",
                                 "familyName": "Jung",
-                                "@id": "0000-0001-9513-2468"
+                                "@id": "https://orcid.org/0000-0001-9513-2468"
                             },
                             {
                                 "@type": "Person",
                                 "givenName": "Pei-Chi",
                                 "familyName": "Huang",
-                                "@id": "0000-0002-9976-4507"
+                                "@id": "https://orcid.org/0000-0002-9976-4507"
                             },
                             {
                                 "@type": "Person",
                                 "givenName": "Pierre",
                                 "familyName": "Tremouilhac",
-                                "@id": "0000-0002-0487-3947"
+                                "@id": "https://orcid.org/0000-0002-0487-3947"
                             },
                             {
                                 "@type": "Person",
                                 "givenName": "Stefan",
                                 "familyName": "Braese",
-                                "@id": "0000-0003-4845-3191"
+                                "@id": "https://orcid.org/0000-0003-4845-3191"
                             },
                             {
                                 "@type": "Person",
                                 "givenName": "Yu-Chieh",
                                 "familyName": "Huang",
-                                "@id": "0000-0002-4261-9886"
+                                "@id": "https://orcid.org/0000-0002-4261-9886"
                             }
                         ],
                         "isAccessibleForFree": true
@@ -440,7 +461,8 @@
                                 "givenName": "Rachel",
                                 "affiliation": {
                                     "@type": "Organization",
-                                    "name": "Chemie, Ludwig-Maximilians-Universität München, Deutschland"
+                                    "name": "Chemie, Ludwig-Maximilians-Universität München, Germany",
+                                    "identifier": "https://ror.org/05591te55"
                                 }
                             },
                             {
@@ -448,10 +470,11 @@
                                 "name": "Violeta Aleksandrova Vetsova",
                                 "familyName": "Vetsova",
                                 "givenName": "Violeta Aleksandrova",
-                                "identifier": "0000-0002-4631-377X",
+                                "identifier": "https://orcid.org/0000-0002-4631-377X",
                                 "affiliation": {
                                     "@type": "Organization",
-                                    "name": "Chemie, Ludwig-Maximilians-Universität München, Deutschland"
+                                    "name": "Chemie, Ludwig-Maximilians-Universität München, Germany",
+                                    "identifier": "https://ror.org/05591te55"
                                 }
                             },
                             {
@@ -461,7 +484,8 @@
                                 "givenName": "Dominik Gerold",
                                 "affiliation": {
                                     "@type": "Organization",
-                                    "name": "Chemie, Ludwig-Maximilians-Universität München, Germany"
+                                    "name": "Chemie, Ludwig-Maximilians-Universität München, Germany",
+                                    "identifier": "https://ror.org/05591te55"
                                 }
                             },
                             {
@@ -471,7 +495,8 @@
                                 "givenName": "Peter ",
                                 "affiliation": {
                                     "@type": "Organization",
-                                    "name": "Chemie, Ludwig-Maximilians-Universität München, Germany"
+                                    "name": "Chemie, Ludwig-Maximilians-Universität München, Germany",
+                                    "identifier": "https://ror.org/05591te55"
                                 }
                             },
                             {
@@ -481,7 +506,8 @@
                                 "givenName": "Lena J.",
                                 "affiliation": {
                                     "@type": "Organization",
-                                    "name": "Chemie, Ludwig-Maximilians-Universität München, Germany"
+                                    "name": "Chemie, Ludwig-Maximilians-Universität München, Germany",
+                                    "identifier": "https://ror.org/05591te55"
                                 }
                             }
                         ],
@@ -583,7 +609,8 @@
                             "givenName": "Rachel",
                             "affiliation": {
                                 "@type": "Organization",
-                                "name": "Chemie, Ludwig-Maximilians-Universität München, Deutschland"
+                                "name": "Chemie, Ludwig-Maximilians-Universität München, Germany",
+                                "identifier": "https://ror.org/05591te55"
                             }
                         },
                         {
@@ -591,10 +618,11 @@
                             "name": "Violeta Aleksandrova Vetsova",
                             "familyName": "Vetsova",
                             "givenName": "Violeta Aleksandrova",
-                            "identifier": "0000-0002-4631-377X",
+                            "identifier": "https://orcid.org/0000-0002-4631-377X",
                             "affiliation": {
                                 "@type": "Organization",
-                                "name": "Chemie, Ludwig-Maximilians-Universität München, Deutschland"
+                                "name": "Chemie, Ludwig-Maximilians-Universität München, Germany",
+                                "identifier": "https://ror.org/05591te55"
                             }
                         },
                         {
@@ -604,7 +632,8 @@
                             "givenName": "Dominik Gerold",
                             "affiliation": {
                                 "@type": "Organization",
-                                "name": "Chemie, Ludwig-Maximilians-Universität München, Germany"
+                                "name": "Chemie, Ludwig-Maximilians-Universität München, Germany",
+                                "identifier": "https://ror.org/05591te55"
                             }
                         },
                         {
@@ -614,7 +643,8 @@
                             "givenName": "Peter ",
                             "affiliation": {
                                 "@type": "Organization",
-                                "name": "Chemie, Ludwig-Maximilians-Universität München, Germany"
+                                "name": "Chemie, Ludwig-Maximilians-Universität München, Germany",
+                                "identifier": "https://ror.org/05591te55"
                             }
                         },
                         {
@@ -624,7 +654,8 @@
                             "givenName": "Lena J.",
                             "affiliation": {
                                 "@type": "Organization",
-                                "name": "Chemie, Ludwig-Maximilians-Universität München, Germany"
+                                "name": "Chemie, Ludwig-Maximilians-Universität München, Germany",
+                                "identifier": "https://ror.org/05591te55"
                             }
                         }
                     ],
@@ -636,7 +667,8 @@
                             "givenName": "Rachel",
                             "affiliation": {
                                 "@type": "Organization",
-                                "name": "Chemie, Ludwig-Maximilians-Universität München, Deutschland"
+                                "name": "Chemie, Ludwig-Maximilians-Universität München, Germany",
+                                "identifier": "https://ror.org/05591te55"
                             }
                         },
                         {
@@ -644,10 +676,11 @@
                             "name": "Violeta Aleksandrova Vetsova",
                             "familyName": "Vetsova",
                             "givenName": "Violeta Aleksandrova",
-                            "identifier": "0000-0002-4631-377X",
+                            "identifier": "https://orcid.org/0000-0002-4631-377X",
                             "affiliation": {
                                 "@type": "Organization",
-                                "name": "Chemie, Ludwig-Maximilians-Universität München, Deutschland"
+                                "name": "Chemie, Ludwig-Maximilians-Universität München, Germany",
+                                "identifier": "https://ror.org/05591te55"
                             }
                         },
                         {
@@ -657,7 +690,8 @@
                             "givenName": "Dominik Gerold",
                             "affiliation": {
                                 "@type": "Organization",
-                                "name": "Chemie, Ludwig-Maximilians-Universität München, Germany"
+                                "name": "Chemie, Ludwig-Maximilians-Universität München, Germany",
+                                "identifier": "https://ror.org/05591te55"
                             }
                         },
                         {
@@ -667,7 +701,8 @@
                             "givenName": "Peter ",
                             "affiliation": {
                                 "@type": "Organization",
-                                "name": "Chemie, Ludwig-Maximilians-Universität München, Germany"
+                                "name": "Chemie, Ludwig-Maximilians-Universität München, Germany",
+                                "identifier": "https://ror.org/05591te55"
                             }
                         },
                         {
@@ -677,7 +712,8 @@
                             "givenName": "Lena J.",
                             "affiliation": {
                                 "@type": "Organization",
-                                "name": "Chemie, Ludwig-Maximilians-Universität München, Germany"
+                                "name": "Chemie, Ludwig-Maximilians-Universität München, Germany",
+                                "identifier": "https://ror.org/05591te55"
                             }
                         }
                     ],
@@ -725,7 +761,8 @@
                         "provider": {
                             "@type": "Organization",
                             "name": "Karlsruhe Institute of Technology (KIT)",
-                            "url": "https://www.kit.edu/"
+                            "url": "https://www.kit.edu/",
+                            "identifier": "https://ror.org/04t3en479"
                         },
                         "url": "https://www.chemotion-repository.net",
                         "license": "https://www.gnu.org/licenses/agpl-3.0.en.html",
@@ -734,49 +771,49 @@
                                 "@type": "Person",
                                 "givenName": "An",
                                 "familyName": "Nguyen",
-                                "@id": "0000-0002-1692-6778"
+                                "@id": "https://orcid.org/0000-0002-1692-6778"
                             },
                             {
                                 "@type": "Person",
                                 "givenName": "Chia-Lin",
                                 "familyName": "Lin",
-                                "@id": "0000-0002-9772-0455"
+                                "@id": "https://orcid.org/0000-0002-9772-0455"
                             },
                             {
                                 "@type": "Person",
                                 "givenName": "Felix",
                                 "familyName": "Bach",
-                                "@id": "0000-0002-5035-7978"
+                                "@id": "https://orcid.org/0000-0002-5035-7978"
                             },
                             {
                                 "@type": "Person",
                                 "givenName": "Nicole",
                                 "familyName": "Jung",
-                                "@id": "0000-0001-9513-2468"
+                                "@id": "https://orcid.org/0000-0001-9513-2468"
                             },
                             {
                                 "@type": "Person",
                                 "givenName": "Pei-Chi",
                                 "familyName": "Huang",
-                                "@id": "0000-0002-9976-4507"
+                                "@id": "https://orcid.org/0000-0002-9976-4507"
                             },
                             {
                                 "@type": "Person",
                                 "givenName": "Pierre",
                                 "familyName": "Tremouilhac",
-                                "@id": "0000-0002-0487-3947"
+                                "@id": "https://orcid.org/0000-0002-0487-3947"
                             },
                             {
                                 "@type": "Person",
                                 "givenName": "Stefan",
                                 "familyName": "Braese",
-                                "@id": "0000-0003-4845-3191"
+                                "@id": "https://orcid.org/0000-0003-4845-3191"
                             },
                             {
                                 "@type": "Person",
                                 "givenName": "Yu-Chieh",
                                 "familyName": "Huang",
-                                "@id": "0000-0002-4261-9886"
+                                "@id": "https://orcid.org/0000-0002-4261-9886"
                             }
                         ],
                         "isAccessibleForFree": true
@@ -804,7 +841,8 @@
                                 "givenName": "Rachel",
                                 "affiliation": {
                                     "@type": "Organization",
-                                    "name": "Chemie, Ludwig-Maximilians-Universität München, Deutschland"
+                                    "name": "Chemie, Ludwig-Maximilians-Universität München, Germany",
+                                    "identifier": "https://ror.org/05591te55"
                                 }
                             },
                             {
@@ -812,10 +850,11 @@
                                 "name": "Violeta Aleksandrova Vetsova",
                                 "familyName": "Vetsova",
                                 "givenName": "Violeta Aleksandrova",
-                                "identifier": "0000-0002-4631-377X",
+                                "identifier": "https://orcid.org/0000-0002-4631-377X",
                                 "affiliation": {
                                     "@type": "Organization",
-                                    "name": "Chemie, Ludwig-Maximilians-Universität München, Deutschland"
+                                    "name": "Chemie, Ludwig-Maximilians-Universität München, Germany",
+                                    "identifier": "https://ror.org/05591te55"
                                 }
                             },
                             {
@@ -825,7 +864,8 @@
                                 "givenName": "Dominik Gerold",
                                 "affiliation": {
                                     "@type": "Organization",
-                                    "name": "Chemie, Ludwig-Maximilians-Universität München, Germany"
+                                    "name": "Chemie, Ludwig-Maximilians-Universität München, Germany",
+                                    "identifier": "https://ror.org/05591te55"
                                 }
                             },
                             {
@@ -835,7 +875,8 @@
                                 "givenName": "Peter ",
                                 "affiliation": {
                                     "@type": "Organization",
-                                    "name": "Chemie, Ludwig-Maximilians-Universität München, Germany"
+                                    "name": "Chemie, Ludwig-Maximilians-Universität München, Germany",
+                                    "identifier": "https://ror.org/05591te55"
                                 }
                             },
                             {
@@ -845,7 +886,8 @@
                                 "givenName": "Lena J.",
                                 "affiliation": {
                                     "@type": "Organization",
-                                    "name": "Chemie, Ludwig-Maximilians-Universität München, Germany"
+                                    "name": "Chemie, Ludwig-Maximilians-Universität München, Germany",
+                                    "identifier": "https://ror.org/05591te55"
                                 }
                             }
                         ],
@@ -936,7 +978,8 @@
                             "givenName": "Rachel",
                             "affiliation": {
                                 "@type": "Organization",
-                                "name": "Chemie, Ludwig-Maximilians-Universität München, Deutschland"
+                                "name": "Chemie, Ludwig-Maximilians-Universität München, Germany",
+                                "identifier": "https://ror.org/05591te55"
                             }
                         },
                         {
@@ -944,10 +987,11 @@
                             "name": "Violeta Aleksandrova Vetsova",
                             "familyName": "Vetsova",
                             "givenName": "Violeta Aleksandrova",
-                            "identifier": "0000-0002-4631-377X",
+                            "identifier": "https://orcid.org/0000-0002-4631-377X",
                             "affiliation": {
                                 "@type": "Organization",
-                                "name": "Chemie, Ludwig-Maximilians-Universität München, Deutschland"
+                                "name": "Chemie, Ludwig-Maximilians-Universität München, Germany",
+                                "identifier": "https://ror.org/05591te55"
                             }
                         },
                         {
@@ -957,7 +1001,8 @@
                             "givenName": "Dominik Gerold",
                             "affiliation": {
                                 "@type": "Organization",
-                                "name": "Chemie, Ludwig-Maximilians-Universität München, Germany"
+                                "name": "Chemie, Ludwig-Maximilians-Universität München, Germany",
+                                "identifier": "https://ror.org/05591te55"
                             }
                         },
                         {
@@ -967,7 +1012,8 @@
                             "givenName": "Peter ",
                             "affiliation": {
                                 "@type": "Organization",
-                                "name": "Chemie, Ludwig-Maximilians-Universität München, Germany"
+                                "name": "Chemie, Ludwig-Maximilians-Universität München, Germany",
+                                "identifier": "https://ror.org/05591te55"
                             }
                         },
                         {
@@ -977,7 +1023,8 @@
                             "givenName": "Lena J.",
                             "affiliation": {
                                 "@type": "Organization",
-                                "name": "Chemie, Ludwig-Maximilians-Universität München, Germany"
+                                "name": "Chemie, Ludwig-Maximilians-Universität München, Germany",
+                                "identifier": "https://ror.org/05591te55"
                             }
                         }
                     ],
@@ -989,7 +1036,8 @@
                             "givenName": "Rachel",
                             "affiliation": {
                                 "@type": "Organization",
-                                "name": "Chemie, Ludwig-Maximilians-Universität München, Deutschland"
+                                "name": "Chemie, Ludwig-Maximilians-Universität München, Germany",
+                                "identifier": "https://ror.org/05591te55"
                             }
                         },
                         {
@@ -997,10 +1045,11 @@
                             "name": "Violeta Aleksandrova Vetsova",
                             "familyName": "Vetsova",
                             "givenName": "Violeta Aleksandrova",
-                            "identifier": "0000-0002-4631-377X",
+                            "identifier": "https://orcid.org/0000-0002-4631-377X",
                             "affiliation": {
                                 "@type": "Organization",
-                                "name": "Chemie, Ludwig-Maximilians-Universität München, Deutschland"
+                                "name": "Chemie, Ludwig-Maximilians-Universität München, Germany",
+                                "identifier": "https://ror.org/05591te55"
                             }
                         },
                         {
@@ -1010,7 +1059,8 @@
                             "givenName": "Dominik Gerold",
                             "affiliation": {
                                 "@type": "Organization",
-                                "name": "Chemie, Ludwig-Maximilians-Universität München, Germany"
+                                "name": "Chemie, Ludwig-Maximilians-Universität München, Germany",
+                                "identifier": "https://ror.org/05591te55"
                             }
                         },
                         {
@@ -1020,7 +1070,8 @@
                             "givenName": "Peter ",
                             "affiliation": {
                                 "@type": "Organization",
-                                "name": "Chemie, Ludwig-Maximilians-Universität München, Germany"
+                                "name": "Chemie, Ludwig-Maximilians-Universität München, Germany",
+                                "identifier": "https://ror.org/05591te55"
                             }
                         },
                         {
@@ -1030,7 +1081,8 @@
                             "givenName": "Lena J.",
                             "affiliation": {
                                 "@type": "Organization",
-                                "name": "Chemie, Ludwig-Maximilians-Universität München, Germany"
+                                "name": "Chemie, Ludwig-Maximilians-Universität München, Germany",
+                                "identifier": "https://ror.org/05591te55"
                             }
                         }
                     ],
@@ -1078,7 +1130,8 @@
                         "provider": {
                             "@type": "Organization",
                             "name": "Karlsruhe Institute of Technology (KIT)",
-                            "url": "https://www.kit.edu/"
+                            "url": "https://www.kit.edu/",
+                            "identifier": "https://ror.org/04t3en479"
                         },
                         "url": "https://www.chemotion-repository.net",
                         "license": "https://www.gnu.org/licenses/agpl-3.0.en.html",
@@ -1087,49 +1140,49 @@
                                 "@type": "Person",
                                 "givenName": "An",
                                 "familyName": "Nguyen",
-                                "@id": "0000-0002-1692-6778"
+                                "@id": "https://orcid.org/0000-0002-1692-6778"
                             },
                             {
                                 "@type": "Person",
                                 "givenName": "Chia-Lin",
                                 "familyName": "Lin",
-                                "@id": "0000-0002-9772-0455"
+                                "@id": "https://orcid.org/0000-0002-9772-0455"
                             },
                             {
                                 "@type": "Person",
                                 "givenName": "Felix",
                                 "familyName": "Bach",
-                                "@id": "0000-0002-5035-7978"
+                                "@id": "https://orcid.org/0000-0002-5035-7978"
                             },
                             {
                                 "@type": "Person",
                                 "givenName": "Nicole",
                                 "familyName": "Jung",
-                                "@id": "0000-0001-9513-2468"
+                                "@id": "https://orcid.org/0000-0001-9513-2468"
                             },
                             {
                                 "@type": "Person",
                                 "givenName": "Pei-Chi",
                                 "familyName": "Huang",
-                                "@id": "0000-0002-9976-4507"
+                                "@id": "https://orcid.org/0000-0002-9976-4507"
                             },
                             {
                                 "@type": "Person",
                                 "givenName": "Pierre",
                                 "familyName": "Tremouilhac",
-                                "@id": "0000-0002-0487-3947"
+                                "@id": "https://orcid.org/0000-0002-0487-3947"
                             },
                             {
                                 "@type": "Person",
                                 "givenName": "Stefan",
                                 "familyName": "Braese",
-                                "@id": "0000-0003-4845-3191"
+                                "@id": "https://orcid.org/0000-0003-4845-3191"
                             },
                             {
                                 "@type": "Person",
                                 "givenName": "Yu-Chieh",
                                 "familyName": "Huang",
-                                "@id": "0000-0002-4261-9886"
+                                "@id": "https://orcid.org/0000-0002-4261-9886"
                             }
                         ],
                         "isAccessibleForFree": true
@@ -1157,7 +1210,8 @@
                                 "givenName": "Rachel",
                                 "affiliation": {
                                     "@type": "Organization",
-                                    "name": "Chemie, Ludwig-Maximilians-Universität München, Deutschland"
+                                    "name": "Chemie, Ludwig-Maximilians-Universität München, Germany",
+                                    "identifier": "https://ror.org/05591te55"
                                 }
                             },
                             {
@@ -1165,10 +1219,11 @@
                                 "name": "Violeta Aleksandrova Vetsova",
                                 "familyName": "Vetsova",
                                 "givenName": "Violeta Aleksandrova",
-                                "identifier": "0000-0002-4631-377X",
+                                "identifier": "https://orcid.org/0000-0002-4631-377X",
                                 "affiliation": {
                                     "@type": "Organization",
-                                    "name": "Chemie, Ludwig-Maximilians-Universität München, Deutschland"
+                                    "name": "Chemie, Ludwig-Maximilians-Universität München, Germany",
+                                    "identifier": "https://ror.org/05591te55"
                                 }
                             },
                             {
@@ -1178,7 +1233,8 @@
                                 "givenName": "Dominik Gerold",
                                 "affiliation": {
                                     "@type": "Organization",
-                                    "name": "Chemie, Ludwig-Maximilians-Universität München, Germany"
+                                    "name": "Chemie, Ludwig-Maximilians-Universität München, Germany",
+                                    "identifier": "https://ror.org/05591te55"
                                 }
                             },
                             {
@@ -1188,7 +1244,8 @@
                                 "givenName": "Peter ",
                                 "affiliation": {
                                     "@type": "Organization",
-                                    "name": "Chemie, Ludwig-Maximilians-Universität München, Germany"
+                                    "name": "Chemie, Ludwig-Maximilians-Universität München, Germany",
+                                    "identifier": "https://ror.org/05591te55"
                                 }
                             },
                             {
@@ -1198,7 +1255,8 @@
                                 "givenName": "Lena J.",
                                 "affiliation": {
                                     "@type": "Organization",
-                                    "name": "Chemie, Ludwig-Maximilians-Universität München, Germany"
+                                    "name": "Chemie, Ludwig-Maximilians-Universität München, Germany",
+                                    "identifier": "https://ror.org/05591te55"
                                 }
                             }
                         ],
@@ -1292,7 +1350,8 @@
                             "givenName": "Rachel",
                             "affiliation": {
                                 "@type": "Organization",
-                                "name": "Chemie, Ludwig-Maximilians-Universität München, Deutschland"
+                                "name": "Chemie, Ludwig-Maximilians-Universität München, Germany",
+                                "identifier": "https://ror.org/05591te55"
                             }
                         },
                         {
@@ -1300,10 +1359,11 @@
                             "name": "Violeta Aleksandrova Vetsova",
                             "familyName": "Vetsova",
                             "givenName": "Violeta Aleksandrova",
-                            "identifier": "0000-0002-4631-377X",
+                            "identifier": "https://orcid.org/0000-0002-4631-377X",
                             "affiliation": {
                                 "@type": "Organization",
-                                "name": "Chemie, Ludwig-Maximilians-Universität München, Deutschland"
+                                "name": "Chemie, Ludwig-Maximilians-Universität München, Germany",
+                                "identifier": "https://ror.org/05591te55"
                             }
                         },
                         {
@@ -1313,7 +1373,8 @@
                             "givenName": "Dominik Gerold",
                             "affiliation": {
                                 "@type": "Organization",
-                                "name": "Chemie, Ludwig-Maximilians-Universität München, Germany"
+                                "name": "Chemie, Ludwig-Maximilians-Universität München, Germany",
+                                "identifier": "https://ror.org/05591te55"
                             }
                         },
                         {
@@ -1323,7 +1384,8 @@
                             "givenName": "Peter ",
                             "affiliation": {
                                 "@type": "Organization",
-                                "name": "Chemie, Ludwig-Maximilians-Universität München, Germany"
+                                "name": "Chemie, Ludwig-Maximilians-Universität München, Germany",
+                                "identifier": "https://ror.org/05591te55"
                             }
                         },
                         {
@@ -1333,7 +1395,8 @@
                             "givenName": "Lena J.",
                             "affiliation": {
                                 "@type": "Organization",
-                                "name": "Chemie, Ludwig-Maximilians-Universität München, Germany"
+                                "name": "Chemie, Ludwig-Maximilians-Universität München, Germany",
+                                "identifier": "https://ror.org/05591te55"
                             }
                         }
                     ],
@@ -1345,7 +1408,8 @@
                             "givenName": "Rachel",
                             "affiliation": {
                                 "@type": "Organization",
-                                "name": "Chemie, Ludwig-Maximilians-Universität München, Deutschland"
+                                "name": "Chemie, Ludwig-Maximilians-Universität München, Germany",
+                                "identifier": "https://ror.org/05591te55"
                             }
                         },
                         {
@@ -1353,10 +1417,11 @@
                             "name": "Violeta Aleksandrova Vetsova",
                             "familyName": "Vetsova",
                             "givenName": "Violeta Aleksandrova",
-                            "identifier": "0000-0002-4631-377X",
+                            "identifier": "https://orcid.org/0000-0002-4631-377X",
                             "affiliation": {
                                 "@type": "Organization",
-                                "name": "Chemie, Ludwig-Maximilians-Universität München, Deutschland"
+                                "name": "Chemie, Ludwig-Maximilians-Universität München, Germany",
+                                "identifier": "https://ror.org/05591te55"
                             }
                         },
                         {
@@ -1366,7 +1431,8 @@
                             "givenName": "Dominik Gerold",
                             "affiliation": {
                                 "@type": "Organization",
-                                "name": "Chemie, Ludwig-Maximilians-Universität München, Germany"
+                                "name": "Chemie, Ludwig-Maximilians-Universität München, Germany",
+                                "identifier": "https://ror.org/05591te55"
                             }
                         },
                         {
@@ -1376,7 +1442,8 @@
                             "givenName": "Peter ",
                             "affiliation": {
                                 "@type": "Organization",
-                                "name": "Chemie, Ludwig-Maximilians-Universität München, Germany"
+                                "name": "Chemie, Ludwig-Maximilians-Universität München, Germany",
+                                "identifier": "https://ror.org/05591te55"
                             }
                         },
                         {
@@ -1386,7 +1453,8 @@
                             "givenName": "Lena J.",
                             "affiliation": {
                                 "@type": "Organization",
-                                "name": "Chemie, Ludwig-Maximilians-Universität München, Germany"
+                                "name": "Chemie, Ludwig-Maximilians-Universität München, Germany",
+                                "identifier": "https://ror.org/05591te55"
                             }
                         }
                     ],
@@ -1434,7 +1502,8 @@
                         "provider": {
                             "@type": "Organization",
                             "name": "Karlsruhe Institute of Technology (KIT)",
-                            "url": "https://www.kit.edu/"
+                            "url": "https://www.kit.edu/",
+                            "identifier": "https://ror.org/04t3en479"
                         },
                         "url": "https://www.chemotion-repository.net",
                         "license": "https://www.gnu.org/licenses/agpl-3.0.en.html",
@@ -1443,49 +1512,49 @@
                                 "@type": "Person",
                                 "givenName": "An",
                                 "familyName": "Nguyen",
-                                "@id": "0000-0002-1692-6778"
+                                "@id": "https://orcid.org/0000-0002-1692-6778"
                             },
                             {
                                 "@type": "Person",
                                 "givenName": "Chia-Lin",
                                 "familyName": "Lin",
-                                "@id": "0000-0002-9772-0455"
+                                "@id": "https://orcid.org/0000-0002-9772-0455"
                             },
                             {
                                 "@type": "Person",
                                 "givenName": "Felix",
                                 "familyName": "Bach",
-                                "@id": "0000-0002-5035-7978"
+                                "@id": "https://orcid.org/0000-0002-5035-7978"
                             },
                             {
                                 "@type": "Person",
                                 "givenName": "Nicole",
                                 "familyName": "Jung",
-                                "@id": "0000-0001-9513-2468"
+                                "@id": "https://orcid.org/0000-0001-9513-2468"
                             },
                             {
                                 "@type": "Person",
                                 "givenName": "Pei-Chi",
                                 "familyName": "Huang",
-                                "@id": "0000-0002-9976-4507"
+                                "@id": "https://orcid.org/0000-0002-9976-4507"
                             },
                             {
                                 "@type": "Person",
                                 "givenName": "Pierre",
                                 "familyName": "Tremouilhac",
-                                "@id": "0000-0002-0487-3947"
+                                "@id": "https://orcid.org/0000-0002-0487-3947"
                             },
                             {
                                 "@type": "Person",
                                 "givenName": "Stefan",
                                 "familyName": "Braese",
-                                "@id": "0000-0003-4845-3191"
+                                "@id": "https://orcid.org/0000-0003-4845-3191"
                             },
                             {
                                 "@type": "Person",
                                 "givenName": "Yu-Chieh",
                                 "familyName": "Huang",
-                                "@id": "0000-0002-4261-9886"
+                                "@id": "https://orcid.org/0000-0002-4261-9886"
                             }
                         ],
                         "isAccessibleForFree": true
@@ -1513,7 +1582,8 @@
                                 "givenName": "Rachel",
                                 "affiliation": {
                                     "@type": "Organization",
-                                    "name": "Chemie, Ludwig-Maximilians-Universität München, Deutschland"
+                                    "name": "Chemie, Ludwig-Maximilians-Universität München, Germany",
+                                    "identifier": "https://ror.org/05591te55"
                                 }
                             },
                             {
@@ -1521,10 +1591,11 @@
                                 "name": "Violeta Aleksandrova Vetsova",
                                 "familyName": "Vetsova",
                                 "givenName": "Violeta Aleksandrova",
-                                "identifier": "0000-0002-4631-377X",
+                                "identifier": "https://orcid.org/0000-0002-4631-377X",
                                 "affiliation": {
                                     "@type": "Organization",
-                                    "name": "Chemie, Ludwig-Maximilians-Universität München, Deutschland"
+                                    "name": "Chemie, Ludwig-Maximilians-Universität München, Germany",
+                                    "identifier": "https://ror.org/05591te55"
                                 }
                             },
                             {
@@ -1534,7 +1605,8 @@
                                 "givenName": "Dominik Gerold",
                                 "affiliation": {
                                     "@type": "Organization",
-                                    "name": "Chemie, Ludwig-Maximilians-Universität München, Germany"
+                                    "name": "Chemie, Ludwig-Maximilians-Universität München, Germany",
+                                    "identifier": "https://ror.org/05591te55"
                                 }
                             },
                             {
@@ -1544,7 +1616,8 @@
                                 "givenName": "Peter ",
                                 "affiliation": {
                                     "@type": "Organization",
-                                    "name": "Chemie, Ludwig-Maximilians-Universität München, Germany"
+                                    "name": "Chemie, Ludwig-Maximilians-Universität München, Germany",
+                                    "identifier": "https://ror.org/05591te55"
                                 }
                             },
                             {
@@ -1554,7 +1627,8 @@
                                 "givenName": "Lena J.",
                                 "affiliation": {
                                     "@type": "Organization",
-                                    "name": "Chemie, Ludwig-Maximilians-Universität München, Germany"
+                                    "name": "Chemie, Ludwig-Maximilians-Universität München, Germany",
+                                    "identifier": "https://ror.org/05591te55"
                                 }
                             }
                         ],
