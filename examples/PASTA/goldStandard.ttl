@@ -3,9 +3,16 @@
 @prefix schema1: <http://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<file:///home/steffen/FZJ/DataScience/Repositories/TheELNConsortium/GoldStandard/10.14272/reaction/SA-FUHFF-UHFFFADPSC-GLVNZYODMK-UHFFFADPSC-NUHFF-NSOPS-NUHFF-ZZZ> a schema1:Study ;
+<https://www.chemotion-repository.net/home/publications/collections/4916>  a schema1:Study ;
     schema1:additionalType "Reaction" ;
     schema1:author [ a schema1:Person ;
+            schema1:affiliation [ a schema1:Organization ;
+                    schema1:identifier "https://ror.org/05591te55" ;
+                    schema1:name "Chemie, Ludwig-Maximilians-Universität München, Germany" ] ;
+            schema1:familyName "Mayer" ;
+            schema1:givenName "Peter " ;
+            schema1:name "Peter  Mayer" ],
+        [ a schema1:Person ;
             schema1:affiliation [ a schema1:Organization ;
                     schema1:identifier "https://ror.org/05591te55" ;
                     schema1:name "Chemie, Ludwig-Maximilians-Universität München, Germany" ] ;
@@ -16,16 +23,10 @@
             schema1:affiliation [ a schema1:Organization ;
                     schema1:identifier "https://ror.org/05591te55" ;
                     schema1:name "Chemie, Ludwig-Maximilians-Universität München, Germany" ] ;
-            schema1:familyName "Putz" ;
-            schema1:givenName "Dominik Gerold" ;
-            schema1:name "Dominik Gerold Putz" ],
-        [ a schema1:Person ;
-            schema1:affiliation [ a schema1:Organization ;
-                    schema1:identifier "https://ror.org/05591te55" ;
-                    schema1:name "Chemie, Ludwig-Maximilians-Universität München, Germany" ] ;
-            schema1:familyName "Mayer" ;
-            schema1:givenName "Peter " ;
-            schema1:name "Peter  Mayer" ],
+            schema1:familyName "Vetsova" ;
+            schema1:givenName "Violeta Aleksandrova" ;
+            schema1:identifier "https://orcid.org/0000-0002-4631-377X" ;
+            schema1:name "Violeta Aleksandrova Vetsova" ],
         [ a schema1:Person ;
             schema1:affiliation [ a schema1:Organization ;
                     schema1:identifier "https://ror.org/05591te55" ;
@@ -37,10 +38,9 @@
             schema1:affiliation [ a schema1:Organization ;
                     schema1:identifier "https://ror.org/05591te55" ;
                     schema1:name "Chemie, Ludwig-Maximilians-Universität München, Germany" ] ;
-            schema1:familyName "Vetsova" ;
-            schema1:givenName "Violeta Aleksandrova" ;
-            schema1:identifier "https://orcid.org/0000-0002-4631-377X" ;
-            schema1:name "Violeta Aleksandrova Vetsova" ] ;
+            schema1:familyName "Putz" ;
+            schema1:givenName "Dominik Gerold" ;
+            schema1:name "Dominik Gerold Putz" ] ;
     schema1:citation [ a schema1:CreativeWork ;
             schema1:author "Corey, E. J. and Tramontano, Alfonso" ;
             schema1:name "Total synthesis of the quinonoid alcohol dehydrogenase coenzyme (1) of methylotrophic bacteria" ;
@@ -49,13 +49,6 @@
             schema1:affiliation [ a schema1:Organization ;
                     schema1:identifier "https://ror.org/05591te55" ;
                     schema1:name "Chemie, Ludwig-Maximilians-Universität München, Germany" ] ;
-            schema1:familyName "Daumann" ;
-            schema1:givenName "Lena J." ;
-            schema1:name "Lena J. Daumann" ],
-        [ a schema1:Person ;
-            schema1:affiliation [ a schema1:Organization ;
-                    schema1:identifier "https://ror.org/05591te55" ;
-                    schema1:name "Chemie, Ludwig-Maximilians-Universität München, Germany" ] ;
             schema1:familyName "Mayer" ;
             schema1:givenName "Peter " ;
             schema1:name "Peter  Mayer" ],
@@ -63,9 +56,10 @@
             schema1:affiliation [ a schema1:Organization ;
                     schema1:identifier "https://ror.org/05591te55" ;
                     schema1:name "Chemie, Ludwig-Maximilians-Universität München, Germany" ] ;
-            schema1:familyName "Putz" ;
-            schema1:givenName "Dominik Gerold" ;
-            schema1:name "Dominik Gerold Putz" ],
+            schema1:familyName "Vetsova" ;
+            schema1:givenName "Violeta Aleksandrova" ;
+            schema1:identifier "https://orcid.org/0000-0002-4631-377X" ;
+            schema1:name "Violeta Aleksandrova Vetsova" ],
         [ a schema1:Person ;
             schema1:affiliation [ a schema1:Organization ;
                     schema1:identifier "https://ror.org/05591te55" ;
@@ -77,10 +71,16 @@
             schema1:affiliation [ a schema1:Organization ;
                     schema1:identifier "https://ror.org/05591te55" ;
                     schema1:name "Chemie, Ludwig-Maximilians-Universität München, Germany" ] ;
-            schema1:familyName "Vetsova" ;
-            schema1:givenName "Violeta Aleksandrova" ;
-            schema1:identifier "https://orcid.org/0000-0002-4631-377X" ;
-            schema1:name "Violeta Aleksandrova Vetsova" ] ;
+            schema1:familyName "Putz" ;
+            schema1:givenName "Dominik Gerold" ;
+            schema1:name "Dominik Gerold Putz" ],
+        [ a schema1:Person ;
+            schema1:affiliation [ a schema1:Organization ;
+                    schema1:identifier "https://ror.org/05591te55" ;
+                    schema1:name "Chemie, Ludwig-Maximilians-Universität München, Germany" ] ;
+            schema1:familyName "Daumann" ;
+            schema1:givenName "Lena J." ;
+            schema1:name "Lena J. Daumann" ] ;
     schema1:dateCreated "2022-08-25"^^schema1:Date ;
     schema1:datePublished "2022-11-02"^^schema1:Date ;
     schema1:description "" ;
@@ -105,13 +105,6 @@
             schema1:affiliation [ a schema1:Organization ;
                     schema1:identifier "https://ror.org/05591te55" ;
                     schema1:name "Chemie, Ludwig-Maximilians-Universität München, Germany" ] ;
-            schema1:familyName "Daumann" ;
-            schema1:givenName "Lena J." ;
-            schema1:name "Lena J. Daumann" ],
-        [ a schema1:Person ;
-            schema1:affiliation [ a schema1:Organization ;
-                    schema1:identifier "https://ror.org/05591te55" ;
-                    schema1:name "Chemie, Ludwig-Maximilians-Universität München, Germany" ] ;
             schema1:familyName "Janßen" ;
             schema1:givenName "Rachel" ;
             schema1:name "Rachel Janßen" ],
@@ -122,36 +115,29 @@
             schema1:familyName "Mayer" ;
             schema1:givenName "Peter " ;
             schema1:name "Peter  Mayer" ],
-        [ a schema1:Person ;
-            schema1:affiliation [ a schema1:Organization ;
-                    schema1:identifier "https://ror.org/05591te55" ;
-                    schema1:name "Chemie, Ludwig-Maximilians-Universität München, Germany" ] ;
-            schema1:familyName "Vetsova" ;
-            schema1:givenName "Violeta Aleksandrova" ;
-            schema1:identifier "https://orcid.org/0000-0002-4631-377X" ;
-            schema1:name "Violeta Aleksandrova Vetsova" ],
         [ a schema1:Person ;
             schema1:affiliation [ a schema1:Organization ;
                     schema1:identifier "https://ror.org/05591te55" ;
                     schema1:name "Chemie, Ludwig-Maximilians-Universität München, Germany" ] ;
             schema1:familyName "Putz" ;
             schema1:givenName "Dominik Gerold" ;
-            schema1:name "Dominik Gerold Putz" ] ;
-    schema1:creator [ a schema1:Person ;
+            schema1:name "Dominik Gerold Putz" ],
+        [ a schema1:Person ;
             schema1:affiliation [ a schema1:Organization ;
                     schema1:identifier "https://ror.org/05591te55" ;
                     schema1:name "Chemie, Ludwig-Maximilians-Universität München, Germany" ] ;
-            schema1:familyName "Mayer" ;
-            schema1:givenName "Peter " ;
-            schema1:name "Peter  Mayer" ],
+            schema1:familyName "Vetsova" ;
+            schema1:givenName "Violeta Aleksandrova" ;
+            schema1:identifier "https://orcid.org/0000-0002-4631-377X" ;
+            schema1:name "Violeta Aleksandrova Vetsova" ],
         [ a schema1:Person ;
             schema1:affiliation [ a schema1:Organization ;
                     schema1:identifier "https://ror.org/05591te55" ;
                     schema1:name "Chemie, Ludwig-Maximilians-Universität München, Germany" ] ;
             schema1:familyName "Daumann" ;
             schema1:givenName "Lena J." ;
-            schema1:name "Lena J. Daumann" ],
-        [ a schema1:Person ;
+            schema1:name "Lena J. Daumann" ] ;
+    schema1:creator [ a schema1:Person ;
             schema1:affiliation [ a schema1:Organization ;
                     schema1:identifier "https://ror.org/05591te55" ;
                     schema1:name "Chemie, Ludwig-Maximilians-Universität München, Germany" ] ;
@@ -166,6 +152,20 @@
             schema1:givenName "Violeta Aleksandrova" ;
             schema1:identifier "https://orcid.org/0000-0002-4631-377X" ;
             schema1:name "Violeta Aleksandrova Vetsova" ],
+        [ a schema1:Person ;
+            schema1:affiliation [ a schema1:Organization ;
+                    schema1:identifier "https://ror.org/05591te55" ;
+                    schema1:name "Chemie, Ludwig-Maximilians-Universität München, Germany" ] ;
+            schema1:familyName "Mayer" ;
+            schema1:givenName "Peter " ;
+            schema1:name "Peter  Mayer" ],
+        [ a schema1:Person ;
+            schema1:affiliation [ a schema1:Organization ;
+                    schema1:identifier "https://ror.org/05591te55" ;
+                    schema1:name "Chemie, Ludwig-Maximilians-Universität München, Germany" ] ;
+            schema1:familyName "Daumann" ;
+            schema1:givenName "Lena J." ;
+            schema1:name "Lena J. Daumann" ],
         [ a schema1:Person ;
             schema1:affiliation [ a schema1:Organization ;
                     schema1:identifier "https://ror.org/05591te55" ;
@@ -194,23 +194,16 @@
             schema1:affiliation [ a schema1:Organization ;
                     schema1:identifier "https://ror.org/05591te55" ;
                     schema1:name "Chemie, Ludwig-Maximilians-Universität München, Germany" ] ;
-            schema1:familyName "Mayer" ;
-            schema1:givenName "Peter " ;
-            schema1:name "Peter  Mayer" ],
-        [ a schema1:Person ;
-            schema1:affiliation [ a schema1:Organization ;
-                    schema1:identifier "https://ror.org/05591te55" ;
-                    schema1:name "Chemie, Ludwig-Maximilians-Universität München, Germany" ] ;
-            schema1:familyName "Janßen" ;
-            schema1:givenName "Rachel" ;
-            schema1:name "Rachel Janßen" ],
-        [ a schema1:Person ;
-            schema1:affiliation [ a schema1:Organization ;
-                    schema1:identifier "https://ror.org/05591te55" ;
-                    schema1:name "Chemie, Ludwig-Maximilians-Universität München, Germany" ] ;
             schema1:familyName "Putz" ;
             schema1:givenName "Dominik Gerold" ;
             schema1:name "Dominik Gerold Putz" ],
+        [ a schema1:Person ;
+            schema1:affiliation [ a schema1:Organization ;
+                    schema1:identifier "https://ror.org/05591te55" ;
+                    schema1:name "Chemie, Ludwig-Maximilians-Universität München, Germany" ] ;
+            schema1:familyName "Mayer" ;
+            schema1:givenName "Peter " ;
+            schema1:name "Peter  Mayer" ],
         [ a schema1:Person ;
             schema1:affiliation [ a schema1:Organization ;
                     schema1:identifier "https://ror.org/05591te55" ;
@@ -219,6 +212,13 @@
             schema1:givenName "Violeta Aleksandrova" ;
             schema1:identifier "https://orcid.org/0000-0002-4631-377X" ;
             schema1:name "Violeta Aleksandrova Vetsova" ],
+        [ a schema1:Person ;
+            schema1:affiliation [ a schema1:Organization ;
+                    schema1:identifier "https://ror.org/05591te55" ;
+                    schema1:name "Chemie, Ludwig-Maximilians-Universität München, Germany" ] ;
+            schema1:familyName "Janßen" ;
+            schema1:givenName "Rachel" ;
+            schema1:name "Rachel Janßen" ],
         [ a schema1:Person ;
             schema1:affiliation [ a schema1:Organization ;
                     schema1:identifier "https://ror.org/05591te55" ;
@@ -237,9 +237,9 @@
             schema1:affiliation [ a schema1:Organization ;
                     schema1:identifier "https://ror.org/05591te55" ;
                     schema1:name "Chemie, Ludwig-Maximilians-Universität München, Germany" ] ;
-            schema1:familyName "Putz" ;
-            schema1:givenName "Dominik Gerold" ;
-            schema1:name "Dominik Gerold Putz" ],
+            schema1:familyName "Janßen" ;
+            schema1:givenName "Rachel" ;
+            schema1:name "Rachel Janßen" ],
         [ a schema1:Person ;
             schema1:affiliation [ a schema1:Organization ;
                     schema1:identifier "https://ror.org/05591te55" ;
@@ -251,9 +251,9 @@
             schema1:affiliation [ a schema1:Organization ;
                     schema1:identifier "https://ror.org/05591te55" ;
                     schema1:name "Chemie, Ludwig-Maximilians-Universität München, Germany" ] ;
-            schema1:familyName "Janßen" ;
-            schema1:givenName "Rachel" ;
-            schema1:name "Rachel Janßen" ],
+            schema1:familyName "Putz" ;
+            schema1:givenName "Dominik Gerold" ;
+            schema1:name "Dominik Gerold Putz" ],
         [ a schema1:Person ;
             schema1:affiliation [ a schema1:Organization ;
                     schema1:identifier "https://ror.org/05591te55" ;
@@ -283,13 +283,6 @@
             schema1:affiliation [ a schema1:Organization ;
                     schema1:identifier "https://ror.org/05591te55" ;
                     schema1:name "Chemie, Ludwig-Maximilians-Universität München, Germany" ] ;
-            schema1:familyName "Mayer" ;
-            schema1:givenName "Peter " ;
-            schema1:name "Peter  Mayer" ],
-        [ a schema1:Person ;
-            schema1:affiliation [ a schema1:Organization ;
-                    schema1:identifier "https://ror.org/05591te55" ;
-                    schema1:name "Chemie, Ludwig-Maximilians-Universität München, Germany" ] ;
             schema1:familyName "Janßen" ;
             schema1:givenName "Rachel" ;
             schema1:name "Rachel Janßen" ],
@@ -304,31 +297,10 @@
             schema1:affiliation [ a schema1:Organization ;
                     schema1:identifier "https://ror.org/05591te55" ;
                     schema1:name "Chemie, Ludwig-Maximilians-Universität München, Germany" ] ;
-            schema1:familyName "Daumann" ;
-            schema1:givenName "Lena J." ;
-            schema1:name "Lena J. Daumann" ],
-        [ a schema1:Person ;
-            schema1:affiliation [ a schema1:Organization ;
-                    schema1:identifier "https://ror.org/05591te55" ;
-                    schema1:name "Chemie, Ludwig-Maximilians-Universität München, Germany" ] ;
             schema1:familyName "Vetsova" ;
             schema1:givenName "Violeta Aleksandrova" ;
             schema1:identifier "https://orcid.org/0000-0002-4631-377X" ;
-            schema1:name "Violeta Aleksandrova Vetsova" ] ;
-    schema1:creator [ a schema1:Person ;
-            schema1:affiliation [ a schema1:Organization ;
-                    schema1:identifier "https://ror.org/05591te55" ;
-                    schema1:name "Chemie, Ludwig-Maximilians-Universität München, Germany" ] ;
-            schema1:familyName "Janßen" ;
-            schema1:givenName "Rachel" ;
-            schema1:name "Rachel Janßen" ],
-        [ a schema1:Person ;
-            schema1:affiliation [ a schema1:Organization ;
-                    schema1:identifier "https://ror.org/05591te55" ;
-                    schema1:name "Chemie, Ludwig-Maximilians-Universität München, Germany" ] ;
-            schema1:familyName "Daumann" ;
-            schema1:givenName "Lena J." ;
-            schema1:name "Lena J. Daumann" ],
+            schema1:name "Violeta Aleksandrova Vetsova" ],
         [ a schema1:Person ;
             schema1:affiliation [ a schema1:Organization ;
                     schema1:identifier "https://ror.org/05591te55" ;
@@ -340,10 +312,38 @@
             schema1:affiliation [ a schema1:Organization ;
                     schema1:identifier "https://ror.org/05591te55" ;
                     schema1:name "Chemie, Ludwig-Maximilians-Universität München, Germany" ] ;
+            schema1:familyName "Daumann" ;
+            schema1:givenName "Lena J." ;
+            schema1:name "Lena J. Daumann" ] ;
+    schema1:creator [ a schema1:Person ;
+            schema1:affiliation [ a schema1:Organization ;
+                    schema1:identifier "https://ror.org/05591te55" ;
+                    schema1:name "Chemie, Ludwig-Maximilians-Universität München, Germany" ] ;
+            schema1:familyName "Daumann" ;
+            schema1:givenName "Lena J." ;
+            schema1:name "Lena J. Daumann" ],
+        [ a schema1:Person ;
+            schema1:affiliation [ a schema1:Organization ;
+                    schema1:identifier "https://ror.org/05591te55" ;
+                    schema1:name "Chemie, Ludwig-Maximilians-Universität München, Germany" ] ;
+            schema1:familyName "Janßen" ;
+            schema1:givenName "Rachel" ;
+            schema1:name "Rachel Janßen" ],
+        [ a schema1:Person ;
+            schema1:affiliation [ a schema1:Organization ;
+                    schema1:identifier "https://ror.org/05591te55" ;
+                    schema1:name "Chemie, Ludwig-Maximilians-Universität München, Germany" ] ;
             schema1:familyName "Vetsova" ;
             schema1:givenName "Violeta Aleksandrova" ;
             schema1:identifier "https://orcid.org/0000-0002-4631-377X" ;
             schema1:name "Violeta Aleksandrova Vetsova" ],
+        [ a schema1:Person ;
+            schema1:affiliation [ a schema1:Organization ;
+                    schema1:identifier "https://ror.org/05591te55" ;
+                    schema1:name "Chemie, Ludwig-Maximilians-Universität München, Germany" ] ;
+            schema1:familyName "Mayer" ;
+            schema1:givenName "Peter " ;
+            schema1:name "Peter  Mayer" ],
         [ a schema1:Person ;
             schema1:affiliation [ a schema1:Organization ;
                     schema1:identifier "https://ror.org/05591te55" ;
@@ -372,13 +372,6 @@
             schema1:affiliation [ a schema1:Organization ;
                     schema1:identifier "https://ror.org/05591te55" ;
                     schema1:name "Chemie, Ludwig-Maximilians-Universität München, Germany" ] ;
-            schema1:familyName "Janßen" ;
-            schema1:givenName "Rachel" ;
-            schema1:name "Rachel Janßen" ],
-        [ a schema1:Person ;
-            schema1:affiliation [ a schema1:Organization ;
-                    schema1:identifier "https://ror.org/05591te55" ;
-                    schema1:name "Chemie, Ludwig-Maximilians-Universität München, Germany" ] ;
             schema1:familyName "Mayer" ;
             schema1:givenName "Peter " ;
             schema1:name "Peter  Mayer" ],
@@ -386,39 +379,10 @@
             schema1:affiliation [ a schema1:Organization ;
                     schema1:identifier "https://ror.org/05591te55" ;
                     schema1:name "Chemie, Ludwig-Maximilians-Universität München, Germany" ] ;
-            schema1:familyName "Daumann" ;
-            schema1:givenName "Lena J." ;
-            schema1:name "Lena J. Daumann" ],
-        [ a schema1:Person ;
-            schema1:affiliation [ a schema1:Organization ;
-                    schema1:identifier "https://ror.org/05591te55" ;
-                    schema1:name "Chemie, Ludwig-Maximilians-Universität München, Germany" ] ;
             schema1:familyName "Vetsova" ;
             schema1:givenName "Violeta Aleksandrova" ;
             schema1:identifier "https://orcid.org/0000-0002-4631-377X" ;
             schema1:name "Violeta Aleksandrova Vetsova" ],
-        [ a schema1:Person ;
-            schema1:affiliation [ a schema1:Organization ;
-                    schema1:identifier "https://ror.org/05591te55" ;
-                    schema1:name "Chemie, Ludwig-Maximilians-Universität München, Germany" ] ;
-            schema1:familyName "Putz" ;
-            schema1:givenName "Dominik Gerold" ;
-            schema1:name "Dominik Gerold Putz" ] ;
-    schema1:creator [ a schema1:Person ;
-            schema1:affiliation [ a schema1:Organization ;
-                    schema1:identifier "https://ror.org/05591te55" ;
-                    schema1:name "Chemie, Ludwig-Maximilians-Universität München, Germany" ] ;
-            schema1:familyName "Vetsova" ;
-            schema1:givenName "Violeta Aleksandrova" ;
-            schema1:identifier "https://orcid.org/0000-0002-4631-377X" ;
-            schema1:name "Violeta Aleksandrova Vetsova" ],
-        [ a schema1:Person ;
-            schema1:affiliation [ a schema1:Organization ;
-                    schema1:identifier "https://ror.org/05591te55" ;
-                    schema1:name "Chemie, Ludwig-Maximilians-Universität München, Germany" ] ;
-            schema1:familyName "Janßen" ;
-            schema1:givenName "Rachel" ;
-            schema1:name "Rachel Janßen" ],
         [ a schema1:Person ;
             schema1:affiliation [ a schema1:Organization ;
                     schema1:identifier "https://ror.org/05591te55" ;
@@ -430,16 +394,52 @@
             schema1:affiliation [ a schema1:Organization ;
                     schema1:identifier "https://ror.org/05591te55" ;
                     schema1:name "Chemie, Ludwig-Maximilians-Universität München, Germany" ] ;
+            schema1:familyName "Janßen" ;
+            schema1:givenName "Rachel" ;
+            schema1:name "Rachel Janßen" ],
+        [ a schema1:Person ;
+            schema1:affiliation [ a schema1:Organization ;
+                    schema1:identifier "https://ror.org/05591te55" ;
+                    schema1:name "Chemie, Ludwig-Maximilians-Universität München, Germany" ] ;
             schema1:familyName "Daumann" ;
             schema1:givenName "Lena J." ;
-            schema1:name "Lena J. Daumann" ],
-        [ a schema1:Person ;
+            schema1:name "Lena J. Daumann" ] ;
+    schema1:creator [ a schema1:Person ;
             schema1:affiliation [ a schema1:Organization ;
                     schema1:identifier "https://ror.org/05591te55" ;
                     schema1:name "Chemie, Ludwig-Maximilians-Universität München, Germany" ] ;
             schema1:familyName "Mayer" ;
             schema1:givenName "Peter " ;
-            schema1:name "Peter  Mayer" ] ;
+            schema1:name "Peter  Mayer" ],
+        [ a schema1:Person ;
+            schema1:affiliation [ a schema1:Organization ;
+                    schema1:identifier "https://ror.org/05591te55" ;
+                    schema1:name "Chemie, Ludwig-Maximilians-Universität München, Germany" ] ;
+            schema1:familyName "Vetsova" ;
+            schema1:givenName "Violeta Aleksandrova" ;
+            schema1:identifier "https://orcid.org/0000-0002-4631-377X" ;
+            schema1:name "Violeta Aleksandrova Vetsova" ],
+        [ a schema1:Person ;
+            schema1:affiliation [ a schema1:Organization ;
+                    schema1:identifier "https://ror.org/05591te55" ;
+                    schema1:name "Chemie, Ludwig-Maximilians-Universität München, Germany" ] ;
+            schema1:familyName "Putz" ;
+            schema1:givenName "Dominik Gerold" ;
+            schema1:name "Dominik Gerold Putz" ],
+        [ a schema1:Person ;
+            schema1:affiliation [ a schema1:Organization ;
+                    schema1:identifier "https://ror.org/05591te55" ;
+                    schema1:name "Chemie, Ludwig-Maximilians-Universität München, Germany" ] ;
+            schema1:familyName "Janßen" ;
+            schema1:givenName "Rachel" ;
+            schema1:name "Rachel Janßen" ],
+        [ a schema1:Person ;
+            schema1:affiliation [ a schema1:Organization ;
+                    schema1:identifier "https://ror.org/05591te55" ;
+                    schema1:name "Chemie, Ludwig-Maximilians-Universität München, Germany" ] ;
+            schema1:familyName "Daumann" ;
+            schema1:givenName "Lena J." ;
+            schema1:name "Lena J. Daumann" ] ;
     schema1:description """dataset for infrared absorption spectroscopy (IR)
 
 """ ;
@@ -552,13 +552,6 @@
             schema1:affiliation [ a schema1:Organization ;
                     schema1:identifier "https://ror.org/05591te55" ;
                     schema1:name "Chemie, Ludwig-Maximilians-Universität München, Germany" ] ;
-            schema1:familyName "Janßen" ;
-            schema1:givenName "Rachel" ;
-            schema1:name "Rachel Janßen" ],
-        [ a schema1:Person ;
-            schema1:affiliation [ a schema1:Organization ;
-                    schema1:identifier "https://ror.org/05591te55" ;
-                    schema1:name "Chemie, Ludwig-Maximilians-Universität München, Germany" ] ;
             schema1:familyName "Vetsova" ;
             schema1:givenName "Violeta Aleksandrova" ;
             schema1:identifier "https://orcid.org/0000-0002-4631-377X" ;
@@ -583,7 +576,14 @@
                     schema1:name "Chemie, Ludwig-Maximilians-Universität München, Germany" ] ;
             schema1:familyName "Mayer" ;
             schema1:givenName "Peter " ;
-            schema1:name "Peter  Mayer" ] ;
+            schema1:name "Peter  Mayer" ],
+        [ a schema1:Person ;
+            schema1:affiliation [ a schema1:Organization ;
+                    schema1:identifier "https://ror.org/05591te55" ;
+                    schema1:name "Chemie, Ludwig-Maximilians-Universität München, Germany" ] ;
+            schema1:familyName "Janßen" ;
+            schema1:givenName "Rachel" ;
+            schema1:name "Rachel Janßen" ] ;
     schema1:contributor [ a schema1:Person ;
             schema1:familyName "Janßen" ;
             schema1:givenName "Rachel" ;
@@ -602,9 +602,24 @@
             schema1:affiliation [ a schema1:Organization ;
                     schema1:identifier "https://ror.org/05591te55" ;
                     schema1:name "Chemie, Ludwig-Maximilians-Universität München, Germany" ] ;
+            schema1:familyName "Vetsova" ;
+            schema1:givenName "Violeta Aleksandrova" ;
+            schema1:identifier "https://orcid.org/0000-0002-4631-377X" ;
+            schema1:name "Violeta Aleksandrova Vetsova" ],
+        [ a schema1:Person ;
+            schema1:affiliation [ a schema1:Organization ;
+                    schema1:identifier "https://ror.org/05591te55" ;
+                    schema1:name "Chemie, Ludwig-Maximilians-Universität München, Germany" ] ;
             schema1:familyName "Putz" ;
             schema1:givenName "Dominik Gerold" ;
             schema1:name "Dominik Gerold Putz" ],
+        [ a schema1:Person ;
+            schema1:affiliation [ a schema1:Organization ;
+                    schema1:identifier "https://ror.org/05591te55" ;
+                    schema1:name "Chemie, Ludwig-Maximilians-Universität München, Germany" ] ;
+            schema1:familyName "Janßen" ;
+            schema1:givenName "Rachel" ;
+            schema1:name "Rachel Janßen" ],
         [ a schema1:Person ;
             schema1:affiliation [ a schema1:Organization ;
                     schema1:identifier "https://ror.org/05591te55" ;
@@ -616,24 +631,9 @@
             schema1:affiliation [ a schema1:Organization ;
                     schema1:identifier "https://ror.org/05591te55" ;
                     schema1:name "Chemie, Ludwig-Maximilians-Universität München, Germany" ] ;
-            schema1:familyName "Vetsova" ;
-            schema1:givenName "Violeta Aleksandrova" ;
-            schema1:identifier "https://orcid.org/0000-0002-4631-377X" ;
-            schema1:name "Violeta Aleksandrova Vetsova" ],
-        [ a schema1:Person ;
-            schema1:affiliation [ a schema1:Organization ;
-                    schema1:identifier "https://ror.org/05591te55" ;
-                    schema1:name "Chemie, Ludwig-Maximilians-Universität München, Germany" ] ;
             schema1:familyName "Mayer" ;
             schema1:givenName "Peter " ;
-            schema1:name "Peter  Mayer" ],
-        [ a schema1:Person ;
-            schema1:affiliation [ a schema1:Organization ;
-                    schema1:identifier "https://ror.org/05591te55" ;
-                    schema1:name "Chemie, Ludwig-Maximilians-Universität München, Germany" ] ;
-            schema1:familyName "Janßen" ;
-            schema1:givenName "Rachel" ;
-            schema1:name "Rachel Janßen" ] ;
+            schema1:name "Peter  Mayer" ] ;
     schema1:contributor [ a schema1:Person ;
             schema1:familyName "Janßen" ;
             schema1:givenName "Rachel" ;
@@ -659,17 +659,16 @@
             schema1:affiliation [ a schema1:Organization ;
                     schema1:identifier "https://ror.org/05591te55" ;
                     schema1:name "Chemie, Ludwig-Maximilians-Universität München, Germany" ] ;
-            schema1:familyName "Vetsova" ;
-            schema1:givenName "Violeta Aleksandrova" ;
-            schema1:identifier "https://orcid.org/0000-0002-4631-377X" ;
-            schema1:name "Violeta Aleksandrova Vetsova" ],
+            schema1:familyName "Putz" ;
+            schema1:givenName "Dominik Gerold" ;
+            schema1:name "Dominik Gerold Putz" ],
         [ a schema1:Person ;
             schema1:affiliation [ a schema1:Organization ;
                     schema1:identifier "https://ror.org/05591te55" ;
                     schema1:name "Chemie, Ludwig-Maximilians-Universität München, Germany" ] ;
-            schema1:familyName "Putz" ;
-            schema1:givenName "Dominik Gerold" ;
-            schema1:name "Dominik Gerold Putz" ],
+            schema1:familyName "Mayer" ;
+            schema1:givenName "Peter " ;
+            schema1:name "Peter  Mayer" ],
         [ a schema1:Person ;
             schema1:affiliation [ a schema1:Organization ;
                     schema1:identifier "https://ror.org/05591te55" ;
@@ -681,9 +680,10 @@
             schema1:affiliation [ a schema1:Organization ;
                     schema1:identifier "https://ror.org/05591te55" ;
                     schema1:name "Chemie, Ludwig-Maximilians-Universität München, Germany" ] ;
-            schema1:familyName "Mayer" ;
-            schema1:givenName "Peter " ;
-            schema1:name "Peter  Mayer" ] ;
+            schema1:familyName "Vetsova" ;
+            schema1:givenName "Violeta Aleksandrova" ;
+            schema1:identifier "https://orcid.org/0000-0002-4631-377X" ;
+            schema1:name "Violeta Aleksandrova Vetsova" ] ;
     schema1:contributor [ a schema1:Person ;
             schema1:familyName "Janßen" ;
             schema1:givenName "Rachel" ;
@@ -702,24 +702,9 @@
             schema1:affiliation [ a schema1:Organization ;
                     schema1:identifier "https://ror.org/05591te55" ;
                     schema1:name "Chemie, Ludwig-Maximilians-Universität München, Germany" ] ;
-            schema1:familyName "Janßen" ;
-            schema1:givenName "Rachel" ;
-            schema1:name "Rachel Janßen" ],
-        [ a schema1:Person ;
-            schema1:affiliation [ a schema1:Organization ;
-                    schema1:identifier "https://ror.org/05591te55" ;
-                    schema1:name "Chemie, Ludwig-Maximilians-Universität München, Germany" ] ;
-            schema1:familyName "Vetsova" ;
-            schema1:givenName "Violeta Aleksandrova" ;
-            schema1:identifier "https://orcid.org/0000-0002-4631-377X" ;
-            schema1:name "Violeta Aleksandrova Vetsova" ],
-        [ a schema1:Person ;
-            schema1:affiliation [ a schema1:Organization ;
-                    schema1:identifier "https://ror.org/05591te55" ;
-                    schema1:name "Chemie, Ludwig-Maximilians-Universität München, Germany" ] ;
-            schema1:familyName "Putz" ;
-            schema1:givenName "Dominik Gerold" ;
-            schema1:name "Dominik Gerold Putz" ],
+            schema1:familyName "Daumann" ;
+            schema1:givenName "Lena J." ;
+            schema1:name "Lena J. Daumann" ],
         [ a schema1:Person ;
             schema1:affiliation [ a schema1:Organization ;
                     schema1:identifier "https://ror.org/05591te55" ;
@@ -731,9 +716,24 @@
             schema1:affiliation [ a schema1:Organization ;
                     schema1:identifier "https://ror.org/05591te55" ;
                     schema1:name "Chemie, Ludwig-Maximilians-Universität München, Germany" ] ;
-            schema1:familyName "Daumann" ;
-            schema1:givenName "Lena J." ;
-            schema1:name "Lena J. Daumann" ] ;
+            schema1:familyName "Putz" ;
+            schema1:givenName "Dominik Gerold" ;
+            schema1:name "Dominik Gerold Putz" ],
+        [ a schema1:Person ;
+            schema1:affiliation [ a schema1:Organization ;
+                    schema1:identifier "https://ror.org/05591te55" ;
+                    schema1:name "Chemie, Ludwig-Maximilians-Universität München, Germany" ] ;
+            schema1:familyName "Janßen" ;
+            schema1:givenName "Rachel" ;
+            schema1:name "Rachel Janßen" ],
+        [ a schema1:Person ;
+            schema1:affiliation [ a schema1:Organization ;
+                    schema1:identifier "https://ror.org/05591te55" ;
+                    schema1:name "Chemie, Ludwig-Maximilians-Universität München, Germany" ] ;
+            schema1:familyName "Vetsova" ;
+            schema1:givenName "Violeta Aleksandrova" ;
+            schema1:identifier "https://orcid.org/0000-0002-4631-377X" ;
+            schema1:name "Violeta Aleksandrova Vetsova" ] ;
     schema1:contributor [ a schema1:Person ;
             schema1:familyName "Janßen" ;
             schema1:givenName "Rachel" ;
