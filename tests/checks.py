@@ -191,7 +191,7 @@ def checkValidator(fileName):
             metadata = f.read()
         # SampleDB
         metadataNode = [i for i in json.loads(metadata)['@graph'] if i['@id']==METADATA_FILE][0]
-        if metadataNode.get('sdPublisher',{}).get('@id','')=='SampleDB':
+        if metadataNode.get('sdPublisher',{}).get('@id','') in ['SampleDB', 'https://ror.org/03eh3y714']:
             metadata = metadata.replace('"@id": "https://w3id.org/ro/crate/1.2"','"@id": "https://w3id.org/ro/crate/1.1"')
         # eLabFTW
         publisherNodes = [i for i in json.loads(metadata)['@graph'] if i['@id']=='#publisher']
