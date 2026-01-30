@@ -98,9 +98,9 @@ Again, we follow the ELN file format - A `Message` or a `Comment` will have an `
       "name": "logbook-001",
       "description": "test new logbook",
       "license": {
-        "@id": "https://creativecommons.org/licenses/by/4.0/"
+        "@id": "#license"
       },
-      "datePublished": "2026-01-28T14:06:05.896Z",
+      "datePublished": "2026-01-30T09:20:47.015Z",
       "hasPart": [
         {
           "@id": "./696e3f05d55e4c57ec58cea9/"
@@ -118,20 +118,19 @@ Again, we follow the ELN file format - A `Message` or a `Comment` will have an `
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "sdPublisher": {
-        "@id": "https://ror.org/03eh3y714"
+        "@id": "https://github.com/paulscherrerinstitute/scilog"
       }
     },
     {
-      "@id": "https://creativecommons.org/licenses/by/4.0/",
+      "@id": "#license",
       "@type": "CreativeWork",
-      "name": "CC BY 4.0",
-      "description": "Creative Commons Attribution 4.0 International License"
+      "name": "No license",
+      "description": "This .eln does not contain a license"
     },
     {
-      "@id": "https://ror.org/03eh3y714",
+      "@id": "https://github.com/paulscherrerinstitute/scilog",
       "@type": "Organization",
-      "name": "Paul Scherrer Institute",
-      "url": "https://www.psi.ch"
+      "name": "SciLog"
     },
     {
       "@id": "person://omkar.zade@psi.ch",
