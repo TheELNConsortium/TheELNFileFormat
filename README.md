@@ -35,4 +35,4 @@ Generally working with some quirks here and there.
 | [NOMAD](https://nomad-lab.eu)                     | ✅ |   |     |
 | [LinkAhead](https://getlinkahead.com/)            | ✅ |   |     |
 | [OpenSemanticLab](https://github.com/OpenSemanticLab) | ✅ | ✅ | [OpenSemanticLab](https://github.com/TheELNConsortium/TheELNFileFormat/tree/master/examples/OpenSemanticLab)    |
-
+| [datalab](https://github.com/datalab-org)         |   | ✅ | [datalab](https://github.com/TheELNConsortium/TheELNFileFormat/tree/master/examples/datalab) |
