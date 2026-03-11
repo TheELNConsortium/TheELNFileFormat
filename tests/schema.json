@@ -3,7 +3,7 @@
   "type": "object",
   "properties": {
     "@context": {
-      "type": "string",
+      "type": ["string", "array"],
       "format": "uri"
     },
     "@graph": {
@@ -15,7 +15,7 @@
             "type": "string"
           },
           "@type": {
-            "type": "string"
+            "type": ["string", "array"]
           },
           "about": {
             "type": "object",
@@ -103,7 +103,7 @@
                   "type": "string"
                 },
                 "@type": {
-                  "type": "string"
+                  "type": ["string", "array"]
                 },
                 "dateCreated": {
                   "type": "string",
