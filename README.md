@@ -35,6 +35,6 @@ Generally working with some quirks here and there.
 | [NOMAD](https://nomad-lab.eu)                             | ✅          |             |                                                                                                              |
 | [LinkAhead](https://getlinkahead.com/)                    | ✅          |             |                                                                                                              |
 | [OpenSemanticLab](https://github.com/OpenSemanticLab)     | ✅          | ✅          | [OpenSemanticLab](https://github.com/TheELNConsortium/TheELNFileFormat/tree/master/examples/OpenSemanticLab) |
-| [SciLog](https://github.com/paulscherrerinstitute/scilog) |             | ✅          | [SciLog](https://github.com/TheELNConsortium/TheELNFileFormat/tree/master/examples/SciLog)                   |
+| [SciLog](https://github.com/paulscherrerinstitute/scilog) |✅            | ✅          | [SciLog](https://github.com/TheELNConsortium/TheELNFileFormat/tree/master/examples/SciLog)                   |
 | [datalab](https://github.com/datalab-org)                 |             | ✅          | [datalab](https://github.com/TheELNConsortium/TheELNFileFormat/tree/master/examples/datalab)                 |
 

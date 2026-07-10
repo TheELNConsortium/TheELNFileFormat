@@ -2,7 +2,8 @@
 
 [Homepage](https://www.psi.ch/en/awi/scilog) | [Docs](https://paulscherrerinstitute.github.io/scilog/) | [Code](https://github.com/paulscherrerinstitute/scilog)
 
-SciLog allows users to export logbooks in the [ELN File format](https://github.com/TheELNConsortium/TheELNFileFormat/blob/master/SPECIFICATION.md) (support for ELN import is work-in-progress). 
+SciLog allows users to export logbooks in the [ELN File format](https://github.com/TheELNConsortium/TheELNFileFormat/blob/master/SPECIFICATION.md).
+ELNs exported from SciLog can also be imported back into SciLog ([docs](https://paulscherrerinstitute.github.io/scilog/Users/Dashboard.html#importing-from-an-eln-archive)).
 While the overall implementation is similar to other ELN implementations (e.g. the ELN is a zipped RO-Crate with .eln extension), it has the following pecularities
 - Instead of using the `genre` property (e.g. like elabFTW) to distinguish between ELN concepts, SciLog uses more specific scehma.org types in addition to `Dataset` (e.g. Book, Message, etc), 
 - Hence, entities may have multiple `@type`s e.g. `[Book, Dataset]`
