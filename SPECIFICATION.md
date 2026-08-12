@@ -123,6 +123,9 @@ For instance, a "comment" on an experiment will exist as a `@type: Comment` node
 
 #### Specific fields
 
+* [`@type`](https://www.w3.org/TR/json-ld11/#specifying-the-type): use this field for the Schema.org and RO-Crate types of a node. Directory data entities MUST include `Dataset`, and files MUST include `File`. A node MAY have more than one type, represented as an array, when another Schema.org type provides useful detail (for example, `["Dataset", "Message"]`).
+* [`additionalType`](https://schema.org/additionalType): use this field for more specific types from external vocabularies. Prefer an IRI, or an array of IRIs when several types apply. The .eln file format does not prescribe a particular external vocabulary.
+* [`genre`](https://schema.org/genre): use this field for a broad, human-readable category, such as `experiment`. In an .eln file it is a string, not an alias for `@type`; use `additionalType` instead when the value identifies a class in an external vocabulary.
 * `contentSize`: this term is loosely defined by Schema.org. In a .eln it is a string with the number of bytes. See "Example File" section below. It contains no units.
 * `variableMeasured`: this term is interpreted more loosely for .eln files than by Schema.org, as consisting of `@type: PropertyValue` nodes that represent not just variables measured, but also variables specified for a `@type: Dataset` node (e.g. flexible metadata).
   * The `identifier` for a `@type: PropertyValue` node can be set to an IRI (e.g. the URL for an ontology entry, such as http://purl.org/dc/terms/instructionalMethod) for specifying the meaning of this node.
