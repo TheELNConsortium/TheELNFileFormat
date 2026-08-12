@@ -76,7 +76,12 @@ def checkParamMetadataJson(fileName):
         if '@type' not in node:
             print('**ERROR: all nodes must have @type. check:', nodeID)
             return False
-        if node['@type'] == 'Dataset':
+        node_types = node['@type']
+        if isinstance(node_types, str):
+            node_types = [node_types]
+        elif not isinstance(node_types, list):
+            node_types = []
+        if 'Dataset' in node_types:
             for key in DATASET_MANDATORY:
                 if key not in node:
                     print(f'**ERROR in dataset: "{key}" not in @id={node["@id"]}')
@@ -84,7 +89,7 @@ def checkParamMetadataJson(fileName):
             for key in DATASET_SUGGESTED:
                 if key not in node and OUTPUT_INFO:
                     print(f'**INFO for dataset: "{key}" not in @id={node["@id"]}')
-        elif node['@type'] == 'File':
+        elif 'File' in node_types:
             for key in FILE_MANDATORY:
                 if key not in node:
                     print(f'**ERROR in file: "{key}" not in @id={node["@id"]}')
