@@ -1,7 +1,7 @@
 import json
 import traceback
 import tempfile
-from pathlib import Path
+from pathlib import Path, PurePosixPath
 from zipfile import ZIP_DEFLATED
 from zipfile import ZipFile
 from jsonschema import Draft202012Validator
@@ -9,6 +9,49 @@ from rocrate.rocrate import ROCrate
 from rocrate_validator import services, models
 
 METADATA_FILE = 'ro-crate-metadata.json'
+
+
+def checkArchiveStructure(fileName):
+    """Check that an .eln ZIP contains exactly one root folder.
+
+    Args:
+        fileName: path to .eln file
+    Returns:
+        success: bool if check was successful
+        log: string with log information
+    """
+    with ZipFile(fileName, 'r', compression=ZIP_DEFLATED) as elnFile:
+        entries_outside_root = set()
+        root_folders = set()
+        for entry in elnFile.infolist():
+            path = PurePosixPath(entry.filename)
+            if (
+                    not path.parts
+                    or path.is_absolute()
+                    or '..' in path.parts
+                    or (len(path.parts) == 1 and not entry.is_dir())
+            ):
+                entries_outside_root.add(entry.filename)
+            else:
+                root_folders.add(path.parts[0])
+
+        log = ''
+        if entries_outside_root:
+            entries = ', '.join(
+                repr(path) for path in sorted(entries_outside_root)
+            )
+            log += (
+                '**ERROR: .eln archive entries must be stored inside the root '
+                f'folder: {entries}\n'
+            )
+        if len(root_folders) != 1:
+            folders = ', '.join(repr(path) for path in sorted(root_folders))
+            log += (
+                '**ERROR: .eln archive must contain exactly one root folder; '
+                f'found {len(root_folders)}: {folders}\n'
+            )
+        return not log, log
+
 
 def checkPypiRocrate(fileName, verbose=False):
     """ Check if file is a valid ro-crate according to pypi rocrate package
