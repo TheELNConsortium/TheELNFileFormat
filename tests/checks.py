@@ -1,6 +1,7 @@
 import json
 import traceback
 import tempfile
+from contextlib import contextmanager
 from pathlib import Path, PurePosixPath
 from zipfile import ZIP_DEFLATED
 from zipfile import ZipFile
@@ -263,3 +264,76 @@ def checkValidator(fileName):
                 log += f"Detected issue of severity {issue.severity.name} with check \"{issue.check.identifier}\": {issue.message}\n"
             success = False
     return success, log
+
+
+ALL_CHECKS = (
+    ('Archive structure', checkArchiveStructure),
+    ('Pypi RO-Crate', checkPypiRocrate),
+    ('Parameters metadata json', checkParamMetadataJson),
+    ('Schema', checkSchema),
+    ('Validator', checkValidator),
+)
+
+
+def readUploadedBytes(uploadedFile):
+    """ Read the raw bytes of an uploaded .eln file
+    Args:
+        uploadedFile: bytes, or a file-like object such as a web upload
+    Returns:
+        payload: bytes of the .eln file
+    """
+    if isinstance(uploadedFile, (bytes, bytearray)):
+        return bytes(uploadedFile)
+    if hasattr(uploadedFile, 'getvalue'):
+        return uploadedFile.getvalue()
+    if hasattr(uploadedFile, 'seek'):
+        uploadedFile.seek(0)
+    return uploadedFile.read()
+
+
+@contextmanager
+def uploadedFileAsPath(uploadedFile, fileName='uploaded.eln'):
+    """ Expose an uploaded .eln file object as a real file on disk
+
+    Most checks accept any file-like object, but checkValidator resolves
+    Path(fileName).parent.name and therefore needs a real path. Writing the
+    upload out once keeps all five checks on one identical input instead of
+    letting them disagree about what they received.
+
+    Args:
+        uploadedFile: bytes, or a file-like object such as a web upload
+        fileName: name to give the temporary copy; only its basename is used
+    Yields:
+        elnPath: Path of the temporary .eln file, removed on exit
+    """
+    payload = readUploadedBytes(uploadedFile)
+    with tempfile.TemporaryDirectory() as directory:
+        elnPath = Path(directory)/'upload'/Path(fileName).name
+        elnPath.parent.mkdir(parents=True, exist_ok=True)
+        elnPath.write_bytes(payload)
+        yield elnPath
+
+
+def checkUploadedFile(uploadedFile, fileName='uploaded.eln'):
+    """ Run every .eln check against an uploaded file object
+
+    A check that raises is reported as a failure rather than propagating,
+    because reporting on damaged files is the purpose of an upload tool.
+
+    Args:
+        uploadedFile: bytes, or a file-like object such as a web upload
+        fileName: name to give the temporary copy; only its basename is used
+    Returns:
+        results: list of (label, success, log) in ALL_CHECKS order
+    """
+    results = []
+    with uploadedFileAsPath(uploadedFile, fileName) as elnPath:
+        for label, check in ALL_CHECKS:
+            try:
+                success, log = check(elnPath)
+            except Exception:
+                success = False
+                log = '  *****  ERROR: this check could not run on the file  *****\n'
+                log += traceback.format_exc()
+            results.append((label, success, log))
+    return results
