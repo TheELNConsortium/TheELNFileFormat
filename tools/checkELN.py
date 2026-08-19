@@ -20,10 +20,11 @@ import streamlit.components.v1 as components
 REPOSITORY_ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(REPOSITORY_ROOT/'tests'))
 
-from checks import checkUploadedFile  # noqa: E402  (needs the path above)
+from checks import runChecks  # noqa: E402  (needs the path above)
 
 PREVIEW_FILE = 'ro-crate-preview.html'
 REPOSITORY_URL = 'https://github.com/TheELNConsortium/TheELNFileFormat'
+LOGO_PATH = REPOSITORY_ROOT/'docs'/'source'/'_static'/'Consortium.png'
 
 st.set_page_config(page_title='.eln file checker', layout='wide')
 st.markdown(
@@ -37,6 +38,11 @@ st.markdown(
     """,
     unsafe_allow_html=True,
 )
+
+if LOGO_PATH.is_file():
+    _, logoCol, _ = st.columns([1, 2, 1])
+    with logoCol:
+        st.image(str(LOGO_PATH), use_container_width=True)
 
 st.markdown('## Tools for the .eln file')
 st.markdown(
@@ -72,7 +78,7 @@ if uploadedFile is not None:
 
     with tabVerify:
         st.markdown('### Test summary:')
-        results = checkUploadedFile(uploadedFile, uploadedFile.name)
+        results = runChecks(uploadedFile, uploadedFile.name)
         passed = sum(1 for _label, success, _log in results if success)
         st.markdown(f'{passed} of {len(results)} checks passed.')
         for label, success, log in results:

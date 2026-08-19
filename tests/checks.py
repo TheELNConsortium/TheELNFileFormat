@@ -314,20 +314,49 @@ def uploadedFileAsPath(uploadedFile, fileName='uploaded.eln'):
         yield elnPath
 
 
-def checkUploadedFile(uploadedFile, fileName='uploaded.eln'):
-    """ Run every .eln check against an uploaded file object
+@contextmanager
+def _asPath(source, fileName=None):
+    """ Yield a filesystem path for either a real path or an uploaded object
 
-    A check that raises is reported as a failure rather than propagating,
-    because reporting on damaged files is the purpose of an upload tool.
+    When *source* is an existing file path it is used directly. Any other
+    object (bytes, BytesIO, Streamlit UploadedFile, ...) is materialised to a
+    temporary file via :func:`uploadedFileAsPath` so every check receives one
+    identical on-disk input and the temporary-file handling stays inside the
+    validation code.
 
     Args:
-        uploadedFile: bytes, or a file-like object such as a web upload
-        fileName: name to give the temporary copy; only its basename is used
+        source: a filesystem path (str/Path) or an uploaded file object
+        fileName: name for the temporary copy when *source* is an upload
+    Yields:
+        elnPath: Path of the .eln file to check
+    """
+    if isinstance(source, (str, Path)) and Path(source).is_file():
+        yield Path(source)
+    else:
+        with uploadedFileAsPath(source, fileName or 'uploaded.eln') as elnPath:
+            yield elnPath
+
+
+def runChecks(source, fileName=None):
+    """ Run every .eln check against a file path or an uploaded file object
+
+    Both the CI test suite and the Streamlit web app call this single entry
+    point so the web tool and the CI suite always agree about what a valid
+    .eln file is. A check that raises is reported as a failure rather than
+    propagating, because reporting on damaged files is the purpose of an
+    upload tool.
+
+    Args:
+        source: a filesystem path (str or Path) to an .eln file, or an
+            uploaded file object (bytes, BytesIO, Streamlit UploadedFile, ...)
+        fileName: name to give a temporary copy when *source* is an upload;
+            only its basename is used and defaults to ``uploaded.eln``.
+            Ignored when *source* is an existing path.
     Returns:
         results: list of (label, success, log) in ALL_CHECKS order
     """
     results = []
-    with uploadedFileAsPath(uploadedFile, fileName) as elnPath:
+    with _asPath(source, fileName) as elnPath:
         for label, check in ALL_CHECKS:
             try:
                 success, log = check(elnPath)
@@ -337,3 +366,8 @@ def checkUploadedFile(uploadedFile, fileName='uploaded.eln'):
                 log += traceback.format_exc()
             results.append((label, success, log))
     return results
+
+
+def checkUploadedFile(uploadedFile, fileName='uploaded.eln'):
+    """ Backward-compatible alias for :func:`runChecks` with an upload object """
+    return runChecks(uploadedFile, fileName)
