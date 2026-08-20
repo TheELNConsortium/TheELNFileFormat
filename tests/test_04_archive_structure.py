@@ -1,12 +1,12 @@
 #!/usr/bin/python3
-"""Validate the outer archive structure required by the .eln specification."""
+"""Validate the outer archive structure required by the .eln specification. Create good and bad archives and test them"""
 import tempfile
 import unittest
 from pathlib import Path
 from zipfile import ZIP_DEFLATED, ZipFile
 
-from checks import checkArchiveStructure
-from test_00_pypi_rocrate import generalizedTest
+from tests.checks import CheckArchiveStructure
+from tests.utils import generalizedTest
 
 
 def write_test_archive(path, entries):
@@ -20,8 +20,8 @@ class TestArchiveStructure(unittest.TestCase):
     """Test the .eln single-root-folder requirement."""
 
     def test_main(self):
-        """Validate the structure of all repository examples."""
-        generalizedTest(checkArchiveStructure, 'archive_structure')
+        """Run the archive-structure check against all repository examples."""
+        generalizedTest(CheckArchiveStructure)
 
     def test_accepts_single_root_folder(self):
         """A directory entry is optional when every file has the same root."""
@@ -34,7 +34,7 @@ class TestArchiveStructure(unittest.TestCase):
                 with self.subTest(entries=entries):
                     path = Path(directory) / f'valid-{index}.eln'
                     write_test_archive(path, entries)
-                    self.assertEqual(checkArchiveStructure(path), (True, ''))
+                    self.assertEqual(CheckArchiveStructure(path).run(), (True, ''))
 
     def test_rejects_root_level_file(self):
         """Files alongside the root folder violate the archive layout."""
@@ -44,7 +44,7 @@ class TestArchiveStructure(unittest.TestCase):
                 'crate/ro-crate-metadata.json',
                 'unexpected-root.txt',
             ])
-            self.assertEqual(checkArchiveStructure(path), (
+            self.assertEqual(CheckArchiveStructure(path).run(), (
                 False,
                 '**ERROR: .eln archive entries must be stored inside the root '
                 "folder: 'unexpected-root.txt'\n",
@@ -58,7 +58,7 @@ class TestArchiveStructure(unittest.TestCase):
                 'first/ro-crate-metadata.json',
                 'second/data.txt',
             ])
-            self.assertEqual(checkArchiveStructure(path), (
+            self.assertEqual(CheckArchiveStructure(path).run(), (
                 False,
                 '**ERROR: .eln archive must contain exactly one root folder; '
                 "found 2: 'first', 'second'\n",

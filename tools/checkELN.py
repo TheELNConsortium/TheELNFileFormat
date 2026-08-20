@@ -18,7 +18,7 @@ import streamlit as st
 
 REPOSITORY_ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(REPOSITORY_ROOT))
-from tests.checks import runChecks
+from tests.checks import ALL_TESTS, BaseCheck
 
 PREVIEW_FILE   = 'ro-crate-preview.html'
 REPOSITORY_URL = 'https://github.com/TheELNConsortium/TheELNFileFormat'
@@ -67,7 +67,7 @@ if uploadedFile is not None:
     # Verify tab
     with tabVerify:
         st.markdown('### Test summary:')
-        results = runChecks(uploadedFile, uploadedFile.name)
+        results = BaseCheck.runChecks(uploadedFile, ALL_TESTS, uploadedFile.name)
         passed = sum(1 for _label, success, _log in results if success)
         st.markdown(f'{passed} of {len(results)} checks passed.')
         for label, success, log in results:
