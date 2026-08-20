@@ -15,7 +15,6 @@ from pathlib import Path
 from zipfile import ZIP_DEFLATED, ZipFile
 
 import streamlit as st
-import streamlit.components.v1 as components
 
 REPOSITORY_ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(REPOSITORY_ROOT))
@@ -83,7 +82,7 @@ if uploadedFile is not None:
                 previewFiles = [i for i in elnFile.namelist() if i.endswith(PREVIEW_FILE)]
                 if previewFiles:
                     htmlStr = elnFile.read(previewFiles[0]).decode('utf-8')
-                    components.html(htmlStr, height=800, width=None, scrolling=True)
+                    st.iframe(htmlStr, height=800, width=None, scrolling=True)
                 else:
                     st.info(
                         f'This file contains no {PREVIEW_FILE}, so there is '
