@@ -53,6 +53,7 @@ class TestParamMetadataJson(unittest.TestCase):
             ("dataset.eln", "data/", ["Dataset", "Message"]),
             ("file.eln", "data.txt", ["File", "DigitalDocument"]),
         ]
+        print('\nFalse-Flag Test: should report two ERRORs:')
         with tempfile.TemporaryDirectory() as directory:
             for filename, entity_id, entity_type in cases:
                 with self.subTest(entity_type=entity_type):
@@ -146,5 +147,7 @@ class TestParamMetadataJson(unittest.TestCase):
                             'test.eln/ro-crate-metadata.json',
                             json.dumps(deepcopy(metadata)),
                         )
-                    success, _ = CheckParamMetadataJson(path).run()
+                    success, log = CheckParamMetadataJson(path).run()
                     self.assertFalse(success)
+                    if description == 'duplicate node IDs':
+                        self.assertIn("duplicate node IDs: './'", log)

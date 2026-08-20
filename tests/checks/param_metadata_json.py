@@ -1,5 +1,7 @@
 """Validation of consortium-specific RO-Crate metadata conventions."""
 
+from collections import Counter
+
 from .base import BaseCheck, METADATA_FILE
 
 
@@ -86,8 +88,10 @@ class CheckParamMetadataJson(BaseCheck):
             return False, '**ERROR: RO-Crate metadata contains an invalid graph node\n'
 
         nodeIDs = [node['@id'] for node in graph]
-        if len(nodeIDs) != len(set(nodeIDs)):
-            return False, '**ERROR: RO-Crate metadata contains duplicate node IDs\n'
+        duplicateNodeIDs = [nodeID for nodeID, count in Counter(nodeIDs).items() if count > 1]
+        if duplicateNodeIDs:
+            duplicates = ', '.join(repr(nodeID) for nodeID in duplicateNodeIDs)
+            return False, f'**ERROR: RO-Crate metadata contains duplicate node IDs: {duplicates}\n'
 
         metadataNodes = [node for node in graph if node['@id'].endswith(METADATA_FILE)]
         rootNodes = [node for node in graph if node['@id'] == './']

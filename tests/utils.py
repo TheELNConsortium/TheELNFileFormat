@@ -28,4 +28,5 @@ def generalizedTest(checkClass):
             success = success and successI
 
     logPath.write_text(json.dumps(logJson), encoding='utf-8')
+    print('=' * 100)
     assert success

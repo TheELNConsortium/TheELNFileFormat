@@ -2,7 +2,6 @@
 """Test the upload flow used by the Streamlit checker application."""
 
 import io
-import os
 import tempfile
 import unittest
 from pathlib import Path
@@ -16,14 +15,11 @@ from tests.checks import (
 
 
 def findExampleEln():
-    """Return the path of one .eln example shipped in this repository."""
-    for root, _, files in os.walk('.', topdown=False):
-        if 'SKIP_CI' in files:
-            continue
-        for name in sorted(files):
-            if name.endswith('.eln'):
-                return Path(root)/name
-    raise unittest.SkipTest('no .eln example available in this checkout')
+    """Return the canonical PASTA example used by upload-flow tests."""
+    example = Path('examples/kadi4mat/collections-example.eln')
+    if example.is_file():
+        return example
+    raise unittest.SkipTest(f'upload-test fixture is missing: {example}')
 
 
 class TestUploadedFileAsPath(unittest.TestCase):
