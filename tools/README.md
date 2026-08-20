@@ -29,7 +29,7 @@ suite runs, reporting each one separately:
 
 | Check | Question it answers |
 |---|---|
-| Archive structure | Does the ZIP contain exactly one root folder? |
+| Archive structure | Does the ZIP have a safe single-root layout and sensible resource limits? |
 | Parameters metadata json | Are mandatory keys present and well formed? |
 | Schema | Does the metadata match `tests/schema.json`? |
 | Validator | Does `roc-validator` accept the crate? |

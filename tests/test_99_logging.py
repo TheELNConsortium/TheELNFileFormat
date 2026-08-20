@@ -4,7 +4,18 @@ from pathlib import Path
 import json
 import unittest
 
-COLUMNS = ['archive_structure','pypi_rocrate','validator','schema','params_metadata_json']
+from tests.checks import ALL_TESTS
+
+COLUMNS = [check.loggingLabel for check in ALL_TESTS]
+DEFINITIONS = {
+    'archive_structure': (
+        'tests whether the .eln ZIP has a safe single-root layout and, by default, sensible resource limits.'
+    ),
+    'params_metadata_json': 'tests the ELN-consortium metadata conventions and graph integrity.',
+    'schema': 'tests the ELN-consortium conventions using a schema description.',
+    'validator': 'tests the RO-Crate conventions using roc-validator.',
+    'pypi_rocrate': 'tests whether the PyPI rocrate package can open the .eln file.',
+}
 HEADER  = "## Results of verification\nautomatically created\n\n"
 
 
@@ -31,11 +42,8 @@ class Test_2(unittest.TestCase):
                     resultStr   = ' | '.join([':white_check_mark:' if col in result and result[col] else ':x:' for col in COLUMNS])
                     output.write(f'| {software} | {individualFileName} | {resultStr} |\n')
                 output.write("\n\nDefinition of tests\n")
-                output.write("- **archive_structure**: tests if the .eln ZIP contains exactly one root folder.\n")
-                output.write("- **pypi_rocrate**: tests if eln-file can be opened by pypi's rocrate; if eln file can be easily opened by that library.\n")
-                output.write("- **validator**: tests if the ro-crate conventions fulfilled using pypi's roc-validator.\n")
-                output.write("- **schema**: tests if the conventions of the ELN-consortium are fulfilled using a schema description.\n")
-                output.write("- **params_metadata_json**: tests if the conventions of the ELN-consortium are fulfilled, aka parameters exist and are consistent with convention.\n")
+                for check in ALL_TESTS:
+                    output.write(f'- **{check.loggingLabel}**: {DEFINITIONS[check.loggingLabel]}\n')
                 output.close()
             print('Created logging markdown')
         else:

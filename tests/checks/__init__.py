@@ -10,8 +10,8 @@ from .versions import DeclaredVersions, getDeclaredVersions
 
 ALL_TESTS = (
     CheckArchiveStructure,
-    CheckSchema,
     CheckParamMetadataJson,
+    CheckSchema,
     CheckValidator,
     CheckPypiRocrate,
 )
