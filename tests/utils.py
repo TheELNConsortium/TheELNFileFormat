@@ -13,19 +13,23 @@ def generalizedTest(checkClass):
     else:
         logJson = {}
 
-    success = True
+    elnFiles = []
     for root, _, files in os.walk('.'):
         if 'SKIP_CI' in files:
             continue
-        for name in files:
-            if not name.endswith('.eln'):
-                continue
-            fileName = os.path.join(root, name)
-            print(f'\n\n{checkClass.label}: {fileName}')
-            successI, log = checkClass(fileName).run()
-            print(log)
-            logJson.setdefault(fileName, {})[checkClass.loggingLabel] = successI
-            success = success and successI
+        elnFiles.extend(os.path.join(root, name) for name in files if name.endswith('.eln'))
+
+    # Remove results for examples that no longer exist, while retaining
+    # results already written by the other check classes.
+    logJson = {fileName: logJson.get(fileName, {}) for fileName in elnFiles}
+
+    success = True
+    for fileName in elnFiles:
+        print(f'\n\n{checkClass.label}: {fileName}')
+        successI, log = checkClass(fileName).run()
+        print(log)
+        logJson[fileName][checkClass.loggingLabel] = successI
+        success = success and successI
 
     logPath.write_text(json.dumps(logJson), encoding='utf-8')
     print('=' * 100)

@@ -28,13 +28,14 @@ class Test_2(unittest.TestCase):
         main function
         """
         if Path('tests/logging.json').exists():
-            logJson = json.load(open('tests/logging.json'))
+            logJson = json.loads(Path('tests/logging.json').read_text(encoding='utf-8'))
             print(f'Test results\n{json.dumps(logJson, indent=2)}')
             with open('tests/logging.md', 'w') as output:
                 output.write(HEADER)
                 output.write(f'| software | file name | {" | ".join(COLUMNS)} |\n')
                 output.write(f'| -------- | --------- | {" | ".join(["-----------" for _ in COLUMNS])} |\n')
-                for filename, result in logJson.items():
+                for filename, result in sorted(logJson.items(),
+                                               key=lambda item: (Path(item[0]).parts[1], Path(item[0]).parts[2])):
                     software = Path(filename).parts[1]
                     individualFileName = Path(filename).parts[2]
                     if len(individualFileName)>30:
@@ -44,7 +45,6 @@ class Test_2(unittest.TestCase):
                 output.write("\n\nDefinition of tests\n")
                 for check in ALL_TESTS:
                     output.write(f'- **{check.loggingLabel}**: {DEFINITIONS[check.loggingLabel]}\n')
-                output.close()
             print('Created logging markdown')
         else:
             print('Did not create logging markdown')

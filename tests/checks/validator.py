@@ -1,6 +1,6 @@
 """Validation using ``rocrate-validator``."""
 
-from .base import BaseCheck
+from .base import BaseCheck, METADATA_FILE
 
 
 class CheckValidator(BaseCheck):
@@ -12,6 +12,10 @@ class CheckValidator(BaseCheck):
     requiresMetadataJson = False
 
     def check(self, _elnFile):
+        metadataPath = self.rootDirectory / METADATA_FILE
+        if not metadataPath.is_file():
+            return False, f'{self.fileName} is not valid\nMissing {METADATA_FILE} in the crate root\n'
+
         from rocrate_validator import models, services
 
         log = ''
