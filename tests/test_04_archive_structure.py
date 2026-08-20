@@ -3,6 +3,7 @@
 import tempfile
 import unittest
 from pathlib import Path
+from types import SimpleNamespace
 from zipfile import ZIP_DEFLATED, ZipFile
 
 from tests.checks import CheckArchiveStructure
@@ -63,3 +64,45 @@ class TestArchiveStructure(unittest.TestCase):
                 '**ERROR: .eln archive must contain exactly one root folder; '
                 "found 2: 'first', 'second'\n",
             ))
+
+    def test_rejects_absolute_and_traversal_paths(self):
+        """Absolute and parent-directory ZIP paths are outside the crate root."""
+        with tempfile.TemporaryDirectory() as directory:
+            for index, entry in enumerate(('/crate/file.txt', 'crate/../file.txt')):
+                with self.subTest(entry=entry):
+                    path = Path(directory) / f'unsafe-{index}.eln'
+                    write_test_archive(path, ['crate/ro-crate-metadata.json', entry])
+                    success, log = CheckArchiveStructure(path).run()
+                    self.assertFalse(success)
+                    self.assertIn('entries must be stored inside the root folder', log)
+
+    def test_rejects_empty_archive(self):
+        """An archive without members has no crate root directory."""
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / 'empty.eln'
+            write_test_archive(path, [])
+            success, log = CheckArchiveStructure(path).run()
+            self.assertFalse(success)
+            self.assertIn('exactly one root folder', log)
+
+    def test_sensible_limits_reject_large_member_count_and_size(self):
+        """The default preset rejects ZIPs that exceed either resource cap."""
+        class Archive:
+            def __init__(self, entries):
+                self.entries = entries
+
+            def infolist(self):
+                return self.entries
+
+        def entry(name, size=0):
+            return SimpleNamespace(filename=name, file_size=size, is_dir=lambda: False)
+
+        memberArchive = Archive([entry(f'crate/{index}') for index in range(10_001)])
+        success, log = CheckArchiveStructure('unused').check(memberArchive)
+        self.assertFalse(success)
+        self.assertIn('more than 10000 members', log)
+
+        sizeArchive = Archive([entry('crate/file', 4 * 1024**3 + 1)])
+        success, log = CheckArchiveStructure('unused').check(sizeArchive)
+        self.assertFalse(success)
+        self.assertIn('expands beyond', log)

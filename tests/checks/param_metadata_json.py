@@ -68,6 +68,49 @@ class CheckParamMetadataJson(BaseCheck):
         log = ''
         success = True
 
+        if not isinstance(graph, list):
+            return False, '**ERROR: RO-Crate metadata @graph must be an array\n'
+        if not all(
+            isinstance(node, dict)
+            and isinstance(node.get('@id'), str)
+            and (
+                isinstance(node.get('@type'), str)
+                or (
+                    isinstance(node.get('@type'), list)
+                    and node['@type']
+                    and all(isinstance(nodeType, str) for nodeType in node['@type'])
+                )
+            )
+            for node in graph
+        ):
+            return False, '**ERROR: RO-Crate metadata contains an invalid graph node\n'
+
+        nodeIDs = [node['@id'] for node in graph]
+        if len(nodeIDs) != len(set(nodeIDs)):
+            return False, '**ERROR: RO-Crate metadata contains duplicate node IDs\n'
+
+        metadataNodes = [node for node in graph if node['@id'].endswith(METADATA_FILE)]
+        rootNodes = [node for node in graph if node['@id'] == './']
+        if len(metadataNodes) != 1 or len(rootNodes) != 1:
+            return False, '**ERROR: RO-Crate metadata descriptor or root node is missing or ambiguous\n'
+
+        for node in graph:
+            children = node.get('hasPart', [])
+            if not isinstance(children, list) or any(
+                not isinstance(child, dict)
+                or not isinstance(child.get('@id'), str)
+                or child['@id'] not in nodeIDs
+                for child in children
+            ):
+                return False, f'**ERROR: RO-Crate node {node["@id"]} has invalid hasPart references\n'
+
+        publisher = metadataNodes[0].get('sdPublisher')
+        if publisher is not None and (
+            not isinstance(publisher, dict)
+            or ('name' not in publisher and publisher.get('@id') not in nodeIDs)
+        ):
+            return False, '**ERROR: RO-Crate publisher metadata is invalid\n'
+
         roCrateNodes = [node for node in graph if node['@id'] == METADATA_FILE]
         if len(roCrateNodes) == 1:
             for key in self.ROCRATE_NOTE_MANDATORY:
@@ -78,7 +121,9 @@ class CheckParamMetadataJson(BaseCheck):
             log += f'**ERROR: @id={METADATA_FILE} does not uniquely exist '
             success = False
 
-        mainNode = [node for node in graph if node['@id'] == './'][0]
+        mainNode = rootNodes[0]
+        if 'hasPart' not in mainNode:
+            return False, '**ERROR: RO-Crate root node requires hasPart\n'
         for part in mainNode['hasPart']:
             success = self.processNode(graph, part['@id']) and success
 

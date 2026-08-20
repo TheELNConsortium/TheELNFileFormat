@@ -10,11 +10,22 @@ class CheckArchiveStructure(BaseCheck):
     loggingLabel = 'archive_structure'
     requiresRootDirectory = False
     requiresMetadataJson = False
+    MAX_ARCHIVE_MEMBERS = 10_000
+    MAX_ARCHIVE_BYTES = 4 * 1024**3
+    RESOURCE_LIMIT_PRESETS = {'permissive', 'sensible'}
+
+    def __init__(self, fileName, resourceLimits='sensible'):
+        """Create an archive-layout check with a resource-limit preset."""
+        super().__init__(fileName)
+        if resourceLimits not in self.RESOURCE_LIMIT_PRESETS:
+            raise ValueError(f'resourceLimits must be one of {sorted(self.RESOURCE_LIMIT_PRESETS)}')
+        self.resourceLimits = resourceLimits
 
     def check(self, elnFile):
+        archiveInfo = elnFile.infolist()
         entriesOutsideRoot = set()
         rootFolders = set()
-        for entry in elnFile.infolist():
+        for entry in archiveInfo:
             path = PurePosixPath(entry.filename)
             if (
                 not path.parts
@@ -27,6 +38,12 @@ class CheckArchiveStructure(BaseCheck):
                 rootFolders.add(path.parts[0])
 
         log = ''
+        if self.resourceLimits == 'sensible':
+            if len(archiveInfo) > self.MAX_ARCHIVE_MEMBERS:
+                log += (f'**ERROR: .eln archive contains more than {self.MAX_ARCHIVE_MEMBERS} members\n')
+            archiveBytes = sum(entry.file_size for entry in archiveInfo)
+            if archiveBytes > self.MAX_ARCHIVE_BYTES:
+                log += (f'**ERROR: .eln archive expands beyond {self.MAX_ARCHIVE_BYTES} bytes\n')
         if entriesOutsideRoot:
             entries = ', '.join(repr(path) for path in sorted(entriesOutsideRoot))
             log += (
