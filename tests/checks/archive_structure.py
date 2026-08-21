@@ -3,6 +3,9 @@ from pathlib import PurePosixPath
 
 from .base import BaseCheck
 
+PREVIEW_FILE = 'ro-crate-preview.html'
+
+
 class CheckArchiveStructure(BaseCheck):
     """Check that an .eln ZIP contains exactly one root folder."""
 
@@ -38,22 +41,32 @@ class CheckArchiveStructure(BaseCheck):
                 rootFolders.add(path.parts[0])
 
         log = ''
+        success = True
         if self.resourceLimits == 'sensible':
             if len(archiveInfo) > self.MAX_ARCHIVE_MEMBERS:
                 log += (f'**ERROR: .eln archive contains more than {self.MAX_ARCHIVE_MEMBERS} members\n')
+                success = False
             archiveBytes = sum(entry.file_size for entry in archiveInfo)
             if archiveBytes > self.MAX_ARCHIVE_BYTES:
                 log += (f'**ERROR: .eln archive expands beyond {self.MAX_ARCHIVE_BYTES} bytes\n')
+                success = False
         if entriesOutsideRoot:
             entries = ', '.join(repr(path) for path in sorted(entriesOutsideRoot))
             log += (
                 '**ERROR: .eln archive entries must be stored inside the root '
                 f'folder: {entries}\n'
             )
+            success = False
         if len(rootFolders) != 1:
             folders = ', '.join(repr(path) for path in sorted(rootFolders))
             log += (
                 '**ERROR: .eln archive must contain exactly one root folder; '
                 f'found {len(rootFolders)}: {folders}\n'
             )
-        return not log, log
+            success = False
+        if success and not any(
+            PurePosixPath(entry.filename).name == PREVIEW_FILE
+            for entry in archiveInfo
+        ):
+            log += f'**INFO: .eln archive does not contain {PREVIEW_FILE}; the preview is optional\n'
+        return success, log

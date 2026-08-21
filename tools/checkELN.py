@@ -18,9 +18,8 @@ import streamlit as st
 
 REPOSITORY_ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(REPOSITORY_ROOT))
-from tests.checks import ALL_TESTS, BaseCheck
+from tests.checks import ALL_TESTS, BaseCheck, PREVIEW_FILE
 
-PREVIEW_FILE   = 'ro-crate-preview.html'
 REPOSITORY_URL = 'https://github.com/TheELNConsortium/TheELNFileFormat'
 LOGO_PATH = REPOSITORY_ROOT / 'tools' / 'logo-color-fade.png'
 

@@ -40,8 +40,6 @@ def validMetadata():
 
 class TestParamMetadataJson(unittest.TestCase):
     """Check consortium-specific metadata rules not covered by RO-Crate."""
-
-
     def test_main(self):
         """Run the metadata-convention check against all repository examples."""
         generalizedTest(CheckParamMetadataJson)

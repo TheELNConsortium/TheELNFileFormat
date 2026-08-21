@@ -1,6 +1,6 @@
 """ELN validation check classes."""
 
-from .archive_structure import CheckArchiveStructure
+from .archive_structure import CheckArchiveStructure, PREVIEW_FILE
 from .base import BaseCheck
 from .param_metadata_json import CheckParamMetadataJson
 from .pypi_rocrate import CheckPypiRocrate

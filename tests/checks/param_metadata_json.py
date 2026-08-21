@@ -69,7 +69,6 @@ class CheckParamMetadataJson(BaseCheck):
         graph = self.metadataJson['@graph']
         log = ''
         success = True
-
         if not isinstance(graph, list):
             return False, '**ERROR: RO-Crate metadata @graph must be an array\n'
         if not all(

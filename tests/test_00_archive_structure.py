@@ -35,7 +35,21 @@ class TestArchiveStructure(unittest.TestCase):
                 with self.subTest(entries=entries):
                     path = Path(directory) / f'valid-{index}.eln'
                     write_test_archive(path, entries)
-                    self.assertEqual(CheckArchiveStructure(path).run(), (True, ''))
+                    success, log = CheckArchiveStructure(path).run()
+                    self.assertTrue(success)
+                    self.assertIn('**INFO: .eln archive does not contain ro-crate-preview.html', log)
+
+    def test_accepts_archive_with_preview_file(self):
+        """An embedded preview is detected without adding a diagnostic."""
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / 'with-preview.eln'
+            write_test_archive(path, [
+                'crate/ro-crate-metadata.json',
+                'crate/ro-crate-preview.html',
+            ])
+            success, log = CheckArchiveStructure(path).run()
+            self.assertTrue(success)
+            self.assertNotIn('ro-crate-preview.html', log)
 
     def test_rejects_root_level_file(self):
         """Files alongside the root folder violate the archive layout."""
