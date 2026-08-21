@@ -41,17 +41,13 @@ def tree(metadata):
             i for i in metadata['@graph'] if '@id' in i and i['@id'] == part['@id']
         ]
         if len(new_node) == 1:
-            output += (
-                ',  items: ' + str(len(new_node[0]) - 1) + ' \n'
-            )  # -1 because @id is not counted
+            output += (',  items: ' + str(len(new_node[0]) - 1) + ' \n')  # -1 because @id is not counted
             subparts = new_node[0].pop('hasPart') if 'hasPart' in new_node[0] else []
             if len(subparts) > 0:  # don't do if no subparts: measurements, ...
                 for subpart in subparts:
                     output += process_part(subpart, level + 1)
         else:
-            output += (
-                ',  items: ' + str(len(part) - 1) + '\n'
-            )  # -1 because @id is not counted
+            output += (',  items: ' + str(len(part) - 1) + '\n')  # -1 because @id is not counted
         return output
 
     # main tree-function
@@ -67,9 +63,7 @@ def tree(metadata):
     output += '- ./\n'
     # iteratively go through list
     for part in main_node['hasPart']:
-        output += process_part(
-            part, 1
-        )
+        output += process_part(part, 1)
     return output
 
 
