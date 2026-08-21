@@ -26,14 +26,15 @@ class CheckParamMetadataJson(BaseCheck):
     def processNode(self, graph, nodeID):
         """Recursively validate one node and its ``hasPart`` children."""
         success = True
+        log = ''
         nodes = [node for node in graph if node.get('@id') == nodeID]
         if len(nodes) != 1:
-            print('**ERROR: all entries must only occur once in crate. check:', nodeID)
-            return False
+            log += f'**ERROR: all entries must only occur once in crate. check: {nodeID}\n'
+            return False, log
         node = nodes[0]
         if '@type' not in node:
-            print('**ERROR: all nodes must have @type. check:', nodeID)
-            return False
+            log += f'**ERROR: all nodes must have @type. check: {nodeID}\n'
+            return False, log
 
         nodeTypes = node['@type']
         if isinstance(nodeTypes, str):
@@ -43,27 +44,29 @@ class CheckParamMetadataJson(BaseCheck):
         if 'Dataset' in nodeTypes:
             for key in self.DATASET_MANDATORY:
                 if key not in node:
-                    print(f'**ERROR in dataset: "{key}" not in @id={node["@id"]}')
+                    log += f'**ERROR in dataset: "{key}" not in @id={node["@id"]}\n'
                     success = False
             for key in self.DATASET_SUGGESTED:
                 if key not in node and self.OUTPUT_INFO:
-                    print(f'**INFO for dataset: "{key}" not in @id={node["@id"]}')
+                    log += f'**INFO for dataset: "{key}" not in @id={node["@id"]}\n'
         elif 'File' in nodeTypes:
             for key in self.FILE_MANDATORY:
                 if key not in node:
-                    print(f'**ERROR in file: "{key}" not in @id={node["@id"]}')
+                    log += f'**ERROR in file: "{key}" not in @id={node["@id"]}\n'
                     success = False
             for key in self.FILE_SUGGESTED:
                 if key not in node and self.OUTPUT_INFO:
-                    print(f'**INFO for file: "{key}" not in @id={node["@id"]}')
+                    log += f'**INFO for file: "{key}" not in @id={node["@id"]}\n'
         if any(not str(value).strip() for value in node.values()):
-            print(f'**WARNING: {nodeID} contains empty values in the key-value pairs')
+            log += f'**WARNING: {nodeID} contains empty values in the key-value pairs\n'
         if isinstance(node.get('keywords', ''), list):
-            print(f'**ERROR: {nodeID} contains an array of keywords. Use comma or space separated string')
+            log += f'**ERROR: {nodeID} contains an array of keywords. Use comma or space separated string\n'
             success = False
         for child in node.get('hasPart', []):
-            success = self.processNode(graph, child['@id']) and success
-        return success
+            childSuccess, childLog = self.processNode(graph, child['@id'])
+            success = childSuccess and success
+            log += childLog
+        return success, log
 
     def check(self, _elnFile):
         graph = self.metadataJson['@graph']
@@ -118,17 +121,19 @@ class CheckParamMetadataJson(BaseCheck):
         if len(roCrateNodes) == 1:
             for key in self.ROCRATE_NOTE_MANDATORY:
                 if key not in roCrateNodes[0]:
-                    log += f'**ERROR: "{key}" not in @id={METADATA_FILE}'
+                    log += f'**ERROR: "{key}" not in @id={METADATA_FILE}\n'
                     success = False
         else:
-            log += f'**ERROR: @id={METADATA_FILE} does not uniquely exist '
+            log += f'**ERROR: @id={METADATA_FILE} does not uniquely exist\n'
             success = False
 
         mainNode = rootNodes[0]
         if 'hasPart' not in mainNode:
             return False, '**ERROR: RO-Crate root node requires hasPart\n'
         for part in mainNode['hasPart']:
-            success = self.processNode(graph, part['@id']) and success
+            nodeSuccess, nodeLog = self.processNode(graph, part['@id'])
+            success = nodeSuccess and success
+            log += nodeLog
 
         if self.OUTPUT_COUNTS:
             knownKeys = (
