@@ -1,6 +1,7 @@
 """Validation using ``rocrate-validator``."""
 
-from .base import BaseCheck, METADATA_FILE
+from .base import BaseCheck
+from .versions import getDeclaredVersions
 
 
 class CheckValidator(BaseCheck):
@@ -9,12 +10,17 @@ class CheckValidator(BaseCheck):
     label = 'Validator'
     loggingLabel = 'validator'
     requiresRootDirectory = True
-    requiresMetadataJson = False
+    requiresMetadataJson = True
+    SUPPORTED_RO_CRATE_VERSIONS = {'1.1', '1.2'}
 
     def check(self, _elnFile):
-        metadataPath = self.rootDirectory / METADATA_FILE
-        if not metadataPath.is_file():
-            return False, f'{self.fileName} is not valid\nMissing {METADATA_FILE} in the crate root\n'
+        roCrateVersion = getDeclaredVersions(self.metadataJson).roCrate
+        if roCrateVersion not in self.SUPPORTED_RO_CRATE_VERSIONS:
+            return False, (
+                f'{self.fileName} is not valid\n'
+                'The metadata descriptor must declare RO-Crate version 1.1 or 1.2 '
+                'in conformsTo\n'
+            )
 
         from rocrate_validator import models, services
 
@@ -22,7 +28,7 @@ class CheckValidator(BaseCheck):
         success = True
         settings = services.ValidationSettings(
             rocrate_uri=self.rootDirectory,
-            profile_identifier='ro-crate-1.1',
+            profile_identifier=f'ro-crate-{roCrateVersion}',
             requirement_severity=models.Severity.REQUIRED,
         )
         result = services.validate(settings)

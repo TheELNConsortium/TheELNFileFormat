@@ -25,6 +25,17 @@ class CheckSchema(BaseCheck):
         log = ''
         metadataContent = self.metadataJson
         for error in sorted(validator.iter_errors(metadataContent), key=str):
-            log += f'- {error.message}\n'
+            path = list(error.absolute_path)
+            location = 'Metadata'
+            if path[:1] == ['@graph'] and len(path) >= 2 and isinstance(path[1], int):
+                node = metadataContent['@graph'][path[1]]
+                nodeID = node.get('@id', f'graph entry {path[1]}')
+                location = f'Node {nodeID!r}'
+                path = path[2:]
+            if path:
+                propertyPath = ''.join(f'[{part}]' if isinstance(part, int) else f'.{part}'
+                    for part in path).lstrip('.')
+                location += f', property {propertyPath!r}'
+            log += f'- {location}: {error.message}\n'
             success = False
         return success, log
