@@ -11,6 +11,18 @@ Generates the `README.md` of an example folder from its
 python tools/eln2md.py -d examples/<your folder>
 ~~~
 
+## `eln2preview.py`
+
+Generates and embeds a minimal static `ro-crate-preview.html` in one `.eln`
+archive:
+
+~~~bash
+python tools/eln2preview.py examples/<your archive>.eln
+~~~
+
+If the archive already contains a preview, the command asks for explicit
+confirmation before replacing it.
+
 ## `checkELN.py`
 
 A [Streamlit](https://streamlit.io) page that verifies and previews an
