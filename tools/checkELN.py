@@ -10,7 +10,6 @@ Run locally with:
 so the web tool and the CI suite always agree about what a valid .eln file is.
 """
 import base64
-import json
 import sys
 from pathlib import Path
 from zipfile import ZIP_DEFLATED, ZipFile
@@ -72,7 +71,7 @@ if uploadedFile is not None:
         st.markdown(f'{passed} of {len(results)} checks passed.')
         for label, success, log in results:
             heading = ('Success: ' if success else 'FAILURE: ')+label
-            with st.expander(heading, icon='✅' if success else '❌'):
+            with st.expander(heading, icon='✅' if success else '❌', expanded=bool(log)):
                 st.code(log if log else 'Success')
         resultText = '\n'.join([
                 f'Test summary: {passed} of {len(results)} checks passed.',
@@ -83,22 +82,9 @@ if uploadedFile is not None:
                     for label, success, log in results
                 ),
             ])
-        copyPayload = json.dumps(resultText).replace('</', '<\\/')
-        st.html(
-            f'''
-            <button id="copy-result" type="button">Copy all results to clipboard</button>
-            <script>
-                const result = {copyPayload};
-                const button = document.getElementById('copy-result');
-                button.addEventListener('click', () => {{
-                    navigator.clipboard.writeText(result)
-                        .then(() => button.textContent = 'Copied')
-                        .catch(() => button.textContent = 'Copy failed');
-                }});
-            </script>
-            ''',
-            unsafe_allow_javascript=True,
-        )
+        st.markdown('<div style="height: 1rem"></div>', unsafe_allow_html=True)
+        with st.expander('Entire report'):
+            st.code(resultText, language=None)
 
     # Preview tab
     with tabPreview:
