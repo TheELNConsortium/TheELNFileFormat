@@ -4,15 +4,14 @@ Validate if rocrate of pypi can open and parse it. This is a test if we follow g
 https://pypi.org/project/rocrate/
 """
 import unittest
-from checks import checkSchema
-from test_00_pypi_rocrate import generalizedTest
 
-class Test_1(unittest.TestCase):
-    """
-    derived class for this test
-    """
+from tests.checks import CheckSchema
+from tests.utils import generalizedTest
+
+
+class TestSchema(unittest.TestCase):
+    """Check metadata JSON against the consortium JSON schema."""
+
     def test_main(self):
-        """
-        main function
-        """
-        generalizedTest(checkSchema, 'schema')
+        """Run the schema check against all repository examples."""
+        generalizedTest(CheckSchema)

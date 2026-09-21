@@ -5,10 +5,8 @@ Contributions to this repository are welcome. Use GitHub issues or Discussions t
 ## Testing locally
 
 ~~~bash
-python -m venv venv
-source venv/bin/activate
-pip install -r tests/requirements.txt
-python -m pytest
+uv sync --group test
+uv run --group test pytest
 ~~~
 
 ## Adding an example file

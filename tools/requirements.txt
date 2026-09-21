@@ -1,7 +1,0 @@
-# Dependencies for the web checker in tools/checkELN.py.
-#
-# The checks themselves live in tests/checks.py, so their dependencies are
-# pulled in from the test requirements rather than duplicated here. Only the
-# web front end is added below.
--r ../tests/requirements.txt
-streamlit==1.42.0

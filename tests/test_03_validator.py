@@ -4,15 +4,14 @@ Validate if rocrate of pypi can open and parse it. This is a test if we follow g
 https://pypi.org/project/rocrate/
 """
 import unittest
-from checks import checkValidator
-from test_00_pypi_rocrate import generalizedTest
 
-class Test_1(unittest.TestCase):
-    """
-    derived class for this test
-    """
+from tests.checks import CheckValidator
+from tests.utils import generalizedTest
+
+
+class TestValidator(unittest.TestCase):
+    """Check each example with the RO-Crate validator."""
+
     def test_main(self):
-        """
-        main function
-        """
-        generalizedTest(checkValidator, 'validator')
+        """Run the RO-Crate validator against all repository examples."""
+        generalizedTest(CheckValidator)

@@ -4,15 +4,10 @@
 [Sphinx](https://www.sphinx-doc.org/en/master/index.html#) is used for document generation.
 
 ### Local testing
+To build the documentation locally:
 
 ```
-pip install sphinx sphinx_rtd_theme
+uv run --group docs make -C docs html
 ```
 
-Then build the documentation locally:
-
-```
-make -C docs html
-```
-
-Navigate to `docs/build/` and open `index.html`.
+Navigate to `docs/build/html/` and open `index.html`.

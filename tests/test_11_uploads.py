@@ -1,30 +1,25 @@
 #!/usr/bin/python3
-"""Validate the upload bridge that lets a web front end reuse these checks."""
+"""Test the upload flow used by the Streamlit checker application."""
+
 import io
-import os
 import tempfile
 import unittest
 from pathlib import Path
 from zipfile import ZIP_DEFLATED, ZipFile
 
-from checks import (
-    ALL_CHECKS,
-    checkValidator,
-    readUploadedBytes,
-    runChecks,
-    uploadedFileAsPath,
+from tests.checks import (
+    ALL_TESTS,
+    BaseCheck,
+    CheckValidator,
 )
 
 
 def findExampleEln():
-    """Return the path of one .eln example shipped in this repository."""
-    for root, _, files in os.walk('.', topdown=False):
-        if 'SKIP_CI' in files:
-            continue
-        for name in sorted(files):
-            if name.endswith('.eln'):
-                return Path(root)/name
-    raise unittest.SkipTest('no .eln example available in this checkout')
+    """Return the canonical PASTA example used by upload-flow tests."""
+    example = Path('examples/kadi4mat/collections-example.eln')
+    if example.is_file():
+        return example
+    raise unittest.SkipTest(f'upload-test fixture is missing: {example}')
 
 
 class TestUploadedFileAsPath(unittest.TestCase):
@@ -40,12 +35,12 @@ class TestUploadedFileAsPath(unittest.TestCase):
                 sources = [payload, io.BytesIO(payload), handle]
                 for source in sources:
                     with self.subTest(source=type(source).__name__):
-                        self.assertEqual(readUploadedBytes(source), payload)
+                        self.assertEqual(BaseCheck.readUploadedBytes(source), payload)
 
     def test_writes_and_removes_temporary_file(self):
         """The upload exists on disk inside the block and is gone after it."""
         payload = b'temporary'
-        with uploadedFileAsPath(io.BytesIO(payload), 'demo.eln') as elnPath:
+        with BaseCheck.uploadedFileAsPath(io.BytesIO(payload), 'demo.eln') as elnPath:
             self.assertTrue(elnPath.is_file())
             self.assertEqual(elnPath.name, 'demo.eln')
             self.assertEqual(elnPath.read_bytes(), payload)
@@ -54,47 +49,47 @@ class TestUploadedFileAsPath(unittest.TestCase):
 
     def test_uses_only_the_basename_of_the_upload(self):
         """A directory component in the upload name cannot escape the sandbox."""
-        with uploadedFileAsPath(b'x', '../../evil.eln') as elnPath:
+        with BaseCheck.uploadedFileAsPath(b'x', '../../evil.eln') as elnPath:
             self.assertEqual(elnPath.name, 'evil.eln')
             self.assertEqual(elnPath.parent.name, 'upload')
 
 
 class TestRunChecks(unittest.TestCase):
-    """Test the unified runChecks entry point for both paths and uploads."""
+    """Test the BaseCheck batch entry point for paths and uploads."""
 
-    def test_validator_rejects_an_upload_object_without_the_bridge(self):
-        """checkValidator needs a real path, which is why the bridge exists."""
+    def test_validator_rejects_raw_bytes_without_the_bridge(self):
+        """Raw bytes need the bridge before a child check can read them."""
         example = findExampleEln()
-        with self.assertRaises(TypeError):
-            checkValidator(io.BytesIO(example.read_bytes()))
+        success, _ = CheckValidator(example.read_bytes()).run()
+        self.assertFalse(success)
 
     def test_valid_upload_passes_all_checks(self):
         """A valid .eln uploaded as bytes passes every check."""
         example = findExampleEln()
-        results = runChecks(io.BytesIO(example.read_bytes()), example.name)
+        results = BaseCheck.runChecks(io.BytesIO(example.read_bytes()), ALL_TESTS, example.name)
         for label, success, _log in results:
             with self.subTest(check=label):
                 self.assertTrue(success, f'{label} failed on a valid example')
 
     def test_corrupt_upload_is_reported_not_raised(self):
         """A corrupt upload yields failing checks instead of breaking the page."""
-        results = runChecks(b'this is not a zip file', 'broken.eln')
+        results = BaseCheck.runChecks(b'this is not a zip file', ALL_TESTS, 'broken.eln')
         self.assertTrue(all(not success for _label, success, _log in results))
         self.assertTrue(all(log for _label, _success, log in results))
 
     def test_all_results_returned_in_order(self):
-        """runChecks returns exactly one result per check, in ALL_CHECKS order."""
+        """The batch runner returns one result per check in ALL_TESTS order."""
         example = findExampleEln()
         payload = io.BytesIO(example.read_bytes())
-        uploaded = runChecks(payload, example.name)
+        uploaded = BaseCheck.runChecks(payload, ALL_TESTS, example.name)
         self.assertEqual(
             [label for label, _, _ in uploaded],
-            [label for label, _ in ALL_CHECKS],
+            [checkClass.label for checkClass in ALL_TESTS],
         )
-        fromPath = runChecks(example)
+        fromPath = BaseCheck.runChecks(example, ALL_TESTS)
         self.assertEqual(
             [label for label, _, _ in fromPath],
-            [label for label, _ in ALL_CHECKS],
+            [checkClass.label for checkClass in ALL_TESTS],
         )
         for (uLabel, uSuccess, _), (pLabel, pSuccess, _) in zip(uploaded, fromPath):
             with self.subTest(check=uLabel):
@@ -104,10 +99,13 @@ class TestRunChecks(unittest.TestCase):
     def test_upload_and_path_produce_matching_verdicts(self):
         """An uploaded example produces the same verdicts as the file on disk."""
         example = findExampleEln()
-        uploaded = runChecks(io.BytesIO(example.read_bytes()), example.name)
+        uploaded = BaseCheck.runChecks(io.BytesIO(example.read_bytes()), ALL_TESTS, example.name)
         for label, success, _log in uploaded:
             with self.subTest(check=label):
-                onDisk, _ = dict(ALL_CHECKS)[label](example)
+                checkClass = next(
+                    candidate for candidate in ALL_TESTS if candidate.label == label
+                )
+                onDisk, _ = checkClass(example).run()
                 self.assertEqual(success, onDisk)
 
     def test_archive_without_metadata_is_reported_not_raised(self):
@@ -115,7 +113,7 @@ class TestRunChecks(unittest.TestCase):
         buffer = io.BytesIO()
         with ZipFile(buffer, 'w', compression=ZIP_DEFLATED) as archive:
             archive.writestr('crate/readme.txt', 'no metadata here')
-        results = runChecks(buffer.getvalue(), 'empty.eln')
+        results = BaseCheck.runChecks(buffer.getvalue(), ALL_TESTS, 'empty.eln')
         verdicts = {label: success for label, success, _log in results}
         self.assertTrue(verdicts['Archive structure'])
         self.assertFalse(verdicts['Parameters metadata json'])
