@@ -4,7 +4,7 @@ from pathlib import Path
 import json
 import unittest
 
-COLUMNS = ['pypi_rocrate','validator','schema','params_metadata_json']
+COLUMNS = ['archive_structure','pypi_rocrate','validator','schema','params_metadata_json']
 HEADER  = "## Results of verification\nautomatically created\n\n"
 
 
@@ -31,6 +31,7 @@ class Test_2(unittest.TestCase):
                     resultStr   = ' | '.join([':white_check_mark:' if col in result and result[col] else ':x:' for col in COLUMNS])
                     output.write(f'| {software} | {individualFileName} | {resultStr} |\n')
                 output.write("\n\nDefinition of tests\n")
+                output.write("- **archive_structure**: tests if the .eln ZIP contains exactly one root folder.\n")
                 output.write("- **pypi_rocrate**: tests if eln-file can be opened by pypi's rocrate; if eln file can be easily opened by that library.\n")
                 output.write("- **validator**: tests if the ro-crate conventions fulfilled using pypi's roc-validator.\n")
                 output.write("- **schema**: tests if the conventions of the ELN-consortium are fulfilled using a schema description.\n")

@@ -1,7 +1,8 @@
 import json
 import traceback
 import tempfile
-from pathlib import Path
+from contextlib import contextmanager
+from pathlib import Path, PurePosixPath
 from zipfile import ZIP_DEFLATED
 from zipfile import ZipFile
 from jsonschema import Draft202012Validator
@@ -9,6 +10,49 @@ from rocrate.rocrate import ROCrate
 from rocrate_validator import services, models
 
 METADATA_FILE = 'ro-crate-metadata.json'
+
+
+def checkArchiveStructure(fileName):
+    """Check that an .eln ZIP contains exactly one root folder.
+
+    Args:
+        fileName: path to .eln file
+    Returns:
+        success: bool if check was successful
+        log: string with log information
+    """
+    with ZipFile(fileName, 'r', compression=ZIP_DEFLATED) as elnFile:
+        entries_outside_root = set()
+        root_folders = set()
+        for entry in elnFile.infolist():
+            path = PurePosixPath(entry.filename)
+            if (
+                    not path.parts
+                    or path.is_absolute()
+                    or '..' in path.parts
+                    or (len(path.parts) == 1 and not entry.is_dir())
+            ):
+                entries_outside_root.add(entry.filename)
+            else:
+                root_folders.add(path.parts[0])
+
+        log = ''
+        if entries_outside_root:
+            entries = ', '.join(
+                repr(path) for path in sorted(entries_outside_root)
+            )
+            log += (
+                '**ERROR: .eln archive entries must be stored inside the root '
+                f'folder: {entries}\n'
+            )
+        if len(root_folders) != 1:
+            folders = ', '.join(repr(path) for path in sorted(root_folders))
+            log += (
+                '**ERROR: .eln archive must contain exactly one root folder; '
+                f'found {len(root_folders)}: {folders}\n'
+            )
+        return not log, log
+
 
 def checkPypiRocrate(fileName, verbose=False):
     """ Check if file is a valid ro-crate according to pypi rocrate package
@@ -76,7 +120,12 @@ def checkParamMetadataJson(fileName):
         if '@type' not in node:
             print('**ERROR: all nodes must have @type. check:', nodeID)
             return False
-        if node['@type'] == 'Dataset':
+        node_types = node['@type']
+        if isinstance(node_types, str):
+            node_types = [node_types]
+        elif not isinstance(node_types, list):
+            node_types = []
+        if 'Dataset' in node_types:
             for key in DATASET_MANDATORY:
                 if key not in node:
                     print(f'**ERROR in dataset: "{key}" not in @id={node["@id"]}')
@@ -84,7 +133,7 @@ def checkParamMetadataJson(fileName):
             for key in DATASET_SUGGESTED:
                 if key not in node and OUTPUT_INFO:
                     print(f'**INFO for dataset: "{key}" not in @id={node["@id"]}')
-        elif node['@type'] == 'File':
+        elif 'File' in node_types:
             for key in FILE_MANDATORY:
                 if key not in node:
                     print(f'**ERROR in file: "{key}" not in @id={node["@id"]}')
@@ -215,3 +264,110 @@ def checkValidator(fileName):
                 log += f"Detected issue of severity {issue.severity.name} with check \"{issue.check.identifier}\": {issue.message}\n"
             success = False
     return success, log
+
+
+ALL_CHECKS = (
+    ('Archive structure', checkArchiveStructure),
+    ('Pypi RO-Crate', checkPypiRocrate),
+    ('Parameters metadata json', checkParamMetadataJson),
+    ('Schema', checkSchema),
+    ('Validator', checkValidator),
+)
+
+
+def readUploadedBytes(uploadedFile):
+    """ Read the raw bytes of an uploaded .eln file
+    Args:
+        uploadedFile: bytes, or a file-like object such as a web upload
+    Returns:
+        payload: bytes of the .eln file
+    """
+    if isinstance(uploadedFile, (bytes, bytearray)):
+        return bytes(uploadedFile)
+    if hasattr(uploadedFile, 'getvalue'):
+        return uploadedFile.getvalue()
+    if hasattr(uploadedFile, 'seek'):
+        uploadedFile.seek(0)
+    return uploadedFile.read()
+
+
+@contextmanager
+def uploadedFileAsPath(uploadedFile, fileName='uploaded.eln'):
+    """ Expose an uploaded .eln file object as a real file on disk
+
+    Most checks accept any file-like object, but checkValidator resolves
+    Path(fileName).parent.name and therefore needs a real path. Writing the
+    upload out once keeps all five checks on one identical input instead of
+    letting them disagree about what they received.
+
+    Args:
+        uploadedFile: bytes, or a file-like object such as a web upload
+        fileName: name to give the temporary copy; only its basename is used
+    Yields:
+        elnPath: Path of the temporary .eln file, removed on exit
+    """
+    payload = readUploadedBytes(uploadedFile)
+    with tempfile.TemporaryDirectory() as directory:
+        elnPath = Path(directory)/'upload'/Path(fileName).name
+        elnPath.parent.mkdir(parents=True, exist_ok=True)
+        elnPath.write_bytes(payload)
+        yield elnPath
+
+
+@contextmanager
+def _asPath(source, fileName=None):
+    """ Yield a filesystem path for either a real path or an uploaded object
+
+    When *source* is an existing file path it is used directly. Any other
+    object (bytes, BytesIO, Streamlit UploadedFile, ...) is materialised to a
+    temporary file via :func:`uploadedFileAsPath` so every check receives one
+    identical on-disk input and the temporary-file handling stays inside the
+    validation code.
+
+    Args:
+        source: a filesystem path (str/Path) or an uploaded file object
+        fileName: name for the temporary copy when *source* is an upload
+    Yields:
+        elnPath: Path of the .eln file to check
+    """
+    if isinstance(source, (str, Path)) and Path(source).is_file():
+        yield Path(source)
+    else:
+        with uploadedFileAsPath(source, fileName or 'uploaded.eln') as elnPath:
+            yield elnPath
+
+
+def runChecks(source, fileName=None):
+    """ Run every .eln check against a file path or an uploaded file object
+
+    Both the CI test suite and the Streamlit web app call this single entry
+    point so the web tool and the CI suite always agree about what a valid
+    .eln file is. A check that raises is reported as a failure rather than
+    propagating, because reporting on damaged files is the purpose of an
+    upload tool.
+
+    Args:
+        source: a filesystem path (str or Path) to an .eln file, or an
+            uploaded file object (bytes, BytesIO, Streamlit UploadedFile, ...)
+        fileName: name to give a temporary copy when *source* is an upload;
+            only its basename is used and defaults to ``uploaded.eln``.
+            Ignored when *source* is an existing path.
+    Returns:
+        results: list of (label, success, log) in ALL_CHECKS order
+    """
+    results = []
+    with _asPath(source, fileName) as elnPath:
+        for label, check in ALL_CHECKS:
+            try:
+                success, log = check(elnPath)
+            except Exception:
+                success = False
+                log = '  *****  ERROR: this check could not run on the file  *****\n'
+                log += traceback.format_exc()
+            results.append((label, success, log))
+    return results
+
+
+def checkUploadedFile(uploadedFile, fileName='uploaded.eln'):
+    """ Backward-compatible alias for :func:`runChecks` with an upload object """
+    return runChecks(uploadedFile, fileName)

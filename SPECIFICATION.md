@@ -114,7 +114,36 @@ Subsequently, all the remaining nodes are assigned a `@type` of either `Dataset`
 If a Dataset node has additional files, they should be listed in its `hasPart` property and can be referenced through their `@id`.
 All nodes with `@type: Dataset` SHOULD include `name`, `author` properties. Furthermore, other properties of `Dataset`, such as `identifier`, `dateCreated`, `dateModified`, `text`, `keywords`, `comment` MAY also be added.
 
-If a Dataset references other Datasets (_e.g._ a parent experiment with child experiments), they must also be present in the `hasPart` of `./` if they are meant to be imported. A Dataset MUST not contain other Datasets in its `hasPart` section.
+If a Dataset references child Datasets (_e.g._ a parent experiment with child experiments), it SHOULD list them in its `hasPart` section. Each child Dataset that is meant to be imported MUST also be listed directly in the `hasPart` of `./`; a reference from its parent alone does not mark it for import.
+
+For example, both the parent and child experiments below are meant to be imported, while the parent's `hasPart` also records their relationship:
+
+```json
+{
+  "@graph": [
+    {
+      "@id": "./",
+      "@type": "Dataset",
+      "hasPart": [
+        { "@id": "./parent/" },
+        { "@id": "./child/" }
+      ]
+    },
+    {
+      "@id": "./parent/",
+      "@type": "Dataset",
+      "hasPart": [
+        { "@id": "./child/" }
+      ]
+    },
+    {
+      "@id": "./child/",
+      "@type": "Dataset",
+      "hasPart": []
+    }
+  ]
+}
+```
 
 All nodes with `@type: File` SHOULD include `name`, `encodingFormat`, `contentSize` properties. Furthermore, other properties of `File`, such as `description`, `sha256`, `author`, `identifier`, `dateCreated`, `dateModified`, `text` MAY also be added.
 
@@ -123,8 +152,9 @@ For instance, a "comment" on an experiment will exist as a `@type: Comment` node
 
 #### Specific fields
 
-* `@type`: could be a string like "Dataset" or "File", or an array such as `["Dataset", "Experiment"]`
-* `additionalType`: use it to add context to the type of data. Use something like: `{"@id": "http://edamontology.org/data_2977"},`
+* [`@type`](https://www.w3.org/TR/json-ld11/#specifying-the-type): use this field for the Schema.org and RO-Crate types of a node. Directory data entities MUST include `Dataset`, and files MUST include `File`. A node MAY have more than one type, represented as an array, when another Schema.org type provides useful detail (for example, `["Dataset", "Message"]`).
+* [`additionalType`](https://schema.org/additionalType): use this field for more specific types from external vocabularies. Prefer an IRI, or an array of IRIs when several types apply. The .eln file format does not prescribe a particular external vocabulary.
+* [`genre`](https://schema.org/genre): use this field for a broad, human-readable category, such as `experiment`. In an .eln file it is a string, not an alias for `@type`; use `additionalType` instead when the value identifies a class in an external vocabulary.
 * `contentSize`: this term is loosely defined by Schema.org. In a .eln it is a string with the number of bytes. See "Example File" section below. It contains no units.
 * `license`: Should be something like: `"license": {"@id": "https://creativecommons.org/licenses/by/4.0/"}`
 * `variableMeasured`: this term is interpreted more loosely for .eln files than by Schema.org, as consisting of `@type: PropertyValue` nodes that represent not just variables measured, but also variables specified for a `@type: Dataset` node (e.g. flexible metadata).
