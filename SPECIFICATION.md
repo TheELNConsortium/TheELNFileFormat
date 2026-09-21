@@ -13,7 +13,7 @@ An up to date version of this document can be accessed at: https://github.com/Th
 
 Inside a .eln file, there MUST be a single folder that will contain the rest of the data. The name of the folder SHOULD be the same as the archive name. This folder at root prevents issues when opening the file as a zip file and getting archived files extracted in the current directory, possibly overwriting other files, and probably polluting the current directory. Note that as a result, only this single folder present in the zip file can be considered a valid RO-Crate, not the zip file as a whole.
 
-Inside that root folder, there MUST be a file named `ro-crate-metadata.json`. This file follows the [RO-Crate 1.1+ Specification](https://w3id.org/ro/crate/1.1).
+Inside that root folder, there MUST be a file named `ro-crate-metadata.json`. This file follows the [RO-Crate 1.2 Specification](https://w3id.org/ro/crate/1.2).
 
 The root folder MAY also contain a `ro-crate-metadata.json.minisig` signature file as described below.
 
@@ -42,7 +42,7 @@ Example for file: some-data.eln
 
 ## Structure of ro-crate-metadata.json
 
-This is described in the [RO-Crate Specification](https://w3id.org/ro/crate/1.1) but let's go over an example to understand how it works.
+This is described in the [RO-Crate Specification](https://w3id.org/ro/crate/1.2) but let's go over an example to understand how it works.
 
 ### Root
 
@@ -50,7 +50,7 @@ At the root of our JSON-LD object, we have a context and a graph. The graph will
 
 ```json
 {
-  "@context": "https://w3id.org/ro/crate/1.1/context",
+  "@context": "https://w3id.org/ro/crate/1.2/context",
   "@graph": [<EVERYTHING IS IN THERE>]
 }
 ```
@@ -67,7 +67,7 @@ The first node we describe here is the `ro-crate-metadata.json`:
     "@id": "./"
   },
   "conformsTo": {
-    "@id": "https://w3id.org/ro/crate/1.1"
+    "@id": "https://w3id.org/ro/crate/1.2"
   },
   "dateCreated": "2022-05-30T12:25:36+0200",
   "sdPublisher": {
@@ -123,7 +123,10 @@ For instance, a "comment" on an experiment will exist as a `@type: Comment` node
 
 #### Specific fields
 
+* `@type`: could be a string like "Dataset" or "File", or an array such as `["Dataset", "Experiment"]`
+* `additionalType`: use it to add context to the type of data. Use something like: `{"@id": "http://edamontology.org/data_2977"},`
 * `contentSize`: this term is loosely defined by Schema.org. In a .eln it is a string with the number of bytes. See "Example File" section below. It contains no units.
+* `license`: Should be something like: `"license": {"@id": "https://creativecommons.org/licenses/by/4.0/"}`
 * `variableMeasured`: this term is interpreted more loosely for .eln files than by Schema.org, as consisting of `@type: PropertyValue` nodes that represent not just variables measured, but also variables specified for a `@type: Dataset` node (e.g. flexible metadata).
   * The `identifier` for a `@type: PropertyValue` node can be set to an IRI (e.g. the URL for an ontology entry, such as http://purl.org/dc/terms/instructionalMethod) for specifying the meaning of this node.
   * Nested metadata (e.g. arrays or key-value pairs) can be represented by using `.` as a separator in their `propertyID`, e.g. `temperatures.0` or `configuration.pressure.set_value`.
@@ -205,7 +208,7 @@ Here we show three nodes, the Dataset (main experiment), a Comment and a Person.
 
 ### Going further
 
-See the [RO-Crate website](https://www.researchobject.org/ro-crate/1.1/data-entities.html#example-linking-to-a-file-and-folders).
+See the [RO-Crate website](https://www.researchobject.org/ro-crate/1.2/data-entities.html#example-linking-to-a-file-and-folders).
 
 ## Signed .eln files
 
