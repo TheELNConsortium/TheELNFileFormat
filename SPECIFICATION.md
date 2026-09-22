@@ -15,6 +15,8 @@ Inside a .eln file, there MUST be a single folder that will contain the rest of 
 
 Inside that root folder, there MUST be a file named `ro-crate-metadata.json`. This file follows the [RO-Crate 1.2 Specification](https://w3id.org/ro/crate/1.2).
 
+This version of the ELN file format intentionally pins RO-Crate to version 1.2 to provide a stable interoperability target for exporters and importers.
+
 The root folder MAY also contain a `ro-crate-metadata.json.minisig` signature file as described below.
 
 The rest of the archive is composed of 0 or more folders that each describe one experiment or coherent set of data. Thus, the ELN archive can accommodate one or several experimental set of data.
@@ -109,10 +111,10 @@ The Organization node SHOULD contain an `@id`, `@type: Organization`, `name` and
 
 ### The rest
 
-Every Dataset or File entity intended for import MUST be referenced directly in `./`’s hasPart. An entity that belongs to a Dataset MUST also be referenced in that Dataset’s hasPart, to record the hierarchy. An entity not intended for import, such as a previous version of a file, MAY be referenced only in its containing Dataset’s hasPart and MUST NOT be referenced directly by the Root Dataset.
+For the purposes of the ELN file format, the Root Dataset's `hasPart` acts as the list of Dataset and File entities intended for import. Every Dataset or File entity intended for import MUST therefore be referenced directly in `./`'s `hasPart`. An entity that belongs to a Dataset MUST also be referenced in that Dataset's `hasPart`, to record the hierarchy. An entity not intended for import, such as a previous version of a file, MAY be referenced only in its containing Dataset's `hasPart` and MUST NOT be referenced directly by the Root Dataset.
 
 If a Dataset node has additional files, they should be listed in its `hasPart` property and can be referenced through their `@id`.
-All nodes with `@type: Dataset` SHOULD include `name`, `author` properties. Furthermore, other properties of `Dataset`, such as `identifier`, `dateCreated`, `dateModified`, `text`, `keywords`, `comment` MAY also be added. `keywords` are a comma separated list of words.
+All nodes with `@type: Dataset` SHOULD include `name`, `author` properties. Furthermore, other properties of `Dataset`, such as `identifier`, `dateCreated`, `dateModified`, `text`, `keywords`, `comment` MAY also be added. `keywords` MUST be represented as a comma-separated string; individual keywords MAY contain spaces.
 
 For example, both the parent and child experiments below are meant to be imported, while the parent's `hasPart` also records their relationship:
 
@@ -147,7 +149,7 @@ All nodes with `@type: File` SHOULD include `name`, `encodingFormat`, `contentSi
 
 Contextual entities, such as Comment and Person, MUST be represented once as separate node objects in the top-level `@graph`. Dataset and File entities MAY reference them using their `@id`.
 
-For instance, a "comment" on an experiment will exist as a `@type: Comment` node at the root node, and be referenced through its `@id` in the `comment` part of the experiment's node. See "Example Dataset with Comment" example below.
+For instance, a "comment" on an experiment will exist as a `@type: Comment` node in the top-level `@graph`, and be referenced through its `@id` in the `comment` part of the experiment's node. See "Example Dataset with Comment" example below.
 
 #### Specific fields
 
@@ -155,11 +157,10 @@ For instance, a "comment" on an experiment will exist as a `@type: Comment` node
 * [`additionalType`](https://schema.org/additionalType): `{"@id":url}` OR `[{"@id":url}]`: use this field for more specific types from external vocabularies. Prefer an IRI, or an array of IRIs when several types apply. The .eln file format does not prescribe a particular external vocabulary.
 * [`genre`](https://schema.org/genre): use this field for a broad, human-readable category, such as `experiment`. In an .eln file it is a string, not an alias for `@type`; use `additionalType` instead when the value identifies a class in an external vocabulary.
 * `contentSize`: this term is loosely defined by Schema.org. In a .eln it is a string with the number of bytes. See "Example File" section below. It contains no units.
-* `license`: Should be something like: `"license": {"@id": "https://creativecommons.org/licenses/by/4.0/"}`
+* `license`: SHOULD reference a `CreativeWork` contextual entity representing the license, using the license URL as its `@id`, e.g. `"license": {"@id": "https://creativecommons.org/licenses/by/4.0/"}`. The corresponding `CreativeWork` entity SHOULD be represented as a separate node in the top-level `@graph`.
 * Comments should be of `@type` [Comment](https://schema.org/Comment), and the Dataset or File should point to it with the `comment` array.
-* Nodes of `@type` [Person](https://schema.org/Person) MUST have the `identifier` field be the [ORCID](https://orcid.org), if available.
+* Nodes of `@type` [Person](https://schema.org/Person) MUST use the person's [ORCID](https://orcid.org) URI as their `@id`, if available.
 * `variableMeasured`: this term is interpreted more loosely for .eln files than by Schema.org, as consisting of `@type: PropertyValue` nodes that represent not just variables measured, but also variables specified for a `@type: Dataset` node (e.g. flexible metadata).
-  * The `identifier` for a `@type: PropertyValue` node can be set to an IRI (e.g. the URL for an ontology entry, such as http://purl.org/dc/terms/instructionalMethod) for specifying the meaning of this node.
   * A `PropertyValue` node SHOULD use `propertyID` to identify the represented property. `propertyID` MAY be an ontology IRI. The recorded value SHOULD be given in value.
 
  ``` json
@@ -169,7 +170,7 @@ For instance, a "comment" on an experiment will exist as a `@type: Comment` node
      "propertyID": "https://qudt.org/vocab/quantitykind/Temperature",
      "name": "Air temperature",
      "value": 21.5,
-     "unit": "C"
+     "unitText": "°C"
    }
  ```
 
@@ -184,8 +185,8 @@ For instance, a "comment" on an experiment will exist as a `@type: Comment` node
   "author": {
     "@id": "./author/23"
   },
-  "dateCreated": "2022-05-29T16:17:38",
-  "dateModified": "2022-05-29T16:17:57",
+  "dateCreated": "2022-05-29T16:17:38+02:00",
+  "dateModified": "2022-05-29T16:17:57+02:00",
   "name": "Some experiment",
   "text": "<h1><span style=\"font-size:14pt;\">Goal :</span></h1>\n<p> </p>\n<h1><span style=\"font-size:14pt;\">Procedure :</span></h1>\n<p> </p>\n<h1><span style=\"font-size:14pt;\">Results :<br></span></h1>\n<p> </p>",
   "url": "https://elab.example.com/experiments.php?mode=view&id=256",
