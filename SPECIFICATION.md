@@ -69,7 +69,7 @@ The first node we describe here is the `ro-crate-metadata.json`:
   "conformsTo": {
     "@id": "https://w3id.org/ro/crate/1.2"
   },
-  "dateCreated": "2022-05-30T12:25:36+0200",
+  "dateCreated": "2022-05-30T12:25:36+02:00",
   "sdPublisher": {
     "@id": "https://eln-example.com"
   }
@@ -78,7 +78,7 @@ The first node we describe here is the `ro-crate-metadata.json`:
 
 It is a `CreativeWork` about the current directory, and conforms to the RO-Crate specification. Other fields like `dateCreated` (added here) or [any other property](https://schema.org/CreativeWork) of `CreativeWork` can be added.
 
-In addition to the properties outlined in the [RO-Crate Metadata File Descriptor](https://www.researchobject.org/ro-crate/specification/1.1/root-data-entity.html#ro-crate-metadata-file-descriptor), this node SHOULD include `sdPublisher` property, which references the Organization entity containing additional metadata.
+In addition to the properties outlined in the [RO-Crate Metadata File Descriptor](https://www.researchobject.org/ro-crate/specification/1.2/root-data-entity.html#ro-crate-metadata-file-descriptor), this node SHOULD include `sdPublisher` property, which references the Organization entity containing additional metadata.
 
 
 ### Second node: current directory
@@ -109,12 +109,10 @@ The Organization node SHOULD contain an `@id`, `@type: Organization`, `name` and
 
 ### The rest
 
-Subsequently, all the remaining nodes are assigned a `@type` of either `Dataset` for directories or `File` for individual files. And the `@id` corresponds to something in the `hasPart` of `./`.
+Every Dataset or File entity intended for import MUST be referenced directly in `./`’s hasPart. An entity that belongs to a Dataset MUST also be referenced in that Dataset’s hasPart, to record the hierarchy. An entity not intended for import, such as a previous version of a file, MAY be referenced only in its containing Dataset’s hasPart and MUST NOT be referenced directly by the Root Dataset.
 
 If a Dataset node has additional files, they should be listed in its `hasPart` property and can be referenced through their `@id`.
-All nodes with `@type: Dataset` SHOULD include `name`, `author` properties. Furthermore, other properties of `Dataset`, such as `identifier`, `dateCreated`, `dateModified`, `text`, `keywords`, `comment` MAY also be added.
-
-If a Dataset references child Datasets (_e.g._ a parent experiment with child experiments), it SHOULD list them in its `hasPart` section. Each child Dataset that is meant to be imported MUST also be listed directly in the `hasPart` of `./`; a reference from its parent alone does not mark it for import.
+All nodes with `@type: Dataset` SHOULD include `name`, `author` properties. Furthermore, other properties of `Dataset`, such as `identifier`, `dateCreated`, `dateModified`, `text`, `keywords`, `comment` MAY also be added. `keywords` are a comma separated list of words.
 
 For example, both the parent and child experiments below are meant to be imported, while the parent's `hasPart` also records their relationship:
 
@@ -147,13 +145,14 @@ For example, both the parent and child experiments below are meant to be importe
 
 All nodes with `@type: File` SHOULD include `name`, `encodingFormat`, `contentSize` properties. Furthermore, other properties of `File`, such as `description`, `sha256`, `author`, `identifier`, `dateCreated`, `dateModified`, `text` MAY also be added.
 
-All nodes with a `@type` such as `Comment` or `Person` exist at the root node (once), and can be referenced via their `@id` in other parts.
+Contextual entities, such as Comment and Person, MUST be represented once as separate node objects in the top-level `@graph`. Dataset and File entities MAY reference them using their `@id`.
+
 For instance, a "comment" on an experiment will exist as a `@type: Comment` node at the root node, and be referenced through its `@id` in the `comment` part of the experiment's node. See "Example Dataset with Comment" example below.
 
 #### Specific fields
 
 * [`@type`](https://www.w3.org/TR/json-ld11/#specifying-the-type): use this field for the Schema.org and RO-Crate types of a node. Directory data entities MUST include `Dataset`, and files MUST include `File`. A node MAY have more than one type, represented as an array, when another Schema.org type provides useful detail (for example, `["Dataset", "Message"]`).
-* [`additionalType`](https://schema.org/additionalType): use this field for more specific types from external vocabularies. Prefer an IRI, or an array of IRIs when several types apply. The .eln file format does not prescribe a particular external vocabulary.
+* [`additionalType`](https://schema.org/additionalType): `{"@id":url}` OR `[{"@id":url}]`: use this field for more specific types from external vocabularies. Prefer an IRI, or an array of IRIs when several types apply. The .eln file format does not prescribe a particular external vocabulary.
 * [`genre`](https://schema.org/genre): use this field for a broad, human-readable category, such as `experiment`. In an .eln file it is a string, not an alias for `@type`; use `additionalType` instead when the value identifies a class in an external vocabulary.
 * `contentSize`: this term is loosely defined by Schema.org. In a .eln it is a string with the number of bytes. See "Example File" section below. It contains no units.
 * `license`: Should be something like: `"license": {"@id": "https://creativecommons.org/licenses/by/4.0/"}`
@@ -161,6 +160,19 @@ For instance, a "comment" on an experiment will exist as a `@type: Comment` node
 * Nodes of `@type` [Person](https://schema.org/Person) MUST have the `identifier` field be the [ORCID](https://orcid.org), if available.
 * `variableMeasured`: this term is interpreted more loosely for .eln files than by Schema.org, as consisting of `@type: PropertyValue` nodes that represent not just variables measured, but also variables specified for a `@type: Dataset` node (e.g. flexible metadata).
   * The `identifier` for a `@type: PropertyValue` node can be set to an IRI (e.g. the URL for an ontology entry, such as http://purl.org/dc/terms/instructionalMethod) for specifying the meaning of this node.
+  * A `PropertyValue` node SHOULD use `propertyID` to identify the represented property. `propertyID` MAY be an ontology IRI. The recorded value SHOULD be given in value.
+
+ ``` json
+   {
+     "@id": "#air-temperature",
+     "@type": "PropertyValue",
+     "propertyID": "https://qudt.org/vocab/quantitykind/Temperature",
+     "name": "Air temperature",
+     "value": 21.5,
+     "unit": "C"
+   }
+ ```
+
   * Nested metadata (e.g. arrays or key-value pairs) can be represented by using `.` as a separator in their `propertyID`, e.g. `temperatures.0` or `configuration.pressure.set_value`.
 
 #### Example Dataset
@@ -172,8 +184,8 @@ For instance, a "comment" on an experiment will exist as a `@type: Comment` node
   "author": {
     "@id": "./author/23"
   },
-  "dateCreated": "2022-05-29 16:17:38",
-  "dateModified": "2022-05-29 16:17:57",
+  "dateCreated": "2022-05-29T16:17:38",
+  "dateModified": "2022-05-29T16:17:57",
   "name": "Some experiment",
   "text": "<h1><span style=\"font-size:14pt;\">Goal :</span></h1>\n<p> </p>\n<h1><span style=\"font-size:14pt;\">Procedure :</span></h1>\n<p> </p>\n<h1><span style=\"font-size:14pt;\">Results :<br></span></h1>\n<p> </p>",
   "url": "https://elab.example.com/experiments.php?mode=view&id=256",
