@@ -1,5 +1,7 @@
 # ELN file format (.eln)
 
+[![DOI](https://zenodo.org/badge/485919708.svg)](https://doi.org/10.5281/zenodo.22915091)
+
 ## Description
 
 The ELN file format is an archive format for exchange of experimental results and data.
