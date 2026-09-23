@@ -1,6 +1,6 @@
 # ELN file format (.eln)
 
-[![DOI](https://zenodo.org/badge/485919708.svg)](https://doi.org/10.5281/zenodo.22915091)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22915092.svg)](https://doi.org/10.5281/zenodo.22915091)
 
 ## Description
 
