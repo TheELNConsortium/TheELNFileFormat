@@ -1,0 +1,25 @@
+[project]
+name = "the-eln-file-format"
+version = "1.2.0"
+description = "The ELN file format specification and validation tools"
+requires-python = ">=3.11"
+dependencies = []
+
+[dependency-groups]
+test = [
+    "jsonschema",
+    "pytest",
+    "roc-validator",
+    "rocrate",
+]
+tools = [
+    { include-group = "test" },
+    "streamlit",
+]
+docs = [
+    "sphinx",
+    "sphinx-rtd-theme",
+]
+
+[tool.uv]
+package = false

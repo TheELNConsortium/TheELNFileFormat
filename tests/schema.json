@@ -1,5 +1,30 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
+  "definitions": {
+    "reference": {
+      "type": "object",
+      "properties": {
+        "@id": {
+          "type": "string"
+        }
+      },
+      "required": ["@id"],
+      "additionalProperties": false
+    },
+    "Id_listId": {
+      "anyOf": [
+        {
+          "$ref": "#/definitions/reference"
+        },
+        {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/reference"
+          }
+        }
+      ]
+    }
+  },
   "type": "object",
   "properties": {
     "@context": {
@@ -26,13 +51,7 @@
             }
           },
           "conformsTo": {
-            "type": "object",
-            "properties": {
-              "@id": {
-                "type": "string",
-                "format": "uri"
-              }
-            }
+            "$ref": "#/definitions/Id_listId"
           },
           "dateCreated": {
             "type": "string",
@@ -50,12 +69,7 @@
             "type": "string"
           },
           "author": {
-            "type": "object",
-            "properties": {
-              "@id": {
-                "type": "string"
-              }
-            }
+            "$ref": "#/definitions/Id_listId"
           },
           "dateModified": {
             "type": "string",
@@ -97,30 +111,7 @@
           "comment": {
             "type": "array",
             "items": {
-              "type": "object",
-              "properties": {
-                "@id": {
-                  "type": "string"
-                },
-                "@type": {
-                  "type": ["string", "array"]
-                },
-                "dateCreated": {
-                  "type": "string",
-                  "format": "date-time"
-                },
-                "text": {
-                  "type": "string"
-                },
-                "author": {
-                  "type": "object",
-                  "properties": {
-                    "@id": {
-                      "type": "string"
-                    }
-                  }
-                }
-              }
+              "$ref": "#/definitions/reference"
             }
           }
         },
