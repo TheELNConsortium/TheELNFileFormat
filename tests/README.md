@@ -17,7 +17,7 @@ The ELN file format is built on:
 2. **[SPECIFICATION.md](../SPECIFICATION.md)** - ELN-specific extensions and refinements
 3. **This document** - Additional clarifications
 
-The tests distinguish three versions: `1.1` (RO-Crate 1.1), `1.2` (RO-Crate 1.2 without an ELN version) and `1.2+202609` (RO-Crate 1.2 with ELN version 1.2+202609). The clarifications below are checked only for `1.2+202609`.
+The tests distinguish three versions: `1.1` (RO-Crate 1.1), `1.2` (RO-Crate 1.2 without an ELN version) and `1.2+20260923` (RO-Crate 1.2 with ELN version 1.2+20260923). The clarifications below are checked only for `1.2+20260923`.
 
 The ELN version is declared in the root Dataset's `conformsTo`, next to the RO-Crate version:
 
@@ -27,12 +27,12 @@ The ELN version is declared in the root Dataset's `conformsTo`, next to the RO-C
   "@type": "Dataset",
   "conformsTo": [
     { "@id": "https://w3id.org/ro/crate/1.2" },
-    { "@id": "https://purl.archive.org/purl/elnconsortium/eln-spec/1.2+202609" }
+    { "@id": "https://purl.archive.org/purl/elnconsortium/eln-spec/1.2+20260923" }
   ]
 }
 ```
 
-Without that URI, the RO-Crate version in the metadata descriptor's `conformsTo` decides between `1.1` and `1.2` (`tests/checks/versions.py`). The archive structure, metadata and schema checks run only on `1.2+202609`; the validator and PyPI rocrate checks run on all versions. A file whose version cannot be read gets all checks.
+Without that URI, the RO-Crate version in the metadata descriptor's `conformsTo` decides between `1.1` and `1.2` (`tests/checks/versions.py`). The archive structure, metadata and schema checks run only on `1.2+20260923`; the validator and PyPI rocrate checks run on all versions. A file whose version cannot be read gets all checks.
 
 ---
 

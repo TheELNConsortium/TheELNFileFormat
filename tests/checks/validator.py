@@ -39,7 +39,7 @@ class CheckValidator(BaseCheck):
             return False, (
                 f'{self.fileName} is not valid\n'
                 'The metadata must declare RO-Crate version 1.1 or 1.2, or ELN version '
-                '1.2+202609, in conformsTo\n'
+                '1.2+20260923, in conformsTo\n'
             )
 
         from rocrate_validator import models, services

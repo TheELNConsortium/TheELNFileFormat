@@ -13,7 +13,7 @@ class CheckSchema(BaseCheck):
     loggingLabel = 'schema'
     requiresRootDirectory = True
     requiresMetadataJson = True
-    versions = ('1.2+202609',)
+    versions = ('1.2+20260923',)
 
     def check(self, _elnFile):
         from jsonschema import Draft202012Validator
