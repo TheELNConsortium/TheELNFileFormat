@@ -24,8 +24,8 @@ This folder contains two files:
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "version": "1.0",
-      "datePublished": "2026-09-26T21:57:47.134203",
-      "dateCreated": "2026-09-26T21:57:47.134221",
+      "datePublished": "2026-10-02T11:00:33.533503",
+      "dateCreated": "2026-10-02T11:00:33.533521",
       "sdPublisher": {
         "@id": "#PASTA-ELN"
       }
@@ -88,37 +88,37 @@ This folder contains two files:
           "@id": "./PastasExampleProject/002_DataFiles/story.odt"
         },
         {
-          "@id": "https://www.fz-juelich.de/en/ibg/ibg-1/images/research_groups/general/fz-juelich-logo/@@images/image-261-9d3b36703de5ad2157c50aa585e7d2bf.jpeg"
-        },
-        {
-          "@id": "./PastasExampleProject/002_DataFiles/simple.csv"
+          "@id": "./PastasExampleProject/002_DataFiles/simple.png"
         },
         {
           "@id": "./PastasExampleProject/002_DataFiles/example.tif"
         },
         {
-          "@id": "./PastasExampleProject/002_DataFiles/simple.png"
+          "@id": "./PastasExampleProject/002_DataFiles/simple.csv"
         },
         {
-          "@id": "./PastasExampleProject/d-03c50a0ddb4d42fe96ed53671e4af71a/"
+          "@id": "https://www.fz-juelich.de/en/ibg/ibg-1/images/research_groups/general/fz-juelich-logo/@@images/image-261-9d3b36703de5ad2157c50aa585e7d2bf.jpeg"
         },
         {
-          "@id": "./PastasExampleProject/d-4af76e86545d4682902d12e526c1dc8e/"
+          "@id": "./PastasExampleProject/d-5bc5a0609741480a9d62fc8eec6a6888/"
         },
         {
-          "@id": "./PastasExampleProject/s-4748c55f9aa04e98bca51dac3d4b2d34/"
+          "@id": "./PastasExampleProject/d-d343d651b4b84bc5b381b5815260e0b3/"
         },
         {
-          "@id": "./CommonFiles/Example_SOP.md"
-        },
-        {
-          "@id": "./PastasExampleProject/workplan.py"
+          "@id": "./PastasExampleProject/s-ae2ad29097fe4d309af736304934776c/"
         },
         {
           "@id": "./PastasExampleProject/worklog.log"
         },
         {
+          "@id": "./CommonFiles/Example_SOP.md"
+        },
+        {
           "@id": "./PastasExampleProject/procedure.md"
+        },
+        {
+          "@id": "./PastasExampleProject/workplan.py"
         }
       ],
       "name": "Exported from PASTA-ELN",
@@ -128,13 +128,13 @@ This folder contains two files:
           "@id": "https://w3id.org/ro/crate/1.2"
         },
         {
-          "@id": "https://purl.archive.org/purl/elnconsortium/eln-spec/1.2+202609"
+          "@id": "https://purl.archive.org/purl/elnconsortium/eln-spec/1.2+20260923"
         }
       ],
       "license": {
         "@id": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
       },
-      "datePublished": "2026-09-26T21:57:47.134272",
+      "datePublished": "2026-10-02T11:00:33.533573",
       "creator": [
         {
           "@id": "#author_Steffen_Brinckmann"
@@ -146,11 +146,11 @@ This folder contains two files:
     },
     {
       "encodingFormat": "text/markdown",
-      "identifier": "x-1f1772578dc34e0ba19fc5d2635e4dbb",
+      "identifier": "x-d0b187fc2ef0444aa8bcb7353790cf9f",
       "name": "This is an example task",
       "genre": "folder",
-      "dateCreated": "2026-09-26T21:57:37.449867",
-      "dateModified": "2026-09-26T21:57:37.449878",
+      "dateCreated": "2026-10-02T11:00:23.860203",
+      "dateModified": "2026-10-02T11:00:23.860216",
       "description": "This is hard!",
       "keywords": "TODO",
       "@id": "./PastasExampleProject/000_ThisIsAnExampleTask/",
@@ -159,11 +159,11 @@ This folder contains two files:
     },
     {
       "encodingFormat": "text/markdown",
-      "identifier": "x-83c9450b27044b50a6dc79d33bf1eff2",
+      "identifier": "x-cd0992972b18479f940918d176e4a20a",
       "name": "This is an example subtask",
       "genre": "folder",
-      "dateCreated": "2026-09-26T21:57:37.457935",
-      "dateModified": "2026-09-26T21:57:37.457957",
+      "dateCreated": "2026-10-02T11:00:23.867297",
+      "dateModified": "2026-10-02T11:00:23.867309",
       "description": "Random comment 1",
       "@id": "./PastasExampleProject/001_ThisIsAnotherExampleTask/000_ThisIsAnExampleSubtask/",
       "@type": "Dataset",
@@ -171,11 +171,11 @@ This folder contains two files:
     },
     {
       "encodingFormat": "text/markdown",
-      "identifier": "x-6441f6fb80544698aec4f36eba31c400",
+      "identifier": "x-d4e2f1cc55c24b588cf93643651522e3",
       "name": "This is another example subtask",
       "genre": "folder",
-      "dateCreated": "2026-09-26T21:57:37.462986",
-      "dateModified": "2026-09-26T21:57:37.463002",
+      "dateCreated": "2026-10-02T11:00:23.870552",
+      "dateModified": "2026-10-02T11:00:23.870565",
       "description": "Random comment 2",
       "@id": "./PastasExampleProject/001_ThisIsAnotherExampleTask/001_ThisIsAnotherExampleSubtask/",
       "@type": "Dataset",
@@ -217,11 +217,11 @@ This folder contains two files:
     },
     {
       "encodingFormat": "text/markdown",
-      "identifier": "m-ecca0754d56f427c9215f1f383982051",
+      "identifier": "m-100ac4e7bc6c43b5b1b07c445ec0b1ce",
       "name": "simple.png",
       "genre": "measurement/image",
-      "dateCreated": "2026-09-26T21:57:41.245455",
-      "dateModified": "2026-09-26T21:57:42.562266",
+      "dateCreated": "2026-10-02T11:00:27.843613",
+      "dateModified": "2026-10-02T11:00:29.083162",
       "description": "# File with two locations\n - The same file can be located in different locations across different projects within one project group.\n - Since it is the same file, they share the same metadata: same comment, same tags, ...\n# These .png files use the data-science concept of schemata and ontology\n - The files have a agreed upon name and a custom convenience name (i.e. in german or french)\n - The also have a PID / PURL to an ontology node.\n - Units are also supported, obviously.",
       "@id": "./PastasExampleProject/001_ThisIsAnotherExampleTask/simple.png",
       "contentSize": "9450",
@@ -244,11 +244,11 @@ This folder contains two files:
     },
     {
       "encodingFormat": "text/markdown",
-      "identifier": "x-2af9a19b16c74668beaae3e416a26f80",
+      "identifier": "x-34674b1de17d4d138702a3a533c3e98d",
       "name": "This is another example task",
       "genre": "folder",
-      "dateCreated": "2026-09-26T21:57:37.453482",
-      "dateModified": "2026-09-26T21:57:37.453493",
+      "dateCreated": "2026-10-02T11:00:23.863827",
+      "dateModified": "2026-10-02T11:00:23.863840",
       "description": "This will take a long time.",
       "keywords": "WAIT",
       "hasPart": [
@@ -267,18 +267,161 @@ This folder contains two files:
     },
     {
       "encodingFormat": "text/markdown",
-      "identifier": "--f2d5e44e38654a80aaf036d68500bc87",
+      "identifier": "--e559146420a44076bf0e56200f33a593",
       "name": "story.odt",
-      "dateCreated": "2026-09-26T21:57:39.924646",
-      "dateModified": "2026-09-26T21:57:39.924662",
+      "dateCreated": "2026-10-02T11:00:26.489134",
+      "dateModified": "2026-10-02T11:00:26.489156",
       "@id": "./PastasExampleProject/002_DataFiles/story.odt",
       "contentSize": "8417",
       "sha256": "c0aeebc4bdb1f4ce13cb881e70d26738bc354da855067e2bfb2dcbfd6140a730",
-      "@type": "File",
-      "description": "story.odt"
+      "@type": "File"
     },
     {
-      "value": "w-1dd586fc6a48408ab50d15915386191d",
+      "value": "600+/- 3",
+      "propertyID": "metaUser.imageHeight",
+      "name": "Metauser \u2192 Imageheight",
+      "@type": "PropertyValue",
+      "@id": "#PastasExampleProject/002_DataFiles/simple.png_metaUser.imageHeight",
+      "unitText": "mm",
+      "description": "H\u00f6he des Bildes",
+      "identifier": "http://purl.allotrope.org/ontologies/result#AFR_0002467"
+    },
+    {
+      "value": "800",
+      "propertyID": "metaUser.imageWidth",
+      "name": "Metauser \u2192 Imagewidth",
+      "@type": "PropertyValue",
+      "@id": "#PastasExampleProject/002_DataFiles/simple.png_metaUser.imageWidth",
+      "unitText": "mm",
+      "description": "Largeur de l`image",
+      "identifier": "http://purl.allotrope.org/ontologies/result#AFR_0002468"
+    },
+    {
+      "value": "Created with GIMP",
+      "propertyID": "metaVendor.Comment",
+      "name": "Metavendor \u2192 Comment",
+      "@type": "PropertyValue",
+      "@id": "#PastasExampleProject/002_DataFiles/simple.png_metaVendor.Comment"
+    },
+    {
+      "value": "png",
+      "propertyID": "metaVendor.fileExtension",
+      "name": "Metavendor \u2192 Fileextension",
+      "@type": "PropertyValue",
+      "@id": "#PastasExampleProject/002_DataFiles/simple.png_metaVendor.fileExtension"
+    },
+    {
+      "encodingFormat": "text/markdown",
+      "identifier": "m-100ac4e7bc6c43b5b1b07c445ec0b1ce",
+      "name": "simple.png",
+      "genre": "measurement/image",
+      "dateCreated": "2026-10-02T11:00:27.843613",
+      "dateModified": "2026-10-02T11:00:29.083162",
+      "description": "# File with two locations\n - The same file can be located in different locations across different projects within one project group.\n - Since it is the same file, they share the same metadata: same comment, same tags, ...\n# These .png files use the data-science concept of schemata and ontology\n - The files have a agreed upon name and a custom convenience name (i.e. in german or french)\n - The also have a PID / PURL to an ontology node.\n - Units are also supported, obviously.",
+      "@id": "./PastasExampleProject/002_DataFiles/simple.png",
+      "contentSize": "9450",
+      "sha256": "e8b9e203eff32379a69bb3785e51a5edce8aa7fc4809c696eae8ddee7bab8210",
+      "@type": "File",
+      "variableMeasured": [
+        {
+          "@id": "#PastasExampleProject/002_DataFiles/simple.png_metaUser.imageHeight"
+        },
+        {
+          "@id": "#PastasExampleProject/002_DataFiles/simple.png_metaUser.imageWidth"
+        },
+        {
+          "@id": "#PastasExampleProject/002_DataFiles/simple.png_metaVendor.Comment"
+        },
+        {
+          "@id": "#PastasExampleProject/002_DataFiles/simple.png_metaVendor.fileExtension"
+        }
+      ]
+    },
+    {
+      "value": "raw",
+      "propertyID": "metaVendor.compression",
+      "name": "Metavendor \u2192 Compression",
+      "@type": "PropertyValue",
+      "@id": "#PastasExampleProject/002_DataFiles/example.tif_metaVendor.compression"
+    },
+    {
+      "value": "tif",
+      "propertyID": "metaVendor.fileExtension",
+      "name": "Metavendor \u2192 Fileextension",
+      "@type": "PropertyValue",
+      "@id": "#PastasExampleProject/002_DataFiles/example.tif_metaVendor.fileExtension"
+    },
+    {
+      "encodingFormat": "text/markdown",
+      "identifier": "m-a97f77abd35f49399204d578fbc6247c",
+      "name": "example.tif",
+      "genre": "measurement/image",
+      "dateCreated": "2026-10-02T11:00:27.858030",
+      "dateModified": "2026-10-02T11:00:27.858047",
+      "@id": "./PastasExampleProject/002_DataFiles/example.tif",
+      "contentSize": "4031",
+      "sha256": "375169346c317fc3908616e5fad84efd5c1eba92db1458be55a42e8273ac8a4a",
+      "@type": "File",
+      "variableMeasured": [
+        {
+          "@id": "#PastasExampleProject/002_DataFiles/example.tif_metaVendor.compression"
+        },
+        {
+          "@id": "#PastasExampleProject/002_DataFiles/example.tif_metaVendor.fileExtension"
+        }
+      ]
+    },
+    {
+      "value": "0.9996",
+      "propertyID": "metaUser.maximumYData",
+      "name": "Metauser \u2192 Maximumydata",
+      "@type": "PropertyValue",
+      "@id": "#PastasExampleProject/002_DataFiles/simple.csv_metaUser.maximumYData",
+      "unitText": "m",
+      "description": "Maximum y-data"
+    },
+    {
+      "value": "2.5",
+      "propertyID": "metaUser.sampleFrequency",
+      "name": "Metauser \u2192 Samplefrequency",
+      "@type": "PropertyValue",
+      "@id": "#PastasExampleProject/002_DataFiles/simple.csv_metaUser.sampleFrequency",
+      "unitText": "Hz",
+      "description": "Sample frequency"
+    },
+    {
+      "value": "csv",
+      "propertyID": "metaVendor.fileExtension",
+      "name": "Metavendor \u2192 Fileextension",
+      "@type": "PropertyValue",
+      "@id": "#PastasExampleProject/002_DataFiles/simple.csv_metaVendor.fileExtension"
+    },
+    {
+      "encodingFormat": "text/markdown",
+      "identifier": "m-ab8cdb41795c4f3c9803b4ca8f221353",
+      "name": "simple.csv",
+      "genre": "measurement/csv/linesAndDots",
+      "dateCreated": "2026-10-02T11:00:27.863108",
+      "dateModified": "2026-10-02T11:00:29.089564",
+      "description": "# These .csv files use the simple concept of units for metadata entries",
+      "@id": "./PastasExampleProject/002_DataFiles/simple.csv",
+      "contentSize": "187",
+      "sha256": "8e31450cd99a013801de9f84e2d3648ec8d70dd0b6d5be23c7cc82782a90ba73",
+      "@type": "File",
+      "variableMeasured": [
+        {
+          "@id": "#PastasExampleProject/002_DataFiles/simple.csv_metaUser.maximumYData"
+        },
+        {
+          "@id": "#PastasExampleProject/002_DataFiles/simple.csv_metaUser.sampleFrequency"
+        },
+        {
+          "@id": "#PastasExampleProject/002_DataFiles/simple.csv_metaVendor.fileExtension"
+        }
+      ]
+    },
+    {
+      "value": "w-62aaaaa929a54c01abbb2cd852b53cce",
       "propertyID": ".workflow/procedure",
       "name": " \u2192 Workflow/procedure",
       "@type": "PropertyValue",
@@ -349,16 +492,16 @@ This folder contains two files:
     },
     {
       "encodingFormat": "text/markdown",
-      "identifier": "m-79cf5f3d23774ac3a78d810feacdf18e",
+      "identifier": "m-ec110d9a0d864d39b4784121bafc8571",
       "name": "https://www.fz-juelich.de/en/ibg/ibg-1/images/research_groups/general/fz-juelich-logo/@@images/image-261-9d3b36703de5ad2157c50aa585e7d2bf.jpeg",
       "genre": "measurement/image",
-      "dateCreated": "2026-09-26T21:57:42.484693",
-      "dateModified": "2026-09-26T21:57:42.484713",
+      "dateCreated": "2026-10-02T11:00:29.004663",
+      "dateModified": "2026-10-02T11:00:29.004682",
       "description": "- Remote image from samplelib. Used for testing and reference\n- This item links to a procedure that was used for its creation.\n- One can link to samples, etc. to create complex metadata\n- This item also has a rating",
       "keywords": "_3",
       "@id": "https://www.fz-juelich.de/en/ibg/ibg-1/images/research_groups/general/fz-juelich-logo/@@images/image-261-9d3b36703de5ad2157c50aa585e7d2bf.jpeg",
       "url": "https://www.fz-juelich.de/en/ibg/ibg-1/images/research_groups/general/fz-juelich-logo/@@images/image-261-9d3b36703de5ad2157c50aa585e7d2bf.jpeg",
-      "sdDatePublished": "2026-09-26T21:57:47.121976",
+      "sdDatePublished": "2026-10-02T11:00:33.524362",
       "contentSize": "21232",
       "sha256": "a110ce6536f90eea6f4437566f9d5ff706bc7a1c35cf56702efb05b9c48c3f49",
       "@type": "File",
@@ -396,209 +539,63 @@ This folder contains two files:
       ]
     },
     {
-      "value": "0.9996",
-      "propertyID": "metaUser.maximumYData",
-      "name": "Metauser \u2192 Maximumydata",
-      "@type": "PropertyValue",
-      "@id": "#PastasExampleProject/002_DataFiles/simple.csv_metaUser.maximumYData",
-      "unitText": "m",
-      "description": "Maximum y-data"
-    },
-    {
-      "value": "2.5",
-      "propertyID": "metaUser.sampleFrequency",
-      "name": "Metauser \u2192 Samplefrequency",
-      "@type": "PropertyValue",
-      "@id": "#PastasExampleProject/002_DataFiles/simple.csv_metaUser.sampleFrequency",
-      "unitText": "Hz",
-      "description": "Sample frequency"
-    },
-    {
-      "value": "csv",
-      "propertyID": "metaVendor.fileExtension",
-      "name": "Metavendor \u2192 Fileextension",
-      "@type": "PropertyValue",
-      "@id": "#PastasExampleProject/002_DataFiles/simple.csv_metaVendor.fileExtension"
-    },
-    {
       "encodingFormat": "text/markdown",
-      "identifier": "m-80bb5fc7583248468a89eb1ba450a4ad",
-      "name": "simple.csv",
-      "genre": "measurement/csv/linesAndDots",
-      "dateCreated": "2026-09-26T21:57:41.250218",
-      "dateModified": "2026-09-26T21:57:42.567606",
-      "description": "# These .csv files use the simple concept of units for metadata entries",
-      "@id": "./PastasExampleProject/002_DataFiles/simple.csv",
-      "contentSize": "187",
-      "sha256": "8e31450cd99a013801de9f84e2d3648ec8d70dd0b6d5be23c7cc82782a90ba73",
-      "@type": "File",
-      "variableMeasured": [
-        {
-          "@id": "#PastasExampleProject/002_DataFiles/simple.csv_metaUser.maximumYData"
-        },
-        {
-          "@id": "#PastasExampleProject/002_DataFiles/simple.csv_metaUser.sampleFrequency"
-        },
-        {
-          "@id": "#PastasExampleProject/002_DataFiles/simple.csv_metaVendor.fileExtension"
-        }
-      ]
-    },
-    {
-      "value": "raw",
-      "propertyID": "metaVendor.compression",
-      "name": "Metavendor \u2192 Compression",
-      "@type": "PropertyValue",
-      "@id": "#PastasExampleProject/002_DataFiles/example.tif_metaVendor.compression"
-    },
-    {
-      "value": "tif",
-      "propertyID": "metaVendor.fileExtension",
-      "name": "Metavendor \u2192 Fileextension",
-      "@type": "PropertyValue",
-      "@id": "#PastasExampleProject/002_DataFiles/example.tif_metaVendor.fileExtension"
-    },
-    {
-      "encodingFormat": "text/markdown",
-      "identifier": "m-b52c932e107541ffa9308be6c2534ceb",
-      "name": "example.tif",
-      "genre": "measurement/image",
-      "dateCreated": "2026-09-26T21:57:41.232056",
-      "dateModified": "2026-09-26T21:57:41.232070",
-      "@id": "./PastasExampleProject/002_DataFiles/example.tif",
-      "contentSize": "4031",
-      "sha256": "375169346c317fc3908616e5fad84efd5c1eba92db1458be55a42e8273ac8a4a",
-      "@type": "File",
-      "description": "example.tif",
-      "variableMeasured": [
-        {
-          "@id": "#PastasExampleProject/002_DataFiles/example.tif_metaVendor.compression"
-        },
-        {
-          "@id": "#PastasExampleProject/002_DataFiles/example.tif_metaVendor.fileExtension"
-        }
-      ]
-    },
-    {
-      "value": "600+/- 3",
-      "propertyID": "metaUser.imageHeight",
-      "name": "Metauser \u2192 Imageheight",
-      "@type": "PropertyValue",
-      "@id": "#PastasExampleProject/002_DataFiles/simple.png_metaUser.imageHeight",
-      "unitText": "mm",
-      "description": "H\u00f6he des Bildes",
-      "identifier": "http://purl.allotrope.org/ontologies/result#AFR_0002467"
-    },
-    {
-      "value": "800",
-      "propertyID": "metaUser.imageWidth",
-      "name": "Metauser \u2192 Imagewidth",
-      "@type": "PropertyValue",
-      "@id": "#PastasExampleProject/002_DataFiles/simple.png_metaUser.imageWidth",
-      "unitText": "mm",
-      "description": "Largeur de l`image",
-      "identifier": "http://purl.allotrope.org/ontologies/result#AFR_0002468"
-    },
-    {
-      "value": "Created with GIMP",
-      "propertyID": "metaVendor.Comment",
-      "name": "Metavendor \u2192 Comment",
-      "@type": "PropertyValue",
-      "@id": "#PastasExampleProject/002_DataFiles/simple.png_metaVendor.Comment"
-    },
-    {
-      "value": "png",
-      "propertyID": "metaVendor.fileExtension",
-      "name": "Metavendor \u2192 Fileextension",
-      "@type": "PropertyValue",
-      "@id": "#PastasExampleProject/002_DataFiles/simple.png_metaVendor.fileExtension"
-    },
-    {
-      "encodingFormat": "text/markdown",
-      "identifier": "m-ecca0754d56f427c9215f1f383982051",
-      "name": "simple.png",
-      "genre": "measurement/image",
-      "dateCreated": "2026-09-26T21:57:41.245455",
-      "dateModified": "2026-09-26T21:57:42.562266",
-      "description": "# File with two locations\n - The same file can be located in different locations across different projects within one project group.\n - Since it is the same file, they share the same metadata: same comment, same tags, ...\n# These .png files use the data-science concept of schemata and ontology\n - The files have a agreed upon name and a custom convenience name (i.e. in german or french)\n - The also have a PID / PURL to an ontology node.\n - Units are also supported, obviously.",
-      "@id": "./PastasExampleProject/002_DataFiles/simple.png",
-      "contentSize": "9450",
-      "sha256": "e8b9e203eff32379a69bb3785e51a5edce8aa7fc4809c696eae8ddee7bab8210",
-      "@type": "File",
-      "variableMeasured": [
-        {
-          "@id": "#PastasExampleProject/002_DataFiles/simple.png_metaUser.imageHeight"
-        },
-        {
-          "@id": "#PastasExampleProject/002_DataFiles/simple.png_metaUser.imageWidth"
-        },
-        {
-          "@id": "#PastasExampleProject/002_DataFiles/simple.png_metaVendor.Comment"
-        },
-        {
-          "@id": "#PastasExampleProject/002_DataFiles/simple.png_metaVendor.fileExtension"
-        }
-      ]
-    },
-    {
-      "encodingFormat": "text/markdown",
-      "identifier": "x-28eac78b77bd4c06846addb3e09af39f",
+      "identifier": "x-9a1628f9947648e0a02b392dfb70aa63",
       "name": "Data files",
       "genre": "folder",
-      "dateCreated": "2026-09-26T21:57:37.468075",
-      "dateModified": "2026-09-26T21:57:37.468093",
+      "dateCreated": "2026-10-02T11:00:23.873903",
+      "dateModified": "2026-10-02T11:00:23.873916",
       "hasPart": [
         {
           "@id": "./PastasExampleProject/002_DataFiles/story.odt"
         },
         {
-          "@id": "https://www.fz-juelich.de/en/ibg/ibg-1/images/research_groups/general/fz-juelich-logo/@@images/image-261-9d3b36703de5ad2157c50aa585e7d2bf.jpeg"
-        },
-        {
-          "@id": "./PastasExampleProject/002_DataFiles/simple.csv"
+          "@id": "./PastasExampleProject/002_DataFiles/simple.png"
         },
         {
           "@id": "./PastasExampleProject/002_DataFiles/example.tif"
         },
         {
-          "@id": "./PastasExampleProject/002_DataFiles/simple.png"
+          "@id": "./PastasExampleProject/002_DataFiles/simple.csv"
+        },
+        {
+          "@id": "https://www.fz-juelich.de/en/ibg/ibg-1/images/research_groups/general/fz-juelich-logo/@@images/image-261-9d3b36703de5ad2157c50aa585e7d2bf.jpeg"
         }
       ],
       "@id": "./PastasExampleProject/002_DataFiles/",
-      "@type": "Dataset",
-      "description": "Data files"
+      "@type": "Dataset"
     },
     {
       "value": "ABC-123",
       "propertyID": ".model",
       "name": " \u2192 Model",
       "@type": "PropertyValue",
-      "@id": "#PastasExampleProject/d-03c50a0ddb4d42fe96ed53671e4af71a/_.model"
+      "@id": "#PastasExampleProject/d-5bc5a0609741480a9d62fc8eec6a6888/_.model"
     },
     {
       "value": "Company A",
       "propertyID": ".vendor",
       "name": " \u2192 Vendor",
       "@type": "PropertyValue",
-      "@id": "#PastasExampleProject/d-03c50a0ddb4d42fe96ed53671e4af71a/_.vendor"
+      "@id": "#PastasExampleProject/d-5bc5a0609741480a9d62fc8eec6a6888/_.vendor"
     },
     {
       "encodingFormat": "text/markdown",
-      "identifier": "d-03c50a0ddb4d42fe96ed53671e4af71a",
+      "identifier": "d-5bc5a0609741480a9d62fc8eec6a6888",
       "name": "Big instrument",
       "genre": "device",
-      "dateCreated": "2026-09-26T21:57:39.861638",
-      "dateModified": "2026-09-26T21:57:39.861653",
+      "dateCreated": "2026-10-02T11:00:26.438735",
+      "dateModified": "2026-10-02T11:00:26.438746",
       "description": "Instrument onto which attachments can be added",
-      "@id": "./PastasExampleProject/d-03c50a0ddb4d42fe96ed53671e4af71a/",
+      "@id": "./PastasExampleProject/d-5bc5a0609741480a9d62fc8eec6a6888/",
       "@type": "Dataset",
       "hasPart": [],
       "variableMeasured": [
         {
-          "@id": "#PastasExampleProject/d-03c50a0ddb4d42fe96ed53671e4af71a/_.model"
+          "@id": "#PastasExampleProject/d-5bc5a0609741480a9d62fc8eec6a6888/_.model"
         },
         {
-          "@id": "#PastasExampleProject/d-03c50a0ddb4d42fe96ed53671e4af71a/_.vendor"
+          "@id": "#PastasExampleProject/d-5bc5a0609741480a9d62fc8eec6a6888/_.vendor"
         }
       ]
     },
@@ -607,32 +604,32 @@ This folder contains two files:
       "propertyID": ".model",
       "name": " \u2192 Model",
       "@type": "PropertyValue",
-      "@id": "#PastasExampleProject/d-4af76e86545d4682902d12e526c1dc8e/_.model"
+      "@id": "#PastasExampleProject/d-d343d651b4b84bc5b381b5815260e0b3/_.model"
     },
     {
       "value": "Company B",
       "propertyID": ".vendor",
       "name": " \u2192 Vendor",
       "@type": "PropertyValue",
-      "@id": "#PastasExampleProject/d-4af76e86545d4682902d12e526c1dc8e/_.vendor"
+      "@id": "#PastasExampleProject/d-d343d651b4b84bc5b381b5815260e0b3/_.vendor"
     },
     {
       "encodingFormat": "text/markdown",
-      "identifier": "d-4af76e86545d4682902d12e526c1dc8e",
+      "identifier": "d-d343d651b4b84bc5b381b5815260e0b3",
       "name": "Sensor",
       "genre": "device/extension",
-      "dateCreated": "2026-09-26T21:57:39.865302",
-      "dateModified": "2026-09-26T21:57:39.865316",
+      "dateCreated": "2026-10-02T11:00:26.441906",
+      "dateModified": "2026-10-02T11:00:26.441920",
       "description": "Attachment that increases functionality of big instrument",
-      "@id": "./PastasExampleProject/d-4af76e86545d4682902d12e526c1dc8e/",
+      "@id": "./PastasExampleProject/d-d343d651b4b84bc5b381b5815260e0b3/",
       "@type": "Dataset",
       "hasPart": [],
       "variableMeasured": [
         {
-          "@id": "#PastasExampleProject/d-4af76e86545d4682902d12e526c1dc8e/_.model"
+          "@id": "#PastasExampleProject/d-d343d651b4b84bc5b381b5815260e0b3/_.model"
         },
         {
-          "@id": "#PastasExampleProject/d-4af76e86545d4682902d12e526c1dc8e/_.vendor"
+          "@id": "#PastasExampleProject/d-d343d651b4b84bc5b381b5815260e0b3/_.vendor"
         }
       ]
     },
@@ -641,28 +638,28 @@ This folder contains two files:
       "propertyID": "qrCodes.0",
       "name": "Qrcodes \u2192 0",
       "@type": "PropertyValue",
-      "@id": "#PastasExampleProject/s-4748c55f9aa04e98bca51dac3d4b2d34/_qrCodes.0"
+      "@id": "#PastasExampleProject/s-ae2ad29097fe4d309af736304934776c/_qrCodes.0"
     },
     {
       "value": "99698708",
       "propertyID": "qrCodes.1",
       "name": "Qrcodes \u2192 1",
       "@type": "PropertyValue",
-      "@id": "#PastasExampleProject/s-4748c55f9aa04e98bca51dac3d4b2d34/_qrCodes.1"
+      "@id": "#PastasExampleProject/s-ae2ad29097fe4d309af736304934776c/_qrCodes.1"
     },
     {
       "value": "A2B2C3",
       "propertyID": ".chemistry",
       "name": " \u2192 Chemistry",
       "@type": "PropertyValue",
-      "@id": "#PastasExampleProject/s-4748c55f9aa04e98bca51dac3d4b2d34/_.chemistry"
+      "@id": "#PastasExampleProject/s-ae2ad29097fe4d309af736304934776c/_.chemistry"
     },
     {
       "value": "4",
       "propertyID": "geometry.height",
       "name": "Geometry \u2192 Height",
       "@type": "PropertyValue",
-      "@id": "#PastasExampleProject/s-4748c55f9aa04e98bca51dac3d4b2d34/_geometry.height",
+      "@id": "#PastasExampleProject/s-ae2ad29097fe4d309af736304934776c/_geometry.height",
       "unitText": "mm"
     },
     {
@@ -670,7 +667,7 @@ This folder contains two files:
       "propertyID": "geometry.width",
       "name": "Geometry \u2192 Width",
       "@type": "PropertyValue",
-      "@id": "#PastasExampleProject/s-4748c55f9aa04e98bca51dac3d4b2d34/_geometry.width",
+      "@id": "#PastasExampleProject/s-ae2ad29097fe4d309af736304934776c/_geometry.width",
       "unitText": "mm"
     },
     {
@@ -678,90 +675,37 @@ This folder contains two files:
       "propertyID": "weight.initial",
       "name": "Weight \u2192 Initial",
       "@type": "PropertyValue",
-      "@id": "#PastasExampleProject/s-4748c55f9aa04e98bca51dac3d4b2d34/_weight.initial"
+      "@id": "#PastasExampleProject/s-ae2ad29097fe4d309af736304934776c/_weight.initial"
     },
     {
       "encodingFormat": "text/markdown",
-      "identifier": "s-4748c55f9aa04e98bca51dac3d4b2d34",
+      "identifier": "s-ae2ad29097fe4d309af736304934776c",
       "name": "Example sample",
       "genre": "sample",
-      "dateCreated": "2026-09-26T21:57:39.835372",
-      "dateModified": "2026-09-26T21:57:39.835386",
+      "dateCreated": "2026-10-02T11:00:26.399223",
+      "dateModified": "2026-10-02T11:00:26.399245",
       "description": "this sample has multiple groups of metadata",
-      "@id": "./PastasExampleProject/s-4748c55f9aa04e98bca51dac3d4b2d34/",
+      "@id": "./PastasExampleProject/s-ae2ad29097fe4d309af736304934776c/",
       "@type": "Dataset",
       "hasPart": [],
       "variableMeasured": [
         {
-          "@id": "#PastasExampleProject/s-4748c55f9aa04e98bca51dac3d4b2d34/_qrCodes.0"
+          "@id": "#PastasExampleProject/s-ae2ad29097fe4d309af736304934776c/_qrCodes.0"
         },
         {
-          "@id": "#PastasExampleProject/s-4748c55f9aa04e98bca51dac3d4b2d34/_qrCodes.1"
+          "@id": "#PastasExampleProject/s-ae2ad29097fe4d309af736304934776c/_qrCodes.1"
         },
         {
-          "@id": "#PastasExampleProject/s-4748c55f9aa04e98bca51dac3d4b2d34/_.chemistry"
+          "@id": "#PastasExampleProject/s-ae2ad29097fe4d309af736304934776c/_.chemistry"
         },
         {
-          "@id": "#PastasExampleProject/s-4748c55f9aa04e98bca51dac3d4b2d34/_geometry.height"
+          "@id": "#PastasExampleProject/s-ae2ad29097fe4d309af736304934776c/_geometry.height"
         },
         {
-          "@id": "#PastasExampleProject/s-4748c55f9aa04e98bca51dac3d4b2d34/_geometry.width"
+          "@id": "#PastasExampleProject/s-ae2ad29097fe4d309af736304934776c/_geometry.width"
         },
         {
-          "@id": "#PastasExampleProject/s-4748c55f9aa04e98bca51dac3d4b2d34/_weight.initial"
-        }
-      ]
-    },
-    {
-      "value": "md",
-      "propertyID": "metaVendor.fileExtension",
-      "name": "Metavendor \u2192 Fileextension",
-      "@type": "PropertyValue",
-      "@id": "#CommonFiles/Example_SOP.md_metaVendor.fileExtension"
-    },
-    {
-      "encodingFormat": "text/markdown",
-      "identifier": "w-1dd586fc6a48408ab50d15915386191d",
-      "name": "Example_SOP.md",
-      "genre": "workflow/procedure/markdown",
-      "dateCreated": "2026-09-26T21:57:38.511597",
-      "dateModified": "2026-09-26T21:57:38.511617",
-      "text": "# Put sample in instrument\n# Do something\nDo not forget to\n- not do anything wrong\n- **USE BOLD LETTERS**",
-      "keywords": "v1",
-      "@id": "./CommonFiles/Example_SOP.md",
-      "contentSize": "106",
-      "sha256": "8b2965159885bc2ac7cb3b0be098a140d8c38e86feee425351735ac26b09a941",
-      "@type": "File",
-      "description": "Example_SOP.md",
-      "variableMeasured": [
-        {
-          "@id": "#CommonFiles/Example_SOP.md_metaVendor.fileExtension"
-        }
-      ]
-    },
-    {
-      "value": "py",
-      "propertyID": "metaVendor.fileExtension",
-      "name": "Metavendor \u2192 Fileextension",
-      "@type": "PropertyValue",
-      "@id": "#PastasExampleProject/workplan.py_metaVendor.fileExtension"
-    },
-    {
-      "encodingFormat": "text/markdown",
-      "identifier": "w-24b8e26b19f74458ab65670c0222e685",
-      "name": "workplan.py",
-      "genre": "workflow/workplan",
-      "dateCreated": "2026-09-26T21:57:39.797797",
-      "dateModified": "2026-09-26T21:57:39.797822",
-      "text": "``` python\n\"\"\" Example workflow for the Sandia Fracture Challenge 3 \"\"\"\n# pylint: skip-file\n# head of workflow: always the same\nfrom urllib.parse import urlparse\nfrom common_workflow_description.commo",
-      "@id": "./PastasExampleProject/workplan.py",
-      "contentSize": "1926",
-      "sha256": "c12f18f0ef845974540a4b00cbf1119c58ce52cc31bbaef4c7cddd79457f1f1c",
-      "@type": "File",
-      "description": "workplan.py",
-      "variableMeasured": [
-        {
-          "@id": "#PastasExampleProject/workplan.py_metaVendor.fileExtension"
+          "@id": "#PastasExampleProject/s-ae2ad29097fe4d309af736304934776c/_weight.initial"
         }
       ]
     },
@@ -774,20 +718,45 @@ This folder contains two files:
     },
     {
       "encodingFormat": "text/markdown",
-      "identifier": "w-5c82cf2b3b61434d9088a58a2d932194",
+      "identifier": "w-62a68c7b9381400db770ed6d18126079",
       "name": "worklog.log",
       "genre": "workflow/worklog",
-      "dateCreated": "2026-09-26T21:57:39.803699",
-      "dateModified": "2026-09-26T21:57:39.803718",
+      "dateCreated": "2026-10-02T11:00:26.379714",
+      "dateModified": "2026-10-02T11:00:26.379728",
       "text": "02-21 11:44:54|INFO:Start workflow\n02-21 11:44:54|INFO:Start step sample:{AM_NA_05}  procedure-name:{metallography}  sha256:{aa3df28fb706568036a85375e62ad76149801b141eb07d629422d511fe901735}  paramete",
       "@id": "./PastasExampleProject/worklog.log",
       "contentSize": "14582",
       "sha256": "1b7d679067a8db3aa15eb1eb77bbb19598ec5a7e4c75c08eb160440f47634290",
       "@type": "File",
-      "description": "worklog.log",
       "variableMeasured": [
         {
           "@id": "#PastasExampleProject/worklog.log_metaVendor.fileExtension"
+        }
+      ]
+    },
+    {
+      "value": "md",
+      "propertyID": "metaVendor.fileExtension",
+      "name": "Metavendor \u2192 Fileextension",
+      "@type": "PropertyValue",
+      "@id": "#CommonFiles/Example_SOP.md_metaVendor.fileExtension"
+    },
+    {
+      "encodingFormat": "text/markdown",
+      "identifier": "w-62aaaaa929a54c01abbb2cd852b53cce",
+      "name": "Example_SOP.md",
+      "genre": "workflow/procedure/markdown",
+      "dateCreated": "2026-10-02T11:00:25.042752",
+      "dateModified": "2026-10-02T11:00:25.042771",
+      "text": "# Put sample in instrument\n# Do something\nDo not forget to\n- not do anything wrong\n- **USE BOLD LETTERS**",
+      "keywords": "v1",
+      "@id": "./CommonFiles/Example_SOP.md",
+      "contentSize": "106",
+      "sha256": "8b2965159885bc2ac7cb3b0be098a140d8c38e86feee425351735ac26b09a941",
+      "@type": "File",
+      "variableMeasured": [
+        {
+          "@id": "#CommonFiles/Example_SOP.md_metaVendor.fileExtension"
         }
       ]
     },
@@ -800,20 +769,44 @@ This folder contains two files:
     },
     {
       "encodingFormat": "text/markdown",
-      "identifier": "w-a1bf465edd094d75a7bd28fe784ebe30",
+      "identifier": "w-961cbae6102b4194a51b289a93bc0caa",
       "name": "procedure.md",
       "genre": "workflow/procedure/markdown",
-      "dateCreated": "2026-09-26T21:57:39.782664",
-      "dateModified": "2026-09-26T21:57:39.782682",
+      "dateCreated": "2026-10-02T11:00:26.376015",
+      "dateModified": "2026-10-02T11:00:26.376028",
       "text": "# Tensile testing with Doli\n\n- Setup control box at instrument\n  - General information\n  - buttons F1..F3 correspond to three symbols above\n  - PC-mode: use for control by PC\n  - turn knob to get ther",
       "@id": "./PastasExampleProject/procedure.md",
       "contentSize": "1322",
       "sha256": "289a5834171343630e233937eebd907599843e3a6792623ff86363e472def0e1",
       "@type": "File",
-      "description": "procedure.md",
       "variableMeasured": [
         {
           "@id": "#PastasExampleProject/procedure.md_metaVendor.fileExtension"
+        }
+      ]
+    },
+    {
+      "value": "py",
+      "propertyID": "metaVendor.fileExtension",
+      "name": "Metavendor \u2192 Fileextension",
+      "@type": "PropertyValue",
+      "@id": "#PastasExampleProject/workplan.py_metaVendor.fileExtension"
+    },
+    {
+      "encodingFormat": "text/markdown",
+      "identifier": "w-cfc520abeb0d4000b967dd7a4fa9281e",
+      "name": "workplan.py",
+      "genre": "workflow/workplan",
+      "dateCreated": "2026-10-02T11:00:26.371790",
+      "dateModified": "2026-10-02T11:00:26.371801",
+      "text": "``` python\n\"\"\" Example workflow for the Sandia Fracture Challenge 3 \"\"\"\n# pylint: skip-file\n# head of workflow: always the same\nfrom urllib.parse import urlparse\nfrom common_workflow_description.commo",
+      "@id": "./PastasExampleProject/workplan.py",
+      "contentSize": "1926",
+      "sha256": "c12f18f0ef845974540a4b00cbf1119c58ce52cc31bbaef4c7cddd79457f1f1c",
+      "@type": "File",
+      "variableMeasured": [
+        {
+          "@id": "#PastasExampleProject/workplan.py_metaVendor.fileExtension"
         }
       ]
     },
@@ -833,11 +826,11 @@ This folder contains two files:
     },
     {
       "encodingFormat": "text/markdown",
-      "identifier": "x-42057297962a4a889168535d7ce5bad9",
+      "identifier": "x-3d78fa97c6f94cacaa2a9f097eba5bb3",
       "name": "PASTAs Example Project",
       "genre": "folder",
-      "dateCreated": "2026-09-26T21:57:37.397079",
-      "dateModified": "2026-09-26T21:57:37.397101",
+      "dateCreated": "2026-10-02T11:00:23.804725",
+      "dateModified": "2026-10-02T11:00:23.804744",
       "description": "Can be used as reference or deleted",
       "keywords": "Important",
       "hasPart": [
@@ -851,25 +844,25 @@ This folder contains two files:
           "@id": "./PastasExampleProject/002_DataFiles/"
         },
         {
-          "@id": "./PastasExampleProject/d-03c50a0ddb4d42fe96ed53671e4af71a/"
+          "@id": "./PastasExampleProject/d-5bc5a0609741480a9d62fc8eec6a6888/"
         },
         {
-          "@id": "./PastasExampleProject/d-4af76e86545d4682902d12e526c1dc8e/"
+          "@id": "./PastasExampleProject/d-d343d651b4b84bc5b381b5815260e0b3/"
         },
         {
-          "@id": "./PastasExampleProject/s-4748c55f9aa04e98bca51dac3d4b2d34/"
-        },
-        {
-          "@id": "./CommonFiles/Example_SOP.md"
-        },
-        {
-          "@id": "./PastasExampleProject/workplan.py"
+          "@id": "./PastasExampleProject/s-ae2ad29097fe4d309af736304934776c/"
         },
         {
           "@id": "./PastasExampleProject/worklog.log"
         },
         {
+          "@id": "./CommonFiles/Example_SOP.md"
+        },
+        {
           "@id": "./PastasExampleProject/procedure.md"
+        },
+        {
+          "@id": "./PastasExampleProject/workplan.py"
         }
       ],
       "@id": "./PastasExampleProject/",
@@ -892,12 +885,12 @@ This folder contains two files:
       "name": "RO-Crate 1.2 Specification"
     },
     {
-      "@id": "https://purl.archive.org/purl/elnconsortium/eln-spec/1.2+202609",
+      "@id": "https://purl.archive.org/purl/elnconsortium/eln-spec/1.2+20260923",
       "@type": [
         "CreativeWork",
         "Profile"
       ],
-      "name": "ELN-File Format 1.2+202609 Specification"
+      "name": "ELN-File Format 1.2+20260923 Specification"
     },
     {
       "@id": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
@@ -1717,7 +1710,7 @@ This folder contains two files:
           "@id": "https://w3id.org/ro/crate/1.2"
         },
         {
-          "@id": "https://purl.archive.org/purl/elnconsortium/eln-spec/1.2+202609"
+          "@id": "https://purl.archive.org/purl/elnconsortium/eln-spec/1.2+20260923"
         }
       ],
       "identifier": "CRR-25894",
@@ -1992,12 +1985,12 @@ This folder contains two files:
       "name": "RO-Crate 1.2 Specification"
     },
     {
-      "@id": "https://purl.archive.org/purl/elnconsortium/eln-spec/1.2+202609",
+      "@id": "https://purl.archive.org/purl/elnconsortium/eln-spec/1.2+20260923",
       "@type": [
         "CreativeWork",
         "Profile"
       ],
-      "name": "ELN-File Format 1.2+202609 Specification"
+      "name": "ELN-File Format 1.2+20260923 Specification"
     },
     {
       "@id": "http://creativecommons.org/licenses/by-sa/4.0/",
