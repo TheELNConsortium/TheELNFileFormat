@@ -1,6 +1,6 @@
-# Make an .eln file 1.2+202609 compliant
+# Make an .eln file 1.2+20260923 compliant
 
-These steps take an existing .eln export, fix the code that generates `ro-crate-metadata.json` to RO-Crate 1.2 and ELN version `1.2+202609`, and check the result with `tests/run_checks.py`. All commands run from the root of this repository and use [uv](https://docs.astral.sh/uv/).
+These steps take an existing .eln export, fix the code that generates `ro-crate-metadata.json` to RO-Crate 1.2 and ELN version `1.2+20260923`, and check the result with `tests/run_checks.py`. All commands run from the root of this repository and use [uv](https://docs.astral.sh/uv/).
 
 ## 1. Install the test dependencies
 
@@ -45,7 +45,7 @@ Edit the exporter code that writes the `ro-crate-metadata.json`, in particular t
     "@type": "Dataset",
     "conformsTo": [
       { "@id": "https://w3id.org/ro/crate/1.2" },
-      { "@id": "https://purl.archive.org/purl/elnconsortium/eln-spec/1.2+202609" }
+      { "@id": "https://purl.archive.org/purl/elnconsortium/eln-spec/1.2+20260923" }
     ]
   }
   ```
@@ -62,12 +62,12 @@ Edit the exporter code that writes the `ro-crate-metadata.json`, in particular t
     "name": "RO-Crate 1.2 Specification"
   },
   {
-    "@id": "https://purl.archive.org/purl/elnconsortium/eln-spec/1.2+202609",
+    "@id": "https://purl.archive.org/purl/elnconsortium/eln-spec/1.2+20260923",
     "@type": [
       "CreativeWork",
       "Profile"
     ],
-    "name": "ELN-File Format 1.2+202609 Specification"
+    "name": "ELN-File Format 1.2+20260923 Specification"
   }
   ```
 
@@ -79,7 +79,7 @@ Start with the REQUIRED rules only. `--no-recommend` skips RECOMMENDED RO-Crate 
 uv run python tests/run_checks.py --no-recommend <path-to-.eln>
 ```
 
-The first output line shows the version the checks assume. It must read `Identified version: 1.2+202609`. If it shows `1.1` or `1.2`, the root Dataset's `conformsTo` is wrong (step 3).
+The first output line shows the version the checks assume. It must read `Identified version: 1.2+20260923`. If it shows `1.1` or `1.2`, the root Dataset's `conformsTo` is wrong (step 3).
 
 When everything passes, run again without the flag to see the RECOMMENDED rules and warnings. Any RECOMMENDED issue makes the Validator check fail and the exit code 1:
 

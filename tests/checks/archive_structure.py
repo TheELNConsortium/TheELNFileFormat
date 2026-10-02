@@ -18,7 +18,7 @@ class CheckArchiveStructure(BaseCheck):
     loggingLabel = 'archive_structure'
     requiresRootDirectory = False
     requiresMetadataJson = False
-    versions = ('1.2+202609',)
+    versions = ('1.2+20260923',)
     MAX_ARCHIVE_MEMBERS = 10_000
     MAX_ARCHIVE_BYTES = 4 * 1024**3
     RESOURCE_LIMIT_PRESETS = {'permissive', 'sensible'}

@@ -14,7 +14,7 @@ class CheckParamMetadataJson(BaseCheck):
     loggingLabel = 'params_metadata_json'
     requiresRootDirectory = True
     requiresMetadataJson = True
-    versions = ('1.2+202609',)
+    versions = ('1.2+20260923',)
     ROCRATE_NODE_SUGGESTED = ['version', 'sdPublisher']
     DATASET_SUGGESTED = ['author', 'mentions', 'dateCreated', 'dateModified', 'identifier',
                          'text', 'keywords',]

@@ -9,12 +9,12 @@ from .base import METADATA_FILE
 RO_CRATE_PROFILE_PREFIX = 'https://w3id.org/ro/crate/'
 ELN_SPEC_PROFILE_PREFIX = 'https://purl.archive.org/purl/elnconsortium/eln-spec/'
 RO_CRATE_VERSIONS = ('1.1', '1.2')
-ELN_SPEC_VERSIONS = ('1.2+202609',)
-RO_CRATE_PROFILES = {'1.1': 'ro-crate-1.1', '1.2': 'ro-crate-1.2', '1.2+202609': 'ro-crate-1.2'}
+ELN_SPEC_VERSIONS = ('1.2+20260923',)
+RO_CRATE_PROFILES = {'1.1': 'ro-crate-1.1', '1.2': 'ro-crate-1.2', '1.2+20260923': 'ro-crate-1.2'}
 
 
 def getVersion(metadataJson):
-    """Return the declared version: ``1.1``, ``1.2``, ``1.2+202609`` or ``None``.
+    """Return the declared version: ``1.1``, ``1.2``, ``1.2+20260923`` or ``None``.
 
     The ELN version is declared in the root Dataset's ``conformsTo``; without it,
     the RO-Crate version in the metadata descriptor's ``conformsTo`` is returned.
