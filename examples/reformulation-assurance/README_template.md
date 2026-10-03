@@ -19,10 +19,10 @@ The `.eln` export files one project's qualification dossier into a lab notebook 
 | exporting user | `author` → `Person` |
 | exporting workspace | root `publisher` → `Organization`; the author's `affiliation` |
 | software | `sdPublisher` → `Organization` |
-| conformance | root `conformsTo` → RO-Crate 1.2 and ELN 1.2+202609 `Profile` entities |
+| conformance | root `conformsTo` → RO-Crate 1.2 and ELN 1.2+20260923 `Profile` entities |
 
 `scientific_evidence.canonical.json` is the evidence in canonical byte form: `sha256sum` of that one file reproduces the evidence hash recorded in the metadata and in every signature. Empty evidence tables are listed in `SHA256SUMS.txt` but not attached.
 
-The example was produced from the public demo dataset (a cosmetics emulsifier replacement, no real formulas): one model-recommended batch of five candidates with bench results entered, a three-replicate confirmation run, and one signed approval; the discovery and confirmation gates pass. The crate is a flattened JSON-LD graph on RO-Crate 1.2 declaring ELN 1.2+202609. It imports into eLabFTW as one experiment with 17 attachments; the extra-fields panel needs the importer to resolve `variableMeasured` references for crates without eLabFTW's internal `version` marker (reported upstream).
+The example was produced from the public demo dataset (a cosmetics emulsifier replacement, no real formulas): one model-recommended batch of five candidates with bench results entered, a three-replicate confirmation run, and one signed approval; the discovery and confirmation gates pass. The crate is a flattened JSON-LD graph on RO-Crate 1.2 declaring ELN 1.2+20260923. It imports into eLabFTW as one experiment with 17 attachments; the extra-fields panel needs the importer to resolve `variableMeasured` references for crates without eLabFTW's internal `version` marker (fix proposed upstream in elabftw/elabftw#7517).
 
 ## Examples
