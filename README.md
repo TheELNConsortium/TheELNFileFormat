@@ -40,5 +40,6 @@ Generally working with some quirks here and there.
 | [SciLog](https://github.com/paulscherrerinstitute/scilog) | ✅          | ✅          | [SciLog](https://github.com/TheELNConsortium/TheELNFileFormat/tree/master/examples/SciLog)                   |
 | [datalab](https://github.com/datalab-org)                 |             | ✅          | [datalab](https://github.com/TheELNConsortium/TheELNFileFormat/tree/master/examples/datalab)                 |
 | [ELNPack](https://athemis.github.io/ELNPack/)             |             | ✅          |                                                                                                              |
+| [Reformulation Assurance](https://github.com/TM289012/reformulation-assurance) |  | ✅          | [reformulation-assurance](https://github.com/TheELNConsortium/TheELNFileFormat/tree/master/examples/reformulation-assurance) |
 | [ELN Metadata Diff Viewer](https://codeberg.org/achimw/eln-metadata-diff) | ✅ |      |                                                                                                              |
 
