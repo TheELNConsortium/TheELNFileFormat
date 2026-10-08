@@ -83,14 +83,19 @@ It is a `CreativeWork` about the current directory, and conforms to the RO-Crate
 In addition to the properties outlined in the [RO-Crate Metadata File Descriptor](https://www.researchobject.org/ro-crate/specification/1.2/root-data-entity.html#ro-crate-metadata-file-descriptor), this node SHOULD include `sdPublisher` property, which references the Organization entity containing additional metadata.
 
 
-### Second node: current directory
+### Second node: current directory (root node)
 
-The second node is basically describing the current directory (`./`).
+The second node is basically describing the current directory (`./`). It is the "root node" and conforms to this specification.
 
 ```json
 {
   "@id": "./",
   "@type": "Dataset",
+  "conformsTo": {
+    "@id": "https://purl.archive.org/purl/elnconsortium/eln-spec/1.2+20260923"
+  },
+  "description": "A description of this .eln content",
+  "name": "Some-export.eln",
   "hasPart": [
     {
       "@id": "./2022-05-29 - Some-experiment/"
