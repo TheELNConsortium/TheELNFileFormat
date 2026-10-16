@@ -92,7 +92,7 @@ The second node is basically describing the current directory (`./`). It is the 
   "@id": "./",
   "@type": "Dataset",
   "conformsTo": {
-    "@id": "https://purl.archive.org/purl/elnconsortium/eln-spec/1.2+20260923"
+    "@id": "https://purl.org/elnconsortium/eln-spec/1.2+20260923"
   },
   "description": "A description of this .eln content",
   "name": "Some-export.eln",
