@@ -3,8 +3,10 @@
 
 # You can set these variables from the command line, and also
 # from the environment for the first two.
+# sphinx-build is run through uv so the "docs" dependency group from
+# pyproject.toml is used without having to activate a virtual environment.
 SPHINXOPTS    ?=
-SPHINXBUILD   ?= sphinx-build
+SPHINXBUILD   ?= uv run --locked --group docs sphinx-build
 SOURCEDIR     = source
 BUILDDIR      = build
 
