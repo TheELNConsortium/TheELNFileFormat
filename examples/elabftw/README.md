@@ -44,7 +44,7 @@ Here is a correspondance between concepts in eLabFTW and how they are translated
       "conformsTo": {
         "@id": "https://w3id.org/ro/crate/1.2"
       },
-      "dateCreated": "2026-11-09T10:35:32+01:00",
+      "dateCreated": "2026-11-09T12:57:42+01:00",
       "sdPublisher": {
         "@id": "#publisher"
       }
@@ -78,7 +78,7 @@ Here is a correspondance between concepts in eLabFTW and how they are translated
         "@id": "./"
       },
       "name": "RO-Crate created",
-      "endTime": "2026-11-09T10:35:32+01:00",
+      "endTime": "2026-11-09T12:57:42+01:00",
       "instrument": {
         "@id": "https://www.elabftw.net"
       },
@@ -118,7 +118,7 @@ Here is a correspondance between concepts in eLabFTW and how they are translated
       ]
     },
     {
-      "@id": "./aab966c4-0d20-4057-aa2d-30959b42f548/dc70935f-63c3-48d1-8653-363548463369",
+      "@id": "./3fbcedee-3618-49fc-bd29-916e494778fb/2477189f-a423-4d6e-bd3e-50738e18ff46",
       "@type": "File",
       "name": "pasted-image-20261109-103223-acf08ecf.png",
       "alternateName": "a7/a7336228-3ffd-4bdd-8044-eb430687964a.png",
@@ -129,7 +129,7 @@ Here is a correspondance between concepts in eLabFTW and how they are translated
       "position": 0
     },
     {
-      "@id": "./88adebb3-4411-40b6-acbb-65cca84e586a/50ea5fea-a15c-464e-9178-bc5250a0bdf7",
+      "@id": "./92eec27d-99b3-47a6-b493-54a3f53a1508/2fcff7b8-64e1-411a-bb3a-79c1b608b554",
       "@type": "File",
       "name": "example.pdf",
       "alternateName": "cf/cf14d8ab-3ab4-46e3-a72d-fd40ea06253b.pdf",
@@ -146,7 +146,7 @@ Here is a correspondance between concepts in eLabFTW and how they are translated
       "color": "aaaabd"
     },
     {
-      "@id": "./88adebb3-4411-40b6-acbb-65cca84e586a/",
+      "@id": "./92eec27d-99b3-47a6-b493-54a3f53a1508/",
       "@type": "Dataset",
       "author": {
         "@id": "person://b6e08eac1fa1bdc4bdb04615a095ed061036beb0b547cee3bf7308f3a4bcf319?hash_algo=sha256"
@@ -161,7 +161,7 @@ Here is a correspondance between concepts in eLabFTW and how they are translated
       "conditionsOfAccess": "Unlocked",
       "subjectOf": [
         {
-          "@id": "updateaction://c278e958-6a7a-4b1e-8ef9-9e1384f49749",
+          "@id": "updateaction://240f49a5-96c3-49f6-af75-301d65eda7f5",
           "@type": "UpdateAction",
           "agent": {
             "@id": "person://42c713981f75caa8c9d8e3a60c883dc4788c0563de13ba5607a12f385fe534fe?hash_algo=sha256"
@@ -171,7 +171,7 @@ Here is a correspondance between concepts in eLabFTW and how they are translated
           "startTime": "2026-11-09T10:34:46+01:00"
         },
         {
-          "@id": "updateaction://32fff39e-2754-47a9-9db9-87a1f9c1d817",
+          "@id": "updateaction://596aecad-3856-43ee-b68c-7cdb2c41b155",
           "@type": "UpdateAction",
           "agent": {
             "@id": "person://b6e08eac1fa1bdc4bdb04615a095ed061036beb0b547cee3bf7308f3a4bcf319?hash_algo=sha256"
@@ -181,7 +181,7 @@ Here is a correspondance between concepts in eLabFTW and how they are translated
           "startTime": "2026-11-06T18:07:57+01:00"
         },
         {
-          "@id": "updateaction://4b122750-e906-4965-b05f-f55872017fa2",
+          "@id": "updateaction://33a9c0da-4c03-4394-912e-316f7b0d8299",
           "@type": "UpdateAction",
           "agent": {
             "@id": "person://b6e08eac1fa1bdc4bdb04615a095ed061036beb0b547cee3bf7308f3a4bcf319?hash_algo=sha256"
@@ -194,7 +194,7 @@ Here is a correspondance between concepts in eLabFTW and how they are translated
       "status": "Normal",
       "hasPart": [
         {
-          "@id": "./88adebb3-4411-40b6-acbb-65cca84e586a/50ea5fea-a15c-464e-9178-bc5250a0bdf7"
+          "@id": "./92eec27d-99b3-47a6-b493-54a3f53a1508/2fcff7b8-64e1-411a-bb3a-79c1b608b554"
         }
       ],
       "identifier": "20261106-36475f39bb0a3a0851e9de67d61e9fbbd1e7533a",
@@ -209,84 +209,94 @@ Here is a correspondance between concepts in eLabFTW and how they are translated
       "color": "a5ab35"
     },
     {
-      "@id": "pv://e3cbd30a-fa8d-4758-81e8-22d320b935b2",
+      "@id": "pv://28555b81-0cad-430e-b761-1c8a72e2e4fa",
       "@type": "PropertyValue",
       "propertyID": "elabftw_metadata",
       "description": "eLabFTW metadata JSON as string",
       "value": "{\"extra_fields\": {\"Email input\": {\"type\": \"email\", \"value\": \"hello@example.com\", \"description\": \"only accepts emails\"}, \"Text custom field\": {\"type\": \"text\", \"value\": \"The value\", \"required\": true, \"description\": \"Description of the field\", \"blank_value_on_duplicate\": true}, \"Multi value custom field\": {\"type\": \"text\", \"value\": [\"First value\", \"Second value\"], \"value_labels\": [\"Label of first value\", \"Second label\"], \"allow_multi_values\": true}}}"
     },
     {
+      "@id": "pv://a67505f2-f150-4b8f-a477-ab14e14321d7",
       "@type": "PropertyValue",
-      "@id": "pv://11183de6-129d-4625-81e6-c2d0ef114db7",
       "propertyID": "Email input",
-      "valueReference": "email",
+      "name": "Email input",
       "value": "hello@example.com",
+      "additionalType": "email",
       "description": "only accepts emails"
     },
     {
+      "@id": "pv://3f8350ec-0b8c-47be-8485-2e3e5953860f",
       "@type": "PropertyValue",
-      "@id": "pv://efa31003-18b4-47b9-a4fe-b12e24ca5509",
       "propertyID": "Text custom field",
-      "valueReference": "text",
+      "name": "Text custom field",
       "value": "The value",
+      "additionalType": "text",
       "description": "Description of the field"
     },
     {
+      "@id": "pv://21989d0f-fe08-4339-93d4-b525a9fec359",
       "@type": "PropertyValue",
-      "@id": "pv://d3aec9a4-e542-4fe4-b69c-9d5d44f147cb",
-      "propertyID": "Multi value custom field",
-      "valueReference": "text",
-      "value": [
-        "First value",
-        "Second value"
-      ]
+      "propertyID": "Multi value custom field.0",
+      "name": "Multi value custom field",
+      "value": "First value",
+      "additionalType": "text",
+      "alternateName": "Label of first value"
     },
     {
-      "@id": "howtostep://79ec59ef-ef2a-40ac-bf13-2fdb7445837e",
+      "@id": "pv://43baedeb-92e7-455c-91d4-9d03411a1f6c",
+      "@type": "PropertyValue",
+      "propertyID": "Multi value custom field.1",
+      "name": "Multi value custom field",
+      "value": "Second value",
+      "additionalType": "text",
+      "alternateName": "Second label"
+    },
+    {
+      "@id": "howtostep://77800afe-b41f-4202-b1ef-ef5fc8624b7f",
       "@type": "HowToStep",
       "position": 0,
       "creativeWorkStatus": "finished",
       "temporal": "2026-11-09T10:34:19+01:00",
       "itemListElement": {
-        "@id": "howtodirection://f2cb15de-4b0c-4ff3-b439-96a119e51689"
+        "@id": "howtodirection://c78a4136-d33d-4148-8bad-d872258f57cf"
       }
     },
     {
-      "@id": "howtodirection://f2cb15de-4b0c-4ff3-b439-96a119e51689",
+      "@id": "howtodirection://c78a4136-d33d-4148-8bad-d872258f57cf",
       "@type": "HowToDirection",
       "text": "First step"
     },
     {
-      "@id": "howtostep://f2276a4f-9e6a-4b87-b884-bae34dd6fd88",
+      "@id": "howtostep://5ebf4c00-a9c8-4c58-a34f-a6e4acb16a77",
       "@type": "HowToStep",
       "position": 1,
       "creativeWorkStatus": "finished",
       "temporal": "2026-11-09T10:34:20+01:00",
       "itemListElement": {
-        "@id": "howtodirection://53be50b6-994d-412e-899e-99d94976c343"
+        "@id": "howtodirection://4d37f065-ca18-4219-81f3-b30b934b7afa"
       }
     },
     {
-      "@id": "howtodirection://53be50b6-994d-412e-899e-99d94976c343",
+      "@id": "howtodirection://4d37f065-ca18-4219-81f3-b30b934b7afa",
       "@type": "HowToDirection",
       "text": "Second step"
     },
     {
-      "@id": "howtostep://4b779624-89de-4455-8d18-e5581677ae63",
+      "@id": "howtostep://be37d040-31c5-4cfa-919a-5ed1eb2df604",
       "@type": "HowToStep",
       "position": 2,
       "creativeWorkStatus": "unfinished",
       "itemListElement": {
-        "@id": "howtodirection://0077aec4-ab59-4d80-b4cf-6adb7e3914f7"
+        "@id": "howtodirection://5c2e87ad-2c66-4c03-8102-3c32a8451812"
       }
     },
     {
-      "@id": "howtodirection://0077aec4-ab59-4d80-b4cf-6adb7e3914f7",
+      "@id": "howtodirection://5c2e87ad-2c66-4c03-8102-3c32a8451812",
       "@type": "HowToDirection",
       "text": "Another step"
     },
     {
-      "@id": "./aab966c4-0d20-4057-aa2d-30959b42f548/",
+      "@id": "./3fbcedee-3618-49fc-bd29-916e494778fb/",
       "@type": "Dataset",
       "author": {
         "@id": "person://42c713981f75caa8c9d8e3a60c883dc4788c0563de13ba5607a12f385fe534fe?hash_algo=sha256"
@@ -308,7 +318,7 @@ Here is a correspondance between concepts in eLabFTW and how they are translated
       "creativeWorkStatus": "Success",
       "subjectOf": [
         {
-          "@id": "updateaction://a900af11-0d6a-48e4-9fdb-42983cfb13b9",
+          "@id": "updateaction://06067f80-d77a-41da-a7cc-30adc5fafd9b",
           "@type": "UpdateAction",
           "agent": {
             "@id": "person://42c713981f75caa8c9d8e3a60c883dc4788c0563de13ba5607a12f385fe534fe?hash_algo=sha256"
@@ -318,7 +328,7 @@ Here is a correspondance between concepts in eLabFTW and how they are translated
           "startTime": "2026-11-09T10:35:19+01:00"
         },
         {
-          "@id": "updateaction://1fe84752-bcd1-46f7-bda0-97581cc7b81a",
+          "@id": "updateaction://94000cae-7e54-49d8-a5a4-c24720fbe52c",
           "@type": "UpdateAction",
           "agent": {
             "@id": "person://42c713981f75caa8c9d8e3a60c883dc4788c0563de13ba5607a12f385fe534fe?hash_algo=sha256"
@@ -328,7 +338,7 @@ Here is a correspondance between concepts in eLabFTW and how they are translated
           "startTime": "2026-11-09T10:35:11+01:00"
         },
         {
-          "@id": "updateaction://f131cfe7-b514-4ae4-a168-df7310b38b16",
+          "@id": "updateaction://9876b0e9-5673-413c-850c-9b7d0b01ca75",
           "@type": "UpdateAction",
           "agent": {
             "@id": "person://42c713981f75caa8c9d8e3a60c883dc4788c0563de13ba5607a12f385fe534fe?hash_algo=sha256"
@@ -338,7 +348,7 @@ Here is a correspondance between concepts in eLabFTW and how they are translated
           "startTime": "2026-11-09T10:34:28+01:00"
         },
         {
-          "@id": "updateaction://47159565-0993-4474-a1b3-23b27ed0731f",
+          "@id": "updateaction://a7d9999f-da4b-4b2c-b550-767a2a3fa734",
           "@type": "UpdateAction",
           "agent": {
             "@id": "person://42c713981f75caa8c9d8e3a60c883dc4788c0563de13ba5607a12f385fe534fe?hash_algo=sha256"
@@ -348,7 +358,7 @@ Here is a correspondance between concepts in eLabFTW and how they are translated
           "startTime": "2026-11-09T10:34:20+01:00"
         },
         {
-          "@id": "updateaction://372c37cb-d059-4d4d-afa4-dd54f04ea347",
+          "@id": "updateaction://19613bbd-a8e9-4eb9-ba12-a7e1cde50557",
           "@type": "UpdateAction",
           "agent": {
             "@id": "person://42c713981f75caa8c9d8e3a60c883dc4788c0563de13ba5607a12f385fe534fe?hash_algo=sha256"
@@ -358,7 +368,7 @@ Here is a correspondance between concepts in eLabFTW and how they are translated
           "startTime": "2026-11-09T10:34:19+01:00"
         },
         {
-          "@id": "updateaction://d9800d7a-798c-4464-9b02-d3021c335521",
+          "@id": "updateaction://4559c295-ce76-41fc-998a-55c2b1b481e6",
           "@type": "UpdateAction",
           "agent": {
             "@id": "person://42c713981f75caa8c9d8e3a60c883dc4788c0563de13ba5607a12f385fe534fe?hash_algo=sha256"
@@ -368,7 +378,7 @@ Here is a correspondance between concepts in eLabFTW and how they are translated
           "startTime": "2026-11-09T10:34:17+01:00"
         },
         {
-          "@id": "updateaction://df6159d9-53db-47df-a061-7e769900b4be",
+          "@id": "updateaction://b8517cd9-85bb-4d03-a74d-ae885c645473",
           "@type": "UpdateAction",
           "agent": {
             "@id": "person://42c713981f75caa8c9d8e3a60c883dc4788c0563de13ba5607a12f385fe534fe?hash_algo=sha256"
@@ -378,7 +388,7 @@ Here is a correspondance between concepts in eLabFTW and how they are translated
           "startTime": "2026-11-09T10:34:15+01:00"
         },
         {
-          "@id": "updateaction://84816a66-80ce-4384-82b4-f4a70c4bdbcb",
+          "@id": "updateaction://3b4081b5-ba68-491d-8d29-198b7aa137f1",
           "@type": "UpdateAction",
           "agent": {
             "@id": "person://42c713981f75caa8c9d8e3a60c883dc4788c0563de13ba5607a12f385fe534fe?hash_algo=sha256"
@@ -388,7 +398,7 @@ Here is a correspondance between concepts in eLabFTW and how they are translated
           "startTime": "2026-11-09T10:34:12+01:00"
         },
         {
-          "@id": "updateaction://da2a01e5-1aea-4c0b-9eb4-a9bee54adaec",
+          "@id": "updateaction://9e4a4449-a57a-44f1-b488-4d8f40533634",
           "@type": "UpdateAction",
           "agent": {
             "@id": "person://42c713981f75caa8c9d8e3a60c883dc4788c0563de13ba5607a12f385fe534fe?hash_algo=sha256"
@@ -398,7 +408,7 @@ Here is a correspondance between concepts in eLabFTW and how they are translated
           "startTime": "2026-11-09T10:33:53+01:00"
         },
         {
-          "@id": "updateaction://c1e04fca-e744-4807-b952-9412062c396d",
+          "@id": "updateaction://d41b22d6-d60c-4153-b4fb-14cf5a6182b6",
           "@type": "UpdateAction",
           "agent": {
             "@id": "person://42c713981f75caa8c9d8e3a60c883dc4788c0563de13ba5607a12f385fe534fe?hash_algo=sha256"
@@ -408,7 +418,7 @@ Here is a correspondance between concepts in eLabFTW and how they are translated
           "startTime": "2026-11-09T10:33:47+01:00"
         },
         {
-          "@id": "updateaction://1f03c803-7fb2-4515-9bf4-f5d361b29943",
+          "@id": "updateaction://7c2fdeb7-34d0-4d94-b958-7530ac2cde94",
           "@type": "UpdateAction",
           "agent": {
             "@id": "person://42c713981f75caa8c9d8e3a60c883dc4788c0563de13ba5607a12f385fe534fe?hash_algo=sha256"
@@ -418,7 +428,7 @@ Here is a correspondance between concepts in eLabFTW and how they are translated
           "startTime": "2026-11-09T10:33:34+01:00"
         },
         {
-          "@id": "updateaction://f9895d2e-bc29-4212-b848-63fea040eb37",
+          "@id": "updateaction://49ea4278-11e8-431f-9280-b98c4fc7fa2d",
           "@type": "UpdateAction",
           "agent": {
             "@id": "person://42c713981f75caa8c9d8e3a60c883dc4788c0563de13ba5607a12f385fe534fe?hash_algo=sha256"
@@ -428,7 +438,7 @@ Here is a correspondance between concepts in eLabFTW and how they are translated
           "startTime": "2026-11-09T10:33:29+01:00"
         },
         {
-          "@id": "updateaction://7d722e08-4a16-447c-bd89-793cbda51421",
+          "@id": "updateaction://ea8a9d43-1495-4149-b3f2-e4af248fd154",
           "@type": "UpdateAction",
           "agent": {
             "@id": "person://42c713981f75caa8c9d8e3a60c883dc4788c0563de13ba5607a12f385fe534fe?hash_algo=sha256"
@@ -438,7 +448,7 @@ Here is a correspondance between concepts in eLabFTW and how they are translated
           "startTime": "2026-11-09T10:33:26+01:00"
         },
         {
-          "@id": "updateaction://f9329289-0cc4-4492-b54a-b267172ad181",
+          "@id": "updateaction://1a79f2b0-9261-40c9-a107-63d51747f55f",
           "@type": "UpdateAction",
           "agent": {
             "@id": "person://42c713981f75caa8c9d8e3a60c883dc4788c0563de13ba5607a12f385fe534fe?hash_algo=sha256"
@@ -448,7 +458,7 @@ Here is a correspondance between concepts in eLabFTW and how they are translated
           "startTime": "2026-11-09T10:33:15+01:00"
         },
         {
-          "@id": "updateaction://89c84064-b9b1-4d17-b76a-bfe1c76916e6",
+          "@id": "updateaction://b1f72fc8-b8bd-4deb-91d9-f8bff28eb190",
           "@type": "UpdateAction",
           "agent": {
             "@id": "person://42c713981f75caa8c9d8e3a60c883dc4788c0563de13ba5607a12f385fe534fe?hash_algo=sha256"
@@ -458,7 +468,7 @@ Here is a correspondance between concepts in eLabFTW and how they are translated
           "startTime": "2026-11-09T10:33:06+01:00"
         },
         {
-          "@id": "updateaction://cfed65ba-7d3d-43c2-b83d-3b14be054300",
+          "@id": "updateaction://2db83ca3-13b8-4488-97de-b13dce934c8b",
           "@type": "UpdateAction",
           "agent": {
             "@id": "person://42c713981f75caa8c9d8e3a60c883dc4788c0563de13ba5607a12f385fe534fe?hash_algo=sha256"
@@ -468,7 +478,7 @@ Here is a correspondance between concepts in eLabFTW and how they are translated
           "startTime": "2026-11-09T10:32:54+01:00"
         },
         {
-          "@id": "updateaction://e690fc41-5446-4235-86e7-79594aece800",
+          "@id": "updateaction://c30e3ae7-dfff-4108-89ea-cb8d324997b9",
           "@type": "UpdateAction",
           "agent": {
             "@id": "person://42c713981f75caa8c9d8e3a60c883dc4788c0563de13ba5607a12f385fe534fe?hash_algo=sha256"
@@ -478,7 +488,7 @@ Here is a correspondance between concepts in eLabFTW and how they are translated
           "startTime": "2026-11-09T10:32:35+01:00"
         },
         {
-          "@id": "updateaction://da682b12-a0b2-4790-8b88-51885433dfca",
+          "@id": "updateaction://5ab35506-b4aa-4af4-899b-a8e08501daf6",
           "@type": "UpdateAction",
           "agent": {
             "@id": "person://42c713981f75caa8c9d8e3a60c883dc4788c0563de13ba5607a12f385fe534fe?hash_algo=sha256"
@@ -488,7 +498,7 @@ Here is a correspondance between concepts in eLabFTW and how they are translated
           "startTime": "2026-11-09T10:32:23+01:00"
         },
         {
-          "@id": "updateaction://eddaffda-f2d8-42b4-9e8b-16ec60b4f0f8",
+          "@id": "updateaction://9448d2f3-c38d-4a7c-a105-26335a945042",
           "@type": "UpdateAction",
           "agent": {
             "@id": "person://42c713981f75caa8c9d8e3a60c883dc4788c0563de13ba5607a12f385fe534fe?hash_algo=sha256"
@@ -498,7 +508,7 @@ Here is a correspondance between concepts in eLabFTW and how they are translated
           "startTime": "2026-11-09T10:32:23+01:00"
         },
         {
-          "@id": "updateaction://07f6bcd1-318d-4b25-9598-cd85f81e603e",
+          "@id": "updateaction://83c5cf3a-beff-4663-ba4d-853bfeaf1c3a",
           "@type": "UpdateAction",
           "agent": {
             "@id": "person://42c713981f75caa8c9d8e3a60c883dc4788c0563de13ba5607a12f385fe534fe?hash_algo=sha256"
@@ -508,7 +518,7 @@ Here is a correspondance between concepts in eLabFTW and how they are translated
           "startTime": "2026-11-09T10:32:14+01:00"
         },
         {
-          "@id": "updateaction://a5c4c674-7b29-41a8-bdc8-378ad5a0377b",
+          "@id": "updateaction://10afc32c-c1a2-4852-adb8-cdc73f3108e8",
           "@type": "UpdateAction",
           "agent": {
             "@id": "person://42c713981f75caa8c9d8e3a60c883dc4788c0563de13ba5607a12f385fe534fe?hash_algo=sha256"
@@ -518,7 +528,7 @@ Here is a correspondance between concepts in eLabFTW and how they are translated
           "startTime": "2026-11-09T10:31:28+01:00"
         },
         {
-          "@id": "updateaction://a3dd2da4-6358-4dc0-a10b-c4fe47fb8c47",
+          "@id": "updateaction://4cd5687b-d16c-4535-9a86-0f0781704e32",
           "@type": "UpdateAction",
           "agent": {
             "@id": "person://42c713981f75caa8c9d8e3a60c883dc4788c0563de13ba5607a12f385fe534fe?hash_algo=sha256"
@@ -528,7 +538,7 @@ Here is a correspondance between concepts in eLabFTW and how they are translated
           "startTime": "2026-11-09T10:30:28+01:00"
         },
         {
-          "@id": "updateaction://e9d06c6d-8456-4f2b-8956-bcab3b546520",
+          "@id": "updateaction://daa81e73-14cb-4bf9-89f0-e203d84ab562",
           "@type": "UpdateAction",
           "agent": {
             "@id": "person://42c713981f75caa8c9d8e3a60c883dc4788c0563de13ba5607a12f385fe534fe?hash_algo=sha256"
@@ -538,7 +548,7 @@ Here is a correspondance between concepts in eLabFTW and how they are translated
           "startTime": "2026-11-09T10:30:13+01:00"
         },
         {
-          "@id": "updateaction://17acd763-dcde-4381-bd44-e3672fa97cce",
+          "@id": "updateaction://65ca94b2-fc65-4a0b-8fe6-297a9fb94bc4",
           "@type": "UpdateAction",
           "agent": {
             "@id": "person://42c713981f75caa8c9d8e3a60c883dc4788c0563de13ba5607a12f385fe534fe?hash_algo=sha256"
@@ -548,7 +558,7 @@ Here is a correspondance between concepts in eLabFTW and how they are translated
           "startTime": "2026-11-09T10:30:07+01:00"
         },
         {
-          "@id": "updateaction://f04ed9f6-e77c-4476-86fc-bc5d9f4253dc",
+          "@id": "updateaction://2aaed770-289c-410a-8b23-c6bde7befc8f",
           "@type": "UpdateAction",
           "agent": {
             "@id": "person://42c713981f75caa8c9d8e3a60c883dc4788c0563de13ba5607a12f385fe534fe?hash_algo=sha256"
@@ -558,7 +568,7 @@ Here is a correspondance between concepts in eLabFTW and how they are translated
           "startTime": "2026-11-09T10:30:04+01:00"
         },
         {
-          "@id": "updateaction://a9488ae2-b1c6-4333-8e72-cd182000cc3d",
+          "@id": "updateaction://86a01c59-1cb9-46a8-8632-0451268863ca",
           "@type": "UpdateAction",
           "agent": {
             "@id": "person://42c713981f75caa8c9d8e3a60c883dc4788c0563de13ba5607a12f385fe534fe?hash_algo=sha256"
@@ -568,7 +578,7 @@ Here is a correspondance between concepts in eLabFTW and how they are translated
           "startTime": "2026-11-09T10:30:02+01:00"
         },
         {
-          "@id": "updateaction://2aef2547-db07-487c-8b96-f7535cbaceea",
+          "@id": "updateaction://548bed08-818d-47ba-bf19-d965311eadf9",
           "@type": "UpdateAction",
           "agent": {
             "@id": "person://42c713981f75caa8c9d8e3a60c883dc4788c0563de13ba5607a12f385fe534fe?hash_algo=sha256"
@@ -578,7 +588,7 @@ Here is a correspondance between concepts in eLabFTW and how they are translated
           "startTime": "2026-11-09T10:29:53+01:00"
         },
         {
-          "@id": "updateaction://c00cd66f-1183-43bd-b428-2dfd17ed34a3",
+          "@id": "updateaction://ca48b923-e238-42c2-a55d-7d7a207e21a6",
           "@type": "UpdateAction",
           "agent": {
             "@id": "person://42c713981f75caa8c9d8e3a60c883dc4788c0563de13ba5607a12f385fe534fe?hash_algo=sha256"
@@ -588,7 +598,7 @@ Here is a correspondance between concepts in eLabFTW and how they are translated
           "startTime": "2026-11-09T10:29:51+01:00"
         },
         {
-          "@id": "updateaction://505f2169-e69d-4d1c-a14c-220d0dde372d",
+          "@id": "updateaction://1c49a179-f044-4e56-bf44-c2e5ed447d24",
           "@type": "UpdateAction",
           "agent": {
             "@id": "person://42c713981f75caa8c9d8e3a60c883dc4788c0563de13ba5607a12f385fe534fe?hash_algo=sha256"
@@ -601,14 +611,14 @@ Here is a correspondance between concepts in eLabFTW and how they are translated
       "status": "Normal",
       "hasPart": [
         {
-          "@id": "./aab966c4-0d20-4057-aa2d-30959b42f548/dc70935f-63c3-48d1-8653-363548463369"
+          "@id": "./3fbcedee-3618-49fc-bd29-916e494778fb/2477189f-a423-4d6e-bd3e-50738e18ff46"
         }
       ],
       "identifier": "20261109-62025cc4886281b363b4faef05742ad24f9ebe5d",
       "keywords": "tag1,tag2",
       "mentions": [
         {
-          "@id": "./88adebb3-4411-40b6-acbb-65cca84e586a/"
+          "@id": "./92eec27d-99b3-47a6-b493-54a3f53a1508/"
         }
       ],
       "text": "<p style=\"line-height:1;\">This is the main text. It's <strong>HTML</strong>.</p>\n<ul>\n<li style=\"line-height:1;\">a list</li>\n<li style=\"line-height:1;\">another item on the list</li>\n<li style=\"line-height:1;\">third one</li>\n</ul>\n<p style=\"line-height:1;\">\u00a0</p>\n<p style=\"line-height:1;\">Now a table:</p>\n<table style=\"min-width:25%;\" border=\"1\">\n\n<tr>\n<td>Sample</td>\n<td>Concentration (\u03bcg/\u03bcL)</td>\n<td>Size (nm)</td>\n<td>Comment</td>\n</tr>\n<tr>\n<td>1</td>\n<td>30</td>\n<td>12</td>\n<td>-</td>\n</tr>\n<tr>\n<td>2</td>\n<td><span style=\"color:rgb(224,62,45);\">20</span></td>\n<td><span style=\"background-color:rgb(251,238,184);\">24</span></td>\n<td>-</td>\n</tr>\n\n</table>\n<p>And an image in the text:</p>\n<p><img src=\"app/download.php?f=a7/a7336228-3ffd-4bdd-8044-eb430687964a.png&amp;storage=1\" width=\"413\" height=\"413\" alt=\"a7336228-3ffd-4bdd-8044-eb430687964a.png&amp;storage=1\"></p>\n<p>\u00a0</p>",
@@ -617,50 +627,53 @@ Here is a correspondance between concepts in eLabFTW and how they are translated
       },
       "variableMeasured": [
         {
-          "@id": "pv://e3cbd30a-fa8d-4758-81e8-22d320b935b2"
+          "@id": "pv://28555b81-0cad-430e-b761-1c8a72e2e4fa"
         },
         {
-          "@id": "pv://11183de6-129d-4625-81e6-c2d0ef114db7"
+          "@id": "pv://a67505f2-f150-4b8f-a477-ab14e14321d7"
         },
         {
-          "@id": "pv://efa31003-18b4-47b9-a4fe-b12e24ca5509"
+          "@id": "pv://3f8350ec-0b8c-47be-8485-2e3e5953860f"
         },
         {
-          "@id": "pv://d3aec9a4-e542-4fe4-b69c-9d5d44f147cb"
+          "@id": "pv://21989d0f-fe08-4339-93d4-b525a9fec359"
+        },
+        {
+          "@id": "pv://43baedeb-92e7-455c-91d4-9d03411a1f6c"
         }
       ],
       "aggregateRating": {
-        "@id": "rating://b3fd5dbc-80d6-486e-8b9a-8a2f27f4e721",
+        "@id": "rating://48f55135-c9da-4d21-9f48-9af1614a60c6",
         "@type": "AggregateRating",
         "ratingValue": 5,
         "reviewCount": 1
       },
       "step": [
         {
-          "@id": "howtostep://79ec59ef-ef2a-40ac-bf13-2fdb7445837e"
+          "@id": "howtostep://77800afe-b41f-4202-b1ef-ef5fc8624b7f"
         },
         {
-          "@id": "howtostep://f2276a4f-9e6a-4b87-b884-bae34dd6fd88"
+          "@id": "howtostep://5ebf4c00-a9c8-4c58-a34f-a6e4acb16a77"
         },
         {
-          "@id": "howtostep://4b779624-89de-4455-8d18-e5581677ae63"
+          "@id": "howtostep://be37d040-31c5-4cfa-919a-5ed1eb2df604"
         }
       ]
     },
     {
       "@id": "./",
-      "identifier": "47c2fb74-c19c-4d30-a8ba-fc5ab3657c49",
+      "identifier": "8a678efe-88ff-4bff-8ab2-c340cf405030",
       "conformsTo": {
         "@id": "https://purl.org/elnconsortium/eln-spec/1.2+20260923"
       },
       "@type": "Dataset",
-      "datePublished": "2026-11-09T10:35:32+01:00",
+      "datePublished": "2026-11-09T12:57:43+01:00",
       "hasPart": [
         {
-          "@id": "./aab966c4-0d20-4057-aa2d-30959b42f548/"
+          "@id": "./3fbcedee-3618-49fc-bd29-916e494778fb/"
         },
         {
-          "@id": "./88adebb3-4411-40b6-acbb-65cca84e586a/"
+          "@id": "./92eec27d-99b3-47a6-b493-54a3f53a1508/"
         }
       ],
       "name": "eLabFTW export",
